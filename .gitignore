@@ -1,0 +1,11 @@
+__pycache__/
+debug/
+login/account.py
+login/danjuan_klq.txt
+login/danjuan_ksh.txt
+login/danjuan_lsy.txt
+login/qieman_klq.txt
+login/qieman_ksh.txt
+login/tiantian_klq.txt
+login/tiantian_lsy.txt
+login/tiantian_lsy_single.txt

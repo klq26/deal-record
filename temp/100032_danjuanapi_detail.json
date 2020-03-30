@@ -1,0 +1,497 @@
+{
+    "data": {
+        "fund_company": "    富国基金管理有限公司成立于1999年,是经中国证监会批准设立的首批十家基金管理公司之一。2003年,加拿大历史最悠久的银行——加拿大蒙特利尔银行(BMO)参股富国基金,富国基金管理有限公司又成为国内首批成立的十家基金公司中第一家外资参股的基金管理公司。\n    富国基金管理有限公司不仅在中国股市的巨变中积累了丰富的投资管理经验,而且享有外方股东输入的先进理念和管理技术。经过九年的发展,公司共管理运作十一只基金,包括汉盛、汉兴、汉鼎三只封闭式证券投资基金和富国天源、富国天博、富国天利债券、富国天益价值、富国天瑞强势地区精选、富国天惠精选成长、富国天时货币市场基金和富国天合稳健优选基金八只开放式证券投资基金,截至2007年四季度末,管理资产规模超过600亿元。",
+        "fund_position": {
+            "stock_percent": 91.82,
+            "bond_percent": 0.08,
+            "cash_percent": 7.99,
+            "other_percent": 0.11,
+            "asset_tot": 3971826600.21,
+            "asset_val": 3940854495.96,
+            "source_mark": "第四季度报",
+            "source": "5",
+            "enddate": "2019-12-31",
+            "stock_list": [
+                {
+                    "name": "三钢闽光",
+                    "code": "002110",
+                    "percent": 2.28,
+                    "current_price": 7.97,
+                    "change_percentage": 1.14,
+                    "xq_symbol": "SZ002110",
+                    "xq_url": "https://xueqiu.com/S/SZ002110",
+                    "amarket": true
+                },
+                {
+                    "name": "方大特钢",
+                    "code": "600507",
+                    "percent": 2.18,
+                    "current_price": 8.06,
+                    "change_percentage": 0.75,
+                    "xq_symbol": "SH600507",
+                    "xq_url": "https://xueqiu.com/S/SH600507",
+                    "amarket": true
+                },
+                {
+                    "name": "依顿电子",
+                    "code": "603328",
+                    "percent": 1.99,
+                    "current_price": 10.64,
+                    "change_percentage": -0.09,
+                    "xq_symbol": "SH603328",
+                    "xq_url": "https://xueqiu.com/S/SH603328",
+                    "amarket": true
+                },
+                {
+                    "name": "光大银行",
+                    "code": "601818",
+                    "percent": 1.84,
+                    "current_price": 3.67,
+                    "change_percentage": 0,
+                    "xq_symbol": "SH601818",
+                    "xq_url": "https://xueqiu.com/S/SH601818",
+                    "amarket": true
+                },
+                {
+                    "name": "金地集团",
+                    "code": "600383",
+                    "percent": 1.69,
+                    "current_price": 13.94,
+                    "change_percentage": 3.03,
+                    "xq_symbol": "SH600383",
+                    "xq_url": "https://xueqiu.com/S/SH600383",
+                    "amarket": true
+                },
+                {
+                    "name": "中联重科",
+                    "code": "000157",
+                    "percent": 1.68,
+                    "current_price": 5.96,
+                    "change_percentage": 2.76,
+                    "xq_symbol": "SZ000157",
+                    "xq_url": "https://xueqiu.com/S/SZ000157",
+                    "amarket": true
+                },
+                {
+                    "name": "旗滨集团",
+                    "code": "601636",
+                    "percent": 1.62,
+                    "current_price": 4.96,
+                    "change_percentage": -0.8,
+                    "xq_symbol": "SH601636",
+                    "xq_url": "https://xueqiu.com/S/SH601636",
+                    "amarket": true
+                },
+                {
+                    "name": "梅花生物",
+                    "code": "600873",
+                    "percent": 1.62,
+                    "current_price": 4.31,
+                    "change_percentage": -0.46,
+                    "xq_symbol": "SH600873",
+                    "xq_url": "https://xueqiu.com/S/SH600873",
+                    "amarket": true
+                },
+                {
+                    "name": "建设银行",
+                    "code": "601939",
+                    "percent": 1.54,
+                    "current_price": 6.47,
+                    "change_percentage": 1.09,
+                    "xq_symbol": "SH601939",
+                    "xq_url": "https://xueqiu.com/S/SH601939",
+                    "amarket": true
+                },
+                {
+                    "name": "首开股份",
+                    "code": "600376",
+                    "percent": 1.54,
+                    "current_price": 6.67,
+                    "change_percentage": 1.68,
+                    "xq_symbol": "SH600376",
+                    "xq_url": "https://xueqiu.com/S/SH600376",
+                    "amarket": true
+                }
+            ],
+            "bond_list": [
+                {
+                    "name": "常汽转债",
+                    "code": "113550",
+                    "percent": 0.05,
+                    "xq_symbol": "113550",
+                    "xq_url": "https://xueqiu.com/S/113550",
+                    "amarket": false
+                },
+                {
+                    "name": "日月转债",
+                    "code": "113558",
+                    "percent": 0.02,
+                    "xq_symbol": "113558",
+                    "xq_url": "https://xueqiu.com/S/113558",
+                    "amarket": false
+                },
+                {
+                    "name": "淮矿转债",
+                    "code": "110065",
+                    "percent": 0.01,
+                    "xq_symbol": "110065",
+                    "xq_url": "https://xueqiu.com/S/110065",
+                    "amarket": false
+                },
+                {
+                    "name": "麦米转债",
+                    "code": "128089",
+                    "percent": 0,
+                    "xq_symbol": "128089",
+                    "xq_url": "https://xueqiu.com/S/128089",
+                    "amarket": false
+                }
+            ]
+        },
+        "fund_rates": {
+            "fd_code": "100032",
+            "subscribe_rate": "0",
+            "declare_rate": "1.50",
+            "withdraw_rate": "1.500",
+            "discount": "0.1",
+            "subscribe_discount": "1",
+            "declare_discount": "0.1",
+            "declare_rate_table": [
+                {
+                    "name": "买入金额<100万",
+                    "value": "1.50"
+                },
+                {
+                    "name": "100万≤买入金额<500万",
+                    "value": "1.20"
+                },
+                {
+                    "name": "500万≤买入金额",
+                    "value": "1000.00"
+                }
+            ],
+            "withdraw_rate_table": [
+                {
+                    "name": "0天<持有期限<7天",
+                    "value": "1.500"
+                },
+                {
+                    "name": "7天≤持有期限",
+                    "value": "0.500"
+                }
+            ],
+            "other_rate_table": [
+                {
+                    "name": "基金托管费",
+                    "value": "0.20"
+                },
+                {
+                    "name": "基金管理费",
+                    "value": "1.20"
+                }
+            ]
+        },
+        "manager_list": [
+            {
+                "name": "徐幼华",
+                "resume": "    徐幼华,硕士,曾任上海京华创业投资有限公司投资经理助理;2006年7月至2008年12月任富国基金管理有限公司金融工程部数量研究员,2009年1月至2011年5月任富国基金管理有限公司另类投资部数量研究员、基金经理助理,2011年5月起任富国中证红利指数增强型证券投资基金基金经理,2011年10月起任富国中证500指数增强型证券投资基金(LOF)基金经理,2015年6月至2017年12月任富国中证工业4.0指数分级证券投资基金基金经理,2016年11月起任富国中证医药主题指数增强型证券投资基金(LOF)基金经理,2015年6月至2017年11月任富国中证煤炭指数分级证券投资基金、富国中证体育产业指数分级证券投资基金基金经理,2017年3月起任富国中证娱乐主题指数增强型证券投资基金(LOF)基金经理,2017年4月起任富国中证高端制造指数增强型证券投资基金(LOF)基金经理,2018年5月起任富国港股通量化精选股票型证券投资基金、富国中证1000指数增强型证券投资基金(LOF)基金经理,2018年7月起任富国大盘价值量化精选混合型证券投资基金基金经理,2018 年 12 月起任富国MSCI 中国 A 股国际通指数增强型证券投资基金基金经理;兼任量化投资部副总经理。具有基金从业资格。",
+                "college": "复旦大学",
+                "work_year": "16",
+                "achievement_list": [
+                    {
+                        "fund_code": "008682",
+                        "fundsname": "富国中证红利指数增强C",
+                        "post_date": "2020-03-10",
+                        "cp_rate": -6.2376
+                    },
+                    {
+                        "fund_code": "006034",
+                        "fundsname": "富国MSCI中国A股国际通指数增强",
+                        "post_date": "2018-12-25",
+                        "cp_rate": 28.53
+                    },
+                    {
+                        "fund_code": "006022",
+                        "fundsname": "富国大盘价值量化精选混合",
+                        "post_date": "2018-07-19",
+                        "cp_rate": 26.14
+                    },
+                    {
+                        "fund_code": "161039",
+                        "fundsname": "富国中证1000指数增强(LOF)",
+                        "post_date": "2018-05-31",
+                        "cp_rate": 26.14
+                    },
+                    {
+                        "fund_code": "005707",
+                        "fundsname": "富国港股通量化精选股票型",
+                        "post_date": "2018-05-30",
+                        "cp_rate": -13.22
+                    },
+                    {
+                        "fund_code": "161037",
+                        "fundsname": "富国中证高端制造指数增强型(LOF)",
+                        "post_date": "2017-04-27",
+                        "resi_date": "2020-01-10",
+                        "cp_rate": 32.42
+                    },
+                    {
+                        "fund_code": "161036",
+                        "fundsname": "富国中证娱乐主题指数增强型(LOF)",
+                        "post_date": "2017-03-13",
+                        "resi_date": "2020-01-10",
+                        "cp_rate": -23.73
+                    },
+                    {
+                        "fund_code": "161035",
+                        "fundsname": "富国中证医药主题指数增强(LOF)",
+                        "post_date": "2016-11-11",
+                        "resi_date": "2020-01-10",
+                        "cp_rate": 29.5
+                    },
+                    {
+                        "fund_code": "150308",
+                        "fundsname": "富国体育B份额",
+                        "post_date": "2015-06-25",
+                        "resi_date": "2017-11-29",
+                        "cp_rate": -83.68
+                    },
+                    {
+                        "fund_code": "150307",
+                        "fundsname": "富国体育A份额",
+                        "post_date": "2015-06-25",
+                        "resi_date": "2017-11-29",
+                        "cp_rate": 11.63
+                    },
+                    {
+                        "fund_code": "161030",
+                        "fundsname": "富国中证体育产业指数分级",
+                        "post_date": "2015-06-25",
+                        "resi_date": "2017-11-29",
+                        "cp_rate": -42.21
+                    },
+                    {
+                        "fund_code": "150322",
+                        "fundsname": "富国煤炭B",
+                        "post_date": "2015-06-19",
+                        "resi_date": "2017-11-29",
+                        "cp_rate": -75.9
+                    },
+                    {
+                        "fund_code": "150321",
+                        "fundsname": "富国煤炭A",
+                        "post_date": "2015-06-19",
+                        "resi_date": "2017-11-29",
+                        "cp_rate": 17.09
+                    },
+                    {
+                        "fund_code": "161032",
+                        "fundsname": "富国中证煤炭指数分级",
+                        "post_date": "2015-06-19",
+                        "resi_date": "2017-11-29",
+                        "cp_rate": -23.65
+                    },
+                    {
+                        "fund_code": "150316",
+                        "fundsname": "富国工业4.0B",
+                        "post_date": "2015-06-15",
+                        "resi_date": "2017-12-01",
+                        "cp_rate": -87.92
+                    },
+                    {
+                        "fund_code": "150315",
+                        "fundsname": "富国工业4.0A",
+                        "post_date": "2015-06-15",
+                        "resi_date": "2017-12-01",
+                        "cp_rate": 11.84
+                    },
+                    {
+                        "fund_code": "161031",
+                        "fundsname": "富国中证工业4.0指数分级",
+                        "post_date": "2015-06-15",
+                        "resi_date": "2017-12-01",
+                        "cp_rate": -44.71
+                    },
+                    {
+                        "fund_code": "161017",
+                        "fundsname": "富国中证500指数增强(LOF)",
+                        "post_date": "2011-10-12",
+                        "cp_rate": 111.22
+                    },
+                    {
+                        "fund_code": "100032",
+                        "fundsname": "富国中证红利指数增强A",
+                        "post_date": "2011-05-13",
+                        "cp_rate": 78.5009
+                    }
+                ]
+            },
+            {
+                "name": "方旻",
+                "resume": "    方旻先生,硕士。自 2010年 2月至 2014年 4月任富国基金管理有限公司定量研究员; 2014年4月至2014年11月任富国中证红利指数增强型证券投资基金、富国沪深 300增强证券投资基金、富国中证 500指数增强型证券投资基金(LOF)基金经理助理, 2014年 11月起任富国中证红利指数增强型证券投资基金、 富国沪深 300增强证券投资基金、上证综指交易型开放式指数证券投资基金和富国中证500指数增强型证券投资基金(LOF)基金经理, 2015年 5月起任富国创业板指数分级证券投资基金、富国中证全指证券公司指数分级证券投资基金及富国中证银行指数分级证券投资基金的基金经理,2015年 10月起任富国上证综指交易型开放式指数证券投资基金联接基金的基金经理,2017年 6月起任富国新活力灵活配置混合型发起式证券投资基金基金经理,2017年 7月起任富国新兴成长量化精选混合型证券投资基金(LOF)基金经理;兼任量化投资副总监,2018 年 5 月起任富国中证 1000指数增强型证券投资基金(LOF)基金经理,2018年7月起任富国大盘价值量化精选混合型证券投资基金基金经理,2019年1月起任富国MSCI中国A股国际通指数增强型证券投资基金基金经理;兼任量化投资副总监。具有基金从业资格。",
+                "work_year": "10",
+                "achievement_list": [
+                    {
+                        "fund_code": "008682",
+                        "fundsname": "富国中证红利指数增强C",
+                        "post_date": "2020-03-10",
+                        "cp_rate": -6.2376
+                    },
+                    {
+                        "fund_code": "008836",
+                        "fundsname": "富国量化对冲策略三个月持有期混合C",
+                        "post_date": "2020-02-25",
+                        "cp_rate": 0.01
+                    },
+                    {
+                        "fund_code": "008835",
+                        "fundsname": "富国量化对冲策略三个月持有期混合A",
+                        "post_date": "2020-02-25",
+                        "cp_rate": 0.03
+                    },
+                    {
+                        "fund_code": "006034",
+                        "fundsname": "富国MSCI中国A股国际通指数增强",
+                        "post_date": "2019-01-07",
+                        "cp_rate": 28.0817
+                    },
+                    {
+                        "fund_code": "006022",
+                        "fundsname": "富国大盘价值量化精选混合",
+                        "post_date": "2018-07-19",
+                        "cp_rate": 26.14
+                    },
+                    {
+                        "fund_code": "161039",
+                        "fundsname": "富国中证1000指数增强(LOF)",
+                        "post_date": "2018-05-31",
+                        "cp_rate": 26.14
+                    },
+                    {
+                        "fund_code": "161038",
+                        "fundsname": "富国新兴成长量化精选混合(LOF)",
+                        "post_date": "2017-07-21",
+                        "cp_rate": -0.8399
+                    },
+                    {
+                        "fund_code": "004605",
+                        "fundsname": "富国新活力灵活配置混合C",
+                        "post_date": "2017-06-09",
+                        "resi_date": "2018-12-12",
+                        "cp_rate": -0.4998
+                    },
+                    {
+                        "fund_code": "004604",
+                        "fundsname": "富国新活力灵活配置混合A",
+                        "post_date": "2017-06-09",
+                        "resi_date": "2018-12-12",
+                        "cp_rate": -0.9995
+                    },
+                    {
+                        "fund_code": "100053",
+                        "fundsname": "富国上证综指ETF联接",
+                        "post_date": "2015-10-09",
+                        "cp_rate": 3.4864
+                    },
+                    {
+                        "fund_code": "150242",
+                        "fundsname": "富国银行B",
+                        "post_date": "2015-05-13",
+                        "resi_date": "2019-11-20",
+                        "cp_rate": 0.32
+                    },
+                    {
+                        "fund_code": "150241",
+                        "fundsname": "富国银行A",
+                        "post_date": "2015-05-13",
+                        "resi_date": "2019-11-20",
+                        "cp_rate": 20.479
+                    },
+                    {
+                        "fund_code": "161029",
+                        "fundsname": "富国中证银行指数",
+                        "post_date": "2015-05-13",
+                        "resi_date": "2019-11-20",
+                        "cp_rate": 21.7383
+                    },
+                    {
+                        "fund_code": "150153",
+                        "fundsname": "富国创业板B",
+                        "post_date": "2015-05-13",
+                        "resi_date": "2019-11-20",
+                        "cp_rate": -96.0494
+                    },
+                    {
+                        "fund_code": "150152",
+                        "fundsname": "富国创业板A",
+                        "post_date": "2015-05-13",
+                        "resi_date": "2019-11-20",
+                        "cp_rate": 25.6445
+                    },
+                    {
+                        "fund_code": "161022",
+                        "fundsname": "富国创业板指数分级",
+                        "post_date": "2015-05-13",
+                        "resi_date": "2019-11-20",
+                        "cp_rate": -50.6136
+                    },
+                    {
+                        "fund_code": "161027",
+                        "fundsname": "富国中证全指证券公司指数分级",
+                        "post_date": "2015-05-13",
+                        "resi_date": "2019-11-20",
+                        "cp_rate": -50.0561
+                    },
+                    {
+                        "fund_code": "150223",
+                        "fundsname": "富国证券A",
+                        "post_date": "2015-05-13",
+                        "resi_date": "2019-11-20",
+                        "cp_rate": 30.1687
+                    },
+                    {
+                        "fund_code": "150224",
+                        "fundsname": "富国证券B",
+                        "post_date": "2015-05-13",
+                        "resi_date": "2019-11-20",
+                        "cp_rate": -97.1681
+                    },
+                    {
+                        "fund_code": "161017",
+                        "fundsname": "富国中证500指数增强(LOF)",
+                        "post_date": "2014-11-19",
+                        "cp_rate": 52.9471
+                    },
+                    {
+                        "fund_code": "510210",
+                        "fundsname": "富国上证综指ETF",
+                        "post_date": "2014-11-19",
+                        "cp_rate": 37.5466
+                    },
+                    {
+                        "fund_code": "100038",
+                        "fundsname": "富国沪深300指数增强",
+                        "post_date": "2014-11-19",
+                        "cp_rate": 109.1703
+                    },
+                    {
+                        "fund_code": "100032",
+                        "fundsname": "富国中证红利指数增强A",
+                        "post_date": "2014-11-19",
+                        "cp_rate": 81.8944
+                    }
+                ]
+            }
+        ],
+        "fund_date_conf": {
+            "fd_code": "100032",
+            "buy_confirm_date": 1,
+            "buy_query_date": 1,
+            "sale_confirm_date": 1,
+            "sale_query_date": 3,
+            "all_sale_days": 4,
+            "all_buy_days": 2
+        }
+    },
+    "result_code": 0
+}

@@ -1,0 +1,302 @@
+[
+    {
+        "申请信息": {
+            "applyDate": "2016-05-11",
+            "applyOperate": "买入申请",
+            "applyStatus": "已受理(支付完成)"
+        },
+        "确认信息": {
+            "fundName": "招商中证白酒指数分级",
+            "fundCode": "161725",
+            "confirmDate": "2016-05-12",
+            "confirmOperate": "申购确认",
+            "confirmStatus": "成功",
+            "confirmNavUnit": "0.8820",
+            "confirmNavAcc": "待实现",
+            "confirmMoney": "500.00",
+            "confirmVolume": "566.33",
+            "fee": "0.50"
+        },
+        "详情页": "https://query.1234567.com.cn/Query/Detail?id=fdb0dbf1fbd246dc88cfcab1547a1fcb&businType=22&traceNo="
+    },
+    {
+        "申请信息": {
+            "applyDate": "2016-05-13",
+            "applyOperate": "买入申请",
+            "applyStatus": "已受理(支付完成)"
+        },
+        "确认信息": {
+            "fundName": "广发美国房地产指数",
+            "fundCode": "000179",
+            "confirmDate": "2016-05-17",
+            "confirmOperate": "申购确认",
+            "confirmStatus": "成功",
+            "confirmNavUnit": "1.2420",
+            "confirmNavAcc": "待实现",
+            "confirmMoney": "500.00",
+            "confirmVolume": "402.05",
+            "fee": "0.65"
+        },
+        "详情页": "https://query.1234567.com.cn/Query/Detail?id=c568af353b7e40faa1cf583e1bc00c44&businType=22&traceNo="
+    },
+    {
+        "申请信息": {
+            "applyDate": "2016-05-24",
+            "applyOperate": "赎回申请",
+            "applyStatus": "已受理(无需支付)"
+        },
+        "确认信息": {
+            "fundName": "广发美国房地产指数",
+            "fundCode": "000179",
+            "confirmDate": "2016-05-26",
+            "confirmOperate": "赎回确认",
+            "confirmStatus": "成功",
+            "confirmNavUnit": "1.2270",
+            "confirmNavAcc": "待实现",
+            "confirmMoney": "490.85",
+            "confirmVolume": "402.05",
+            "fee": "2.47"
+        },
+        "详情页": "https://query.1234567.com.cn/Query/Detail?id=214341fbc30e4978bb325a639830accb&businType=24&traceNo="
+    },
+    {
+        "申请信息": {
+            "applyDate": "2016-05-27",
+            "applyOperate": "赎回申请",
+            "applyStatus": "已受理(无需支付)"
+        },
+        "确认信息": {
+            "fundName": "招商中证白酒指数分级",
+            "fundCode": "161725",
+            "confirmDate": "2016-05-30",
+            "confirmOperate": "赎回确认",
+            "confirmStatus": "成功",
+            "confirmNavUnit": "0.8440",
+            "confirmNavAcc": "待实现",
+            "confirmMoney": "475.59",
+            "confirmVolume": "566.33",
+            "fee": "2.39"
+        },
+        "详情页": "https://query.1234567.com.cn/Query/Detail?id=2362d357ea9743e4b12531160ce0593f&businType=24&traceNo="
+    },
+    {
+        "申请信息": {
+            "applyDate": "2016-09-14",
+            "applyOperate": "买入申请",
+            "applyStatus": "已受理(支付完成)"
+        },
+        "确认信息": {
+            "fundName": "华安德国30(DAX)联接",
+            "fundCode": "000614",
+            "confirmDate": "2016-09-20",
+            "confirmOperate": "申购确认",
+            "confirmStatus": "成功",
+            "confirmNavUnit": "1.0060",
+            "confirmNavAcc": "待实现",
+            "confirmMoney": "3400.00",
+            "confirmVolume": "3375.67",
+            "fee": "4.08"
+        },
+        "详情页": "https://query.1234567.com.cn/Query/Detail?id=e6487d0396f046aeac18c546bfc76d34&businType=22&traceNo="
+    },
+    {
+        "申请信息": {
+            "applyDate": "2017-01-13",
+            "applyOperate": "买入申请",
+            "applyStatus": "已受理(支付完成)"
+        },
+        "确认信息": {
+            "fundName": "广发医药卫生联接A",
+            "fundCode": "001180",
+            "confirmDate": "2017-01-16",
+            "confirmOperate": "申购确认",
+            "confirmStatus": "成功",
+            "confirmNavUnit": "0.7815",
+            "confirmNavAcc": "待实现",
+            "confirmMoney": "3700.00",
+            "confirmVolume": "4728.82",
+            "fee": "4.43"
+        },
+        "详情页": "https://query.1234567.com.cn/Query/Detail?id=8fcd1c2a289f4250b916a30c3f1eb083&businType=22&traceNo="
+    },
+    {
+        "申请信息": {
+            "applyDate": "2017-01-13",
+            "applyOperate": "买入申请",
+            "applyStatus": "已受理(支付完成)"
+        },
+        "确认信息": {
+            "fundName": "广发医药卫生联接A",
+            "fundCode": "001180",
+            "confirmDate": "2017-01-16",
+            "confirmOperate": "申购确认",
+            "confirmStatus": "成功",
+            "confirmNavUnit": "0.7815",
+            "confirmNavAcc": "待实现",
+            "confirmMoney": "3700.00",
+            "confirmVolume": "4728.82",
+            "fee": "4.43"
+        },
+        "详情页": "https://query.1234567.com.cn/Query/Detail?id=f37be7b0121c4df5b94666d9b4d4a4e9&businType=22&traceNo="
+    },
+    {
+        "申请信息": {
+            "applyDate": "2017-01-25",
+            "applyOperate": "买入申请",
+            "applyStatus": "已受理(支付完成)"
+        },
+        "确认信息": {
+            "fundName": "富国中证红利指数增强",
+            "fundCode": "100032",
+            "confirmDate": "2017-01-26",
+            "confirmOperate": "申购确认",
+            "confirmStatus": "成功",
+            "confirmNavUnit": "1.1070",
+            "confirmNavAcc": "待实现",
+            "confirmMoney": "3960.00",
+            "confirmVolume": "3571.88",
+            "fee": "5.93"
+        },
+        "详情页": "https://query.1234567.com.cn/Query/Detail?id=248f32037f32480cb4efc873015272cb&businType=22&traceNo="
+    },
+    {
+        "申请信息": {
+            "applyDate": "2017-01-25",
+            "applyOperate": "买入申请",
+            "applyStatus": "已受理(支付完成)"
+        },
+        "确认信息": {
+            "fundName": "广发养老指数A",
+            "fundCode": "000968",
+            "confirmDate": "2017-01-26",
+            "confirmOperate": "申购确认",
+            "confirmStatus": "成功",
+            "confirmNavUnit": "0.9595",
+            "confirmNavAcc": "待实现",
+            "confirmMoney": "3960.00",
+            "confirmVolume": "4122.20",
+            "fee": "4.75"
+        },
+        "详情页": "https://query.1234567.com.cn/Query/Detail?id=05e5bfe994b5478cae6173bee3f60406&businType=22&traceNo="
+    },
+    {
+        "申请信息": {
+            "applyDate": "2017-02-15",
+            "applyOperate": "买入申请",
+            "applyStatus": "已受理(支付完成)"
+        },
+        "确认信息": {
+            "fundName": "广发中债7-10年国开债指数A",
+            "fundCode": "003376",
+            "confirmDate": "2017-02-16",
+            "confirmOperate": "申购确认",
+            "confirmStatus": "成功",
+            "confirmNavUnit": "0.9504",
+            "confirmNavAcc": "待实现",
+            "confirmMoney": "3960.00",
+            "confirmVolume": "4164.58",
+            "fee": "1.98"
+        },
+        "详情页": "https://query.1234567.com.cn/Query/Detail?id=1bcdd612e8804e0887645dea7acdd0c4&businType=22&traceNo="
+    },
+    {
+        "申请信息": {
+            "applyDate": "2017-03-31",
+            "applyOperate": "买入申请",
+            "applyStatus": "已受理(支付完成)"
+        },
+        "确认信息": {
+            "fundName": "广发医药卫生联接A",
+            "fundCode": "001180",
+            "confirmDate": "2017-04-05",
+            "confirmOperate": "申购确认",
+            "confirmStatus": "成功",
+            "confirmNavUnit": "0.8153",
+            "confirmNavAcc": "待实现",
+            "confirmMoney": "3960.00",
+            "confirmVolume": "4851.28",
+            "fee": "4.75"
+        },
+        "详情页": "https://query.1234567.com.cn/Query/Detail?id=4f4bb4f2d55147e09a81496091a07a3c&businType=22&traceNo="
+    },
+    {
+        "申请信息": {
+            "applyDate": "2017-04-14",
+            "applyOperate": "买入申请",
+            "applyStatus": "已受理(支付完成)"
+        },
+        "确认信息": {
+            "fundName": "广发养老指数A",
+            "fundCode": "000968",
+            "confirmDate": "2017-04-17",
+            "confirmOperate": "申购确认",
+            "confirmStatus": "成功",
+            "confirmNavUnit": "0.9977",
+            "confirmNavAcc": "待实现",
+            "confirmMoney": "3960.00",
+            "confirmVolume": "3964.37",
+            "fee": "4.75"
+        },
+        "详情页": "https://query.1234567.com.cn/Query/Detail?id=3570cd696b1740bc83f98fe13cccfca7&businType=22&traceNo="
+    },
+    {
+        "申请信息": {
+            "applyDate": "2017-04-25",
+            "applyOperate": "买入申请",
+            "applyStatus": "已受理(支付完成)"
+        },
+        "确认信息": {
+            "fundName": "广发中债7-10年国开债指数A",
+            "fundCode": "003376",
+            "confirmDate": "2017-04-26",
+            "confirmOperate": "申购确认",
+            "confirmStatus": "成功",
+            "confirmNavUnit": "0.9456",
+            "confirmNavAcc": "待实现",
+            "confirmMoney": "3960.00",
+            "confirmVolume": "4185.72",
+            "fee": "1.98"
+        },
+        "详情页": "https://query.1234567.com.cn/Query/Detail?id=a416689a55ff4ce0b71a9fb526341500&businType=22&traceNo="
+    },
+    {
+        "申请信息": {
+            "applyDate": "2017-04-25",
+            "applyOperate": "买入申请",
+            "applyStatus": "已受理(支付完成)"
+        },
+        "确认信息": {
+            "fundName": "广发养老指数A",
+            "fundCode": "000968",
+            "confirmDate": "2017-04-26",
+            "confirmOperate": "申购确认",
+            "confirmStatus": "成功",
+            "confirmNavUnit": "0.9933",
+            "confirmNavAcc": "待实现",
+            "confirmMoney": "3960.00",
+            "confirmVolume": "3981.93",
+            "fee": "4.75"
+        },
+        "详情页": "https://query.1234567.com.cn/Query/Detail?id=7cc4ba6646ad4904aa3f6ab3ad506bc0&businType=22&traceNo="
+    },
+    {
+        "申请信息": {
+            "applyDate": "2017-05-23",
+            "applyOperate": "买入申请",
+            "applyStatus": "已受理(支付完成)"
+        },
+        "确认信息": {
+            "fundName": "广发养老指数A",
+            "fundCode": "000968",
+            "confirmDate": "2017-05-24",
+            "confirmOperate": "申购确认",
+            "confirmStatus": "成功",
+            "confirmNavUnit": "0.9959",
+            "confirmNavAcc": "待实现",
+            "confirmMoney": "7920.00",
+            "confirmVolume": "7943.08",
+            "fee": "9.49"
+        },
+        "详情页": "https://query.1234567.com.cn/Query/Detail?id=10b4e25835b64a8ab7be8c4ccfa260a7&businType=22&traceNo="
+    }
+]
