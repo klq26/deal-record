@@ -52,7 +52,7 @@ class tiantianSpider:
         # print(len(self.detailUrlList))
         # 获取每一条详情数据
         length = len(self.detailUrlList)
-        length = 15
+        # length = 15
         for i in range(0, length):
             detailUrl = self.detailUrlList[i]
             htmlText = ''
