@@ -10,6 +10,9 @@ from database.fundDBHelper import fundDBHelper
 from spider.tiantian.tiantianSpider import tiantianSpider
 from spider.danjuan.danjuanSpider import danjuanSpider
 from spider.qieman.qiemanSpider import qiemanSpider
+from spider.huatai.huataiSpider import huataiSpider
+from spider.huatai.huataiHistory import huataiHistory
+# from spider.huabao.huabaoSpider import huabaoSpider
 
 if __name__ == "__main__":
     # 清屏
@@ -59,6 +62,9 @@ if __name__ == "__main__":
     #         print(code)
     # fundInfoSpider().get(['006793', '164902', '519700', '519718', '519723', '519738', '519752', '519755', '519776'])
 
+    huatai = huataiSpider()
+    huatai.get()
+
     # 写入数据库
     db = fundDBHelper()
     # db_tables = db.getAllCodesInDB()
@@ -87,5 +93,6 @@ if __name__ == "__main__":
     #     results = db.selectLatestRecordFromTable(item)
     #     print(item, results)
 
-    updater = fundNavUpdater()
-    updater.update()
+    # 更新数据库中的净值到今天
+    # updater = fundNavUpdater()
+    # updater.update()
