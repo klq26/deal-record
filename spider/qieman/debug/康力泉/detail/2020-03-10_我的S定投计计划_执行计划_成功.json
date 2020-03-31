@@ -1,0 +1,52 @@
+{
+    "orderProdType": "PO",
+    "orderId": "PO202003109EE6LYES9XCM",
+    "payStatus": "2",
+    "uiPayStatusName": "扣款成功",
+    "confirmStatus": "P2",
+    "uiConfirmStatusName": "确认成功",
+    "capitalAccountId": "CA8FCJKFPANTP2",
+    "uiAmount": 1000,
+    "hasDetail": true,
+    "po": {
+        "poCode": "LONG_WIN_S",
+        "poName": "长赢指数投资计划-S定投"
+    },
+    "umaId": 16569,
+    "umaName": "我的S定投计计划",
+    "orderCode": "P11",
+    "uiOrderCodeName": "执行计划",
+    "orderStatus": "SUCCESS",
+    "uiOrderStatusName": "成功",
+    "capitalAccountName": "长赢指数投资计划-S定投",
+    "totalFee": 1.2,
+    "orderConfirmDate": 1583942400000,
+    "payAcctName": "盈米宝",
+    "acceptTime": 1583811695000,
+    "compositionOrders": [
+        {
+            "orderId": "2020031002247343",
+            "payStatus": "2",
+            "cancelable": false,
+            "acceptTime": 1583811695000,
+            "nav": 2.2795,
+            "fee": 1.2,
+            "uiAmount": 1000,
+            "uiShare": 438.17,
+            "confirmStatus": "2",
+            "orderStatus": "SUCCESS",
+            "uiOrderStatusName": "成功",
+            "uiConfirmStatusName": "成功",
+            "tradeByShare": false,
+            "orderCode": "W04",
+            "uiOrderCodeName": "盈米宝购买",
+            "orderConfirmDate": 1583942400000,
+            "fund": {
+                "fundCode": "050025",
+                "fundName": "博时标普500ETF联接A"
+            },
+            "uiOrderDesc": "已于2020年3月12日确认完成"
+        }
+    ],
+    "cancelable": false
+}

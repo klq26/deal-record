@@ -1,6 +1,4 @@
 __pycache__/
-debug/
-tools/fund_data_history/
 tools/fund_data/
 login/account.py
 login/danjuan_klq.txt

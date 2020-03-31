@@ -1,0 +1,75 @@
+{
+    "orderProdType": "PO",
+    "orderId": "PO202003199FANFSMAQIUR",
+    "payStatus": "2",
+    "uiPayStatusName": "扣款成功",
+    "confirmStatus": "P2",
+    "uiConfirmStatusName": "确认成功",
+    "capitalAccountId": "CA8UKLYHA67WPK",
+    "uiAmount": 1334,
+    "hasDetail": true,
+    "po": {
+        "poCode": "LONG_WIN",
+        "poName": "长赢指数投资计划-150份"
+    },
+    "umaId": 10209,
+    "umaName": "10万补充ETF计划",
+    "orderCode": "P11",
+    "uiOrderCodeName": "执行计划",
+    "orderStatus": "SUCCESS",
+    "uiOrderStatusName": "成功",
+    "capitalAccountName": "长赢指数投资计划-150份",
+    "totalFee": 1.6,
+    "orderConfirmDate": 1584892800000,
+    "payAcctName": "盈米宝",
+    "acceptTime": 1584597855000,
+    "compositionOrders": [
+        {
+            "orderId": "2020031901541502",
+            "payStatus": "2",
+            "cancelable": false,
+            "acceptTime": 1584597855000,
+            "nav": 1.2474,
+            "fee": 0.8,
+            "uiAmount": 667,
+            "uiShare": 534.07,
+            "confirmStatus": "2",
+            "orderStatus": "SUCCESS",
+            "uiOrderStatusName": "成功",
+            "uiConfirmStatusName": "成功",
+            "tradeByShare": false,
+            "orderCode": "W04",
+            "uiOrderCodeName": "盈米宝购买",
+            "orderConfirmDate": 1584633600000,
+            "fund": {
+                "fundCode": "000071",
+                "fundName": "华夏恒生ETF联接A"
+            },
+            "uiOrderDesc": "已于2020年3月20日确认完成"
+        },
+        {
+            "orderId": "2020031901541507",
+            "payStatus": "2",
+            "cancelable": false,
+            "acceptTime": 1584597855000,
+            "nav": 1.9434,
+            "fee": 0.8,
+            "uiAmount": 667,
+            "uiShare": 342.8,
+            "confirmStatus": "2",
+            "orderStatus": "SUCCESS",
+            "uiOrderStatusName": "成功",
+            "uiConfirmStatusName": "成功",
+            "tradeByShare": false,
+            "orderCode": "W04",
+            "uiOrderCodeName": "盈米宝购买",
+            "orderConfirmDate": 1584892800000,
+            "fund": {
+                "fundCode": "050025",
+                "fundName": "博时标普500ETF联接A"
+            },
+            "uiOrderDesc": "已于2020年3月23日确认完成"
+        }
+    ],
+    "cancelable": false
+}

@@ -1,0 +1,19 @@
+{
+    "data": {
+        "order_id": "807381305164627554",
+        "uid": 203274561,
+        "code": "003474",
+        "name": "南方天天利货币B",
+        "ttype": "fund",
+        "status": "success",
+        "action": "022",
+        "amount": 10000,
+        "status_desc": "交易成功",
+        "action_desc": "买入",
+        "created_at": 1580815729722,
+        "title": "南方天天利货币B",
+        "value_desc": "10000.0元",
+        "convert": false
+    },
+    "result_code": 0
+}

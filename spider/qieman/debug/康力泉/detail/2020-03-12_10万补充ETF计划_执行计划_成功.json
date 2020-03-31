@@ -1,0 +1,55 @@
+{
+    "orderProdType": "PO",
+    "orderId": "PO202003129ELKUX8KDBAJ",
+    "payStatus": null,
+    "confirmStatus": "P2",
+    "uiConfirmStatusName": "确认成功",
+    "capitalAccountId": "CA8UKLYHA67WPK",
+    "uiAmount": 848,
+    "hasDetail": true,
+    "po": {
+        "poCode": "LONG_WIN",
+        "poName": "长赢指数投资计划-150份"
+    },
+    "umaId": 10209,
+    "umaName": "10万补充ETF计划",
+    "orderCode": "P11",
+    "uiOrderCodeName": "执行计划",
+    "orderStatus": "SUCCESS",
+    "uiOrderStatusName": "成功",
+    "capitalAccountName": "长赢指数投资计划-150份",
+    "totalFee": 4.13,
+    "totalReceiveAmount": 822.81,
+    "capitalTips": "由于基金卖出成交后才披露成交净值（未知价法），因此到账金额与下单金额可能有所差别，您可以在交易进度明细中通过实际卖出份额、成交净值和手续费进行核算",
+    "transferIntoDate": 1584374400000,
+    "orderConfirmDate": 1584028800000,
+    "receiveAcctName": "招商银行(尾号6292)",
+    "acceptTime": 1583990776000,
+    "compositionOrders": [
+        {
+            "orderId": "2020031201626864",
+            "payStatus": "0",
+            "cancelable": false,
+            "acceptTime": 1583990776000,
+            "transferIntoDate": 1584374400000,
+            "nav": 1.1231,
+            "fee": 4.13,
+            "uiAmount": 822.81,
+            "uiShare": 736.3,
+            "confirmStatus": "2",
+            "orderStatus": "SUCCESS",
+            "uiOrderStatusName": "成功",
+            "uiConfirmStatusName": "成功",
+            "tradeByShare": true,
+            "orderCode": "024",
+            "uiOrderCodeName": "赎回",
+            "orderConfirmDate": 1584028800000,
+            "fund": {
+                "fundCode": "003765",
+                "fundName": "广发创业板ETF联接A"
+            },
+            "uiOrderDesc": "已于2020年3月13日确认完成，已于2020年3月17日资金到账"
+        }
+    ],
+    "cancelable": false
+}

@@ -1,0 +1,52 @@
+{
+    "orderProdType": "PO",
+    "orderId": "PO2019120294L1R0VKHHE7",
+    "payStatus": "2",
+    "uiPayStatusName": "扣款成功",
+    "confirmStatus": "P2",
+    "uiConfirmStatusName": "确认成功",
+    "capitalAccountId": "CA8UKLYHA67WPK",
+    "uiAmount": 667,
+    "hasDetail": true,
+    "po": {
+        "poCode": "LONG_WIN",
+        "poName": "长赢指数投资计划-150份"
+    },
+    "umaId": 10209,
+    "umaName": "10万补充ETF计划",
+    "orderCode": "P11",
+    "uiOrderCodeName": "执行计划",
+    "orderStatus": "SUCCESS",
+    "uiOrderStatusName": "成功",
+    "capitalAccountName": "长赢指数投资计划-150份",
+    "totalFee": 1,
+    "orderConfirmDate": 1575302400000,
+    "payAcctName": "盈米宝",
+    "acceptTime": 1575260962000,
+    "compositionOrders": [
+        {
+            "orderId": "2019120201032688",
+            "payStatus": "2",
+            "cancelable": false,
+            "acceptTime": 1575260962000,
+            "nav": 1.9367,
+            "fee": 1,
+            "uiAmount": 667,
+            "uiShare": 343.88,
+            "confirmStatus": "2",
+            "orderStatus": "SUCCESS",
+            "uiOrderStatusName": "成功",
+            "uiConfirmStatusName": "成功",
+            "tradeByShare": false,
+            "orderCode": "W04",
+            "uiOrderCodeName": "盈米宝购买",
+            "orderConfirmDate": 1575302400000,
+            "fund": {
+                "fundCode": "000478",
+                "fundName": "建信中证500指数增强A"
+            },
+            "uiOrderDesc": "已于2019年12月3日确认完成"
+        }
+    ],
+    "cancelable": false
+}

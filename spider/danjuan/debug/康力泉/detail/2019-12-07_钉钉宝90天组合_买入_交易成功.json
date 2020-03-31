@@ -1,0 +1,56 @@
+{
+    "data": {
+        "order_id": "7891306142886835013",
+        "uid": 203274561,
+        "code": "CSI1021",
+        "name": "钉钉宝90天组合",
+        "ttype": "plan",
+        "status": "success",
+        "action": "022",
+        "amount": 208.44,
+        "status_desc": "交易成功",
+        "action_desc": "买入",
+        "created_at": 1575669406176,
+        "final_confirm_date": 1575907200000,
+        "total_confirm_amount": 208.44,
+        "total_fee": 0,
+        "title": "钉钉宝90天组合",
+        "bank_name": "现金宝",
+        "value_desc": "208.44元",
+        "sub_order_list": [
+            {
+                "action_text": "成分基金交易信息",
+                "action": "022",
+                "orders": [
+                    {
+                        "plan_code": "CSI1021",
+                        "plan_name": "钉钉宝90天组合",
+                        "fd_code": "006320",
+                        "fd_name": "易方达安瑞短债C",
+                        "title": "易方达安瑞短债C",
+                        "action_desc": "买入",
+                        "status_desc": "交易成功",
+                        "type": "plan",
+                        "action": "022",
+                        "status": "success",
+                        "ts": 1575820800000,
+                        "confirm_ts": 1575907200000,
+                        "amount": 208.44,
+                        "volume": 0,
+                        "confirm_amount": 208.44,
+                        "confirm_volume": 208.11,
+                        "fee": 0,
+                        "value_desc": "208.44元",
+                        "value_text": "下单金额",
+                        "confirm_value_text": "确认份额",
+                        "confirm_value_desc": "208.11份",
+                        "bank_name": "现金宝",
+                        "order_id": "172310012018475008"
+                    }
+                ]
+            }
+        ],
+        "convert": false
+    },
+    "result_code": 0
+}

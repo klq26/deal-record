@@ -1,0 +1,98 @@
+{
+    "orderProdType": "PO",
+    "orderId": "PO91I935L8BWUQ",
+    "payStatus": "2",
+    "uiPayStatusName": "扣款成功",
+    "confirmStatus": "P2",
+    "uiConfirmStatusName": "确认成功",
+    "capitalAccountId": "CA8FCJKFPANTP2",
+    "uiAmount": 3000,
+    "hasDetail": true,
+    "po": {
+        "poCode": "LONG_WIN_S",
+        "poName": "长赢指数投资计划-S定投"
+    },
+    "umaId": 16569,
+    "umaName": "我的S定投计计划",
+    "orderCode": "P11",
+    "uiOrderCodeName": "执行计划",
+    "orderStatus": "SUCCESS",
+    "uiOrderStatusName": "成功",
+    "capitalAccountName": "长赢指数投资计划-S定投",
+    "totalFee": 4.2,
+    "orderConfirmDate": 1572883200000,
+    "payAcctName": "盈米宝",
+    "acceptTime": 1572578168000,
+    "compositionOrders": [
+        {
+            "orderId": "2019110100771920",
+            "payStatus": "2",
+            "cancelable": false,
+            "acceptTime": 1572578168000,
+            "nav": 0.551,
+            "fee": 1.2,
+            "uiAmount": 1000,
+            "uiShare": 1812.7,
+            "confirmStatus": "2",
+            "orderStatus": "SUCCESS",
+            "uiOrderStatusName": "成功",
+            "uiConfirmStatusName": "成功",
+            "tradeByShare": false,
+            "orderCode": "W04",
+            "uiOrderCodeName": "盈米宝购买",
+            "orderConfirmDate": 1572796800000,
+            "fund": {
+                "fundCode": "001052",
+                "fundName": "华夏中证500ETF联接A"
+            },
+            "uiOrderDesc": "已于2019年11月4日确认完成"
+        },
+        {
+            "orderId": "2019110100771921",
+            "payStatus": "2",
+            "cancelable": false,
+            "acceptTime": 1572578168000,
+            "nav": 1.112,
+            "fee": 1.5,
+            "uiAmount": 1000,
+            "uiShare": 897.93,
+            "confirmStatus": "2",
+            "orderStatus": "SUCCESS",
+            "uiOrderStatusName": "成功",
+            "uiConfirmStatusName": "成功",
+            "tradeByShare": false,
+            "orderCode": "W04",
+            "uiOrderCodeName": "盈米宝购买",
+            "orderConfirmDate": 1572796800000,
+            "fund": {
+                "fundCode": "100032",
+                "fundName": "富国中证红利指数增强A"
+            },
+            "uiOrderDesc": "已于2019年11月4日确认完成"
+        },
+        {
+            "orderId": "2019110100771924",
+            "payStatus": "2",
+            "cancelable": false,
+            "acceptTime": 1572578168000,
+            "nav": 0.391,
+            "fee": 1.5,
+            "uiAmount": 1000,
+            "uiShare": 2553.71,
+            "confirmStatus": "2",
+            "orderStatus": "SUCCESS",
+            "uiOrderStatusName": "成功",
+            "uiConfirmStatusName": "成功",
+            "tradeByShare": false,
+            "orderCode": "W04",
+            "uiOrderCodeName": "盈米宝购买",
+            "orderConfirmDate": 1572883200000,
+            "fund": {
+                "fundCode": "162411",
+                "fundName": "华宝标普石油指数A"
+            },
+            "uiOrderDesc": "已于2019年11月5日确认完成"
+        }
+    ],
+    "cancelable": false
+}

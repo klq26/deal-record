@@ -1,0 +1,75 @@
+{
+    "orderProdType": "PO",
+    "orderId": "PO8TS4J16AMLUV",
+    "payStatus": "2",
+    "uiPayStatusName": "扣款成功",
+    "confirmStatus": "P2",
+    "uiConfirmStatusName": "确认成功",
+    "capitalAccountId": "CA8FCJKFPANTP2",
+    "uiAmount": 2000,
+    "hasDetail": true,
+    "po": {
+        "poCode": "LONG_WIN_S",
+        "poName": "长赢指数投资计划-S定投"
+    },
+    "umaId": 16569,
+    "umaName": "我的S定投计计划",
+    "orderCode": "P11",
+    "uiOrderCodeName": "执行计划",
+    "orderStatus": "SUCCESS",
+    "uiOrderStatusName": "成功",
+    "capitalAccountName": "长赢指数投资计划-S定投",
+    "totalFee": 2.7,
+    "orderConfirmDate": 1566144000000,
+    "payAcctName": "盈米宝",
+    "acceptTime": 1565843670000,
+    "compositionOrders": [
+        {
+            "orderId": "2019081500639437",
+            "payStatus": "2",
+            "cancelable": false,
+            "acceptTime": 1565843670000,
+            "nav": 1.076,
+            "fee": 1.5,
+            "uiAmount": 1000,
+            "uiShare": 927.97,
+            "confirmStatus": "2",
+            "orderStatus": "SUCCESS",
+            "uiOrderStatusName": "成功",
+            "uiConfirmStatusName": "成功",
+            "tradeByShare": false,
+            "orderCode": "W04",
+            "uiOrderCodeName": "盈米宝购买",
+            "orderConfirmDate": 1565884800000,
+            "fund": {
+                "fundCode": "100032",
+                "fundName": "富国中证红利指数增强A"
+            },
+            "uiOrderDesc": "已于2019年8月16日确认完成"
+        },
+        {
+            "orderId": "2019081500639439",
+            "payStatus": "2",
+            "cancelable": false,
+            "acceptTime": 1565843670000,
+            "nav": 1.11,
+            "fee": 1.2,
+            "uiAmount": 1000,
+            "uiShare": 899.82,
+            "confirmStatus": "2",
+            "orderStatus": "SUCCESS",
+            "uiOrderStatusName": "成功",
+            "uiConfirmStatusName": "成功",
+            "tradeByShare": false,
+            "orderCode": "W04",
+            "uiOrderCodeName": "盈米宝购买",
+            "orderConfirmDate": 1566144000000,
+            "fund": {
+                "fundCode": "164906",
+                "fundName": "交银中证海外中国互联网指数"
+            },
+            "uiOrderDesc": "已于2019年8月19日确认完成"
+        }
+    ],
+    "cancelable": false
+}

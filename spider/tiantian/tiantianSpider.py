@@ -12,6 +12,8 @@ import requests
 from requests.packages.urllib3.exceptions import InsecureRequestWarning
 from bs4 import BeautifulSoup
 
+import pandas as pd
+
 from login.requestHeaderManager import requestHeaderManager
 
 class tiantianSpider:
@@ -35,14 +37,16 @@ class tiantianSpider:
         self.results = []
         pass
 
+    # 获取数据
     def get(self):
+        print('天天：{0} 获取中..'.format(self.owner))
         # 获取时间间隔内的交易列表
         for interval in self.dateIntervals:
             htmlText = ''
             folder = os.path.join(self.folder, 'debug', self.owner, 'tradelist')
-            tradelist_path = os.path.join(folder, '{0}_{1}_{2}.html'.format(self.owner, interval[0], interval[1]))
             if not os.path.exists(folder):
                 os.makedirs(folder)
+            tradelist_path = os.path.join(folder, '{0}_{1}.html'.format(interval[0], interval[1]))
             if os.path.exists(tradelist_path):
                 with open(tradelist_path, 'r', encoding='utf-8') as f:
                     htmlText = f.read()
@@ -51,35 +55,136 @@ class tiantianSpider:
             [self.detailUrlList.append(x) for x in self.getDetailUrlsFromTradeList(htmlText)]
         # print(len(self.detailUrlList))
         # 获取每一条详情数据
-        length = len(self.detailUrlList)
-        # length = 15
-        for i in range(0, length):
-            detailUrl = self.detailUrlList[i]
-            htmlText = ''
-            # 取 url 中的 id 作为文件名称
-            params = parse.parse_qs(parse.urlparse(detailUrl).query)
-            id = params['id'][0]
-            folder = os.path.join(self.folder, 'debug', self.owner, 'detail')
-            detailinfo_path = os.path.join(folder, '{0}_{1}_{2}.html'.format(str(i + 1).zfill(5), self.owner, id))
-            if not os.path.exists(folder):
-                os.makedirs(folder)
-            if os.path.exists(detailinfo_path):
-                with open(detailinfo_path, 'r', encoding='utf-8') as f:
-                    htmlText = f.read()
-            else:
+        htmlText = ''
+        orderJsonList = []
+        folder = os.path.join(self.folder, 'debug', self.owner, 'detail')
+        if not os.path.exists(folder):
+            os.makedirs(folder)
+        detailinfo_path = os.path.join(folder, 'detail.json')
+        if not os.path.exists(detailinfo_path):
+            length = len(self.detailUrlList)
+            # length = 15
+            for i in range(0, length):
+                detailUrl = self.detailUrlList[i]
                 response = requests.get(detailUrl, headers = self.headers, verify=False)
                 if response.status_code == 200:
                     htmlText = response.text
-                    with open(detailinfo_path, 'w+', encoding='utf-8') as f:
-                        f.write(htmlText)
-            jsonData = self.getDetailInfo(htmlText, detailUrl)
-            self.results.append(jsonData)
-        # [print(x, type(x)) for x in self.results]
-        # 写入输出
+                jsonData = self.getDetailInfo(htmlText, detailUrl)
+                orderJsonList.append(jsonData)
+                print('\r{0}%'.format(round(i / length * 100, 2)), end='', flush=True)
+            # 写入 detail.json
+            with open(detailinfo_path, 'w+', encoding='utf-8') as f:
+                f.write(json.dumps(orderJsonList, ensure_ascii = False, indent = 4))
+        with open(detailinfo_path, 'r', encoding='utf-8') as f:
+            orderJsonList = json.loads(f.read())
+            # [print(x) for x in orderJsonList]
+        # 输出 record
+        all_model_keys = ['id', 'date', 'code', 'name', 'dealType', 'nav_unit', 'nav_acc', 'volume', 'dealMoney', 'fee', 'occurMoney', 'account', 'note']
+        index = 0
+        # 这是2020年3月31日从历史记录中提取的所有可能的操作名称，如果不在这个之中，应该中断程序，查看原因，升级代码，防止录入错误的交易记录。
+        # 快速过户 = 快速取现金到银行卡，忽略
+        # 转出投资账户确认 & 转入投资账户确认，忽略
+        # 红利发放（只要指数基金的）
+        # 申购确认，赎回确认，都要
+        allOpType = ['申购确认', '赎回确认', '红利发放(红利再投资)', '快速过户', '转出投资账户确认', '转入投资账户确认']
+        allNeededType = ['申购确认', '赎回确认', '红利发放(红利再投资)']
+        # 所有的货币基金分红
+        allMoneyFundFenHong = []
+        for x in orderJsonList:
+            # 取关键信息
+            applyInfo = x['申请信息']
+            hasApply = applyInfo != {}
+            confirmInfo = x['确认信息']
+            hasConfirm = confirmInfo != {}
+            # 过滤
+            if not hasConfirm:
+                opInfo = '未知'
+                if hasApply:
+                    opInfo = applyInfo['applyStatus']
+                print('忽略非正常交易：{0}\n{1}\n'.format(opInfo, x))
+                continue
+            opType = confirmInfo['confirmOperate']
+            if opType not in allOpType:
+                print('[ERROR] 天天 未知操作类型：{0}'.format(opType))
+                exit(1)
+            # 收集货币基金分红信息，暂时备用
+            if u'红利发放' in opType and u'货币' in confirmInfo['fundName']:
+                allMoneyFundFenHong.append(x)
+                continue
+            # 开始录入成交数据
+            all_model_values = []
+            index = index + 1
+            all_model_values.append(index)
+            # 先处理指数基金分红
+            # all_model_keys = ['id', 'date', 'code', 'name', 'dealType', 'nav_unit', 'nav_acc', 'volume', 'dealMoney', 'fee', 'occurMoney', 'account', 'note']
+            fee = confirmInfo['fee']
+            confirmMoney = confirmInfo['confirmMoney']
+            volume = confirmInfo['confirmVolume']
+            dealMoney = 0
+            occurMoney = 0
+            if u'红利发放' in opType:
+                # 分红的意思就是，被动操作，没有 applyInfo
+                all_model_values.append(confirmInfo['confirmDate'])
+                all_model_values.append(confirmInfo['fundCode'])
+                all_model_values.append(confirmInfo['fundName'])
+                all_model_values.append('分红')
+            else:
+                all_model_values.append(applyInfo['applyDate'])
+                all_model_values.append(confirmInfo['fundCode'])
+                all_model_values.append(confirmInfo['fundName'])
+                if '申' in opType:
+                    all_model_values.append('买入')
+                    occurMoney = confirmMoney
+                    dealMoney = round(float(occurMoney) - float(fee), 2)
+                elif '赎' in opType:
+                    all_model_values.append('卖出')
+                    dealMoney = confirmMoney
+                    occurMoney = round(float(dealMoney) - float(fee), 2)
+                else:
+                    # 目前只处理指数基金的买入，卖出，分红
+                    print('忽略非买卖分红交易：{0}\n{1}\n'.format(opType, x))
+                    continue
+                    all_model_values.append('错误')
+            all_model_values.append(confirmInfo['confirmNavUnit'])
+            all_model_values.append('待实现')
+            all_model_values.append(volume)
+            all_model_values.append(dealMoney)
+            all_model_values.append(fee)
+            all_model_values.append(occurMoney)
+            all_model_values.append(self.owner)
+            all_model_values.append(x['详情页'])
+            itemDict = dict(zip(all_model_keys, all_model_values))
+            self.results.append(itemDict)
+        # DEBUG
+        # [print(x) for x in allOpType]
+        # [print(x) for x in allMoneyFundFenHong]
+
+        # 写入文件
         output_path = os.path.join(self.folder, 'output', '{0}_record.json'.format(self.owner))
         with open(output_path, 'w+', encoding='utf-8') as f:
             f.write(json.dumps(self.results, ensure_ascii = False, indent = 4))
         pass
+
+    # TODO
+    # 获取所有记录中的唯一代码
+    def uniqueCodes(self):
+        output_path = os.path.join(self.folder, 'output', '{0}_record.json'.format(self.owner))
+        with open(output_path, 'r', encoding='utf-8') as f:
+            datalist = json.loads(f.read())
+            names = []
+            codes = []
+            for x in datalist:
+                names.append(x['name'])
+                codes.append(x['code'])
+            df = pd.DataFrame()
+            df['name'] = names
+            df['code'] = codes
+            df = df.drop_duplicates(['code'])
+            df = df.sort_values(by='code' , ascending=True)
+            df = df.reset_index(drop=True)
+            df.to_csv(os.path.join(self.folder, 'output', 'tiantian-unique-codes.csv'), sep='\t')
+            return df
+            # df.to_excel('code-name.xlsx')
 
     # 根据今天日期和起始日期,生成多个 90 天时间间隔的二维数组
     def getDateIntervals(self, startYear = 2016, startMonth = 5, startDay = 1, interval = 90):
@@ -111,10 +216,10 @@ class tiantianSpider:
         url = u'https://query.1234567.com.cn/Query/DelegateList?DataType=1&StartDate={0}&EndDate={1}&BusType=0&Statu=0&Account=&FundType=0&PageSize=500&PageIndex=1'
         response = requests.post(url.format(interval[0], interval[1]), headers = self.headers, verify=False)
         if response.status_code == 200:
-            folder = self.folder, 'debug', self.owner, 'tradelist'
+            folder = os.path.join(self.folder, 'debug', self.owner, 'tradelist')
             if not os.path.exists(folder):
                 os.makedirs(folder)
-            with open(os.path.join(folder, '{0}_{1}_{2}.html'.format(self.owner, interval[0], interval[1])), 'w+', encoding='utf-8') as f:
+            with open(os.path.join(folder, '{0}_{1}.html'.format(interval[0], interval[1])), 'w+', encoding='utf-8') as f:
                 f.write(response.text)
             return response.text
         else:
@@ -131,6 +236,7 @@ class tiantianSpider:
         [detail_url_list.append(detail_url_prefix + x['href']) for x in results]
         return detail_url_list
 
+    # 获取详细交易数据的整合信息
     def getDetailInfo(self, htmlText, url):
         soup = BeautifulSoup(htmlText, 'lxml')
         results = soup.findAll('div',{'class':'ui-confirm'})
@@ -192,40 +298,6 @@ class tiantianSpider:
         #     soup = BeautifulSoup(f.read(), 'lxml')
         #     results = soup.findAll(lambda e: e.name == 'a' and len(e.contents) >= 3)
         #     [print(x.contents[0] + '\t' + x.contents[2]) for x in results]
-                
-    # 取 2000 条
-    # deal_list_url = u'https://danjuanapp.com/djapi/order/p/list?page=1&size=2000&type=all'
-    # # 获取所有的成交记录概述
-    # response = requests.get(deal_list_url, headers = self.headers, verify=False)
-    # if response.status_code == 200:
-    #     with open(os.path.join(os.getcwd(),'danjuan_deal_list.json'), 'w+', encoding='utf-8') as f:
-    #         f.write(json.dumps(json.loads(response.text), ensure_ascii=False, indent = 4))
-    # else:
-    #     print(response.status_code)
-
-    # https://query.1234567.com.cn/Query/DelegateList?DataType=1&StartDate=2016-5-1&EndDate=2016-7-1&BusType=0&Statu=0&Account=&FundType=0&PageSize=200&PageIndex=1
-
-    # with open(os.path.join(os.getcwd(),'danjuan_deal_list.json'), 'r', encoding='utf-8') as f:
-    #     jsonData = json.loads(f.read())
-    #     datalist = jsonData['data']['items']
-    #     detail_url = u'https://danjuanapp.com/djapi/order/p/plan/{0}'
-    #     for item in datalist:
-    #         # "order_id": "1819139915911312513",
-    #         # "code": "CSI1019",
-    #         # "name": "钉钉宝365天组合",
-    #         # "status_desc": "交易成功",
-    #         # "action_desc": "卖出",
-    #         # "created_at": 1584584824274,
-    #         # "title": "钉钉宝365天组合",
-    #         unix_ts = int(int(item['created_at'])/1000)
-    #         date = str(datetime.fromtimestamp(unix_ts))[0:10]
-    #         order_id = item['order_id']
-    #         order_info_path = '{0}_{1}_{2}_{3}.json'.format(date, item['name'], item['action_desc'], item['status_desc'])
-    #         # 请求
-    #         response = requests.get(detail_url.format(item['order_id']), headers = self.headers, verify=False)
-    #         if response.status_code == 200:
-    #             with open(os.path.join(os.getcwd(), order_info_path), 'w+', encoding='utf-8') as order_output_file:
-    #                 order_output_file.write(json.dumps(json.loads(response.text), ensure_ascii=False, indent = 4))
 
 if __name__ == "__main__":
     strategy = 'klq'

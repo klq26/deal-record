@@ -1,0 +1,52 @@
+{
+    "orderProdType": "PO",
+    "orderId": "PO8V2GVCXUKYX3",
+    "payStatus": "2",
+    "uiPayStatusName": "扣款成功",
+    "confirmStatus": "P2",
+    "uiConfirmStatusName": "确认成功",
+    "capitalAccountId": "CA8UKLYHA67WPK",
+    "uiAmount": 93.38,
+    "hasDetail": true,
+    "po": {
+        "poCode": "LONG_WIN",
+        "poName": "长赢指数投资计划-150份"
+    },
+    "umaId": 10209,
+    "umaName": "10万补充ETF计划",
+    "orderCode": "P11",
+    "uiOrderCodeName": "执行计划",
+    "orderStatus": "SUCCESS",
+    "uiOrderStatusName": "成功",
+    "capitalAccountName": "长赢指数投资计划-150份",
+    "totalFee": 0.09,
+    "orderConfirmDate": 1567008000000,
+    "payAcctName": "盈米宝",
+    "acceptTime": 1566965806000,
+    "compositionOrders": [
+        {
+            "orderId": "2019082800635524",
+            "payStatus": "2",
+            "cancelable": false,
+            "acceptTime": 1566965806000,
+            "nav": 0.9977,
+            "fee": 0.09,
+            "uiAmount": 93.38,
+            "uiShare": 93.51,
+            "confirmStatus": "2",
+            "orderStatus": "SUCCESS",
+            "uiOrderStatusName": "成功",
+            "uiConfirmStatusName": "成功",
+            "tradeByShare": false,
+            "orderCode": "W04",
+            "uiOrderCodeName": "盈米宝购买",
+            "orderConfirmDate": 1567008000000,
+            "fund": {
+                "fundCode": "502010",
+                "fundName": "易方达证券公司分级"
+            },
+            "uiOrderDesc": "已于2019年8月29日确认完成"
+        }
+    ],
+    "cancelable": false
+}

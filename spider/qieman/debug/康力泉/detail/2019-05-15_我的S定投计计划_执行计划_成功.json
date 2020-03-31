@@ -1,0 +1,52 @@
+{
+    "orderProdType": "PO",
+    "orderId": "PO8KNJWHX2MT5I",
+    "payStatus": "2",
+    "uiPayStatusName": "扣款成功",
+    "confirmStatus": "P2",
+    "uiConfirmStatusName": "确认成功",
+    "capitalAccountId": "CA8FCJKFPANTP2",
+    "uiAmount": 1000,
+    "hasDetail": true,
+    "po": {
+        "poCode": "LONG_WIN",
+        "poName": "长赢指数投资计划-150份"
+    },
+    "umaId": 16569,
+    "umaName": "我的S定投计计划",
+    "orderCode": "P11",
+    "uiOrderCodeName": "执行计划",
+    "orderStatus": "SUCCESS",
+    "uiOrderStatusName": "成功",
+    "capitalAccountName": "长赢指数投资计划-S定投",
+    "totalFee": 1.2,
+    "orderConfirmDate": 1557936000000,
+    "payAcctName": "盈米宝",
+    "acceptTime": 1557887677000,
+    "compositionOrders": [
+        {
+            "orderId": "2019051500617807",
+            "payStatus": "2",
+            "cancelable": false,
+            "acceptTime": 1557887677000,
+            "nav": 0.943,
+            "fee": 1.2,
+            "uiAmount": 1000,
+            "uiShare": 1059.17,
+            "confirmStatus": "2",
+            "orderStatus": "SUCCESS",
+            "uiOrderStatusName": "成功",
+            "uiConfirmStatusName": "成功",
+            "tradeByShare": false,
+            "orderCode": "W04",
+            "uiOrderCodeName": "盈米宝购买",
+            "orderConfirmDate": 1557936000000,
+            "fund": {
+                "fundCode": "001051",
+                "fundName": "华夏上证50ETF联接A"
+            },
+            "uiOrderDesc": "已于2019年5月16日确认完成"
+        }
+    ],
+    "cancelable": false
+}

@@ -21,6 +21,26 @@ class fundDBHelper:
     def connect(self):
         return pymysql.connect(self.ip_address, self.account.user, self.account.password, 'fund')
 
+    # 获取数据库中所有的库存表
+    def getAllCodesInDB(self):
+        # sql = "SELECT TABLE_NAME FROM information_schema.tables WHERE table_schema='fund' AND table_type='base table';"
+        sql = "SHOW TABLES WHERE Tables_in_fund LIKE 'nav_%'"
+        db = self.connect()
+        cursor = db.cursor()
+        try:
+            cursor.execute(sql)
+            db.commit()
+            results = cursor.fetchall()
+            if len(results) > 0:
+                return [x[0].replace('nav_','') for x in list(results)]
+        except Exception as e:
+            # 表存在就回滚操作
+            db.rollback()
+            print(e)
+        finally:
+            cursor.close()
+            db.close()
+
     # 创建基金基础信息表
     def addFundInfoTableIfNeeded(self):
         sql = """
@@ -61,6 +81,8 @@ class fundDBHelper:
 
     # 动态添加表：根据表名创建
     def addNavTableIfNeeded(self, tablename):
+        if tablename in self.getAllCodesInDB():
+            print('Table: nav_{0} exist.'.format(tablename))
         sql = 'CREATE TABLE nav_{0} (date VARCHAR(20) NOT NULL, nav_unit FLOAT NOT NULL, nav_acc FLOAT NOT NULL, PRIMARY KEY (date))'.format(tablename)
         print(sql)
         db = self.connect()

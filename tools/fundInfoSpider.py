@@ -90,7 +90,7 @@ class fundInfoSpider:
             else:
                 pageCount = int(totalCount / 20)
             # 开始行动！
-            print('{0} {1} 总个数：{2} 总页数：{3}'.format(code, name, totalCount, pageCount))
+            print('\n{0} {1} 总个数：{2} 总页数：{3}'.format(code, name, totalCount, pageCount))
             # pageCount = 5
             for i in range(1, pageCount + 1):
                 response = requests.get(url_holder.format(code, i),headers = self.headers, verify=False)

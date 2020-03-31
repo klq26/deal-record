@@ -1,0 +1,97 @@
+{
+    "orderProdType": "PO",
+    "orderId": "PO202003139EOZMKH3PBXF",
+    "payStatus": "2",
+    "uiPayStatusName": "扣款成功",
+    "confirmStatus": "P2",
+    "uiConfirmStatusName": "确认成功",
+    "capitalAccountId": "CA8FCJKFPANTP2",
+    "hasDetail": true,
+    "po": {
+        "poCode": "LONG_WIN_S",
+        "poName": "长赢指数投资计划-S定投"
+    },
+    "umaId": 16569,
+    "umaName": "我的S定投计计划",
+    "orderCode": "P11",
+    "uiOrderCodeName": "执行计划",
+    "orderStatus": "SUCCESS",
+    "uiOrderStatusName": "成功",
+    "capitalAccountName": "长赢指数投资计划-S定投",
+    "totalFee": 3.59,
+    "orderConfirmDate": 1584374400000,
+    "acceptTime": 1584073350000,
+    "compositionOrders": [
+        {
+            "orderId": "2020031301947080",
+            "payStatus": "0",
+            "cancelable": false,
+            "acceptTime": 1584073350000,
+            "transferIntoDate": 1584288000000,
+            "nav": 1.3007,
+            "fee": 1.19,
+            "uiAmount": 1191.86,
+            "uiShare": 917.24,
+            "confirmStatus": "2",
+            "orderStatus": "SUCCESS",
+            "uiOrderStatusName": "成功",
+            "uiConfirmStatusName": "成功",
+            "tradeByShare": true,
+            "orderCode": "W05",
+            "uiOrderCodeName": "赎回到盈米宝",
+            "orderConfirmDate": 1584288000000,
+            "fund": {
+                "fundCode": "000216",
+                "fundName": "华安黄金易ETF联接A"
+            },
+            "uiOrderDesc": "已于2020年3月16日确认完成，已于2020年3月16日充入盈米宝"
+        },
+        {
+            "orderId": "2020031301947084",
+            "payStatus": "2",
+            "cancelable": false,
+            "acceptTime": 1584073350000,
+            "nav": 1.3592,
+            "fee": 1.2,
+            "uiAmount": 1000,
+            "uiShare": 734.84,
+            "confirmStatus": "2",
+            "orderStatus": "SUCCESS",
+            "uiOrderStatusName": "成功",
+            "uiConfirmStatusName": "成功",
+            "tradeByShare": false,
+            "orderCode": "W04",
+            "uiOrderCodeName": "盈米宝购买",
+            "orderConfirmDate": 1584288000000,
+            "fund": {
+                "fundCode": "000071",
+                "fundName": "华夏恒生ETF联接A"
+            },
+            "uiOrderDesc": "已于2020年3月16日确认完成"
+        },
+        {
+            "orderId": "2020031301947087",
+            "payStatus": "2",
+            "cancelable": false,
+            "acceptTime": 1584073350000,
+            "nav": 0.913,
+            "fee": 1.2,
+            "uiAmount": 1000,
+            "uiShare": 1093.98,
+            "confirmStatus": "2",
+            "orderStatus": "SUCCESS",
+            "uiOrderStatusName": "成功",
+            "uiConfirmStatusName": "成功",
+            "tradeByShare": false,
+            "orderCode": "W04",
+            "uiOrderCodeName": "盈米宝购买",
+            "orderConfirmDate": 1584374400000,
+            "fund": {
+                "fundCode": "000614",
+                "fundName": "华安德国30(DAX)联接"
+            },
+            "uiOrderDesc": "已于2020年3月17日确认完成"
+        }
+    ],
+    "cancelable": false
+}

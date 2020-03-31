@@ -1,0 +1,74 @@
+{
+    "orderProdType": "PO",
+    "orderId": "PO202003099EAODCFM1QVP",
+    "payStatus": "2",
+    "uiPayStatusName": "扣款成功",
+    "confirmStatus": "P2",
+    "uiConfirmStatusName": "确认成功",
+    "capitalAccountId": "CA8UKLYHA67WPK",
+    "hasDetail": true,
+    "po": {
+        "poCode": "LONG_WIN",
+        "poName": "长赢指数投资计划-150份"
+    },
+    "umaId": 10209,
+    "umaName": "10万补充ETF计划",
+    "orderCode": "P11",
+    "uiOrderCodeName": "执行计划",
+    "orderStatus": "SUCCESS",
+    "uiOrderStatusName": "成功",
+    "capitalAccountName": "长赢指数投资计划-150份",
+    "totalFee": 5.06,
+    "orderConfirmDate": 1583856000000,
+    "acceptTime": 1583726786000,
+    "compositionOrders": [
+        {
+            "orderId": "2020030901244858",
+            "payStatus": "0",
+            "cancelable": false,
+            "acceptTime": 1583726786000,
+            "transferIntoDate": 1583856000000,
+            "nav": 2.1254,
+            "fee": 4.26,
+            "uiAmount": 847.24,
+            "uiShare": 400.63,
+            "confirmStatus": "2",
+            "orderStatus": "SUCCESS",
+            "uiOrderStatusName": "成功",
+            "uiConfirmStatusName": "成功",
+            "tradeByShare": true,
+            "orderCode": "024",
+            "uiOrderCodeName": "赎回",
+            "orderConfirmDate": 1583769600000,
+            "fund": {
+                "fundCode": "110026",
+                "fundName": "易方达创业板ETF联接A"
+            },
+            "uiOrderDesc": "已于2020年3月10日确认完成，已于2020年3月11日资金到账"
+        },
+        {
+            "orderId": "2020030901244870",
+            "payStatus": "2",
+            "cancelable": false,
+            "acceptTime": 1583726786000,
+            "nav": 0.7162,
+            "fee": 0.8,
+            "uiAmount": 667,
+            "uiShare": 930.19,
+            "confirmStatus": "2",
+            "orderStatus": "SUCCESS",
+            "uiOrderStatusName": "成功",
+            "uiConfirmStatusName": "成功",
+            "tradeByShare": false,
+            "orderCode": "W04",
+            "uiOrderCodeName": "盈米宝购买",
+            "orderConfirmDate": 1583856000000,
+            "fund": {
+                "fundCode": "501018",
+                "fundName": "南方原油A"
+            },
+            "uiOrderDesc": "已于2020年3月11日确认完成"
+        }
+    ],
+    "cancelable": false
+}

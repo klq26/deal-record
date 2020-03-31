@@ -1,0 +1,57 @@
+{
+    "data": {
+        "order_id": "3953915744330239356",
+        "uid": 203274561,
+        "code": "CSI666",
+        "name": "螺丝钉指数基金组合",
+        "ttype": "plan",
+        "status": "success",
+        "action": "143",
+        "amount": 0,
+        "percent": 68.31,
+        "volume": 68.31,
+        "status_desc": "交易成功",
+        "action_desc": "分红",
+        "created_at": 1561001483964,
+        "final_confirm_date": 1560960000000,
+        "total_confirm_amount": 0,
+        "total_confirm_volume": 68.31,
+        "total_fee": 0,
+        "title": "螺丝钉指数基金组合",
+        "bank_name": "招商银行(6292)",
+        "value_desc": "68.31份",
+        "sub_order_list": [
+            {
+                "action_text": "成分基金交易信息",
+                "action": "143",
+                "orders": [
+                    {
+                        "plan_code": "CSI666",
+                        "plan_name": "螺丝钉指数基金组合",
+                        "fd_code": "090010",
+                        "fd_name": "大成中证红利指数",
+                        "title": "大成中证红利指数",
+                        "action_desc": "分红",
+                        "status_desc": "交易成功",
+                        "type": "plan",
+                        "action": "143",
+                        "status": "success",
+                        "ts": 1560960000000,
+                        "confirm_ts": 1560960000000,
+                        "amount": 0,
+                        "volume": 68.31,
+                        "confirm_amount": 0,
+                        "confirm_volume": 68.31,
+                        "fee": 0,
+                        "confirm_value_text": "确认份额",
+                        "confirm_value_desc": "68.31份",
+                        "bank_name": "招商银行(6292)",
+                        "order_id": "3953915744615455805"
+                    }
+                ]
+            }
+        ],
+        "convert": false
+    },
+    "result_code": 0
+}

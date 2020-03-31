@@ -1,0 +1,75 @@
+{
+    "orderProdType": "PO",
+    "orderId": "PO8O0TW42V2BZU",
+    "payStatus": "2",
+    "uiPayStatusName": "扣款成功",
+    "confirmStatus": "P2",
+    "uiConfirmStatusName": "确认成功",
+    "capitalAccountId": "CA8FCJKFPANTP2",
+    "uiAmount": 2000,
+    "hasDetail": true,
+    "po": {
+        "poCode": "LONG_WIN_S",
+        "poName": "长赢指数投资计划-S定投"
+    },
+    "umaId": 16569,
+    "umaName": "我的S定投计计划",
+    "orderCode": "P11",
+    "uiOrderCodeName": "执行计划",
+    "orderStatus": "SUCCESS",
+    "uiOrderStatusName": "成功",
+    "capitalAccountName": "长赢指数投资计划-S定投",
+    "totalFee": 3,
+    "orderConfirmDate": 1560960000000,
+    "payAcctName": "盈米宝",
+    "acceptTime": 1560824263000,
+    "compositionOrders": [
+        {
+            "orderId": "2019061800357142",
+            "payStatus": "2",
+            "cancelable": false,
+            "acceptTime": 1560824263000,
+            "nav": 1.8761,
+            "fee": 1.5,
+            "uiAmount": 1000,
+            "uiShare": 532.22,
+            "confirmStatus": "2",
+            "orderStatus": "SUCCESS",
+            "uiOrderStatusName": "成功",
+            "uiConfirmStatusName": "成功",
+            "tradeByShare": false,
+            "orderCode": "W04",
+            "uiOrderCodeName": "盈米宝购买",
+            "orderConfirmDate": 1560873600000,
+            "fund": {
+                "fundCode": "000478",
+                "fundName": "建信中证500指数增强A"
+            },
+            "uiOrderDesc": "已于2019年6月19日确认完成"
+        },
+        {
+            "orderId": "2019061800357144",
+            "payStatus": "2",
+            "cancelable": false,
+            "acceptTime": 1560824263000,
+            "nav": 0.453,
+            "fee": 1.5,
+            "uiAmount": 1000,
+            "uiShare": 2204.19,
+            "confirmStatus": "2",
+            "orderStatus": "SUCCESS",
+            "uiOrderStatusName": "成功",
+            "uiConfirmStatusName": "成功",
+            "tradeByShare": false,
+            "orderCode": "W04",
+            "uiOrderCodeName": "盈米宝购买",
+            "orderConfirmDate": 1560960000000,
+            "fund": {
+                "fundCode": "162411",
+                "fundName": "华宝标普石油指数A"
+            },
+            "uiOrderDesc": "已于2019年6月20日确认完成"
+        }
+    ],
+    "cancelable": false
+}

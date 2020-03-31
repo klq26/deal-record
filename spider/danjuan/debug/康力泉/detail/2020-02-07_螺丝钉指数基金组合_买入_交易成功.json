@@ -1,0 +1,56 @@
+{
+    "data": {
+        "order_id": "866781355971770880",
+        "uid": 203274561,
+        "code": "CSI666",
+        "name": "螺丝钉指数基金组合",
+        "ttype": "plan",
+        "status": "success",
+        "action": "022",
+        "amount": 507.79,
+        "status_desc": "交易成功",
+        "action_desc": "买入",
+        "created_at": 1581037012134,
+        "final_confirm_date": 1581350400000,
+        "total_confirm_amount": 507.79,
+        "total_fee": 0.61,
+        "title": "螺丝钉指数基金组合",
+        "bank_name": "现金宝",
+        "value_desc": "507.79元",
+        "sub_order_list": [
+            {
+                "action_text": "成分基金交易信息",
+                "action": "022",
+                "orders": [
+                    {
+                        "plan_code": "CSI666",
+                        "plan_name": "螺丝钉指数基金组合",
+                        "fd_code": "006327",
+                        "fd_name": "易方达中概互联50ETF联接人民币A",
+                        "title": "易方达中概互联50ETF联接人民币A",
+                        "action_desc": "买入",
+                        "status_desc": "交易成功",
+                        "type": "plan",
+                        "action": "022",
+                        "status": "success",
+                        "ts": 1581004800000,
+                        "confirm_ts": 1581350400000,
+                        "amount": 507.79,
+                        "volume": 0,
+                        "confirm_amount": 507.79,
+                        "confirm_volume": 430.03,
+                        "fee": 0.61,
+                        "value_desc": "507.79元",
+                        "value_text": "下单金额",
+                        "confirm_value_text": "确认份额",
+                        "confirm_value_desc": "430.03份",
+                        "bank_name": "现金宝",
+                        "order_id": "194823383154343936"
+                    }
+                ]
+            }
+        ],
+        "convert": false
+    },
+    "result_code": 0
+}

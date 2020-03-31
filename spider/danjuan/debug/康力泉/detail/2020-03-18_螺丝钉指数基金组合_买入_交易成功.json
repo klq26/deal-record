@@ -1,0 +1,81 @@
+{
+    "data": {
+        "order_id": "1799579052955176642",
+        "uid": 203274561,
+        "code": "CSI666",
+        "name": "螺丝钉指数基金组合",
+        "ttype": "plan",
+        "status": "success",
+        "action": "022",
+        "amount": 235.05,
+        "status_desc": "交易成功",
+        "action_desc": "买入",
+        "created_at": 1584511954338,
+        "final_confirm_date": 1584633600000,
+        "total_confirm_amount": 235.05,
+        "total_fee": 0.28,
+        "title": "螺丝钉指数基金组合",
+        "bank_name": "工商银行(4358)",
+        "value_desc": "235.05元",
+        "sub_order_list": [
+            {
+                "action_text": "成分基金交易信息",
+                "action": "022",
+                "orders": [
+                    {
+                        "plan_code": "CSI666",
+                        "plan_name": "螺丝钉指数基金组合",
+                        "fd_code": "164906",
+                        "fd_name": "交银中证海外中国互联网指数",
+                        "title": "交银中证海外中国互联网指数",
+                        "action_desc": "买入",
+                        "status_desc": "交易成功",
+                        "type": "plan",
+                        "action": "022",
+                        "status": "success",
+                        "ts": 1584460800000,
+                        "confirm_ts": 1584633600000,
+                        "amount": 110.14,
+                        "volume": 0,
+                        "confirm_amount": 110.14,
+                        "confirm_volume": 94.67,
+                        "fee": 0.13,
+                        "value_desc": "110.14元",
+                        "value_text": "下单金额",
+                        "confirm_value_text": "确认份额",
+                        "confirm_value_desc": "94.67份",
+                        "bank_name": "工商银行(4358)",
+                        "order_id": "209398347178938368"
+                    },
+                    {
+                        "plan_code": "CSI666",
+                        "plan_name": "螺丝钉指数基金组合",
+                        "fd_code": "040046",
+                        "fd_name": "华安纳斯达克100指数",
+                        "title": "华安纳斯达克100指数",
+                        "action_desc": "买入",
+                        "status_desc": "交易成功",
+                        "type": "plan",
+                        "action": "022",
+                        "status": "success",
+                        "ts": 1584460800000,
+                        "confirm_ts": 1584633600000,
+                        "amount": 124.91,
+                        "volume": 0,
+                        "confirm_amount": 124.91,
+                        "confirm_volume": 54.24,
+                        "fee": 0.15,
+                        "value_desc": "124.91元",
+                        "value_text": "下单金额",
+                        "confirm_value_text": "确认份额",
+                        "confirm_value_desc": "54.24份",
+                        "bank_name": "工商银行(4358)",
+                        "order_id": "209398347237658624"
+                    }
+                ]
+            }
+        ],
+        "convert": false
+    },
+    "result_code": 0
+}
