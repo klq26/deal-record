@@ -1,0 +1,47 @@
+[
+    {
+        "id": "1",
+        "date": "2017/11/30",
+        "code": 001064,
+        "name": "广发中证环保产业A",
+        "dealType": "买入",
+        "nav_unit": 0.7683,
+        "nav_acc": 0.7683,
+        "volume": 5200.07,
+        "dealMoney": 4000.0,
+        "fee": 4.79,
+        "occurMoney": 4004.79,
+        "account": "支付宝",
+        "note": "无"
+    },
+    {
+        "id": "2",
+        "date": "2018/2/2",
+        "code": 001064,
+        "name": "广发中证环保产业A",
+        "dealType": "买入",
+        "nav_unit": 0.6987,
+        "nav_acc": 0.6987,
+        "volume": 5718.06,
+        "dealMoney": 4000.0,
+        "fee": 4.79,
+        "occurMoney": 4004.79,
+        "account": "支付宝",
+        "note": "无"
+    },
+    {
+        "id": "3",
+        "date": "2018/4/26",
+        "code": 001064,
+        "name": "广发中证环保产业A",
+        "dealType": "买入",
+        "nav_unit": 0.6872,
+        "nav_acc": 0.6872,
+        "volume": 5813.75,
+        "dealMoney": 4000.0,
+        "fee": 4.79,
+        "occurMoney": 4004.79,
+        "account": "支付宝",
+        "note": "无"
+    }
+]
