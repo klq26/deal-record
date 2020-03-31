@@ -12,7 +12,7 @@ from spider.danjuan.danjuanSpider import danjuanSpider
 from spider.qieman.qiemanSpider import qiemanSpider
 from spider.huatai.huataiSpider import huataiSpider
 from spider.huatai.huataiHistory import huataiHistory
-# from spider.huabao.huabaoSpider import huabaoSpider
+from spider.huabao.huabaoSpider import huabaoSpider
 
 if __name__ == "__main__":
     # 清屏
@@ -63,7 +63,10 @@ if __name__ == "__main__":
     # fundInfoSpider().get(['006793', '164902', '519700', '519718', '519723', '519738', '519752', '519755', '519776'])
 
     huatai = huataiSpider()
-    huatai.get()
+    # huatai.get()
+
+    huabao = huabaoSpider()
+    huabao.get()
 
     # 写入数据库
     db = fundDBHelper()

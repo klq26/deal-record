@@ -1,0 +1,17 @@
+[
+    {
+        "id": "17207186",
+        "date": "2020/01/21",
+        "code": 799999,
+        "name": "登记指定",
+        "dealType": "指定",
+        "nav_unit": 0.0,
+        "nav_acc": 0.0,
+        "volume": 0,
+        "dealMoney": 0.0,
+        "fee": 0.0,
+        "occurMoney": 0.0,
+        "account": "华宝证券",
+        "note": "NA"
+    }
+]
