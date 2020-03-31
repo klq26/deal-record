@@ -29,7 +29,7 @@ class danjuanSpider:
             self.headers = requestHeaderManager().getDanjuanLSY()
         elif strategy == 'ksh':
             self.owner = '康世海'
-            self.headers = requestHeaderManager().getDanjuanLSY()
+            self.headers = requestHeaderManager().getDanjuanKSH()
         # 交易详情 url 数组（后续逐个解析）
         self.detailUrlList = []
         self.results = []
@@ -181,7 +181,7 @@ class danjuanSpider:
             df = df.drop_duplicates(['code'])
             df = df.sort_values(by='code' , ascending=True)
             df = df.reset_index(drop=True)
-            df.to_csv(os.path.join(self.folder, 'output', 'danjuan-unique-codes.csv'), sep='\t')
+            df.to_csv(os.path.join(self.folder, 'output', '{0}-danjuan-unique-codes.csv'.format(self.owner)), sep='\t')
             return df
 
 if __name__ == "__main__":

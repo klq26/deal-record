@@ -5,13 +5,11 @@ import json
 import re
 import ssl
 import time
+from datetime import datetime
 
 import requests
 from requests.packages.urllib3.exceptions import InsecureRequestWarning
-
-# 基金代码
-fund_codes = ['100032']
-
+from database.fundDBHelper import fundDBHelper
 
 # 遍历代码拿数据
 
@@ -31,6 +29,27 @@ class fundInfoSpider:
             with open(os.path.join(self.folder, 'fund_data', '{0}_{1}.json'.format(code, detailInfo['fundName'])),'w+',encoding='utf-8') as f:
                 f.write(json.dumps({'detailInfo': detailInfo, 'navInfo': navInfo}, ensure_ascii=False, indent = 4))
         pass
+
+    # 根据开始和结束日期获取数据
+    def getFundNavByTime(self, code, startDate, endDate):
+        url_holder = u'https://stock.finance.sina.com.cn/fundInfo/api/openapi.php/CaihuiFundInfoService.getNav?callback=callback&symbol={0}&datefrom={1}&dateto={2}&page=1'
+        datalist = []
+        response = requests.get(url_holder.format(code, startDate, endDate), headers = self.headers, verify=False)
+        if response.status_code == 200:
+            # 正则表达式
+            re_pattern = r"/\*.*?\*/\ncallback\((.*?)\)"
+            regex  = re.compile(re_pattern)
+            result = regex.findall(response.text)
+            # 取 json
+            jsonData = json.loads(result[0])
+            for item in jsonData['result']['data']['data']:
+                datalist.append({'date':item['fbrq'][0:10], 'navUnit':item['jjjz'],'navAcc':item['ljjz']})
+            datalist = list(reversed(datalist))
+            return datalist
+
+
+        db = fundDBHelper()
+        db.insertDataToTable(code, keys = ['date', 'nav_unit', 'nav_acc'], values = [])
 
     def getFundDetail(self, code):
         urls = [u'https://danjuanapp.com/djapi/fund/{0}', u'https://danjuanapp.com/djapi/fund/detail/{0}']

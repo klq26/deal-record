@@ -84,10 +84,11 @@ class tiantianSpider:
         # 这是2020年3月31日从历史记录中提取的所有可能的操作名称，如果不在这个之中，应该中断程序，查看原因，升级代码，防止录入错误的交易记录。
         # 快速过户 = 快速取现金到银行卡，忽略
         # 转出投资账户确认 & 转入投资账户确认，忽略
-        # 红利发放（只要指数基金的）
+        # 红利发放，只要指数基金的
+        # 强行调增，看效果类似分红，都要
         # 申购确认，赎回确认，都要
-        allOpType = ['申购确认', '赎回确认', '红利发放(红利再投资)', '快速过户', '转出投资账户确认', '转入投资账户确认']
-        allNeededType = ['申购确认', '赎回确认', '红利发放(红利再投资)']
+        allOpType = ['申购确认', '赎回确认', '红利发放(红利再投资)', '红利发放(现金分红)', '快速过户', '转出投资账户确认', '转入投资账户确认','强行调增']
+        allNeededType = ['申购确认', '赎回确认', '红利发放(红利再投资)', '红利发放(现金分红)', '强行调增']
         # 所有的货币基金分红
         allMoneyFundFenHong = []
         for x in orderJsonList:
@@ -122,7 +123,7 @@ class tiantianSpider:
             volume = confirmInfo['confirmVolume']
             dealMoney = 0
             occurMoney = 0
-            if u'红利发放' in opType:
+            if u'红利发放' in opType or u'强行调增' in opType:
                 # 分红的意思就是，被动操作，没有 applyInfo
                 all_model_values.append(confirmInfo['confirmDate'])
                 all_model_values.append(confirmInfo['fundCode'])
@@ -182,7 +183,7 @@ class tiantianSpider:
             df = df.drop_duplicates(['code'])
             df = df.sort_values(by='code' , ascending=True)
             df = df.reset_index(drop=True)
-            df.to_csv(os.path.join(self.folder, 'output', 'tiantian-unique-codes.csv'), sep='\t')
+            df.to_csv(os.path.join(self.folder, 'output', '{0}-tiantian-unique-codes.csv'.format(self.owner)), sep='\t')
             return df
             # df.to_excel('code-name.xlsx')
 

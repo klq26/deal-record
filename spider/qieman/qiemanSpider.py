@@ -24,26 +24,31 @@ class qiemanSpider:
         if strategy == 'klq':
             self.owner = '康力泉'
             self.headers = requestHeaderManager().getQiemanKLQ()
+            # S 定投
+            # totalElements: 16 # totalPages: 2
+            plan150_id = u'CA8UKLYHA67WPK'
+            # 150 补充
+            # totalElements: 19 # totalPages: 2
+            planS_id = u'CA8FCJKFPANTP2'
+            self.plan_list = [{'name': '150份', 'value': plan150_id}, {'name': 'S定投', 'value': planS_id}]
         elif strategy == 'ksh':
             self.owner = '康世海'
             self.headers = requestHeaderManager().getQiemanKSH()
+            # 稳稳的幸福
+            wenwen = u'CA942R8128PFE7'
+            self.plan_list = [{'name': '稳稳的幸福', 'value': wenwen}]
         # 交易详情 url 数组（后续逐个解析）
         self.detailUrlList = []
         self.results = []
 
     def get(self):
         print('且慢：{0} 获取中..'.format(self.owner))
-        # S 定投
-        # totalElements: 16 # totalPages: 2
-        plan150_id = u'CA8UKLYHA67WPK'
-        # 150 补充
-        # totalElements: 19 # totalPages: 2
-        planS_id = u'CA8FCJKFPANTP2'
-        plan_list = [{'name': '150份', 'value': plan150_id}, {'name': 'S定投', 'value': planS_id}]
+        
+        
         index = 0
         all_model_keys = ['id', 'date', 'code', 'name', 'dealType', 'nav_unit', 'nav_acc', 'volume', 'dealMoney', 'fee', 'occurMoney', 'account', 'note']
         # 取 500 条
-        for plan in plan_list:
+        for plan in self.plan_list:
             folder = os.path.join(self.folder, 'debug', self.owner, 'tradelist')
             if not os.path.exists(folder):
                 os.makedirs(folder)
@@ -104,7 +109,7 @@ class qiemanSpider:
                     # 读取数据
                     with open(detail_file, 'r', encoding='utf-8') as f:
                         jsonData = json.loads(f.read())
-                        plan_name = jsonData['umaName']
+                        plan_name = jsonData['po']['poName']
                         orders = jsonData['compositionOrders']
                         # 遍历每一条记录
                         for order in orders:
@@ -166,7 +171,7 @@ class qiemanSpider:
             df = df.drop_duplicates(['code'])
             df = df.sort_values(by='code' , ascending=True)
             df = df.reset_index(drop=True)
-            df.to_csv(os.path.join(self.folder, 'output', 'qieman-unique-codes.csv'), sep='\t')
+            df.to_csv(os.path.join(self.folder, 'output', '{0}-qieman-unique-codes.csv'.format(self.owner)), sep='\t')
             return df
 
 if __name__ == "__main__":

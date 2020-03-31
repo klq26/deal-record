@@ -1,0 +1,127 @@
+{
+    "orderProdType": "PO",
+    "orderId": "PO2020010197JKSVPN6L8M",
+    "payStatus": null,
+    "confirmStatus": "P2",
+    "uiConfirmStatusName": "确认成功",
+    "capitalAccountId": "CA942R8128PFE7",
+    "hasDetail": true,
+    "po": {
+        "poCode": "ZH013136",
+        "poName": "我要稳稳的幸福"
+    },
+    "umaId": null,
+    "umaName": null,
+    "orderCode": "P04",
+    "uiOrderCodeName": "跟调策略",
+    "orderStatus": "SUCCESS",
+    "uiOrderStatusName": "成功",
+    "capitalAccountName": "我要稳稳的幸福",
+    "totalFee": 537.65,
+    "orderConfirmDate": 1578240000000,
+    "acceptTime": 1577840437000,
+    "compositionOrders": [
+        {
+            "orderId": "2020010201369690",
+            "payStatus": "0",
+            "cancelable": false,
+            "acceptTime": 1577947800000,
+            "nav": 1.0326,
+            "fee": 385.37,
+            "uiAmount": 80670.38,
+            "uiShare": 78123.55,
+            "confirmStatus": "2",
+            "orderStatus": "SUCCESS",
+            "uiOrderStatusName": "成功",
+            "uiConfirmStatusName": "成功",
+            "tradeByShare": true,
+            "orderCode": "036",
+            "uiOrderCodeName": "转换至 交银周期回报灵活配置混合A",
+            "orderConfirmDate": 1577980800000,
+            "fund": {
+                "fundCode": "006793",
+                "fundName": "交银稳鑫短债债券A"
+            },
+            "destFund": {
+                "fundCode": "519738",
+                "fundName": "交银周期回报灵活配置混合A"
+            },
+            "uiOrderDesc": "已于2020年1月3日确认完成"
+        },
+        {
+            "orderId": "2020010201369694",
+            "payStatus": "0",
+            "cancelable": false,
+            "acceptTime": 1577947800000,
+            "nav": 1.0326,
+            "fee": 30.56,
+            "uiAmount": 15309.93,
+            "uiShare": 14826.58,
+            "confirmStatus": "2",
+            "orderStatus": "SUCCESS",
+            "uiOrderStatusName": "成功",
+            "uiConfirmStatusName": "成功",
+            "tradeByShare": true,
+            "orderCode": "036",
+            "uiOrderCodeName": "转换至 交银纯债A/B",
+            "orderConfirmDate": 1577980800000,
+            "fund": {
+                "fundCode": "006793",
+                "fundName": "交银稳鑫短债债券A"
+            },
+            "destFund": {
+                "fundCode": "519718",
+                "fundName": "交银纯债A/B"
+            },
+            "uiOrderDesc": "已于2020年1月3日确认完成"
+        },
+        {
+            "orderId": "2020010201369696",
+            "payStatus": "0",
+            "cancelable": false,
+            "acceptTime": 1577947800000,
+            "transferIntoDate": 1577980800000,
+            "nav": 1.0832,
+            "fee": 0,
+            "uiAmount": 152273.48,
+            "uiShare": 140577.44,
+            "confirmStatus": "2",
+            "orderStatus": "SUCCESS",
+            "uiOrderStatusName": "成功",
+            "uiConfirmStatusName": "成功",
+            "tradeByShare": true,
+            "orderCode": "W05",
+            "uiOrderCodeName": "赎回至现金",
+            "orderConfirmDate": 1577980800000,
+            "fund": {
+                "fundCode": "519776",
+                "fundName": "交银裕盈纯债债券A"
+            },
+            "uiOrderDesc": "已于2020年1月3日确认完成"
+        },
+        {
+            "orderId": "2020010301689694",
+            "payStatus": "2",
+            "cancelable": false,
+            "acceptTime": 1578034200000,
+            "nav": 1.146,
+            "fee": 121.72,
+            "uiAmount": 152273.48,
+            "uiShare": 132767.68,
+            "confirmStatus": "2",
+            "orderStatus": "SUCCESS",
+            "uiOrderStatusName": "成功",
+            "uiConfirmStatusName": "成功",
+            "tradeByShare": false,
+            "orderCode": "W04",
+            "uiOrderCodeName": "现金申购",
+            "orderConfirmDate": 1578240000000,
+            "fund": {
+                "fundCode": "164902",
+                "fundName": "交银信用添利债券(LOF)"
+            },
+            "uiOrderDesc": "已于2020年1月6日确认完成"
+        }
+    ],
+    "cancelable": false
+}

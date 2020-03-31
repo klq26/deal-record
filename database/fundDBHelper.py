@@ -101,7 +101,7 @@ class fundDBHelper:
     # 返回最新一条数据的日期
     def selectLatestRecordFromTable(self, code):
         sql = u'SELECT * FROM nav_{0} ORDER BY DATE DESC LIMIT 1;'.format(code)
-        print(sql)
+        # print(sql)
         db = self.connect()
         cursor = db.cursor()
         try:
@@ -117,13 +117,15 @@ class fundDBHelper:
             db.close()
         if len(results) > 0:
             # 返回第一条数据的日期('data', 'nav_unit', 'nav_acc')
-            return results[0][0]
+            return results[0]
         else:
             return None
 
     # 插入数据
     def insertDataToTable(self, tablename, keys, values):
-        sql_keys = keys # ['date', 'nav_unit', 'nav_acc']
+        sql_keys = keys
+        if len(sql_keys) == 0:
+            sql_keys = ['date', 'nav_unit', 'nav_acc']
         sql_values = values
         d = dict(zip(sql_keys, sql_values))
         # 字段超多时（本例中 22 个字段，用下面方法配合字典插入）

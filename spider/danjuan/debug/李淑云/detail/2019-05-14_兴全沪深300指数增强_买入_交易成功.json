@@ -1,0 +1,19 @@
+{
+    "data": {
+        "order_id": "3104141118361041020",
+        "uid": 194897199,
+        "code": "163407",
+        "name": "兴全沪深300指数增强",
+        "ttype": "fund",
+        "status": "success",
+        "action": "022",
+        "amount": 30,
+        "status_desc": "交易成功",
+        "action_desc": "买入",
+        "created_at": 1557835826794,
+        "title": "兴全沪深300指数增强",
+        "value_desc": "30.0元",
+        "convert": false
+    },
+    "result_code": 0
+}
