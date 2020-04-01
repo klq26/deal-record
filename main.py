@@ -6,6 +6,7 @@ from login.account import account
 from login.requestHeaderManager import requestHeaderManager
 from tools.fundInfoSpider import fundInfoSpider
 from tools.fundNavUpdater import fundNavUpdater
+from tools.dividendInfoSpider import dividendInfoSpider
 from database.fundDBHelper import fundDBHelper
 from spider.tiantian.tiantianSpider import tiantianSpider
 from spider.danjuan.danjuanSpider import danjuanSpider
@@ -37,7 +38,7 @@ if __name__ == "__main__":
     # fundInfoSpider().get(['000051', '001112', '162413', '162711'])
 
     danjuan = danjuanSpider(strategy='klq')
-    danjuan.get()
+    # danjuan.get()
     # df = danjuan.uniqueCodes()
     # print(df)
     # danjuan_allCode = list(df['code'])
@@ -85,6 +86,10 @@ if __name__ == "__main__":
     #         code = filename.split('_')[0]
     #         with open(filepath, 'r',encoding='utf-8') as f:
     #             db.insertFundByJonsData(json.loads(f.read()))
+
+    # 拉取库存基金的历史分红信息
+    divide = dividendInfoSpider()
+    # divide.get(db.getAllCodesInDB())
 
     # 拉最新数据
     # for item in tiantian_indexFundCode:

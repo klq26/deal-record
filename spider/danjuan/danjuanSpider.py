@@ -61,7 +61,8 @@ class danjuanSpider:
             jsonData = json.loads(f.read())
             datalist = jsonData['data']['items']
             detail_url = u'https://danjuanapp.com/djapi/order/p/plan/{0}'
-            sub_order_url = u'https://danjuanapp.com/djapi/plan/order/{0}'
+            # 这个是专门为了去拿一下确认净值的，其他信息 detail_url 都有了
+            nav_detail_url = u'https://danjuanapp.com/djapi/plan/order/{0}'
             folder = os.path.join(self.folder, 'debug', self.owner, 'detail')
             if not os.path.exists(folder):
                 os.makedirs(folder)
