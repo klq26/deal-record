@@ -176,7 +176,7 @@ class fundDBHelper:
     def selectFundNavByDate(self, code, date):
         if code not in self.selectAllFundNavCodes():
             return [date, -1, -1]
-        sql = u"SELECT * FROM nav_{0} WHERE DATE = '{1}';".format(code, date)
+        sql = u"SELECT * FROM nav_{0} WHERE DATE >= '{1}' ORDER BY DATE ASC LIMIT 1;".format(code, date)
         # print(sql)
         db = self.connect()
         cursor = db.cursor()
@@ -203,6 +203,32 @@ class fundDBHelper:
         if code not in self.selectAllFundNavCodes():
             return [date, -1, -1]
         sql = u"SELECT * FROM nav_{0} WHERE DATE < '{1}' ORDER BY DATE DESC LIMIT 1;".format(code, date)
+        # print(sql)
+        db = self.connect()
+        cursor = db.cursor()
+        results = []
+        try:
+            cursor.execute(sql)
+            db.commit()
+            results = cursor.fetchall()
+        except Exception as e:
+            # 表存在就回滚操作
+            db.rollback()
+            print(e)
+        finally:
+            cursor.close()
+            db.close()
+        if len(results) > 0:
+            # 返回第一条数据的日期('data', 'nav_unit', 'nav_acc')
+            return results[0]
+        else:
+            return None
+    
+    # 返回特定日期前一个有效净值日的基金净值数据
+    def selectFundNavAfterDate(self, code, date):
+        if code not in self.selectAllFundNavCodes():
+            return [date, -1, -1]
+        sql = u"SELECT * FROM nav_{0} WHERE DATE > '{1}' ORDER BY DATE ASC LIMIT 1;".format(code, date)
         # print(sql)
         db = self.connect()
         cursor = db.cursor()

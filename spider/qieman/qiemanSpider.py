@@ -12,6 +12,7 @@ from requests.packages.urllib3.exceptions import InsecureRequestWarning
 import pandas as pd
 
 from login.requestHeaderManager import requestHeaderManager
+from database.fundDBHelper import fundDBHelper
 
 class qiemanSpider:
 
@@ -43,8 +44,7 @@ class qiemanSpider:
 
     def get(self):
         print('且慢：{0} 获取中..'.format(self.owner))
-        
-        
+        db = fundDBHelper()
         index = 0
         all_model_keys = ['id', 'date', 'code', 'name', 'dealType', 'nav_unit', 'nav_acc', 'volume', 'dealMoney', 'fee', 'occurMoney', 'account', 'note']
         # 取 500 条
@@ -97,7 +97,8 @@ class qiemanSpider:
                     # "orderUrl": "https://qieman.com/orders/PO202003199FANFSMAQIUR",
                     # "capitalAccountName": "长赢指数投资计划-150份"
                     unix_ts = int(int(item['acceptTime'])/1000)
-                    date = str(datetime.fromtimestamp(unix_ts))[0:10]
+                    dateObj = datetime.fromtimestamp(unix_ts)
+                    date = str(dateObj)[0:10]
                     order_id = item['orderId']
                     detail_file = os.path.join(folder, '{0}_{1}_{2}_{3}.json'.format(date, item['umaName'], item['uiOrderCodeName'], item['uiOrderStatusName']))
                     if not os.path.exists(detail_file):
@@ -117,27 +118,50 @@ class qiemanSpider:
                             # id
                             all_model_values = [index]
                             # date
-                            unix_ts = int(int(order['acceptTime'])/1000)
-                            all_model_values.append(str(datetime.fromtimestamp(unix_ts))[0:10])
+                            unix_ts = int(int(item['acceptTime'])/1000)
+                            dateObj = datetime.fromtimestamp(unix_ts)
+                            date = str(dateObj)[0:10]
+                            hour = dateObj.hour
+                            all_model_values.append(date)
                             all_model_values.append(order['fund']['fundCode'])
                             all_model_values.append(order['fund']['fundName'])
                             confirm_amount = order['uiAmount']
                             confirm_volume = order['uiShare']
                             fee = order['fee']
                             occurMoney = order['uiAmount']
-                            
-                            if confirm_volume > 0:
-                                if u'买' in order['uiOrderCodeName']:
+                            nav_unit = 0.0
+                            nav_acc = 0.0
+                            opType = order['uiOrderCodeName']
+                            if u'分红' in opType:
+                                all_model_values.append('分红')
+                                occurMoney = confirm_amount
+                                db_record = db.selectNearestDividendDateFundNav(code = all_model_values[2], date = all_model_values[1])
+                                nav_unit = db_record[1]
+                                nav_acc = db_record[2]
+                                all_model_values.append(nav_unit)
+                                all_model_values.append(nav_acc)
+                            else:
+                                db_record = None
+                                if hour >= 15:
+                                    # 超过15点，净值应该按下一个交易日算
+                                    # 注意：目前发现只有且慢给回的信息是这样的。蛋卷给回的都是 00:00:00 的时间戳
+                                    db_record = db.selectFundNavAfterDate(code = all_model_values[2], date = all_model_values[1])
+                                else:
+                                    db_record = db.selectFundNavByDate(code = all_model_values[2], date = all_model_values[1])
+                                nav_acc = db_record[2]
+                                # 如果是 01-01 这样节日下单，日期应该换成有效交易日，即顺延的下一天
+                                all_model_values[1] = db_record[0]
+                                if u'买' in opType or u'申' in opType or u'转换至' in opType:
                                     all_model_values.append('买入')
                                     confirm_amount = round(occurMoney - fee, 2)
                                 elif u'赎' in order['uiOrderCodeName']:
                                     all_model_values.append('卖出')
                                     confirm_amount = round(occurMoney + fee, 2)
                                 else:
-                                    continue
-                            all_model_values.append(order['nav'])
-                            # nav_acc TODO
-                            all_model_values.append(0.0001)
+                                    print('未知操作：{0}'.format(opType))
+                                    all_model_values.append(opType)
+                                all_model_values.append(order['nav'])
+                                all_model_values.append(nav_acc)
                             all_model_values.append(confirm_volume)
                             all_model_values.append(confirm_amount)
                             all_model_values.append(fee)
