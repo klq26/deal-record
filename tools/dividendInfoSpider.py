@@ -47,7 +47,7 @@ class dividendInfoSpider:
                     count = len(values)
                     items = []
                     # count == 1 表示“暂无分红信息!”
-                    if count > 5:
+                    if count >= 5:
                         items = []
                         # 年份	权益登记日	除息日	每份分红	分红发放日
                         for i in range(0, count, 5):
@@ -68,7 +68,7 @@ class dividendInfoSpider:
                     count = len(values)
                     items = []
                     # count == 1 表示“暂无分红信息!”
-                    if count > 4:
+                    if count >= 4:
                         items = []
                         # 年份	拆分折算日	拆分类型	拆分折算比例
                         for i in range(0, count, 4):

@@ -98,6 +98,11 @@ class danjuanSpider:
                                 continue
                             orderlist = jsonData['sub_order_list'][0]['orders']
                             for order in orderlist:
+                                if '货币' in order['fd_name']:
+                                    # 暂时不收集货币基金操作
+                                    print('忽略：{0}'.format(detail_file))
+                                    continue
+
                                 # "plan_name": "螺丝钉指数基金组合",
                                 # "fd_code": "003318",
                                 # "fd_name": "景顺长城中证500低波动",
@@ -134,21 +139,31 @@ class danjuanSpider:
                                 all_model_values.append(order['fd_name'])
                                 confirm_amount = order['confirm_amount']
                                 confirm_volume = order['confirm_volume']
-                                
                                 fee = order['fee']
                                 occurMoney = 0
-                                all_model_values.append(order['action_desc'])
-                                if confirm_volume > 0:
+                                opType = order['action_desc']
+                                nav_unit = 0.0
+                                nav_acc = 0.0
+                                all_model_values.append(opType)
+                                if opType == '分红':
+                                    occurMoney = confirm_amount
+                                    db_record = db.selectNearestDividendDateFundNav(code = all_model_values[2], date = all_model_values[1])
+                                    nav_unit = db_record[1]
+                                    nav_acc = db_record[2]
+                                    all_model_values.append(nav_unit)
+                                else:
+                                    # 净值
+                                    db_record = db.selectFundNavByDate(code = all_model_values[2], date = all_model_values[1])
+                                    nav_unit = db_record[1]
+                                    nav_acc = db_record[2]
+                                    all_model_values.append(nav_unit)
                                     if order['action_desc'] == '买入':
-                                        all_model_values.append(round((confirm_amount - fee) / confirm_volume, 4))
                                         occurMoney = round(confirm_amount + fee, 2)
                                     elif order['action_desc'] == '卖出':
-                                        all_model_values.append(round((confirm_amount + fee) / confirm_volume, 4))
                                         occurMoney = round(confirm_amount - fee, 2)
                                     else:
                                         continue
-                                # nav_acc TODO
-                                all_model_values.append(0.0001)
+                                all_model_values.append(nav_acc)
                                 all_model_values.append(confirm_volume)
                                 all_model_values.append(confirm_amount)
                                 all_model_values.append(fee)

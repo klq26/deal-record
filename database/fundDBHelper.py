@@ -227,7 +227,7 @@ class fundDBHelper:
     def selectNearestDividendDateFundNav(self, code, date):
         if code not in self.selectAllFundDividendCodes():
             return [date, -1, -1]
-        sql = u"SELECT * FROM fund_dividend WHERE 代码 = {0} AND 除息日 < '{1}' ORDER BY 除息日 DESC LIMIT 1;".format(code, date)
+        sql = u"SELECT * FROM fund_dividend WHERE 代码 = {0} AND 除息日 <= '{1}' ORDER BY 除息日 DESC LIMIT 1;".format(code, date)
         # print(sql)
         db = self.connect()
         cursor = db.cursor()

@@ -25,8 +25,8 @@ if __name__ == "__main__":
     # 测试系统路径
     # [print(x) for x in sys.path]
 
-    tiantian = tiantianSpider(strategy='lsy')
-    tiantian.get()
+    tiantian = tiantianSpider(strategy='klq')
+    # tiantian.get()
     # df = tiantian.uniqueCodes()
     # tiantian_allCode = list(df['code'])
     # print(df)
