@@ -71,14 +71,9 @@ if __name__ == "__main__":
 
     # 写入数据库
     db = fundDBHelper()
-    # print(db.selectFundNavByDate('100032','2018-01-19'))
-    # db_tables = db.getAllCodesInDB()
-    # for code in db_tables:
-    #     results = db.selectLatestRecordFromTable(code)
-    #     print(code, results)
 
     # 创建 fund_info 数据库
-    # db.addFundInfoTableIfNeeded()
+    # db.createFundInfoTableIfNeeded()
     # folder = os.path.join(os.getcwd(), 'tools','fund_data')
     # for root, dirs, files in os.walk(folder):
     #     for filename in files:
@@ -89,18 +84,8 @@ if __name__ == "__main__":
 
     # 拉取库存基金的历史分红信息
     divide = dividendInfoSpider()
-    # divide.get(db.getAllCodesInDB())
-
-    # 拉最新数据
-    # for item in tiantian_indexFundCode:
-    #     results = db.selectLatestRecordFromTable(item)
-    #     print(item, results)
-    # for item in danjuan_indexFunCode:
-    #     results = db.selectLatestRecordFromTable(item)
-    #     print(item, results)
-    # for item in qieman_indexFunCode:
-    #     results = db.selectLatestRecordFromTable(item)
-    #     print(item, results)
+    # divide.get(db.selectAllFundNavCodes())
+    # divide.insertToDB()
 
     # 更新数据库中的净值到今天
     # updater = fundNavUpdater()

@@ -16,9 +16,9 @@ class fundNavUpdater:
         pass
 
     def update(self):
-        codes = self.db.getAllCodesInDB()
+        codes = self.db.selectAllFundNavCodes()
         for code in codes:
-            result = self.db.selectLatestRecordFromTable(code)
+            result = self.db.selectLatestRecordFromFundNavTable(code)
             lastDate = datetime.strptime(result[0], '%Y-%m-%d')
             # 比最新记录多一天
             startDate = lastDate + timedelta(days = 1)
