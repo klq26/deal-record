@@ -83,6 +83,7 @@ class fundDBHelper:
     def addNavTableIfNeeded(self, tablename):
         if tablename in self.getAllCodesInDB():
             print('Table: nav_{0} exist.'.format(tablename))
+            return
         sql = 'CREATE TABLE nav_{0} (date VARCHAR(20) NOT NULL, nav_unit FLOAT NOT NULL, nav_acc FLOAT NOT NULL, PRIMARY KEY (date))'.format(tablename)
         print(sql)
         db = self.connect()
@@ -176,6 +177,56 @@ class fundDBHelper:
             items.append(item['navUnit'])
             items.append(item['navAcc'])
             self.insertDataToTable('nav_{0}'.format(code), keys = ['date', 'nav_unit', 'nav_acc'], values = items)
+
+    def selectFundNavBeforeDate(self, code, date):
+        if code not in self.getAllCodesInDB():
+            return [date, -1, -1]
+        sql = u"SELECT * FROM nav_{0} WHERE DATE < '{1}' ORDER BY DATE DESC LIMIT 1;".format(code, date)
+        # print(sql)
+        db = self.connect()
+        cursor = db.cursor()
+        results = []
+        try:
+            cursor.execute(sql)
+            db.commit()
+            results = cursor.fetchall()
+        except Exception as e:
+            # 表存在就回滚操作
+            db.rollback()
+            print(e)
+        finally:
+            cursor.close()
+            db.close()
+        if len(results) > 0:
+            # 返回第一条数据的日期('data', 'nav_unit', 'nav_acc')
+            return results[0]
+        else:
+            return None
+
+    def selectFundNavByDate(self, code, date):
+        if code not in self.getAllCodesInDB():
+            return [date, -1, -1]
+        sql = u"SELECT * FROM nav_{0} WHERE DATE = '{1}';".format(code, date)
+        # print(sql)
+        db = self.connect()
+        cursor = db.cursor()
+        results = []
+        try:
+            cursor.execute(sql)
+            db.commit()
+            results = cursor.fetchall()
+        except Exception as e:
+            # 表存在就回滚操作
+            db.rollback()
+            print(e)
+        finally:
+            cursor.close()
+            db.close()
+        if len(results) > 0:
+            # 返回第一条数据的日期('data', 'nav_unit', 'nav_acc')
+            return results[0]
+        else:
+            return None
 
 if __name__ == "__main__":
     db = fundDBHelper()

@@ -2,6 +2,7 @@
 
 import os
 import sys
+import math
 import json
 from datetime import datetime
 import ssl
@@ -12,6 +13,7 @@ from requests.packages.urllib3.exceptions import InsecureRequestWarning
 import pandas as pd
 
 from login.requestHeaderManager import requestHeaderManager
+from database.fundDBHelper import fundDBHelper
 
 class danjuanSpider:
 
@@ -37,6 +39,7 @@ class danjuanSpider:
     # 获取数据
     def get(self):
         print('蛋卷：{0} 获取中..'.format(self.owner))
+        db = fundDBHelper()
         deal_list_url = u'https://danjuanapp.com/djapi/order/p/list?page=1&size=2000&type=all'
         # 获取所有的成交记录概述
         response = requests.get(deal_list_url, headers = self.headers, verify=False)
@@ -58,6 +61,7 @@ class danjuanSpider:
             jsonData = json.loads(f.read())
             datalist = jsonData['data']['items']
             detail_url = u'https://danjuanapp.com/djapi/order/p/plan/{0}'
+            sub_order_url = u'https://danjuanapp.com/djapi/plan/order/{0}'
             folder = os.path.join(self.folder, 'debug', self.owner, 'detail')
             if not os.path.exists(folder):
                 os.makedirs(folder)

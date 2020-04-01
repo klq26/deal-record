@@ -24,7 +24,7 @@ if __name__ == "__main__":
     # 测试系统路径
     # [print(x) for x in sys.path]
 
-    tiantian = tiantianSpider(strategy='lsy')
+    tiantian = tiantianSpider(strategy='klq')
     # tiantian.get()
     # df = tiantian.uniqueCodes()
     # tiantian_allCode = list(df['code'])
@@ -36,8 +36,8 @@ if __name__ == "__main__":
     # 下载天天基金历史净值
     # fundInfoSpider().get(['000051', '001112', '162413', '162711'])
 
-    danjuan = danjuanSpider(strategy='lsy')
-    # danjuan.get()
+    danjuan = danjuanSpider(strategy='klq')
+    danjuan.get()
     # df = danjuan.uniqueCodes()
     # print(df)
     # danjuan_allCode = list(df['code'])
@@ -62,14 +62,15 @@ if __name__ == "__main__":
     #         print(code)
     # fundInfoSpider().get(['006793', '164902', '519700', '519718', '519723', '519738', '519752', '519755', '519776'])
 
-    huatai = huataiSpider()
+    # huatai = huataiSpider()
     # huatai.get()
 
-    huabao = huabaoSpider()
-    huabao.get()
+    # huabao = huabaoSpider()
+    # huabao.get()
 
     # 写入数据库
     db = fundDBHelper()
+    # print(db.selectFundNavByDate('100032','2018-01-19'))
     # db_tables = db.getAllCodesInDB()
     # for code in db_tables:
     #     results = db.selectLatestRecordFromTable(code)

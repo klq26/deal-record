@@ -93,6 +93,7 @@ class huabaoSpider:
             item = dict(zip(all_model_keys, list(x)))
             # 最后一次修改
             item['date'] = '{0}/{1}/{2}'.format(str(item['date'])[0:4],str(item['date'])[4:6],str(item['date'])[6:8])
+            item['code'] = str(item['code'])
             if item['dealType'] == '基金申购':
                 item['dealType'] = '买入'
             if item['dealType'] == '买入':
@@ -106,6 +107,12 @@ class huabaoSpider:
                 others.append(item)
             # print(item)
         # 5. 命中 & 过滤分别保存到不同文件。可以通过浏览过滤文件确保没有漏掉有用信息 #
+        records.sort(key=lambda x: x['date'])
+        for i in range(1, len(records) + 1):
+            records[i-1]['id'] = i
+        others.sort(key=lambda x: x['date'])
+        for i in range(1, len(others) + 1):
+            others[i-1]['id'] = i
         with open(os.path.join(self.folder, 'output', u'康力泉' + u'_record.json'), 'w+', encoding='utf-8') as f:
             f.write(json.dumps(records,ensure_ascii=False, indent=4))
         with open(os.path.join(self.folder, 'output', u'康力泉' + u'_other.json'), 'w+', encoding='utf-8') as f:

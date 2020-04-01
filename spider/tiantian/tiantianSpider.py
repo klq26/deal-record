@@ -3,6 +3,7 @@
 import os
 import sys
 import json
+import math
 from datetime import datetime
 from datetime import timedelta
 import ssl
@@ -15,6 +16,7 @@ from bs4 import BeautifulSoup
 import pandas as pd
 
 from login.requestHeaderManager import requestHeaderManager
+from database.fundDBHelper import fundDBHelper
 
 class tiantianSpider:
 
@@ -40,6 +42,7 @@ class tiantianSpider:
     # 获取数据
     def get(self):
         print('天天：{0} 获取中..'.format(self.owner))
+        db = fundDBHelper()
         # 获取时间间隔内的交易列表
         for interval in self.dateIntervals:
             htmlText = ''
@@ -129,6 +132,7 @@ class tiantianSpider:
                 all_model_values.append(confirmInfo['fundCode'])
                 all_model_values.append(confirmInfo['fundName'])
                 all_model_values.append('分红')
+                occurMoney = confirmMoney
             else:
                 all_model_values.append(applyInfo['applyDate'])
                 all_model_values.append(confirmInfo['fundCode'])
@@ -144,14 +148,31 @@ class tiantianSpider:
                 else:
                     # 目前只处理指数基金的买入，卖出，分红
                     print('忽略非买卖分红交易：{0}\n{1}\n'.format(opType, x))
-                    continue
                     all_model_values.append('错误')
-            all_model_values.append(confirmInfo['confirmNavUnit'])
-            all_model_values.append('待实现')
-            all_model_values.append(volume)
-            all_model_values.append(dealMoney)
-            all_model_values.append(fee)
-            all_model_values.append(occurMoney)
+                    continue
+            all_model_values.append(round(float(confirmInfo['confirmNavUnit']), 4))
+            # 数据库拿历史净值
+            if all_model_values[4] == u'分红':
+                # 如果是分红，可能需要拿到确认日前一天的数据
+                db_record = db.selectFundNavBeforeDate(code = all_model_values[2], date = all_model_values[1])
+            else:
+                # 正常拿买入净值
+                db_record = db.selectFundNavByDate(code = all_model_values[2], date = all_model_values[1])
+            # 如果查询的是货币基金，没有库存时返回 -1
+            if db_record[1] == -1:
+                all_model_values.append(round(float(confirmInfo['confirmNavUnit']), 4))
+            # 如果库存单位净值和网站给出精确一致，则应用库存累计净值
+            elif math.isclose(float(db_record[1]), all_model_values[5], rel_tol=1e-5):
+                all_model_values.append(round(float(db_record[2]), 4))
+            else:
+            # 如果库存单位净值和网站给出不一致，则应用 0 
+                print('[ERROR] 库存单位净值和网站给出不等。\n{0}\n\n{1}'.format(db_record, x))
+                all_model_values.append(round(0.0000, 4))
+                # exit(1)
+            all_model_values.append(round(float(volume), 2))
+            all_model_values.append(round(float(dealMoney), 2))
+            all_model_values.append(round(float(fee), 2))
+            all_model_values.append(round(float(occurMoney), 2))
             all_model_values.append(self.owner)
             all_model_values.append(x['详情页'])
             itemDict = dict(zip(all_model_keys, all_model_values))
@@ -278,27 +299,6 @@ class tiantianSpider:
                     values.insert(6, '待实现')
                     jsonData['确认信息'] = (dict(zip(confirmInfo_keys, values)))
         return jsonData
-
-    
-        # with open(os.path.join(os.getcwd(),'{0}_record.html'.format(self.owner)), 'w+', encoding='utf-8') as f:
-        # length = len(detail_url_list)
-        # length = 5
-        # for i in range(0, length):
-        #     detail_url = detail_url_list[i]
-        #     print(detail_url)
-        #     detailInfo = getDetailInfo(detail_url)
-        #     f.write('<div>' + '\n')
-        #     f.write('<div>交易序号：{0} / {1}</div>'.format(i + 1, length) + '\n')
-        #     f.write('<a href=\'{0}\' target=\'_blank\'>{1}</a><br/>'.format(detail_url, detail_url) + '\n')
-        #     f.write(detailInfo + '\n')
-        #     f.write('</div>' + '\n')
-        #     print(detail_url)
-
-        # 拿感兴趣的字段
-        # with open(os.path.join(os.getcwd(),'{0}_record.html'.format(self.owner)), 'r', encoding='utf-8') as f:
-        #     soup = BeautifulSoup(f.read(), 'lxml')
-        #     results = soup.findAll(lambda e: e.name == 'a' and len(e.contents) >= 3)
-        #     [print(x.contents[0] + '\t' + x.contents[2]) for x in results]
 
 if __name__ == "__main__":
     strategy = 'klq'
