@@ -88,7 +88,7 @@ class tiantianSpider:
         # 快速过户 = 快速取现金到银行卡，忽略
         # 转出投资账户确认 & 转入投资账户确认，忽略
         # 红利发放，只要指数基金的
-        # 强行调增，看效果类似分红，都要
+        # 强行调增，即拆分信息
         # 申购确认，赎回确认，都要
         allOpType = ['申购确认', '赎回确认', '红利发放(红利再投资)', '红利发放(现金分红)', '快速过户', '转出投资账户确认', '转入投资账户确认','强行调增']
         allNeededType = ['申购确认', '赎回确认', '红利发放(红利再投资)', '红利发放(现金分红)', '强行调增']
@@ -112,7 +112,7 @@ class tiantianSpider:
                 print('[ERROR] 天天 未知操作类型：{0}'.format(opType))
                 exit(1)
             # 收集货币基金分红信息，暂时备用
-            if u'红利发放' in opType and u'货币' in confirmInfo['fundName']:
+            if u'货币' in confirmInfo['fundName']:
                 allMoneyFundFenHong.append(x)
                 continue
             # 开始录入成交数据
@@ -126,13 +126,30 @@ class tiantianSpider:
             volume = confirmInfo['confirmVolume']
             dealMoney = 0
             occurMoney = 0
-            if u'红利发放' in opType or u'强行调增' in opType:
+            nav_unit = round(float(confirmInfo['confirmNavUnit']), 4)
+            nav_acc = 0.0
+            if u'红利发放' in opType:
                 # 分红的意思就是，被动操作，没有 applyInfo
                 all_model_values.append(confirmInfo['confirmDate'])
                 all_model_values.append(confirmInfo['fundCode'])
                 all_model_values.append(confirmInfo['fundName'])
                 all_model_values.append('分红')
                 occurMoney = confirmMoney
+                db_record = db.selectNearestDividendDateFundNav(code = all_model_values[2], date = all_model_values[1])
+                if nav_unit == 0.0:
+                    nav_unit = db_record[1]
+                nav_acc = db_record[2]
+            elif u'强行调增' in opType:
+                # 强行调增的意思就是，被动操作，没有 applyInfo
+                all_model_values.append(confirmInfo['confirmDate'])
+                all_model_values.append(confirmInfo['fundCode'])
+                all_model_values.append(confirmInfo['fundName'])
+                all_model_values.append('分红')
+                occurMoney = confirmMoney
+                db_record = db.selectNearestSplitDateFundNav(code = all_model_values[2], date = all_model_values[1])
+                if nav_unit == 0.0:
+                    nav_unit = db_record[1]
+                nav_acc = db_record[2]
             else:
                 all_model_values.append(applyInfo['applyDate'])
                 all_model_values.append(confirmInfo['fundCode'])
@@ -150,25 +167,13 @@ class tiantianSpider:
                     print('忽略非买卖分红交易：{0}\n{1}\n'.format(opType, x))
                     all_model_values.append('错误')
                     continue
-            all_model_values.append(round(float(confirmInfo['confirmNavUnit']), 4))
-            # 数据库拿历史净值
-            if all_model_values[4] == u'分红':
-                # 如果是分红，可能需要拿到确认日前一天的数据
-                db_record = db.selectFundNavBeforeDate(code = all_model_values[2], date = all_model_values[1])
-            else:
-                # 正常拿买入净值
-                db_record = db.selectFundNavByDate(code = all_model_values[2], date = all_model_values[1])
+                nav_acc = db.selectFundNavByDate(code = all_model_values[2], date = all_model_values[1])[2]
+            all_model_values.append(nav_unit)
             # 如果查询的是货币基金，没有库存时返回 -1
-            if db_record[1] == -1:
-                all_model_values.append(round(float(confirmInfo['confirmNavUnit']), 4))
+            if nav_acc == -1:
+                all_model_values.append(nav_unit)
             # 如果库存单位净值和网站给出精确一致，则应用库存累计净值
-            elif math.isclose(float(db_record[1]), all_model_values[5], rel_tol=1e-5):
-                all_model_values.append(round(float(db_record[2]), 4))
-            else:
-            # 如果库存单位净值和网站给出不一致，则应用 0 
-                print('[ERROR] 库存单位净值和网站给出不等。\n{0}\n\n{1}'.format(db_record, x))
-                all_model_values.append(round(0.0000, 4))
-                # exit(1)
+            all_model_values.append(round(float(nav_acc), 4))
             all_model_values.append(round(float(volume), 2))
             all_model_values.append(round(float(dealMoney), 2))
             all_model_values.append(round(float(fee), 2))

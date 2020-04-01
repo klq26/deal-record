@@ -111,6 +111,44 @@ class fundDBHelper:
             cursor.close()
             db.close()
 
+    # 获取数据库中所有支持分红信息的基金代码
+    def selectAllFundDividendCodes(self):
+        sql = "SELECT DISTINCT 代码 FROM fund_dividend"
+        db = self.connect()
+        cursor = db.cursor()
+        try:
+            cursor.execute(sql)
+            db.commit()
+            results = cursor.fetchall()
+            if len(results) > 0:
+                return [x[0] for x in list(results)]
+        except Exception as e:
+            # 表存在就回滚操作
+            db.rollback()
+            print(e)
+        finally:
+            cursor.close()
+            db.close()
+    
+    # 获取数据库中所有支持拆分折算信息的基金代码
+    def selectAllFundSplitCodes(self):
+        sql = "SELECT DISTINCT 代码 FROM fund_split"
+        db = self.connect()
+        cursor = db.cursor()
+        try:
+            cursor.execute(sql)
+            db.commit()
+            results = cursor.fetchall()
+            if len(results) > 0:
+                return [x[0] for x in list(results)]
+        except Exception as e:
+            # 表存在就回滚操作
+            db.rollback()
+            print(e)
+        finally:
+            cursor.close()
+            db.close()
+
     # 返回最新一条基金净值数据
     def selectLatestRecordFromFundNavTable(self, code):
         sql = u'SELECT * FROM nav_{0} ORDER BY DATE DESC LIMIT 1;'.format(code)
@@ -183,6 +221,55 @@ class fundDBHelper:
         if len(results) > 0:
             # 返回第一条数据的日期('data', 'nav_unit', 'nav_acc')
             return results[0]
+        else:
+            return None
+
+    def selectNearestDividendDateFundNav(self, code, date):
+        if code not in self.selectAllFundDividendCodes():
+            return [date, -1, -1]
+        sql = u"SELECT * FROM fund_dividend WHERE 代码 = {0} AND 除息日 < '{1}' ORDER BY 除息日 DESC LIMIT 1;".format(code, date)
+        # print(sql)
+        db = self.connect()
+        cursor = db.cursor()
+        try:
+            cursor.execute(sql)
+            db.commit()
+            results = cursor.fetchall()
+        except Exception as e:
+            # 表存在就回滚操作
+            db.rollback()
+            print(e)
+        finally:
+            cursor.close()
+            db.close()
+        if len(results) > 0:
+            dividendDate = results[0][4]
+            return self.selectFundNavByDate(code, dividendDate)
+        else:
+            return None
+    
+    def selectNearestSplitDateFundNav(self, code, date):
+        if code not in self.selectAllFundSplitCodes():
+            return [date, -1, -1]
+        sql = u"SELECT * FROM fund_split WHERE 代码 = {0} AND 拆分折算日 < '{1}' ORDER BY 拆分折算日 DESC LIMIT 1;".format(code, date)
+        # print(sql)
+        db = self.connect()
+        cursor = db.cursor()
+        try:
+            cursor.execute(sql)
+            db.commit()
+            results = cursor.fetchall()
+        except Exception as e:
+            # 表存在就回滚操作
+            db.rollback()
+            print(e)
+        finally:
+            cursor.close()
+            db.close()
+        if len(results) > 0:
+            # 拆分折算日
+            spliteDate = results[0][3]
+            return self.selectFundNavByDate(code, spliteDate)
         else:
             return None
 

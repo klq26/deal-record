@@ -1,141 +1,6 @@
 [
     {
         "id": 1,
-        "date": "2018-01-25",
-        "code": "000509",
-        "name": "广发钱袋子货币A",
-        "dealType": "买入",
-        "nav_unit": 1.0,
-        "nav_acc": 1.0,
-        "volume": 432100.0,
-        "dealMoney": 432100.0,
-        "fee": 0.0,
-        "occurMoney": 432100.0,
-        "account": "李淑云",
-        "note": "https://query.1234567.com.cn/Query/Detail?id=c93f293830d3409b86b528134493e06f&businType=22&traceNo="
-    },
-    {
-        "id": 2,
-        "date": "2018-03-12",
-        "code": "000509",
-        "name": "广发钱袋子货币A",
-        "dealType": "买入",
-        "nav_unit": 1.0,
-        "nav_acc": 1.0,
-        "volume": 2000.0,
-        "dealMoney": 2000.0,
-        "fee": 0.0,
-        "occurMoney": 2000.0,
-        "account": "李淑云",
-        "note": "https://query.1234567.com.cn/Query/Detail?id=7b9ac04a7b1e4578885cb451e84132d7&businType=22&traceNo="
-    },
-    {
-        "id": 3,
-        "date": "2018-04-10",
-        "code": "000509",
-        "name": "广发钱袋子货币A",
-        "dealType": "买入",
-        "nav_unit": 1.0,
-        "nav_acc": 1.0,
-        "volume": 1000.0,
-        "dealMoney": 1000.0,
-        "fee": 0.0,
-        "occurMoney": 1000.0,
-        "account": "李淑云",
-        "note": "https://query.1234567.com.cn/Query/Detail?id=78021ec8140444ccb786b206529361b9&businType=22&traceNo="
-    },
-    {
-        "id": 4,
-        "date": "2018-04-19",
-        "code": "000509",
-        "name": "广发钱袋子货币A",
-        "dealType": "买入",
-        "nav_unit": 1.0,
-        "nav_acc": 1.0,
-        "volume": 1000.0,
-        "dealMoney": 1000.0,
-        "fee": 0.0,
-        "occurMoney": 1000.0,
-        "account": "李淑云",
-        "note": "https://query.1234567.com.cn/Query/Detail?id=f32c4492ac2f470e96e7706cff4a593e&businType=22&traceNo="
-    },
-    {
-        "id": 5,
-        "date": "2018-04-20",
-        "code": "000509",
-        "name": "广发钱袋子货币A",
-        "dealType": "买入",
-        "nav_unit": 1.0,
-        "nav_acc": 1.0,
-        "volume": 1900.0,
-        "dealMoney": 1900.0,
-        "fee": 0.0,
-        "occurMoney": 1900.0,
-        "account": "李淑云",
-        "note": "https://query.1234567.com.cn/Query/Detail?id=acf23e47dabf497ba35a65d302841f9a&businType=22&traceNo="
-    },
-    {
-        "id": 6,
-        "date": "2018-05-14",
-        "code": "000891",
-        "name": "博时现金宝货币Ｂ",
-        "dealType": "买入",
-        "nav_unit": 1.0,
-        "nav_acc": 1.0,
-        "volume": 6000.0,
-        "dealMoney": 6000.0,
-        "fee": 0.0,
-        "occurMoney": 6000.0,
-        "account": "李淑云",
-        "note": "https://query.1234567.com.cn/Query/Detail?id=1583168350a44a119bc4d323466aee3f&businType=801&traceNo="
-    },
-    {
-        "id": 7,
-        "date": "2018-05-16",
-        "code": "000891",
-        "name": "博时现金宝货币Ｂ",
-        "dealType": "买入",
-        "nav_unit": 1.0,
-        "nav_acc": 1.0,
-        "volume": 1500.0,
-        "dealMoney": 1500.0,
-        "fee": 0.0,
-        "occurMoney": 1500.0,
-        "account": "李淑云",
-        "note": "https://query.1234567.com.cn/Query/Detail?id=8102fb2ddc7241fb90c54e6c07663ad1&businType=801&traceNo="
-    },
-    {
-        "id": 8,
-        "date": "2018-05-21",
-        "code": "000509",
-        "name": "广发钱袋子货币A",
-        "dealType": "卖出",
-        "nav_unit": 1.0,
-        "nav_acc": 1.0,
-        "volume": 443582.42,
-        "dealMoney": 443582.42,
-        "fee": 0.0,
-        "occurMoney": 443582.42,
-        "account": "李淑云",
-        "note": "https://query.1234567.com.cn/Query/Detail?id=fb384f0f70e64633adf8798ec2388850&businType=812&traceNo=1bb291399d0e4b50aa5db7259f609af7"
-    },
-    {
-        "id": 9,
-        "date": "2018-05-23",
-        "code": "000509",
-        "name": "广发钱袋子货币A",
-        "dealType": "卖出",
-        "nav_unit": 1.0,
-        "nav_acc": 1.0,
-        "volume": 191.57,
-        "dealMoney": 191.57,
-        "fee": 0.0,
-        "occurMoney": 191.57,
-        "account": "李淑云",
-        "note": "https://query.1234567.com.cn/Query/Detail?id=ebd5c54f190847a190996ef413fbc80e&businType=24&traceNo="
-    },
-    {
-        "id": 10,
         "date": "2018-05-25",
         "code": "001064",
         "name": "广发中证环保ETF联接A",
@@ -150,22 +15,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=180399205c3a4d31b0cbb116bae25d4f&businType=22&traceNo="
     },
     {
-        "id": 11,
-        "date": "2018-05-25",
-        "code": "000509",
-        "name": "广发钱袋子货币A",
-        "dealType": "卖出",
-        "nav_unit": 1.0,
-        "nav_acc": 1.0,
-        "volume": 0.04,
-        "dealMoney": 0.04,
-        "fee": 0.0,
-        "occurMoney": 0.04,
-        "account": "李淑云",
-        "note": "https://query.1234567.com.cn/Query/Detail?id=517b39f1f563458689a346a7fc5281b7&businType=24&traceNo="
-    },
-    {
-        "id": 12,
+        "id": 2,
         "date": "2018-05-25",
         "code": "004752",
         "name": "广发中证传媒ETF联接A",
@@ -180,7 +30,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=2c5dd8a6cfdc41119fc7ef9ff9d602e7&businType=22&traceNo="
     },
     {
-        "id": 13,
+        "id": 3,
         "date": "2018-05-25",
         "code": "162711",
         "name": "广发中证500ETF联接A",
@@ -195,7 +45,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=a2652f390a5a4aee9baedcac81b1f98c&businType=22&traceNo="
     },
     {
-        "id": 14,
+        "id": 4,
         "date": "2018-05-25",
         "code": "162413",
         "name": "华宝中证1000指数分级",
@@ -210,7 +60,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=a4e68124bb0240108208a5061828c8c4&businType=22&traceNo="
     },
     {
-        "id": 15,
+        "id": 5,
         "date": "2018-05-25",
         "code": "001064",
         "name": "广发中证环保ETF联接A",
@@ -225,67 +75,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=9e67a5fb98b34c8f8164fb51b57db515&businType=22&traceNo="
     },
     {
-        "id": 16,
-        "date": "2018-05-25",
-        "code": "000638",
-        "name": "富国富钱包货币",
-        "dealType": "卖出",
-        "nav_unit": 1.0,
-        "nav_acc": 1.0,
-        "volume": 443684.35,
-        "dealMoney": 443684.35,
-        "fee": 0.0,
-        "occurMoney": 443684.35,
-        "account": "李淑云",
-        "note": "https://query.1234567.com.cn/Query/Detail?id=f3b2ccb69d734f6db38d7da9774f4127&businType=802&traceNo="
-    },
-    {
-        "id": 17,
-        "date": "2018-05-25",
-        "code": "000891",
-        "name": "博时现金宝货币Ｂ",
-        "dealType": "卖出",
-        "nav_unit": 1.0,
-        "nav_acc": 1.0,
-        "volume": 7500.0,
-        "dealMoney": 7511.31,
-        "fee": 0.0,
-        "occurMoney": 7511.31,
-        "account": "李淑云",
-        "note": "https://query.1234567.com.cn/Query/Detail?id=85ed33c0a62847a1a7d38ea50e6bd8a4&businType=802&traceNo="
-    },
-    {
-        "id": 18,
-        "date": "2018-05-28",
-        "code": "003474",
-        "name": "南方天天利货币Ｂ",
-        "dealType": "买入",
-        "nav_unit": 1.0,
-        "nav_acc": 1.0,
-        "volume": 101000.0,
-        "dealMoney": 101000.0,
-        "fee": 0.0,
-        "occurMoney": 101000.0,
-        "account": "李淑云",
-        "note": "https://query.1234567.com.cn/Query/Detail?id=ce3e8607e3b246c78a78458016b105c8&businType=801&traceNo="
-    },
-    {
-        "id": 19,
-        "date": "2018-05-29",
-        "code": "003474",
-        "name": "南方天天利货币Ｂ",
-        "dealType": "买入",
-        "nav_unit": 1.0,
-        "nav_acc": 1.0,
-        "volume": 451858.74,
-        "dealMoney": 451858.74,
-        "fee": 0.0,
-        "occurMoney": 451858.74,
-        "account": "李淑云",
-        "note": "https://query.1234567.com.cn/Query/Detail?id=5c50dc2a941341e0a4833f254accf003&businType=801&traceNo="
-    },
-    {
-        "id": 20,
+        "id": 6,
         "date": "2018-05-30",
         "code": "162711",
         "name": "广发中证500ETF联接A",
@@ -300,97 +90,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=09fe7736fa724fb689126ed56b7a9a64&businType=22&traceNo="
     },
     {
-        "id": 21,
-        "date": "2018-06-01",
-        "code": "000638",
-        "name": "富国富钱包货币",
-        "dealType": "卖出",
-        "nav_unit": 1.0,
-        "nav_acc": 1.0,
-        "volume": 201.16,
-        "dealMoney": 201.16,
-        "fee": 0.0,
-        "occurMoney": 201.16,
-        "account": "李淑云",
-        "note": "https://query.1234567.com.cn/Query/Detail?id=da548d6cc1ea4349bee68a5e82c4d077&businType=802&traceNo="
-    },
-    {
-        "id": 22,
-        "date": "2018-06-04",
-        "code": "000638",
-        "name": "富国富钱包货币",
-        "dealType": "卖出",
-        "nav_unit": 1.0,
-        "nav_acc": 1.0,
-        "volume": 0.02,
-        "dealMoney": 0.02,
-        "fee": 0.0,
-        "occurMoney": 0.02,
-        "account": "李淑云",
-        "note": "https://query.1234567.com.cn/Query/Detail?id=b8be4d334ccb416586e334435771d84c&businType=802&traceNo="
-    },
-    {
-        "id": 23,
-        "date": "2018-06-13",
-        "code": "003474",
-        "name": "南方天天利货币Ｂ",
-        "dealType": "买入",
-        "nav_unit": 1.0,
-        "nav_acc": 1.0,
-        "volume": 2500.0,
-        "dealMoney": 2500.0,
-        "fee": 0.0,
-        "occurMoney": 2500.0,
-        "account": "李淑云",
-        "note": "https://query.1234567.com.cn/Query/Detail?id=909dd1f9cbdd452ba0bb219a8d5df741&businType=801&traceNo="
-    },
-    {
-        "id": 24,
-        "date": "2018-06-19",
-        "code": "003474",
-        "name": "南方天天利货币Ｂ",
-        "dealType": "买入",
-        "nav_unit": 1.0,
-        "nav_acc": 1.0,
-        "volume": 3000.0,
-        "dealMoney": 3000.0,
-        "fee": 0.0,
-        "occurMoney": 3000.0,
-        "account": "李淑云",
-        "note": "https://query.1234567.com.cn/Query/Detail?id=76cfe6dc435345d3b09bba8cebb9c818&businType=801&traceNo="
-    },
-    {
-        "id": 25,
-        "date": "2018-06-19",
-        "code": "003474",
-        "name": "南方天天利货币Ｂ",
-        "dealType": "买入",
-        "nav_unit": 1.0,
-        "nav_acc": 1.0,
-        "volume": 10000.0,
-        "dealMoney": 10000.0,
-        "fee": 0.0,
-        "occurMoney": 10000.0,
-        "account": "李淑云",
-        "note": "https://query.1234567.com.cn/Query/Detail?id=f86e60e30f304c14b7e2871883c1ff70&businType=801&traceNo="
-    },
-    {
-        "id": 26,
-        "date": "2018-06-19",
-        "code": "003474",
-        "name": "南方天天利货币Ｂ",
-        "dealType": "买入",
-        "nav_unit": 1.0,
-        "nav_acc": 1.0,
-        "volume": 10000.0,
-        "dealMoney": 10000.0,
-        "fee": 0.0,
-        "occurMoney": 10000.0,
-        "account": "李淑云",
-        "note": "https://query.1234567.com.cn/Query/Detail?id=8e731c86ba4744888b073f6f5d02bfd5&businType=801&traceNo="
-    },
-    {
-        "id": 27,
+        "id": 7,
         "date": "2018-06-19",
         "code": "340001",
         "name": "兴全可转债混合",
@@ -405,7 +105,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=f77e03ae912b4857b1ab2ba028fdafa4&businType=22&traceNo="
     },
     {
-        "id": 28,
+        "id": 8,
         "date": "2018-06-19",
         "code": "502010",
         "name": "易方达证券公司分级",
@@ -420,7 +120,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=15ab752a2ce648b18b33021fd8287aea&businType=22&traceNo="
     },
     {
-        "id": 29,
+        "id": 9,
         "date": "2018-06-19",
         "code": "162711",
         "name": "广发中证500ETF联接A",
@@ -435,7 +135,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=065156db4af1421ca60bf9490031d85d&businType=22&traceNo="
     },
     {
-        "id": 30,
+        "id": 10,
         "date": "2018-07-05",
         "code": "001051",
         "name": "华夏上证50ETF联接A",
@@ -450,7 +150,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=cf3a57f7ca4149279fab77e1ecec5e20&businType=22&traceNo="
     },
     {
-        "id": 31,
+        "id": 11,
         "date": "2018-07-05",
         "code": "100032",
         "name": "富国中证红利指数增强",
@@ -465,7 +165,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=404c49922b5f4c7497e4c2677ca99243&businType=22&traceNo="
     },
     {
-        "id": 32,
+        "id": 12,
         "date": "2018-07-05",
         "code": "001469",
         "name": "广发中证全指金融地产联接A",
@@ -480,7 +180,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=0cfb9723af4743cc9f7e9b03ddfe9864&businType=22&traceNo="
     },
     {
-        "id": 33,
+        "id": 13,
         "date": "2018-07-05",
         "code": "100038",
         "name": "富国量化沪深300",
@@ -495,7 +195,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=ca8afd070e9945e888a6e6017ba22960&businType=22&traceNo="
     },
     {
-        "id": 34,
+        "id": 14,
         "date": "2018-07-05",
         "code": "100032",
         "name": "富国中证红利指数增强",
@@ -510,13 +210,13 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=c4c8a6db5b1c4a2f8ba815a295dd18f9&businType=22&traceNo="
     },
     {
-        "id": 35,
+        "id": 15,
         "date": "2018-07-09",
         "code": "502010",
         "name": "易方达证券公司分级",
         "dealType": "分红",
-        "nav_unit": 0.0,
-        "nav_acc": 0.0,
+        "nav_unit": 0.8028,
+        "nav_acc": 0.5287,
         "volume": 13.21,
         "dealMoney": 0.0,
         "fee": 0.0,
@@ -525,22 +225,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=201807099999180709303000072691&businType=144&traceNo="
     },
     {
-        "id": 36,
-        "date": "2018-07-16",
-        "code": "003474",
-        "name": "南方天天利货币Ｂ",
-        "dealType": "买入",
-        "nav_unit": 1.0,
-        "nav_acc": 1.0,
-        "volume": 2000.0,
-        "dealMoney": 2000.0,
-        "fee": 0.0,
-        "occurMoney": 2000.0,
-        "account": "李淑云",
-        "note": "https://query.1234567.com.cn/Query/Detail?id=a0757d3d6c2a479f97e469c7abfa4d4a&businType=801&traceNo="
-    },
-    {
-        "id": 37,
+        "id": 16,
         "date": "2018-08-06",
         "code": "162711",
         "name": "广发中证500ETF联接A",
@@ -555,7 +240,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=6c83ce8fc5734463aff27903597bd00e&businType=22&traceNo="
     },
     {
-        "id": 38,
+        "id": 17,
         "date": "2018-08-06",
         "code": "100038",
         "name": "富国量化沪深300",
@@ -570,7 +255,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=602bdc2082b946e3ab7befc33915e984&businType=22&traceNo="
     },
     {
-        "id": 39,
+        "id": 18,
         "date": "2018-08-06",
         "code": "100032",
         "name": "富国中证红利指数增强",
@@ -585,7 +270,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=d8ce1e49e89a483bb4792224313db891&businType=22&traceNo="
     },
     {
-        "id": 40,
+        "id": 19,
         "date": "2018-08-06",
         "code": "001180",
         "name": "广发医药卫生联接A",
@@ -600,7 +285,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=02ce121ed12b45d5810c420bbba26502&businType=22&traceNo="
     },
     {
-        "id": 41,
+        "id": 20,
         "date": "2018-08-06",
         "code": "100032",
         "name": "富国中证红利指数增强",
@@ -615,7 +300,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=24a7462d1b954e76a810df4ec2551de5&businType=22&traceNo=24a7462d1b954e76a810df4ec2551de5"
     },
     {
-        "id": 42,
+        "id": 21,
         "date": "2018-08-17",
         "code": "001180",
         "name": "广发医药卫生联接A",
@@ -630,22 +315,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=29246e24f4dc46de9d6df2419aff6bf2&businType=22&traceNo=29246e24f4dc46de9d6df2419aff6bf2"
     },
     {
-        "id": 43,
-        "date": "2018-08-17",
-        "code": "003474",
-        "name": "南方天天利货币Ｂ",
-        "dealType": "买入",
-        "nav_unit": 1.0,
-        "nav_acc": 1.0,
-        "volume": 1500.0,
-        "dealMoney": 1500.0,
-        "fee": 0.0,
-        "occurMoney": 1500.0,
-        "account": "李淑云",
-        "note": "https://query.1234567.com.cn/Query/Detail?id=6c5e5f0639994b129ea620de24ff0b2b&businType=801&traceNo="
-    },
-    {
-        "id": 44,
+        "id": 22,
         "date": "2018-08-20",
         "code": "000968",
         "name": "广发养老指数A",
@@ -660,7 +330,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=d8d55a30912d40c3bb2c94a80d11f57f&businType=22&traceNo="
     },
     {
-        "id": 45,
+        "id": 23,
         "date": "2018-09-03",
         "code": "100038",
         "name": "富国量化沪深300",
@@ -675,7 +345,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=e5dcf1366c7d4f3d88f614755e53ea18&businType=22&traceNo="
     },
     {
-        "id": 46,
+        "id": 24,
         "date": "2018-09-03",
         "code": "162711",
         "name": "广发中证500ETF联接A",
@@ -690,7 +360,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=24ccf8f7e2de4948adb76ec1b813e8b1&businType=22&traceNo="
     },
     {
-        "id": 47,
+        "id": 25,
         "date": "2018-09-10",
         "code": "162711",
         "name": "广发中证500ETF联接A",
@@ -705,7 +375,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=2db0bda103c44a11869a3480ac83398c&businType=22&traceNo="
     },
     {
-        "id": 48,
+        "id": 26,
         "date": "2018-09-10",
         "code": "004752",
         "name": "广发中证传媒ETF联接A",
@@ -720,22 +390,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=dd7bf8fcc2f04a4eba9985d1af5c2944&businType=22&traceNo="
     },
     {
-        "id": 49,
-        "date": "2018-09-25",
-        "code": "003474",
-        "name": "南方天天利货币Ｂ",
-        "dealType": "买入",
-        "nav_unit": 1.0,
-        "nav_acc": 1.0,
-        "volume": 2000.0,
-        "dealMoney": 2000.0,
-        "fee": 0.0,
-        "occurMoney": 2000.0,
-        "account": "李淑云",
-        "note": "https://query.1234567.com.cn/Query/Detail?id=70844d5ce83d4f518ed0f66fa9231781&businType=801&traceNo="
-    },
-    {
-        "id": 50,
+        "id": 27,
         "date": "2018-09-28",
         "code": "100032",
         "name": "富国中证红利指数增强",
@@ -750,7 +405,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=f9402195d2984a0f8dab37599e30cf8a&businType=22&traceNo="
     },
     {
-        "id": 51,
+        "id": 28,
         "date": "2018-09-28",
         "code": "100038",
         "name": "富国沪深300指数增强",
@@ -765,7 +420,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=246670d5e4ac435ab738b3d45f1cfa5e&businType=22&traceNo="
     },
     {
-        "id": 52,
+        "id": 29,
         "date": "2018-09-28",
         "code": "000968",
         "name": "广发养老指数A",
@@ -780,7 +435,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=768c7633b64848c19852722da52a4088&businType=22&traceNo="
     },
     {
-        "id": 53,
+        "id": 30,
         "date": "2018-09-28",
         "code": "001469",
         "name": "广发中证全指金融地产联接A",
@@ -795,7 +450,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=f9eb17181bf54f668ab45b219b44eaaf&businType=22&traceNo="
     },
     {
-        "id": 54,
+        "id": 31,
         "date": "2018-09-28",
         "code": "340001",
         "name": "兴全可转债混合",
@@ -810,7 +465,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=3d8c602d7e064aa4b40e0428ba4c3d83&businType=22&traceNo="
     },
     {
-        "id": 55,
+        "id": 32,
         "date": "2018-09-28",
         "code": "003765",
         "name": "广发创业板ETF联接A",
@@ -825,7 +480,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=e47e13f9ab0c4fb9b14acea3fe338170&businType=22&traceNo="
     },
     {
-        "id": 56,
+        "id": 33,
         "date": "2018-10-11",
         "code": "162711",
         "name": "广发中证500ETF联接A",
@@ -840,7 +495,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=30245aa656cc4d8bac2a03dea6151e64&businType=22&traceNo=30245aa656cc4d8bac2a03dea6151e64"
     },
     {
-        "id": 57,
+        "id": 34,
         "date": "2018-10-11",
         "code": "100032",
         "name": "富国中证红利指数增强",
@@ -855,7 +510,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=bad76b3e98b3490cb9ea7edb6534dea8&businType=22&traceNo=bad76b3e98b3490cb9ea7edb6534dea8"
     },
     {
-        "id": 58,
+        "id": 35,
         "date": "2018-10-11",
         "code": "000968",
         "name": "广发养老指数A",
@@ -870,7 +525,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=80d2c7547b6d43eda8c31763dbab86c6&businType=22&traceNo=80d2c7547b6d43eda8c31763dbab86c6"
     },
     {
-        "id": 59,
+        "id": 36,
         "date": "2018-10-11",
         "code": "001180",
         "name": "广发医药卫生联接A",
@@ -885,22 +540,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=d5da58c7c6114bdbbde2ba244316a10f&businType=22&traceNo=d5da58c7c6114bdbbde2ba244316a10f"
     },
     {
-        "id": 60,
-        "date": "2018-10-19",
-        "code": "003474",
-        "name": "南方天天利货币Ｂ",
-        "dealType": "买入",
-        "nav_unit": 1.0,
-        "nav_acc": 1.0,
-        "volume": 6000.0,
-        "dealMoney": 6000.0,
-        "fee": 0.0,
-        "occurMoney": 6000.0,
-        "account": "李淑云",
-        "note": "https://query.1234567.com.cn/Query/Detail?id=7e296fadc7e3481c9a680307867d46d4&businType=801&traceNo="
-    },
-    {
-        "id": 61,
+        "id": 37,
         "date": "2018-10-30",
         "code": "100032",
         "name": "富国中证红利指数增强",
@@ -915,7 +555,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=1770f9fd31914cc88825634d250228e8&businType=22&traceNo=1770f9fd31914cc88825634d250228e8"
     },
     {
-        "id": 62,
+        "id": 38,
         "date": "2018-10-30",
         "code": "100038",
         "name": "富国沪深300指数增强",
@@ -930,7 +570,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=d1d468d168374dfbae3a50a385125c7d&businType=22&traceNo="
     },
     {
-        "id": 63,
+        "id": 39,
         "date": "2018-10-30",
         "code": "110026",
         "name": "易方达创业板ETF联接A",
@@ -945,7 +585,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=0dd92b34432a4e2199e9c3bdcd91d0b0&businType=22&traceNo="
     },
     {
-        "id": 64,
+        "id": 40,
         "date": "2018-10-30",
         "code": "110022",
         "name": "易方达消费行业",
@@ -960,7 +600,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=2322832d2df54b3aa5ffc1908ed2d79e&businType=22&traceNo="
     },
     {
-        "id": 65,
+        "id": 41,
         "date": "2018-10-30",
         "code": "000968",
         "name": "广发养老指数A",
@@ -975,7 +615,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=6b9883ed0305444fb26fa318031ce070&businType=22&traceNo="
     },
     {
-        "id": 66,
+        "id": 42,
         "date": "2018-10-30",
         "code": "340001",
         "name": "兴全可转债混合",
@@ -990,7 +630,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=8d49b55a5a2d41cc913282ade7e78b12&businType=22&traceNo="
     },
     {
-        "id": 67,
+        "id": 43,
         "date": "2018-10-30",
         "code": "161017",
         "name": "富国中证500",
@@ -1005,7 +645,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=729a70109f6c423f9032cd8beff396cf&businType=22&traceNo="
     },
     {
-        "id": 68,
+        "id": 44,
         "date": "2018-11-15",
         "code": "100032",
         "name": "富国中证红利指数增强",
@@ -1020,7 +660,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=64044662edae4026994024b99b0efc5f&businType=22&traceNo="
     },
     {
-        "id": 69,
+        "id": 45,
         "date": "2018-11-15",
         "code": "164906",
         "name": "交银中证海外中国互联网指数",
@@ -1035,7 +675,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=470176df266740f5922c6e1908e95a16&businType=22&traceNo="
     },
     {
-        "id": 70,
+        "id": 46,
         "date": "2018-11-16",
         "code": "100038",
         "name": "富国沪深300指数增强",
@@ -1050,13 +690,13 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=20181116103030055249606&businType=143&traceNo="
     },
     {
-        "id": 71,
+        "id": 47,
         "date": "2018-11-16",
         "code": "161017",
         "name": "富国中证500",
         "dealType": "分红",
-        "nav_unit": 0.0,
-        "nav_acc": 0.0,
+        "nav_unit": 1.591,
+        "nav_acc": 1.771,
         "volume": 0.0,
         "dealMoney": 0.0,
         "fee": 0.0,
@@ -1065,7 +705,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=201811169898181115303000423777&businType=143&traceNo="
     },
     {
-        "id": 72,
+        "id": 48,
         "date": "2018-11-30",
         "code": "162711",
         "name": "广发中证500ETF联接A",
@@ -1080,7 +720,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=ed49af4f9f48443dac8a4b074f87c5e4&businType=22&traceNo="
     },
     {
-        "id": 73,
+        "id": 49,
         "date": "2018-11-30",
         "code": "100032",
         "name": "富国中证红利指数增强",
@@ -1095,7 +735,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=020b38fb34954a9f9f1f2786d9b1abea&businType=22&traceNo="
     },
     {
-        "id": 74,
+        "id": 50,
         "date": "2018-11-30",
         "code": "000968",
         "name": "广发养老指数A",
@@ -1110,7 +750,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=6300ec30f4c846df9fc9bb1b7006223b&businType=22&traceNo="
     },
     {
-        "id": 75,
+        "id": 51,
         "date": "2018-11-30",
         "code": "001180",
         "name": "广发医药卫生联接A",
@@ -1125,7 +765,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=d53e2e20fede4edcb76de04ec1d05d61&businType=22&traceNo="
     },
     {
-        "id": 76,
+        "id": 52,
         "date": "2018-11-30",
         "code": "340001",
         "name": "兴全可转债混合",
@@ -1140,7 +780,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=989c7f5705dc4ef9b2ba53e9d6a607d8&businType=22&traceNo="
     },
     {
-        "id": 77,
+        "id": 53,
         "date": "2018-11-30",
         "code": "000071",
         "name": "华夏恒生ETF联接A",
@@ -1155,7 +795,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=3c68c8b2f4ea457c9f80cae6e77bafab&businType=22&traceNo="
     },
     {
-        "id": 78,
+        "id": 54,
         "date": "2018-11-30",
         "code": "162411",
         "name": "华宝标普油气上游股票",
@@ -1170,7 +810,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=f131e96b79a242efb6b48bebcbc20ad4&businType=22&traceNo="
     },
     {
-        "id": 79,
+        "id": 55,
         "date": "2018-11-30",
         "code": "000614",
         "name": "华安德国30(DAX)联接",
@@ -1185,7 +825,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=027e0970b0d44c5c977f715d8dae0c93&businType=22&traceNo="
     },
     {
-        "id": 80,
+        "id": 56,
         "date": "2018-12-14",
         "code": "100038",
         "name": "富国沪深300指数增强",
@@ -1200,7 +840,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=90fec34913234fbe8297aaf504a6cfe3&businType=22&traceNo="
     },
     {
-        "id": 81,
+        "id": 57,
         "date": "2018-12-14",
         "code": "000968",
         "name": "广发养老指数A",
@@ -1215,7 +855,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=65638b4054f046d9b132e17b60ec7b23&businType=22&traceNo="
     },
     {
-        "id": 82,
+        "id": 58,
         "date": "2018-12-14",
         "code": "100032",
         "name": "富国中证红利指数增强",
@@ -1230,7 +870,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=27948182d8064fcbbf6cb30402f4c55b&businType=22&traceNo="
     },
     {
-        "id": 83,
+        "id": 59,
         "date": "2018-12-14",
         "code": "001180",
         "name": "广发医药卫生联接A",
@@ -1245,13 +885,13 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=0161a8361dda456e9514b3c4ead17ea8&businType=22&traceNo="
     },
     {
-        "id": 84,
+        "id": 60,
         "date": "2018-12-17",
         "code": "162413",
         "name": "华宝中证1000指数分级",
         "dealType": "分红",
-        "nav_unit": 0.0,
-        "nav_acc": 0.0,
+        "nav_unit": 0.6992,
+        "nav_acc": 0.2991,
         "volume": 13.53,
         "dealMoney": 0.0,
         "fee": 0.0,
@@ -1260,22 +900,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=201812179898181217303000245255&businType=144&traceNo="
     },
     {
-        "id": 85,
-        "date": "2018-12-19",
-        "code": "003474",
-        "name": "南方天天利货币Ｂ",
-        "dealType": "买入",
-        "nav_unit": 1.0,
-        "nav_acc": 1.0,
-        "volume": 3000.0,
-        "dealMoney": 3000.0,
-        "fee": 0.0,
-        "occurMoney": 3000.0,
-        "account": "李淑云",
-        "note": "https://query.1234567.com.cn/Query/Detail?id=4bc9887347a44002a2252d18235d2673&businType=801&traceNo="
-    },
-    {
-        "id": 86,
+        "id": 61,
         "date": "2018-12-27",
         "code": "100032",
         "name": "富国中证红利指数增强",
@@ -1290,7 +915,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=365b94d7122a4f169ca2df0a21d29a6b&businType=22&traceNo="
     },
     {
-        "id": 87,
+        "id": 62,
         "date": "2018-12-27",
         "code": "162711",
         "name": "广发中证500ETF联接A",
@@ -1305,7 +930,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=9126da087def4b6c8f07eb0e8f84811d&businType=22&traceNo="
     },
     {
-        "id": 88,
+        "id": 63,
         "date": "2018-12-27",
         "code": "000968",
         "name": "广发养老指数A",
@@ -1320,7 +945,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=93544cae7e074103922be7238f134066&businType=22&traceNo="
     },
     {
-        "id": 89,
+        "id": 64,
         "date": "2018-12-27",
         "code": "004752",
         "name": "广发中证传媒ETF联接A",
@@ -1335,7 +960,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=ac76cb40953c410e8e563d72298bebdf&businType=22&traceNo="
     },
     {
-        "id": 90,
+        "id": 65,
         "date": "2018-12-27",
         "code": "162411",
         "name": "华宝标普油气上游股票",
@@ -1350,7 +975,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=3a48478a93994dd89e8720c7d19f7105&businType=22&traceNo="
     },
     {
-        "id": 91,
+        "id": 66,
         "date": "2018-12-27",
         "code": "001064",
         "name": "广发中证环保ETF联接A",
@@ -1365,22 +990,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=e58cd5c5dc9444fab3b446368d5b7727&businType=22&traceNo="
     },
     {
-        "id": 93,
-        "date": "2019-01-09",
-        "code": "003474",
-        "name": "南方天天利货币Ｂ",
-        "dealType": "卖出",
-        "nav_unit": 1.0,
-        "nav_acc": 1.0,
-        "volume": 200.0,
-        "dealMoney": 200.0,
-        "fee": 0.0,
-        "occurMoney": 200.0,
-        "account": "李淑云",
-        "note": "https://query.1234567.com.cn/Query/Detail?id=ac64cb256cf349a385c8f9fc4089757f&businType=802&traceNo="
-    },
-    {
-        "id": 94,
+        "id": 67,
         "date": "2019-01-15",
         "code": "519977",
         "name": "长信可转债债券A",
@@ -1395,7 +1005,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=9ae3664459ae469ca8b8b164edf37dda&businType=22&traceNo="
     },
     {
-        "id": 95,
+        "id": 68,
         "date": "2019-01-15",
         "code": "100032",
         "name": "富国中证红利指数增强",
@@ -1410,7 +1020,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=82e2276a91a84cf6b295bfdadd4f0330&businType=22&traceNo="
     },
     {
-        "id": 96,
+        "id": 69,
         "date": "2019-01-15",
         "code": "004752",
         "name": "广发中证传媒ETF联接A",
@@ -1425,7 +1035,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=530435bb21ea41d6b7050c7632fb08ca&businType=22&traceNo="
     },
     {
-        "id": 97,
+        "id": 70,
         "date": "2019-01-15",
         "code": "110026",
         "name": "易方达创业板ETF联接A",
@@ -1440,7 +1050,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=502ed13c2271434984c4b3cea4130dba&businType=22&traceNo="
     },
     {
-        "id": 98,
+        "id": 71,
         "date": "2019-01-15",
         "code": "161017",
         "name": "富国中证500",
@@ -1455,7 +1065,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=040025f9544546cfab07bb6b195dc16e&businType=22&traceNo="
     },
     {
-        "id": 99,
+        "id": 72,
         "date": "2019-01-15",
         "code": "001064",
         "name": "广发中证环保ETF联接A",
@@ -1470,7 +1080,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=6e903fe92e964947891390ccbc0caee3&businType=22&traceNo="
     },
     {
-        "id": 100,
+        "id": 73,
         "date": "2019-01-31",
         "code": "100038",
         "name": "富国沪深300指数增强",
@@ -1485,7 +1095,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=d58c1f87e5d9441b851633ed06a0de82&businType=22&traceNo="
     },
     {
-        "id": 101,
+        "id": 74,
         "date": "2019-01-31",
         "code": "161017",
         "name": "富国中证500",
@@ -1500,7 +1110,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=8d3e690de72641f3b78679f6a241c12f&businType=22&traceNo="
     },
     {
-        "id": 102,
+        "id": 75,
         "date": "2019-01-31",
         "code": "162413",
         "name": "华宝中证1000指数分级",
@@ -1515,7 +1125,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=4ef9100344794b89ac93c14134e3a383&businType=22&traceNo="
     },
     {
-        "id": 103,
+        "id": 76,
         "date": "2019-01-31",
         "code": "110026",
         "name": "易方达创业板ETF联接A",
@@ -1530,7 +1140,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=5138f5a32f844d1c83fe033353860d4c&businType=22&traceNo="
     },
     {
-        "id": 104,
+        "id": 77,
         "date": "2019-01-31",
         "code": "001064",
         "name": "广发中证环保ETF联接A",
@@ -1545,7 +1155,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=bfe51559665e491987171ba4ff53f72c&businType=22&traceNo="
     },
     {
-        "id": 105,
+        "id": 78,
         "date": "2019-01-31",
         "code": "004752",
         "name": "广发中证传媒ETF联接A",
@@ -1560,7 +1170,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=3143138fe01b4389b993d1c940659d74&businType=22&traceNo="
     },
     {
-        "id": 106,
+        "id": 79,
         "date": "2019-01-31",
         "code": "000614",
         "name": "华安德国30(DAX)联接",
@@ -1575,7 +1185,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=bb3a97b649984d488206bfd91d97d066&businType=22&traceNo="
     },
     {
-        "id": 107,
+        "id": 80,
         "date": "2019-01-31",
         "code": "110027",
         "name": "易方达安心回报债券A",
@@ -1590,37 +1200,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=9a1d3403e01c41c5905537b7c2581729&businType=22&traceNo="
     },
     {
-        "id": 108,
-        "date": "2019-02-15",
-        "code": "003474",
-        "name": "南方天天利货币Ｂ",
-        "dealType": "买入",
-        "nav_unit": 1.0,
-        "nav_acc": 1.0,
-        "volume": 2000.0,
-        "dealMoney": 2000.0,
-        "fee": 0.0,
-        "occurMoney": 2000.0,
-        "account": "李淑云",
-        "note": "https://query.1234567.com.cn/Query/Detail?id=c2c6859bfc4b4054a2304883a0f8a526&businType=801&traceNo="
-    },
-    {
-        "id": 109,
-        "date": "2019-02-28",
-        "code": "482002",
-        "name": "工银货币",
-        "dealType": "买入",
-        "nav_unit": 1.0,
-        "nav_acc": 1.0,
-        "volume": 1600.0,
-        "dealMoney": 1600.0,
-        "fee": 0.0,
-        "occurMoney": 1600.0,
-        "account": "李淑云",
-        "note": "https://query.1234567.com.cn/Query/Detail?id=e0fb82ab956742ceb5c37ed1ffb3e195&businType=835&traceNo=674c52f5085b49beb871a0005c48cccb"
-    },
-    {
-        "id": 110,
+        "id": 81,
         "date": "2019-02-28",
         "code": "000614",
         "name": "华安德国30(DAX)联接",
@@ -1635,67 +1215,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=76725fa4c9704686b7d4c995c467a341&businType=22&traceNo=76725fa4c9704686b7d4c995c467a341"
     },
     {
-        "id": 111,
-        "date": "2019-03-08",
-        "code": "003474",
-        "name": "南方天天利货币Ｂ",
-        "dealType": "买入",
-        "nav_unit": 1.0,
-        "nav_acc": 1.0,
-        "volume": 2000.0,
-        "dealMoney": 2000.0,
-        "fee": 0.0,
-        "occurMoney": 2000.0,
-        "account": "李淑云",
-        "note": "https://query.1234567.com.cn/Query/Detail?id=b534dc4d938b455c968dac10ea464c20&businType=801&traceNo="
-    },
-    {
-        "id": 112,
-        "date": "2019-03-13",
-        "code": "003474",
-        "name": "南方天天利货币Ｂ",
-        "dealType": "买入",
-        "nav_unit": 1.0,
-        "nav_acc": 1.0,
-        "volume": 300.0,
-        "dealMoney": 300.0,
-        "fee": 0.0,
-        "occurMoney": 300.0,
-        "account": "李淑云",
-        "note": "https://query.1234567.com.cn/Query/Detail?id=ee2e086679dd4e29a16807e7cff90565&businType=801&traceNo="
-    },
-    {
-        "id": 113,
-        "date": "2019-03-18",
-        "code": "003474",
-        "name": "南方天天利货币Ｂ",
-        "dealType": "买入",
-        "nav_unit": 1.0,
-        "nav_acc": 1.0,
-        "volume": 1000.0,
-        "dealMoney": 1000.0,
-        "fee": 0.0,
-        "occurMoney": 1000.0,
-        "account": "李淑云",
-        "note": "https://query.1234567.com.cn/Query/Detail?id=9d72231133c74673bcce94f80c73a6b2&businType=801&traceNo="
-    },
-    {
-        "id": 114,
-        "date": "2019-03-25",
-        "code": "003474",
-        "name": "南方天天利货币Ｂ",
-        "dealType": "买入",
-        "nav_unit": 1.0,
-        "nav_acc": 1.0,
-        "volume": 1500.0,
-        "dealMoney": 1500.0,
-        "fee": 0.0,
-        "occurMoney": 1500.0,
-        "account": "李淑云",
-        "note": "https://query.1234567.com.cn/Query/Detail?id=34fbd1b5f5374f6f805daa620ffc4aca&businType=801&traceNo="
-    },
-    {
-        "id": 115,
+        "id": 82,
         "date": "2019-03-28",
         "code": "000614",
         "name": "华安德国30(DAX)联接",
@@ -1710,7 +1230,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=7d1b48406f1b48cba15daabe06128637&businType=22&traceNo=7d1b48406f1b48cba15daabe06128637"
     },
     {
-        "id": 116,
+        "id": 83,
         "date": "2019-03-28",
         "code": "162411",
         "name": "华宝标普油气上游股票",
@@ -1725,7 +1245,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=6293880ccf3e4754996d110e5e3b07c7&businType=22&traceNo=6293880ccf3e4754996d110e5e3b07c7"
     },
     {
-        "id": 117,
+        "id": 84,
         "date": "2019-03-28",
         "code": "000216",
         "name": "华安黄金易ETF联接A",
@@ -1740,28 +1260,13 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=f8e794937b58410f9ca4a5f522f14f87&businType=22&traceNo=f8e794937b58410f9ca4a5f522f14f87"
     },
     {
-        "id": 118,
-        "date": "2019-04-01",
-        "code": "003474",
-        "name": "南方天天利货币Ｂ",
-        "dealType": "卖出",
-        "nav_unit": 1.0,
-        "nav_acc": 1.0,
-        "volume": 600.0,
-        "dealMoney": 600.0,
-        "fee": 0.0,
-        "occurMoney": 600.0,
-        "account": "李淑云",
-        "note": "https://query.1234567.com.cn/Query/Detail?id=e5364b6d877e4246acabc5260a53c2b4&businType=802&traceNo="
-    },
-    {
-        "id": 119,
+        "id": 85,
         "date": "2019-04-15",
         "code": "110027",
         "name": "易方达安心回报债券A",
         "dealType": "分红",
-        "nav_unit": 0.0,
-        "nav_acc": 0.0,
+        "nav_unit": 1.649,
+        "nav_acc": 2.57,
         "volume": 0.0,
         "dealMoney": 0.0,
         "fee": 0.0,
@@ -1770,37 +1275,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=20190415113030065254163&businType=143&traceNo="
     },
     {
-        "id": 120,
-        "date": "2019-04-18",
-        "code": "360003",
-        "name": "光大货币",
-        "dealType": "买入",
-        "nav_unit": 1.0,
-        "nav_acc": 1.0,
-        "volume": 300.0,
-        "dealMoney": 300.0,
-        "fee": 0.0,
-        "occurMoney": 300.0,
-        "account": "李淑云",
-        "note": "https://query.1234567.com.cn/Query/Detail?id=dadcdc7a706d4565b457a6a97fb09304&businType=801&traceNo="
-    },
-    {
-        "id": 121,
-        "date": "2019-04-18",
-        "code": "360003",
-        "name": "光大货币",
-        "dealType": "买入",
-        "nav_unit": 1.0,
-        "nav_acc": 1.0,
-        "volume": 2000.0,
-        "dealMoney": 2000.0,
-        "fee": 0.0,
-        "occurMoney": 2000.0,
-        "account": "李淑云",
-        "note": "https://query.1234567.com.cn/Query/Detail?id=b01e454a735b4806b3902f681bcbeed4&businType=801&traceNo="
-    },
-    {
-        "id": 122,
+        "id": 86,
         "date": "2019-04-26",
         "code": "004752",
         "name": "广发中证传媒ETF联接A",
@@ -1815,7 +1290,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=ec6f9d889751477eb27987a40d6f2f83&businType=22&traceNo="
     },
     {
-        "id": 123,
+        "id": 87,
         "date": "2019-04-29",
         "code": "162413",
         "name": "华宝中证1000指数分级",
@@ -1830,52 +1305,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=5a8ccf155eb6470b85b788e70a1b05da&businType=22&traceNo=5a8ccf155eb6470b85b788e70a1b05da"
     },
     {
-        "id": 124,
-        "date": "2019-04-30",
-        "code": "003474",
-        "name": "南方天天利货币Ｂ",
-        "dealType": "卖出",
-        "nav_unit": 1.0,
-        "nav_acc": 1.0,
-        "volume": 600.0,
-        "dealMoney": 600.0,
-        "fee": 0.0,
-        "occurMoney": 600.0,
-        "account": "李淑云",
-        "note": "https://query.1234567.com.cn/Query/Detail?id=5184ac87b6734c109fa20291005ec95a&businType=802&traceNo="
-    },
-    {
-        "id": 125,
-        "date": "2019-05-06",
-        "code": "003474",
-        "name": "南方天天利货币Ｂ",
-        "dealType": "卖出",
-        "nav_unit": 1.0,
-        "nav_acc": 1.0,
-        "volume": 500.0,
-        "dealMoney": 500.0,
-        "fee": 0.0,
-        "occurMoney": 500.0,
-        "account": "李淑云",
-        "note": "https://query.1234567.com.cn/Query/Detail?id=e60f13434b914e6cbaee1aea0fc27ed5&businType=802&traceNo="
-    },
-    {
-        "id": 126,
-        "date": "2019-05-06",
-        "code": "482002",
-        "name": "工银货币",
-        "dealType": "买入",
-        "nav_unit": 1.0,
-        "nav_acc": 1.0,
-        "volume": 200.0,
-        "dealMoney": 200.0,
-        "fee": 0.0,
-        "occurMoney": 200.0,
-        "account": "李淑云",
-        "note": "https://query.1234567.com.cn/Query/Detail?id=5b8b67ddbe5c41579a1f91be9022bdb1&businType=801&traceNo="
-    },
-    {
-        "id": 127,
+        "id": 88,
         "date": "2019-05-15",
         "code": "110022",
         "name": "易方达消费行业",
@@ -1890,7 +1320,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=9604febfbd3e4d3ea8847c92d729a9c7&businType=812&traceNo=2b2b4839daa0492db2a24c450638c25d"
     },
     {
-        "id": 128,
+        "id": 89,
         "date": "2019-05-15",
         "code": "001051",
         "name": "华夏上证50ETF联接A",
@@ -1905,7 +1335,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=de7524e1582148c3bf3204445d0d35c9&businType=22&traceNo=de7524e1582148c3bf3204445d0d35c9"
     },
     {
-        "id": 129,
+        "id": 90,
         "date": "2019-05-15",
         "code": "110027",
         "name": "易方达安心回报债券A",
@@ -1920,7 +1350,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=1ecb47366c2a422abd9e83d70a2f76cf&businType=22&traceNo=1ecb47366c2a422abd9e83d70a2f76cf"
     },
     {
-        "id": 130,
+        "id": 91,
         "date": "2019-05-15",
         "code": "000051",
         "name": "华夏沪深300ETF联接A",
@@ -1935,7 +1365,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=1cfe3f6b7c214733b11620df3251e27b&businType=22&traceNo=1cfe3f6b7c214733b11620df3251e27b"
     },
     {
-        "id": 131,
+        "id": 92,
         "date": "2019-05-16",
         "code": "100032",
         "name": "富国中证红利指数增强",
@@ -1950,7 +1380,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=a391a267fbef4432a16c6eba522d9fc3&businType=22&traceNo=a391a267fbef4432a16c6eba522d9fc3"
     },
     {
-        "id": 132,
+        "id": 93,
         "date": "2019-05-16",
         "code": "001051",
         "name": "华夏上证50ETF联接A",
@@ -1965,7 +1395,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=28dc104c10eb433cb6b0d1a7e72664d1&businType=22&traceNo=28dc104c10eb433cb6b0d1a7e72664d1"
     },
     {
-        "id": 133,
+        "id": 94,
         "date": "2019-05-30",
         "code": "164906",
         "name": "交银中证海外中国互联网指数",
@@ -1980,7 +1410,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=a568ff4dcd4644f9b48b9e41c5830f17&businType=22&traceNo=a568ff4dcd4644f9b48b9e41c5830f17"
     },
     {
-        "id": 134,
+        "id": 95,
         "date": "2019-05-30",
         "code": "110027",
         "name": "易方达安心回报债券A",
@@ -1995,22 +1425,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=b5ba9e8216494eeeab2c5201fee1ca20&businType=22&traceNo=b5ba9e8216494eeeab2c5201fee1ca20"
     },
     {
-        "id": 135,
-        "date": "2019-06-17",
-        "code": "003474",
-        "name": "南方天天利货币Ｂ",
-        "dealType": "买入",
-        "nav_unit": 1.0,
-        "nav_acc": 1.0,
-        "volume": 2500.0,
-        "dealMoney": 2500.0,
-        "fee": 0.0,
-        "occurMoney": 2500.0,
-        "account": "李淑云",
-        "note": "https://query.1234567.com.cn/Query/Detail?id=8f4ff952e3fe4054874b000bfd0c55aa&businType=801&traceNo="
-    },
-    {
-        "id": 136,
+        "id": 96,
         "date": "2019-06-18",
         "code": "110027",
         "name": "易方达安心回报债券A",
@@ -2025,7 +1440,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=919992af5be34a9d914ac6017d2033cc&businType=22&traceNo=919992af5be34a9d914ac6017d2033cc"
     },
     {
-        "id": 137,
+        "id": 97,
         "date": "2019-06-18",
         "code": "002903",
         "name": "广发中证500ETF联接C",
@@ -2040,7 +1455,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=1e50219be978493984177b3e4ef01eee&businType=22&traceNo=1e50219be978493984177b3e4ef01eee"
     },
     {
-        "id": 138,
+        "id": 98,
         "date": "2019-06-18",
         "code": "162711",
         "name": "广发中证500ETF联接A",
@@ -2055,7 +1470,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=732fcef3abba4ed99f46cba21d759f72&businType=22&traceNo=732fcef3abba4ed99f46cba21d759f72"
     },
     {
-        "id": 139,
+        "id": 99,
         "date": "2019-06-24",
         "code": "340001",
         "name": "兴全可转债混合",
@@ -2070,22 +1485,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=20190624343030006948091&businType=143&traceNo="
     },
     {
-        "id": 140,
-        "date": "2019-06-24",
-        "code": "000600",
-        "name": "汇添富和聚宝货币",
-        "dealType": "买入",
-        "nav_unit": 1.0,
-        "nav_acc": 1.0,
-        "volume": 400.0,
-        "dealMoney": 400.0,
-        "fee": 0.0,
-        "occurMoney": 400.0,
-        "account": "李淑云",
-        "note": "https://query.1234567.com.cn/Query/Detail?id=1efb00f2f5164107bbefb5fd881989c1&businType=801&traceNo="
-    },
-    {
-        "id": 141,
+        "id": 100,
         "date": "2019-07-01",
         "code": "000216",
         "name": "华安黄金易ETF联接A",
@@ -2100,28 +1500,13 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=926e769bd9104b3fbff2f3cdb6100c20&businType=22&traceNo=926e769bd9104b3fbff2f3cdb6100c20"
     },
     {
-        "id": 142,
-        "date": "2019-07-05",
-        "code": "003474",
-        "name": "南方天天利货币Ｂ",
-        "dealType": "卖出",
-        "nav_unit": 1.0,
-        "nav_acc": 1.0,
-        "volume": 200.0,
-        "dealMoney": 200.0,
-        "fee": 0.0,
-        "occurMoney": 200.0,
-        "account": "李淑云",
-        "note": "https://query.1234567.com.cn/Query/Detail?id=6461eea9cfdb49d4af4dc4268e0854c0&businType=802&traceNo="
-    },
-    {
-        "id": 143,
+        "id": 101,
         "date": "2019-07-08",
         "code": "502010",
         "name": "易方达证券公司分级",
         "dealType": "分红",
-        "nav_unit": 0.0,
-        "nav_acc": 0.0,
+        "nav_unit": 1.047,
+        "nav_acc": 0.7043,
         "volume": 0.28,
         "dealMoney": 0.0,
         "fee": 0.0,
@@ -2130,13 +1515,13 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=201907089999190708303000101941&businType=144&traceNo="
     },
     {
-        "id": 144,
+        "id": 102,
         "date": "2019-07-08",
         "code": "502010",
         "name": "易方达证券公司分级",
         "dealType": "分红",
-        "nav_unit": 0.0,
-        "nav_acc": 0.0,
+        "nav_unit": 1.047,
+        "nav_acc": 0.7043,
         "volume": 10.13,
         "dealMoney": 0.0,
         "fee": 0.0,
@@ -2145,7 +1530,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=201907089999190708303000101940&businType=144&traceNo="
     },
     {
-        "id": 145,
+        "id": 103,
         "date": "2019-07-09",
         "code": "002903",
         "name": "广发中证500ETF联接C",
@@ -2160,7 +1545,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=11fe45b374d14621809a0962b1fa109e&businType=24&traceNo="
     },
     {
-        "id": 147,
+        "id": 104,
         "date": "2019-07-16",
         "code": "001112",
         "name": "东方红中国优势混合",
@@ -2175,7 +1560,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=66ac4cbe4fac448a8008c4e66d563fd7&businType=22&traceNo="
     },
     {
-        "id": 148,
+        "id": 105,
         "date": "2019-07-18",
         "code": "001112",
         "name": "东方红中国优势混合",
@@ -2190,37 +1575,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=ddc82c34dbaf4a668cc035c88721061a&businType=812&traceNo=2aaf853d38914447904dfa391ca56b92"
     },
     {
-        "id": 149,
-        "date": "2019-07-22",
-        "code": "003474",
-        "name": "南方天天利货币Ｂ",
-        "dealType": "卖出",
-        "nav_unit": 1.0,
-        "nav_acc": 1.0,
-        "volume": 300.0,
-        "dealMoney": 300.0,
-        "fee": 0.0,
-        "occurMoney": 300.0,
-        "account": "李淑云",
-        "note": "https://query.1234567.com.cn/Query/Detail?id=616bddd05bf3499182f9f51361f7da83&businType=802&traceNo="
-    },
-    {
-        "id": 150,
-        "date": "2019-07-30",
-        "code": "003474",
-        "name": "南方天天利货币Ｂ",
-        "dealType": "卖出",
-        "nav_unit": 1.0,
-        "nav_acc": 1.0,
-        "volume": 200.0,
-        "dealMoney": 200.0,
-        "fee": 0.0,
-        "occurMoney": 200.0,
-        "account": "李淑云",
-        "note": "https://query.1234567.com.cn/Query/Detail?id=05d812f30b4747d1a6c8fb354615bd8b&businType=802&traceNo="
-    },
-    {
-        "id": 151,
+        "id": 106,
         "date": "2019-07-31",
         "code": "110027",
         "name": "易方达安心回报债券A",
@@ -2235,67 +1590,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=beff1d1ef83f4a5083f622a4f5be06b7&businType=22&traceNo=beff1d1ef83f4a5083f622a4f5be06b7"
     },
     {
-        "id": 152,
-        "date": "2019-08-05",
-        "code": "003474",
-        "name": "南方天天利货币Ｂ",
-        "dealType": "卖出",
-        "nav_unit": 1.0,
-        "nav_acc": 1.0,
-        "volume": 300.0,
-        "dealMoney": 300.0,
-        "fee": 0.0,
-        "occurMoney": 300.0,
-        "account": "李淑云",
-        "note": "https://query.1234567.com.cn/Query/Detail?id=1cf512edb690468a83cddb0ee93dd03f&businType=802&traceNo="
-    },
-    {
-        "id": 153,
-        "date": "2019-08-06",
-        "code": "003474",
-        "name": "南方天天利货币Ｂ",
-        "dealType": "卖出",
-        "nav_unit": 1.0,
-        "nav_acc": 1.0,
-        "volume": 300.0,
-        "dealMoney": 300.0,
-        "fee": 0.0,
-        "occurMoney": 300.0,
-        "account": "李淑云",
-        "note": "https://query.1234567.com.cn/Query/Detail?id=c04532062b26464f9ed9a6b51c8a5edb&businType=802&traceNo="
-    },
-    {
-        "id": 154,
-        "date": "2019-08-07",
-        "code": "003474",
-        "name": "南方天天利货币Ｂ",
-        "dealType": "卖出",
-        "nav_unit": 1.0,
-        "nav_acc": 1.0,
-        "volume": 300.0,
-        "dealMoney": 300.0,
-        "fee": 0.0,
-        "occurMoney": 300.0,
-        "account": "李淑云",
-        "note": "https://query.1234567.com.cn/Query/Detail?id=da27f2948d2d45309b5b3f33060004a1&businType=802&traceNo="
-    },
-    {
-        "id": 156,
-        "date": "2019-09-16",
-        "code": "003474",
-        "name": "南方天天利货币Ｂ",
-        "dealType": "买入",
-        "nav_unit": 1.0,
-        "nav_acc": 1.0,
-        "volume": 4000.0,
-        "dealMoney": 4000.0,
-        "fee": 0.0,
-        "occurMoney": 4000.0,
-        "account": "李淑云",
-        "note": "https://query.1234567.com.cn/Query/Detail?id=130c8a9091b64f37b26fb3b6c89b79d5&businType=801&traceNo="
-    },
-    {
-        "id": 157,
+        "id": 107,
         "date": "2019-09-18",
         "code": "100038",
         "name": "富国沪深300指数增强",
@@ -2310,7 +1605,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=20190918103030076764339&businType=143&traceNo="
     },
     {
-        "id": 158,
+        "id": 108,
         "date": "2019-09-20",
         "code": "161017",
         "name": "富国中证500指数(LOF)",
@@ -2325,52 +1620,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=201909209898190919303000607211&businType=143&traceNo="
     },
     {
-        "id": 159,
-        "date": "2019-09-23",
-        "code": "003474",
-        "name": "南方天天利货币Ｂ",
-        "dealType": "买入",
-        "nav_unit": 1.0,
-        "nav_acc": 1.0,
-        "volume": 400.0,
-        "dealMoney": 400.0,
-        "fee": 0.0,
-        "occurMoney": 400.0,
-        "account": "李淑云",
-        "note": "https://query.1234567.com.cn/Query/Detail?id=b19e247dc0ee46839035bd51cf37580e&businType=801&traceNo="
-    },
-    {
-        "id": 161,
-        "date": "2019-09-30",
-        "code": "003474",
-        "name": "南方天天利货币Ｂ",
-        "dealType": "卖出",
-        "nav_unit": 1.0,
-        "nav_acc": 1.0,
-        "volume": 300.0,
-        "dealMoney": 300.0,
-        "fee": 0.0,
-        "occurMoney": 300.0,
-        "account": "李淑云",
-        "note": "https://query.1234567.com.cn/Query/Detail?id=df78e046d82f46c48f0fa4306abcc807&businType=802&traceNo="
-    },
-    {
-        "id": 162,
-        "date": "2019-10-08",
-        "code": "003474",
-        "name": "南方天天利货币Ｂ",
-        "dealType": "卖出",
-        "nav_unit": 1.0,
-        "nav_acc": 1.0,
-        "volume": 300.0,
-        "dealMoney": 300.0,
-        "fee": 0.0,
-        "occurMoney": 300.0,
-        "account": "李淑云",
-        "note": "https://query.1234567.com.cn/Query/Detail?id=f128c67666d0456190e7daeb506e3206&businType=802&traceNo="
-    },
-    {
-        "id": 163,
+        "id": 109,
         "date": "2019-11-01",
         "code": "162411",
         "name": "华宝标普油气上游股票",
@@ -2385,7 +1635,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=10d608ebdb984651822362972959c915&businType=22&traceNo=10d608ebdb984651822362972959c915"
     },
     {
-        "id": 164,
+        "id": 110,
         "date": "2019-11-01",
         "code": "100032",
         "name": "富国中证红利指数增强",
@@ -2400,7 +1650,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=3a2f48a17ff5455ea5988043652ea239&businType=22&traceNo=3a2f48a17ff5455ea5988043652ea239"
     },
     {
-        "id": 165,
+        "id": 111,
         "date": "2019-11-01",
         "code": "162711",
         "name": "广发中证500ETF联接A",
@@ -2415,127 +1665,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=dcf11ff87fb841fbb6be3625d75f251c&businType=22&traceNo=dcf11ff87fb841fbb6be3625d75f251c"
     },
     {
-        "id": 166,
-        "date": "2019-11-18",
-        "code": "482002",
-        "name": "工银货币",
-        "dealType": "买入",
-        "nav_unit": 1.0,
-        "nav_acc": 1.0,
-        "volume": 2000.0,
-        "dealMoney": 2000.0,
-        "fee": 0.0,
-        "occurMoney": 2000.0,
-        "account": "李淑云",
-        "note": "https://query.1234567.com.cn/Query/Detail?id=93b31772f6724715862015d2d1d3c8b0&businType=801&traceNo="
-    },
-    {
-        "id": 167,
-        "date": "2019-11-18",
-        "code": "482002",
-        "name": "工银货币",
-        "dealType": "买入",
-        "nav_unit": 1.0,
-        "nav_acc": 1.0,
-        "volume": 1500.0,
-        "dealMoney": 1500.0,
-        "fee": 0.0,
-        "occurMoney": 1500.0,
-        "account": "李淑云",
-        "note": "https://query.1234567.com.cn/Query/Detail?id=727171b7083d4d7e840cabb96021f827&businType=801&traceNo="
-    },
-    {
-        "id": 169,
-        "date": "2019-11-26",
-        "code": "003474",
-        "name": "南方天天利货币Ｂ",
-        "dealType": "卖出",
-        "nav_unit": 1.0,
-        "nav_acc": 1.0,
-        "volume": 100000.0,
-        "dealMoney": 100000.0,
-        "fee": 0.0,
-        "occurMoney": 100000.0,
-        "account": "李淑云",
-        "note": "https://query.1234567.com.cn/Query/Detail?id=ac6b68d201894063a720a71a9d4767c6&businType=802&traceNo="
-    },
-    {
-        "id": 170,
-        "date": "2019-11-26",
-        "code": "003474",
-        "name": "南方天天利货币Ｂ",
-        "dealType": "卖出",
-        "nav_unit": 1.0,
-        "nav_acc": 1.0,
-        "volume": 100000.0,
-        "dealMoney": 100000.0,
-        "fee": 0.0,
-        "occurMoney": 100000.0,
-        "account": "李淑云",
-        "note": "https://query.1234567.com.cn/Query/Detail?id=dfed059aa7e64fd59be2ca2f906dad5a&businType=802&traceNo="
-    },
-    {
-        "id": 171,
-        "date": "2019-11-26",
-        "code": "003474",
-        "name": "南方天天利货币Ｂ",
-        "dealType": "卖出",
-        "nav_unit": 1.0,
-        "nav_acc": 1.0,
-        "volume": 140000.0,
-        "dealMoney": 140000.0,
-        "fee": 0.0,
-        "occurMoney": 140000.0,
-        "account": "李淑云",
-        "note": "https://query.1234567.com.cn/Query/Detail?id=e33fcd9771284a4f89df7e0a07f9a27f&businType=802&traceNo="
-    },
-    {
-        "id": 172,
-        "date": "2019-11-27",
-        "code": "003474",
-        "name": "南方天天利货币Ｂ",
-        "dealType": "卖出",
-        "nav_unit": 1.0,
-        "nav_acc": 1.0,
-        "volume": 275634.42,
-        "dealMoney": 275634.42,
-        "fee": 0.0,
-        "occurMoney": 275634.42,
-        "account": "李淑云",
-        "note": "https://query.1234567.com.cn/Query/Detail?id=bf1ec2b7385b4e3b89b36a6b0cb9537b&businType=802&traceNo="
-    },
-    {
-        "id": 173,
-        "date": "2019-11-28",
-        "code": "000600",
-        "name": "汇添富和聚宝货币",
-        "dealType": "卖出",
-        "nav_unit": 1.0,
-        "nav_acc": 1.0,
-        "volume": 0.03,
-        "dealMoney": 0.03,
-        "fee": 0.0,
-        "occurMoney": 0.03,
-        "account": "李淑云",
-        "note": "https://query.1234567.com.cn/Query/Detail?id=e54a5e248ed54f6ca63ec7ca8082e7d3&businType=802&traceNo="
-    },
-    {
-        "id": 174,
-        "date": "2019-11-28",
-        "code": "000638",
-        "name": "富国富钱包货币",
-        "dealType": "卖出",
-        "nav_unit": 1.0,
-        "nav_acc": 1.0,
-        "volume": 0.07,
-        "dealMoney": 0.07,
-        "fee": 0.0,
-        "occurMoney": 0.07,
-        "account": "李淑云",
-        "note": "https://query.1234567.com.cn/Query/Detail?id=4c26daa9e3d541808041ce08990f3ae1&businType=802&traceNo="
-    },
-    {
-        "id": 175,
+        "id": 112,
         "date": "2019-12-02",
         "code": "003765",
         "name": "广发创业板ETF联接A",
@@ -2550,7 +1680,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=75d4cb9dc28a4772af400e970dcc6c08&businType=8151&traceNo=52d78d5547ce4c0cab3565351d355a10"
     },
     {
-        "id": 176,
+        "id": 113,
         "date": "2019-12-02",
         "code": "110027",
         "name": "易方达安心回报债券A",
@@ -2565,7 +1695,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=d6695eacc97d414cbca3a1ec45359ea7&businType=22&traceNo="
     },
     {
-        "id": 177,
+        "id": 114,
         "date": "2019-12-02",
         "code": "000478",
         "name": "建信中证500指数增强A",
@@ -2580,13 +1710,13 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=c26636c74d42488d85d6d646274612c9&businType=22&traceNo="
     },
     {
-        "id": 179,
+        "id": 115,
         "date": "2019-12-16",
         "code": "162413",
         "name": "华宝中证1000指数分级",
         "dealType": "分红",
-        "nav_unit": 0.0,
-        "nav_acc": 0.0,
+        "nav_unit": 0.7979,
+        "nav_acc": 0.3444,
         "volume": 14.17,
         "dealMoney": 0.0,
         "fee": 0.0,
@@ -2595,13 +1725,13 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=201912169898191216303000013615&businType=144&traceNo="
     },
     {
-        "id": 180,
+        "id": 116,
         "date": "2019-12-16",
         "code": "162413",
         "name": "华宝中证1000指数分级",
         "dealType": "分红",
-        "nav_unit": 0.0,
-        "nav_acc": 0.0,
+        "nav_unit": 0.7979,
+        "nav_acc": 0.3444,
         "volume": 16.33,
         "dealMoney": 0.0,
         "fee": 0.0,
@@ -2610,13 +1740,13 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=201912169898191216303000013616&businType=144&traceNo="
     },
     {
-        "id": 181,
+        "id": 117,
         "date": "2019-12-16",
         "code": "162413",
         "name": "华宝中证1000指数分级",
         "dealType": "分红",
-        "nav_unit": 0.0,
-        "nav_acc": 0.0,
+        "nav_unit": 0.7979,
+        "nav_acc": 0.3444,
         "volume": 20.89,
         "dealMoney": 0.0,
         "fee": 0.0,
@@ -2625,22 +1755,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=201912169898191216303000013617&businType=144&traceNo="
     },
     {
-        "id": 182,
-        "date": "2019-12-18",
-        "code": "003474",
-        "name": "南方天天利货币Ｂ",
-        "dealType": "卖出",
-        "nav_unit": 1.0,
-        "nav_acc": 1.0,
-        "volume": 0.12,
-        "dealMoney": 0.12,
-        "fee": 0.0,
-        "occurMoney": 0.12,
-        "account": "李淑云",
-        "note": "https://query.1234567.com.cn/Query/Detail?id=3ceada23560f4f2296393225acf97c4c&businType=802&traceNo="
-    },
-    {
-        "id": 183,
+        "id": 118,
         "date": "2020-01-02",
         "code": "002903",
         "name": "广发中证500ETF联接C",
@@ -2655,7 +1770,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=44a4482e81f047648fb3ede43e39bf4c&businType=24&traceNo="
     },
     {
-        "id": 184,
+        "id": 119,
         "date": "2020-02-04",
         "code": "162411",
         "name": "华宝标普油气上游股票人民币A",
@@ -2670,7 +1785,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=ac9057d5d53b4126bdae71ef0af64315&businType=22&traceNo="
     },
     {
-        "id": 185,
+        "id": 120,
         "date": "2020-02-04",
         "code": "100032",
         "name": "富国中证红利指数增强",
@@ -2685,7 +1800,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=adf0b90f64434b5c9c22d430084276b9&businType=22&traceNo="
     },
     {
-        "id": 186,
+        "id": 121,
         "date": "2020-02-04",
         "code": "000478",
         "name": "建信中证500指数增强A",
@@ -2700,7 +1815,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=944016e9f8fb408e9b88ded914fd8248&businType=22&traceNo="
     },
     {
-        "id": 187,
+        "id": 122,
         "date": "2020-02-26",
         "code": "001469",
         "name": "广发中证全指金融地产联接A",
@@ -2715,7 +1830,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=598b97f5bbf44268941891a1e104560d&businType=22&traceNo="
     },
     {
-        "id": 188,
+        "id": 123,
         "date": "2020-02-26",
         "code": "110026",
         "name": "易方达创业板ETF联接A",
@@ -2730,7 +1845,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=dd2b1318eef4465f91523cd0e69398e6&businType=8151&traceNo=79f05221dcb744cf926e223d3ed1a920"
     },
     {
-        "id": 189,
+        "id": 124,
         "date": "2020-02-26",
         "code": "162711",
         "name": "广发中证500ETF联接A",
@@ -2745,7 +1860,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=fce44250df4848b7bfa52a933c381c09&businType=8151&traceNo=8a50dd6bd18742c1bfe44faaa7573ce9"
     },
     {
-        "id": 190,
+        "id": 125,
         "date": "2020-03-02",
         "code": "100032",
         "name": "富国中证红利指数增强",
@@ -2760,7 +1875,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=20200302103030091341750&businType=143&traceNo="
     },
     {
-        "id": 191,
+        "id": 126,
         "date": "2020-03-09",
         "code": "501018",
         "name": "南方原油A",
@@ -2775,7 +1890,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=6e990497bfeb49f4881afa4ae0baeb9e&businType=22&traceNo=6e990497bfeb49f4881afa4ae0baeb9e"
     },
     {
-        "id": 192,
+        "id": 127,
         "date": "2020-03-09",
         "code": "004752",
         "name": "广发中证传媒ETF联接A",
@@ -2790,7 +1905,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=b2238d75605747a1a550079bd3b16b1d&businType=8151&traceNo=e6ca414fd55046a6aa40e77456b0917d"
     },
     {
-        "id": 193,
+        "id": 128,
         "date": "2020-03-09",
         "code": "110026",
         "name": "易方达创业板ETF联接A",
@@ -2805,7 +1920,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=1336b8b3ae1c49a482c5b9c547975254&businType=8151&traceNo=9c7829ab85674b39aad7b8a9267b89e3"
     },
     {
-        "id": 194,
+        "id": 129,
         "date": "2020-03-10",
         "code": "050025",
         "name": "博时标普500ETF联接A",
@@ -2820,7 +1935,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=17c11c764c274a4093801a6b7b4c9015&businType=22&traceNo=17c11c764c274a4093801a6b7b4c9015"
     },
     {
-        "id": 195,
+        "id": 130,
         "date": "2020-03-11",
         "code": "000614",
         "name": "华安德国30(DAX)联接",
@@ -2835,7 +1950,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=2a817ad06ccd4bbca512d806e1758ef3&businType=22&traceNo=2a817ad06ccd4bbca512d806e1758ef3"
     },
     {
-        "id": 196,
+        "id": 131,
         "date": "2020-03-12",
         "code": "110026",
         "name": "易方达创业板ETF联接A",
@@ -2850,7 +1965,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=ad5098842be1434199aabc283732ebe0&businType=8151&traceNo=af1fa369eb06461cb193c663095bbd7a"
     },
     {
-        "id": 197,
+        "id": 132,
         "date": "2020-03-13",
         "code": "000614",
         "name": "华安德国30(DAX)联接",
@@ -2865,7 +1980,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=c7edc42bcad6443ab2b64e2704bf8c5d&businType=22&traceNo=c7edc42bcad6443ab2b64e2704bf8c5d"
     },
     {
-        "id": 198,
+        "id": 133,
         "date": "2020-03-13",
         "code": "000071",
         "name": "华夏恒生ETF联接A",
@@ -2880,7 +1995,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=d9441494553a436f9132c7cb6f58469d&businType=22&traceNo=d9441494553a436f9132c7cb6f58469d"
     },
     {
-        "id": 199,
+        "id": 134,
         "date": "2020-03-13",
         "code": "000216",
         "name": "华安黄金易ETF联接A",
@@ -2895,7 +2010,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=6d16f05705c84254bfa67eabdd674601&businType=805&traceNo="
     },
     {
-        "id": 200,
+        "id": 135,
         "date": "2020-03-19",
         "code": "519977",
         "name": "长信可转债债券A",
@@ -2910,7 +2025,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=e82a75f822014d03a1fdca82f41acaa6&businType=24&traceNo="
     },
     {
-        "id": 201,
+        "id": 136,
         "date": "2020-03-19",
         "code": "050025",
         "name": "博时标普500ETF联接A",
@@ -2925,7 +2040,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=57c141e8a3df4d979fa3fa6bcd57492d&businType=22&traceNo=57c141e8a3df4d979fa3fa6bcd57492d"
     },
     {
-        "id": 202,
+        "id": 137,
         "date": "2020-03-19",
         "code": "000071",
         "name": "华夏恒生ETF联接A",
@@ -2940,7 +2055,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=31d1e3ce5c3d4495bb5954f731b7827b&businType=22&traceNo=31d1e3ce5c3d4495bb5954f731b7827b"
     },
     {
-        "id": 203,
+        "id": 138,
         "date": "2020-03-25",
         "code": "001180",
         "name": "广发医药卫生联接A",

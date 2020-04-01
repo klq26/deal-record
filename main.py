@@ -25,8 +25,8 @@ if __name__ == "__main__":
     # 测试系统路径
     # [print(x) for x in sys.path]
 
-    tiantian = tiantianSpider(strategy='klq')
-    # tiantian.get()
+    tiantian = tiantianSpider(strategy='lsy')
+    tiantian.get()
     # df = tiantian.uniqueCodes()
     # tiantian_allCode = list(df['code'])
     # print(df)
@@ -71,7 +71,8 @@ if __name__ == "__main__":
 
     # 写入数据库
     db = fundDBHelper()
-
+    # 获取离给定日期最近一天的分红净值
+    # print(db.selectNearestDividendDateFundNav('001061','2019-07-11'))
     # 创建 fund_info 数据库
     # db.createFundInfoTableIfNeeded()
     # folder = os.path.join(os.getcwd(), 'tools','fund_data')
@@ -83,7 +84,7 @@ if __name__ == "__main__":
     #             db.insertFundByJonsData(json.loads(f.read()))
 
     # 拉取库存基金的历史分红信息
-    divide = dividendInfoSpider()
+    # divide = dividendInfoSpider()
     # divide.get(db.selectAllFundNavCodes())
     # divide.insertToDB()
 
