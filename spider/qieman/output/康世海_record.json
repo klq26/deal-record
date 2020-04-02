@@ -12,6 +12,10 @@
         "fee": 26.39,
         "occurMoney": 88000,
         "account": "康世海",
+        "category1": "债券",
+        "category2": "国内债券",
+        "category3": "可转债",
+        "categoryId": 512,
         "note": "我要稳稳的幸福_2019112700500254"
     },
     {
@@ -27,6 +31,10 @@
         "fee": 12.76,
         "occurMoney": 8520,
         "account": "康世海",
+        "category1": "混合型",
+        "category2": "股债混合",
+        "category3": "偏股",
+        "categoryId": 411,
         "note": "我要稳稳的幸福_2019112700500255"
     },
     {
@@ -42,6 +50,10 @@
         "fee": 55.41,
         "occurMoney": 69320,
         "account": "康世海",
+        "category1": "债券",
+        "category2": "国内债券",
+        "category3": "可转债",
+        "categoryId": 512,
         "note": "我要稳稳的幸福_2019112700500256"
     },
     {
@@ -57,6 +69,10 @@
         "fee": 57.2,
         "occurMoney": 71560,
         "account": "康世海",
+        "category1": "债券",
+        "category2": "国内债券",
+        "category3": "可转债",
+        "categoryId": 512,
         "note": "我要稳稳的幸福_2019112700500257"
     },
     {
@@ -72,6 +88,10 @@
         "fee": 55.6,
         "occurMoney": 37120,
         "account": "康世海",
+        "category1": "混合型",
+        "category2": "股债混合",
+        "category3": "偏债",
+        "categoryId": 412,
         "note": "我要稳稳的幸福_2019112700500258"
     },
     {
@@ -87,6 +107,10 @@
         "fee": 74.35,
         "occurMoney": 49640,
         "account": "康世海",
+        "category1": "混合型",
+        "category2": "股债混合",
+        "category3": "偏债",
+        "categoryId": 412,
         "note": "我要稳稳的幸福_2019112700500259"
     },
     {
@@ -102,6 +126,10 @@
         "fee": 60.62,
         "occurMoney": 75840,
         "account": "康世海",
+        "category1": "债券",
+        "category2": "国内债券",
+        "category3": "纯债",
+        "categoryId": 511,
         "note": "我要稳稳的幸福_2019112700500260"
     },
     {
@@ -117,6 +145,10 @@
         "fee": 26.4,
         "occurMoney": 88040,
         "account": "康世海",
+        "category1": "债券",
+        "category2": "国内债券",
+        "category3": "可转债",
+        "categoryId": 512,
         "note": "我要稳稳的幸福_2019112800720109"
     },
     {
@@ -132,6 +164,10 @@
         "fee": 12.7,
         "occurMoney": 8480,
         "account": "康世海",
+        "category1": "混合型",
+        "category2": "股债混合",
+        "category3": "偏股",
+        "categoryId": 411,
         "note": "我要稳稳的幸福_2019112800720110"
     },
     {
@@ -147,6 +183,10 @@
         "fee": 55.41,
         "occurMoney": 69320,
         "account": "康世海",
+        "category1": "债券",
+        "category2": "国内债券",
+        "category3": "可转债",
+        "categoryId": 512,
         "note": "我要稳稳的幸福_2019112800720111"
     },
     {
@@ -162,6 +202,10 @@
         "fee": 57.2,
         "occurMoney": 71560,
         "account": "康世海",
+        "category1": "债券",
+        "category2": "国内债券",
+        "category3": "可转债",
+        "categoryId": 512,
         "note": "我要稳稳的幸福_2019112800720112"
     },
     {
@@ -177,6 +221,10 @@
         "fee": 55.6,
         "occurMoney": 37120,
         "account": "康世海",
+        "category1": "混合型",
+        "category2": "股债混合",
+        "category3": "偏债",
+        "categoryId": 412,
         "note": "我要稳稳的幸福_2019112800720113"
     },
     {
@@ -192,6 +240,10 @@
         "fee": 74.29,
         "occurMoney": 49600,
         "account": "康世海",
+        "category1": "混合型",
+        "category2": "股债混合",
+        "category3": "偏债",
+        "categoryId": 412,
         "note": "我要稳稳的幸福_2019112800720114"
     },
     {
@@ -207,6 +259,10 @@
         "fee": 60.66,
         "occurMoney": 75880,
         "account": "康世海",
+        "category1": "债券",
+        "category2": "国内债券",
+        "category3": "纯债",
+        "categoryId": 511,
         "note": "我要稳稳的幸福_2019112800720115"
     },
     {
@@ -222,6 +278,10 @@
         "fee": 385.37,
         "occurMoney": 80670.38,
         "account": "康世海",
+        "category1": "债券",
+        "category2": "国内债券",
+        "category3": "可转债",
+        "categoryId": 512,
         "note": "我要稳稳的幸福_2020010201369690"
     },
     {
@@ -237,6 +297,10 @@
         "fee": 30.56,
         "occurMoney": 15309.93,
         "account": "康世海",
+        "category1": "债券",
+        "category2": "国内债券",
+        "category3": "可转债",
+        "categoryId": 512,
         "note": "我要稳稳的幸福_2020010201369694"
     },
     {
@@ -252,6 +316,10 @@
         "fee": 0,
         "occurMoney": 152273.48,
         "account": "康世海",
+        "category1": "债券",
+        "category2": "国内债券",
+        "category3": "纯债",
+        "categoryId": 511,
         "note": "我要稳稳的幸福_2020010201369696"
     },
     {
@@ -267,6 +335,10 @@
         "fee": 121.72,
         "occurMoney": 152273.48,
         "account": "康世海",
+        "category1": "债券",
+        "category2": "国内债券",
+        "category3": "可转债",
+        "categoryId": 512,
         "note": "我要稳稳的幸福_2020010301689694"
     },
     {
@@ -282,6 +354,10 @@
         "fee": 0,
         "occurMoney": 19890.14,
         "account": "康世海",
+        "category1": "债券",
+        "category2": "国内债券",
+        "category3": "可转债",
+        "categoryId": 512,
         "note": "我要稳稳的幸福_2020022401079035"
     },
     {
@@ -297,6 +373,10 @@
         "fee": 37.67,
         "occurMoney": 37629.49,
         "account": "康世海",
+        "category1": "债券",
+        "category2": "国内债券",
+        "category3": "可转债",
+        "categoryId": 512,
         "note": "我要稳稳的幸福_2020022401079038"
     },
     {
@@ -312,6 +392,10 @@
         "fee": 24.7,
         "occurMoney": 4915.45,
         "account": "康世海",
+        "category1": "混合型",
+        "category2": "股债混合",
+        "category3": "偏股",
+        "categoryId": 411,
         "note": "我要稳稳的幸福_2020022401079040"
     },
     {
@@ -327,6 +411,10 @@
         "fee": 38.52,
         "occurMoney": 38480.17,
         "account": "康世海",
+        "category1": "债券",
+        "category2": "国内债券",
+        "category3": "可转债",
+        "categoryId": 512,
         "note": "我要稳稳的幸福_2020022401079042"
     },
     {
@@ -342,6 +430,10 @@
         "fee": 35.48,
         "occurMoney": 35448.48,
         "account": "康世海",
+        "category1": "债券",
+        "category2": "国内债券",
+        "category3": "可转债",
+        "categoryId": 512,
         "note": "我要稳稳的幸福_2020022401079044"
     },
     {
@@ -357,6 +449,10 @@
         "fee": 99.45,
         "occurMoney": 19791.31,
         "account": "康世海",
+        "category1": "混合型",
+        "category2": "股债混合",
+        "category3": "偏债",
+        "categoryId": 411,
         "note": "我要稳稳的幸福_2020022401079046"
     },
     {
@@ -372,6 +468,10 @@
         "fee": 93.2,
         "occurMoney": 18546.31,
         "account": "康世海",
+        "category1": "混合型",
+        "category2": "股债混合",
+        "category3": "偏债",
+        "categoryId": 412,
         "note": "我要稳稳的幸福_2020022401079048"
     },
     {
@@ -387,6 +487,10 @@
         "fee": 125.07,
         "occurMoney": 24888.67,
         "account": "康世海",
+        "category1": "混合型",
+        "category2": "股债混合",
+        "category3": "偏债",
+        "categoryId": 412,
         "note": "我要稳稳的幸福_2020022401079050"
     },
     {
@@ -402,6 +506,10 @@
         "fee": 0,
         "occurMoney": 19887.68,
         "account": "康世海",
+        "category1": "债券",
+        "category2": "国内债券",
+        "category3": "可转债",
+        "categoryId": 512,
         "note": "我要稳稳的幸福_2020022501736670"
     },
     {
@@ -417,6 +525,10 @@
         "fee": 37.66,
         "occurMoney": 37621.2,
         "account": "康世海",
+        "category1": "债券",
+        "category2": "国内债券",
+        "category3": "可转债",
+        "categoryId": 512,
         "note": "我要稳稳的幸福_2020022501736672"
     },
     {
@@ -432,6 +544,10 @@
         "fee": 24.65,
         "occurMoney": 4905.92,
         "account": "康世海",
+        "category1": "混合型",
+        "category2": "股债混合",
+        "category3": "偏股",
+        "categoryId": 411,
         "note": "我要稳稳的幸福_2020022501736674"
     },
     {
@@ -447,6 +563,10 @@
         "fee": 38.51,
         "occurMoney": 38471.69,
         "account": "康世海",
+        "category1": "债券",
+        "category2": "国内债券",
+        "category3": "可转债",
+        "categoryId": 512,
         "note": "我要稳稳的幸福_2020022501736676"
     },
     {
@@ -462,6 +582,10 @@
         "fee": 35.48,
         "occurMoney": 35440.67,
         "account": "康世海",
+        "category1": "债券",
+        "category2": "国内债券",
+        "category3": "可转债",
+        "categoryId": 512,
         "note": "我要稳稳的幸福_2020022501736678"
     },
     {
@@ -477,6 +601,10 @@
         "fee": 99.35,
         "occurMoney": 19770.11,
         "account": "康世海",
+        "category1": "混合型",
+        "category2": "股债混合",
+        "category3": "偏债",
+        "categoryId": 411,
         "note": "我要稳稳的幸福_2020022501736680"
     },
     {
@@ -492,6 +620,10 @@
         "fee": 93.1,
         "occurMoney": 18527.72,
         "account": "康世海",
+        "category1": "混合型",
+        "category2": "股债混合",
+        "category3": "偏债",
+        "categoryId": 412,
         "note": "我要稳稳的幸福_2020022501736682"
     },
     {
@@ -507,6 +639,10 @@
         "fee": 124.95,
         "occurMoney": 24864.46,
         "account": "康世海",
+        "category1": "混合型",
+        "category2": "股债混合",
+        "category3": "偏债",
+        "categoryId": 412,
         "note": "我要稳稳的幸福_2020022501736684"
     },
     {
@@ -522,6 +658,10 @@
         "fee": 0,
         "occurMoney": 21734.36,
         "account": "康世海",
+        "category1": "债券",
+        "category2": "国内债券",
+        "category3": "可转债",
+        "categoryId": 512,
         "note": "我要稳稳的幸福_2020022601908196"
     },
     {
@@ -537,6 +677,10 @@
         "fee": 41.18,
         "occurMoney": 41141.96,
         "account": "康世海",
+        "category1": "债券",
+        "category2": "国内债券",
+        "category3": "可转债",
+        "categoryId": 512,
         "note": "我要稳稳的幸福_2020022601908198"
     },
     {
@@ -552,6 +696,10 @@
         "fee": 26.58,
         "occurMoney": 5289.56,
         "account": "康世海",
+        "category1": "混合型",
+        "category2": "股债混合",
+        "category3": "偏股",
+        "categoryId": 411,
         "note": "我要稳稳的幸福_2020022601908201"
     },
     {
@@ -567,6 +715,10 @@
         "fee": 42.12,
         "occurMoney": 42074.4,
         "account": "康世海",
+        "category1": "债券",
+        "category2": "国内债券",
+        "category3": "可转债",
+        "categoryId": 512,
         "note": "我要稳稳的幸福_2020022601908203"
     },
     {
@@ -582,6 +734,10 @@
         "fee": 38.8,
         "occurMoney": 38759.76,
         "account": "康世海",
+        "category1": "债券",
+        "category2": "国内债券",
+        "category3": "可转债",
+        "categoryId": 512,
         "note": "我要稳稳的幸福_2020022601908208"
     },
     {
@@ -597,6 +753,10 @@
         "fee": 108.55,
         "occurMoney": 21601.68,
         "account": "康世海",
+        "category1": "混合型",
+        "category2": "股债混合",
+        "category3": "偏债",
+        "categoryId": 411,
         "note": "我要稳稳的幸福_2020022601908214"
     },
     {
@@ -612,6 +772,10 @@
         "fee": 101.73,
         "occurMoney": 20244.17,
         "account": "康世海",
+        "category1": "混合型",
+        "category2": "股债混合",
+        "category3": "偏债",
+        "categoryId": 412,
         "note": "我要稳稳的幸福_2020022601908218"
     },
     {
@@ -627,6 +791,10 @@
         "fee": 136.63,
         "occurMoney": 27188.43,
         "account": "康世海",
+        "category1": "混合型",
+        "category2": "股债混合",
+        "category3": "偏债",
+        "categoryId": 412,
         "note": "我要稳稳的幸福_2020022601908227"
     },
     {
@@ -642,6 +810,10 @@
         "fee": 0.79,
         "occurMoney": 19900.27,
         "account": "康世海",
+        "category1": "债券",
+        "category2": "国内债券",
+        "category3": "可转债",
+        "categoryId": 512,
         "note": "我要稳稳的幸福_2020022701998800"
     },
     {
@@ -657,6 +829,10 @@
         "fee": 37.7,
         "occurMoney": 37664.31,
         "account": "康世海",
+        "category1": "债券",
+        "category2": "国内债券",
+        "category3": "可转债",
+        "categoryId": 512,
         "note": "我要稳稳的幸福_2020022701998850"
     },
     {
@@ -672,6 +848,10 @@
         "fee": 24.49,
         "occurMoney": 4873.46,
         "account": "康世海",
+        "category1": "混合型",
+        "category2": "股债混合",
+        "category3": "偏股",
+        "categoryId": 411,
         "note": "我要稳稳的幸福_2020022701998881"
     },
     {
@@ -687,6 +867,10 @@
         "fee": 38.55,
         "occurMoney": 38517.94,
         "account": "康世海",
+        "category1": "债券",
+        "category2": "国内债券",
+        "category3": "可转债",
+        "categoryId": 512,
         "note": "我要稳稳的幸福_2020022701998923"
     },
     {
@@ -702,6 +886,10 @@
         "fee": 35.51,
         "occurMoney": 35483.5,
         "account": "康世海",
+        "category1": "债券",
+        "category2": "国内债券",
+        "category3": "可转债",
+        "categoryId": 512,
         "note": "我要稳稳的幸福_2020022701998955"
     },
     {
@@ -717,6 +905,10 @@
         "fee": 99.37,
         "occurMoney": 19775.74,
         "account": "康世海",
+        "category1": "混合型",
+        "category2": "股债混合",
+        "category3": "偏债",
+        "categoryId": 411,
         "note": "我要稳稳的幸福_2020022701999002"
     },
     {
@@ -732,6 +924,10 @@
         "fee": 93.2,
         "occurMoney": 18547.5,
         "account": "康世海",
+        "category1": "混合型",
+        "category2": "股债混合",
+        "category3": "偏债",
+        "categoryId": 412,
         "note": "我要稳稳的幸福_2020022701999036"
     },
     {
@@ -747,6 +943,10 @@
         "fee": 125.08,
         "occurMoney": 24890.25,
         "account": "康世海",
+        "category1": "混合型",
+        "category2": "股债混合",
+        "category3": "偏债",
+        "categoryId": 412,
         "note": "我要稳稳的幸福_2020022701999087"
     }
 ]

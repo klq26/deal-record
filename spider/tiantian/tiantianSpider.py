@@ -16,6 +16,7 @@ from bs4 import BeautifulSoup
 import pandas as pd
 
 from login.requestHeaderManager import requestHeaderManager
+from category.categoryManager import categoryManager
 from database.fundDBHelper import fundDBHelper
 
 class tiantianSpider:
@@ -26,6 +27,7 @@ class tiantianSpider:
         requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
         # 当前目录
         self.folder = os.path.abspath(os.path.dirname(__file__))
+        self.categoryManager = categoryManager()
         if strategy == 'klq':
             self.owner = '康力泉'
             self.headers = requestHeaderManager().getTiantianKLQ()
@@ -82,7 +84,7 @@ class tiantianSpider:
             orderJsonList = json.loads(f.read())
             # [print(x) for x in orderJsonList]
         # 输出 record
-        all_model_keys = ['id', 'date', 'code', 'name', 'dealType', 'nav_unit', 'nav_acc', 'volume', 'dealMoney', 'fee', 'occurMoney', 'account', 'note']
+        all_model_keys = ['id', 'date', 'code', 'name', 'dealType', 'nav_unit', 'nav_acc', 'volume', 'dealMoney', 'fee', 'occurMoney', 'account', 'category1', 'category2', 'category3', 'categoryId', 'note']
         index = 0
         # 这是2020年3月31日从历史记录中提取的所有可能的操作名称，如果不在这个之中，应该中断程序，查看原因，升级代码，防止录入错误的交易记录。
         # 快速过户 = 快速取现金到银行卡，忽略
@@ -119,8 +121,6 @@ class tiantianSpider:
             all_model_values = []
             index = index + 1
             all_model_values.append(index)
-            # 先处理指数基金分红
-            # all_model_keys = ['id', 'date', 'code', 'name', 'dealType', 'nav_unit', 'nav_acc', 'volume', 'dealMoney', 'fee', 'occurMoney', 'account', 'note']
             fee = confirmInfo['fee']
             confirmMoney = confirmInfo['confirmMoney']
             volume = confirmInfo['confirmVolume']
@@ -179,6 +179,12 @@ class tiantianSpider:
             all_model_values.append(round(float(fee), 2))
             all_model_values.append(round(float(occurMoney), 2))
             all_model_values.append(self.owner)
+            categoryInfo = self.categoryManager.getCategory(all_model_values[2])
+            if categoryInfo != {}:
+                all_model_values.append(categoryInfo['category1'])
+                all_model_values.append(categoryInfo['category2'])
+                all_model_values.append(categoryInfo['category3'])
+                all_model_values.append(categoryInfo['categoryId'])
             all_model_values.append(x['详情页'])
             itemDict = dict(zip(all_model_keys, all_model_values))
             self.results.append(itemDict)
@@ -211,6 +217,11 @@ class tiantianSpider:
             df.to_csv(os.path.join(self.folder, 'output', '{0}-tiantian-unique-codes.csv'.format(self.owner)), sep='\t')
             return df
             # df.to_excel('code-name.xlsx')
+
+    def load(self):
+        output_path = os.path.join(self.folder, 'output', '{0}_record.json'.format(self.owner))
+        with open(output_path, 'r', encoding='utf-8') as f:
+            return json.loads(f.read())
 
     # 根据今天日期和起始日期,生成多个 90 天时间间隔的二维数组
     def getDateIntervals(self, startYear = 2016, startMonth = 5, startDay = 1, interval = 90):

@@ -12,6 +12,10 @@
         "fee": 0,
         "occurMoney": 33.31,
         "account": "康世海",
+        "category1": "债券",
+        "category2": "国内债券",
+        "category3": "纯债",
+        "categoryId": 511,
         "note": "螺丝钉指数基金组合_2121566535001724307"
     },
     {
@@ -27,6 +31,10 @@
         "fee": 0.03,
         "occurMoney": 34.73,
         "account": "康世海",
+        "category1": "海外新兴",
+        "category2": "香港",
+        "category3": "香港中小",
+        "categoryId": 213,
         "note": "螺丝钉指数基金组合_2121566535018488912"
     },
     {
@@ -42,6 +50,10 @@
         "fee": 0.04,
         "occurMoney": 34.83,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_2121566535018489875"
     },
     {
@@ -57,6 +69,10 @@
         "fee": 0.06,
         "occurMoney": 41.18,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "50AH",
+        "categoryId": 112,
         "note": "螺丝钉指数基金组合_2121566535119143384"
     },
     {
@@ -72,6 +88,10 @@
         "fee": 0,
         "occurMoney": 33.32,
         "account": "康世海",
+        "category1": "债券",
+        "category2": "国内债券",
+        "category3": "纯债",
+        "categoryId": 511,
         "note": "螺丝钉指数基金组合_2281658442821293324"
     },
     {
@@ -87,6 +107,10 @@
         "fee": 0.03,
         "occurMoney": 33.51,
         "account": "康世海",
+        "category1": "海外新兴",
+        "category2": "香港",
+        "category3": "香港中小",
+        "categoryId": 213,
         "note": "螺丝钉指数基金组合_2281658442821271730"
     },
     {
@@ -102,6 +126,10 @@
         "fee": 0.06,
         "occurMoney": 38.98,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "50AH",
+        "categoryId": 112,
         "note": "螺丝钉指数基金组合_2281658442754172787"
     },
     {
@@ -117,6 +145,10 @@
         "fee": 0,
         "occurMoney": 33.33,
         "account": "康世海",
+        "category1": "债券",
+        "category2": "国内债券",
+        "category3": "纯债",
+        "categoryId": 511,
         "note": "螺丝钉指数基金组合_2443846554895936941"
     },
     {
@@ -132,6 +164,10 @@
         "fee": 0.03,
         "occurMoney": 34.36,
         "account": "康世海",
+        "category1": "海外新兴",
+        "category2": "香港",
+        "category3": "香港中小",
+        "categoryId": 213,
         "note": "螺丝钉指数基金组合_2443846554711367413"
     },
     {
@@ -147,6 +183,10 @@
         "fee": 0.04,
         "occurMoney": 35.24,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_2443846554711361039"
     },
     {
@@ -162,6 +202,10 @@
         "fee": 0.05,
         "occurMoney": 39.83,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_2443846554879152783"
     },
     {
@@ -177,6 +221,10 @@
         "fee": 0,
         "occurMoney": 33.31,
         "account": "康世海",
+        "category1": "债券",
+        "category2": "国内债券",
+        "category3": "纯债",
+        "categoryId": 511,
         "note": "螺丝钉指数基金组合_2606407662230976256"
     },
     {
@@ -192,6 +240,10 @@
         "fee": 0.03,
         "occurMoney": 34.37,
         "account": "康世海",
+        "category1": "海外新兴",
+        "category2": "香港",
+        "category3": "香港中小",
+        "categoryId": 213,
         "note": "螺丝钉指数基金组合_2606407662063210064"
     },
     {
@@ -207,6 +259,10 @@
         "fee": 0.04,
         "occurMoney": 35.77,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_2606407661996104046"
     },
     {
@@ -222,6 +278,10 @@
         "fee": 0.05,
         "occurMoney": 39.75,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_2606407662063198102"
     },
     {
@@ -237,6 +297,10 @@
         "fee": 0.03,
         "occurMoney": 34.88,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "标普红利",
+        "categoryId": 132,
         "note": "螺丝钉指数基金组合_2768752252714909352"
     },
     {
@@ -252,6 +316,10 @@
         "fee": 0.04,
         "occurMoney": 35.36,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面120",
+        "categoryId": 116,
         "note": "螺丝钉指数基金组合_2768752252479997488"
     },
     {
@@ -267,6 +335,10 @@
         "fee": 0.04,
         "occurMoney": 35.45,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "500低波动",
+        "categoryId": 122,
         "note": "螺丝钉指数基金组合_2768752252681348064"
     },
     {
@@ -282,6 +354,10 @@
         "fee": 0.04,
         "occurMoney": 36.63,
         "account": "康世海",
+        "category1": "海外新兴",
+        "category2": "香港",
+        "category3": "香港中小",
+        "categoryId": 213,
         "note": "螺丝钉指数基金组合_2768752252681333048"
     },
     {
@@ -297,6 +373,10 @@
         "fee": 0.05,
         "occurMoney": 38.91,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_2768752252664557097"
     },
     {
@@ -312,6 +392,10 @@
         "fee": 0.05,
         "occurMoney": 41.72,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_2768752252647790505"
     },
     {
@@ -327,6 +411,10 @@
         "fee": 0.04,
         "occurMoney": 35.96,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "500低波动",
+        "categoryId": 122,
         "note": "螺丝钉指数基金组合_2930896664671706985"
     },
     {
@@ -342,6 +430,10 @@
         "fee": 0.04,
         "occurMoney": 39.21,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "标普红利",
+        "categoryId": 132,
         "note": "螺丝钉指数基金组合_2930896664587815800"
     },
     {
@@ -357,6 +449,10 @@
         "fee": 0.04,
         "occurMoney": 39.7,
         "account": "康世海",
+        "category1": "海外新兴",
+        "category2": "香港",
+        "category3": "香港中小",
+        "categoryId": 213,
         "note": "螺丝钉指数基金组合_2930896664487159674"
     },
     {
@@ -372,6 +468,10 @@
         "fee": 0.04,
         "occurMoney": 41.44,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面120",
+        "categoryId": 116,
         "note": "螺丝钉指数基金组合_2930896664571027660"
     },
     {
@@ -387,6 +487,10 @@
         "fee": 0.05,
         "occurMoney": 43.53,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_2930896664621369386"
     },
     {
@@ -402,6 +506,10 @@
         "fee": 0.05,
         "occurMoney": 45.54,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_2930896664554246236"
     },
     {
@@ -417,6 +525,10 @@
         "fee": 0.04,
         "occurMoney": 34.23,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "500低波动",
+        "categoryId": 122,
         "note": "螺丝钉指数基金组合_3093350352173539958"
     },
     {
@@ -432,6 +544,10 @@
         "fee": 0.04,
         "occurMoney": 38.51,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "标普红利",
+        "categoryId": 132,
         "note": "螺丝钉指数基金组合_3093350352005765223"
     },
     {
@@ -447,6 +563,10 @@
         "fee": 0.04,
         "occurMoney": 39.91,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面120",
+        "categoryId": 116,
         "note": "螺丝钉指数基金组合_3093350352123215061"
     },
     {
@@ -462,6 +582,10 @@
         "fee": 0.04,
         "occurMoney": 41.65,
         "account": "康世海",
+        "category1": "海外新兴",
+        "category2": "香港",
+        "category3": "香港中小",
+        "categoryId": 213,
         "note": "螺丝钉指数基金组合_3093350352173532223"
     },
     {
@@ -477,6 +601,10 @@
         "fee": 0.05,
         "occurMoney": 44.14,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_3093350352207085802"
     },
     {
@@ -492,6 +620,10 @@
         "fee": 0.06,
         "occurMoney": 47.31,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_3093350352173539109"
     },
     {
@@ -507,6 +639,10 @@
         "fee": 0,
         "occurMoney": 133.54,
         "account": "康世海",
+        "category1": "债券",
+        "category2": "国内债券",
+        "category3": "纯债",
+        "categoryId": 511,
         "note": "螺丝钉指数基金组合_3092190448876400431"
     },
     {
@@ -522,6 +658,10 @@
         "fee": 0.02,
         "occurMoney": 19.0,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "500低波动",
+        "categoryId": 122,
         "note": "螺丝钉指数基金组合_3255464000722438505"
     },
     {
@@ -537,6 +677,10 @@
         "fee": 0.02,
         "occurMoney": 20.59,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "标普红利",
+        "categoryId": 132,
         "note": "螺丝钉指数基金组合_3255464000487567866"
     },
     {
@@ -552,6 +696,10 @@
         "fee": 0.02,
         "occurMoney": 21.64,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面120",
+        "categoryId": 116,
         "note": "螺丝钉指数基金组合_3255464000621801664"
     },
     {
@@ -567,6 +715,10 @@
         "fee": 0.03,
         "occurMoney": 23.73,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_3255464000739224600"
     },
     {
@@ -582,6 +734,10 @@
         "fee": 0.02,
         "occurMoney": 23.76,
         "account": "康世海",
+        "category1": "海外新兴",
+        "category2": "香港",
+        "category3": "香港中小",
+        "categoryId": 213,
         "note": "螺丝钉指数基金组合_3255464000588237948"
     },
     {
@@ -597,6 +753,10 @@
         "fee": 0.03,
         "occurMoney": 24.96,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_3255464000605023637"
     },
     {
@@ -612,6 +772,10 @@
         "fee": 0.02,
         "occurMoney": 19.0,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "500低波动",
+        "categoryId": 122,
         "note": "螺丝钉指数基金组合_3255464000722438505"
     },
     {
@@ -627,6 +791,10 @@
         "fee": 0.02,
         "occurMoney": 20.59,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "标普红利",
+        "categoryId": 132,
         "note": "螺丝钉指数基金组合_3255464000487567866"
     },
     {
@@ -642,6 +810,10 @@
         "fee": 0.02,
         "occurMoney": 21.64,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面120",
+        "categoryId": 116,
         "note": "螺丝钉指数基金组合_3255464000621801664"
     },
     {
@@ -657,6 +829,10 @@
         "fee": 0.03,
         "occurMoney": 23.73,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_3255464000739224600"
     },
     {
@@ -672,6 +848,10 @@
         "fee": 0.02,
         "occurMoney": 23.76,
         "account": "康世海",
+        "category1": "海外新兴",
+        "category2": "香港",
+        "category3": "香港中小",
+        "categoryId": 213,
         "note": "螺丝钉指数基金组合_3255464000588237948"
     },
     {
@@ -687,6 +867,10 @@
         "fee": 0.03,
         "occurMoney": 24.96,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_3255464000605023637"
     },
     {
@@ -702,6 +886,10 @@
         "fee": 0,
         "occurMoney": 2.7,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_3305483267647625938"
     },
     {
@@ -717,6 +905,10 @@
         "fee": 0.04,
         "occurMoney": 35.76,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "500低波动",
+        "categoryId": 122,
         "note": "螺丝钉指数基金组合_3417982939816940703"
     },
     {
@@ -732,6 +924,10 @@
         "fee": 0.04,
         "occurMoney": 38.71,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "标普红利",
+        "categoryId": 132,
         "note": "螺丝钉指数基金组合_3417982939833704158"
     },
     {
@@ -747,6 +943,10 @@
         "fee": 0.04,
         "occurMoney": 41.23,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面120",
+        "categoryId": 116,
         "note": "螺丝钉指数基金组合_3417982940051805879"
     },
     {
@@ -762,6 +962,10 @@
         "fee": 0.05,
         "occurMoney": 44.16,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_3417982939867271984"
     },
     {
@@ -777,6 +981,10 @@
         "fee": 0.05,
         "occurMoney": 45.19,
         "account": "康世海",
+        "category1": "海外新兴",
+        "category2": "香港",
+        "category3": "香港中小",
+        "categoryId": 213,
         "note": "螺丝钉指数基金组合_3417982939850496038"
     },
     {
@@ -792,6 +1000,10 @@
         "fee": 0.06,
         "occurMoney": 46.99,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_3417982940001489920"
     },
     {
@@ -807,6 +1019,10 @@
         "fee": 0.03,
         "occurMoney": 34.82,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "全指医药",
+        "categoryId": 142,
         "note": "螺丝钉指数基金组合_3580369402020908417"
     },
     {
@@ -822,6 +1038,10 @@
         "fee": 0.04,
         "occurMoney": 37.31,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "500低波动",
+        "categoryId": 122,
         "note": "螺丝钉指数基金组合_3580369402155113820"
     },
     {
@@ -837,6 +1057,10 @@
         "fee": 0.04,
         "occurMoney": 41.75,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面120",
+        "categoryId": 116,
         "note": "螺丝钉指数基金组合_3580369401987357822"
     },
     {
@@ -852,6 +1076,10 @@
         "fee": 0.04,
         "occurMoney": 43.97,
         "account": "康世海",
+        "category1": "海外新兴",
+        "category2": "香港",
+        "category3": "香港中小",
+        "categoryId": 213,
         "note": "螺丝钉指数基金组合_3580369402205456006"
     },
     {
@@ -867,6 +1095,10 @@
         "fee": 0.05,
         "occurMoney": 44.98,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_3580369402121568924"
     },
     {
@@ -882,6 +1114,10 @@
         "fee": 0.06,
         "occurMoney": 47.19,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_3580369402205462870"
     },
     {
@@ -897,6 +1133,10 @@
         "fee": 0.04,
         "occurMoney": 38.06,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "全指医药",
+        "categoryId": 142,
         "note": "螺丝钉指数基金组合_3742712748088379044"
     },
     {
@@ -912,6 +1152,10 @@
         "fee": 0.05,
         "occurMoney": 39.12,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "500低波动",
+        "categoryId": 122,
         "note": "螺丝钉指数基金组合_3742712748222587433"
     },
     {
@@ -927,6 +1171,10 @@
         "fee": 0.04,
         "occurMoney": 42.34,
         "account": "康世海",
+        "category1": "海外新兴",
+        "category2": "香港",
+        "category3": "香港中小",
+        "categoryId": 213,
         "note": "螺丝钉指数基金组合_3742712748239359636"
     },
     {
@@ -942,6 +1190,10 @@
         "fee": 0.05,
         "occurMoney": 42.79,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面120",
+        "categoryId": 116,
         "note": "螺丝钉指数基金组合_3742712748004495171"
     },
     {
@@ -957,6 +1209,10 @@
         "fee": 0.06,
         "occurMoney": 46.29,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_3742712748121942832"
     },
     {
@@ -972,6 +1228,10 @@
         "fee": 0.06,
         "occurMoney": 46.54,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_3742712748239375623"
     },
     {
@@ -987,6 +1247,10 @@
         "fee": 0.04,
         "occurMoney": 35.43,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "全指医药",
+        "categoryId": 142,
         "note": "螺丝钉指数基金组合_3906149961206739450"
     },
     {
@@ -1002,6 +1266,10 @@
         "fee": 0.05,
         "occurMoney": 41.44,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "500低波动",
+        "categoryId": 122,
         "note": "螺丝钉指数基金组合_3906149961005423435"
     },
     {
@@ -1017,6 +1285,10 @@
         "fee": 0.04,
         "occurMoney": 43.07,
         "account": "康世海",
+        "category1": "海外新兴",
+        "category2": "香港",
+        "category3": "香港中小",
+        "categoryId": 213,
         "note": "螺丝钉指数基金组合_3906149961055760320"
     },
     {
@@ -1032,6 +1304,10 @@
         "fee": 0.05,
         "occurMoney": 43.08,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面120",
+        "categoryId": 116,
         "note": "螺丝钉指数基金组合_3906149961139650397"
     },
     {
@@ -1047,6 +1323,10 @@
         "fee": 0.05,
         "occurMoney": 44.93,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_3906149961038986425"
     },
     {
@@ -1062,6 +1342,10 @@
         "fee": 0.06,
         "occurMoney": 46.06,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_3906149961475173951"
     },
     {
@@ -1077,6 +1361,10 @@
         "fee": 0,
         "occurMoney": 40.77,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_3953985102456970061"
     },
     {
@@ -1092,6 +1380,10 @@
         "fee": 0.05,
         "occurMoney": 38.73,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "500低波动",
+        "categoryId": 122,
         "note": "螺丝钉指数基金组合_4071133900731218742"
     },
     {
@@ -1107,6 +1399,10 @@
         "fee": 0.06,
         "occurMoney": 38.8,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面60",
+        "categoryId": 115,
         "note": "螺丝钉指数基金组合_4071133900731207585"
     },
     {
@@ -1122,6 +1418,10 @@
         "fee": 0.04,
         "occurMoney": 39.21,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面120",
+        "categoryId": 116,
         "note": "螺丝钉指数基金组合_4071133900915765173"
     },
     {
@@ -1137,6 +1437,10 @@
         "fee": 0.04,
         "occurMoney": 39.48,
         "account": "康世海",
+        "category1": "海外新兴",
+        "category2": "香港",
+        "category3": "香港中小",
+        "categoryId": 213,
         "note": "螺丝钉指数基金组合_4071133900882187759"
     },
     {
@@ -1152,6 +1456,10 @@
         "fee": 0.05,
         "occurMoney": 42.6,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_4071133900714424021"
     },
     {
@@ -1167,6 +1475,10 @@
         "fee": 0.05,
         "occurMoney": 42.67,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_4071133900949323268"
     },
     {
@@ -1182,6 +1494,10 @@
         "fee": 0.05,
         "occurMoney": 35.86,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面60",
+        "categoryId": 115,
         "note": "螺丝钉指数基金组合_4229792605159962367"
     },
     {
@@ -1197,6 +1513,10 @@
         "fee": 0.04,
         "occurMoney": 36.31,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面120",
+        "categoryId": 116,
         "note": "螺丝钉指数基金组合_4229792605210309824"
     },
     {
@@ -1212,6 +1532,10 @@
         "fee": 0.05,
         "occurMoney": 37.86,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "500低波动",
+        "categoryId": 122,
         "note": "螺丝钉指数基金组合_4229792605243853286"
     },
     {
@@ -1227,6 +1551,10 @@
         "fee": 0.04,
         "occurMoney": 38.83,
         "account": "康世海",
+        "category1": "海外新兴",
+        "category2": "香港",
+        "category3": "香港中小",
+        "categoryId": 213,
         "note": "螺丝钉指数基金组合_4229792605143181139"
     },
     {
@@ -1242,6 +1570,10 @@
         "fee": 0.05,
         "occurMoney": 41.08,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_4229792605193518485"
     },
     {
@@ -1257,6 +1589,10 @@
         "fee": 0.05,
         "occurMoney": 41.5,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_4229792605126416232"
     },
     {
@@ -1272,6 +1608,10 @@
         "fee": 0.06,
         "occurMoney": 37.31,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面60",
+        "categoryId": 115,
         "note": "螺丝钉指数基金组合_117636545981886464"
     },
     {
@@ -1287,6 +1627,10 @@
         "fee": 0.04,
         "occurMoney": 38.11,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面120",
+        "categoryId": 116,
         "note": "螺丝钉指数基金组合_117636545981886465"
     },
     {
@@ -1302,6 +1646,10 @@
         "fee": 0.04,
         "occurMoney": 38.78,
         "account": "康世海",
+        "category1": "海外新兴",
+        "category2": "香港",
+        "category3": "香港中小",
+        "categoryId": 213,
         "note": "螺丝钉指数基金组合_117636545981886466"
     },
     {
@@ -1317,6 +1665,10 @@
         "fee": 0.05,
         "occurMoney": 40.18,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "500低波动",
+        "categoryId": 122,
         "note": "螺丝钉指数基金组合_117636545981886467"
     },
     {
@@ -1332,6 +1684,10 @@
         "fee": 0.05,
         "occurMoney": 42.64,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_117636545981886468"
     },
     {
@@ -1347,6 +1703,10 @@
         "fee": 0.05,
         "occurMoney": 43.77,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_117636545981886469"
     },
     {
@@ -1362,6 +1722,10 @@
         "fee": 0.05,
         "occurMoney": 36.34,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面60",
+        "categoryId": 115,
         "note": "螺丝钉指数基金组合_120171825775423488"
     },
     {
@@ -1377,6 +1741,10 @@
         "fee": 0.04,
         "occurMoney": 37.13,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面120",
+        "categoryId": 116,
         "note": "螺丝钉指数基金组合_120171825775423489"
     },
     {
@@ -1392,6 +1760,10 @@
         "fee": 0.04,
         "occurMoney": 37.68,
         "account": "康世海",
+        "category1": "海外新兴",
+        "category2": "香港",
+        "category3": "香港中小",
+        "categoryId": 213,
         "note": "螺丝钉指数基金组合_120171825775423490"
     },
     {
@@ -1407,6 +1779,10 @@
         "fee": 0.05,
         "occurMoney": 38.94,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "500低波动",
+        "categoryId": 122,
         "note": "螺丝钉指数基金组合_120171825775423491"
     },
     {
@@ -1422,6 +1798,10 @@
         "fee": 0.05,
         "occurMoney": 41.9,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_120171825775423492"
     },
     {
@@ -1437,6 +1817,10 @@
         "fee": 0.05,
         "occurMoney": 43.81,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_120171825775423493"
     },
     {
@@ -1452,6 +1836,10 @@
         "fee": 0.06,
         "occurMoney": 37.21,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面60",
+        "categoryId": 115,
         "note": "螺丝钉指数基金组合_122709617579569152"
     },
     {
@@ -1467,6 +1855,10 @@
         "fee": 0.04,
         "occurMoney": 37.67,
         "account": "康世海",
+        "category1": "海外新兴",
+        "category2": "香港",
+        "category3": "香港中小",
+        "categoryId": 213,
         "note": "螺丝钉指数基金组合_122709617579569153"
     },
     {
@@ -1482,6 +1874,10 @@
         "fee": 0.04,
         "occurMoney": 38.11,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面120",
+        "categoryId": 116,
         "note": "螺丝钉指数基金组合_122709617579569154"
     },
     {
@@ -1497,6 +1893,10 @@
         "fee": 0.05,
         "occurMoney": 41.2,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "500低波动",
+        "categoryId": 122,
         "note": "螺丝钉指数基金组合_122709617579569155"
     },
     {
@@ -1512,6 +1912,10 @@
         "fee": 0.05,
         "occurMoney": 43.44,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_122709617579569156"
     },
     {
@@ -1527,6 +1931,10 @@
         "fee": 0.05,
         "occurMoney": 43.58,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_122709617579569157"
     },
     {
@@ -1542,6 +1950,10 @@
         "fee": 0.05,
         "occurMoney": 36.3,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面60",
+        "categoryId": 115,
         "note": "螺丝钉指数基金组合_125246998031253504"
     },
     {
@@ -1557,6 +1969,10 @@
         "fee": 0.04,
         "occurMoney": 36.72,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面120",
+        "categoryId": 116,
         "note": "螺丝钉指数基金组合_125246998031253505"
     },
     {
@@ -1572,6 +1988,10 @@
         "fee": 0.04,
         "occurMoney": 37.42,
         "account": "康世海",
+        "category1": "海外新兴",
+        "category2": "香港",
+        "category3": "香港中小",
+        "categoryId": 213,
         "note": "螺丝钉指数基金组合_125246998031253506"
     },
     {
@@ -1587,6 +2007,10 @@
         "fee": 0.05,
         "occurMoney": 39.71,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "500低波动",
+        "categoryId": 122,
         "note": "螺丝钉指数基金组合_125246998031253507"
     },
     {
@@ -1602,6 +2026,10 @@
         "fee": 0.05,
         "occurMoney": 42.32,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_125246998031253508"
     },
     {
@@ -1617,6 +2045,10 @@
         "fee": 0.05,
         "occurMoney": 42.77,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_125246998031253509"
     },
     {
@@ -1632,6 +2064,10 @@
         "fee": 0.03,
         "occurMoney": 34.53,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "全指医药",
+        "categoryId": 142,
         "note": "螺丝钉指数基金组合_127784158118981632"
     },
     {
@@ -1647,6 +2083,10 @@
         "fee": 0.06,
         "occurMoney": 40.11,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面60",
+        "categoryId": 115,
         "note": "螺丝钉指数基金组合_127784158118981633"
     },
     {
@@ -1662,6 +2102,10 @@
         "fee": 0.04,
         "occurMoney": 42.1,
         "account": "康世海",
+        "category1": "海外新兴",
+        "category2": "香港",
+        "category3": "香港中小",
+        "categoryId": 213,
         "note": "螺丝钉指数基金组合_127784158118981634"
     },
     {
@@ -1677,6 +2121,10 @@
         "fee": 0.05,
         "occurMoney": 42.74,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "500低波动",
+        "categoryId": 122,
         "note": "螺丝钉指数基金组合_127784158118981635"
     },
     {
@@ -1692,6 +2140,10 @@
         "fee": 0.06,
         "occurMoney": 47.16,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_127784158118981636"
     },
     {
@@ -1707,6 +2159,10 @@
         "fee": 0.06,
         "occurMoney": 48.1,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_127784158118981637"
     },
     {
@@ -1722,6 +2178,10 @@
         "fee": 0.06,
         "occurMoney": 48.1,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_130346775094149120"
     },
     {
@@ -1737,6 +2197,10 @@
         "fee": 0.06,
         "occurMoney": 47.03,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_130346775127703552"
     },
     {
@@ -1752,6 +2216,10 @@
         "fee": 0.04,
         "occurMoney": 41.32,
         "account": "康世海",
+        "category1": "海外新兴",
+        "category2": "香港",
+        "category3": "香港中小",
+        "categoryId": 213,
         "note": "螺丝钉指数基金组合_130346775157063680"
     },
     {
@@ -1767,6 +2235,10 @@
         "fee": 0.06,
         "occurMoney": 39.67,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面60",
+        "categoryId": 115,
         "note": "螺丝钉指数基金组合_130346775194812416"
     },
     {
@@ -1782,6 +2254,10 @@
         "fee": 0.04,
         "occurMoney": 40.02,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面120",
+        "categoryId": 116,
         "note": "螺丝钉指数基金组合_130346775232561152"
     },
     {
@@ -1797,6 +2273,10 @@
         "fee": 0.05,
         "occurMoney": 44.11,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "500低波动",
+        "categoryId": 122,
         "note": "螺丝钉指数基金组合_130346775261921280"
     },
     {
@@ -1812,6 +2292,10 @@
         "fee": 0.06,
         "occurMoney": 47.36,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_132856514566569984"
     },
     {
@@ -1827,6 +2311,10 @@
         "fee": 0.05,
         "occurMoney": 45.56,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_132856514591735808"
     },
     {
@@ -1842,6 +2330,10 @@
         "fee": 0.04,
         "occurMoney": 39.34,
         "account": "康世海",
+        "category1": "海外新兴",
+        "category2": "香港",
+        "category3": "香港中小",
+        "categoryId": 213,
         "note": "螺丝钉指数基金组合_132856514608513024"
     },
     {
@@ -1857,6 +2349,10 @@
         "fee": 0.06,
         "occurMoney": 37.77,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面60",
+        "categoryId": 115,
         "note": "螺丝钉指数基金组合_132856514633678848"
     },
     {
@@ -1872,6 +2368,10 @@
         "fee": 0.04,
         "occurMoney": 37.7,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面120",
+        "categoryId": 116,
         "note": "螺丝钉指数基金组合_132856514658844672"
     },
     {
@@ -1887,6 +2387,10 @@
         "fee": 0.05,
         "occurMoney": 41.65,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "500低波动",
+        "categoryId": 122,
         "note": "螺丝钉指数基金组合_132856514684010496"
     },
     {
@@ -1902,6 +2406,10 @@
         "fee": 0,
         "occurMoney": 0,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_135446151009353728"
     },
     {
@@ -1917,6 +2425,10 @@
         "fee": 0.06,
         "occurMoney": 50.16,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_135418180169031680"
     },
     {
@@ -1932,6 +2444,10 @@
         "fee": 0.06,
         "occurMoney": 48.29,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_135418180202586112"
     },
     {
@@ -1947,6 +2463,10 @@
         "fee": 0.04,
         "occurMoney": 39.27,
         "account": "康世海",
+        "category1": "海外新兴",
+        "category2": "香港",
+        "category3": "香港中小",
+        "categoryId": 213,
         "note": "螺丝钉指数基金组合_135418180227751936"
     },
     {
@@ -1962,6 +2482,10 @@
         "fee": 0.06,
         "occurMoney": 41.11,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面60",
+        "categoryId": 115,
         "note": "螺丝钉指数基金组合_135418180257112064"
     },
     {
@@ -1977,6 +2501,10 @@
         "fee": 0.04,
         "occurMoney": 40.43,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面120",
+        "categoryId": 116,
         "note": "螺丝钉指数基金组合_135418180290666496"
     },
     {
@@ -1992,6 +2520,10 @@
         "fee": 0.05,
         "occurMoney": 44.87,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "500低波动",
+        "categoryId": 122,
         "note": "螺丝钉指数基金组合_135418180324220928"
     },
     {
@@ -2007,6 +2539,10 @@
         "fee": 0.06,
         "occurMoney": 49.49,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_137929909461204992"
     },
     {
@@ -2022,6 +2558,10 @@
         "fee": 0.06,
         "occurMoney": 46.34,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_137929909482176512"
     },
     {
@@ -2037,6 +2577,10 @@
         "fee": 0.04,
         "occurMoney": 37.61,
         "account": "康世海",
+        "category1": "海外新兴",
+        "category2": "香港",
+        "category3": "香港中小",
+        "categoryId": 213,
         "note": "螺丝钉指数基金组合_137929909498953728"
     },
     {
@@ -2052,6 +2596,10 @@
         "fee": 0.06,
         "occurMoney": 38.75,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面60",
+        "categoryId": 115,
         "note": "螺丝钉指数基金组合_137929909524119552"
     },
     {
@@ -2067,6 +2615,10 @@
         "fee": 0.04,
         "occurMoney": 33.91,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "养老产业",
+        "categoryId": 141,
         "note": "螺丝钉指数基金组合_137929909549285376"
     },
     {
@@ -2082,6 +2634,10 @@
         "fee": 0.05,
         "occurMoney": 42.35,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "500低波动",
+        "categoryId": 122,
         "note": "螺丝钉指数基金组合_137929909570256896"
     },
     {
@@ -2097,6 +2653,10 @@
         "fee": 0.06,
         "occurMoney": 46.56,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_140468407238303744"
     },
     {
@@ -2112,6 +2672,10 @@
         "fee": 0.05,
         "occurMoney": 43.36,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_140468407259275264"
     },
     {
@@ -2127,6 +2691,10 @@
         "fee": 0.04,
         "occurMoney": 35.34,
         "account": "康世海",
+        "category1": "海外新兴",
+        "category2": "香港",
+        "category3": "香港中小",
+        "categoryId": 213,
         "note": "螺丝钉指数基金组合_140468407276052480"
     },
     {
@@ -2142,6 +2710,10 @@
         "fee": 0.05,
         "occurMoney": 35.99,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面60",
+        "categoryId": 115,
         "note": "螺丝钉指数基金组合_140468407297024000"
     },
     {
@@ -2157,6 +2729,10 @@
         "fee": 0.04,
         "occurMoney": 34.62,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面120",
+        "categoryId": 116,
         "note": "螺丝钉指数基金组合_140468407317995520"
     },
     {
@@ -2172,6 +2748,10 @@
         "fee": 0.05,
         "occurMoney": 39.16,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "500低波动",
+        "categoryId": 122,
         "note": "螺丝钉指数基金组合_140468407338967040"
     },
     {
@@ -2187,6 +2767,10 @@
         "fee": 0.05,
         "occurMoney": 45.85,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_143004234803752960"
     },
     {
@@ -2202,6 +2786,10 @@
         "fee": 0.05,
         "occurMoney": 43.33,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_143004234837307392"
     },
     {
@@ -2217,6 +2805,10 @@
         "fee": 0.03,
         "occurMoney": 34.92,
         "account": "康世海",
+        "category1": "海外新兴",
+        "category2": "香港",
+        "category3": "香港中小",
+        "categoryId": 213,
         "note": "螺丝钉指数基金组合_143004234866667520"
     },
     {
@@ -2232,6 +2824,10 @@
         "fee": 0.06,
         "occurMoney": 36.83,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面60",
+        "categoryId": 115,
         "note": "螺丝钉指数基金组合_143004234904416256"
     },
     {
@@ -2247,6 +2843,10 @@
         "fee": 0.04,
         "occurMoney": 35.21,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面120",
+        "categoryId": 116,
         "note": "螺丝钉指数基金组合_143004234946359296"
     },
     {
@@ -2262,6 +2862,10 @@
         "fee": 0.05,
         "occurMoney": 39.24,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "500低波动",
+        "categoryId": 122,
         "note": "螺丝钉指数基金组合_143004234996690944"
     },
     {
@@ -2277,6 +2881,10 @@
         "fee": 0,
         "occurMoney": 0,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_145985495470129152"
     },
     {
@@ -2292,6 +2900,10 @@
         "fee": 0.06,
         "occurMoney": 48.0,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_145570742692130816"
     },
     {
@@ -2307,6 +2919,10 @@
         "fee": 0.05,
         "occurMoney": 44.97,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_145570742734073856"
     },
     {
@@ -2322,6 +2938,10 @@
         "fee": 0.04,
         "occurMoney": 37.01,
         "account": "康世海",
+        "category1": "海外新兴",
+        "category2": "香港",
+        "category3": "香港中小",
+        "categoryId": 213,
         "note": "螺丝钉指数基金组合_145570742763433984"
     },
     {
@@ -2337,6 +2957,10 @@
         "fee": 0.06,
         "occurMoney": 37.64,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面60",
+        "categoryId": 115,
         "note": "螺丝钉指数基金组合_145570742792794112"
     },
     {
@@ -2352,6 +2976,10 @@
         "fee": 0.04,
         "occurMoney": 33.87,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "养老产业",
+        "categoryId": 141,
         "note": "螺丝钉指数基金组合_145570742822154240"
     },
     {
@@ -2367,6 +2995,10 @@
         "fee": 0.05,
         "occurMoney": 40.95,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "500低波动",
+        "categoryId": 122,
         "note": "螺丝钉指数基金组合_145570742851514368"
     },
     {
@@ -2382,6 +3014,10 @@
         "fee": 0.06,
         "occurMoney": 48.0,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_145570742692130816"
     },
     {
@@ -2397,6 +3033,10 @@
         "fee": 0.05,
         "occurMoney": 44.97,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_145570742734073856"
     },
     {
@@ -2412,6 +3052,10 @@
         "fee": 0.04,
         "occurMoney": 37.01,
         "account": "康世海",
+        "category1": "海外新兴",
+        "category2": "香港",
+        "category3": "香港中小",
+        "categoryId": 213,
         "note": "螺丝钉指数基金组合_145570742763433984"
     },
     {
@@ -2427,6 +3071,10 @@
         "fee": 0.06,
         "occurMoney": 37.64,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面60",
+        "categoryId": 115,
         "note": "螺丝钉指数基金组合_145570742792794112"
     },
     {
@@ -2442,6 +3090,10 @@
         "fee": 0.04,
         "occurMoney": 33.87,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "养老产业",
+        "categoryId": 141,
         "note": "螺丝钉指数基金组合_145570742822154240"
     },
     {
@@ -2457,6 +3109,10 @@
         "fee": 0.05,
         "occurMoney": 40.95,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "500低波动",
+        "categoryId": 122,
         "note": "螺丝钉指数基金组合_145570742851514368"
     },
     {
@@ -2472,6 +3128,10 @@
         "fee": 0.06,
         "occurMoney": 48.77,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_150623128343199744"
     },
     {
@@ -2487,6 +3147,10 @@
         "fee": 0.06,
         "occurMoney": 47.61,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_150623128376754176"
     },
     {
@@ -2502,6 +3166,10 @@
         "fee": 0.06,
         "occurMoney": 39.07,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面60",
+        "categoryId": 115,
         "note": "螺丝钉指数基金组合_150623128414502912"
     },
     {
@@ -2517,6 +3185,10 @@
         "fee": 0.04,
         "occurMoney": 37.41,
         "account": "康世海",
+        "category1": "海外新兴",
+        "category2": "香港",
+        "category3": "香港中小",
+        "categoryId": 213,
         "note": "螺丝钉指数基金组合_150623128448057344"
     },
     {
@@ -2532,6 +3204,10 @@
         "fee": 0.05,
         "occurMoney": 43.44,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "500低波动",
+        "categoryId": 122,
         "note": "螺丝钉指数基金组合_150623128490000384"
     },
     {
@@ -2547,6 +3223,10 @@
         "fee": 0.04,
         "occurMoney": 35.99,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "养老产业",
+        "categoryId": 141,
         "note": "螺丝钉指数基金组合_150623128536137728"
     },
     {
@@ -2562,6 +3242,10 @@
         "fee": 0.05,
         "occurMoney": 44.77,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_153155532240896000"
     },
     {
@@ -2577,6 +3261,10 @@
         "fee": 0.05,
         "occurMoney": 43.56,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_153155532270256128"
     },
     {
@@ -2592,6 +3280,10 @@
         "fee": 0.05,
         "occurMoney": 36.1,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面60",
+        "categoryId": 115,
         "note": "螺丝钉指数基金组合_153155532303810560"
     },
     {
@@ -2607,6 +3299,10 @@
         "fee": 0.03,
         "occurMoney": 34.84,
         "account": "康世海",
+        "category1": "海外新兴",
+        "category2": "香港",
+        "category3": "香港中小",
+        "categoryId": 213,
         "note": "螺丝钉指数基金组合_153155532345753600"
     },
     {
@@ -2622,6 +3318,10 @@
         "fee": 0.05,
         "occurMoney": 40.69,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "500低波动",
+        "categoryId": 122,
         "note": "螺丝钉指数基金组合_153155532379308032"
     },
     {
@@ -2637,6 +3337,10 @@
         "fee": 0.04,
         "occurMoney": 33.49,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "养老产业",
+        "categoryId": 141,
         "note": "螺丝钉指数基金组合_153155532408668160"
     },
     {
@@ -2652,6 +3356,10 @@
         "fee": 0.05,
         "occurMoney": 45.84,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_155698591864078336"
     },
     {
@@ -2667,6 +3375,10 @@
         "fee": 0.05,
         "occurMoney": 45.07,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_155698591889244160"
     },
     {
@@ -2682,6 +3394,10 @@
         "fee": 0.06,
         "occurMoney": 36.98,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面60",
+        "categoryId": 115,
         "note": "螺丝钉指数基金组合_155698591910215680"
     },
     {
@@ -2697,6 +3413,10 @@
         "fee": 0.03,
         "occurMoney": 34.31,
         "account": "康世海",
+        "category1": "海外新兴",
+        "category2": "香港",
+        "category3": "香港中小",
+        "categoryId": 213,
         "note": "螺丝钉指数基金组合_155698591931187200"
     },
     {
@@ -2712,6 +3432,10 @@
         "fee": 0.05,
         "occurMoney": 43.16,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "500低波动",
+        "categoryId": 122,
         "note": "螺丝钉指数基金组合_155698591956353024"
     },
     {
@@ -2727,6 +3451,10 @@
         "fee": 0.04,
         "occurMoney": 34.66,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "养老产业",
+        "categoryId": 141,
         "note": "螺丝钉指数基金组合_155698591981518848"
     },
     {
@@ -2742,6 +3470,10 @@
         "fee": 0.05,
         "occurMoney": 45.91,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_158234562266836992"
     },
     {
@@ -2757,6 +3489,10 @@
         "fee": 0.05,
         "occurMoney": 43.94,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_158234562300391424"
     },
     {
@@ -2772,6 +3508,10 @@
         "fee": 0.06,
         "occurMoney": 37.05,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面60",
+        "categoryId": 115,
         "note": "螺丝钉指数基金组合_158234562333945856"
     },
     {
@@ -2787,6 +3527,10 @@
         "fee": 0.03,
         "occurMoney": 32.91,
         "account": "康世海",
+        "category1": "海外新兴",
+        "category2": "香港",
+        "category3": "香港中小",
+        "categoryId": 213,
         "note": "螺丝钉指数基金组合_158234562354917376"
     },
     {
@@ -2802,6 +3546,10 @@
         "fee": 0.05,
         "occurMoney": 41.4,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "500低波动",
+        "categoryId": 122,
         "note": "螺丝钉指数基金组合_158234562388471808"
     },
     {
@@ -2817,6 +3565,10 @@
         "fee": 0.04,
         "occurMoney": 33.75,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "养老产业",
+        "categoryId": 141,
         "note": "螺丝钉指数基金组合_158234562438803456"
     },
     {
@@ -2832,6 +3584,10 @@
         "fee": 0.05,
         "occurMoney": 45.12,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_160760583884783616"
     },
     {
@@ -2847,6 +3603,10 @@
         "fee": 0.05,
         "occurMoney": 44.27,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_160760583909949440"
     },
     {
@@ -2862,6 +3622,10 @@
         "fee": 0.05,
         "occurMoney": 35.79,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面60",
+        "categoryId": 115,
         "note": "螺丝钉指数基金组合_160760583935115264"
     },
     {
@@ -2877,6 +3641,10 @@
         "fee": 0.05,
         "occurMoney": 42.39,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "500低波动",
+        "categoryId": 122,
         "note": "螺丝钉指数基金组合_160760583960281088"
     },
     {
@@ -2892,6 +3660,10 @@
         "fee": 0.04,
         "occurMoney": 33.61,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "养老产业",
+        "categoryId": 141,
         "note": "螺丝钉指数基金组合_160760583989641216"
     },
     {
@@ -2907,6 +3679,10 @@
         "fee": 0.04,
         "occurMoney": 34.2,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面120",
+        "categoryId": 116,
         "note": "螺丝钉指数基金组合_160760584014807040"
     },
     {
@@ -2922,6 +3698,10 @@
         "fee": 0.06,
         "occurMoney": 47.04,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_163302124633346048"
     },
     {
@@ -2937,6 +3717,10 @@
         "fee": 0.06,
         "occurMoney": 46.02,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_163302124654317568"
     },
     {
@@ -2952,6 +3736,10 @@
         "fee": 0.04,
         "occurMoney": 34.27,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "养老产业",
+        "categoryId": 141,
         "note": "螺丝钉指数基金组合_163302124683677696"
     },
     {
@@ -2967,6 +3755,10 @@
         "fee": 0.06,
         "occurMoney": 37.56,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面60",
+        "categoryId": 115,
         "note": "螺丝钉指数基金组合_163302124708843520"
     },
     {
@@ -2982,6 +3774,10 @@
         "fee": 0.04,
         "occurMoney": 35.64,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面120",
+        "categoryId": 116,
         "note": "螺丝钉指数基金组合_163302124729815040"
     },
     {
@@ -2997,6 +3793,10 @@
         "fee": 0.05,
         "occurMoney": 44.1,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "500低波动",
+        "categoryId": 122,
         "note": "螺丝钉指数基金组合_163302124754980864"
     },
     {
@@ -3012,6 +3812,10 @@
         "fee": 0.03,
         "occurMoney": 23.53,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_165835799875207168"
     },
     {
@@ -3027,6 +3831,10 @@
         "fee": 0.03,
         "occurMoney": 23.22,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_165835799908761600"
     },
     {
@@ -3042,6 +3850,10 @@
         "fee": 0.02,
         "occurMoney": 16.72,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "养老产业",
+        "categoryId": 141,
         "note": "螺丝钉指数基金组合_165835799946510336"
     },
     {
@@ -3057,6 +3869,10 @@
         "fee": 0.03,
         "occurMoney": 19.04,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面60",
+        "categoryId": 115,
         "note": "螺丝钉指数基金组合_165835799975870464"
     },
     {
@@ -3072,6 +3888,10 @@
         "fee": 0.02,
         "occurMoney": 17.88,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面120",
+        "categoryId": 116,
         "note": "螺丝钉指数基金组合_165835800009424896"
     },
     {
@@ -3087,6 +3907,10 @@
         "fee": 0.03,
         "occurMoney": 22.0,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "500低波动",
+        "categoryId": 122,
         "note": "螺丝钉指数基金组合_165835800034590720"
     },
     {
@@ -3102,6 +3926,10 @@
         "fee": 0.03,
         "occurMoney": 22.48,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_168372943801991168"
     },
     {
@@ -3117,6 +3945,10 @@
         "fee": 0.03,
         "occurMoney": 22.66,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_168372943843934208"
     },
     {
@@ -3132,6 +3964,10 @@
         "fee": 0.03,
         "occurMoney": 18.74,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面60",
+        "categoryId": 115,
         "note": "螺丝钉指数基金组合_168372943890071552"
     },
     {
@@ -3147,6 +3983,10 @@
         "fee": 0.03,
         "occurMoney": 21.6,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "500低波动",
+        "categoryId": 122,
         "note": "螺丝钉指数基金组合_168372943940403200"
     },
     {
@@ -3162,6 +4002,10 @@
         "fee": 0.02,
         "occurMoney": 17.24,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "养老产业",
+        "categoryId": 141,
         "note": "螺丝钉指数基金组合_168372943986540544"
     },
     {
@@ -3177,6 +4021,10 @@
         "fee": 0.02,
         "occurMoney": 17.87,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面120",
+        "categoryId": 116,
         "note": "螺丝钉指数基金组合_168372944028483584"
     },
     {
@@ -3192,6 +4040,10 @@
         "fee": 0.03,
         "occurMoney": 23.04,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_170908572284502016"
     },
     {
@@ -3207,6 +4059,10 @@
         "fee": 0.03,
         "occurMoney": 23.11,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_170908572309667840"
     },
     {
@@ -3222,6 +4078,10 @@
         "fee": 0.03,
         "occurMoney": 19.07,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面60",
+        "categoryId": 115,
         "note": "螺丝钉指数基金组合_170908572330639360"
     },
     {
@@ -3237,6 +4097,10 @@
         "fee": 0.03,
         "occurMoney": 21.75,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "500低波动",
+        "categoryId": 122,
         "note": "螺丝钉指数基金组合_170908572351610880"
     },
     {
@@ -3252,6 +4116,10 @@
         "fee": 0.02,
         "occurMoney": 17.47,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "养老产业",
+        "categoryId": 141,
         "note": "螺丝钉指数基金组合_170908572376776704"
     },
     {
@@ -3267,6 +4135,10 @@
         "fee": 0.02,
         "occurMoney": 18.01,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面120",
+        "categoryId": 116,
         "note": "螺丝钉指数基金组合_170908572397748224"
     },
     {
@@ -3282,6 +4154,10 @@
         "fee": 0,
         "occurMoney": 0,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_173135169045872640"
     },
     {
@@ -3297,6 +4173,10 @@
         "fee": 0.03,
         "occurMoney": 22.72,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_173445624574427136"
     },
     {
@@ -3312,6 +4192,10 @@
         "fee": 0.03,
         "occurMoney": 22.74,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_173445624603787264"
     },
     {
@@ -3327,6 +4211,10 @@
         "fee": 0.03,
         "occurMoney": 18.14,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面60",
+        "categoryId": 115,
         "note": "螺丝钉指数基金组合_173445624637341696"
     },
     {
@@ -3342,6 +4230,10 @@
         "fee": 0.03,
         "occurMoney": 20.93,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "500低波动",
+        "categoryId": 122,
         "note": "螺丝钉指数基金组合_173445624675090432"
     },
     {
@@ -3357,6 +4249,10 @@
         "fee": 0.02,
         "occurMoney": 16.74,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "养老产业",
+        "categoryId": 141,
         "note": "螺丝钉指数基金组合_173445624717033472"
     },
     {
@@ -3372,6 +4268,10 @@
         "fee": 0.02,
         "occurMoney": 20.81,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "中证银行",
+        "categoryId": 146,
         "note": "螺丝钉指数基金组合_173445624763170816"
     },
     {
@@ -3387,6 +4287,10 @@
         "fee": 0,
         "occurMoney": 2880,
         "account": "康世海",
+        "category1": "债券",
+        "category2": "国内债券",
+        "category3": "纯债",
+        "categoryId": 511,
         "note": "钉钉宝90天组合_175259944916533248"
     },
     {
@@ -3402,6 +4306,10 @@
         "fee": 0,
         "occurMoney": 2160,
         "account": "康世海",
+        "category1": "债券",
+        "category2": "国内债券",
+        "category3": "纯债",
+        "categoryId": 511,
         "note": "钉钉宝90天组合_175259944966864896"
     },
     {
@@ -3417,6 +4325,10 @@
         "fee": 0,
         "occurMoney": 2160,
         "account": "康世海",
+        "category1": "债券",
+        "category2": "国内债券",
+        "category3": "纯债",
+        "categoryId": 511,
         "note": "钉钉宝90天组合_175259945008807936"
     },
     {
@@ -3432,6 +4344,10 @@
         "fee": 0.03,
         "occurMoney": 21.64,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_175984130932781056"
     },
     {
@@ -3447,6 +4363,10 @@
         "fee": 0.03,
         "occurMoney": 22.61,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_175984130974724096"
     },
     {
@@ -3462,6 +4382,10 @@
         "fee": 0.03,
         "occurMoney": 17.29,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面60",
+        "categoryId": 115,
         "note": "螺丝钉指数基金组合_175984131004084224"
     },
     {
@@ -3477,6 +4401,10 @@
         "fee": 0.02,
         "occurMoney": 20.36,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "500低波动",
+        "categoryId": 122,
         "note": "螺丝钉指数基金组合_175984131041832960"
     },
     {
@@ -3492,6 +4420,10 @@
         "fee": 0.02,
         "occurMoney": 20.16,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "中证银行",
+        "categoryId": 146,
         "note": "螺丝钉指数基金组合_175984131083776000"
     },
     {
@@ -3507,6 +4439,10 @@
         "fee": 0.03,
         "occurMoney": 21.61,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_178541013350662144"
     },
     {
@@ -3522,6 +4458,10 @@
         "fee": 0.03,
         "occurMoney": 22.91,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_178541013388410880"
     },
     {
@@ -3537,6 +4477,10 @@
         "fee": 0.03,
         "occurMoney": 17.08,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面60",
+        "categoryId": 115,
         "note": "螺丝钉指数基金组合_178541013434548224"
     },
     {
@@ -3552,6 +4496,10 @@
         "fee": 0.02,
         "occurMoney": 20.62,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "500低波动",
+        "categoryId": 122,
         "note": "螺丝钉指数基金组合_178541013480685568"
     },
     {
@@ -3567,6 +4515,10 @@
         "fee": 0.02,
         "occurMoney": 19.87,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "中证银行",
+        "categoryId": 146,
         "note": "螺丝钉指数基金组合_178541013543600128"
     },
     {
@@ -3582,6 +4534,10 @@
         "fee": 0.05,
         "occurMoney": 41.37,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_181060866405998592"
     },
     {
@@ -3597,6 +4553,10 @@
         "fee": 0.05,
         "occurMoney": 43.57,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_181060866439553024"
     },
     {
@@ -3612,6 +4572,10 @@
         "fee": 0.05,
         "occurMoney": 38.43,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "500低波动",
+        "categoryId": 122,
         "note": "螺丝钉指数基金组合_181060866468913152"
     },
     {
@@ -3627,6 +4591,10 @@
         "fee": 0.04,
         "occurMoney": 39.16,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "中证银行",
+        "categoryId": 146,
         "note": "螺丝钉指数基金组合_181060866502467584"
     },
     {
@@ -3642,6 +4610,10 @@
         "fee": 0.05,
         "occurMoney": 40.56,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_183595601581748224"
     },
     {
@@ -3657,6 +4629,10 @@
         "fee": 0.05,
         "occurMoney": 41.94,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_183595601619496960"
     },
     {
@@ -3672,6 +4648,10 @@
         "fee": 0.04,
         "occurMoney": 36.8,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "500低波动",
+        "categoryId": 122,
         "note": "螺丝钉指数基金组合_183595601665634304"
     },
     {
@@ -3687,6 +4667,10 @@
         "fee": 0.04,
         "occurMoney": 37.76,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "中证银行",
+        "categoryId": 146,
         "note": "螺丝钉指数基金组合_183595601732743168"
     },
     {
@@ -3702,6 +4686,10 @@
         "fee": 0.05,
         "occurMoney": 39.96,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_186127834670604288"
     },
     {
@@ -3717,6 +4705,10 @@
         "fee": 0.05,
         "occurMoney": 40.96,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_186127834704158720"
     },
     {
@@ -3732,6 +4724,10 @@
         "fee": 0.04,
         "occurMoney": 34.96,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "500低波动",
+        "categoryId": 122,
         "note": "螺丝钉指数基金组合_186127834737713152"
     },
     {
@@ -3747,6 +4743,10 @@
         "fee": 0.04,
         "occurMoney": 38.08,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "中证银行",
+        "categoryId": 146,
         "note": "螺丝钉指数基金组合_186127834771267584"
     },
     {
@@ -3762,6 +4762,10 @@
         "fee": 0.05,
         "occurMoney": 40.73,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_188666647653556224"
     },
     {
@@ -3777,6 +4781,10 @@
         "fee": 0.05,
         "occurMoney": 41.63,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_188666647691304960"
     },
     {
@@ -3792,6 +4800,10 @@
         "fee": 0.04,
         "occurMoney": 34.64,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "500低波动",
+        "categoryId": 122,
         "note": "螺丝钉指数基金组合_188666647724859392"
     },
     {
@@ -3807,6 +4819,10 @@
         "fee": 0.04,
         "occurMoney": 39.1,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "中证银行",
+        "categoryId": 146,
         "note": "螺丝钉指数基金组合_188666647762608128"
     },
     {
@@ -3822,6 +4838,10 @@
         "fee": 0,
         "occurMoney": 2176.37,
         "account": "康世海",
+        "category1": "债券",
+        "category2": "国内债券",
+        "category3": "纯债",
+        "categoryId": 511,
         "note": "钉钉宝90天组合_193403215802974208"
     },
     {
@@ -3837,6 +4857,10 @@
         "fee": 0,
         "occurMoney": 2173.14,
         "account": "康世海",
+        "category1": "债券",
+        "category2": "国内债券",
+        "category3": "纯债",
+        "categoryId": 511,
         "note": "钉钉宝90天组合_193403215857500160"
     },
     {
@@ -3852,6 +4876,10 @@
         "fee": 0,
         "occurMoney": 2894.79,
         "account": "康世海",
+        "category1": "债券",
+        "category2": "国内债券",
+        "category3": "纯债",
+        "categoryId": 511,
         "note": "钉钉宝90天组合_193403215899443200"
     },
     {
@@ -3867,6 +4895,10 @@
         "fee": 0.49,
         "occurMoney": 196.33,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "标普红利",
+        "categoryId": 132,
         "note": "螺丝钉指数基金组合_193739338865618944"
     },
     {
@@ -3882,6 +4914,10 @@
         "fee": 0.06,
         "occurMoney": 47.17,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_193735682367574016"
     },
     {
@@ -3897,6 +4933,10 @@
         "fee": 0.06,
         "occurMoney": 46.41,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_193735682401128448"
     },
     {
@@ -3912,6 +4952,10 @@
         "fee": 0.05,
         "occurMoney": 41.05,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "500低波动",
+        "categoryId": 122,
         "note": "螺丝钉指数基金组合_193735682438877184"
     },
     {
@@ -3927,6 +4971,10 @@
         "fee": 0.04,
         "occurMoney": 43.89,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "中证银行",
+        "categoryId": 146,
         "note": "螺丝钉指数基金组合_193735682472431616"
     },
     {
@@ -3942,6 +4990,10 @@
         "fee": 0.06,
         "occurMoney": 37.37,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面60",
+        "categoryId": 115,
         "note": "螺丝钉指数基金组合_193735682501791744"
     },
     {
@@ -3957,6 +5009,10 @@
         "fee": 0.04,
         "occurMoney": 36.86,
         "account": "康世海",
+        "category1": "海外新兴",
+        "category2": "海外互联",
+        "category3": "海外互联网",
+        "categoryId": 221,
         "note": "螺丝钉指数基金组合_193735682547929088"
     },
     {
@@ -3972,6 +5028,10 @@
         "fee": 0,
         "occurMoney": 3800,
         "account": "康世海",
+        "category1": "混合型",
+        "category2": "股债混合",
+        "category3": "偏债",
+        "categoryId": 412,
         "note": "钉钉宝365天组合_194176473125003264"
     },
     {
@@ -3987,6 +5047,10 @@
         "fee": 0,
         "occurMoney": 1900,
         "account": "康世海",
+        "category1": "混合型",
+        "category2": "股债混合",
+        "category3": "偏债",
+        "categoryId": 412,
         "note": "钉钉宝365天组合_194176473158557696"
     },
     {
@@ -4002,6 +5066,10 @@
         "fee": 0,
         "occurMoney": 1900,
         "account": "康世海",
+        "category1": "混合型",
+        "category2": "股债混合",
+        "category3": "偏债",
+        "categoryId": 412,
         "note": "钉钉宝365天组合_194176473192112128"
     },
     {
@@ -4017,6 +5085,10 @@
         "fee": 0,
         "occurMoney": 950,
         "account": "康世海",
+        "category1": "混合型",
+        "category2": "股债混合",
+        "category3": "偏债",
+        "categoryId": 412,
         "note": "钉钉宝365天组合_194176473225666560"
     },
     {
@@ -4032,6 +5104,10 @@
         "fee": 0,
         "occurMoney": 950,
         "account": "康世海",
+        "category1": "混合型",
+        "category2": "股债混合",
+        "category3": "偏债",
+        "categoryId": 412,
         "note": "钉钉宝365天组合_194176473263415296"
     },
     {
@@ -4047,6 +5123,10 @@
         "fee": 0,
         "occurMoney": 150,
         "account": "康世海",
+        "category1": "混合型",
+        "category2": "股债混合",
+        "category3": "偏债",
+        "categoryId": 412,
         "note": "钉钉宝365天组合_194489824455311360"
     },
     {
@@ -4062,6 +5142,10 @@
         "fee": 0,
         "occurMoney": 150,
         "account": "康世海",
+        "category1": "混合型",
+        "category2": "股债混合",
+        "category3": "偏债",
+        "categoryId": 412,
         "note": "钉钉宝365天组合_194489824493060096"
     },
     {
@@ -4077,6 +5161,10 @@
         "fee": 0,
         "occurMoney": 300,
         "account": "康世海",
+        "category1": "混合型",
+        "category2": "股债混合",
+        "category3": "偏债",
+        "categoryId": 412,
         "note": "钉钉宝365天组合_194489824522420224"
     },
     {
@@ -4092,6 +5180,10 @@
         "fee": 0,
         "occurMoney": 300,
         "account": "康世海",
+        "category1": "混合型",
+        "category2": "股债混合",
+        "category3": "偏债",
+        "categoryId": 412,
         "note": "钉钉宝365天组合_194489824685998080"
     },
     {
@@ -4107,6 +5199,10 @@
         "fee": 0,
         "occurMoney": 600,
         "account": "康世海",
+        "category1": "混合型",
+        "category2": "股债混合",
+        "category3": "偏债",
+        "categoryId": 412,
         "note": "钉钉宝365天组合_194489824723746816"
     },
     {
@@ -4122,6 +5218,10 @@
         "fee": 0.24,
         "occurMoney": 197.06,
         "account": "康世海",
+        "category1": "海外新兴",
+        "category2": "海外互联",
+        "category3": "海外互联网",
+        "categoryId": 221,
         "note": "螺丝钉指数基金组合_194822754465632256"
     },
     {
@@ -4137,6 +5237,10 @@
         "fee": 0.05,
         "occurMoney": 42.73,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_196281050062307328"
     },
     {
@@ -4152,6 +5256,10 @@
         "fee": 0.05,
         "occurMoney": 40.91,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_196281050100056064"
     },
     {
@@ -4167,6 +5275,10 @@
         "fee": 0.04,
         "occurMoney": 34.55,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "500低波动",
+        "categoryId": 122,
         "note": "螺丝钉指数基金组合_196281050141999104"
     },
     {
@@ -4182,6 +5294,10 @@
         "fee": 0.04,
         "occurMoney": 41.67,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "中证银行",
+        "categoryId": 146,
         "note": "螺丝钉指数基金组合_196281050192330752"
     },
     {
@@ -4197,6 +5313,10 @@
         "fee": 0.04,
         "occurMoney": 31.74,
         "account": "康世海",
+        "category1": "海外新兴",
+        "category2": "海外互联",
+        "category3": "海外互联网",
+        "categoryId": 221,
         "note": "螺丝钉指数基金组合_196281050246856704"
     },
     {
@@ -4212,6 +5332,10 @@
         "fee": 0.09,
         "occurMoney": 187.61,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "全指医药",
+        "categoryId": 142,
         "note": "螺丝钉指数基金组合_196280390700933120"
     },
     {
@@ -4227,6 +5351,10 @@
         "fee": 0.05,
         "occurMoney": 42.11,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_197369478107254784"
     },
     {
@@ -4242,6 +5370,10 @@
         "fee": 0.05,
         "occurMoney": 40.31,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_197369478145003520"
     },
     {
@@ -4257,6 +5389,10 @@
         "fee": 0.04,
         "occurMoney": 34.31,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "500低波动",
+        "categoryId": 122,
         "note": "螺丝钉指数基金组合_197369478182752256"
     },
     {
@@ -4272,6 +5408,10 @@
         "fee": 0.04,
         "occurMoney": 40.6,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "中证银行",
+        "categoryId": 146,
         "note": "螺丝钉指数基金组合_197369478220500992"
     },
     {
@@ -4287,6 +5427,10 @@
         "fee": 0.04,
         "occurMoney": 30.59,
         "account": "康世海",
+        "category1": "海外新兴",
+        "category2": "海外互联",
+        "category3": "海外互联网",
+        "categoryId": 221,
         "note": "螺丝钉指数基金组合_197369478258249728"
     },
     {
@@ -4302,6 +5446,10 @@
         "fee": 0,
         "occurMoney": 2024,
         "account": "康世海",
+        "category1": "混合型",
+        "category2": "股债混合",
+        "category3": "偏债",
+        "categoryId": 412,
         "note": "钉钉宝365天组合_198083807538757632"
     },
     {
@@ -4317,6 +5465,10 @@
         "fee": 0,
         "occurMoney": 501,
         "account": "康世海",
+        "category1": "混合型",
+        "category2": "股债混合",
+        "category3": "偏债",
+        "categoryId": 412,
         "note": "钉钉宝365天组合_198083807614255104"
     },
     {
@@ -4332,6 +5484,10 @@
         "fee": 0,
         "occurMoney": 499,
         "account": "康世海",
+        "category1": "混合型",
+        "category2": "股债混合",
+        "category3": "偏债",
+        "categoryId": 412,
         "note": "钉钉宝365天组合_198083807693946880"
     },
     {
@@ -4347,6 +5503,10 @@
         "fee": 0,
         "occurMoney": 996.5,
         "account": "康世海",
+        "category1": "混合型",
+        "category2": "股债混合",
+        "category3": "偏债",
+        "categoryId": 412,
         "note": "钉钉宝365天组合_198083807756861440"
     },
     {
@@ -4362,6 +5522,10 @@
         "fee": 0,
         "occurMoney": 979.5,
         "account": "康世海",
+        "category1": "混合型",
+        "category2": "股债混合",
+        "category3": "偏债",
+        "categoryId": 412,
         "note": "钉钉宝365天组合_198083807823970304"
     },
     {
@@ -4377,6 +5541,10 @@
         "fee": 0.05,
         "occurMoney": 39.9,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_198817453514072064"
     },
     {
@@ -4392,6 +5560,10 @@
         "fee": 0.05,
         "occurMoney": 38.18,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_198817453547626496"
     },
     {
@@ -4407,6 +5579,10 @@
         "fee": 0.04,
         "occurMoney": 33.4,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "500低波动",
+        "categoryId": 122,
         "note": "螺丝钉指数基金组合_198817453581180928"
     },
     {
@@ -4422,6 +5598,10 @@
         "fee": 0.04,
         "occurMoney": 38.16,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "中证银行",
+        "categoryId": 146,
         "note": "螺丝钉指数基金组合_198817453623123968"
     },
     {
@@ -4437,6 +5617,10 @@
         "fee": 0.05,
         "occurMoney": 40.69,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_201366060985393152"
     },
     {
@@ -4452,6 +5636,10 @@
         "fee": 0.05,
         "occurMoney": 37.67,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_201366061014753280"
     },
     {
@@ -4467,6 +5655,10 @@
         "fee": 0.04,
         "occurMoney": 39.17,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "中证银行",
+        "categoryId": 146,
         "note": "螺丝钉指数基金组合_201366061056696320"
     },
     {
@@ -4482,6 +5674,10 @@
         "fee": 0.04,
         "occurMoney": 33.15,
         "account": "康世海",
+        "category1": "海外新兴",
+        "category2": "海外互联",
+        "category3": "海外互联网",
+        "categoryId": 221,
         "note": "螺丝钉指数基金组合_201366061090250752"
     },
     {
@@ -4497,6 +5693,10 @@
         "fee": 0,
         "occurMoney": 3766.71,
         "account": "康世海",
+        "category1": "混合型",
+        "category2": "股债混合",
+        "category3": "偏债",
+        "categoryId": 412,
         "note": "钉钉宝365天组合_201794408547004416"
     },
     {
@@ -4512,6 +5712,10 @@
         "fee": 0,
         "occurMoney": 15055.56,
         "account": "康世海",
+        "category1": "混合型",
+        "category2": "股债混合",
+        "category3": "偏债",
+        "categoryId": 412,
         "note": "钉钉宝365天组合_201794408580558848"
     },
     {
@@ -4527,6 +5731,10 @@
         "fee": 0,
         "occurMoney": 7525.9,
         "account": "康世海",
+        "category1": "混合型",
+        "category2": "股债混合",
+        "category3": "偏债",
+        "categoryId": 412,
         "note": "钉钉宝365天组合_201794408614113280"
     },
     {
@@ -4542,6 +5750,10 @@
         "fee": 0,
         "occurMoney": 7525.9,
         "account": "康世海",
+        "category1": "混合型",
+        "category2": "股债混合",
+        "category3": "偏债",
+        "categoryId": 412,
         "note": "钉钉宝365天组合_201794408656056320"
     },
     {
@@ -4557,6 +5769,10 @@
         "fee": 0,
         "occurMoney": 3755.42,
         "account": "康世海",
+        "category1": "混合型",
+        "category2": "股债混合",
+        "category3": "偏债",
+        "categoryId": 412,
         "note": "钉钉宝365天组合_201794408706387968"
     },
     {
@@ -4572,6 +5788,10 @@
         "fee": 0,
         "occurMoney": 3766.71,
         "account": "康世海",
+        "category1": "混合型",
+        "category2": "股债混合",
+        "category3": "偏债",
+        "categoryId": 412,
         "note": "钉钉宝365天组合_201794408547004416"
     },
     {
@@ -4587,6 +5807,10 @@
         "fee": 0,
         "occurMoney": 15055.56,
         "account": "康世海",
+        "category1": "混合型",
+        "category2": "股债混合",
+        "category3": "偏债",
+        "categoryId": 412,
         "note": "钉钉宝365天组合_201794408580558848"
     },
     {
@@ -4602,6 +5826,10 @@
         "fee": 0,
         "occurMoney": 7525.9,
         "account": "康世海",
+        "category1": "混合型",
+        "category2": "股债混合",
+        "category3": "偏债",
+        "categoryId": 412,
         "note": "钉钉宝365天组合_201794408614113280"
     },
     {
@@ -4617,6 +5845,10 @@
         "fee": 0,
         "occurMoney": 7525.9,
         "account": "康世海",
+        "category1": "混合型",
+        "category2": "股债混合",
+        "category3": "偏债",
+        "categoryId": 412,
         "note": "钉钉宝365天组合_201794408656056320"
     },
     {
@@ -4632,6 +5864,10 @@
         "fee": 0,
         "occurMoney": 3755.42,
         "account": "康世海",
+        "category1": "混合型",
+        "category2": "股债混合",
+        "category3": "偏债",
+        "categoryId": 412,
         "note": "钉钉宝365天组合_201794408706387968"
     },
     {
@@ -4647,6 +5883,10 @@
         "fee": 0,
         "occurMoney": 32388.36,
         "account": "康世海",
+        "category1": "混合型",
+        "category2": "股债混合",
+        "category3": "偏债",
+        "categoryId": 412,
         "note": "钉钉宝365天组合_202157234020831232"
     },
     {
@@ -4662,6 +5902,10 @@
         "fee": 0,
         "occurMoney": 16194.18,
         "account": "康世海",
+        "category1": "混合型",
+        "category2": "股债混合",
+        "category3": "偏债",
+        "categoryId": 412,
         "note": "钉钉宝365天组合_202157234058579968"
     },
     {
@@ -4677,6 +5921,10 @@
         "fee": 0,
         "occurMoney": 64776.71,
         "account": "康世海",
+        "category1": "混合型",
+        "category2": "股债混合",
+        "category3": "偏债",
+        "categoryId": 412,
         "note": "钉钉宝365天组合_202157234100523008"
     },
     {
@@ -4692,6 +5940,10 @@
         "fee": 0,
         "occurMoney": 32388.36,
         "account": "康世海",
+        "category1": "混合型",
+        "category2": "股债混合",
+        "category3": "偏债",
+        "categoryId": 412,
         "note": "钉钉宝365天组合_202157234163437568"
     },
     {
@@ -4707,6 +5959,10 @@
         "fee": 0,
         "occurMoney": 16194.17,
         "account": "康世海",
+        "category1": "混合型",
+        "category2": "股债混合",
+        "category3": "偏债",
+        "categoryId": 412,
         "note": "钉钉宝365天组合_202157234205380608"
     },
     {
@@ -4722,6 +5978,10 @@
         "fee": 0,
         "occurMoney": 32388.36,
         "account": "康世海",
+        "category1": "混合型",
+        "category2": "股债混合",
+        "category3": "偏债",
+        "categoryId": 412,
         "note": "钉钉宝365天组合_202157234020831232"
     },
     {
@@ -4737,6 +5997,10 @@
         "fee": 0,
         "occurMoney": 16194.18,
         "account": "康世海",
+        "category1": "混合型",
+        "category2": "股债混合",
+        "category3": "偏债",
+        "categoryId": 412,
         "note": "钉钉宝365天组合_202157234058579968"
     },
     {
@@ -4752,6 +6016,10 @@
         "fee": 0,
         "occurMoney": 64776.71,
         "account": "康世海",
+        "category1": "混合型",
+        "category2": "股债混合",
+        "category3": "偏债",
+        "categoryId": 412,
         "note": "钉钉宝365天组合_202157234100523008"
     },
     {
@@ -4767,6 +6035,10 @@
         "fee": 0,
         "occurMoney": 32388.36,
         "account": "康世海",
+        "category1": "混合型",
+        "category2": "股债混合",
+        "category3": "偏债",
+        "categoryId": 412,
         "note": "钉钉宝365天组合_202157234163437568"
     },
     {
@@ -4782,6 +6054,10 @@
         "fee": 0,
         "occurMoney": 16194.17,
         "account": "康世海",
+        "category1": "混合型",
+        "category2": "股债混合",
+        "category3": "偏债",
+        "categoryId": 412,
         "note": "钉钉宝365天组合_202157234205380608"
     },
     {
@@ -4797,6 +6073,10 @@
         "fee": 0,
         "occurMoney": 20140,
         "account": "康世海",
+        "category1": "混合型",
+        "category2": "股债混合",
+        "category3": "偏债",
+        "categoryId": 412,
         "note": "钉钉宝365天组合_203607207544508416"
     },
     {
@@ -4812,6 +6092,10 @@
         "fee": 0,
         "occurMoney": 40240,
         "account": "康世海",
+        "category1": "混合型",
+        "category2": "股债混合",
+        "category3": "偏债",
+        "categoryId": 412,
         "note": "钉钉宝365天组合_203607207590645760"
     },
     {
@@ -4827,6 +6111,10 @@
         "fee": 0,
         "occurMoney": 40100,
         "account": "康世海",
+        "category1": "混合型",
+        "category2": "股债混合",
+        "category3": "偏债",
+        "categoryId": 412,
         "note": "钉钉宝365天组合_203607207640977408"
     },
     {
@@ -4842,6 +6130,10 @@
         "fee": 0,
         "occurMoney": 19980,
         "account": "康世海",
+        "category1": "混合型",
+        "category2": "股债混合",
+        "category3": "偏债",
+        "categoryId": 412,
         "note": "钉钉宝365天组合_203607207699697664"
     },
     {
@@ -4857,6 +6149,10 @@
         "fee": 0,
         "occurMoney": 79540,
         "account": "康世海",
+        "category1": "混合型",
+        "category2": "股债混合",
+        "category3": "偏债",
+        "categoryId": 412,
         "note": "钉钉宝365天组合_203607207745835008"
     },
     {
@@ -4872,6 +6168,10 @@
         "fee": 0,
         "occurMoney": 4108.2,
         "account": "康世海",
+        "category1": "混合型",
+        "category2": "股债混合",
+        "category3": "偏债",
+        "categoryId": 412,
         "note": "钉钉宝365天组合_202555136291811328"
     },
     {
@@ -4887,6 +6187,10 @@
         "fee": 0,
         "occurMoney": 16400,
         "account": "康世海",
+        "category1": "混合型",
+        "category2": "股债混合",
+        "category3": "偏债",
+        "categoryId": 412,
         "note": "钉钉宝365天组合_202555136354725888"
     },
     {
@@ -4902,6 +6206,10 @@
         "fee": 0,
         "occurMoney": 4100,
         "account": "康世海",
+        "category1": "混合型",
+        "category2": "股债混合",
+        "category3": "偏债",
+        "categoryId": 412,
         "note": "钉钉宝365天组合_202555136434417664"
     },
     {
@@ -4917,6 +6225,10 @@
         "fee": 0,
         "occurMoney": 8195.9,
         "account": "康世海",
+        "category1": "混合型",
+        "category2": "股债混合",
+        "category3": "偏债",
+        "categoryId": 412,
         "note": "钉钉宝365天组合_202555136505720832"
     },
     {
@@ -4932,6 +6244,10 @@
         "fee": 0,
         "occurMoney": 8195.9,
         "account": "康世海",
+        "category1": "混合型",
+        "category2": "股债混合",
+        "category3": "偏债",
+        "categoryId": 412,
         "note": "钉钉宝365天组合_202555136585412608"
     },
     {
@@ -4947,6 +6263,10 @@
         "fee": 0,
         "occurMoney": 4108.2,
         "account": "康世海",
+        "category1": "混合型",
+        "category2": "股债混合",
+        "category3": "偏债",
+        "categoryId": 412,
         "note": "钉钉宝365天组合_202555136291811328"
     },
     {
@@ -4962,6 +6282,10 @@
         "fee": 0,
         "occurMoney": 16400,
         "account": "康世海",
+        "category1": "混合型",
+        "category2": "股债混合",
+        "category3": "偏债",
+        "categoryId": 412,
         "note": "钉钉宝365天组合_202555136354725888"
     },
     {
@@ -4977,6 +6301,10 @@
         "fee": 0,
         "occurMoney": 4100,
         "account": "康世海",
+        "category1": "混合型",
+        "category2": "股债混合",
+        "category3": "偏债",
+        "categoryId": 412,
         "note": "钉钉宝365天组合_202555136434417664"
     },
     {
@@ -4992,6 +6320,10 @@
         "fee": 0,
         "occurMoney": 8195.9,
         "account": "康世海",
+        "category1": "混合型",
+        "category2": "股债混合",
+        "category3": "偏债",
+        "categoryId": 412,
         "note": "钉钉宝365天组合_202555136505720832"
     },
     {
@@ -5007,6 +6339,10 @@
         "fee": 0,
         "occurMoney": 8195.9,
         "account": "康世海",
+        "category1": "混合型",
+        "category2": "股债混合",
+        "category3": "偏债",
+        "categoryId": 412,
         "note": "钉钉宝365天组合_202555136585412608"
     },
     {
@@ -5022,6 +6358,10 @@
         "fee": 0,
         "occurMoney": 30014.4,
         "account": "康世海",
+        "category1": "混合型",
+        "category2": "股债混合",
+        "category3": "偏债",
+        "categoryId": 412,
         "note": "钉钉宝365天组合_203967537704488960"
     },
     {
@@ -5037,6 +6377,10 @@
         "fee": 0,
         "occurMoney": 7385.2,
         "account": "康世海",
+        "category1": "混合型",
+        "category2": "股债混合",
+        "category3": "偏债",
+        "categoryId": 412,
         "note": "钉钉宝365天组合_203967537738043392"
     },
     {
@@ -5052,6 +6396,10 @@
         "fee": 0,
         "occurMoney": 14726,
         "account": "康世海",
+        "category1": "混合型",
+        "category2": "股债混合",
+        "category3": "偏债",
+        "categoryId": 412,
         "note": "钉钉宝365天组合_203967537775792128"
     },
     {
@@ -5067,6 +6415,10 @@
         "fee": 0,
         "occurMoney": 14615,
         "account": "康世海",
+        "category1": "混合型",
+        "category2": "股债混合",
+        "category3": "偏债",
+        "categoryId": 412,
         "note": "钉钉宝365天组合_203967537809346560"
     },
     {
@@ -5082,6 +6434,10 @@
         "fee": 0,
         "occurMoney": 7259.4,
         "account": "康世海",
+        "category1": "混合型",
+        "category2": "股债混合",
+        "category3": "偏债",
+        "categoryId": 412,
         "note": "钉钉宝365天组合_203967537847095296"
     },
     {
@@ -5097,6 +6453,10 @@
         "fee": 0.05,
         "occurMoney": 39.21,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_203888857531695104"
     },
     {
@@ -5112,6 +6472,10 @@
         "fee": 0.04,
         "occurMoney": 36.96,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_203888857561055232"
     },
     {
@@ -5127,6 +6491,10 @@
         "fee": 0.04,
         "occurMoney": 35.16,
         "account": "康世海",
+        "category1": "海外新兴",
+        "category2": "海外互联",
+        "category3": "海外互联网",
+        "categoryId": 221,
         "note": "螺丝钉指数基金组合_203888857602998272"
     },
     {
@@ -5142,6 +6510,10 @@
         "fee": 0.04,
         "occurMoney": 37.58,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "中证银行",
+        "categoryId": 146,
         "note": "螺丝钉指数基金组合_203888857644941312"
     },
     {
@@ -5157,6 +6529,10 @@
         "fee": 0.04,
         "occurMoney": 33.36,
         "account": "康世海",
+        "category1": "海外成熟",
+        "category2": "美国",
+        "category3": "信息科技",
+        "categoryId": 315,
         "note": "螺丝钉指数基金组合_203888857682690048"
     },
     {
@@ -5172,6 +6548,10 @@
         "fee": 0.05,
         "occurMoney": 40.15,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_206439559143591936"
     },
     {
@@ -5187,6 +6567,10 @@
         "fee": 0.05,
         "occurMoney": 38.16,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_206439559189729280"
     },
     {
@@ -5202,6 +6586,10 @@
         "fee": 0.05,
         "occurMoney": 37.83,
         "account": "康世海",
+        "category1": "海外新兴",
+        "category2": "海外互联",
+        "category3": "海外互联网",
+        "categoryId": 221,
         "note": "螺丝钉指数基金组合_206439559248449536"
     },
     {
@@ -5217,6 +6605,10 @@
         "fee": 0.04,
         "occurMoney": 38.33,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "中证银行",
+        "categoryId": 146,
         "note": "螺丝钉指数基金组合_206439559294586880"
     },
     {
@@ -5232,6 +6624,10 @@
         "fee": 0.05,
         "occurMoney": 39.23,
         "account": "康世海",
+        "category1": "海外成熟",
+        "category2": "美国",
+        "category3": "信息科技",
+        "categoryId": 315,
         "note": "螺丝钉指数基金组合_206439559353307136"
     },
     {
@@ -5247,6 +6643,10 @@
         "fee": 0.03,
         "occurMoney": 33.51,
         "account": "康世海",
+        "category1": "海外新兴",
+        "category2": "香港",
+        "category3": "香港中小",
+        "categoryId": 213,
         "note": "螺丝钉指数基金组合_207222490989563904"
     },
     {
@@ -5262,6 +6662,10 @@
         "fee": 0.05,
         "occurMoney": 40.79,
         "account": "康世海",
+        "category1": "海外新兴",
+        "category2": "海外互联",
+        "category3": "海外互联网",
+        "categoryId": 221,
         "note": "螺丝钉指数基金组合_207222491031506944"
     },
     {
@@ -5277,6 +6681,10 @@
         "fee": 0.05,
         "occurMoney": 44.41,
         "account": "康世海",
+        "category1": "海外成熟",
+        "category2": "美国",
+        "category3": "纳斯达克",
+        "categoryId": 312,
         "note": "螺丝钉指数基金组合_207222491077644288"
     },
     {
@@ -5292,6 +6700,10 @@
         "fee": 0.05,
         "occurMoney": 42.49,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_208675135327543296"
     },
     {
@@ -5307,6 +6719,10 @@
         "fee": 0.05,
         "occurMoney": 39.67,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_208675135382069248"
     },
     {
@@ -5322,6 +6738,10 @@
         "fee": 0.04,
         "occurMoney": 40.17,
         "account": "康世海",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "中证银行",
+        "categoryId": 146,
         "note": "螺丝钉指数基金组合_208675135444983808"
     },
     {
@@ -5337,6 +6757,10 @@
         "fee": 0.04,
         "occurMoney": 37.64,
         "account": "康世海",
+        "category1": "海外新兴",
+        "category2": "香港",
+        "category3": "香港中小",
+        "categoryId": 213,
         "note": "螺丝钉指数基金组合_208675135507898368"
     },
     {
@@ -5352,6 +6776,10 @@
         "fee": 0.05,
         "occurMoney": 41.59,
         "account": "康世海",
+        "category1": "海外新兴",
+        "category2": "海外互联",
+        "category3": "海外互联网",
+        "categoryId": 221,
         "note": "螺丝钉指数基金组合_208675135587590144"
     },
     {
@@ -5367,6 +6795,10 @@
         "fee": 0.05,
         "occurMoney": 42.22,
         "account": "康世海",
+        "category1": "海外成熟",
+        "category2": "美国",
+        "category3": "纳斯达克",
+        "categoryId": 312,
         "note": "螺丝钉指数基金组合_208675135654699008"
     },
     {
@@ -5382,6 +6814,10 @@
         "fee": 0,
         "occurMoney": 2214,
         "account": "康世海",
+        "category1": "混合型",
+        "category2": "股债混合",
+        "category3": "偏债",
+        "categoryId": 412,
         "note": "钉钉宝365天组合_208662059836485632"
     },
     {
@@ -5397,6 +6833,10 @@
         "fee": 0,
         "occurMoney": 951.5,
         "account": "康世海",
+        "category1": "混合型",
+        "category2": "股债混合",
+        "category3": "偏债",
+        "categoryId": 412,
         "note": "钉钉宝365天组合_208662059899400192"
     },
     {
@@ -5412,6 +6852,10 @@
         "fee": 0,
         "occurMoney": 1468,
         "account": "康世海",
+        "category1": "混合型",
+        "category2": "股债混合",
+        "category3": "偏债",
+        "categoryId": 412,
         "note": "钉钉宝365天组合_208662059953926144"
     },
     {
@@ -5427,6 +6871,10 @@
         "fee": 0,
         "occurMoney": 366.5,
         "account": "康世海",
+        "category1": "混合型",
+        "category2": "股债混合",
+        "category3": "偏债",
+        "categoryId": 412,
         "note": "钉钉宝365天组合_208662060012646400"
     }
 ]

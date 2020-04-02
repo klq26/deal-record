@@ -12,6 +12,10 @@
         "fee": 1.2,
         "occurMoney": 1000,
         "account": "康力泉",
+        "category1": "海外成熟",
+        "category2": "德国",
+        "category3": "德国30",
+        "categoryId": 321,
         "note": "长赢指数投资计划-150份_2019032200763806"
     },
     {
@@ -27,6 +31,10 @@
         "fee": 0.6,
         "occurMoney": 1000,
         "account": "康力泉",
+        "category1": "商品",
+        "category2": "商品",
+        "category3": "黄金",
+        "categoryId": 611,
         "note": "长赢指数投资计划-150份_2019032800540691"
     },
     {
@@ -42,6 +50,10 @@
         "fee": 1.2,
         "occurMoney": 1000,
         "account": "康力泉",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "中证传媒",
+        "categoryId": 144,
         "note": "长赢指数投资计划-150份_2019042600801844"
     },
     {
@@ -57,6 +69,10 @@
         "fee": 1.2,
         "occurMoney": 1000,
         "account": "康力泉",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "上证50",
+        "categoryId": 111,
         "note": "长赢指数投资计划-150份_2019051500617807"
     },
     {
@@ -72,6 +88,10 @@
         "fee": 1.5,
         "occurMoney": 1000,
         "account": "康力泉",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "中证500",
+        "categoryId": 121,
         "note": "长赢指数投资计划-S定投_2019061800357142"
     },
     {
@@ -87,6 +107,10 @@
         "fee": 1.5,
         "occurMoney": 1000,
         "account": "康力泉",
+        "category1": "商品",
+        "category2": "商品",
+        "category3": "原油",
+        "categoryId": 613,
         "note": "长赢指数投资计划-S定投_2019061800357144"
     },
     {
@@ -102,6 +126,10 @@
         "fee": 0.6,
         "occurMoney": 1000,
         "account": "康力泉",
+        "category1": "商品",
+        "category2": "商品",
+        "category3": "黄金",
+        "categoryId": 611,
         "note": "长赢指数投资计划-S定投_2019070100761118"
     },
     {
@@ -117,6 +145,10 @@
         "fee": 1.5,
         "occurMoney": 1000,
         "account": "康力泉",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "中证500",
+        "categoryId": 121,
         "note": "长赢指数投资计划-S定投_2019073100594485"
     },
     {
@@ -132,6 +164,10 @@
         "fee": 1.5,
         "occurMoney": 1000,
         "account": "康力泉",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "长赢指数投资计划-S定投_2019081500639437"
     },
     {
@@ -147,6 +183,10 @@
         "fee": 1.2,
         "occurMoney": 1000,
         "account": "康力泉",
+        "category1": "海外新兴",
+        "category2": "海外互联",
+        "category3": "海外互联网",
+        "categoryId": 221,
         "note": "长赢指数投资计划-S定投_2019081500639439"
     },
     {
@@ -162,6 +202,10 @@
         "fee": 1.49,
         "occurMoney": 993.83,
         "account": "康力泉",
+        "category1": "商品",
+        "category2": "商品",
+        "category3": "原油",
+        "categoryId": 613,
         "note": "长赢指数投资计划-150份_2019082300561640"
     },
     {
@@ -177,6 +221,10 @@
         "fee": 6.4,
         "occurMoney": 5336,
         "account": "康力泉",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "中证环保",
+        "categoryId": 143,
         "note": "长赢指数投资计划-150份_2019082300561641"
     },
     {
@@ -192,6 +240,10 @@
         "fee": 4,
         "occurMoney": 3335,
         "account": "康力泉",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "中证传媒",
+        "categoryId": 144,
         "note": "长赢指数投资计划-150份_2019082300561642"
     },
     {
@@ -207,6 +259,10 @@
         "fee": 10.99,
         "occurMoney": 7337,
         "account": "康力泉",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "中证500",
+        "categoryId": 121,
         "note": "长赢指数投资计划-150份_2019082300561643"
     },
     {
@@ -222,6 +278,10 @@
         "fee": 3.2,
         "occurMoney": 2668,
         "account": "康力泉",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "中证500",
+        "categoryId": 121,
         "note": "长赢指数投资计划-150份_2019082300561644"
     },
     {
@@ -237,6 +297,10 @@
         "fee": 4,
         "occurMoney": 2668,
         "account": "康力泉",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "长赢指数投资计划-150份_2019082600582184"
     },
     {
@@ -252,6 +316,10 @@
         "fee": 0.8,
         "occurMoney": 667,
         "account": "康力泉",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "创业板",
+        "categoryId": 124,
         "note": "长赢指数投资计划-150份_2019082600582185"
     },
     {
@@ -267,6 +335,10 @@
         "fee": 1.49,
         "occurMoney": 993.83,
         "account": "康力泉",
+        "category1": "商品",
+        "category2": "商品",
+        "category3": "原油",
+        "categoryId": 613,
         "note": "长赢指数投资计划-150份_2019082600582186"
     },
     {
@@ -282,6 +354,10 @@
         "fee": 0.8,
         "occurMoney": 667,
         "account": "康力泉",
+        "category1": "海外新兴",
+        "category2": "海外互联",
+        "category3": "海外互联网",
+        "categoryId": 221,
         "note": "长赢指数投资计划-150份_2019082600582187"
     },
     {
@@ -297,6 +373,10 @@
         "fee": 0.09,
         "occurMoney": 93.38,
         "account": "康力泉",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "证券公司",
+        "categoryId": 145,
         "note": "长赢指数投资计划-150份_2019082600582188"
     },
     {
@@ -312,6 +392,10 @@
         "fee": 0.8,
         "occurMoney": 667,
         "account": "康力泉",
+        "category1": "海外成熟",
+        "category2": "德国",
+        "category3": "德国30",
+        "categoryId": 321,
         "note": "长赢指数投资计划-150份_2019082600582190"
     },
     {
@@ -327,6 +411,10 @@
         "fee": 0.8,
         "occurMoney": 667,
         "account": "康力泉",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "创业板",
+        "categoryId": 124,
         "note": "长赢指数投资计划-150份_2019082600582191"
     },
     {
@@ -342,6 +430,10 @@
         "fee": 4.8,
         "occurMoney": 4002,
         "account": "康力泉",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "养老产业",
+        "categoryId": 141,
         "note": "长赢指数投资计划-150份_2019082600582192"
     },
     {
@@ -357,6 +449,10 @@
         "fee": 1.6,
         "occurMoney": 1334,
         "account": "康力泉",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "中证500",
+        "categoryId": 121,
         "note": "长赢指数投资计划-150份_2019082600582193"
     },
     {
@@ -372,6 +468,10 @@
         "fee": 0.02,
         "occurMoney": 13.34,
         "account": "康力泉",
+        "category1": "商品",
+        "category2": "商品",
+        "category3": "原油",
+        "categoryId": 613,
         "note": "长赢指数投资计划-150份_2019082700745196"
     },
     {
@@ -387,6 +487,10 @@
         "fee": 0.09,
         "occurMoney": 93.38,
         "account": "康力泉",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "证券公司",
+        "categoryId": 145,
         "note": "长赢指数投资计划-150份_2019082800635524"
     },
     {
@@ -402,6 +506,10 @@
         "fee": 0.09,
         "occurMoney": 93.38,
         "account": "康力泉",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "证券公司",
+        "categoryId": 145,
         "note": "长赢指数投资计划-150份_2019082800635524"
     },
     {
@@ -417,6 +525,10 @@
         "fee": 0.09,
         "occurMoney": 93.38,
         "account": "康力泉",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "证券公司",
+        "categoryId": 145,
         "note": "长赢指数投资计划-150份_2019082900605886"
     },
     {
@@ -432,6 +544,10 @@
         "fee": 0.8,
         "occurMoney": 667,
         "account": "康力泉",
+        "category1": "海外新兴",
+        "category2": "香港",
+        "category3": "恒生",
+        "categoryId": 211,
         "note": "长赢指数投资计划-150份_2019082900605887"
     },
     {
@@ -447,6 +563,10 @@
         "fee": 1.2,
         "occurMoney": 1000,
         "account": "康力泉",
+        "category1": "海外新兴",
+        "category2": "香港",
+        "category3": "恒生",
+        "categoryId": 211,
         "note": "长赢指数投资计划-S定投_2019083000513055"
     },
     {
@@ -462,6 +582,10 @@
         "fee": 1.2,
         "occurMoney": 1000,
         "account": "康力泉",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "中证500",
+        "categoryId": 121,
         "note": "长赢指数投资计划-S定投_2019110100771920"
     },
     {
@@ -477,6 +601,10 @@
         "fee": 1.5,
         "occurMoney": 1000,
         "account": "康力泉",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "长赢指数投资计划-S定投_2019110100771921"
     },
     {
@@ -492,6 +620,10 @@
         "fee": 1.5,
         "occurMoney": 1000,
         "account": "康力泉",
+        "category1": "商品",
+        "category2": "商品",
+        "category3": "原油",
+        "categoryId": 613,
         "note": "长赢指数投资计划-S定投_2019110100771924"
     },
     {
@@ -507,6 +639,10 @@
         "fee": 1,
         "occurMoney": 667,
         "account": "康力泉",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "长赢指数投资计划-150份_2019111800920800"
     },
     {
@@ -522,6 +658,10 @@
         "fee": 0.09,
         "occurMoney": 93.38,
         "account": "康力泉",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "证券公司",
+        "categoryId": 145,
         "note": "长赢指数投资计划-150份_2019111800920802"
     },
     {
@@ -537,6 +677,10 @@
         "fee": 0.09,
         "occurMoney": 93.38,
         "account": "康力泉",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "证券公司",
+        "categoryId": 145,
         "note": "长赢指数投资计划-150份_2019112000823223"
     },
     {
@@ -552,6 +696,10 @@
         "fee": 1,
         "occurMoney": 667,
         "account": "康力泉",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "中证500",
+        "categoryId": 121,
         "note": "长赢指数投资计划-150份_2019120201032688"
     },
     {
@@ -567,6 +715,10 @@
         "fee": 0.8,
         "occurMoney": 1000,
         "account": "康力泉",
+        "category1": "债券",
+        "category2": "国内债券",
+        "category3": "可转债",
+        "categoryId": 512,
         "note": "长赢指数投资计划-S定投_2019120201027907"
     },
     {
@@ -582,6 +734,10 @@
         "fee": 0.8,
         "occurMoney": 667,
         "account": "康力泉",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "全指医药",
+        "categoryId": 142,
         "note": "长赢指数投资计划-150份_2019120301683253"
     },
     {
@@ -597,6 +753,10 @@
         "fee": 1.5,
         "occurMoney": 1000,
         "account": "康力泉",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "中证500",
+        "categoryId": 121,
         "note": "长赢指数投资计划-S定投_2020020400736492"
     },
     {
@@ -612,6 +772,10 @@
         "fee": 1.5,
         "occurMoney": 1000,
         "account": "康力泉",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "长赢指数投资计划-S定投_2020020400736493"
     },
     {
@@ -627,6 +791,10 @@
         "fee": 1.5,
         "occurMoney": 1000,
         "account": "康力泉",
+        "category1": "商品",
+        "category2": "商品",
+        "category3": "原油",
+        "categoryId": 613,
         "note": "长赢指数投资计划-S定投_2020020400736494"
     },
     {
@@ -642,6 +810,10 @@
         "fee": 0.8,
         "occurMoney": 667,
         "account": "康力泉",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "金融地产",
+        "categoryId": 147,
         "note": "长赢指数投资计划-150份_2020022601679908"
     },
     {
@@ -657,6 +829,10 @@
         "fee": 1.2,
         "occurMoney": 1000,
         "account": "康力泉",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "金融地产",
+        "categoryId": 147,
         "note": "长赢指数投资计划-S定投_2020022601680553"
     },
     {
@@ -672,6 +848,10 @@
         "fee": 4.26,
         "occurMoney": 847.24,
         "account": "康力泉",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "创业板",
+        "categoryId": 124,
         "note": "长赢指数投资计划-150份_2020030901244858"
     },
     {
@@ -687,6 +867,10 @@
         "fee": 0.8,
         "occurMoney": 667,
         "account": "康力泉",
+        "category1": "商品",
+        "category2": "商品",
+        "category3": "原油",
+        "categoryId": 613,
         "note": "长赢指数投资计划-150份_2020030901244870"
     },
     {
@@ -702,6 +886,10 @@
         "fee": 1.75,
         "occurMoney": 348.34,
         "account": "康力泉",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "中证传媒",
+        "categoryId": 144,
         "note": "长赢指数投资计划-S定投_2020030901192939"
     },
     {
@@ -717,6 +905,10 @@
         "fee": 1.2,
         "occurMoney": 1000,
         "account": "康力泉",
+        "category1": "商品",
+        "category2": "商品",
+        "category3": "原油",
+        "categoryId": 613,
         "note": "长赢指数投资计划-S定投_2020030901192946"
     },
     {
@@ -732,6 +924,10 @@
         "fee": 0.8,
         "occurMoney": 667,
         "account": "康力泉",
+        "category1": "海外成熟",
+        "category2": "德国",
+        "category3": "德国30",
+        "categoryId": 321,
         "note": "长赢指数投资计划-150份_2020031002299577"
     },
     {
@@ -747,6 +943,10 @@
         "fee": 1.2,
         "occurMoney": 1000,
         "account": "康力泉",
+        "category1": "海外成熟",
+        "category2": "美国",
+        "category3": "标普500",
+        "categoryId": 313,
         "note": "长赢指数投资计划-S定投_2020031002247343"
     },
     {
@@ -762,6 +962,10 @@
         "fee": 0.8,
         "occurMoney": 667,
         "account": "康力泉",
+        "category1": "商品",
+        "category2": "商品",
+        "category3": "原油",
+        "categoryId": 613,
         "note": "长赢指数投资计划-150份_2020031101658011"
     },
     {
@@ -777,6 +981,10 @@
         "fee": 0.8,
         "occurMoney": 667,
         "account": "康力泉",
+        "category1": "海外成熟",
+        "category2": "德国",
+        "category3": "德国30",
+        "categoryId": 321,
         "note": "长赢指数投资计划-150份_2020031101658016"
     },
     {
@@ -792,6 +1000,10 @@
         "fee": 0.8,
         "occurMoney": 667,
         "account": "康力泉",
+        "category1": "商品",
+        "category2": "商品",
+        "category3": "原油",
+        "categoryId": 613,
         "note": "长赢指数投资计划-150份_2020031101658011"
     },
     {
@@ -807,6 +1019,10 @@
         "fee": 0.8,
         "occurMoney": 667,
         "account": "康力泉",
+        "category1": "海外成熟",
+        "category2": "德国",
+        "category3": "德国30",
+        "categoryId": 321,
         "note": "长赢指数投资计划-150份_2020031101658016"
     },
     {
@@ -822,6 +1038,10 @@
         "fee": 4.13,
         "occurMoney": 822.81,
         "account": "康力泉",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "创业板",
+        "categoryId": 124,
         "note": "长赢指数投资计划-150份_2020031201626864"
     },
     {
@@ -837,6 +1057,10 @@
         "fee": 0.8,
         "occurMoney": 667,
         "account": "康力泉",
+        "category1": "海外新兴",
+        "category2": "香港",
+        "category3": "恒生",
+        "categoryId": 211,
         "note": "长赢指数投资计划-150份_2020031301950110"
     },
     {
@@ -852,6 +1076,10 @@
         "fee": 0.8,
         "occurMoney": 667,
         "account": "康力泉",
+        "category1": "海外成熟",
+        "category2": "德国",
+        "category3": "德国30",
+        "categoryId": 321,
         "note": "长赢指数投资计划-150份_2020031301950113"
     },
     {
@@ -867,6 +1095,10 @@
         "fee": 1.19,
         "occurMoney": 1191.86,
         "account": "康力泉",
+        "category1": "商品",
+        "category2": "商品",
+        "category3": "黄金",
+        "categoryId": 611,
         "note": "长赢指数投资计划-S定投_2020031301947080"
     },
     {
@@ -882,6 +1114,10 @@
         "fee": 1.2,
         "occurMoney": 1000,
         "account": "康力泉",
+        "category1": "海外新兴",
+        "category2": "香港",
+        "category3": "恒生",
+        "categoryId": 211,
         "note": "长赢指数投资计划-S定投_2020031301947084"
     },
     {
@@ -897,6 +1133,10 @@
         "fee": 1.2,
         "occurMoney": 1000,
         "account": "康力泉",
+        "category1": "海外成熟",
+        "category2": "德国",
+        "category3": "德国30",
+        "categoryId": 321,
         "note": "长赢指数投资计划-S定投_2020031301947087"
     },
     {
@@ -912,6 +1152,10 @@
         "fee": 0.8,
         "occurMoney": 667,
         "account": "康力泉",
+        "category1": "海外成熟",
+        "category2": "德国",
+        "category3": "德国30",
+        "categoryId": 321,
         "note": "长赢指数投资计划-150份_2020031801740069"
     },
     {
@@ -927,6 +1171,10 @@
         "fee": 0.8,
         "occurMoney": 667,
         "account": "康力泉",
+        "category1": "海外新兴",
+        "category2": "香港",
+        "category3": "恒生",
+        "categoryId": 211,
         "note": "长赢指数投资计划-150份_2020031901541502"
     },
     {
@@ -942,6 +1190,10 @@
         "fee": 0.8,
         "occurMoney": 667,
         "account": "康力泉",
+        "category1": "海外成熟",
+        "category2": "美国",
+        "category3": "标普500",
+        "categoryId": 313,
         "note": "长赢指数投资计划-150份_2020031901541507"
     }
 ]

@@ -14,7 +14,7 @@ class zhifubaoSpider:
     
     # 获取数据
     def get(self):
-        pass
+        return self.load()
 
     # 获取所有记录中的唯一代码
     def uniqueCodes(self):
@@ -34,3 +34,8 @@ class zhifubaoSpider:
             df = df.reset_index(drop=True)
             df.to_csv(os.path.join(self.folder, 'output', '{0}-zhifubao-unique-codes.csv'.format(self.owner)), sep='\t')
             return df
+    
+    def load(self):
+        output_path = os.path.join(self.folder, 'output', '{0}_record.json'.format(self.owner))
+        with open(output_path, 'r', encoding='utf-8') as f:
+            return json.loads(f.read())

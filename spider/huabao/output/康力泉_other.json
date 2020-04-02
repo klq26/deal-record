@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "date": "2020/01/21",
+        "date": "2020-01-21",
         "code": "799999",
         "name": "登记指定",
         "dealType": "指定",
@@ -12,6 +12,10 @@
         "fee": 0.0,
         "occurMoney": 0.0,
         "account": "华宝证券",
+        "category1": "无",
+        "category2": "无",
+        "category3": "无",
+        "categoryId": 1,
         "note": "无"
     }
 ]

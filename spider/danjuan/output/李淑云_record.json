@@ -12,6 +12,10 @@
         "fee": 0,
         "occurMoney": 33.33,
         "account": "李淑云",
+        "category1": "债券",
+        "category2": "国内债券",
+        "category3": "纯债",
+        "categoryId": 511,
         "note": "螺丝钉指数基金组合_2015646733041110627"
     },
     {
@@ -27,6 +31,10 @@
         "fee": 0.04,
         "occurMoney": 34.09,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "500低波动",
+        "categoryId": 122,
         "note": "螺丝钉指数基金组合_2015646732974011590"
     },
     {
@@ -42,6 +50,10 @@
         "fee": 0.04,
         "occurMoney": 36.86,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面120",
+        "categoryId": 116,
         "note": "螺丝钉指数基金组合_2015646732957253297"
     },
     {
@@ -57,6 +69,10 @@
         "fee": 0.04,
         "occurMoney": 38.84,
         "account": "李淑云",
+        "category1": "海外新兴",
+        "category2": "香港",
+        "category3": "香港中小",
+        "categoryId": 213,
         "note": "螺丝钉指数基金组合_2015646733024358348"
     },
     {
@@ -72,6 +88,10 @@
         "fee": 0.05,
         "occurMoney": 38.94,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_2015646733074672350"
     },
     {
@@ -87,6 +107,10 @@
         "fee": 0.07,
         "occurMoney": 45.34,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "50AH",
+        "categoryId": 112,
         "note": "螺丝钉指数基金组合_2015646733007565148"
     },
     {
@@ -102,6 +126,10 @@
         "fee": 0,
         "occurMoney": 33.31,
         "account": "李淑云",
+        "category1": "债券",
+        "category2": "国内债券",
+        "category3": "纯债",
+        "categoryId": 511,
         "note": "螺丝钉指数基金组合_2121533612591935280"
     },
     {
@@ -117,6 +145,10 @@
         "fee": 0.03,
         "occurMoney": 34.73,
         "account": "李淑云",
+        "category1": "海外新兴",
+        "category2": "香港",
+        "category3": "香港中小",
+        "categoryId": 213,
         "note": "螺丝钉指数基金组合_2121533612541585957"
     },
     {
@@ -132,6 +164,10 @@
         "fee": 0.04,
         "occurMoney": 34.83,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_2121533612591909657"
     },
     {
@@ -147,6 +183,10 @@
         "fee": 0.06,
         "occurMoney": 41.18,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "50AH",
+        "categoryId": 112,
         "note": "螺丝钉指数基金组合_2121533612457692686"
     },
     {
@@ -162,6 +202,10 @@
         "fee": 0,
         "occurMoney": 46.3,
         "account": "李淑云",
+        "category1": "债券",
+        "category2": "国内债券",
+        "category3": "纯债",
+        "categoryId": 511,
         "note": "螺丝钉指数基金组合_2198590579952573614"
     },
     {
@@ -177,6 +221,10 @@
         "fee": 0.05,
         "occurMoney": 48.27,
         "account": "李淑云",
+        "category1": "海外新兴",
+        "category2": "香港",
+        "category3": "香港中小",
+        "categoryId": 213,
         "note": "螺丝钉指数基金组合_2198590579818337914"
     },
     {
@@ -192,6 +240,10 @@
         "fee": 0.06,
         "occurMoney": 48.4,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_2198590579969335676"
     },
     {
@@ -207,6 +259,10 @@
         "fee": 0.09,
         "occurMoney": 57.23,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "50AH",
+        "categoryId": 112,
         "note": "螺丝钉指数基金组合_2198590579919011962"
     },
     {
@@ -222,6 +278,10 @@
         "fee": 0,
         "occurMoney": 33.32,
         "account": "李淑云",
+        "category1": "债券",
+        "category2": "国内债券",
+        "category3": "纯债",
+        "categoryId": 511,
         "note": "螺丝钉指数基金组合_2281660071024234478"
     },
     {
@@ -237,6 +297,10 @@
         "fee": 0.03,
         "occurMoney": 33.51,
         "account": "李淑云",
+        "category1": "海外新兴",
+        "category2": "香港",
+        "category3": "香港中小",
+        "categoryId": 213,
         "note": "螺丝钉指数基金组合_2281660070940364761"
     },
     {
@@ -252,6 +316,10 @@
         "fee": 0.06,
         "occurMoney": 38.98,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "50AH",
+        "categoryId": 112,
         "note": "螺丝钉指数基金组合_2281660070940353463"
     },
     {
@@ -267,6 +335,10 @@
         "fee": 0,
         "occurMoney": 33.33,
         "account": "李淑云",
+        "category1": "债券",
+        "category2": "国内债券",
+        "category3": "纯债",
+        "categoryId": 511,
         "note": "螺丝钉指数基金组合_2443846398254746034"
     },
     {
@@ -282,6 +354,10 @@
         "fee": 0.03,
         "occurMoney": 34.36,
         "account": "李淑云",
+        "category1": "海外新兴",
+        "category2": "香港",
+        "category3": "香港中小",
+        "categoryId": 213,
         "note": "螺丝钉指数基金组合_2443846398372206529"
     },
     {
@@ -297,6 +373,10 @@
         "fee": 0.04,
         "occurMoney": 35.24,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_2443846398388991131"
     },
     {
@@ -312,6 +392,10 @@
         "fee": 0.05,
         "occurMoney": 39.83,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_2443846398271527779"
     },
     {
@@ -327,6 +411,10 @@
         "fee": 0,
         "occurMoney": 33.31,
         "account": "李淑云",
+        "category1": "债券",
+        "category2": "国内债券",
+        "category3": "纯债",
+        "categoryId": 511,
         "note": "螺丝钉指数基金组合_2606406362339976245"
     },
     {
@@ -342,6 +430,10 @@
         "fee": 0.03,
         "occurMoney": 34.37,
         "account": "李淑云",
+        "category1": "海外新兴",
+        "category2": "香港",
+        "category3": "香港中小",
+        "categoryId": 213,
         "note": "螺丝钉指数基金组合_2606406362323214613"
     },
     {
@@ -357,6 +449,10 @@
         "fee": 0.04,
         "occurMoney": 35.77,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_2606406362323219730"
     },
     {
@@ -372,6 +468,10 @@
         "fee": 0.05,
         "occurMoney": 39.75,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_2606406362339979662"
     },
     {
@@ -387,6 +487,10 @@
         "fee": 0.03,
         "occurMoney": 34.88,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "标普红利",
+        "categoryId": 132,
         "note": "螺丝钉指数基金组合_2768783003061027357"
     },
     {
@@ -402,6 +506,10 @@
         "fee": 0.04,
         "occurMoney": 35.36,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面120",
+        "categoryId": 116,
         "note": "螺丝钉指数基金组合_2768783002859713414"
     },
     {
@@ -417,6 +525,10 @@
         "fee": 0.04,
         "occurMoney": 35.45,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "500低波动",
+        "categoryId": 122,
         "note": "螺丝钉指数基金组合_2768783003044270994"
     },
     {
@@ -432,6 +544,10 @@
         "fee": 0.04,
         "occurMoney": 36.63,
         "account": "李淑云",
+        "category1": "海外新兴",
+        "category2": "香港",
+        "category3": "香港中小",
+        "categoryId": 213,
         "note": "螺丝钉指数基金组合_2768783002960393192"
     },
     {
@@ -447,6 +563,10 @@
         "fee": 0.05,
         "occurMoney": 38.91,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_2768783002842924993"
     },
     {
@@ -462,6 +582,10 @@
         "fee": 0.05,
         "occurMoney": 41.72,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_2768783002842932685"
     },
     {
@@ -477,6 +601,10 @@
         "fee": 0.04,
         "occurMoney": 35.96,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "500低波动",
+        "categoryId": 122,
         "note": "螺丝钉指数基金组合_2930900619404770577"
     },
     {
@@ -492,6 +620,10 @@
         "fee": 0.04,
         "occurMoney": 39.21,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "标普红利",
+        "categoryId": 132,
         "note": "螺丝钉指数基金组合_2930900619371210461"
     },
     {
@@ -507,6 +639,10 @@
         "fee": 0.04,
         "occurMoney": 39.7,
         "account": "李淑云",
+        "category1": "海外新兴",
+        "category2": "香港",
+        "category3": "香港中小",
+        "categoryId": 213,
         "note": "螺丝钉指数基金组合_2930900619471858238"
     },
     {
@@ -522,6 +658,10 @@
         "fee": 0.04,
         "occurMoney": 41.44,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面120",
+        "categoryId": 116,
         "note": "螺丝钉指数基金组合_2930900619538988810"
     },
     {
@@ -537,6 +677,10 @@
         "fee": 0.05,
         "occurMoney": 43.53,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_2930900619538982445"
     },
     {
@@ -552,6 +696,10 @@
         "fee": 0.05,
         "occurMoney": 45.54,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_2930900619421527526"
     },
     {
@@ -567,6 +715,10 @@
         "fee": 0.04,
         "occurMoney": 34.23,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "500低波动",
+        "categoryId": 122,
         "note": "螺丝钉指数基金组合_3093359937491289627"
     },
     {
@@ -582,6 +734,10 @@
         "fee": 0.04,
         "occurMoney": 38.51,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "标普红利",
+        "categoryId": 132,
         "note": "螺丝钉指数基金组合_3093359937457742031"
     },
     {
@@ -597,6 +753,10 @@
         "fee": 0.04,
         "occurMoney": 39.91,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面120",
+        "categoryId": 116,
         "note": "螺丝钉指数基金组合_3093359937373854914"
     },
     {
@@ -612,6 +772,10 @@
         "fee": 0.04,
         "occurMoney": 41.65,
         "account": "李淑云",
+        "category1": "海外新兴",
+        "category2": "香港",
+        "category3": "香港中小",
+        "categoryId": 213,
         "note": "螺丝钉指数基金组合_3093359937474517558"
     },
     {
@@ -627,6 +791,10 @@
         "fee": 0.05,
         "occurMoney": 44.14,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_3093359937541615175"
     },
     {
@@ -642,6 +810,10 @@
         "fee": 0.06,
         "occurMoney": 47.31,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_3093359937541614511"
     },
     {
@@ -657,6 +829,10 @@
         "fee": 0,
         "occurMoney": 213.34,
         "account": "李淑云",
+        "category1": "债券",
+        "category2": "国内债券",
+        "category3": "纯债",
+        "categoryId": 511,
         "note": "螺丝钉指数基金组合_3092247641725571485"
     },
     {
@@ -672,6 +848,10 @@
         "fee": 0.04,
         "occurMoney": 30.37,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "500低波动",
+        "categoryId": 122,
         "note": "螺丝钉指数基金组合_3255473340639843772"
     },
     {
@@ -687,6 +867,10 @@
         "fee": 0.03,
         "occurMoney": 32.89,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "标普红利",
+        "categoryId": 132,
         "note": "螺丝钉指数基金组合_3255473340555957854"
     },
     {
@@ -702,6 +886,10 @@
         "fee": 0.04,
         "occurMoney": 34.59,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面120",
+        "categoryId": 116,
         "note": "螺丝钉指数基金组合_3255473340606291089"
     },
     {
@@ -717,6 +905,10 @@
         "fee": 0.05,
         "occurMoney": 37.93,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_3255473340455311060"
     },
     {
@@ -732,6 +924,10 @@
         "fee": 0.04,
         "occurMoney": 37.98,
         "account": "李淑云",
+        "category1": "海外新兴",
+        "category2": "香港",
+        "category3": "香港中小",
+        "categoryId": 213,
         "note": "螺丝钉指数基金组合_3255473340639844253"
     },
     {
@@ -747,6 +943,10 @@
         "fee": 0.05,
         "occurMoney": 39.89,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_3255473340488856594"
     },
     {
@@ -762,6 +962,10 @@
         "fee": 0.04,
         "occurMoney": 30.37,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "500低波动",
+        "categoryId": 122,
         "note": "螺丝钉指数基金组合_3255473340639843772"
     },
     {
@@ -777,6 +981,10 @@
         "fee": 0.03,
         "occurMoney": 32.89,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "标普红利",
+        "categoryId": 132,
         "note": "螺丝钉指数基金组合_3255473340555957854"
     },
     {
@@ -792,6 +1000,10 @@
         "fee": 0.04,
         "occurMoney": 34.59,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面120",
+        "categoryId": 116,
         "note": "螺丝钉指数基金组合_3255473340606291089"
     },
     {
@@ -807,6 +1019,10 @@
         "fee": 0.05,
         "occurMoney": 37.93,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_3255473340455311060"
     },
     {
@@ -822,6 +1038,10 @@
         "fee": 0.04,
         "occurMoney": 37.98,
         "account": "李淑云",
+        "category1": "海外新兴",
+        "category2": "香港",
+        "category3": "香港中小",
+        "categoryId": 213,
         "note": "螺丝钉指数基金组合_3255473340639844253"
     },
     {
@@ -837,6 +1057,10 @@
         "fee": 0.05,
         "occurMoney": 39.89,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_3255473340488856594"
     },
     {
@@ -852,6 +1076,10 @@
         "fee": 0,
         "occurMoney": 2.7,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_3305493374350913271"
     },
     {
@@ -867,6 +1095,10 @@
         "fee": 0.04,
         "occurMoney": 35.76,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "500低波动",
+        "categoryId": 122,
         "note": "螺丝钉指数基金组合_3417973374328500890"
     },
     {
@@ -882,6 +1114,10 @@
         "fee": 0.04,
         "occurMoney": 38.71,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "标普红利",
+        "categoryId": 132,
         "note": "螺丝钉指数基金组合_3417973374177478342"
     },
     {
@@ -897,6 +1133,10 @@
         "fee": 0.04,
         "occurMoney": 41.23,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面120",
+        "categoryId": 116,
         "note": "螺丝钉指数基金组合_3417973374311711230"
     },
     {
@@ -912,6 +1152,10 @@
         "fee": 0.05,
         "occurMoney": 44.16,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_3417973374160712308"
     },
     {
@@ -927,6 +1171,10 @@
         "fee": 0.05,
         "occurMoney": 45.19,
         "account": "李淑云",
+        "category1": "海外新兴",
+        "category2": "香港",
+        "category3": "香港中小",
+        "categoryId": 213,
         "note": "螺丝钉指数基金组合_3417973374244595638"
     },
     {
@@ -942,6 +1190,10 @@
         "fee": 0.06,
         "occurMoney": 46.99,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_3417973374311704295"
     },
     {
@@ -957,6 +1209,10 @@
         "fee": 0.03,
         "occurMoney": 34.82,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "全指医药",
+        "categoryId": 142,
         "note": "螺丝钉指数基金组合_3580386426272320677"
     },
     {
@@ -972,6 +1228,10 @@
         "fee": 0.04,
         "occurMoney": 37.31,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "500低波动",
+        "categoryId": 122,
         "note": "螺丝钉指数基金组合_3580386426305874431"
     },
     {
@@ -987,6 +1247,10 @@
         "fee": 0.04,
         "occurMoney": 41.75,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面120",
+        "categoryId": 116,
         "note": "螺丝钉指数基金组合_3580386426272342289"
     },
     {
@@ -1002,6 +1266,10 @@
         "fee": 0.04,
         "occurMoney": 43.97,
         "account": "李淑云",
+        "category1": "海外新兴",
+        "category2": "香港",
+        "category3": "香港中小",
+        "categoryId": 213,
         "note": "螺丝钉指数基金组合_3580386426171667287"
     },
     {
@@ -1017,6 +1285,10 @@
         "fee": 0.05,
         "occurMoney": 44.98,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_3580386426138102153"
     },
     {
@@ -1032,6 +1304,10 @@
         "fee": 0.06,
         "occurMoney": 47.19,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_3580386426188439151"
     },
     {
@@ -1047,6 +1323,10 @@
         "fee": 0.04,
         "occurMoney": 38.06,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "全指医药",
+        "categoryId": 142,
         "note": "螺丝钉指数基金组合_3742752544994605189"
     },
     {
@@ -1062,6 +1342,10 @@
         "fee": 0.05,
         "occurMoney": 39.12,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "500低波动",
+        "categoryId": 122,
         "note": "螺丝钉指数基金组合_3742752545011385771"
     },
     {
@@ -1077,6 +1361,10 @@
         "fee": 0.04,
         "occurMoney": 42.34,
         "account": "李淑云",
+        "category1": "海外新兴",
+        "category2": "香港",
+        "category3": "香港中小",
+        "categoryId": 213,
         "note": "螺丝钉指数基金组合_3742752545128817006"
     },
     {
@@ -1092,6 +1380,10 @@
         "fee": 0.05,
         "occurMoney": 42.79,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面120",
+        "categoryId": 116,
         "note": "螺丝钉指数基金组合_3742752545095256102"
     },
     {
@@ -1107,6 +1399,10 @@
         "fee": 0.06,
         "occurMoney": 46.29,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_3742752545061730210"
     },
     {
@@ -1122,6 +1418,10 @@
         "fee": 0.06,
         "occurMoney": 46.54,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_3742752545044934628"
     },
     {
@@ -1137,6 +1437,10 @@
         "fee": 0.04,
         "occurMoney": 35.43,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "全指医药",
+        "categoryId": 142,
         "note": "螺丝钉指数基金组合_3906171359983033198"
     },
     {
@@ -1152,6 +1456,10 @@
         "fee": 0.05,
         "occurMoney": 41.44,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "500低波动",
+        "categoryId": 122,
         "note": "螺丝钉指数基金组合_3906171359865575615"
     },
     {
@@ -1167,6 +1475,10 @@
         "fee": 0.04,
         "occurMoney": 43.07,
         "account": "李淑云",
+        "category1": "海外新兴",
+        "category2": "香港",
+        "category3": "香港中小",
+        "categoryId": 213,
         "note": "螺丝钉指数基金组合_3906171360033347222"
     },
     {
@@ -1182,6 +1494,10 @@
         "fee": 0.05,
         "occurMoney": 43.08,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面120",
+        "categoryId": 116,
         "note": "螺丝钉指数基金组合_3906171359932680418"
     },
     {
@@ -1197,6 +1513,10 @@
         "fee": 0.05,
         "occurMoney": 44.93,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_3906171360100458878"
     },
     {
@@ -1212,6 +1532,10 @@
         "fee": 0.06,
         "occurMoney": 46.06,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_3906171360066906165"
     },
     {
@@ -1227,6 +1551,10 @@
         "fee": 0,
         "occurMoney": 0,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_3953983739064195550"
     },
     {
@@ -1242,6 +1570,10 @@
         "fee": 0.05,
         "occurMoney": 38.73,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "500低波动",
+        "categoryId": 122,
         "note": "螺丝钉指数基金组合_4071169442935454256"
     },
     {
@@ -1257,6 +1589,10 @@
         "fee": 0.06,
         "occurMoney": 38.8,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面60",
+        "categoryId": 115,
         "note": "螺丝钉指数基金组合_4071169443019350233"
     },
     {
@@ -1272,6 +1608,10 @@
         "fee": 0.04,
         "occurMoney": 39.21,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面120",
+        "categoryId": 116,
         "note": "螺丝钉指数基金组合_4071169443153555866"
     },
     {
@@ -1287,6 +1627,10 @@
         "fee": 0.04,
         "occurMoney": 39.48,
         "account": "李淑云",
+        "category1": "海外新兴",
+        "category2": "香港",
+        "category3": "香港中小",
+        "categoryId": 213,
         "note": "螺丝钉指数基金组合_4071169443153543779"
     },
     {
@@ -1302,6 +1646,10 @@
         "fee": 0.05,
         "occurMoney": 42.6,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_4071169442935447354"
     },
     {
@@ -1317,6 +1665,10 @@
         "fee": 0.05,
         "occurMoney": 42.67,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_4071169443069680882"
     },
     {
@@ -1332,6 +1684,10 @@
         "fee": 0.05,
         "occurMoney": 35.86,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面60",
+        "categoryId": 115,
         "note": "螺丝钉指数基金组合_4229745509358083502"
     },
     {
@@ -1347,6 +1703,10 @@
         "fee": 0.04,
         "occurMoney": 36.31,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面120",
+        "categoryId": 116,
         "note": "螺丝钉指数基金组合_4229745509324522170"
     },
     {
@@ -1362,6 +1722,10 @@
         "fee": 0.05,
         "occurMoney": 37.86,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "500低波动",
+        "categoryId": 122,
         "note": "螺丝钉指数基金组合_4229745509307770231"
     },
     {
@@ -1377,6 +1741,10 @@
         "fee": 0.04,
         "occurMoney": 38.83,
         "account": "李淑云",
+        "category1": "海外新兴",
+        "category2": "香港",
+        "category3": "香港中小",
+        "categoryId": 213,
         "note": "螺丝钉指数基金组合_4229745509307757426"
     },
     {
@@ -1392,6 +1760,10 @@
         "fee": 0.05,
         "occurMoney": 41.08,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_4229745509223876573"
     },
     {
@@ -1407,6 +1779,10 @@
         "fee": 0.05,
         "occurMoney": 41.5,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_4229745509257427187"
     },
     {
@@ -1422,6 +1798,10 @@
         "fee": 0.06,
         "occurMoney": 37.31,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面60",
+        "categoryId": 115,
         "note": "螺丝钉指数基金组合_117636775271616512"
     },
     {
@@ -1437,6 +1817,10 @@
         "fee": 0.04,
         "occurMoney": 38.11,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面120",
+        "categoryId": 116,
         "note": "螺丝钉指数基金组合_117636775271616513"
     },
     {
@@ -1452,6 +1836,10 @@
         "fee": 0.04,
         "occurMoney": 38.78,
         "account": "李淑云",
+        "category1": "海外新兴",
+        "category2": "香港",
+        "category3": "香港中小",
+        "categoryId": 213,
         "note": "螺丝钉指数基金组合_117636775271616514"
     },
     {
@@ -1467,6 +1855,10 @@
         "fee": 0.05,
         "occurMoney": 40.18,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "500低波动",
+        "categoryId": 122,
         "note": "螺丝钉指数基金组合_117636775271616515"
     },
     {
@@ -1482,6 +1874,10 @@
         "fee": 0.05,
         "occurMoney": 42.64,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_117636775271616516"
     },
     {
@@ -1497,6 +1893,10 @@
         "fee": 0.05,
         "occurMoney": 43.77,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_117636775271616517"
     },
     {
@@ -1512,6 +1912,10 @@
         "fee": 0.05,
         "occurMoney": 36.34,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面60",
+        "categoryId": 115,
         "note": "螺丝钉指数基金组合_120172112196059136"
     },
     {
@@ -1527,6 +1931,10 @@
         "fee": 0.04,
         "occurMoney": 37.13,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面120",
+        "categoryId": 116,
         "note": "螺丝钉指数基金组合_120172112196059137"
     },
     {
@@ -1542,6 +1950,10 @@
         "fee": 0.04,
         "occurMoney": 37.68,
         "account": "李淑云",
+        "category1": "海外新兴",
+        "category2": "香港",
+        "category3": "香港中小",
+        "categoryId": 213,
         "note": "螺丝钉指数基金组合_120172112196059138"
     },
     {
@@ -1557,6 +1969,10 @@
         "fee": 0.05,
         "occurMoney": 38.94,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "500低波动",
+        "categoryId": 122,
         "note": "螺丝钉指数基金组合_120172112196059139"
     },
     {
@@ -1572,6 +1988,10 @@
         "fee": 0.05,
         "occurMoney": 41.9,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_120172112196059140"
     },
     {
@@ -1587,6 +2007,10 @@
         "fee": 0.05,
         "occurMoney": 43.81,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_120172112196059141"
     },
     {
@@ -1602,6 +2026,10 @@
         "fee": 0.05,
         "occurMoney": 43.58,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_122705163735941120"
     },
     {
@@ -1617,6 +2045,10 @@
         "fee": 0.05,
         "occurMoney": 43.44,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_122705163756912640"
     },
     {
@@ -1632,6 +2064,10 @@
         "fee": 0.04,
         "occurMoney": 37.67,
         "account": "李淑云",
+        "category1": "海外新兴",
+        "category2": "香港",
+        "category3": "香港中小",
+        "categoryId": 213,
         "note": "螺丝钉指数基金组合_122705163777884160"
     },
     {
@@ -1647,6 +2083,10 @@
         "fee": 0.06,
         "occurMoney": 37.21,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面60",
+        "categoryId": 115,
         "note": "螺丝钉指数基金组合_122705163803049984"
     },
     {
@@ -1662,6 +2102,10 @@
         "fee": 0.04,
         "occurMoney": 38.11,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面120",
+        "categoryId": 116,
         "note": "螺丝钉指数基金组合_122705163824021504"
     },
     {
@@ -1677,6 +2121,10 @@
         "fee": 0.05,
         "occurMoney": 41.2,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "500低波动",
+        "categoryId": 122,
         "note": "螺丝钉指数基金组合_122705163849187328"
     },
     {
@@ -1692,6 +2140,10 @@
         "fee": 0.06,
         "occurMoney": 48.1,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_127784929904185344"
     },
     {
@@ -1707,6 +2159,10 @@
         "fee": 0.06,
         "occurMoney": 47.16,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_127784929925156864"
     },
     {
@@ -1722,6 +2178,10 @@
         "fee": 0.04,
         "occurMoney": 42.1,
         "account": "李淑云",
+        "category1": "海外新兴",
+        "category2": "香港",
+        "category3": "香港中小",
+        "categoryId": 213,
         "note": "螺丝钉指数基金组合_127784929941934080"
     },
     {
@@ -1737,6 +2197,10 @@
         "fee": 0.06,
         "occurMoney": 40.11,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面60",
+        "categoryId": 115,
         "note": "螺丝钉指数基金组合_127784929962905600"
     },
     {
@@ -1752,6 +2216,10 @@
         "fee": 0.03,
         "occurMoney": 34.53,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "全指医药",
+        "categoryId": 142,
         "note": "螺丝钉指数基金组合_127784929988071424"
     },
     {
@@ -1767,6 +2235,10 @@
         "fee": 0.05,
         "occurMoney": 42.74,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "500低波动",
+        "categoryId": 122,
         "note": "螺丝钉指数基金组合_127784930009042944"
     },
     {
@@ -1782,6 +2254,10 @@
         "fee": 0.06,
         "occurMoney": 48.1,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_130347890103435264"
     },
     {
@@ -1797,6 +2273,10 @@
         "fee": 0.06,
         "occurMoney": 47.03,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_130347890124406784"
     },
     {
@@ -1812,6 +2292,10 @@
         "fee": 0.04,
         "occurMoney": 41.32,
         "account": "李淑云",
+        "category1": "海外新兴",
+        "category2": "香港",
+        "category3": "香港中小",
+        "categoryId": 213,
         "note": "螺丝钉指数基金组合_130347890145378304"
     },
     {
@@ -1827,6 +2311,10 @@
         "fee": 0.06,
         "occurMoney": 39.67,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面60",
+        "categoryId": 115,
         "note": "螺丝钉指数基金组合_130347890166349824"
     },
     {
@@ -1842,6 +2330,10 @@
         "fee": 0.04,
         "occurMoney": 40.02,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面120",
+        "categoryId": 116,
         "note": "螺丝钉指数基金组合_130347890191515648"
     },
     {
@@ -1857,6 +2349,10 @@
         "fee": 0.05,
         "occurMoney": 44.11,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "500低波动",
+        "categoryId": 122,
         "note": "螺丝钉指数基金组合_130347890216681472"
     },
     {
@@ -1872,6 +2368,10 @@
         "fee": 0.06,
         "occurMoney": 47.36,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_132857159382093824"
     },
     {
@@ -1887,6 +2387,10 @@
         "fee": 0.05,
         "occurMoney": 45.56,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_132857159407259648"
     },
     {
@@ -1902,6 +2406,10 @@
         "fee": 0.04,
         "occurMoney": 39.34,
         "account": "李淑云",
+        "category1": "海外新兴",
+        "category2": "香港",
+        "category3": "香港中小",
+        "categoryId": 213,
         "note": "螺丝钉指数基金组合_132857159428231168"
     },
     {
@@ -1917,6 +2425,10 @@
         "fee": 0.06,
         "occurMoney": 37.77,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面60",
+        "categoryId": 115,
         "note": "螺丝钉指数基金组合_132857159453396992"
     },
     {
@@ -1932,6 +2444,10 @@
         "fee": 0.04,
         "occurMoney": 37.7,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面120",
+        "categoryId": 116,
         "note": "螺丝钉指数基金组合_132857159478562816"
     },
     {
@@ -1947,6 +2463,10 @@
         "fee": 0.05,
         "occurMoney": 41.65,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "500低波动",
+        "categoryId": 122,
         "note": "螺丝钉指数基金组合_132857159503728640"
     },
     {
@@ -1962,6 +2482,10 @@
         "fee": 0,
         "occurMoney": 0,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_135446119845675008"
     },
     {
@@ -1977,6 +2501,10 @@
         "fee": 0.06,
         "occurMoney": 50.16,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_135417960458506240"
     },
     {
@@ -1992,6 +2520,10 @@
         "fee": 0.06,
         "occurMoney": 48.29,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_135417960483672064"
     },
     {
@@ -2007,6 +2539,10 @@
         "fee": 0.04,
         "occurMoney": 39.27,
         "account": "李淑云",
+        "category1": "海外新兴",
+        "category2": "香港",
+        "category3": "香港中小",
+        "categoryId": 213,
         "note": "螺丝钉指数基金组合_135417960504643584"
     },
     {
@@ -2022,6 +2558,10 @@
         "fee": 0.06,
         "occurMoney": 41.11,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面60",
+        "categoryId": 115,
         "note": "螺丝钉指数基金组合_135417960525615104"
     },
     {
@@ -2037,6 +2577,10 @@
         "fee": 0.04,
         "occurMoney": 40.43,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面120",
+        "categoryId": 116,
         "note": "螺丝钉指数基金组合_135417960550780928"
     },
     {
@@ -2052,6 +2596,10 @@
         "fee": 0.05,
         "occurMoney": 44.87,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "500低波动",
+        "categoryId": 122,
         "note": "螺丝钉指数基金组合_135417960575946752"
     },
     {
@@ -2067,6 +2615,10 @@
         "fee": 0.06,
         "occurMoney": 49.49,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_137928296986492928"
     },
     {
@@ -2082,6 +2634,10 @@
         "fee": 0.06,
         "occurMoney": 46.34,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_137928297015853056"
     },
     {
@@ -2097,6 +2653,10 @@
         "fee": 0.04,
         "occurMoney": 37.61,
         "account": "李淑云",
+        "category1": "海外新兴",
+        "category2": "香港",
+        "category3": "香港中小",
+        "categoryId": 213,
         "note": "螺丝钉指数基金组合_137928297041018880"
     },
     {
@@ -2112,6 +2672,10 @@
         "fee": 0.06,
         "occurMoney": 38.75,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面60",
+        "categoryId": 115,
         "note": "螺丝钉指数基金组合_137928297070379008"
     },
     {
@@ -2127,6 +2691,10 @@
         "fee": 0.04,
         "occurMoney": 33.91,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "养老产业",
+        "categoryId": 141,
         "note": "螺丝钉指数基金组合_137928297108127744"
     },
     {
@@ -2142,6 +2710,10 @@
         "fee": 0.05,
         "occurMoney": 42.35,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "500低波动",
+        "categoryId": 122,
         "note": "螺丝钉指数基金组合_137928297141682176"
     },
     {
@@ -2157,6 +2729,10 @@
         "fee": 0.06,
         "occurMoney": 46.56,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_140467879062183936"
     },
     {
@@ -2172,6 +2748,10 @@
         "fee": 0.05,
         "occurMoney": 43.36,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_140467879083155456"
     },
     {
@@ -2187,6 +2767,10 @@
         "fee": 0.04,
         "occurMoney": 35.34,
         "account": "李淑云",
+        "category1": "海外新兴",
+        "category2": "香港",
+        "category3": "香港中小",
+        "categoryId": 213,
         "note": "螺丝钉指数基金组合_140467879104126976"
     },
     {
@@ -2202,6 +2786,10 @@
         "fee": 0.05,
         "occurMoney": 35.99,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面60",
+        "categoryId": 115,
         "note": "螺丝钉指数基金组合_140467879125098496"
     },
     {
@@ -2217,6 +2805,10 @@
         "fee": 0.04,
         "occurMoney": 34.62,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面120",
+        "categoryId": 116,
         "note": "螺丝钉指数基金组合_140467879146070016"
     },
     {
@@ -2232,6 +2824,10 @@
         "fee": 0.05,
         "occurMoney": 39.16,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "500低波动",
+        "categoryId": 122,
         "note": "螺丝钉指数基金组合_140467879167041538"
     },
     {
@@ -2247,6 +2843,10 @@
         "fee": 0.05,
         "occurMoney": 45.85,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_143000585327255552"
     },
     {
@@ -2262,6 +2862,10 @@
         "fee": 0.05,
         "occurMoney": 43.33,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_143000585352421376"
     },
     {
@@ -2277,6 +2881,10 @@
         "fee": 0.03,
         "occurMoney": 34.92,
         "account": "李淑云",
+        "category1": "海外新兴",
+        "category2": "香港",
+        "category3": "香港中小",
+        "categoryId": 213,
         "note": "螺丝钉指数基金组合_143000585369198592"
     },
     {
@@ -2292,6 +2900,10 @@
         "fee": 0.06,
         "occurMoney": 36.83,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面60",
+        "categoryId": 115,
         "note": "螺丝钉指数基金组合_143000585390170112"
     },
     {
@@ -2307,6 +2919,10 @@
         "fee": 0.04,
         "occurMoney": 35.21,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面120",
+        "categoryId": 116,
         "note": "螺丝钉指数基金组合_143000585411141632"
     },
     {
@@ -2322,6 +2938,10 @@
         "fee": 0.05,
         "occurMoney": 39.24,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "500低波动",
+        "categoryId": 122,
         "note": "螺丝钉指数基金组合_143000585436307456"
     },
     {
@@ -2337,6 +2957,10 @@
         "fee": 0,
         "occurMoney": 0,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_145986346754457600"
     },
     {
@@ -2352,6 +2976,10 @@
         "fee": 0.06,
         "occurMoney": 48.0,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_145544343327227904"
     },
     {
@@ -2367,6 +2995,10 @@
         "fee": 0.05,
         "occurMoney": 44.97,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_145544343352393728"
     },
     {
@@ -2382,6 +3014,10 @@
         "fee": 0.04,
         "occurMoney": 37.01,
         "account": "李淑云",
+        "category1": "海外新兴",
+        "category2": "香港",
+        "category3": "香港中小",
+        "categoryId": 213,
         "note": "螺丝钉指数基金组合_145544343369170944"
     },
     {
@@ -2397,6 +3033,10 @@
         "fee": 0.06,
         "occurMoney": 37.64,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面60",
+        "categoryId": 115,
         "note": "螺丝钉指数基金组合_145544343390142464"
     },
     {
@@ -2412,6 +3052,10 @@
         "fee": 0.04,
         "occurMoney": 33.87,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "养老产业",
+        "categoryId": 141,
         "note": "螺丝钉指数基金组合_145544343415308288"
     },
     {
@@ -2427,6 +3071,10 @@
         "fee": 0.05,
         "occurMoney": 40.95,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "500低波动",
+        "categoryId": 122,
         "note": "螺丝钉指数基金组合_145544343440474112"
     },
     {
@@ -2442,6 +3090,10 @@
         "fee": 0.06,
         "occurMoney": 48.77,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_150624157143048192"
     },
     {
@@ -2457,6 +3109,10 @@
         "fee": 0.06,
         "occurMoney": 47.61,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_150624157168214016"
     },
     {
@@ -2472,6 +3128,10 @@
         "fee": 0.06,
         "occurMoney": 39.07,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面60",
+        "categoryId": 115,
         "note": "螺丝钉指数基金组合_150624157189185536"
     },
     {
@@ -2487,6 +3147,10 @@
         "fee": 0.04,
         "occurMoney": 37.41,
         "account": "李淑云",
+        "category1": "海外新兴",
+        "category2": "香港",
+        "category3": "香港中小",
+        "categoryId": 213,
         "note": "螺丝钉指数基金组合_150624157205962752"
     },
     {
@@ -2502,6 +3166,10 @@
         "fee": 0.05,
         "occurMoney": 43.44,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "500低波动",
+        "categoryId": 122,
         "note": "螺丝钉指数基金组合_150624157231128576"
     },
     {
@@ -2517,6 +3185,10 @@
         "fee": 0.04,
         "occurMoney": 35.99,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "养老产业",
+        "categoryId": 141,
         "note": "螺丝钉指数基金组合_150624157256294400"
     },
     {
@@ -2532,6 +3204,10 @@
         "fee": 0.05,
         "occurMoney": 44.77,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_153153943660830720"
     },
     {
@@ -2547,6 +3223,10 @@
         "fee": 0.05,
         "occurMoney": 43.56,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_153153943681802240"
     },
     {
@@ -2562,6 +3242,10 @@
         "fee": 0.05,
         "occurMoney": 36.1,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面60",
+        "categoryId": 115,
         "note": "螺丝钉指数基金组合_153153943702773760"
     },
     {
@@ -2577,6 +3261,10 @@
         "fee": 0.03,
         "occurMoney": 34.84,
         "account": "李淑云",
+        "category1": "海外新兴",
+        "category2": "香港",
+        "category3": "香港中小",
+        "categoryId": 213,
         "note": "螺丝钉指数基金组合_153153943723745280"
     },
     {
@@ -2592,6 +3280,10 @@
         "fee": 0.05,
         "occurMoney": 40.69,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "500低波动",
+        "categoryId": 122,
         "note": "螺丝钉指数基金组合_153153943744716800"
     },
     {
@@ -2607,6 +3299,10 @@
         "fee": 0.04,
         "occurMoney": 33.49,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "养老产业",
+        "categoryId": 141,
         "note": "螺丝钉指数基金组合_153153943769882624"
     },
     {
@@ -2622,6 +3318,10 @@
         "fee": 0.05,
         "occurMoney": 45.84,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_155698899696918528"
     },
     {
@@ -2637,6 +3337,10 @@
         "fee": 0.05,
         "occurMoney": 45.07,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_155698899717890048"
     },
     {
@@ -2652,6 +3356,10 @@
         "fee": 0.06,
         "occurMoney": 36.98,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面60",
+        "categoryId": 115,
         "note": "螺丝钉指数基金组合_155698899738861568"
     },
     {
@@ -2667,6 +3375,10 @@
         "fee": 0.03,
         "occurMoney": 34.31,
         "account": "李淑云",
+        "category1": "海外新兴",
+        "category2": "香港",
+        "category3": "香港中小",
+        "categoryId": 213,
         "note": "螺丝钉指数基金组合_155698899759833088"
     },
     {
@@ -2682,6 +3394,10 @@
         "fee": 0.05,
         "occurMoney": 43.16,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "500低波动",
+        "categoryId": 122,
         "note": "螺丝钉指数基金组合_155698899780804608"
     },
     {
@@ -2697,6 +3413,10 @@
         "fee": 0.04,
         "occurMoney": 34.66,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "养老产业",
+        "categoryId": 141,
         "note": "螺丝钉指数基金组合_155698899805970432"
     },
     {
@@ -2712,6 +3432,10 @@
         "fee": 0.05,
         "occurMoney": 45.91,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_158234760619380736"
     },
     {
@@ -2727,6 +3451,10 @@
         "fee": 0.05,
         "occurMoney": 43.94,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_158234760640352256"
     },
     {
@@ -2742,6 +3470,10 @@
         "fee": 0.06,
         "occurMoney": 37.05,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面60",
+        "categoryId": 115,
         "note": "螺丝钉指数基金组合_158234760661323776"
     },
     {
@@ -2757,6 +3489,10 @@
         "fee": 0.03,
         "occurMoney": 32.91,
         "account": "李淑云",
+        "category1": "海外新兴",
+        "category2": "香港",
+        "category3": "香港中小",
+        "categoryId": 213,
         "note": "螺丝钉指数基金组合_158234760678100992"
     },
     {
@@ -2772,6 +3508,10 @@
         "fee": 0.05,
         "occurMoney": 41.4,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "500低波动",
+        "categoryId": 122,
         "note": "螺丝钉指数基金组合_158234760707461120"
     },
     {
@@ -2787,6 +3527,10 @@
         "fee": 0.04,
         "occurMoney": 33.75,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "养老产业",
+        "categoryId": 141,
         "note": "螺丝钉指数基金组合_158234760732626944"
     },
     {
@@ -2802,6 +3546,10 @@
         "fee": 0.05,
         "occurMoney": 45.12,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_160762195001126912"
     },
     {
@@ -2817,6 +3565,10 @@
         "fee": 0.05,
         "occurMoney": 44.27,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_160762195043069952"
     },
     {
@@ -2832,6 +3584,10 @@
         "fee": 0.05,
         "occurMoney": 35.79,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面60",
+        "categoryId": 115,
         "note": "螺丝钉指数基金组合_160762195085012992"
     },
     {
@@ -2847,6 +3603,10 @@
         "fee": 0.05,
         "occurMoney": 42.39,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "500低波动",
+        "categoryId": 122,
         "note": "螺丝钉指数基金组合_160762195122761728"
     },
     {
@@ -2862,6 +3622,10 @@
         "fee": 0.04,
         "occurMoney": 33.61,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "养老产业",
+        "categoryId": 141,
         "note": "螺丝钉指数基金组合_160762195152121856"
     },
     {
@@ -2877,6 +3641,10 @@
         "fee": 0.04,
         "occurMoney": 34.2,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面120",
+        "categoryId": 116,
         "note": "螺丝钉指数基金组合_160762195185676288"
     },
     {
@@ -2892,6 +3660,10 @@
         "fee": 0.06,
         "occurMoney": 47.04,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_163309634618544128"
     },
     {
@@ -2907,6 +3679,10 @@
         "fee": 0.06,
         "occurMoney": 46.02,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_163309634639515648"
     },
     {
@@ -2922,6 +3698,10 @@
         "fee": 0.04,
         "occurMoney": 34.27,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "养老产业",
+        "categoryId": 141,
         "note": "螺丝钉指数基金组合_163309634664681472"
     },
     {
@@ -2937,6 +3717,10 @@
         "fee": 0.06,
         "occurMoney": 37.56,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面60",
+        "categoryId": 115,
         "note": "螺丝钉指数基金组合_163309634689847296"
     },
     {
@@ -2952,6 +3736,10 @@
         "fee": 0.04,
         "occurMoney": 35.64,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面120",
+        "categoryId": 116,
         "note": "螺丝钉指数基金组合_163309634715013120"
     },
     {
@@ -2967,6 +3755,10 @@
         "fee": 0.05,
         "occurMoney": 44.1,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "500低波动",
+        "categoryId": 122,
         "note": "螺丝钉指数基金组合_163309634740178944"
     },
     {
@@ -2982,6 +3774,10 @@
         "fee": 0.06,
         "occurMoney": 47.07,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_165835970956378112"
     },
     {
@@ -2997,6 +3793,10 @@
         "fee": 0.06,
         "occurMoney": 46.43,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_165835970981543936"
     },
     {
@@ -3012,6 +3812,10 @@
         "fee": 0.04,
         "occurMoney": 33.43,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "养老产业",
+        "categoryId": 141,
         "note": "螺丝钉指数基金组合_165835971010904064"
     },
     {
@@ -3027,6 +3831,10 @@
         "fee": 0.06,
         "occurMoney": 38.07,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面60",
+        "categoryId": 115,
         "note": "螺丝钉指数基金组合_165835971036069888"
     },
     {
@@ -3042,6 +3850,10 @@
         "fee": 0.04,
         "occurMoney": 35.76,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面120",
+        "categoryId": 116,
         "note": "螺丝钉指数基金组合_165835971052847104"
     },
     {
@@ -3057,6 +3869,10 @@
         "fee": 0.05,
         "occurMoney": 44.01,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "500低波动",
+        "categoryId": 122,
         "note": "螺丝钉指数基金组合_165835971078012928"
     },
     {
@@ -3072,6 +3888,10 @@
         "fee": 0.05,
         "occurMoney": 44.95,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_168373504966021120"
     },
     {
@@ -3087,6 +3907,10 @@
         "fee": 0.05,
         "occurMoney": 45.31,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_168373504986992640"
     },
     {
@@ -3102,6 +3926,10 @@
         "fee": 0.06,
         "occurMoney": 37.49,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面60",
+        "categoryId": 115,
         "note": "螺丝钉指数基金组合_168373505007964160"
     },
     {
@@ -3117,6 +3945,10 @@
         "fee": 0.05,
         "occurMoney": 43.19,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "500低波动",
+        "categoryId": 122,
         "note": "螺丝钉指数基金组合_168373505033129984"
     },
     {
@@ -3132,6 +3964,10 @@
         "fee": 0.04,
         "occurMoney": 34.48,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "养老产业",
+        "categoryId": 141,
         "note": "螺丝钉指数基金组合_168373505054101504"
     },
     {
@@ -3147,6 +3983,10 @@
         "fee": 0.04,
         "occurMoney": 35.73,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面120",
+        "categoryId": 116,
         "note": "螺丝钉指数基金组合_168373505079267328"
     },
     {
@@ -3162,6 +4002,10 @@
         "fee": 0.06,
         "occurMoney": 46.09,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_170906812853956608"
     },
     {
@@ -3177,6 +4021,10 @@
         "fee": 0.06,
         "occurMoney": 46.21,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_170906812883316736"
     },
     {
@@ -3192,6 +4040,10 @@
         "fee": 0.06,
         "occurMoney": 38.14,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面60",
+        "categoryId": 115,
         "note": "螺丝钉指数基金组合_170906812912676864"
     },
     {
@@ -3207,6 +4059,10 @@
         "fee": 0.05,
         "occurMoney": 43.49,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "500低波动",
+        "categoryId": 122,
         "note": "螺丝钉指数基金组合_170906812942036992"
     },
     {
@@ -3222,6 +4078,10 @@
         "fee": 0.04,
         "occurMoney": 34.94,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "养老产业",
+        "categoryId": 141,
         "note": "螺丝钉指数基金组合_170906812979785728"
     },
     {
@@ -3237,6 +4097,10 @@
         "fee": 0.04,
         "occurMoney": 36.02,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面120",
+        "categoryId": 116,
         "note": "螺丝钉指数基金组合_170906813021728768"
     },
     {
@@ -3252,6 +4116,10 @@
         "fee": 0,
         "occurMoney": 0,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_173134310593478656"
     },
     {
@@ -3267,6 +4135,10 @@
         "fee": 0.05,
         "occurMoney": 45.43,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_173446221247725568"
     },
     {
@@ -3282,6 +4154,10 @@
         "fee": 0.05,
         "occurMoney": 45.48,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_173446221281280000"
     },
     {
@@ -3297,6 +4173,10 @@
         "fee": 0.05,
         "occurMoney": 36.26,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面60",
+        "categoryId": 115,
         "note": "螺丝钉指数基金组合_173446221314834432"
     },
     {
@@ -3312,6 +4192,10 @@
         "fee": 0.05,
         "occurMoney": 41.84,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "500低波动",
+        "categoryId": 122,
         "note": "螺丝钉指数基金组合_173446221348388864"
     },
     {
@@ -3327,6 +4211,10 @@
         "fee": 0.04,
         "occurMoney": 33.47,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "养老产业",
+        "categoryId": 141,
         "note": "螺丝钉指数基金组合_173446221369360384"
     },
     {
@@ -3342,6 +4230,10 @@
         "fee": 0.04,
         "occurMoney": 41.64,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "中证银行",
+        "categoryId": 146,
         "note": "螺丝钉指数基金组合_173446221398720512"
     },
     {
@@ -3357,6 +4249,10 @@
         "fee": 0,
         "occurMoney": 1200,
         "account": "李淑云",
+        "category1": "债券",
+        "category2": "国内债券",
+        "category3": "纯债",
+        "categoryId": 511,
         "note": "钉钉宝90天组合_175049967127937024"
     },
     {
@@ -3372,6 +4268,10 @@
         "fee": 0,
         "occurMoney": 900,
         "account": "李淑云",
+        "category1": "债券",
+        "category2": "国内债券",
+        "category3": "纯债",
+        "categoryId": 511,
         "note": "钉钉宝90天组合_175049967186657280"
     },
     {
@@ -3387,6 +4287,10 @@
         "fee": 0,
         "occurMoney": 900,
         "account": "李淑云",
+        "category1": "债券",
+        "category2": "国内债券",
+        "category3": "纯债",
+        "categoryId": 511,
         "note": "钉钉宝90天组合_175049967232794624"
     },
     {
@@ -3402,6 +4306,10 @@
         "fee": 0.05,
         "occurMoney": 43.27,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_175983756641476608"
     },
     {
@@ -3417,6 +4325,10 @@
         "fee": 0.05,
         "occurMoney": 45.2,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_175983756662448128"
     },
     {
@@ -3432,6 +4344,10 @@
         "fee": 0.05,
         "occurMoney": 34.56,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面60",
+        "categoryId": 115,
         "note": "螺丝钉指数基金组合_175983756683419648"
     },
     {
@@ -3447,6 +4363,10 @@
         "fee": 0.05,
         "occurMoney": 40.72,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "500低波动",
+        "categoryId": 122,
         "note": "螺丝钉指数基金组合_175983756708585472"
     },
     {
@@ -3462,6 +4382,10 @@
         "fee": 0.04,
         "occurMoney": 40.35,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "中证银行",
+        "categoryId": 146,
         "note": "螺丝钉指数基金组合_175983756729556992"
     },
     {
@@ -3477,6 +4401,10 @@
         "fee": 0.05,
         "occurMoney": 43.22,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_178542075193237504"
     },
     {
@@ -3492,6 +4420,10 @@
         "fee": 0.05,
         "occurMoney": 45.81,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_178542075222597632"
     },
     {
@@ -3507,6 +4439,10 @@
         "fee": 0.05,
         "occurMoney": 34.15,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面60",
+        "categoryId": 115,
         "note": "螺丝钉指数基金组合_178542075251957760"
     },
     {
@@ -3522,6 +4458,10 @@
         "fee": 0.05,
         "occurMoney": 41.24,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "500低波动",
+        "categoryId": 122,
         "note": "螺丝钉指数基金组合_178542075285512192"
     },
     {
@@ -3537,6 +4477,10 @@
         "fee": 0.04,
         "occurMoney": 39.74,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "中证银行",
+        "categoryId": 146,
         "note": "螺丝钉指数基金组合_178542075319066624"
     },
     {
@@ -3552,6 +4496,10 @@
         "fee": 0.05,
         "occurMoney": 43.22,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_181042881133690880"
     },
     {
@@ -3567,6 +4515,10 @@
         "fee": 0.05,
         "occurMoney": 45.81,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_181042881163051008"
     },
     {
@@ -3582,6 +4534,10 @@
         "fee": 0.05,
         "occurMoney": 34.15,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面60",
+        "categoryId": 115,
         "note": "螺丝钉指数基金组合_181042881196605440"
     },
     {
@@ -3597,6 +4553,10 @@
         "fee": 0.05,
         "occurMoney": 41.24,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "500低波动",
+        "categoryId": 122,
         "note": "螺丝钉指数基金组合_181042881230159872"
     },
     {
@@ -3612,6 +4572,10 @@
         "fee": 0.04,
         "occurMoney": 39.74,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "中证银行",
+        "categoryId": 146,
         "note": "螺丝钉指数基金组合_181042881272102912"
     },
     {
@@ -3627,6 +4591,10 @@
         "fee": 3.61,
         "occurMoney": 474.22,
         "account": "李淑云",
+        "category1": "债券",
+        "category2": "国内债券",
+        "category3": "纯债",
+        "categoryId": 511,
         "note": "钉钉宝90天组合_182947184211542016"
     },
     {
@@ -3642,6 +4610,10 @@
         "fee": 0.36,
         "occurMoney": 360.44,
         "account": "李淑云",
+        "category1": "债券",
+        "category2": "国内债券",
+        "category3": "纯债",
+        "categoryId": 511,
         "note": "钉钉宝90天组合_182947184249290752"
     },
     {
@@ -3657,6 +4629,10 @@
         "fee": 0,
         "occurMoney": 360.42,
         "account": "李淑云",
+        "category1": "债券",
+        "category2": "国内债券",
+        "category3": "纯债",
+        "categoryId": 511,
         "note": "钉钉宝90天组合_182947184278650880"
     },
     {
@@ -3672,6 +4648,10 @@
         "fee": 0.05,
         "occurMoney": 40.56,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_183594200637784064"
     },
     {
@@ -3687,6 +4667,10 @@
         "fee": 0.05,
         "occurMoney": 41.94,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_183594200671338496"
     },
     {
@@ -3702,6 +4686,10 @@
         "fee": 0.04,
         "occurMoney": 36.8,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "500低波动",
+        "categoryId": 122,
         "note": "螺丝钉指数基金组合_183594200709087232"
     },
     {
@@ -3717,6 +4705,10 @@
         "fee": 0.04,
         "occurMoney": 37.76,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "中证银行",
+        "categoryId": 146,
         "note": "螺丝钉指数基金组合_183594200746835968"
     },
     {
@@ -3732,6 +4724,10 @@
         "fee": 0.05,
         "occurMoney": 39.96,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_186128889793630208"
     },
     {
@@ -3747,6 +4743,10 @@
         "fee": 0.05,
         "occurMoney": 40.96,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_186128889831378944"
     },
     {
@@ -3762,6 +4762,10 @@
         "fee": 0.04,
         "occurMoney": 34.96,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "500低波动",
+        "categoryId": 122,
         "note": "螺丝钉指数基金组合_186128889873321984"
     },
     {
@@ -3777,6 +4781,10 @@
         "fee": 0.04,
         "occurMoney": 38.08,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "中证银行",
+        "categoryId": 146,
         "note": "螺丝钉指数基金组合_186128889915265024"
     },
     {
@@ -3792,6 +4800,10 @@
         "fee": 0,
         "occurMoney": 1200.3,
         "account": "李淑云",
+        "category1": "债券",
+        "category2": "国内债券",
+        "category3": "纯债",
+        "categoryId": 511,
         "note": "钉钉宝90天组合_187552018021924864"
     },
     {
@@ -3807,6 +4819,10 @@
         "fee": 0,
         "occurMoney": 900,
         "account": "李淑云",
+        "category1": "债券",
+        "category2": "国内债券",
+        "category3": "纯债",
+        "categoryId": 511,
         "note": "钉钉宝90天组合_187552018068062208"
     },
     {
@@ -3822,6 +4838,10 @@
         "fee": 0,
         "occurMoney": 899.7,
         "account": "李淑云",
+        "category1": "债券",
+        "category2": "国内债券",
+        "category3": "纯债",
+        "categoryId": 511,
         "note": "钉钉宝90天组合_187552018143559680"
     },
     {
@@ -3837,6 +4857,10 @@
         "fee": 0.05,
         "occurMoney": 40.73,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_188668019996274688"
     },
     {
@@ -3852,6 +4876,10 @@
         "fee": 0.05,
         "occurMoney": 41.63,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_188668020034023424"
     },
     {
@@ -3867,6 +4895,10 @@
         "fee": 0.04,
         "occurMoney": 34.64,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "500低波动",
+        "categoryId": 122,
         "note": "螺丝钉指数基金组合_188668020084355072"
     },
     {
@@ -3882,6 +4914,10 @@
         "fee": 0.04,
         "occurMoney": 39.1,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "中证银行",
+        "categoryId": 146,
         "note": "螺丝钉指数基金组合_188668020122103808"
     },
     {
@@ -3897,6 +4933,10 @@
         "fee": 0.52,
         "occurMoney": 207.87,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "标普红利",
+        "categoryId": 132,
         "note": "螺丝钉指数基金组合_193772454896377856"
     },
     {
@@ -3912,6 +4952,10 @@
         "fee": 0.06,
         "occurMoney": 47.17,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_193735778539057152"
     },
     {
@@ -3927,6 +4971,10 @@
         "fee": 0.06,
         "occurMoney": 46.41,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_193735778614554624"
     },
     {
@@ -3942,6 +4990,10 @@
         "fee": 0.05,
         "occurMoney": 41.05,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "500低波动",
+        "categoryId": 122,
         "note": "螺丝钉指数基金组合_193735778669080576"
     },
     {
@@ -3957,6 +5009,10 @@
         "fee": 0.04,
         "occurMoney": 43.89,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "中证银行",
+        "categoryId": 146,
         "note": "螺丝钉指数基金组合_193735778731995136"
     },
     {
@@ -3972,6 +5028,10 @@
         "fee": 0.06,
         "occurMoney": 37.37,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "基本面60",
+        "categoryId": 115,
         "note": "螺丝钉指数基金组合_193735778773938176"
     },
     {
@@ -3987,6 +5047,10 @@
         "fee": 0.04,
         "occurMoney": 36.86,
         "account": "李淑云",
+        "category1": "海外新兴",
+        "category2": "海外互联",
+        "category3": "海外互联网",
+        "categoryId": 221,
         "note": "螺丝钉指数基金组合_193735778815881216"
     },
     {
@@ -4002,6 +5066,10 @@
         "fee": 0.25,
         "occurMoney": 208.64,
         "account": "李淑云",
+        "category1": "海外新兴",
+        "category2": "海外互联",
+        "category3": "海外互联网",
+        "categoryId": 221,
         "note": "螺丝钉指数基金组合_194823067348414464"
     },
     {
@@ -4017,6 +5085,10 @@
         "fee": 0.05,
         "occurMoney": 42.73,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_196320308613238784"
     },
     {
@@ -4032,6 +5104,10 @@
         "fee": 0.05,
         "occurMoney": 40.91,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_196320308646793216"
     },
     {
@@ -4047,6 +5123,10 @@
         "fee": 0.04,
         "occurMoney": 34.55,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "500低波动",
+        "categoryId": 122,
         "note": "螺丝钉指数基金组合_196320308680347648"
     },
     {
@@ -4062,6 +5142,10 @@
         "fee": 0.04,
         "occurMoney": 41.67,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "中证银行",
+        "categoryId": 146,
         "note": "螺丝钉指数基金组合_196320308713902080"
     },
     {
@@ -4077,6 +5161,10 @@
         "fee": 0.04,
         "occurMoney": 31.74,
         "account": "李淑云",
+        "category1": "海外新兴",
+        "category2": "海外互联",
+        "category3": "海外互联网",
+        "categoryId": 221,
         "note": "螺丝钉指数基金组合_196320308755845120"
     },
     {
@@ -4092,6 +5180,10 @@
         "fee": 0.09,
         "occurMoney": 187.61,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "全指医药",
+        "categoryId": 142,
         "note": "螺丝钉指数基金组合_196320308877479936"
     },
     {
@@ -4107,6 +5199,10 @@
         "fee": 0.05,
         "occurMoney": 42.11,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_197369766558216192"
     },
     {
@@ -4122,6 +5218,10 @@
         "fee": 0.05,
         "occurMoney": 40.31,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_197369766600159232"
     },
     {
@@ -4137,6 +5237,10 @@
         "fee": 0.04,
         "occurMoney": 34.31,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "500低波动",
+        "categoryId": 122,
         "note": "螺丝钉指数基金组合_197369766650490880"
     },
     {
@@ -4152,6 +5256,10 @@
         "fee": 0.04,
         "occurMoney": 40.6,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "中证银行",
+        "categoryId": 146,
         "note": "螺丝钉指数基金组合_197369766696628224"
     },
     {
@@ -4167,6 +5275,10 @@
         "fee": 0.04,
         "occurMoney": 30.59,
         "account": "李淑云",
+        "category1": "海外新兴",
+        "category2": "海外互联",
+        "category3": "海外互联网",
+        "categoryId": 221,
         "note": "螺丝钉指数基金组合_197369766742765568"
     },
     {
@@ -4182,6 +5294,10 @@
         "fee": 0.05,
         "occurMoney": 39.9,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_198817603305259008"
     },
     {
@@ -4197,6 +5313,10 @@
         "fee": 0.05,
         "occurMoney": 38.18,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_198817603347202048"
     },
     {
@@ -4212,6 +5332,10 @@
         "fee": 0.04,
         "occurMoney": 33.4,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "500低波动",
+        "categoryId": 122,
         "note": "螺丝钉指数基金组合_198817603389145088"
     },
     {
@@ -4227,6 +5351,10 @@
         "fee": 0.04,
         "occurMoney": 38.16,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "中证银行",
+        "categoryId": 146,
         "note": "螺丝钉指数基金组合_198817603426893824"
     },
     {
@@ -4242,6 +5370,10 @@
         "fee": 0.05,
         "occurMoney": 40.69,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_201392222604275712"
     },
     {
@@ -4257,6 +5389,10 @@
         "fee": 0.05,
         "occurMoney": 37.67,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_201392222654607360"
     },
     {
@@ -4272,6 +5408,10 @@
         "fee": 0.04,
         "occurMoney": 39.17,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "中证银行",
+        "categoryId": 146,
         "note": "螺丝钉指数基金组合_201392222709133312"
     },
     {
@@ -4287,6 +5427,10 @@
         "fee": 0.04,
         "occurMoney": 33.15,
         "account": "李淑云",
+        "category1": "海外新兴",
+        "category2": "海外互联",
+        "category3": "海外互联网",
+        "categoryId": 221,
         "note": "螺丝钉指数基金组合_201392222772047872"
     },
     {
@@ -4302,6 +5446,10 @@
         "fee": 0.05,
         "occurMoney": 39.21,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_203883956898512896"
     },
     {
@@ -4317,6 +5465,10 @@
         "fee": 0.04,
         "occurMoney": 36.96,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_203883956932067328"
     },
     {
@@ -4332,6 +5484,10 @@
         "fee": 0.04,
         "occurMoney": 35.16,
         "account": "李淑云",
+        "category1": "海外新兴",
+        "category2": "海外互联",
+        "category3": "海外互联网",
+        "categoryId": 221,
         "note": "螺丝钉指数基金组合_203883956969816064"
     },
     {
@@ -4347,6 +5503,10 @@
         "fee": 0.04,
         "occurMoney": 37.58,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "中证银行",
+        "categoryId": 146,
         "note": "螺丝钉指数基金组合_203883957003370496"
     },
     {
@@ -4362,6 +5522,10 @@
         "fee": 0.04,
         "occurMoney": 33.36,
         "account": "李淑云",
+        "category1": "海外成熟",
+        "category2": "美国",
+        "category3": "信息科技",
+        "categoryId": 315,
         "note": "螺丝钉指数基金组合_203883957032730624"
     },
     {
@@ -4377,6 +5541,10 @@
         "fee": 0,
         "occurMoney": 1452.34,
         "account": "李淑云",
+        "category1": "债券",
+        "category2": "国内债券",
+        "category3": "纯债",
+        "categoryId": 511,
         "note": "钉钉宝90天组合_203677690872889344"
     },
     {
@@ -4392,6 +5560,10 @@
         "fee": 0,
         "occurMoney": 1449.73,
         "account": "李淑云",
+        "category1": "债券",
+        "category2": "国内债券",
+        "category3": "纯债",
+        "categoryId": 511,
         "note": "钉钉宝90天组合_203677690923220992"
     },
     {
@@ -4407,6 +5579,10 @@
         "fee": 0,
         "occurMoney": 1931.37,
         "account": "李淑云",
+        "category1": "债券",
+        "category2": "国内债券",
+        "category3": "纯债",
+        "categoryId": 511,
         "note": "钉钉宝90天组合_203677690969358336"
     },
     {
@@ -4422,6 +5598,10 @@
         "fee": 0,
         "occurMoney": 1933.38,
         "account": "李淑云",
+        "category1": "混合型",
+        "category2": "股债混合",
+        "category3": "偏债",
+        "categoryId": 412,
         "note": "钉钉宝365天组合_204585608870866944"
     },
     {
@@ -4437,6 +5617,10 @@
         "fee": 0,
         "occurMoney": 966.69,
         "account": "李淑云",
+        "category1": "混合型",
+        "category2": "股债混合",
+        "category3": "偏债",
+        "categoryId": 412,
         "note": "钉钉宝365天组合_204585608925392896"
     },
     {
@@ -4452,6 +5636,10 @@
         "fee": 0,
         "occurMoney": 966.69,
         "account": "李淑云",
+        "category1": "混合型",
+        "category2": "股债混合",
+        "category3": "偏债",
+        "categoryId": 412,
         "note": "钉钉宝365天组合_204585608975724544"
     },
     {
@@ -4467,6 +5655,10 @@
         "fee": 0,
         "occurMoney": 483.34,
         "account": "李淑云",
+        "category1": "混合型",
+        "category2": "股债混合",
+        "category3": "偏债",
+        "categoryId": 412,
         "note": "钉钉宝365天组合_204585609030250496"
     },
     {
@@ -4482,6 +5674,10 @@
         "fee": 0,
         "occurMoney": 483.34,
         "account": "李淑云",
+        "category1": "混合型",
+        "category2": "股债混合",
+        "category3": "偏债",
+        "categoryId": 412,
         "note": "钉钉宝365天组合_204585609080582144"
     },
     {
@@ -4497,6 +5693,10 @@
         "fee": 0.05,
         "occurMoney": 40.15,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_206422617851666432"
     },
     {
@@ -4512,6 +5712,10 @@
         "fee": 0.05,
         "occurMoney": 38.16,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_206422617893609472"
     },
     {
@@ -4527,6 +5731,10 @@
         "fee": 0.05,
         "occurMoney": 37.83,
         "account": "李淑云",
+        "category1": "海外新兴",
+        "category2": "海外互联",
+        "category3": "海外互联网",
+        "categoryId": 221,
         "note": "螺丝钉指数基金组合_206422617943941120"
     },
     {
@@ -4542,6 +5750,10 @@
         "fee": 0.04,
         "occurMoney": 38.33,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "中证银行",
+        "categoryId": 146,
         "note": "螺丝钉指数基金组合_206422617994272768"
     },
     {
@@ -4557,6 +5769,10 @@
         "fee": 0.05,
         "occurMoney": 39.23,
         "account": "李淑云",
+        "category1": "海外成熟",
+        "category2": "美国",
+        "category3": "信息科技",
+        "categoryId": 315,
         "note": "螺丝钉指数基金组合_206422618048798720"
     },
     {
@@ -4572,6 +5788,10 @@
         "fee": 0.03,
         "occurMoney": 33.51,
         "account": "李淑云",
+        "category1": "海外新兴",
+        "category2": "香港",
+        "category3": "香港中小",
+        "categoryId": 213,
         "note": "螺丝钉指数基金组合_207222584728064000"
     },
     {
@@ -4587,6 +5807,10 @@
         "fee": 0.05,
         "occurMoney": 40.79,
         "account": "李淑云",
+        "category1": "海外新兴",
+        "category2": "海外互联",
+        "category3": "海外互联网",
+        "categoryId": 221,
         "note": "螺丝钉指数基金组合_207222584770007040"
     },
     {
@@ -4602,6 +5826,10 @@
         "fee": 0.05,
         "occurMoney": 44.41,
         "account": "李淑云",
+        "category1": "海外成熟",
+        "category2": "美国",
+        "category3": "纳斯达克",
+        "categoryId": 312,
         "note": "螺丝钉指数基金组合_207222584807755776"
     },
     {
@@ -4617,6 +5845,10 @@
         "fee": 0.05,
         "occurMoney": 42.49,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_208674837859110912"
     },
     {
@@ -4632,6 +5864,10 @@
         "fee": 0.05,
         "occurMoney": 39.67,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "螺丝钉指数基金组合_208674838131740672"
     },
     {
@@ -4647,6 +5883,10 @@
         "fee": 0.04,
         "occurMoney": 40.17,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "中证银行",
+        "categoryId": 146,
         "note": "螺丝钉指数基金组合_208674838190460928"
     },
     {
@@ -4662,6 +5902,10 @@
         "fee": 0.04,
         "occurMoney": 37.64,
         "account": "李淑云",
+        "category1": "海外新兴",
+        "category2": "香港",
+        "category3": "香港中小",
+        "categoryId": 213,
         "note": "螺丝钉指数基金组合_208674838249181184"
     },
     {
@@ -4677,6 +5921,10 @@
         "fee": 0.05,
         "occurMoney": 41.59,
         "account": "李淑云",
+        "category1": "海外新兴",
+        "category2": "海外互联",
+        "category3": "海外互联网",
+        "categoryId": 221,
         "note": "螺丝钉指数基金组合_208674838303707136"
     },
     {
@@ -4692,6 +5940,10 @@
         "fee": 0.05,
         "occurMoney": 42.22,
         "account": "李淑云",
+        "category1": "海外成熟",
+        "category2": "美国",
+        "category3": "纳斯达克",
+        "categoryId": 312,
         "note": "螺丝钉指数基金组合_208674838345650176"
     },
     {
@@ -4707,6 +5959,10 @@
         "fee": 0.05,
         "occurMoney": 44.11,
         "account": "李淑云",
+        "category1": "海外新兴",
+        "category2": "海外互联",
+        "category3": "海外互联网",
+        "categoryId": 221,
         "note": "螺丝钉指数基金组合_209399011123630080"
     },
     {
@@ -4722,6 +5978,10 @@
         "fee": 0.06,
         "occurMoney": 50.02,
         "account": "李淑云",
+        "category1": "海外成熟",
+        "category2": "美国",
+        "category3": "纳斯达克",
+        "categoryId": 312,
         "note": "螺丝钉指数基金组合_209399011165573120"
     },
     {
@@ -4737,6 +5997,10 @@
         "fee": 0.03,
         "occurMoney": 33.35,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "全指消费",
+        "categoryId": 148,
         "note": "螺丝钉指数基金组合_209763077437501440"
     },
     {
@@ -4752,6 +6016,10 @@
         "fee": 0.06,
         "occurMoney": 48.88,
         "account": "李淑云",
+        "category1": "海外新兴",
+        "category2": "海外互联",
+        "category3": "海外互联网",
+        "categoryId": 221,
         "note": "螺丝钉指数基金组合_209763077504610304"
     },
     {
@@ -4767,6 +6035,10 @@
         "fee": 0.06,
         "occurMoney": 50.02,
         "account": "李淑云",
+        "category1": "海外成熟",
+        "category2": "美国",
+        "category3": "纳斯达克",
+        "categoryId": 312,
         "note": "螺丝钉指数基金组合_209763077567524864"
     },
     {
@@ -4782,6 +6054,10 @@
         "fee": 0.05,
         "occurMoney": 50.01,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "全指消费",
+        "categoryId": 148,
         "note": "螺丝钉指数基金组合_211214896852344833"
     },
     {
@@ -4797,6 +6073,10 @@
         "fee": 0.09,
         "occurMoney": 71.58,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "300价值",
+        "categoryId": 114,
         "note": "螺丝钉指数基金组合_211214896932036608"
     },
     {
@@ -4812,6 +6092,10 @@
         "fee": 0.06,
         "occurMoney": 64.94,
         "account": "李淑云",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "中证银行",
+        "categoryId": 146,
         "note": "螺丝钉指数基金组合_211214897057865728"
     },
     {
@@ -4827,6 +6111,10 @@
         "fee": 0.07,
         "occurMoney": 67.27,
         "account": "李淑云",
+        "category1": "海外新兴",
+        "category2": "香港",
+        "category3": "香港中小",
+        "categoryId": 213,
         "note": "螺丝钉指数基金组合_211214897150140416"
     },
     {
@@ -4842,6 +6130,10 @@
         "fee": 0.07,
         "occurMoney": 55.35,
         "account": "李淑云",
+        "category1": "海外新兴",
+        "category2": "海外互联",
+        "category3": "海外互联网",
+        "categoryId": 221,
         "note": "螺丝钉指数基金组合_211214897267580928"
     },
     {
@@ -4857,6 +6149,10 @@
         "fee": 0.02,
         "occurMoney": 15.01,
         "account": "李淑云",
+        "category1": "海外新兴",
+        "category2": "海外互联",
+        "category3": "海外互联网",
+        "categoryId": 221,
         "note": "螺丝钉指数基金组合_211214897397604352"
     },
     {
@@ -4872,6 +6168,10 @@
         "fee": 0.08,
         "occurMoney": 69.82,
         "account": "李淑云",
+        "category1": "海外成熟",
+        "category2": "美国",
+        "category3": "纳斯达克",
+        "categoryId": 312,
         "note": "螺丝钉指数基金组合_211214897502461952"
     },
     {
@@ -4887,6 +6187,10 @@
         "fee": 0.02,
         "occurMoney": 15.02,
         "account": "李淑云",
+        "category1": "海外成熟",
+        "category2": "美国",
+        "category3": "信息科技",
+        "categoryId": 315,
         "note": "螺丝钉指数基金组合_211214897632485376"
     }
 ]

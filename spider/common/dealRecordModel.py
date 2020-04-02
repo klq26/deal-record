@@ -29,6 +29,11 @@ class dealRecordModel:
         self.dealType = '买入'
         # 交易账户
         self.account = '华泰证券'
+        # 自定义类别，便于筛选汇总
+        self.category1 = '类别1'
+        self.category2 = '类别2'
+        self.category3 = '类别3'
+        self.categoryId = '类别Id'
         # 详细说明
         self.note = '详细说明'
         

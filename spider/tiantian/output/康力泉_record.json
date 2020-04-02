@@ -12,6 +12,10 @@
         "fee": 0.5,
         "occurMoney": 500.0,
         "account": "康力泉",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "全指消费",
+        "categoryId": 148,
         "note": "https://query.1234567.com.cn/Query/Detail?id=fdb0dbf1fbd246dc88cfcab1547a1fcb&businType=22&traceNo="
     },
     {
@@ -27,6 +31,10 @@
         "fee": 0.65,
         "occurMoney": 500.0,
         "account": "康力泉",
+        "category1": "海外成熟",
+        "category2": "美国",
+        "category3": "房地产",
+        "categoryId": 314,
         "note": "https://query.1234567.com.cn/Query/Detail?id=c568af353b7e40faa1cf583e1bc00c44&businType=22&traceNo="
     },
     {
@@ -42,6 +50,10 @@
         "fee": 2.47,
         "occurMoney": 488.38,
         "account": "康力泉",
+        "category1": "海外成熟",
+        "category2": "美国",
+        "category3": "房地产",
+        "categoryId": 314,
         "note": "https://query.1234567.com.cn/Query/Detail?id=214341fbc30e4978bb325a639830accb&businType=24&traceNo="
     },
     {
@@ -57,6 +69,10 @@
         "fee": 2.39,
         "occurMoney": 473.2,
         "account": "康力泉",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "全指消费",
+        "categoryId": 148,
         "note": "https://query.1234567.com.cn/Query/Detail?id=2362d357ea9743e4b12531160ce0593f&businType=24&traceNo="
     },
     {
@@ -72,6 +88,10 @@
         "fee": 4.08,
         "occurMoney": 3400.0,
         "account": "康力泉",
+        "category1": "海外成熟",
+        "category2": "德国",
+        "category3": "德国30",
+        "categoryId": 321,
         "note": "https://query.1234567.com.cn/Query/Detail?id=e6487d0396f046aeac18c546bfc76d34&businType=22&traceNo="
     },
     {
@@ -87,6 +107,10 @@
         "fee": 4.43,
         "occurMoney": 3700.0,
         "account": "康力泉",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "全指医药",
+        "categoryId": 142,
         "note": "https://query.1234567.com.cn/Query/Detail?id=8fcd1c2a289f4250b916a30c3f1eb083&businType=22&traceNo="
     },
     {
@@ -102,6 +126,10 @@
         "fee": 4.43,
         "occurMoney": 3700.0,
         "account": "康力泉",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "全指医药",
+        "categoryId": 142,
         "note": "https://query.1234567.com.cn/Query/Detail?id=f37be7b0121c4df5b94666d9b4d4a4e9&businType=22&traceNo="
     },
     {
@@ -117,6 +145,10 @@
         "fee": 5.93,
         "occurMoney": 3960.0,
         "account": "康力泉",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "https://query.1234567.com.cn/Query/Detail?id=248f32037f32480cb4efc873015272cb&businType=22&traceNo="
     },
     {
@@ -132,6 +164,10 @@
         "fee": 4.75,
         "occurMoney": 3960.0,
         "account": "康力泉",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "养老产业",
+        "categoryId": 141,
         "note": "https://query.1234567.com.cn/Query/Detail?id=05e5bfe994b5478cae6173bee3f60406&businType=22&traceNo="
     },
     {
@@ -147,6 +183,10 @@
         "fee": 1.98,
         "occurMoney": 3960.0,
         "account": "康力泉",
+        "category1": "债券",
+        "category2": "国内债券",
+        "category3": "纯债",
+        "categoryId": 511,
         "note": "https://query.1234567.com.cn/Query/Detail?id=1bcdd612e8804e0887645dea7acdd0c4&businType=22&traceNo="
     },
     {
@@ -162,6 +202,10 @@
         "fee": 4.75,
         "occurMoney": 3960.0,
         "account": "康力泉",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "全指医药",
+        "categoryId": 142,
         "note": "https://query.1234567.com.cn/Query/Detail?id=4f4bb4f2d55147e09a81496091a07a3c&businType=22&traceNo="
     },
     {
@@ -177,6 +221,10 @@
         "fee": 4.75,
         "occurMoney": 3960.0,
         "account": "康力泉",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "养老产业",
+        "categoryId": 141,
         "note": "https://query.1234567.com.cn/Query/Detail?id=3570cd696b1740bc83f98fe13cccfca7&businType=22&traceNo="
     },
     {
@@ -192,6 +240,10 @@
         "fee": 1.98,
         "occurMoney": 3960.0,
         "account": "康力泉",
+        "category1": "债券",
+        "category2": "国内债券",
+        "category3": "纯债",
+        "categoryId": 511,
         "note": "https://query.1234567.com.cn/Query/Detail?id=a416689a55ff4ce0b71a9fb526341500&businType=22&traceNo="
     },
     {
@@ -207,6 +259,10 @@
         "fee": 4.75,
         "occurMoney": 3960.0,
         "account": "康力泉",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "养老产业",
+        "categoryId": 141,
         "note": "https://query.1234567.com.cn/Query/Detail?id=7cc4ba6646ad4904aa3f6ab3ad506bc0&businType=22&traceNo="
     },
     {
@@ -222,6 +278,10 @@
         "fee": 9.49,
         "occurMoney": 7920.0,
         "account": "康力泉",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "养老产业",
+        "categoryId": 141,
         "note": "https://query.1234567.com.cn/Query/Detail?id=10b4e25835b64a8ab7be8c4ccfa260a7&businType=22&traceNo="
     },
     {
@@ -237,6 +297,10 @@
         "fee": 1.98,
         "occurMoney": 3960.0,
         "account": "康力泉",
+        "category1": "债券",
+        "category2": "国内债券",
+        "category3": "纯债",
+        "categoryId": 511,
         "note": "https://query.1234567.com.cn/Query/Detail?id=6f6a717a768249d69f12df5fdce1e241&businType=22&traceNo="
     },
     {
@@ -252,6 +316,10 @@
         "fee": 5.93,
         "occurMoney": 3960.0,
         "account": "康力泉",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "https://query.1234567.com.cn/Query/Detail?id=3d024490f68d4b449180e10694e52fb9&businType=22&traceNo="
     },
     {
@@ -267,6 +335,10 @@
         "fee": 1.98,
         "occurMoney": 3960.0,
         "account": "康力泉",
+        "category1": "债券",
+        "category2": "国内债券",
+        "category3": "纯债",
+        "categoryId": 511,
         "note": "https://query.1234567.com.cn/Query/Detail?id=972ccf3fa9db4d898ebdf99d1bd5cd5c&businType=22&traceNo="
     },
     {
@@ -282,6 +354,10 @@
         "fee": 0.0,
         "occurMoney": 0.0,
         "account": "康力泉",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "https://query.1234567.com.cn/Query/Detail?id=20180119103030023947177&businType=143&traceNo="
     },
     {
@@ -297,6 +373,10 @@
         "fee": 29.96,
         "occurMoney": 20000.0,
         "account": "康力泉",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "https://query.1234567.com.cn/Query/Detail?id=02808cd6503442f591e351986766eca4&businType=22&traceNo="
     },
     {
@@ -312,6 +392,10 @@
         "fee": 2.04,
         "occurMoney": 4070.21,
         "account": "康力泉",
+        "category1": "债券",
+        "category2": "国内债券",
+        "category3": "纯债",
+        "categoryId": 511,
         "note": "https://query.1234567.com.cn/Query/Detail?id=c8bf3733796d4882a14f0bdbccd2e3c8&businType=24&traceNo="
     },
     {
@@ -327,6 +411,10 @@
         "fee": 10.23,
         "occurMoney": 12800.0,
         "account": "康力泉",
+        "category1": "债券",
+        "category2": "海外债券",
+        "category3": "美元债",
+        "categoryId": 521,
         "note": "https://query.1234567.com.cn/Query/Detail?id=3f287a4484aa4ff8b344dae30b4be807&businType=22&traceNo="
     },
     {
@@ -342,6 +430,10 @@
         "fee": 10.23,
         "occurMoney": 12800.0,
         "account": "康力泉",
+        "category1": "债券",
+        "category2": "海外债券",
+        "category3": "美元债",
+        "categoryId": 521,
         "note": "https://query.1234567.com.cn/Query/Detail?id=29c8df025f884b7e90896b40068c7526&businType=22&traceNo="
     },
     {
@@ -357,6 +449,10 @@
         "fee": 6.39,
         "occurMoney": 6400.0,
         "account": "康力泉",
+        "category1": "债券",
+        "category2": "国内债券",
+        "category3": "可转债",
+        "categoryId": 512,
         "note": "https://query.1234567.com.cn/Query/Detail?id=a36953bf2a944d7195ea35aa5daa7dfb&businType=22&traceNo="
     },
     {
@@ -372,6 +468,10 @@
         "fee": 7.67,
         "occurMoney": 6400.0,
         "account": "康力泉",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "金融地产",
+        "categoryId": 147,
         "note": "https://query.1234567.com.cn/Query/Detail?id=6f852432f7ba4c1d80c86aff234efddb&businType=22&traceNo="
     },
     {
@@ -387,6 +487,10 @@
         "fee": 6.39,
         "occurMoney": 6400.0,
         "account": "康力泉",
+        "category1": "债券",
+        "category2": "国内债券",
+        "category3": "可转债",
+        "categoryId": 512,
         "note": "https://query.1234567.com.cn/Query/Detail?id=e4f5e9d043d94b07930117669a84cb60&businType=22&traceNo="
     },
     {
@@ -402,6 +506,10 @@
         "fee": 7.67,
         "occurMoney": 6400.0,
         "account": "康力泉",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "金融地产",
+        "categoryId": 147,
         "note": "https://query.1234567.com.cn/Query/Detail?id=09ee5ca671824166a17c2dcc57bfa223&businType=22&traceNo="
     },
     {
@@ -417,6 +525,10 @@
         "fee": 9.59,
         "occurMoney": 6400.0,
         "account": "康力泉",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "https://query.1234567.com.cn/Query/Detail?id=295aea73601e45319daeb2d94776d373&businType=22&traceNo="
     },
     {
@@ -432,6 +544,10 @@
         "fee": 7.67,
         "occurMoney": 6400.0,
         "account": "康力泉",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "养老产业",
+        "categoryId": 141,
         "note": "https://query.1234567.com.cn/Query/Detail?id=d1f8b66887274d7789dd8070321e0e38&businType=22&traceNo="
     },
     {
@@ -447,6 +563,10 @@
         "fee": 9.59,
         "occurMoney": 6400.0,
         "account": "康力泉",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "https://query.1234567.com.cn/Query/Detail?id=66ec10c312174be18af018b9957b8b2b&businType=22&traceNo="
     },
     {
@@ -462,6 +582,10 @@
         "fee": 2.09,
         "occurMoney": 4174.83,
         "account": "康力泉",
+        "category1": "债券",
+        "category2": "国内债券",
+        "category3": "纯债",
+        "categoryId": 511,
         "note": "https://query.1234567.com.cn/Query/Detail?id=b2804435ec2a476db2e91d7b921cd5a5&businType=24&traceNo="
     },
     {
@@ -477,6 +601,10 @@
         "fee": 7.67,
         "occurMoney": 6400.0,
         "account": "康力泉",
+        "category1": "海外成熟",
+        "category2": "德国",
+        "category3": "德国30",
+        "categoryId": 321,
         "note": "https://query.1234567.com.cn/Query/Detail?id=35ef1a1b32e24e88a0e43fb8cad27b62&businType=22&traceNo="
     },
     {
@@ -492,6 +620,10 @@
         "fee": 2.12,
         "occurMoney": 4209.25,
         "account": "康力泉",
+        "category1": "债券",
+        "category2": "国内债券",
+        "category3": "纯债",
+        "categoryId": 511,
         "note": "https://query.1234567.com.cn/Query/Detail?id=86b0dd2d7fff49778e5c50f9ad7d52e8&businType=812&traceNo=e54aca2df00e4a7283ba99af85907ab3"
     },
     {
@@ -507,6 +639,10 @@
         "fee": 0.0,
         "occurMoney": 6820.11,
         "account": "康力泉",
+        "category1": "债券",
+        "category2": "海外债券",
+        "category3": "美元债",
+        "categoryId": 521,
         "note": "https://query.1234567.com.cn/Query/Detail?id=474a8f8782564026b7c9f38771677e4a&businType=24&traceNo="
     },
     {
@@ -522,6 +658,10 @@
         "fee": 9.59,
         "occurMoney": 6400.0,
         "account": "康力泉",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "https://query.1234567.com.cn/Query/Detail?id=9da11f42572b42b380b8ebf3583029c3&businType=22&traceNo="
     },
     {
@@ -537,6 +677,10 @@
         "fee": 7.67,
         "occurMoney": 6400.0,
         "account": "康力泉",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "全指医药",
+        "categoryId": 142,
         "note": "https://query.1234567.com.cn/Query/Detail?id=aacef9dc65cd442d98c16c30d1a73d63&businType=22&traceNo=aacef9dc65cd442d98c16c30d1a73d63"
     },
     {
@@ -552,6 +696,10 @@
         "fee": 7.67,
         "occurMoney": 6400.0,
         "account": "康力泉",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "养老产业",
+        "categoryId": 141,
         "note": "https://query.1234567.com.cn/Query/Detail?id=ec0354ac04c74a24bddd23bdea052e49&businType=22&traceNo=ec0354ac04c74a24bddd23bdea052e49"
     },
     {
@@ -567,6 +715,10 @@
         "fee": 7.67,
         "occurMoney": 6400.0,
         "account": "康力泉",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "养老产业",
+        "categoryId": 141,
         "note": "https://query.1234567.com.cn/Query/Detail?id=203fdca40d5740859b80b1c96811772e&businType=22&traceNo=203fdca40d5740859b80b1c96811772e"
     },
     {
@@ -582,6 +734,10 @@
         "fee": 6.39,
         "occurMoney": 6400.0,
         "account": "康力泉",
+        "category1": "债券",
+        "category2": "国内债券",
+        "category3": "可转债",
+        "categoryId": 512,
         "note": "https://query.1234567.com.cn/Query/Detail?id=251752d3426e474fbd440fadbbbbfbfb&businType=22&traceNo=251752d3426e474fbd440fadbbbbfbfb"
     },
     {
@@ -597,6 +753,10 @@
         "fee": 7.67,
         "occurMoney": 6400.0,
         "account": "康力泉",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "沪深300",
+        "categoryId": 113,
         "note": "https://query.1234567.com.cn/Query/Detail?id=2067ff62d9e446dab57a0c2f0813790f&businType=22&traceNo=2067ff62d9e446dab57a0c2f0813790f"
     },
     {
@@ -612,6 +772,10 @@
         "fee": 7.67,
         "occurMoney": 6400.0,
         "account": "康力泉",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "金融地产",
+        "categoryId": 147,
         "note": "https://query.1234567.com.cn/Query/Detail?id=e72842fb00b64d258a4cf1e9281c8ee9&businType=22&traceNo=e72842fb00b64d258a4cf1e9281c8ee9"
     },
     {
@@ -627,6 +791,10 @@
         "fee": 7.67,
         "occurMoney": 6400.0,
         "account": "康力泉",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "养老产业",
+        "categoryId": 141,
         "note": "https://query.1234567.com.cn/Query/Detail?id=496d147c8ddf41cb9677982463ec2a69&businType=22&traceNo=496d147c8ddf41cb9677982463ec2a69"
     },
     {
@@ -642,6 +810,10 @@
         "fee": 7.67,
         "occurMoney": 6400.0,
         "account": "康力泉",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "全指医药",
+        "categoryId": 142,
         "note": "https://query.1234567.com.cn/Query/Detail?id=e53722804f2944f6945b92fef9f54c23&businType=22&traceNo=e53722804f2944f6945b92fef9f54c23"
     },
     {
@@ -657,6 +829,10 @@
         "fee": 7.67,
         "occurMoney": 6400.0,
         "account": "康力泉",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "全指医药",
+        "categoryId": 142,
         "note": "https://query.1234567.com.cn/Query/Detail?id=68b6d3fb229740928a48a9dbb5c5fefe&businType=22&traceNo=68b6d3fb229740928a48a9dbb5c5fefe"
     },
     {
@@ -672,6 +848,10 @@
         "fee": 7.67,
         "occurMoney": 6400.0,
         "account": "康力泉",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "中证环保",
+        "categoryId": 143,
         "note": "https://query.1234567.com.cn/Query/Detail?id=3bfc6655753244c49f6ba1a328d121ee&businType=22&traceNo=3bfc6655753244c49f6ba1a328d121ee"
     },
     {
@@ -687,6 +867,10 @@
         "fee": 0.0,
         "occurMoney": 6852.82,
         "account": "康力泉",
+        "category1": "债券",
+        "category2": "海外债券",
+        "category3": "美元债",
+        "categoryId": 521,
         "note": "https://query.1234567.com.cn/Query/Detail?id=4a6f97b5f16f43468e9c39d19e8bd703&businType=24&traceNo="
     },
     {
@@ -702,6 +886,10 @@
         "fee": 9.59,
         "occurMoney": 6400.0,
         "account": "康力泉",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "https://query.1234567.com.cn/Query/Detail?id=434053ca8ac84bed9a7e2a2354f974b2&businType=22&traceNo=434053ca8ac84bed9a7e2a2354f974b2"
     },
     {
@@ -717,6 +905,10 @@
         "fee": 7.67,
         "occurMoney": 6400.0,
         "account": "康力泉",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "沪深300",
+        "categoryId": 113,
         "note": "https://query.1234567.com.cn/Query/Detail?id=f3f77d8c5c6a48e9aa3d35e6619afe74&businType=22&traceNo=f3f77d8c5c6a48e9aa3d35e6619afe74"
     },
     {
@@ -732,6 +924,10 @@
         "fee": 7.67,
         "occurMoney": 6400.0,
         "account": "康力泉",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "养老产业",
+        "categoryId": 141,
         "note": "https://query.1234567.com.cn/Query/Detail?id=5c4fa68e1ffb44ff8b99aa47ad5496db&businType=22&traceNo=5c4fa68e1ffb44ff8b99aa47ad5496db"
     },
     {
@@ -747,6 +943,10 @@
         "fee": 9.59,
         "occurMoney": 6400.0,
         "account": "康力泉",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "全指消费",
+        "categoryId": 148,
         "note": "https://query.1234567.com.cn/Query/Detail?id=815a08232618444cb949b976dd7fc42e&businType=22&traceNo=815a08232618444cb949b976dd7fc42e"
     },
     {
@@ -762,6 +962,10 @@
         "fee": 6.39,
         "occurMoney": 6400.0,
         "account": "康力泉",
+        "category1": "债券",
+        "category2": "国内债券",
+        "category3": "可转债",
+        "categoryId": 512,
         "note": "https://query.1234567.com.cn/Query/Detail?id=64644d97fa514b54aeff5334e940aae0&businType=22&traceNo=64644d97fa514b54aeff5334e940aae0"
     },
     {
@@ -777,6 +981,10 @@
         "fee": 7.67,
         "occurMoney": 6400.0,
         "account": "康力泉",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "创业板",
+        "categoryId": 124,
         "note": "https://query.1234567.com.cn/Query/Detail?id=ae2c6d3f40b04af290ff6eabb0350e8f&businType=22&traceNo=ae2c6d3f40b04af290ff6eabb0350e8f"
     },
     {
@@ -792,6 +1000,10 @@
         "fee": 9.59,
         "occurMoney": 6400.0,
         "account": "康力泉",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "中证500",
+        "categoryId": 121,
         "note": "https://query.1234567.com.cn/Query/Detail?id=b0967abab4a0458e961287ce82ffa89e&businType=22&traceNo=b0967abab4a0458e961287ce82ffa89e"
     },
     {
@@ -807,6 +1019,10 @@
         "fee": 9.59,
         "occurMoney": 6400.0,
         "account": "康力泉",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "https://query.1234567.com.cn/Query/Detail?id=62938e001b4741b1b88283fcaedaac3e&businType=22&traceNo=62938e001b4741b1b88283fcaedaac3e"
     },
     {
@@ -822,6 +1038,10 @@
         "fee": 15.34,
         "occurMoney": 12800.0,
         "account": "康力泉",
+        "category1": "海外新兴",
+        "category2": "海外互联",
+        "category3": "海外互联网",
+        "categoryId": 221,
         "note": "https://query.1234567.com.cn/Query/Detail?id=28b38bc89af8425ab1452dc0419fb40a&businType=22&traceNo=28b38bc89af8425ab1452dc0419fb40a"
     },
     {
@@ -837,6 +1057,10 @@
         "fee": 0.0,
         "occurMoney": 0.0,
         "account": "康力泉",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "沪深300",
+        "categoryId": 113,
         "note": "https://query.1234567.com.cn/Query/Detail?id=20181116103030055245546&businType=143&traceNo="
     },
     {
@@ -852,6 +1076,10 @@
         "fee": 0.0,
         "occurMoney": 0.0,
         "account": "康力泉",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "中证500",
+        "categoryId": 121,
         "note": "https://query.1234567.com.cn/Query/Detail?id=201811169898181115303000423844&businType=143&traceNo="
     },
     {
@@ -867,6 +1095,10 @@
         "fee": 9.59,
         "occurMoney": 6400.0,
         "account": "康力泉",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "中证500",
+        "categoryId": 121,
         "note": "https://query.1234567.com.cn/Query/Detail?id=d2c75eed60d5493a8eae64256c6ceb26&businType=22&traceNo=d2c75eed60d5493a8eae64256c6ceb26"
     },
     {
@@ -882,6 +1114,10 @@
         "fee": 7.67,
         "occurMoney": 6400.0,
         "account": "康力泉",
+        "category1": "海外新兴",
+        "category2": "香港",
+        "category3": "恒生",
+        "categoryId": 211,
         "note": "https://query.1234567.com.cn/Query/Detail?id=7bd5d4880ee84373882b807f63f13fbf&businType=22&traceNo=7bd5d4880ee84373882b807f63f13fbf"
     },
     {
@@ -897,6 +1133,10 @@
         "fee": 9.59,
         "occurMoney": 6400.0,
         "account": "康力泉",
+        "category1": "商品",
+        "category2": "商品",
+        "category3": "原油",
+        "categoryId": 613,
         "note": "https://query.1234567.com.cn/Query/Detail?id=efcb7ae3e8c846688d4404c6b4c8b0e5&businType=22&traceNo=efcb7ae3e8c846688d4404c6b4c8b0e5"
     },
     {
@@ -912,6 +1152,10 @@
         "fee": 6.39,
         "occurMoney": 6400.0,
         "account": "康力泉",
+        "category1": "债券",
+        "category2": "国内债券",
+        "category3": "可转债",
+        "categoryId": 512,
         "note": "https://query.1234567.com.cn/Query/Detail?id=4db8da73a7e646219960da3c790f505b&businType=22&traceNo=4db8da73a7e646219960da3c790f505b"
     },
     {
@@ -927,6 +1171,10 @@
         "fee": 7.67,
         "occurMoney": 6400.0,
         "account": "康力泉",
+        "category1": "海外成熟",
+        "category2": "德国",
+        "category3": "德国30",
+        "categoryId": 321,
         "note": "https://query.1234567.com.cn/Query/Detail?id=0aa31961294d4d2a82ca02ece9792416&businType=22&traceNo=0aa31961294d4d2a82ca02ece9792416"
     },
     {
@@ -942,6 +1190,10 @@
         "fee": 2.16,
         "occurMoney": 4321.14,
         "account": "康力泉",
+        "category1": "债券",
+        "category2": "国内债券",
+        "category3": "纯债",
+        "categoryId": 511,
         "note": "https://query.1234567.com.cn/Query/Detail?id=095e8c73b5fb4188aec1ecc95e640632&businType=24&traceNo="
     },
     {
@@ -957,6 +1209,10 @@
         "fee": 9.59,
         "occurMoney": 6400.0,
         "account": "康力泉",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "https://query.1234567.com.cn/Query/Detail?id=3f08e402c6424e25bb3b98bf86b4c88a&businType=22&traceNo=3f08e402c6424e25bb3b98bf86b4c88a"
     },
     {
@@ -972,6 +1228,10 @@
         "fee": 7.67,
         "occurMoney": 6400.0,
         "account": "康力泉",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "养老产业",
+        "categoryId": 141,
         "note": "https://query.1234567.com.cn/Query/Detail?id=a5646228ccfa4e6eb139eb57caa76679&businType=22&traceNo=a5646228ccfa4e6eb139eb57caa76679"
     },
     {
@@ -987,6 +1247,10 @@
         "fee": 9.59,
         "occurMoney": 6400.0,
         "account": "康力泉",
+        "category1": "商品",
+        "category2": "商品",
+        "category3": "原油",
+        "categoryId": 613,
         "note": "https://query.1234567.com.cn/Query/Detail?id=61ba05e082314f2eb614c715ce57ae70&businType=22&traceNo=61ba05e082314f2eb614c715ce57ae70"
     },
     {
@@ -1002,6 +1266,10 @@
         "fee": 5.12,
         "occurMoney": 6400.0,
         "account": "康力泉",
+        "category1": "债券",
+        "category2": "国内债券",
+        "category3": "可转债",
+        "categoryId": 512,
         "note": "https://query.1234567.com.cn/Query/Detail?id=ca2b3ec33ad347e9a3b196dbb8d22f2b&businType=22&traceNo=ca2b3ec33ad347e9a3b196dbb8d22f2b"
     },
     {
@@ -1017,6 +1285,10 @@
         "fee": 0.0,
         "occurMoney": 6781.95,
         "account": "康力泉",
+        "category1": "债券",
+        "category2": "海外债券",
+        "category3": "美元债",
+        "categoryId": 521,
         "note": "https://query.1234567.com.cn/Query/Detail?id=b29d0974ab034e3caeec9f49a666eae8&businType=24&traceNo="
     },
     {
@@ -1032,6 +1304,10 @@
         "fee": 7.67,
         "occurMoney": 6400.0,
         "account": "康力泉",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "沪深300",
+        "categoryId": 113,
         "note": "https://query.1234567.com.cn/Query/Detail?id=edaf0342b22b466cb8c646cb109111bc&businType=22&traceNo=edaf0342b22b466cb8c646cb109111bc"
     },
     {
@@ -1047,6 +1323,10 @@
         "fee": 5.12,
         "occurMoney": 6400.0,
         "account": "康力泉",
+        "category1": "债券",
+        "category2": "国内债券",
+        "category3": "可转债",
+        "categoryId": 512,
         "note": "https://query.1234567.com.cn/Query/Detail?id=829b40ba41eb4385922d9d5870aec1d5&businType=22&traceNo=829b40ba41eb4385922d9d5870aec1d5"
     },
     {
@@ -1062,6 +1342,10 @@
         "fee": 7.67,
         "occurMoney": 6400.0,
         "account": "康力泉",
+        "category1": "海外成熟",
+        "category2": "德国",
+        "category3": "德国30",
+        "categoryId": 321,
         "note": "https://query.1234567.com.cn/Query/Detail?id=a134944ad8d64c24940cba8e1e3ca1ba&businType=22&traceNo=a134944ad8d64c24940cba8e1e3ca1ba"
     },
     {
@@ -1077,6 +1361,10 @@
         "fee": 9.59,
         "occurMoney": 6400.0,
         "account": "康力泉",
+        "category1": "商品",
+        "category2": "商品",
+        "category3": "原油",
+        "categoryId": 613,
         "note": "https://query.1234567.com.cn/Query/Detail?id=823403bfc2a640689ba58a4dea413fd3&businType=22&traceNo=823403bfc2a640689ba58a4dea413fd3"
     },
     {
@@ -1092,6 +1380,10 @@
         "fee": 0.0,
         "occurMoney": 0.0,
         "account": "康力泉",
+        "category1": "债券",
+        "category2": "国内债券",
+        "category3": "可转债",
+        "categoryId": 512,
         "note": "https://query.1234567.com.cn/Query/Detail?id=20190415113030065254274&businType=143&traceNo="
     },
     {
@@ -1107,6 +1399,10 @@
         "fee": 7.67,
         "occurMoney": 6400.0,
         "account": "康力泉",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "中证传媒",
+        "categoryId": 144,
         "note": "https://query.1234567.com.cn/Query/Detail?id=fa3683e5b3f24669b6f4e56ffc861ae8&businType=22&traceNo=fa3683e5b3f24669b6f4e56ffc861ae8"
     },
     {
@@ -1122,6 +1418,10 @@
         "fee": 49.95,
         "occurMoney": 9890.49,
         "account": "康力泉",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "全指消费",
+        "categoryId": 148,
         "note": "https://query.1234567.com.cn/Query/Detail?id=1a3d38c807e94b4aacfa51e517ebd8d7&businType=812&traceNo=5671e257df1f4cc1a0c57b757bf280a1"
     },
     {
@@ -1137,6 +1437,10 @@
         "fee": 5.12,
         "occurMoney": 6400.0,
         "account": "康力泉",
+        "category1": "债券",
+        "category2": "国内债券",
+        "category3": "可转债",
+        "categoryId": 512,
         "note": "https://query.1234567.com.cn/Query/Detail?id=11d0ed766cb64d2689ef1db5ab445f61&businType=22&traceNo=11d0ed766cb64d2689ef1db5ab445f61"
     },
     {
@@ -1152,6 +1456,10 @@
         "fee": 7.67,
         "occurMoney": 6400.0,
         "account": "康力泉",
+        "category1": "海外新兴",
+        "category2": "海外互联",
+        "category3": "海外互联网",
+        "categoryId": 221,
         "note": "https://query.1234567.com.cn/Query/Detail?id=1d9dcde57a3f462a947510a2c430d370&businType=22&traceNo=1d9dcde57a3f462a947510a2c430d370"
     },
     {
@@ -1167,6 +1475,10 @@
         "fee": 5.12,
         "occurMoney": 6400.0,
         "account": "康力泉",
+        "category1": "债券",
+        "category2": "国内债券",
+        "category3": "可转债",
+        "categoryId": 512,
         "note": "https://query.1234567.com.cn/Query/Detail?id=c06e214eee584d6a9ddee040aa143eb8&businType=22&traceNo=c06e214eee584d6a9ddee040aa143eb8"
     },
     {
@@ -1182,6 +1494,10 @@
         "fee": 5.12,
         "occurMoney": 6400.0,
         "account": "康力泉",
+        "category1": "债券",
+        "category2": "国内债券",
+        "category3": "可转债",
+        "categoryId": 512,
         "note": "https://query.1234567.com.cn/Query/Detail?id=2e67ded05a14429e82077bc6caed0da0&businType=22&traceNo=2e67ded05a14429e82077bc6caed0da0"
     },
     {
@@ -1197,6 +1513,10 @@
         "fee": 0.0,
         "occurMoney": 0.0,
         "account": "康力泉",
+        "category1": "债券",
+        "category2": "国内债券",
+        "category3": "可转债",
+        "categoryId": 512,
         "note": "https://query.1234567.com.cn/Query/Detail?id=20190624343030006950192&businType=143&traceNo="
     },
     {
@@ -1212,6 +1532,10 @@
         "fee": 0.0,
         "occurMoney": 0.0,
         "account": "康力泉",
+        "category1": "债券",
+        "category2": "海外债券",
+        "category3": "美元债",
+        "categoryId": 521,
         "note": "https://query.1234567.com.cn/Query/Detail?id=201907110330320190710564476850&businType=143&traceNo="
     },
     {
@@ -1227,6 +1551,10 @@
         "fee": 5.12,
         "occurMoney": 6400.0,
         "account": "康力泉",
+        "category1": "债券",
+        "category2": "国内债券",
+        "category3": "可转债",
+        "categoryId": 512,
         "note": "https://query.1234567.com.cn/Query/Detail?id=d018c657c9604442b5508fd4f3d08174&businType=22&traceNo=d018c657c9604442b5508fd4f3d08174"
     },
     {
@@ -1242,6 +1570,10 @@
         "fee": 0.0,
         "occurMoney": 3500.0,
         "account": "康力泉",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "中证500",
+        "categoryId": 121,
         "note": "https://query.1234567.com.cn/Query/Detail?id=4ff0308f6de14a3392133fd125ccc6c2&businType=22&traceNo=4ff0308f6de14a3392133fd125ccc6c2"
     },
     {
@@ -1257,6 +1589,10 @@
         "fee": 0.0,
         "occurMoney": 3500.0,
         "account": "康力泉",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "中证1000",
+        "categoryId": 123,
         "note": "https://query.1234567.com.cn/Query/Detail?id=27bc28ebfb884bffbdc0dbea06154f09&businType=22&traceNo=27bc28ebfb884bffbdc0dbea06154f09"
     },
     {
@@ -1272,6 +1608,10 @@
         "fee": 0.0,
         "occurMoney": 3500.0,
         "account": "康力泉",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "中证500",
+        "categoryId": 121,
         "note": "https://query.1234567.com.cn/Query/Detail?id=0dd7dc83e91946d9921bc429f47988f5&businType=22&traceNo=0dd7dc83e91946d9921bc429f47988f5"
     },
     {
@@ -1287,6 +1627,10 @@
         "fee": 0.0,
         "occurMoney": 0.0,
         "account": "康力泉",
+        "category1": "A 股",
+        "category2": "大盘股",
+        "category3": "沪深300",
+        "categoryId": 113,
         "note": "https://query.1234567.com.cn/Query/Detail?id=20190918103030076760114&businType=143&traceNo="
     },
     {
@@ -1302,6 +1646,10 @@
         "fee": 0.0,
         "occurMoney": 0.0,
         "account": "康力泉",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "中证500",
+        "categoryId": 121,
         "note": "https://query.1234567.com.cn/Query/Detail?id=201909209898190919303000607263&businType=143&traceNo="
     },
     {
@@ -1317,6 +1665,10 @@
         "fee": 4.19,
         "occurMoney": 3500.0,
         "account": "康力泉",
+        "category1": "海外新兴",
+        "category2": "香港",
+        "category3": "恒生",
+        "categoryId": 211,
         "note": "https://query.1234567.com.cn/Query/Detail?id=136d7f73b1894bbd835a0b24b219aa38&businType=22&traceNo=136d7f73b1894bbd835a0b24b219aa38"
     },
     {
@@ -1332,6 +1684,10 @@
         "fee": 20.72,
         "occurMoney": 8245.3,
         "account": "康力泉",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "创业板",
+        "categoryId": 124,
         "note": "https://query.1234567.com.cn/Query/Detail?id=a89bfebf62684c02b5dbc1c39977051e&businType=812&traceNo=ffa38d566ec84c2ea9c5d8eaf292206e"
     },
     {
@@ -1347,6 +1703,10 @@
         "fee": 9.59,
         "occurMoney": 6400.0,
         "account": "康力泉",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "中证500",
+        "categoryId": 121,
         "note": "https://query.1234567.com.cn/Query/Detail?id=f1d0772205c8403380f9e4f00c0988c7&businType=22&traceNo=f1d0772205c8403380f9e4f00c0988c7"
     },
     {
@@ -1362,6 +1722,10 @@
         "fee": 0.0,
         "occurMoney": 3731.28,
         "account": "康力泉",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "中证1000",
+        "categoryId": 123,
         "note": "https://query.1234567.com.cn/Query/Detail?id=0a23d21d068b49839262440299079577&businType=24&traceNo="
     },
     {
@@ -1377,6 +1741,10 @@
         "fee": 0.0,
         "occurMoney": 3675.41,
         "account": "康力泉",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "中证500",
+        "categoryId": 121,
         "note": "https://query.1234567.com.cn/Query/Detail?id=1eb7908155cb4e8c869ee1cef3af84c8&businType=24&traceNo="
     },
     {
@@ -1392,6 +1760,10 @@
         "fee": 0.0,
         "occurMoney": 3820.09,
         "account": "康力泉",
+        "category1": "A 股",
+        "category2": "中小盘股",
+        "category3": "中证500",
+        "categoryId": 121,
         "note": "https://query.1234567.com.cn/Query/Detail?id=7ab73487a17d426fb43b5c70607ab1c5&businType=812&traceNo=b812de433b5e4551850fd61b86dec0bf"
     },
     {
@@ -1407,6 +1779,10 @@
         "fee": 7.67,
         "occurMoney": 6400.0,
         "account": "康力泉",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "金融地产",
+        "categoryId": 147,
         "note": "https://query.1234567.com.cn/Query/Detail?id=b36036a7da5944e79820a526a93d9feb&businType=22&traceNo="
     },
     {
@@ -1422,6 +1798,10 @@
         "fee": 0.0,
         "occurMoney": 0.0,
         "account": "康力泉",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
         "note": "https://query.1234567.com.cn/Query/Detail?id=20200302103030091331442&businType=143&traceNo="
     },
     {
@@ -1437,6 +1817,10 @@
         "fee": 7.67,
         "occurMoney": 6400.0,
         "account": "康力泉",
+        "category1": "商品",
+        "category2": "商品",
+        "category3": "原油",
+        "categoryId": 613,
         "note": "https://query.1234567.com.cn/Query/Detail?id=cb7d1471b713425da577fc5b604faab7&businType=22&traceNo=cb7d1471b713425da577fc5b604faab7"
     },
     {
@@ -1452,6 +1836,10 @@
         "fee": 33.95,
         "occurMoney": 6721.8,
         "account": "康力泉",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "中证传媒",
+        "categoryId": 144,
         "note": "https://query.1234567.com.cn/Query/Detail?id=f7ce93e977e74da799951d5ba98a23ac&businType=8151&traceNo=0a410e0d2b5d4e53bc13cb3d6da41a8c"
     },
     {
@@ -1467,6 +1855,10 @@
         "fee": 0.0,
         "occurMoney": 7399.31,
         "account": "康力泉",
+        "category1": "债券",
+        "category2": "海外债券",
+        "category3": "美元债",
+        "categoryId": 521,
         "note": "https://query.1234567.com.cn/Query/Detail?id=884775f6c8bf40ab887b9dd7a97617ca&businType=24&traceNo="
     },
     {
@@ -1482,6 +1874,10 @@
         "fee": 7.67,
         "occurMoney": 6400.0,
         "account": "康力泉",
+        "category1": "海外成熟",
+        "category2": "德国",
+        "category3": "德国30",
+        "categoryId": 321,
         "note": "https://query.1234567.com.cn/Query/Detail?id=b1f96532215147b7b1e36881ad0721a5&businType=22&traceNo="
     },
     {
@@ -1497,6 +1893,10 @@
         "fee": 7.67,
         "occurMoney": 6400.0,
         "account": "康力泉",
+        "category1": "海外新兴",
+        "category2": "香港",
+        "category3": "恒生",
+        "categoryId": 211,
         "note": "https://query.1234567.com.cn/Query/Detail?id=b839bf32088f441092a002dee7f84b89&businType=22&traceNo=b839bf32088f441092a002dee7f84b89"
     },
     {
@@ -1512,6 +1912,10 @@
         "fee": 7.67,
         "occurMoney": 6400.0,
         "account": "康力泉",
+        "category1": "海外成熟",
+        "category2": "德国",
+        "category3": "德国30",
+        "categoryId": 321,
         "note": "https://query.1234567.com.cn/Query/Detail?id=b47409248dcc454aaf6869a6766dc46f&businType=22&traceNo=b47409248dcc454aaf6869a6766dc46f"
     },
     {
@@ -1527,6 +1931,10 @@
         "fee": 7.67,
         "occurMoney": 6400.0,
         "account": "康力泉",
+        "category1": "海外成熟",
+        "category2": "德国",
+        "category3": "德国30",
+        "categoryId": 321,
         "note": "https://query.1234567.com.cn/Query/Detail?id=010358e12f144e9bad93b1169de04338&businType=22&traceNo=010358e12f144e9bad93b1169de04338"
     },
     {
@@ -1542,6 +1950,10 @@
         "fee": 38.27,
         "occurMoney": 7577.49,
         "account": "康力泉",
+        "category1": "债券",
+        "category2": "国内债券",
+        "category3": "可转债",
+        "categoryId": 512,
         "note": "https://query.1234567.com.cn/Query/Detail?id=a754d9b2698048e5881bc887aa587128&businType=8151&traceNo=e28d19d784cb48128e43070e9ebc0667"
     },
     {
@@ -1557,6 +1969,10 @@
         "fee": 7.67,
         "occurMoney": 6400.0,
         "account": "康力泉",
+        "category1": "海外新兴",
+        "category2": "香港",
+        "category3": "恒生",
+        "categoryId": 211,
         "note": "https://query.1234567.com.cn/Query/Detail?id=fef63d7550ee4cddaecf33e76a7c105c&businType=22&traceNo="
     },
     {
@@ -1572,6 +1988,10 @@
         "fee": 7.67,
         "occurMoney": 6400.0,
         "account": "康力泉",
+        "category1": "海外成熟",
+        "category2": "美国",
+        "category3": "标普500",
+        "categoryId": 313,
         "note": "https://query.1234567.com.cn/Query/Detail?id=5aa22e59af344e2f8bb90ade34c67832&businType=22&traceNo="
     }
 ]

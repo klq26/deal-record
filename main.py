@@ -10,6 +10,7 @@ from tools.fundInfoSpider import fundInfoSpider
 from tools.fundNavUpdater import fundNavUpdater
 from tools.dividendInfoSpider import dividendInfoSpider
 from database.fundDBHelper import fundDBHelper
+from category.categoryManager import categoryManager
 from spider.tiantian.tiantianSpider import tiantianSpider
 from spider.danjuan.danjuanSpider import danjuanSpider
 from spider.qieman.qiemanSpider import qiemanSpider
@@ -39,21 +40,37 @@ def getParent():
 
 # 获取所有交易记录
 def allUniqueCodes(strategy = 'klq'):
-    folder = os.path.abspath(os.path.dirname(__file__))
-    filepath = os.path.join(folder, u'category', u'allUniqueCodes.csv')
     df = pd.DataFrame()
+    spiders = []
+    [spiders.append(x) for x in getKLQ()]
+    [spiders.append(x) for x in getParent()]
+    for account in spiders:
+        print(account)
+        df = df.append(account.uniqueCodes())
+    return categoryManager().allUniqueCodes(df)
+
+def allDealRecords(strategy = 'klq'):
+    folder = os.path.abspath(os.path.dirname(__file__))
+    # filepath = os.path.join(folder, u'category', u'allUniqueCodes.csv')
+    df = pd.DataFrame()
+    records = []
     if strategy == 'klq':
         spiders = getKLQ()
     else:
         spiders = getParent()
     for account in spiders:
         print(account)
-        df = df.append(account.uniqueCodes())
-    df = df.drop_duplicates(['code'])
-    df = df.sort_values(by='code' , ascending=True)
-    df = df.reset_index(drop=True)
-    df.to_csv(filepath, sep='\t')
-    return df
+        [records.append(x) for x in account.load()]
+    # 日期升序，重置 id
+    records.sort(key=lambda x: x['date'])
+    for i in range(1, len(records) + 1):
+        records[i-1]['id'] = i
+    # [print(x) for x in records]
+    # df = df.drop_duplicates(['code'])
+    # df = df.sort_values(by='code' , ascending=True)
+    # df = df.reset_index(drop=True)
+    # df.to_csv(filepath, sep='\t')
+    # return df
 
 # 显示库中不认识的基金代码及名称
 def showCategoryUnknownFunds(strategy = 'klq'):
@@ -95,4 +112,8 @@ def updateDatabase():
 if __name__ == "__main__":
     cls()
     # 更新数据库
-    updateDatabase()
+    # updateDatabase()
+    # allDealRecords()
+    # allUniqueCodes()
+    for x in getParent():
+        x.get()

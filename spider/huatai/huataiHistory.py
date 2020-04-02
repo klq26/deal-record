@@ -6,6 +6,8 @@ import json
 import pandas as pd
 import numpy as np
 
+from category.categoryManager import categoryManager
+
 # NOTE：取值是 “资金流水”
 # 这个类是为了对接之前手工修改过格式的成交记录的，仅作对接，无需扩展。
 # ★huataiSpider 会调用这个类并继承该类的数据，无需手动调用当前类
@@ -34,6 +36,7 @@ class huataiHistory:
     def __init__(self):
         # 当前目录
         self.folder = os.path.abspath(os.path.dirname(__file__))
+        self.categoryManager = categoryManager()
         # TEST 显示列名，列唯一值
         # df = pd.read_excel(os.path.join(self.folder, 'input', global_name + u'2015-2019.xlsx'))
         # file_columns = df.columns
@@ -79,16 +82,20 @@ class huataiHistory:
         needed_df.drop(columns=['佣金'])
         needed_df['occurMoney'] = needed_df['发生金额']
         needed_df['account'] = global_name
+        needed_df['category1'] = '无'
+        needed_df['category2'] = '无'
+        needed_df['category3'] = '无'
+        needed_df['categoryId'] = 1
         # 5. 生成 json 对象
         # 按 model key 值顺序重组 dataframe
-        reindex_columns=['流水号', '发生日期', '证券代码', '证券名称', '买卖标志', '成交价格', 'nav_acc', '成交数量', '发生金额', 'fee', 'occurMoney', 'account', '备注']
+        reindex_columns=['流水号', '发生日期', '证券代码', '证券名称', '买卖标志', '成交价格', 'nav_acc', '成交数量', '发生金额', 'fee', 'occurMoney', 'account', 'category1', 'category2', 'category3', 'categoryId', '备注']
         needed_df = needed_df.reindex(columns=reindex_columns)
         # print(needed_df)
         return needed_df
 
     def get(self):
         # 模型字段数组
-        all_model_keys = ['id', 'date', 'code', 'name', 'dealType', 'nav_unit', 'nav_acc', 'volume', 'dealMoney', 'fee', 'occurMoney', 'account', 'note']
+        all_model_keys = ['id', 'date', 'code', 'name', 'dealType', 'nav_unit', 'nav_acc', 'volume', 'dealMoney', 'fee', 'occurMoney', 'account', 'category1', 'category2', 'category3', 'categoryId', 'note']
         records = []
         money_funds = []
         others = []
@@ -96,7 +103,7 @@ class huataiHistory:
             item = dict(zip(all_model_keys, list(x)))
             # 最后一次修改
             # 日期格式统一
-            item['date'] = '{0}'.format(str(item['date'])[0:10].replace('-','/'))
+            item['date'] = '{0}'.format(str(item['date'])[0:10].replace('/','-'))
             item['code'] = str(item['code'])
             # 不要负值
             if float(item['volume']) < 0:
@@ -123,6 +130,12 @@ class huataiHistory:
             elif item['name'] in ['银华日利', '紫金货币', '天天发1', 'GC007', 'Ｒ-001', 'GC001', 'Ｒ-003', '现金添富', '华宝添益', '添富快线']:
                 money_funds.append(item)
             else:
+                categoryInfo = self.categoryManager.getCategory(item['code'])
+                if categoryInfo != {}:
+                    item['category1'] = categoryInfo['category1']
+                    item['category2'] = categoryInfo['category2']
+                    item['category3'] = categoryInfo['category3']
+                    item['categoryId'] = categoryInfo['categoryId']
                 records.append(item)
             # print(item)
             # 5. 命中 & 过滤分别保存到不同文件。可以通过浏览过滤文件确保没有漏掉有用信息 #

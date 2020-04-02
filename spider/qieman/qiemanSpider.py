@@ -12,6 +12,7 @@ from requests.packages.urllib3.exceptions import InsecureRequestWarning
 import pandas as pd
 
 from login.requestHeaderManager import requestHeaderManager
+from category.categoryManager import categoryManager
 from database.fundDBHelper import fundDBHelper
 
 class qiemanSpider:
@@ -22,6 +23,7 @@ class qiemanSpider:
         requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
         # 当前目录
         self.folder = os.path.abspath(os.path.dirname(__file__))
+        self.categoryManager = categoryManager()
         if strategy == 'klq':
             self.owner = '康力泉'
             self.headers = requestHeaderManager().getQiemanKLQ()
@@ -46,7 +48,7 @@ class qiemanSpider:
         print('且慢：{0} 获取中..'.format(self.owner))
         db = fundDBHelper()
         index = 0
-        all_model_keys = ['id', 'date', 'code', 'name', 'dealType', 'nav_unit', 'nav_acc', 'volume', 'dealMoney', 'fee', 'occurMoney', 'account', 'note']
+        all_model_keys = ['id', 'date', 'code', 'name', 'dealType', 'nav_unit', 'nav_acc', 'volume', 'dealMoney', 'fee', 'occurMoney', 'account', 'category1', 'category2', 'category3', 'categoryId', 'note']
         # 取 500 条
         for plan in self.plan_list:
             folder = os.path.join(self.folder, 'debug', self.owner, 'tradelist')
@@ -167,6 +169,12 @@ class qiemanSpider:
                             all_model_values.append(fee)
                             all_model_values.append(occurMoney)
                             all_model_values.append(self.owner)
+                            categoryInfo = self.categoryManager.getCategory(all_model_values[2])
+                            if categoryInfo != {}:
+                                all_model_values.append(categoryInfo['category1'])
+                                all_model_values.append(categoryInfo['category2'])
+                                all_model_values.append(categoryInfo['category3'])
+                                all_model_values.append(categoryInfo['categoryId'])
                             all_model_values.append(plan_name + '_' + order['orderId'])
                             itemDict = dict(zip(all_model_keys, all_model_values))
                             self.results.append(itemDict)
@@ -198,6 +206,11 @@ class qiemanSpider:
             df = df.reset_index(drop=True)
             df.to_csv(os.path.join(self.folder, 'output', '{0}-qieman-unique-codes.csv'.format(self.owner)), sep='\t')
             return df
+
+    def load(self):
+        output_path = os.path.join(self.folder, 'output', '{0}_record.json'.format(self.owner))
+        with open(output_path, 'r', encoding='utf-8') as f:
+            return json.loads(f.read())
 
 if __name__ == "__main__":
     strategy = 'klq'

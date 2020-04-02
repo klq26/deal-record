@@ -6,6 +6,8 @@ import json
 import pandas as pd
 import numpy as np
 
+from category.categoryManager import categoryManager
+
 # NOTE：取值是 “历史成交”
 global_name = '华宝证券'
 
@@ -30,6 +32,7 @@ class huabaoSpider:
         # 当前目录
         self.folder = os.path.abspath(os.path.dirname(__file__))
         self.owner = u'康力泉'
+        self.categoryManager = categoryManager()
         # TEST 显示列名，列唯一值
         # df = pd.read_excel(os.path.join(self.folder, 'input', global_name + u'.xlsx'))
         # file_columns = df.columns
@@ -76,24 +79,28 @@ class huabaoSpider:
         needed_df['fee'] = needed_df['佣金'] + needed_df['印花税'] + needed_df['过户费'] + needed_df['成交费']
         needed_df.drop(columns=['佣金', '印花税','过户费','成交费'])
         needed_df['occurMoney'] = needed_df['发生金额']
+        needed_df['category1'] = '无'
+        needed_df['category2'] = '无'
+        needed_df['category3'] = '无'
+        needed_df['categoryId'] = 1
         needed_df['note'] = '无'
         needed_df['account'] = global_name
         # 5. 生成 json 对象
         # 按 model key 值顺序重组 dataframe
-        reindex_columns=['成交编号', '成交日期', '证券代码', '证券名称', '委托类别', '成交价格', 'nav_acc', '成交数量', '发生金额', 'fee','occurMoney','account','note']
+        reindex_columns=['成交编号', '成交日期', '证券代码', '证券名称', '委托类别', '成交价格', 'nav_acc', '成交数量', '发生金额', 'fee','occurMoney','account', 'category1', 'category2', 'category3', 'categoryId', 'note']
         needed_df = needed_df.reindex(columns=reindex_columns)
         # print(needed_df)
         return needed_df
 
     def get(self):
         # 模型字段数组
-        all_model_keys = ['id', 'date', 'code', 'name', 'dealType', 'nav_unit', 'nav_acc', 'volume', 'dealMoney', 'fee', 'occurMoney', 'account', 'note']
+        all_model_keys = ['id', 'date', 'code', 'name', 'dealType', 'nav_unit', 'nav_acc', 'volume', 'dealMoney', 'fee', 'occurMoney', 'account', 'category1', 'category2', 'category3', 'categoryId', 'note']
         records = []
         others = []
         for x in self.needed_df.values:
             item = dict(zip(all_model_keys, list(x)))
             # 最后一次修改
-            item['date'] = '{0}/{1}/{2}'.format(str(item['date'])[0:4],str(item['date'])[4:6],str(item['date'])[6:8])
+            item['date'] = '{0}-{1}-{2}'.format(str(item['date'])[0:4],str(item['date'])[4:6],str(item['date'])[6:8])
             item['code'] = str(item['code'])
             if item['dealType'] == '基金申购':
                 item['dealType'] = '买入'
@@ -103,6 +110,12 @@ class huabaoSpider:
                 item['occurMoney'] = item['dealMoney'] - item['fee']
             item['occurMoney'] = round(float(item['occurMoney']), 2)
             if item['dealType'] in ['买入','卖出']:
+                categoryInfo = self.categoryManager.getCategory(item['code'])
+                if categoryInfo != {}:
+                    item['category1'] = categoryInfo['category1']
+                    item['category2'] = categoryInfo['category2']
+                    item['category3'] = categoryInfo['category3']
+                    item['categoryId'] = categoryInfo['categoryId']
                 records.append(item)
             else:
                 others.append(item)
@@ -139,6 +152,11 @@ class huabaoSpider:
             df.to_csv(os.path.join(self.folder, 'output', '{0}-huabao-unique-codes.csv'.format(self.owner)), sep='\t')
             return df
     
+    def load(self):
+        output_path = os.path.join(self.folder, 'output', '{0}_record.json'.format(self.owner))
+        with open(output_path, 'r', encoding='utf-8') as f:
+            return json.loads(f.read())
+
 if __name__ == "__main__":
     spider = huabaoSpider()
     spider.get()

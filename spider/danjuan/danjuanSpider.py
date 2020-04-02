@@ -13,6 +13,7 @@ from requests.packages.urllib3.exceptions import InsecureRequestWarning
 import pandas as pd
 
 from login.requestHeaderManager import requestHeaderManager
+from category.categoryManager import categoryManager
 from database.fundDBHelper import fundDBHelper
 
 class danjuanSpider:
@@ -23,6 +24,7 @@ class danjuanSpider:
         requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
         # 当前目录
         self.folder = os.path.abspath(os.path.dirname(__file__))
+        self.categoryManager = categoryManager()
         if strategy == 'klq':
             self.owner = '康力泉'
             self.headers = requestHeaderManager().getDanjuanKLQ()
@@ -55,7 +57,7 @@ class danjuanSpider:
             else:
                 print(response.status_code)
         # 请求每一条详情(仅包含“交易成功”，忽略“撤单”，“交易进行中” 等非确定情况)
-        all_model_keys = ['id', 'date', 'code', 'name', 'dealType', 'nav_unit', 'nav_acc', 'volume', 'dealMoney', 'fee', 'occurMoney', 'account', 'note']
+        all_model_keys = ['id', 'date', 'code', 'name', 'dealType', 'nav_unit', 'nav_acc', 'volume', 'dealMoney', 'fee', 'occurMoney', 'account', 'category1', 'category2', 'category3', 'categoryId', 'note']
         index = 0
         with open(tradelist_file, 'r', encoding='utf-8') as f:
             jsonData = json.loads(f.read())
@@ -169,6 +171,12 @@ class danjuanSpider:
                                 all_model_values.append(fee)
                                 all_model_values.append(occurMoney)
                                 all_model_values.append(self.owner)
+                                categoryInfo = self.categoryManager.getCategory(all_model_values[2])
+                                if categoryInfo != {}:
+                                    all_model_values.append(categoryInfo['category1'])
+                                    all_model_values.append(categoryInfo['category2'])
+                                    all_model_values.append(categoryInfo['category3'])
+                                    all_model_values.append(categoryInfo['categoryId'])
                                 all_model_values.append(order['plan_name'] + '_' + order['order_id'])
                                 itemDict = dict(zip(all_model_keys, all_model_values))
                                 self.results.append(itemDict)
@@ -203,6 +211,11 @@ class danjuanSpider:
             df = df.reset_index(drop=True)
             df.to_csv(os.path.join(self.folder, 'output', '{0}-danjuan-unique-codes.csv'.format(self.owner)), sep='\t')
             return df
+
+    def load(self):
+        output_path = os.path.join(self.folder, 'output', '{0}_record.json'.format(self.owner))
+        with open(output_path, 'r', encoding='utf-8') as f:
+            return json.loads(f.read())
 
 if __name__ == "__main__":
     strategy = 'klq'
