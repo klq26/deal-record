@@ -3,6 +3,7 @@ import sys
 import json
 
 import pandas as pd
+from pandas.io.json import json_normalize
 
 from login.account import account
 from login.requestHeaderManager import requestHeaderManager
@@ -10,6 +11,7 @@ from tools.fundInfoSpider import fundInfoSpider
 from tools.fundNavUpdater import fundNavUpdater
 from tools.dividendInfoSpider import dividendInfoSpider
 from database.fundDBHelper import fundDBHelper
+from database.dealRecordDBHelper import dealRecordDBHelper
 from category.categoryManager import categoryManager
 from spider.tiantian.tiantianSpider import tiantianSpider
 from spider.danjuan.danjuanSpider import danjuanSpider
@@ -51,8 +53,7 @@ def allUniqueCodes(strategy = 'klq'):
 
 def allDealRecords(strategy = 'klq'):
     folder = os.path.abspath(os.path.dirname(__file__))
-    # filepath = os.path.join(folder, u'category', u'allUniqueCodes.csv')
-    df = pd.DataFrame()
+    output_path = os.path.join(folder, u'{0}_allDealRecords.xlsx'.format(strategy))
     records = []
     if strategy == 'klq':
         spiders = getKLQ()
@@ -66,11 +67,13 @@ def allDealRecords(strategy = 'klq'):
     for i in range(1, len(records) + 1):
         records[i-1]['id'] = i
     # [print(x) for x in records]
-    # df = df.drop_duplicates(['code'])
-    # df = df.sort_values(by='code' , ascending=True)
-    # df = df.reset_index(drop=True)
-    # df.to_csv(filepath, sep='\t')
-    # return df
+    df = json_normalize(records)
+    columns = ['id', 'date', 'code', 'name', 'dealType', 'nav_unit', 'nav_acc', 'volume', 'dealMoney', 'fee', 'occurMoney', 'account', 'category1', 'category2', 'category3', 'categoryId', 'note']
+    df = df.reindex(columns = columns)
+    record_db = dealRecordDBHelper()
+    for item in df.values:
+        record_db.insertDataToTable(tablename=strategy, keys=columns, values = item)
+    df.to_excel(output_path)
 
 # 显示库中不认识的基金代码及名称
 def showCategoryUnknownFunds(strategy = 'klq'):

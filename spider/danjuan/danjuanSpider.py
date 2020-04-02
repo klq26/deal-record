@@ -16,6 +16,8 @@ from login.requestHeaderManager import requestHeaderManager
 from category.categoryManager import categoryManager
 from database.fundDBHelper import fundDBHelper
 
+global_name = '蛋卷'
+
 class danjuanSpider:
 
     def __init__(self, strategy = 'klq'):
@@ -170,7 +172,7 @@ class danjuanSpider:
                                 all_model_values.append(confirm_amount)
                                 all_model_values.append(fee)
                                 all_model_values.append(occurMoney)
-                                all_model_values.append(self.owner)
+                                all_model_values.append(self.owner + '_' + global_name)
                                 categoryInfo = self.categoryManager.getCategory(all_model_values[2])
                                 if categoryInfo != {}:
                                     all_model_values.append(categoryInfo['category1'])

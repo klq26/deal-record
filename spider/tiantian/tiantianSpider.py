@@ -19,6 +19,8 @@ from login.requestHeaderManager import requestHeaderManager
 from category.categoryManager import categoryManager
 from database.fundDBHelper import fundDBHelper
 
+global_name = '天天'
+
 class tiantianSpider:
 
     def __init__(self, strategy = 'klq'):
@@ -178,7 +180,7 @@ class tiantianSpider:
             all_model_values.append(round(float(dealMoney), 2))
             all_model_values.append(round(float(fee), 2))
             all_model_values.append(round(float(occurMoney), 2))
-            all_model_values.append(self.owner)
+            all_model_values.append(self.owner + '_' + global_name)
             categoryInfo = self.categoryManager.getCategory(all_model_values[2])
             if categoryInfo != {}:
                 all_model_values.append(categoryInfo['category1'])
