@@ -190,9 +190,8 @@ class tiantianSpider:
         output_path = os.path.join(self.folder, 'output', '{0}_record.json'.format(self.owner))
         with open(output_path, 'w+', encoding='utf-8') as f:
             f.write(json.dumps(self.results, ensure_ascii = False, indent = 4))
-        pass
+        return self.results
 
-    # TODO
     # 获取所有记录中的唯一代码
     def uniqueCodes(self):
         output_path = os.path.join(self.folder, 'output', '{0}_record.json'.format(self.owner))

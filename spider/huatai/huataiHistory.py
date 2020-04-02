@@ -97,6 +97,7 @@ class huataiHistory:
             # 最后一次修改
             # 日期格式统一
             item['date'] = '{0}'.format(str(item['date'])[0:10].replace('-','/'))
+            item['code'] = str(item['code'])
             # 不要负值
             if float(item['volume']) < 0:
                 item['volume'] = round(float(item['volume']) * -1, 2)

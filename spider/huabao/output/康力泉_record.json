@@ -12,7 +12,7 @@
         "fee": 1.28,
         "occurMoney": 12781.28,
         "account": "华宝证券",
-        "note": "NA"
+        "note": "无"
     },
     {
         "id": 2,
@@ -27,7 +27,7 @@
         "fee": 0.24,
         "occurMoney": 2446.44,
         "account": "华宝证券",
-        "note": "NA"
+        "note": "无"
     },
     {
         "id": 3,
@@ -42,7 +42,7 @@
         "fee": 0.23,
         "occurMoney": 2296.57,
         "account": "华宝证券",
-        "note": "NA"
+        "note": "无"
     },
     {
         "id": 4,
@@ -57,7 +57,7 @@
         "fee": 0.25,
         "occurMoney": 2458.45,
         "account": "华宝证券",
-        "note": "NA"
+        "note": "无"
     },
     {
         "id": 5,
@@ -72,7 +72,7 @@
         "fee": 0.25,
         "occurMoney": 2491.45,
         "account": "华宝证券",
-        "note": "NA"
+        "note": "无"
     },
     {
         "id": 6,
@@ -87,7 +87,7 @@
         "fee": 0.25,
         "occurMoney": 2519.65,
         "account": "华宝证券",
-        "note": "NA"
+        "note": "无"
     },
     {
         "id": 7,
@@ -102,7 +102,7 @@
         "fee": 0.84,
         "occurMoney": 8448.16,
         "account": "华宝证券",
-        "note": "NA"
+        "note": "无"
     },
     {
         "id": 8,
@@ -117,7 +117,7 @@
         "fee": 0.0,
         "occurMoney": 8448.77,
         "account": "华宝证券",
-        "note": "NA"
+        "note": "无"
     },
     {
         "id": 9,
@@ -132,7 +132,7 @@
         "fee": 0.25,
         "occurMoney": 2475.25,
         "account": "华宝证券",
-        "note": "NA"
+        "note": "无"
     },
     {
         "id": 10,
@@ -147,7 +147,7 @@
         "fee": 0.25,
         "occurMoney": 2486.25,
         "account": "华宝证券",
-        "note": "NA"
+        "note": "无"
     },
     {
         "id": 11,
@@ -162,7 +162,7 @@
         "fee": 0.25,
         "occurMoney": 2520.55,
         "account": "华宝证券",
-        "note": "NA"
+        "note": "无"
     },
     {
         "id": 12,
@@ -177,7 +177,7 @@
         "fee": 0.5,
         "occurMoney": 5003.9,
         "account": "华宝证券",
-        "note": "NA"
+        "note": "无"
     },
     {
         "id": 13,
@@ -192,7 +192,7 @@
         "fee": 0.51,
         "occurMoney": 5059.91,
         "account": "华宝证券",
-        "note": "NA"
+        "note": "无"
     },
     {
         "id": 14,
@@ -207,7 +207,7 @@
         "fee": 0.24,
         "occurMoney": 2446.44,
         "account": "华宝证券",
-        "note": "NA"
+        "note": "无"
     },
     {
         "id": 15,
@@ -222,6 +222,6 @@
         "fee": 0.25,
         "occurMoney": 2534.35,
         "account": "华宝证券",
-        "note": "NA"
+        "note": "无"
     }
 ]

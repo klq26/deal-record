@@ -2,6 +2,8 @@ import os
 import sys
 import json
 
+import pandas as pd
+
 from login.account import account
 from login.requestHeaderManager import requestHeaderManager
 from tools.fundInfoSpider import fundInfoSpider
@@ -11,83 +13,86 @@ from database.fundDBHelper import fundDBHelper
 from spider.tiantian.tiantianSpider import tiantianSpider
 from spider.danjuan.danjuanSpider import danjuanSpider
 from spider.qieman.qiemanSpider import qiemanSpider
+from spider.zhifubao.zhifubaoSpider import zhifubaoSpider
 from spider.huatai.huataiSpider import huataiSpider
-from spider.huatai.huataiHistory import huataiHistory
 from spider.huabao.huabaoSpider import huabaoSpider
 
-if __name__ == "__main__":
-    # 清屏
+def temp():
+    # tiantian_moneyFundCode = ['000588', '000600', '000638', '000709', '000891', '001666', '002183', '003003', '003022', '003474', '005148', '340005']
+    # tiantian_lsy_moneyFundCode = ['000509', '000600', '000638', '000891', '003474', '360003', '482002']
+    pass
+
+# 清屏
+def cls():
     if sys.platform.startswith('win'):
         os.system('cls')
     elif sys.platform.startswith('linux'):
         os.system('clear')
-    
-    # 测试系统路径
-    # [print(x) for x in sys.path]
 
-    tiantian = tiantianSpider(strategy='klq')
-    # tiantian.get()
-    # df = tiantian.uniqueCodes()
-    # tiantian_allCode = list(df['code'])
-    # print(df)
-    # tiantian_indexFundCode = ['000071', '000179', '000478', '000614', '000968', '001061', '001064', '001180', '001469', '002903', '003376', '003647', '004752', '050025', '100032', '100038', '110022', '110026', '110027', '161017', '161725', '162411', '164906', '340001', '501018', '519977']
-    # tiantian_moneyFundCode = ['000588', '000600', '000638', '000709', '000891', '001666', '002183', '003003', '003022', '003474', '005148', '340005']
-    # tiantian_lsy_indexFundCode = ['000051', '000071', '000216', '000478', '000614', '000968', '001051', '001064', '001112', '001180', '001469', '002903', '003765', '004752', '050025', '100032', '100038', '110022', '110026', '110027', '161017', '162411', '162413', '162711', '164906', '340001', '501018', '502010', '519977']
-    # tiantian_lsy_moneyFundCode = ['000509', '000600', '000638', '000891', '003474', '360003', '482002']
-    # 下载天天基金历史净值
-    # fundInfoSpider().get(['000051', '001112', '162413', '162711'])
+# 获取康力泉所有非货币基金的交易记录
+def getKLQ():
+    return [tiantianSpider(), danjuanSpider(), qiemanSpider(), zhifubaoSpider(), huataiSpider(), huabaoSpider()]
 
-    danjuan = danjuanSpider(strategy='klq')
-    # danjuan.get()
-    # df = danjuan.uniqueCodes()
-    # print(df)
-    # danjuan_allCode = list(df['code'])
-    # print(danjuan_allCode)
-    danjuan_indexFunCode = ['001338', '001550', '001594', '002086', '002147', '003318', '006060', '006320', '006327', '007749', '040046', '070023', '090010', '161128', '310398', '485011', '501021', '501029', '501050', '519153', '519671', '530015']
-    # for code in danjuan_indexFunCode:
-    #     if code not in tiantian_indexFundCode:
-    #         print(code)
-    # 下载蛋卷基金历史净值（已从天天基金中去重）
-    # fundInfoSpider().get(danjuan_indexFunCode)
+# 获取父母所有非货币基金的交易记录
+def getParent():
+    return [tiantianSpider('lsy'), danjuanSpider('lsy'), danjuanSpider('ksh'), qiemanSpider('ksh')]
 
-    qieman = qiemanSpider(strategy='ksh')
-    # qieman.get()
-    # df = qieman.uniqueCodes()
-    # qieman_allCode = list(df['code'])
-    # print(df)
-    # print(qieman_allCode)
-    # 下载且慢基金历史净值（已从天天基金，蛋卷基金中去重）
-    qieman_indexFunCode = ['000216', '001051', '001052', '003765', '160416', '502010']
-    # for code in qieman_indexFunCode:
-    #     if code not in tiantian_indexFundCode and code not in danjuan_indexFunCode:
-    #         print(code)
-    # fundInfoSpider().get(['006793', '164902', '519700', '519718', '519723', '519738', '519752', '519755', '519776'])
+# 获取所有交易记录
+def allUniqueCodes(strategy = 'klq'):
+    folder = os.path.abspath(os.path.dirname(__file__))
+    filepath = os.path.join(folder, u'category', u'allUniqueCodes.csv')
+    df = pd.DataFrame()
+    if strategy == 'klq':
+        spiders = getKLQ()
+    else:
+        spiders = getParent()
+    for account in spiders:
+        print(account)
+        df = df.append(account.uniqueCodes())
+    df = df.drop_duplicates(['code'])
+    df = df.sort_values(by='code' , ascending=True)
+    df = df.reset_index(drop=True)
+    df.to_csv(filepath, sep='\t')
+    return df
 
-    # huatai = huataiSpider()
-    # huatai.get()
+# 显示库中不认识的基金代码及名称
+def showCategoryUnknownFunds(strategy = 'klq'):
+    folder = os.path.abspath(os.path.dirname(__file__))
+    category_df = pd.read_excel(os.path.join(folder, u'category', u'资产配置分类表.xlsx'))
+    category_df['基金代码'] = [str(x).zfill(6) for x in category_df['基金代码'].values]
+    # 基金代码库
+    category_codes = list(category_df['基金代码'])
+    target_df = allUniqueCodes(strategy)
+    for i in range(0,len(target_df.code.values)):
+        code = target_df.code.values[i]
+        name = target_df.name.values[i]
+        if code not in category_codes:
+            print(code, name)
 
-    # huabao = huabaoSpider()
-    # huabao.get()
-
-    # 写入数据库
+# 更新新的基金信息到数据库（包括基本信息，历史单位，累计净值等）
+def insertNewFundInfos():
     db = fundDBHelper()
-    # 获取离给定日期最近一天的分红净值
-    # print(db.selectNearestDividendDateFundNav('001061','2019-07-11'))
-    # 创建 fund_info 数据库
-    # db.createFundInfoTableIfNeeded()
-    # folder = os.path.join(os.getcwd(), 'tools','fund_data')
-    # for root, dirs, files in os.walk(folder):
-    #     for filename in files:
-    #         filepath = os.path.join(root, filename)
-    #         code = filename.split('_')[0]
-    #         with open(filepath, 'r',encoding='utf-8') as f:
-    #             db.insertFundByJonsData(json.loads(f.read()))
+    folder = os.path.abspath(os.path.dirname(__file__))
+    fund_data_folder = os.path.join(folder, 'tools','fund_data')
+    for root, dirs, files in os.walk(fund_data_folder):
+        for filename in files:
+            filepath = os.path.join(root, filename)
+            code = filename.split('_')[0]
+            with open(filepath, 'r',encoding='utf-8') as f:
+                db.insertFundByJonsData(json.loads(f.read()))
 
+# 更新数据库
+def updateDatabase():
+    # 更新数据库中的净值到今天
+    updater = fundNavUpdater()
+    updater.update()
     # 拉取库存基金的历史分红信息
     # divide = dividendInfoSpider()
     # divide.get(db.selectAllFundNavCodes())
+    # TODO 这里的 get 同样要先监测库里该基金的最新一条分红数据
     # divide.insertToDB()
 
-    # 更新数据库中的净值到今天
-    # updater = fundNavUpdater()
-    # updater.update()
+if __name__ == "__main__":
+    cls()
+    # 更新数据库
+    updateDatabase()

@@ -33,6 +33,7 @@ class huataiSpider:
     def __init__(self):
         # 当前目录
         self.folder = os.path.abspath(os.path.dirname(__file__))
+        self.owner = u'康力泉'
         # TEST 显示列名，列唯一值
         # df = pd.read_excel(os.path.join(self.folder, 'input', global_name + u'.xlsx'))
         # file_columns = df.columns
@@ -95,6 +96,7 @@ class huataiSpider:
             item = dict(zip(all_model_keys, list(x)))
             # 最后一次修改
             item['date'] = '{0}/{1}/{2}'.format(str(item['date'])[0:4],str(item['date'])[4:6],str(item['date'])[6:8])
+            item['code'] = str(item['code'])
             # if item['dealType'] == '基金申购':
             #     item['dealType'] = '买入'
             if item['dealType'] == '买入':
@@ -149,6 +151,26 @@ class huataiSpider:
             f.write(json.dumps(moneyfunds,ensure_ascii=False, indent=4))
         with open(os.path.join(self.folder, 'output', u'康力泉' + u'_other.json'), 'w+', encoding='utf-8') as f:
             f.write(json.dumps(others, ensure_ascii=False, indent=4))
+        return records
+    
+    # 获取所有记录中的唯一代码
+    def uniqueCodes(self):
+        output_path = os.path.join(self.folder, 'output', '{0}_record.json'.format(self.owner))
+        with open(output_path, 'r', encoding='utf-8') as f:
+            datalist = json.loads(f.read())
+            names = []
+            codes = []
+            for x in datalist:
+                names.append(x['name'])
+                codes.append(x['code'])
+            df = pd.DataFrame()
+            df['name'] = names
+            df['code'] = codes
+            df = df.drop_duplicates(['code'])
+            df = df.sort_values(by='code' , ascending=True)
+            df = df.reset_index(drop=True)
+            df.to_csv(os.path.join(self.folder, 'output', '{0}-huatai-unique-codes.csv'.format(self.owner)), sep='\t')
+            return df
 
 if __name__ == "__main__":
     spider = huataiSpider()

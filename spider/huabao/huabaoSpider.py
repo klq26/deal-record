@@ -29,6 +29,7 @@ class huabaoSpider:
     def __init__(self):
         # 当前目录
         self.folder = os.path.abspath(os.path.dirname(__file__))
+        self.owner = u'康力泉'
         # TEST 显示列名，列唯一值
         # df = pd.read_excel(os.path.join(self.folder, 'input', global_name + u'.xlsx'))
         # file_columns = df.columns
@@ -75,7 +76,7 @@ class huabaoSpider:
         needed_df['fee'] = needed_df['佣金'] + needed_df['印花税'] + needed_df['过户费'] + needed_df['成交费']
         needed_df.drop(columns=['佣金', '印花税','过户费','成交费'])
         needed_df['occurMoney'] = needed_df['发生金额']
-        needed_df['note'] = 'NA'
+        needed_df['note'] = '无'
         needed_df['account'] = global_name
         # 5. 生成 json 对象
         # 按 model key 值顺序重组 dataframe
@@ -117,3 +118,27 @@ class huabaoSpider:
             f.write(json.dumps(records,ensure_ascii=False, indent=4))
         with open(os.path.join(self.folder, 'output', u'康力泉' + u'_other.json'), 'w+', encoding='utf-8') as f:
             f.write(json.dumps(others,ensure_ascii=False, indent=4))
+        return records
+
+    # 获取所有记录中的唯一代码
+    def uniqueCodes(self):
+        output_path = os.path.join(self.folder, 'output', '{0}_record.json'.format(self.owner))
+        with open(output_path, 'r', encoding='utf-8') as f:
+            datalist = json.loads(f.read())
+            names = []
+            codes = []
+            for x in datalist:
+                names.append(x['name'])
+                codes.append(x['code'])
+            df = pd.DataFrame()
+            df['name'] = names
+            df['code'] = codes
+            df = df.drop_duplicates(['code'])
+            df = df.sort_values(by='code' , ascending=True)
+            df = df.reset_index(drop=True)
+            df.to_csv(os.path.join(self.folder, 'output', '{0}-huabao-unique-codes.csv'.format(self.owner)), sep='\t')
+            return df
+    
+if __name__ == "__main__":
+    spider = huabaoSpider()
+    spider.get()

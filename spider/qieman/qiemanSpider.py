@@ -179,6 +179,7 @@ class qiemanSpider:
         output_path = os.path.join(self.folder, 'output', '{0}_record.json'.format(self.owner))
         with open(output_path, 'w+', encoding='utf-8') as f:
             f.write(json.dumps(self.results, ensure_ascii = False, indent = 4))
+        return self.results
 
     def uniqueCodes(self):
         output_path = os.path.join(self.folder, 'output', '{0}_record.json'.format(self.owner))

@@ -89,6 +89,7 @@ class dividendInfoSpider:
             db = fundDBHelper()
             datalist = json.loads(f.read())
             for data in datalist:
+                # TODO 检测数据库，拿回最新数据，如果对应日期大于等于 data 日期，就不插入了
                 db.insertFundDividendByJonsData(data)
 
 if __name__ == "__main__":
