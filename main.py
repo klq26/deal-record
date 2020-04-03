@@ -121,4 +121,4 @@ if __name__ == "__main__":
     # allDealRecords('klq')
     # allDealRecords('parents')
     # allUniqueCodes()
-    accountAnalytics().getAccount('150份')
+    accountAnalytics().getAccount('华泰')

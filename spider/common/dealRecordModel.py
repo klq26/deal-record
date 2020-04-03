@@ -16,7 +16,7 @@ class dealRecordModel:
     """
     成交记录
     """
-    def __init__(self,data = None):
+    def __init__(self, data = None):
         # 流水号
         self.id = '000'
         # 交易日期
@@ -51,8 +51,6 @@ class dealRecordModel:
         
         if data:
             self.__dict__ = data
-    
-    
 
     def __str__(self):
         """
