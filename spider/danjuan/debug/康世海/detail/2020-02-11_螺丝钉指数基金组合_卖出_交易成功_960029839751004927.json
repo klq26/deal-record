@@ -1,0 +1,57 @@
+{
+    "data": {
+        "order_id": "960029839751004927",
+        "uid": 576923716,
+        "code": "CSI666",
+        "name": "螺丝钉指数基金组合",
+        "ttype": "plan",
+        "status": "success",
+        "action": "024",
+        "percent": 0,
+        "volume": 0,
+        "status_desc": "交易成功",
+        "action_desc": "卖出",
+        "created_at": 1581384389843,
+        "final_confirm_date": 1581436800000,
+        "total_confirm_amount": 187.7,
+        "total_fee": 0.09,
+        "title": "螺丝钉指数基金组合",
+        "bank_name": "现金宝",
+        "sub_order_list": [
+            {
+                "action_text": "成分基金交易信息",
+                "action": "024",
+                "orders": [
+                    {
+                        "plan_code": "CSI666",
+                        "plan_name": "螺丝钉指数基金组合",
+                        "fd_code": "001550",
+                        "fd_name": "天弘中证医药100A",
+                        "title": "天弘中证医药100A",
+                        "action_desc": "卖出",
+                        "status_desc": "交易成功",
+                        "type": "plan",
+                        "action": "024",
+                        "status": "success",
+                        "ts": 1581350400000,
+                        "confirm_ts": 1581436800000,
+                        "amount": 0,
+                        "volume": 212.74,
+                        "confirm_amount": 187.7,
+                        "confirm_volume": 212.74,
+                        "fee": 0.09,
+                        "value_desc": "212.74份",
+                        "value_text": "下单份额",
+                        "confirm_value_text": "确认金额",
+                        "confirm_value_desc": "187.70元",
+                        "bank_name": "现金宝",
+                        "order_id": "196280390700933120",
+                        "sale_query_date_desc": "预计2020-02-14 18:00前到账"
+                    }
+                ]
+            }
+        ],
+        "convert": false
+    },
+    "result_code": 0
+}

@@ -1,0 +1,58 @@
+{
+    "data": {
+        "order_id": "3953985102138205060",
+        "uid": 576923716,
+        "code": "CSI666",
+        "name": "螺丝钉指数基金组合",
+        "ttype": "plan",
+        "status": "success",
+        "action": "143",
+        "amount": 40.77,
+        "percent": 0,
+        "volume": 0,
+        "status_desc": "交易成功",
+        "action_desc": "分红",
+        "created_at": 1561001742342,
+        "final_confirm_date": 1560960000000,
+        "total_confirm_amount": 40.77,
+        "total_confirm_volume": 0,
+        "total_fee": 0,
+        "title": "螺丝钉指数基金组合",
+        "bank_name": "现金宝",
+        "value_desc": "40.77元",
+        "sub_order_list": [
+            {
+                "action_text": "成分基金交易信息",
+                "action": "143",
+                "orders": [
+                    {
+                        "plan_code": "CSI666",
+                        "plan_name": "螺丝钉指数基金组合",
+                        "fd_code": "090010",
+                        "fd_name": "大成中证红利指数",
+                        "title": "大成中证红利指数",
+                        "action_desc": "分红",
+                        "status_desc": "交易成功",
+                        "type": "plan",
+                        "action": "143",
+                        "status": "success",
+                        "ts": 1560960000000,
+                        "confirm_ts": 1560960000000,
+                        "amount": 40.77,
+                        "volume": 0,
+                        "confirm_amount": 40.77,
+                        "confirm_volume": 0,
+                        "fee": 0,
+                        "confirm_value_text": "确认金额",
+                        "confirm_value_desc": "40.77元",
+                        "bank_name": "现金宝",
+                        "order_id": "3953985102456970061",
+                        "sale_query_date_desc": "预计2019-06-21 18:00前到账"
+                    }
+                ]
+            }
+        ],
+        "convert": false
+    },
+    "result_code": 0
+}

@@ -1,5 +1,17 @@
     # -*- coding: utf-8 -*-
 
+# 根据数据库返回的值数组，生成对象
+def dealRecordModelFromValues(values):
+    keys = dealRecordModelKeys()
+    model = dealRecordModel()
+    modelDict = dict(zip(keys, values))
+    model.__dict__ = modelDict
+    return model
+
+# 返回模型需要的字段键数组
+def dealRecordModelKeys():
+    return ['id', 'date', 'code', 'name', 'dealType', 'nav_unit', 'nav_acc', 'volume', 'dealMoney', 'fee', 'occurMoney', 'account', 'category1', 'category2', 'category3', 'categoryId', 'note']
+
 class dealRecordModel:
     """
     成交记录
@@ -40,6 +52,8 @@ class dealRecordModel:
         if data:
             self.__dict__ = data
     
+    
+
     def __str__(self):
         """
         输出对象

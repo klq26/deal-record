@@ -13,6 +13,7 @@ class dealRecordDBHelper:
         self.account = account()
         # 打开数据库
         self.ip_address = ''
+        self.sql_keys = ['id', 'date', 'code', 'name', 'dealType', 'nav_unit', 'nav_acc', 'volume', 'dealMoney', 'fee', 'occurMoney', 'account', 'category1', 'category2', 'category3', 'categoryId', 'note']
         if sys.platform.startswith('win'):
             self.ip_address = '112.125.25.230'
         elif sys.platform.startswith('linux'):
@@ -74,28 +75,60 @@ class dealRecordDBHelper:
     # SELECT
     ################################################
 
-    # # 返回最新一条基金净值数据
-    # def selectLatestRecordFromFundNavTable(self, code):
-    #     sql = u'SELECT * FROM nav_{0} ORDER BY DATE DESC LIMIT 1;'.format(code)
-    #     # print(sql)
-    #     db = self.connect()
-    #     cursor = db.cursor()
-    #     try:
-    #         cursor.execute(sql)
-    #         db.commit()
-    #         results = cursor.fetchall()
-    #     except Exception as e:
-    #         # 表存在就回滚操作
-    #         db.rollback()
-    #         print(e)
-    #     finally:
-    #         cursor.close()
-    #         db.close()
-    #     if len(results) > 0:
-    #         # 返回第一条数据的日期('data', 'nav_unit', 'nav_acc')
-    #         return results[0]
-    #     else:
-    #         return None
+    # 返回特定条件的所有成交记录
+    def selectAllRecordsOfCode(self, tablename = 'klq', code = '', account = '华泰'):
+        if tablename != 'klq':
+            tablename = 'parents'
+        if len(code) <= 0:
+            print('[ERROR] 代码错误：{0}'.format(code))
+            return None
+        sql = u"SELECT * FROM {0} WHERE CODE = {1} AND ACCOUNT LIKE '%{2}%'".format(tablename, code, account)
+        # print(sql)
+        db = self.connect()
+        cursor = db.cursor()
+        results = []
+        try:
+            cursor.execute(sql)
+            db.commit()
+            results = cursor.fetchall()
+        except Exception as e:
+            # 表存在就回滚操作
+            db.rollback()
+            print(e)
+        finally:
+            cursor.close()
+            db.close()
+        if len(results) > 0:
+            return [list(x) for x in results]
+        else:
+            return None
+
+    def selectAllRecordsOfAccount(self, tablename = 'klq', account = '华泰'):
+        if tablename != 'klq':
+            tablename = 'parents'
+        if account == None or len(account) <= 0:
+            print('[ERROR] 账户错误：{0}'.format(account))
+            return None
+        sql = u"SELECT * FROM {0} WHERE ACCOUNT LIKE '%{1}%'".format(tablename, account)
+        # print(sql)
+        db = self.connect()
+        cursor = db.cursor()
+        results = []
+        try:
+            cursor.execute(sql)
+            db.commit()
+            results = cursor.fetchall()
+        except Exception as e:
+            # 表存在就回滚操作
+            db.rollback()
+            print(e)
+        finally:
+            cursor.close()
+            db.close()
+        if len(results) > 0:
+            return [list(x) for x in results]
+        else:
+            return None
 
     ################################################
     # INSERT
@@ -107,7 +140,7 @@ class dealRecordDBHelper:
         if len(tablename) == 0:
             tablename = 'klq'
         if len(sql_keys) == 0:
-            sql_keys = ['id', 'date', 'code', 'name', 'dealType', 'nav_unit', 'nav_acc', 'volume', 'dealMoney', 'fee', 'occurMoney', 'account', 'category1', 'category2', 'category3', 'categoryId', 'note']
+            sql_keys = self.sql_keys
         sql_values = values
         d = dict(zip(sql_keys, sql_values))
         # 字段超多时（本例中 22 个字段，用下面方法配合字典插入）

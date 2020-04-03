@@ -104,7 +104,7 @@ class qiemanSpider:
                     dateObj = datetime.fromtimestamp(unix_ts)
                     date = str(dateObj)[0:10]
                     order_id = item['orderId']
-                    detail_file = os.path.join(folder, '{0}_{1}_{2}_{3}.json'.format(date, item['umaName'], item['uiOrderCodeName'], item['uiOrderStatusName']))
+                    detail_file = os.path.join(folder, '{0}_{1}_{2}_{3}_{4}.json'.format(date, item['umaName'], item['uiOrderCodeName'], item['uiOrderStatusName'], item['orderId']))
                     if not os.path.exists(detail_file):
                         # 请求
                         response = requests.get(detail_url.format(order_id), headers = self.headers, verify=False)
@@ -170,7 +170,7 @@ class qiemanSpider:
                             all_model_values.append(confirm_amount)
                             all_model_values.append(fee)
                             all_model_values.append(occurMoney)
-                            all_model_values.append(self.owner + '_' + global_name)
+                            all_model_values.append(self.owner + '_' + global_name + '_' + plan['name'])
                             categoryInfo = self.categoryManager.getCategory(all_model_values[2])
                             if categoryInfo != {}:
                                 all_model_values.append(categoryInfo['category1'])
@@ -180,6 +180,11 @@ class qiemanSpider:
                             all_model_values.append(plan_name + '_' + order['orderId'])
                             itemDict = dict(zip(all_model_keys, all_model_values))
                             self.results.append(itemDict)
+        # 注意：且慢网站目前不公布跟计划品种分红的交易，暂时只能自己补充，这点自己补齐，已和客服沟通过得到确认
+        input_path = os.path.join(self.folder, 'input', 'dividend.json'.format(self.owner))
+        with open(input_path, 'r', encoding='utf-8') as f:
+            dividends = json.loads(f.read())
+            [self.results.append(x) for x in dividends]
         # 日期升序，重置 id
         self.results.sort(key=lambda x: x['date'])
         for i in range(1, len(self.results) + 1):

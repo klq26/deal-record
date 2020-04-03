@@ -84,7 +84,7 @@ class danjuanSpider:
                 unix_ts = int(int(item['created_at'])/1000)
                 date = str(datetime.fromtimestamp(unix_ts))[0:10]
                 # order_id = item['order_id']
-                detail_file = os.path.join(folder, '{0}_{1}_{2}_{3}.json'.format(date, item['name'], item['action_desc'], item['status_desc']))
+                detail_file = os.path.join(folder, '{0}_{1}_{2}_{3}_{4}.json'.format(date, item['name'], item['action_desc'], item['status_desc'], item['order_id']))
                 # 获取每一笔已成功的成交数据
                 if not os.path.exists(detail_file):
                     response = requests.get(detail_url.format(item['order_id']), headers = self.headers, verify=False)
@@ -172,7 +172,7 @@ class danjuanSpider:
                                 all_model_values.append(confirm_amount)
                                 all_model_values.append(fee)
                                 all_model_values.append(occurMoney)
-                                all_model_values.append(self.owner + '_' + global_name)
+                                all_model_values.append(self.owner + '_' + global_name + '_' + order['plan_name'])
                                 categoryInfo = self.categoryManager.getCategory(all_model_values[2])
                                 if categoryInfo != {}:
                                     all_model_values.append(categoryInfo['category1'])

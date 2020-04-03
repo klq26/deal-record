@@ -1,0 +1,40 @@
+[
+    {
+        "id": 1,
+        "date": "2020-03-02",
+        "code": "100032",
+        "name": "富国中证红利指数增强A",
+        "dealType": "分红",
+        "nav_unit": 0.984,
+        "nav_acc": 2.689,
+        "volume": 409.71,
+        "dealMoney": 0,
+        "fee": 0,
+        "occurMoney": 0,
+        "account": "康力泉_且慢_150份",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
+        "note": "长赢指数投资计划-150份_自补分红"
+    },
+    {
+        "id": 2,
+        "date": "2020-03-02",
+        "code": "100032",
+        "name": "富国中证红利指数增强A",
+        "dealType": "分红",
+        "nav_unit": 0.984,
+        "nav_acc": 2.689,
+        "volume": 310.02,
+        "dealMoney": 0,
+        "fee": 0,
+        "occurMoney": 0,
+        "account": "康力泉_且慢_S定投",
+        "category1": "A 股",
+        "category2": "红利价值",
+        "category3": "中证红利",
+        "categoryId": 131,
+        "note": "长赢指数投资计划-S定投_自补分红"
+    }
+]

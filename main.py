@@ -13,6 +13,7 @@ from tools.dividendInfoSpider import dividendInfoSpider
 from database.fundDBHelper import fundDBHelper
 from database.dealRecordDBHelper import dealRecordDBHelper
 from category.categoryManager import categoryManager
+from analytics.accountAnalytics import accountAnalytics
 from spider.tiantian.tiantianSpider import tiantianSpider
 from spider.danjuan.danjuanSpider import danjuanSpider
 from spider.qieman.qiemanSpider import qiemanSpider
@@ -113,10 +114,11 @@ def updateDatabase():
     # divide.insertToDB()
 
 if __name__ == "__main__":
-    cls()
+    # cls()
     # 更新数据库
     # updateDatabase()
-    # allDealRecords()
+    # 插入全部记录
+    # allDealRecords('klq')
+    # allDealRecords('parents')
     # allUniqueCodes()
-    for x in getParent():
-        x.get()
+    accountAnalytics().getAccount('150份')
