@@ -8,6 +8,7 @@ from copy import deepcopy
 import pandas as pd
 
 from spider.common.dealRecordModel import *
+from category.categoryManager import categoryManager
 
 class holdingModel:
     """
@@ -45,6 +46,11 @@ class holdingModel:
         self.isEmpty = True
         # 状态签名
         self.status = '初始化'
+        # 自定义类别，便于筛选汇总
+        self.category1 = '类别1'
+        self.category2 = '类别2'
+        self.category3 = '类别3'
+        self.categoryId = '类别Id'
 
     def __str__(self):
         # return u"日期：{0} 代码：{1} 名称：{2} 摊薄净值：{3} 持仓份额：{4} 持仓金额：{5} 持仓交易盈亏：{6} 历史清仓盈亏：{7} 总手续费：{8}".format(self.date, self.code, self.name, self.holding_nav, self.holding_volume, self.holding_money, self.holding_gain, self.history_gain, self.total_fee)
@@ -72,12 +78,21 @@ class holdingModel:
         self.total_fee = round(record.fee, 2)
         self.buy_fee = round(record.fee, 2)
         self.isEmpty = False
+        categoryInfo = categoryManager().getCategory(record.code)
+        if categoryInfo != {}:
+            self.category1 = categoryInfo['category1']
+            self.category2 = categoryInfo['category2']
+            self.category3 = categoryInfo['category3']
+            self.categoryId = categoryInfo['categoryId']
 
     # 计算新的成交记录对当前持仓信息的影响
+    # 摊薄单价 = (∑买入金额-∑卖出金额-∑现金分红-∑强制赎回确认金额)/∑持仓份额
     def calcWithDealRecord(self, record):
         if not isinstance(record, dealRecordModel):
             print('[ERROR] 传入对象不是 dealRecordModel 类型：{0}'.format(record))
             exit(1)
+        # if record.code == '510300':
+        #     print()
         # 净值精度
         decimal = 4
         self.date = record.date
@@ -90,11 +105,11 @@ class holdingModel:
         self.total_fee = round(self.total_fee + record.fee, 2)
         # 卖出交易
         if '卖' in record.dealType:
-            self.status = '卖出后'
+            self.status = '卖出'
             # 计算收益
-            gain = round((record.nav_unit - self.holding_nav) * record.volume, decimal)
+            gain = round((record.nav_unit - self.holding_nav) * record.volume, 2)
             self.holding_gain = round(self.holding_gain + gain, 2)
-            self.sell_fee = round(record.fee, 2)
+            self.sell_fee = self.sell_fee + round(record.fee, 2)
             if self.holding_volume == record.volume:
                 # 卖空，更新累计收益
                 self.holding_nav = round(0, decimal)
@@ -103,38 +118,41 @@ class holdingModel:
                 self.isEmpty = True
                 self.history_gain = round(self.history_gain + self.holding_gain, 2)
                 self.holding_gain = 0.00
-                self.status = '清仓后'
+                self.status = '清仓'
             else:
-                # 有卖出操作之后，也要用“本次收益 - 卖出手续费”所得的总金额，还算回摊薄净值的金额，这样卖出后，摊薄净值才会上升
                 modify = 0.0
                 if self.isInnerDeal:
                     modify = 0.0
                 else:
-                    modify = (self.holding_gain - self.sell_fee)
-                self.holding_nav = round((self.holding_money - money + modify) / (self.holding_volume - record.volume), decimal)
+                    # 场外有卖出操作之后，也要用“未清仓总收益 - 卖出手续费”所得的总金额，还算回摊薄净值的金额，这样卖出后，摊薄净值才会上升
+                    modify = round(self.holding_gain - self.sell_fee, 2)
+                # 卖出
                 self.holding_money = round(self.holding_money - money, 2)
                 self.holding_volume = round(self.holding_volume - record.volume, 2)
+                self.holding_nav = round((self.holding_money + modify) / self.holding_volume, decimal)
         elif '分红' in record.dealType:
             if money == 0:
                 # 红利再投资
-                self.status = '分份额'
-                self.holding_nav = round(self.holding_money / (self.holding_volume + record.volume), decimal)
+                self.status = '分额'
                 self.holding_volume = round(self.holding_volume + record.volume, 2)
+                self.holding_nav = round(self.holding_money / self.holding_volume, decimal)
             elif record.volume == 0:
                 # 现金分红
-                self.status = '分现金'
+                # 注：通常场内只支持现金分红，因为份额有必须整 100 的限制
+                self.status = '分现'
                 gain = round(money, 2)
                 self.holding_gain = round(self.holding_gain + gain, 2)
-                self.holding_nav = round((self.holding_money - money) / self.holding_volume, decimal)
+                # 现金分红相当于份额没变的卖出，应该用持仓金额减去未清仓之前的全部卖出收益，算出最新摊薄净值
+                self.holding_nav = round((self.holding_money - self.holding_gain) / self.holding_volume, decimal)
             else:
                 print('[出错了]   {0} {1} 分红数据有误'.format(self.code, self.date))
                 exit(1)
         else:
-            self.status = '买入后'
-            self.buy_fee = round(record.fee, 2)
-            self.holding_nav = round((self.holding_money + money) / (self.holding_volume + record.volume), decimal)
+            self.status = '买入'
+            self.buy_fee = self.buy_fee + round(record.fee, 2)
             self.holding_money = round(self.holding_money + money, 2)
             self.holding_volume = round(self.holding_volume + record.volume, 2)
+            self.holding_nav = round(self.holding_money / self.holding_volume, decimal)
         pass
 
     def finish(self):
