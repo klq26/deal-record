@@ -1,0 +1,4 @@
+,id,date,code,name,dealType,nav_unit,nav_acc,volume,dealMoney,fee,occurMoney,account,category1,category2,category3,categoryId,note
+9,10,2018-07-05,001051,华夏上证50ETF联接A,买入,0.812,0.812,492.02,399.52,0.48,400.0,李淑云_天天,A 股,大盘股,上证50,111,https://query.1234567.com.cn/Query/Detail?id=cf3a57f7ca4149279fab77e1ecec5e20&businType=22&traceNo=
+88,167,2019-05-15,001051,华夏上证50ETF联接A,买入,0.943,0.943,423.67,399.52,0.48,400.0,李淑云_天天,A 股,大盘股,上证50,111,https://query.1234567.com.cn/Query/Detail?id=de7524e1582148c3bf3204445d0d35c9&businType=22&traceNo=de7524e1582148c3bf3204445d0d35c9
+92,171,2019-05-16,001051,华夏上证50ETF联接A,买入,0.945,0.945,422.77,399.52,0.48,400.0,李淑云_天天,A 股,大盘股,上证50,111,https://query.1234567.com.cn/Query/Detail?id=28dc104c10eb433cb6b0d1a7e72664d1&businType=22&traceNo=28dc104c10eb433cb6b0d1a7e72664d1

@@ -102,10 +102,14 @@ class danjuanSpider:
                                 continue
                             orderlist = jsonData['sub_order_list'][0]['orders']
                             for order in orderlist:
+                                opType = order['action_desc']
                                 if '货币' in order['fd_name']:
-                                    # 暂时不收集货币基金操作
-                                    print('忽略：{0}'.format(detail_file))
-                                    continue
+                                    if opType != '转换':
+                                        # 暂时不收集货币基金的分红操作，但是转换相当于买入，还是要的
+                                        print('忽略：{0}'.format(detail_file))
+                                        continue
+                                    # else:
+                                        # print()
 
                                 # "plan_name": "螺丝钉指数基金组合",
                                 # "fd_code": "003318",
@@ -139,13 +143,17 @@ class danjuanSpider:
                                 # date
                                 unix_ts = int(int(order['ts'])/1000)
                                 all_model_values.append(str(datetime.fromtimestamp(unix_ts))[0:10])
-                                all_model_values.append(order['fd_code'])
-                                all_model_values.append(order['fd_name'])
+                                # 如果是南方天天利的转换，就比较麻烦，应该取 target_fd_xx，也属于买入。以后别搞这么复杂了。
+                                if opType == '转换':
+                                    all_model_values.append(order['target_fd_code'])
+                                    all_model_values.append(order['target_fd_name'])
+                                else:
+                                    all_model_values.append(order['fd_code'])
+                                    all_model_values.append(order['fd_name'])
                                 confirm_amount = order['confirm_amount']
                                 confirm_volume = order['confirm_volume']
                                 fee = order['fee']
                                 occurMoney = 0
-                                opType = order['action_desc']
                                 nav_unit = 0.0
                                 nav_acc = 0.0
                                 all_model_values.append(opType)
@@ -161,9 +169,9 @@ class danjuanSpider:
                                     nav_unit = db_record[1]
                                     nav_acc = db_record[2]
                                     all_model_values.append(nav_unit)
-                                    if order['action_desc'] == '买入':
+                                    if opType == '买入' or opType == '转换':
                                         occurMoney = round(confirm_amount + fee, 2)
-                                    elif order['action_desc'] == '卖出':
+                                    elif opType == '卖出':
                                         occurMoney = round(confirm_amount - fee, 2)
                                     else:
                                         continue
@@ -172,14 +180,26 @@ class danjuanSpider:
                                 all_model_values.append(confirm_amount)
                                 all_model_values.append(fee)
                                 all_model_values.append(occurMoney)
-                                all_model_values.append(self.owner + '_' + global_name + '_' + order['plan_name'])
+                                # 该死的货币基金转换没有 plan_name，去死吧，蛋卷
+                                if 'plan_name' not in order.keys():
+                                    if 'target_name' in jsonData.keys():
+                                        # 目前看，蛋卷货币基金转换的 title 到还是对的，如果这个也没有，那就去死吧
+                                        all_model_values.append(self.owner + '_' + global_name + '_' + jsonData['target_name'])
+                                    else:
+                                        all_model_values.append(self.owner + '_' + global_name + '_' + '不知道了')
+                                else:
+                                    all_model_values.append(self.owner + '_' + global_name + '_' + order['plan_name'])
                                 categoryInfo = self.categoryManager.getCategory(all_model_values[2])
                                 if categoryInfo != {}:
                                     all_model_values.append(categoryInfo['category1'])
                                     all_model_values.append(categoryInfo['category2'])
                                     all_model_values.append(categoryInfo['category3'])
                                     all_model_values.append(categoryInfo['categoryId'])
-                                all_model_values.append(order['plan_name'] + '_' + order['order_id'])
+                                # 该死的货币基金转换没有 plan_name，去死吧，蛋卷
+                                if 'plan_name' not in order.keys():
+                                    all_model_values.append('{0}_转换'.format(order['fd_name']) + '_' + order['order_id'])
+                                else:
+                                    all_model_values.append(order['plan_name'] + '_' + order['order_id'])
                                 itemDict = dict(zip(all_model_keys, all_model_values))
                                 self.results.append(itemDict)
                         except Exception as e:

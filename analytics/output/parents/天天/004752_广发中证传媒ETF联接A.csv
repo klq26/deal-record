@@ -1,0 +1,8 @@
+,id,date,code,name,dealType,nav_unit,nav_acc,volume,dealMoney,fee,occurMoney,account,category1,category2,category3,categoryId,note
+1,2,2018-05-25,004752,广发中证传媒ETF联接A,买入,0.9191,0.9191,434.69,399.52,0.48,400.0,李淑云_天天,A 股,行业股,中证传媒,144,https://query.1234567.com.cn/Query/Detail?id=2c5dd8a6cfdc41119fc7ef9ff9d602e7&businType=22&traceNo=
+25,26,2018-09-10,004752,广发中证传媒ETF联接A,买入,0.7008,0.7008,570.09,399.52,0.48,400.0,李淑云_天天,A 股,行业股,中证传媒,144,https://query.1234567.com.cn/Query/Detail?id=dd7bf8fcc2f04a4eba9985d1af5c2944&businType=22&traceNo=
+63,64,2018-12-27,004752,广发中证传媒ETF联接A,买入,0.6571,0.6571,608.0,399.52,0.48,400.0,李淑云_天天,A 股,行业股,中证传媒,144,https://query.1234567.com.cn/Query/Detail?id=ac76cb40953c410e8e563d72298bebdf&businType=22&traceNo=
+68,69,2019-01-15,004752,广发中证传媒ETF联接A,买入,0.6804,0.6804,587.18,399.52,0.48,400.0,李淑云_天天,A 股,行业股,中证传媒,144,https://query.1234567.com.cn/Query/Detail?id=530435bb21ea41d6b7050c7632fb08ca&businType=22&traceNo=
+77,78,2019-01-31,004752,广发中证传媒ETF联接A,买入,0.6434,0.6434,1241.9,799.04,0.96,800.0,李淑云_天天,A 股,行业股,中证传媒,144,https://query.1234567.com.cn/Query/Detail?id=3143138fe01b4389b993d1c940659d74&businType=22&traceNo=
+85,126,2019-04-26,004752,广发中证传媒ETF联接A,买入,0.814,0.814,981.62,799.04,0.96,800.0,李淑云_天天,A 股,行业股,中证传媒,144,https://query.1234567.com.cn/Query/Detail?id=ec6f9d889751477eb27987a40d6f2f83&businType=22&traceNo=
+126,820,2020-03-09,004752,广发中证传媒ETF联接A,卖出,0.8646,0.8646,434.69,374.7,1.13,373.57,李淑云_天天,A 股,行业股,中证传媒,144,https://query.1234567.com.cn/Query/Detail?id=b2238d75605747a1a550079bd3b16b1d&businType=8151&traceNo=e6ca414fd55046a6aa40e77456b0917d

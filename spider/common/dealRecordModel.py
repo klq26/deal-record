@@ -1,10 +1,19 @@
     # -*- coding: utf-8 -*-
+from decimal import Decimal
 
 # 根据数据库返回的值数组，生成对象
 def dealRecordModelFromValues(values):
     keys = dealRecordModelKeys()
     model = dealRecordModel()
     modelDict = dict(zip(keys, values))
+    
+    # 这里对接一下数据库下的 Decmial 数据类型
+    for key in modelDict:
+        if isinstance(modelDict[key], Decimal):
+            if key.startswith('nav_'):
+                modelDict[key] = round(float(modelDict[key]), 4)
+            else:
+                modelDict[key] = round(float(modelDict[key]), 2)
     model.__dict__ = modelDict
     return model
 

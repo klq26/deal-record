@@ -51,7 +51,7 @@ class accountAnalytics:
             code = codes[i]
             name = names[i]
             sub_df = df[df['code'] == code]
-            sub_df.to_csv(os.path.join(folder, '{0}_{1}.csv'.format(code, name)))
+            sub_df.to_csv(os.path.join(folder, '{0}_{1}.csv'.format(code, name.replace('/','_'))))
             # 逐一分析每一个品种
             results.append(self.getStatusOfCode(code, sub_df.values))
         # [print(x) for x in results]
@@ -75,10 +75,6 @@ class accountAnalytics:
             record = dealRecordModelFromValues(initItem)
             holdingItem.initWithDealRecord(record)
             date = holdingItem.date
-            if holdingItem.isInnerDeal:
-                # 场外基金的摊薄成本必须得加上手续费一起算，money/volume 成本会上升
-                holdingItem.holding_nav = round(holdingItem.holding_money / holdingItem.holding_volume, 4)
-            
             # 处理之后所有的交易
             for i in range(1, len(df)):
                 x = list(df[i])

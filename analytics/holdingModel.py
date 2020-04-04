@@ -41,7 +41,9 @@ class holdingModel:
         # 卖出手续费
         self.sell_fee = 0.00
         # 是否场内交易（将影响使用 dealMoney 还是 occurMoney）
-        self.isInnerDeal = False
+        self.shouldUseDealMoney = False
+
+        self.shouldModifyInSell = False
         # 是否清仓状态
         self.isEmpty = True
         # 状态签名
@@ -67,14 +69,21 @@ class holdingModel:
         self.name = record.name
         self.holding_nav = record.nav_unit
         self.holding_volume = record.volume
-        if u'华泰' in record.account or u'华宝' in record.account:
-            self.isInnerDeal = True
+        # 华泰，华宝，蛋卷的持仓净值是不带手续费计算的。
+        # 天天，且慢是带手续费计算的。（所以天天和且慢买完了之后，如果第二天净值变化为 0%，看盈亏是下跌的，就是手续费造成的成本价上升）
+        if u'华泰' in record.account or u'华宝' in record.account or u'蛋卷' in record.account:
+            self.shouldUseDealMoney = True
             self.holding_money = record.dealMoney
             self.holding_nav = round(self.holding_nav, 3)
         else:
-            self.isInnerDeal = False
+            self.shouldUseDealMoney = False
             self.holding_money = record.occurMoney
             self.holding_nav = round(self.holding_money / self.holding_volume, 4)
+        if u'华泰' in record.account or u'华宝' in record.account:
+            self.shouldModifyInSell = False
+        else:
+            self.shouldModifyInSell = True
+
         self.total_fee = round(record.fee, 2)
         self.buy_fee = round(record.fee, 2)
         self.isEmpty = False
@@ -86,20 +95,22 @@ class holdingModel:
             self.categoryId = categoryInfo['categoryId']
 
     # 计算新的成交记录对当前持仓信息的影响
-    # 摊薄单价 = (∑买入金额-∑卖出金额-∑现金分红-∑强制赎回确认金额)/∑持仓份额
+    # 摊薄基金单价 = (∑买入金额-∑卖出金额-∑现金分红-∑强制赎回确认金额)/∑持仓份额
+    # 摊薄资金成本 = ∑买入/转入确认金额-∑卖出/转出确认金额-∑现金分红-∑强制赎回确认金额；
+    # 累计盈亏 = 持仓份额*最新净值-摊薄成本；
+    # 累计盈亏率 = 累计盈亏/摊薄成本；
     def calcWithDealRecord(self, record):
         if not isinstance(record, dealRecordModel):
             print('[ERROR] 传入对象不是 dealRecordModel 类型：{0}'.format(record))
             exit(1)
-        # if record.code == '510300':
-        #     print()
+        if record.code == '310398':
+            print()
         # 净值精度
         decimal = 4
         self.date = record.date
         money = 0.00
-        if self.isInnerDeal:
+        if self.shouldUseDealMoney:
             money = record.dealMoney
-            decimal = 3
         else:
             money = record.occurMoney
         self.total_fee = round(self.total_fee + record.fee, 2)
@@ -121,10 +132,11 @@ class holdingModel:
                 self.status = '清仓'
             else:
                 modify = 0.0
-                if self.isInnerDeal:
+                if not self.shouldModifyInSell:
+                    # 这里的 money 不用管 holding_gain 是因为分红的时候，已经用 holding_gain 修正过 holding_nav 了，场内只有现金分红。
                     modify = 0.0
                 else:
-                    # 场外有卖出操作之后，也要用“未清仓总收益 - 卖出手续费”所得的总金额，还算回摊薄净值的金额，这样卖出后，摊薄净值才会上升
+                    # 场外有卖出操作之后，也要用“未清仓总收益 - 卖出手续费”所得的总金额，还算回摊薄净值的金额，这样卖出后，摊薄净值才会上升。
                     modify = round(self.holding_gain - self.sell_fee, 2)
                 # 卖出
                 self.holding_money = round(self.holding_money - money, 2)
@@ -144,6 +156,8 @@ class holdingModel:
                 self.holding_gain = round(self.holding_gain + gain, 2)
                 # 现金分红相当于份额没变的卖出，应该用持仓金额减去未清仓之前的全部卖出收益，算出最新摊薄净值
                 self.holding_nav = round((self.holding_money - self.holding_gain) / self.holding_volume, decimal)
+                if self.shouldModifyInSell:
+                    self.holding_money = (self.holding_money - gain)
             else:
                 print('[出错了]   {0} {1} 分红数据有误'.format(self.code, self.date))
                 exit(1)

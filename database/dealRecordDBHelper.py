@@ -34,23 +34,24 @@ class dealRecordDBHelper:
     def createDealRecordTableIfNeeded(self):
         sql = """
         CREATE TABLE `klq` (
-        `id` INT(11) NULL DEFAULT NULL,
-        `date` VARCHAR(10) NULL DEFAULT NULL COLLATE 'utf8_unicode_ci',
-        `code` VARCHAR(6) NULL DEFAULT NULL COLLATE 'utf8_unicode_ci',
-        `name` VARCHAR(30) NULL DEFAULT NULL COLLATE 'utf8_unicode_ci',
-        `dealType` VARCHAR(10) NULL DEFAULT NULL COLLATE 'utf8_unicode_ci',
-        `nav_unit` FLOAT NULL DEFAULT NULL,
-        `nav_acc` FLOAT NULL DEFAULT NULL,
-        `volume` FLOAT NULL DEFAULT NULL,
-        `dealMoney` FLOAT NULL DEFAULT NULL,
-        `fee` FLOAT NULL DEFAULT NULL,
-        `occurMoney` FLOAT NULL DEFAULT NULL,
-        `account` VARCHAR(20) NULL DEFAULT NULL COLLATE 'utf8_unicode_ci',
-        `category1` VARCHAR(10) NULL DEFAULT NULL COLLATE 'utf8_unicode_ci',
-        `category2` VARCHAR(10) NULL DEFAULT NULL COLLATE 'utf8_unicode_ci',
-        `category3` VARCHAR(10) NULL DEFAULT NULL COLLATE 'utf8_unicode_ci',
-        `categoryId` INT(11) NULL DEFAULT NULL,
-        `note` VARCHAR(200) NULL DEFAULT NULL COLLATE 'utf8_unicode_ci'
+            `id` INT(11) NULL DEFAULT NULL,
+            `date` VARCHAR(10) NULL DEFAULT NULL COLLATE 'utf8_unicode_ci',
+            `code` VARCHAR(6) NULL DEFAULT NULL COLLATE 'utf8_unicode_ci',
+            `name` VARCHAR(30) NULL DEFAULT NULL COLLATE 'utf8_unicode_ci',
+            `dealType` VARCHAR(10) NULL DEFAULT NULL COLLATE 'utf8_unicode_ci',
+            `nav_unit` DECIMAL(10,4) NULL DEFAULT NULL,
+            `nav_acc` DECIMAL(10,4) NULL DEFAULT NULL,
+            `volume` DECIMAL(10,2) NULL DEFAULT NULL,
+            `dealMoney` DECIMAL(10,2) NULL DEFAULT NULL,
+            `fee` DECIMAL(10,2) NULL DEFAULT NULL,
+            `occurMoney` DECIMAL(10,2) NULL DEFAULT NULL,
+            `account` VARCHAR(20) NULL DEFAULT NULL COLLATE 'utf8_unicode_ci',
+            `category1` VARCHAR(10) NULL DEFAULT NULL COLLATE 'utf8_unicode_ci',
+            `category2` VARCHAR(10) NULL DEFAULT NULL COLLATE 'utf8_unicode_ci',
+            `category3` VARCHAR(10) NULL DEFAULT NULL COLLATE 'utf8_unicode_ci',
+            `categoryId` INT(11) NULL DEFAULT NULL,
+            `note` VARCHAR(200) NULL DEFAULT NULL COLLATE 'utf8_unicode_ci',
+            UNIQUE INDEX `id` (`id`)
         )
         COMMENT='康力泉的金融市场成交全记录'
         COLLATE='utf8_unicode_ci'
