@@ -120,15 +120,6 @@ if __name__ == "__main__":
     # 插入全部记录
     # allDealRecords('klq')
     # allDealRecords('parents')
-    # allUniqueCodes()
-
-    # 华泰 OK
-    # 华宝 OK
-    # 天天 OK
-    # 且慢 150份，S定投 OK
-    # 蛋卷 OK
-    # allDealRecords('klq')
-    # allDealRecords('parents')
     # 康力泉
     # accountAnalytics().getAccount('华泰')
     # accountAnalytics().getAccount('华宝')
@@ -137,13 +128,12 @@ if __name__ == "__main__":
     # accountAnalytics().getAccount('S定投')
     # accountAnalytics().getAccount('螺丝钉')
     # accountAnalytics().getAccount('钉钉宝365')
-
-    accountAnalytics().getAccount('支付宝')
+    # accountAnalytics().getAccount('支付宝')
+    accountAnalytics().getAccount('钉钉宝90天')
+    # 父母
     # accountAnalytics('lsy').getAccount('天天')
     # accountAnalytics('lsy').getAccount('李淑云_蛋卷_钉钉宝365天组合')
-    # accountAnalytics('lsy').getAccount('李淑云_蛋卷_钉钉宝90天组合')
-    # accountAnalytics('ksh').getAccount('康世海_蛋卷_钉钉宝90天组合')
-    # accountAnalytics('ksh').getAccount('康世海_蛋卷_钉钉宝90天组合')
+    # accountAnalytics('lsy').getAccount('康世海_蛋卷_钉钉宝365天组合')
     # accountAnalytics('ksh').getAccount('且慢')
-
-    # 父母
+    accountAnalytics('lsy').getAccount('李淑云_蛋卷_钉钉宝90天组合')
+    accountAnalytics('ksh').getAccount('康世海_蛋卷_钉钉宝90天组合')

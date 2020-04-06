@@ -104,7 +104,8 @@ class qiemanSpider:
                     dateObj = datetime.fromtimestamp(unix_ts)
                     date = str(dateObj)[0:10]
                     order_id = item['orderId']
-                    detail_file = os.path.join(folder, '{0}_{1}_{2}_{3}_{4}.json'.format(date, item['umaName'], item['uiOrderCodeName'], item['uiOrderStatusName'], item['orderId']))
+                    plan_name = item['po']['poName']
+                    detail_file = os.path.join(folder, '{0}_{1}_{2}_{3}_{4}.json'.format(date, plan_name, item['uiOrderCodeName'], item['uiOrderStatusName'], item['orderId']))
                     if not os.path.exists(detail_file):
                         # 请求
                         response = requests.get(detail_url.format(order_id), headers = self.headers, verify=False)
@@ -114,10 +115,10 @@ class qiemanSpider:
                     # 读取数据
                     with open(detail_file, 'r', encoding='utf-8') as f:
                         jsonData = json.loads(f.read())
-                        plan_name = jsonData['po']['poName']
                         orders = jsonData['compositionOrders']
                         # 遍历每一条记录
                         for order in orders:
+                            opType = order['uiOrderCodeName']
                             index = index + 1
                             # id
                             all_model_values = [index]
@@ -135,7 +136,6 @@ class qiemanSpider:
                             occurMoney = order['uiAmount']
                             nav_unit = 0.0
                             nav_acc = 0.0
-                            opType = order['uiOrderCodeName']
                             if u'分红' in opType:
                                 all_model_values.append('分红')
                                 occurMoney = confirm_amount
@@ -155,12 +155,16 @@ class qiemanSpider:
                                 nav_acc = db_record[2]
                                 # 如果是 01-01 这样节日下单，日期应该换成有效交易日，即顺延的下一天
                                 all_model_values[1] = db_record[0]
-                                if u'买' in opType or u'申' in opType or u'转换至' in opType:
+                                if u'买' in opType or u'申' in opType:
                                     all_model_values.append('买入')
                                     confirm_amount = round(occurMoney - fee, 2)
-                                elif u'赎' in order['uiOrderCodeName']:
+                                elif u'赎' in opType:
                                     all_model_values.append('卖出')
                                     confirm_amount = round(occurMoney + fee, 2)
+                                elif u'转换至' in opType:
+                                    # 把且慢稳稳的幸福的转换至都分拆放到 addition.json 里面了，这块太难搞了，以后应该也不会买且慢组合了，就不写逻辑了。
+                                    print('\n[WARNING] 且慢的转换至应该是一笔交易转两笔，请自行确认是否再 addition.json 中做了人工补充。\n\n{0}\n'.format(order))
+                                    continue
                                 else:
                                     print('未知操作：{0}'.format(opType))
                                     all_model_values.append(opType)
@@ -180,11 +184,13 @@ class qiemanSpider:
                             all_model_values.append(plan_name + '_' + order['orderId'])
                             itemDict = dict(zip(all_model_keys, all_model_values))
                             self.results.append(itemDict)
-        # 注意：且慢网站目前不公布跟计划品种分红的交易，暂时只能自己补充，这点自己补齐，已和客服沟通过得到确认
-        input_path = os.path.join(self.folder, 'input', 'dividend.json'.format(self.owner))
-        with open(input_path, 'r', encoding='utf-8') as f:
-            dividends = json.loads(f.read())
-            [self.results.append(x) for x in dividends]
+        if os.path.exists(os.path.join(self.folder, 'input', '{0}_addition.json'.format(self.owner))):
+            # 注意：且慢网站目前不公布跟计划品种分红的交易，暂时只能自己补充，这点自己补齐，已和客服沟通过得到确认
+            # 另外，父亲的组合转换，只有一笔转换。实际上应该是一笔买入 + 一笔卖出。程序里，转换只提现了买入。所以 addition 则补足基金的卖出部分
+            input_path = os.path.join(self.folder, 'input', '{0}_addition.json'.format(self.owner))
+            with open(input_path, 'r', encoding='utf-8') as f:
+                dividends = json.loads(f.read())
+                [self.results.append(x) for x in dividends]
         # 日期升序，重置 id
         self.results.sort(key=lambda x: x['date'])
         for i in range(1, len(self.results) + 1):
