@@ -1,0 +1,11 @@
+,id,date,code,name,dealType,nav_unit,nav_acc,volume,dealMoney,fee,occurMoney,account,category1,category2,category3,categoryId,note
+0,115,2017-01-25,000968,广发养老指数A,买入,0.9595,0.9595,4122.2,3955.25,4.75,3960.0,康力泉_天天,A 股,行业股,养老产业,141,https://query.1234567.com.cn/Query/Detail?id=05e5bfe994b5478cae6173bee3f60406&businType=22&traceNo=
+1,130,2017-04-14,000968,广发养老指数A,买入,0.9977,0.9977,3964.37,3955.25,4.75,3960.0,康力泉_天天,A 股,行业股,养老产业,141,https://query.1234567.com.cn/Query/Detail?id=3570cd696b1740bc83f98fe13cccfca7&businType=22&traceNo=
+2,132,2017-04-25,000968,广发养老指数A,买入,0.9933,0.9933,3981.93,3955.25,4.75,3960.0,康力泉_天天,A 股,行业股,养老产业,141,https://query.1234567.com.cn/Query/Detail?id=7cc4ba6646ad4904aa3f6ab3ad506bc0&businType=22&traceNo=
+3,137,2017-05-23,000968,广发养老指数A,买入,0.9959,0.9959,7943.08,7910.51,9.49,7920.0,康力泉_天天,A 股,行业股,养老产业,141,https://query.1234567.com.cn/Query/Detail?id=10b4e25835b64a8ab7be8c4ccfa260a7&businType=22&traceNo=
+4,195,2018-07-04,000968,广发养老指数A,买入,0.9997,0.9997,6394.25,6392.33,7.67,6400.0,康力泉_天天,A 股,行业股,养老产业,141,https://query.1234567.com.cn/Query/Detail?id=d1f8b66887274d7789dd8070321e0e38&businType=22&traceNo=
+5,211,2018-08-17,000968,广发养老指数A,买入,0.8976,0.8976,7121.58,6392.33,7.67,6400.0,康力泉_天天,A 股,行业股,养老产业,141,https://query.1234567.com.cn/Query/Detail?id=ec0354ac04c74a24bddd23bdea052e49&businType=22&traceNo=ec0354ac04c74a24bddd23bdea052e49
+6,212,2018-08-20,000968,广发养老指数A,买入,0.8968,0.8968,7127.93,6392.33,7.67,6400.0,康力泉_天天,A 股,行业股,养老产业,141,https://query.1234567.com.cn/Query/Detail?id=203fdca40d5740859b80b1c96811772e&businType=22&traceNo=203fdca40d5740859b80b1c96811772e
+7,223,2018-09-28,000968,广发养老指数A,买入,0.9113,0.9113,7014.52,6392.33,7.67,6400.0,康力泉_天天,A 股,行业股,养老产业,141,https://query.1234567.com.cn/Query/Detail?id=496d147c8ddf41cb9677982463ec2a69&businType=22&traceNo=496d147c8ddf41cb9677982463ec2a69
+8,233,2018-10-30,000968,广发养老指数A,买入,0.8037,0.8037,7953.63,6392.33,7.67,6400.0,康力泉_天天,A 股,行业股,养老产业,141,https://query.1234567.com.cn/Query/Detail?id=5c4fa68e1ffb44ff8b99aa47ad5496db&businType=22&traceNo=5c4fa68e1ffb44ff8b99aa47ad5496db
+9,250,2018-12-27,000968,广发养老指数A,买入,0.8126,0.8126,7866.51,6392.33,7.67,6400.0,康力泉_天天,A 股,行业股,养老产业,141,https://query.1234567.com.cn/Query/Detail?id=a5646228ccfa4e6eb139eb57caa76679&businType=22&traceNo=a5646228ccfa4e6eb139eb57caa76679

@@ -24,7 +24,21 @@ class accountAnalytics:
         elif strategy == 'ksh':
             self.owner = '康世海'
     
-    def getAccount(self, account):
+    def getFundCode(self, code, showFolder = False):
+        if code == None or len(code) == 0:
+            return None
+        db_results = self.db.selectAllRecordsOfCode(code)
+        # 账户下的所有记录
+        records = []
+        for x in db_results:
+            model = dealRecordModelFromValues(x)
+            records.append(model.__dict__)
+        # 通过 DataFrame 分析
+        df = pd.DataFrame(records, columns=dealRecordModelKeys())
+        folder = os.path.join(self.folder, 'output', 'fundCode', code)
+        return self.analytics(df, folder, False)
+
+    def getAccount(self, account, showFolder = False):
         tablename = ''
         if self.strategy == 'klq':
             tablename = 'klq'
@@ -40,31 +54,36 @@ class accountAnalytics:
             records.append(model.__dict__)
         # 通过 DataFrame 分析
         df = pd.DataFrame(records, columns=dealRecordModelKeys())
+        folder = os.path.join(self.folder, 'output', 'account', tablename, account)
+        return self.analytics(df, folder, True)
+
+    def analytics(self, df, folder, showFolder = False):
         # print(df)
         codes = df.code.unique()
-        names = df.name.unique()
         results = []
-        folder = os.path.join(self.folder, 'output', tablename, account)
         if not os.path.exists(folder):
             os.makedirs(folder)
         for i in range(0, len(codes)):
             code = codes[i]
             sub_df = df[df['code'] == code]
+            sub_df = sub_df.reset_index(drop=True)
             name = sub_df.name.values[0]
             sub_df.to_csv(os.path.join(folder, '{0}_{1}.csv'.format(code, name.replace('/','_'))))
             # 逐一分析每一个品种
-            results.append(self.getStatusOfCode(code, sub_df.values))
+            results.append(self.analyticsStatusOfCode(code, sub_df.values))
         # [print(x) for x in results]
-        result_df = pd.DataFrame(results, columns=['date', 'code', 'name', 'status', 'holding_nav', 'holding_volume', 'holding_money', 'total_fee', 'holding_gain', 'history_gain', 'total_cash_dividend', 'category1', 'category2', 'category3', 'categoryId']) #, 
+        # result_df = pd.DataFrame(results, columns=['date', 'code', 'name', 'status', 'holding_nav', 'holding_volume', 'holding_money', 'total_fee', 'holding_gain', 'history_gain', 'total_cash_dividend', 'category1', 'category2', 'category3', 'categoryId'])
+        result_df = pd.DataFrame(results, columns=familyHoldingDBKeys())
         # result_df['持仓净值'] = result_df['持仓净值'].astype(float)
         result_df = result_df.sort_values(['categoryId', 'holding_money'],ascending=[True, False])
         result_df = result_df.reset_index(drop=True)
-        result_df.to_csv(os.path.join(folder, '{0}_{1}_holding_status.csv'.format(tablename, account)), sep=',', encoding = "utf-8")
-        if sys.platform.startswith('win'):
+        result_df.to_csv(os.path.join(folder, 'holding_status.csv'), sep=',', encoding = "utf-8")
+        if showFolder and sys.platform.startswith('win'):
             os.startfile(folder)
+        return result_df
 
     # 分析对应品种的
-    def getStatusOfCode(self, code, df):
+    def analyticsStatusOfCode(self, code, df):
         # 成交记录数量大于 0 
         if len(df) > 0:
             # if code == '501018':

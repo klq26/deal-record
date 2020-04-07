@@ -1,0 +1,5 @@
+,id,date,code,name,dealType,nav_unit,nav_acc,volume,dealMoney,fee,occurMoney,account,category1,category2,category3,categoryId,note
+0,90,2019-03-29,501050,华夏上证50AH优选指数,买入,1.249,1.249,36.19,45.27,0.07,45.34,李淑云_蛋卷_螺丝钉指数基金组合,A 股,大盘股,50AH,112,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=2015646733007565148
+1,94,2019-04-02,501050,华夏上证50AH优选指数,买入,1.271,1.271,32.31,41.12,0.06,41.18,李淑云_蛋卷_螺丝钉指数基金组合,A 股,大盘股,50AH,112,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=2121533612457692686
+2,102,2019-04-08,501050,华夏上证50AH优选指数,买入,1.302,1.302,43.82,57.14,0.09,57.23,李淑云_蛋卷_螺丝钉指数基金组合,A 股,大盘股,50AH,112,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=2198590579919011962
+3,105,2019-04-09,501050,华夏上证50AH优选指数,买入,1.305,1.305,29.78,38.92,0.06,38.98,李淑云_蛋卷_螺丝钉指数基金组合,A 股,大盘股,50AH,112,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=2281660070940353463

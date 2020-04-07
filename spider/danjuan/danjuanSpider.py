@@ -15,6 +15,7 @@ import pandas as pd
 from login.requestHeaderManager import requestHeaderManager
 from category.categoryManager import categoryManager
 from database.fundDBHelper import fundDBHelper
+from spider.common.dealRecordModel import *
 
 global_name = '蛋卷'
 
@@ -59,7 +60,7 @@ class danjuanSpider:
             else:
                 print(response.status_code)
         # 请求每一条详情(仅包含“交易成功”，忽略“撤单”，“交易进行中” 等非确定情况)
-        all_model_keys = ['id', 'date', 'code', 'name', 'dealType', 'nav_unit', 'nav_acc', 'volume', 'dealMoney', 'fee', 'occurMoney', 'account', 'category1', 'category2', 'category3', 'categoryId', 'note']
+        all_model_keys = dealRecordModelKeys()
         index = 0
         with open(tradelist_file, 'r', encoding='utf-8') as f:
             jsonData = json.loads(f.read())
@@ -189,17 +190,18 @@ class danjuanSpider:
                                         all_model_values.append(self.owner + '_' + global_name + '_' + '不知道了')
                                 else:
                                     all_model_values.append(self.owner + '_' + global_name + '_' + order['plan_name'])
-                                categoryInfo = self.categoryManager.getCategory(all_model_values[2])
+                                categoryInfo = self.categoryManager.getCategoryByCode(all_model_values[2])
                                 if categoryInfo != {}:
                                     all_model_values.append(categoryInfo['category1'])
                                     all_model_values.append(categoryInfo['category2'])
                                     all_model_values.append(categoryInfo['category3'])
                                     all_model_values.append(categoryInfo['categoryId'])
                                 # 该死的货币基金转换没有 plan_name，去死吧，蛋卷
-                                if 'plan_name' not in order.keys():
-                                    all_model_values.append('{0}_转换'.format(order['fd_name']) + '_' + order['order_id'])
-                                else:
-                                    all_model_values.append(order['plan_name'] + '_' + order['order_id'])
+                                # if 'plan_name' not in order.keys():
+                                #     all_model_values.append('{0}_转换'.format(order['fd_name']) + '_' + order['order_id'])
+                                # else:
+                                #     all_model_values.append('https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=' + order['order_id'])
+                                all_model_values.append('https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=' + order['order_id'])
                                 itemDict = dict(zip(all_model_keys, all_model_values))
                                 self.results.append(itemDict)
                         except Exception as e:

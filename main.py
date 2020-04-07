@@ -1,19 +1,28 @@
+# local bin
 import os
 import sys
 import json
-
+# third partys
 import pandas as pd
 from pandas.io.json import json_normalize
-
+# login
 from login.account import account
 from login.requestHeaderManager import requestHeaderManager
+# tools
 from tools.fundInfoSpider import fundInfoSpider
-from tools.fundNavUpdater import fundNavUpdater
 from tools.dividendInfoSpider import dividendInfoSpider
+from tools.fundNavUpdater import fundNavUpdater
+# database
 from database.fundDBHelper import fundDBHelper
-from database.dealRecordDBHelper import dealRecordDBHelper
+from database.dealRecordDBHelper import *
+# model
+from spider.common.dealRecordModel import *
+# category
 from category.categoryManager import categoryManager
+# analytics
 from analytics.accountAnalytics import accountAnalytics
+from analytics.analyticsManager import analyticsManager
+# spiders
 from spider.tiantian.tiantianSpider import tiantianSpider
 from spider.danjuan.danjuanSpider import danjuanSpider
 from spider.qieman.qiemanSpider import qiemanSpider
@@ -33,35 +42,45 @@ def cls():
     elif sys.platform.startswith('linux'):
         os.system('clear')
 
-# 获取康力泉所有非货币基金的交易记录
-def getKLQ():
+# 获取康力泉所有非货币基金的交易的 json 原始记录
+def getKLQSpiders():
     return [tiantianSpider(), danjuanSpider(), qiemanSpider(), zhifubaoSpider(), huataiSpider(), huabaoSpider()]
 
-# 获取父母所有非货币基金的交易记录
-def getParent():
+# 获取父母所有非货币基金的交易记录的 json 原始记录
+def getParentsSpiders():
     return [tiantianSpider('lsy'), danjuanSpider('lsy'), danjuanSpider('ksh'), qiemanSpider('ksh')]
 
 # 获取所有交易记录
-def allUniqueCodes(strategy = 'klq'):
+def allUniqueCodes(strategy = ''):
     df = pd.DataFrame()
     spiders = []
-    [spiders.append(x) for x in getKLQ()]
-    [spiders.append(x) for x in getParent()]
+    if strategy == '':
+        [spiders.append(x) for x in getKLQSpiders()]
+        [spiders.append(x) for x in getParentsSpiders()]
+    elif strategy == 'klq':
+        [spiders.append(x) for x in getKLQSpiders()]
+    elif strategy == 'parents':
+        [spiders.append(x) for x in getParentsSpiders()]
+    else:
+        print('[ERROR] 错误的 strategy：{0}'.format(strategy))
+        exit(1)
     for account in spiders:
-        print(account)
         df = df.append(account.uniqueCodes())
-    return categoryManager().allUniqueCodes(df)
+    df = df.drop_duplicates(['code'])
+    df = df.sort_values(by='code' , ascending=True)
+    df = df.reset_index(drop=True)
 
-def allDealRecords(strategy = 'klq'):
+
+# 输出所有成交记录（本地是 {0}_updateAllDealRecords.csv，云端是 mysql 数据库）
+def updateAllDealRecords(strategy = 'klq', onlyUpdatelocal = True):
     folder = os.path.abspath(os.path.dirname(__file__))
-    output_path = os.path.join(folder, u'{0}_allDealRecords.xlsx'.format(strategy))
+    output_path = os.path.join(folder, u'{0}_updateAllDealRecords.csv'.format(strategy))
     records = []
     if strategy == 'klq':
-        spiders = getKLQ()
+        spiders = getKLQSpiders()
     else:
-        spiders = getParent()
+        spiders = getParentsSpiders()
     for account in spiders:
-        print(account)
         [records.append(x) for x in account.load()]
     # 日期升序，重置 id
     records.sort(key=lambda x: x['date'])
@@ -69,18 +88,32 @@ def allDealRecords(strategy = 'klq'):
         records[i-1]['id'] = i
     # [print(x) for x in records]
     df = json_normalize(records)
-    columns = ['id', 'date', 'code', 'name', 'dealType', 'nav_unit', 'nav_acc', 'volume', 'dealMoney', 'fee', 'occurMoney', 'account', 'category1', 'category2', 'category3', 'categoryId', 'note']
+    columns = dealRecordModelKeys()
     df = df.reindex(columns = columns)
     record_db = dealRecordDBHelper()
     for item in df.values:
-        record_db.insertDataToTable(tablename=strategy, keys=columns, values = item)
-    df.to_excel(output_path)
+        if not onlyUpdatelocal:
+            record_db.insertDataToTable(tablename=strategy, keys=columns, values = item)
+    df.to_csv(output_path)
+
+# 把家庭当前的持仓记录，历史清仓数据写入数据库
+def allFamilyHoldingSelloutStatus():
+    # 获取整体情况
+    holding_df, sellout_df = analyticsManager().getFamilyHoldingSelloutStatus()
+    # holding
+    holding_df['id'] = [x for x in range(1, len(holding_df) + 1)]
+    # 给定 Column 排序
+    holding_df = holding_df[familyHoldingDBKeys()]
+    dealRecordDBHelper().insertFamilyHoldingByDataFrame(holding_df)
+    # sell out
+    sellout_df['id'] = [x for x in range(1, len(sellout_df) + 1)]
+    # 给定 Column 排序
+    sellout_df = sellout_df[familyHoldingDBKeys()]
+    dealRecordDBHelper().insertFamilySelloutByDataFrame(sellout_df)
 
 # 显示库中不认识的基金代码及名称
 def showCategoryUnknownFunds(strategy = 'klq'):
-    folder = os.path.abspath(os.path.dirname(__file__))
-    category_df = pd.read_excel(os.path.join(folder, u'category', u'资产配置分类表.xlsx'))
-    category_df['基金代码'] = [str(x).zfill(6) for x in category_df['基金代码'].values]
+    category_df = categoryManager().getCategoryDataFrame()
     # 基金代码库
     category_codes = list(category_df['基金代码'])
     target_df = allUniqueCodes(strategy)
@@ -91,15 +124,15 @@ def showCategoryUnknownFunds(strategy = 'klq'):
             print(code, name)
 
 # 更新新的基金信息到数据库（包括基本信息，历史单位，累计净值等）
-def insertNewFundInfos():
+def insertNewFundInfosToDB():
     db = fundDBHelper()
     folder = os.path.abspath(os.path.dirname(__file__))
     fund_data_folder = os.path.join(folder, 'tools','fund_data')
     for root, dirs, files in os.walk(fund_data_folder):
         for filename in files:
             filepath = os.path.join(root, filename)
-            code = filename.split('_')[0]
             with open(filepath, 'r',encoding='utf-8') as f:
+                # 用 dbHelper 的 json adapter 直接插入整个基金基础数据
                 db.insertFundByJonsData(json.loads(f.read()))
 
 # 更新数据库
@@ -118,22 +151,9 @@ if __name__ == "__main__":
     # 更新数据库
     # updateDatabase()
     # 插入全部记录
-    # allDealRecords('klq')
-    # allDealRecords('parents')
-    # 康力泉
-    # accountAnalytics().getAccount('华泰')
-    # accountAnalytics().getAccount('华宝')
-    # accountAnalytics().getAccount('天天')
-    # accountAnalytics().getAccount('150份')
-    # accountAnalytics().getAccount('S定投')
-    # accountAnalytics().getAccount('螺丝钉')
-    # accountAnalytics().getAccount('钉钉宝365')
-    # accountAnalytics().getAccount('支付宝')
-    accountAnalytics().getAccount('钉钉宝90天')
-    # 父母
-    # accountAnalytics('lsy').getAccount('天天')
-    # accountAnalytics('lsy').getAccount('李淑云_蛋卷_钉钉宝365天组合')
-    # accountAnalytics('lsy').getAccount('康世海_蛋卷_钉钉宝365天组合')
-    # accountAnalytics('ksh').getAccount('且慢')
-    accountAnalytics('lsy').getAccount('李淑云_蛋卷_钉钉宝90天组合')
-    accountAnalytics('ksh').getAccount('康世海_蛋卷_钉钉宝90天组合')
+    # updateAllDealRecords('klq', onlyUpdatelocal = False)
+    # updateAllDealRecords('parents', onlyUpdatelocal = False)
+    # 
+    # analyticsManager().getFamilyHoldingUniqueCodes()
+    # analyticsManager().allFamilyHoldingSelloutStatus()
+    # analyticsManager().getFundHoldingStatus()

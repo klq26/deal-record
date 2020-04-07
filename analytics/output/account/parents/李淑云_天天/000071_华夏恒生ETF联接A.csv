@@ -1,0 +1,4 @@
+,id,date,code,name,dealType,nav_unit,nav_acc,volume,dealMoney,fee,occurMoney,account,category1,category2,category3,categoryId,note
+0,53,2018-11-30,000071,华夏恒生ETF联接A,买入,1.4502,1.4502,275.49,399.52,0.48,400.0,李淑云_天天,海外新兴,香港,恒生,211,https://query.1234567.com.cn/Query/Detail?id=3c68c8b2f4ea457c9f80cae6e77bafab&businType=22&traceNo=
+1,849,2020-03-13,000071,华夏恒生ETF联接A,买入,1.3592,1.3592,293.94,399.52,0.48,400.0,李淑云_天天,海外新兴,香港,恒生,211,https://query.1234567.com.cn/Query/Detail?id=d9441494553a436f9132c7cb6f58469d&businType=22&traceNo=d9441494553a436f9132c7cb6f58469d
+2,871,2020-03-19,000071,华夏恒生ETF联接A,买入,1.2474,1.2474,320.28,399.52,0.48,400.0,李淑云_天天,海外新兴,香港,恒生,211,https://query.1234567.com.cn/Query/Detail?id=31d1e3ce5c3d4495bb5954f731b7827b&businType=22&traceNo=31d1e3ce5c3d4495bb5954f731b7827b

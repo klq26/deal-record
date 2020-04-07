@@ -1,0 +1,4 @@
+,id,date,code,name,dealType,nav_unit,nav_acc,volume,dealMoney,fee,occurMoney,account,category1,category2,category3,categoryId,note
+0,244,2018-11-30,162411,华宝标普油气上游股票,买入,0.567,0.567,11270.56,6390.41,9.59,6400.0,康力泉_天天,商品,商品,原油,613,https://query.1234567.com.cn/Query/Detail?id=efcb7ae3e8c846688d4404c6b4c8b0e5&businType=22&traceNo=efcb7ae3e8c846688d4404c6b4c8b0e5
+1,251,2018-12-27,162411,华宝标普油气上游股票,买入,0.467,0.467,13683.96,6390.41,9.59,6400.0,康力泉_天天,商品,商品,原油,613,https://query.1234567.com.cn/Query/Detail?id=61ba05e082314f2eb614c715ce57ae70&businType=22&traceNo=61ba05e082314f2eb614c715ce57ae70
+2,268,2019-03-28,162411,华宝标普油气上游股票,买入,0.519,0.519,12312.93,6390.41,9.59,6400.0,康力泉_天天,商品,商品,原油,613,https://query.1234567.com.cn/Query/Detail?id=823403bfc2a640689ba58a4dea413fd3&businType=22&traceNo=823403bfc2a640689ba58a4dea413fd3

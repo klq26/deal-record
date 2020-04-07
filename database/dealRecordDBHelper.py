@@ -4,7 +4,11 @@ import sys
 import json
 import pymysql
 
+import pandas as pd
+import numpy as np
+
 from login.account import account
+from spider.common.dealRecordModel import *
 
 class dealRecordDBHelper:
     
@@ -13,7 +17,7 @@ class dealRecordDBHelper:
         self.account = account()
         # 打开数据库
         self.ip_address = ''
-        self.sql_keys = ['id', 'date', 'code', 'name', 'dealType', 'nav_unit', 'nav_acc', 'volume', 'dealMoney', 'fee', 'occurMoney', 'account', 'category1', 'category2', 'category3', 'categoryId', 'note']
+        self.sql_keys = dealRecordModelKeys()
         if sys.platform.startswith('win'):
             self.ip_address = '112.125.25.230'
         elif sys.platform.startswith('linux'):
@@ -72,18 +76,59 @@ class dealRecordDBHelper:
             cursor.close()
             db.close()
 
+    # 创建家庭持仓表
+    def createFamilyHoldingTableIfNeeded(self):
+        sql = """
+        CREATE TABLE `family_holding` (
+            `id` INT(11) NULL DEFAULT NULL,
+            `date` VARCHAR(10) NULL DEFAULT NULL COLLATE 'utf8_unicode_ci',
+            `code` VARCHAR(6) NULL DEFAULT NULL COLLATE 'utf8_unicode_ci',
+            `name` VARCHAR(30) NULL DEFAULT NULL COLLATE 'utf8_unicode_ci',
+            `status` VARCHAR(10) NULL DEFAULT NULL COLLATE 'utf8_unicode_ci',
+            `holding_nav` DECIMAL(10,4) NULL DEFAULT NULL,
+            `holding_volume` DECIMAL(10,2) NULL DEFAULT NULL,
+            `holding_money` DECIMAL(10,2) NULL DEFAULT NULL,
+            `holding_gain` DECIMAL(10,2) NULL DEFAULT NULL,
+            `history_gain` DECIMAL(10,2) NULL DEFAULT NULL,
+            `total_cash_dividend` DECIMAL(10,2) NULL DEFAULT NULL,
+            `total_fee` DECIMAL(10,2) NULL DEFAULT NULL,
+            `account` VARCHAR(20) NULL DEFAULT NULL COLLATE 'utf8_unicode_ci',
+            `category1` VARCHAR(10) NULL DEFAULT NULL COLLATE 'utf8_unicode_ci',
+            `category2` VARCHAR(10) NULL DEFAULT NULL COLLATE 'utf8_unicode_ci',
+            `category3` VARCHAR(10) NULL DEFAULT NULL COLLATE 'utf8_unicode_ci',
+            `categoryId` INT(11) NULL DEFAULT NULL,
+            UNIQUE INDEX `id` (`id`)
+        )
+        COMMENT='全家当前持仓情况'
+        COLLATE='utf8_unicode_ci'
+        ENGINE=InnoDB
+        ROW_FORMAT=COMPACT
+        ;
+        """
+        print(sql)
+        db = self.connect()
+        cursor = db.cursor()
+        try:
+            cursor.execute(sql)
+            db.commit()
+        except Exception as e:
+            # 表存在就回滚操作
+            db.rollback()
+            print(e)
+        finally:
+            cursor.close()
+            db.close()
+
     ################################################
     # SELECT
     ################################################
 
-    # 返回特定条件的所有成交记录
-    def selectAllRecordsOfCode(self, tablename = 'klq', code = '', account = '华泰'):
-        if tablename != 'klq':
-            tablename = 'parents'
+    # 返回特定基金代码的所有成交记录（从康力泉和父母两张表中联合查询）
+    def selectAllRecordsOfCode(self, code = ''):
         if len(code) <= 0:
             print('[ERROR] 代码错误：{0}'.format(code))
             return None
-        sql = u"SELECT * FROM {0} WHERE CODE = {1} AND ACCOUNT LIKE '%{2}%'".format(tablename, code, account)
+        sql = u"(SELECT * FROM klq WHERE CODE = {0}) UNION  (SELECT * FROM parents WHERE CODE = {1}) ORDER BY DATE ASC;".format(code, code)
         # print(sql)
         db = self.connect()
         cursor = db.cursor()
@@ -104,6 +149,7 @@ class dealRecordDBHelper:
         else:
             return None
 
+    # 返回特定账户的所有成交记录
     def selectAllRecordsOfAccount(self, tablename = 'klq', account = '华泰'):
         if tablename != 'klq':
             tablename = 'parents'
@@ -164,6 +210,24 @@ class dealRecordDBHelper:
         finally:
             cursor.close()
             db.close()
+
+    ################################################
+    # DataFrame adapter
+    ################################################
+
+    def insertFamilyHoldingByDataFrame(self, df):
+        for item in df.values:
+            values = np.array(item).tolist()
+            # print(values, type(values))
+            self.insertDataToTable('family_holding',familyHoldingDBKeys(), values)
+        pass
+
+    def insertFamilySelloutByDataFrame(self, df):
+        for item in df.values:
+            values = np.array(item).tolist()
+            # print(values, type(values))
+            self.insertDataToTable('family_sellout',familyHoldingDBKeys(), values)
+        pass
 
 if __name__ == "__main__":
     db = dealRecordDBHelper()

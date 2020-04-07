@@ -7,6 +7,7 @@ import pandas as pd
 import numpy as np
 
 from category.categoryManager import categoryManager
+from spider.common.dealRecordModel import *
 
 # NOTE：取值是 “资金流水”
 # 这个类是为了对接之前手工修改过格式的成交记录的，仅作对接，无需扩展。
@@ -95,7 +96,7 @@ class huataiHistory:
 
     def get(self):
         # 模型字段数组
-        all_model_keys = ['id', 'date', 'code', 'name', 'dealType', 'nav_unit', 'nav_acc', 'volume', 'dealMoney', 'fee', 'occurMoney', 'account', 'category1', 'category2', 'category3', 'categoryId', 'note']
+        all_model_keys = dealRecordModelKeys()
         records = []
         money_funds = []
         others = []
@@ -130,7 +131,7 @@ class huataiHistory:
             elif item['name'] in ['银华日利', '紫金货币', '天天发1', 'GC007', 'Ｒ-001', 'GC001', 'Ｒ-003', '现金添富', '华宝添益', '添富快线']:
                 money_funds.append(item)
             else:
-                categoryInfo = self.categoryManager.getCategory(item['code'])
+                categoryInfo = self.categoryManager.getCategoryByCode(item['code'])
                 if categoryInfo != {}:
                     item['category1'] = categoryInfo['category1']
                     item['category2'] = categoryInfo['category2']

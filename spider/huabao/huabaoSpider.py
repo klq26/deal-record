@@ -7,6 +7,7 @@ import pandas as pd
 import numpy as np
 
 from category.categoryManager import categoryManager
+from spider.common.dealRecordModel import *
 
 # NOTE：取值是 “历史成交”
 global_name = '华宝证券'
@@ -94,7 +95,7 @@ class huabaoSpider:
 
     def get(self):
         # 模型字段数组
-        all_model_keys = ['id', 'date', 'code', 'name', 'dealType', 'nav_unit', 'nav_acc', 'volume', 'dealMoney', 'fee', 'occurMoney', 'account', 'category1', 'category2', 'category3', 'categoryId', 'note']
+        all_model_keys = dealRecordModelKeys()
         records = []
         others = []
         for x in self.needed_df.values:
@@ -110,7 +111,7 @@ class huabaoSpider:
                 item['occurMoney'] = item['dealMoney'] - item['fee']
             item['occurMoney'] = round(float(item['occurMoney']), 2)
             if item['dealType'] in ['买入','卖出']:
-                categoryInfo = self.categoryManager.getCategory(item['code'])
+                categoryInfo = self.categoryManager.getCategoryByCode(item['code'])
                 if categoryInfo != {}:
                     item['category1'] = categoryInfo['category1']
                     item['category2'] = categoryInfo['category2']

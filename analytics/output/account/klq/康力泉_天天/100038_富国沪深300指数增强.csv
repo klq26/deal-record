@@ -1,0 +1,6 @@
+,id,date,code,name,dealType,nav_unit,nav_acc,volume,dealMoney,fee,occurMoney,account,category1,category2,category3,categoryId,note
+0,221,2018-09-28,100038,富国沪深300指数增强,买入,1.713,1.713,3731.66,6392.33,7.67,6400.0,康力泉_天天,A 股,大盘股,沪深300,113,https://query.1234567.com.cn/Query/Detail?id=2067ff62d9e446dab57a0c2f0813790f&businType=22&traceNo=2067ff62d9e446dab57a0c2f0813790f
+1,232,2018-10-30,100038,富国沪深300指数增强,买入,1.565,1.565,4084.56,6392.33,7.67,6400.0,康力泉_天天,A 股,大盘股,沪深300,113,https://query.1234567.com.cn/Query/Detail?id=f3f77d8c5c6a48e9aa3d35e6619afe74&businType=22&traceNo=f3f77d8c5c6a48e9aa3d35e6619afe74
+2,240,2018-11-16,100038,富国沪深300指数增强,分红,1.461,1.621,855.99,0.0,0.0,0.0,康力泉_天天,A 股,大盘股,沪深300,113,https://query.1234567.com.cn/Query/Detail?id=20181116103030055245546&businType=143&traceNo=
+3,257,2019-01-31,100038,富国沪深300指数增强,买入,1.46,1.62,4378.31,6392.33,7.67,6400.0,康力泉_天天,A 股,大盘股,沪深300,113,https://query.1234567.com.cn/Query/Detail?id=edaf0342b22b466cb8c646cb109111bc&businType=22&traceNo=edaf0342b22b466cb8c646cb109111bc
+4,469,2019-09-18,100038,富国沪深300指数增强,分红,1.625,1.981,1574.09,0.0,0.0,0.0,康力泉_天天,A 股,大盘股,沪深300,113,https://query.1234567.com.cn/Query/Detail?id=20190918103030076760114&businType=143&traceNo=

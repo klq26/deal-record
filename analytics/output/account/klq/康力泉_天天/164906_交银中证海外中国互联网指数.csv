@@ -1,0 +1,3 @@
+,id,date,code,name,dealType,nav_unit,nav_acc,volume,dealMoney,fee,occurMoney,account,category1,category2,category3,categoryId,note
+0,239,2018-11-15,164906,交银中证海外中国互联网指数,买入,1.158,1.158,11040.29,12784.66,15.34,12800.0,康力泉_天天,海外新兴,海外互联,海外互联网,221,https://query.1234567.com.cn/Query/Detail?id=28b38bc89af8425ab1452dc0419fb40a&businType=22&traceNo=28b38bc89af8425ab1452dc0419fb40a
+1,330,2019-05-30,164906,交银中证海外中国互联网指数,买入,1.114,1.114,5738.18,6392.33,7.67,6400.0,康力泉_天天,海外新兴,海外互联,海外互联网,221,https://query.1234567.com.cn/Query/Detail?id=1d9dcde57a3f462a947510a2c430d370&businType=22&traceNo=1d9dcde57a3f462a947510a2c430d370

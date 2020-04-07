@@ -14,6 +14,7 @@ import pandas as pd
 from login.requestHeaderManager import requestHeaderManager
 from category.categoryManager import categoryManager
 from database.fundDBHelper import fundDBHelper
+from spider.common.dealRecordModel import *
 
 global_name = '且慢'
 
@@ -50,7 +51,7 @@ class qiemanSpider:
         print('且慢：{0} 获取中..'.format(self.owner))
         db = fundDBHelper()
         index = 0
-        all_model_keys = ['id', 'date', 'code', 'name', 'dealType', 'nav_unit', 'nav_acc', 'volume', 'dealMoney', 'fee', 'occurMoney', 'account', 'category1', 'category2', 'category3', 'categoryId', 'note']
+        all_model_keys = dealRecordModelKeys()
         # 取 500 条
         for plan in self.plan_list:
             folder = os.path.join(self.folder, 'debug', self.owner, 'tradelist')
@@ -175,13 +176,14 @@ class qiemanSpider:
                             all_model_values.append(fee)
                             all_model_values.append(occurMoney)
                             all_model_values.append(self.owner + '_' + global_name + '_' + plan['name'])
-                            categoryInfo = self.categoryManager.getCategory(all_model_values[2])
+                            categoryInfo = self.categoryManager.getCategoryByCode(all_model_values[2])
                             if categoryInfo != {}:
                                 all_model_values.append(categoryInfo['category1'])
                                 all_model_values.append(categoryInfo['category2'])
                                 all_model_values.append(categoryInfo['category3'])
                                 all_model_values.append(categoryInfo['categoryId'])
-                            all_model_values.append(plan_name + '_' + order['orderId'])
+                            # all_model_values.append(plan_name + '_' + order['orderId'])
+                            all_model_values.append('https://qieman.com/orders/' + item['orderId'] + '子编号：' + order['orderId'])
                             itemDict = dict(zip(all_model_keys, all_model_values))
                             self.results.append(itemDict)
         if os.path.exists(os.path.join(self.folder, 'input', '{0}_addition.json'.format(self.owner))):

@@ -1,3 +1,0 @@
-,id,date,code,name,dealType,nav_unit,nav_acc,volume,dealMoney,fee,occurMoney,account,category1,category2,category3,categoryId,note
-14,15,2015-11-05,000017,深中华A,买入,11.5,11.5,800.0,9200.0,5.0,9205.0,华泰证券,A 股,股票,股票,151,无
-15,16,2015-11-09,000017,深中华A,卖出,11.91,11.91,800.0,9528.0,14.53,9513.47,华泰证券,A 股,股票,股票,151,无

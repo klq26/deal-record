@@ -18,6 +18,7 @@ import pandas as pd
 from login.requestHeaderManager import requestHeaderManager
 from category.categoryManager import categoryManager
 from database.fundDBHelper import fundDBHelper
+from spider.common.dealRecordModel import *
 
 global_name = '天天'
 
@@ -86,7 +87,7 @@ class tiantianSpider:
             orderJsonList = json.loads(f.read())
             # [print(x) for x in orderJsonList]
         # 输出 record
-        all_model_keys = ['id', 'date', 'code', 'name', 'dealType', 'nav_unit', 'nav_acc', 'volume', 'dealMoney', 'fee', 'occurMoney', 'account', 'category1', 'category2', 'category3', 'categoryId', 'note']
+        all_model_keys = dealRecordModelKeys()
         index = 0
         # 这是2020年3月31日从历史记录中提取的所有可能的操作名称，如果不在这个之中，应该中断程序，查看原因，升级代码，防止录入错误的交易记录。
         # 快速过户 = 快速取现金到银行卡，忽略
@@ -181,7 +182,7 @@ class tiantianSpider:
             all_model_values.append(round(float(fee), 2))
             all_model_values.append(round(float(occurMoney), 2))
             all_model_values.append(self.owner + '_' + global_name)
-            categoryInfo = self.categoryManager.getCategory(all_model_values[2])
+            categoryInfo = self.categoryManager.getCategoryByCode(all_model_values[2])
             if categoryInfo != {}:
                 all_model_values.append(categoryInfo['category1'])
                 all_model_values.append(categoryInfo['category2'])

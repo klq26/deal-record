@@ -1,0 +1,3 @@
+,id,date,code,name,dealType,nav_unit,nav_acc,volume,dealMoney,fee,occurMoney,account,category1,category2,category3,categoryId,note
+0,236,2018-10-30,110026,易方达创业板ETF联接A,买入,1.3342,1.3342,4791.13,6392.33,7.67,6400.0,康力泉_天天,A 股,中小盘股,创业板,124,https://query.1234567.com.cn/Query/Detail?id=ae2c6d3f40b04af290ff6eabb0350e8f&businType=22&traceNo=ae2c6d3f40b04af290ff6eabb0350e8f
+1,545,2019-12-02,110026,易方达创业板ETF联接A,卖出,1.7296,1.7296,4791.13,8266.02,20.72,8245.3,康力泉_天天,A 股,中小盘股,创业板,124,https://query.1234567.com.cn/Query/Detail?id=a89bfebf62684c02b5dbc1c39977051e&businType=812&traceNo=ffa38d566ec84c2ea9c5d8eaf292206e

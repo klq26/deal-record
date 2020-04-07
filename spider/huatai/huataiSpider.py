@@ -8,6 +8,7 @@ import numpy as np
 
 from category.categoryManager import categoryManager
 from spider.huatai.huataiHistory import huataiHistory
+from spider.common.dealRecordModel import *
 
 # NOTE：取值是 “资金流水”
 global_name = '华泰证券'
@@ -94,7 +95,7 @@ class huataiSpider:
 
     def get(self):
         # 模型字段数组
-        all_model_keys = ['id', 'date', 'code', 'name', 'dealType', 'nav_unit', 'nav_acc', 'volume', 'dealMoney', 'fee', 'occurMoney', 'account', 'category1', 'category2', 'category3', 'categoryId', 'note']
+        all_model_keys = dealRecordModelKeys()
         records = []
         moneyfunds = []
         others = []
@@ -119,7 +120,7 @@ class huataiSpider:
             if item['code'] == ' ' or item['name'] == ' ':
                 others.append(item)
             else:
-                categoryInfo = self.categoryManager.getCategory(item['code'])
+                categoryInfo = self.categoryManager.getCategoryByCode(item['code'])
                 if categoryInfo != {}:
                     item['category1'] = categoryInfo['category1']
                     item['category2'] = categoryInfo['category2']

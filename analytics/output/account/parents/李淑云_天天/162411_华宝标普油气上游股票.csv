@@ -1,0 +1,6 @@
+,id,date,code,name,dealType,nav_unit,nav_acc,volume,dealMoney,fee,occurMoney,account,category1,category2,category3,categoryId,note
+0,54,2018-11-30,162411,华宝标普油气上游股票,买入,0.567,0.567,704.41,399.4,0.6,400.0,李淑云_天天,商品,商品,原油,613,https://query.1234567.com.cn/Query/Detail?id=f131e96b79a242efb6b48bebcbc20ad4&businType=22&traceNo=
+1,65,2018-12-27,162411,华宝标普油气上游股票,买入,0.467,0.467,855.25,399.4,0.6,400.0,李淑云_天天,商品,商品,原油,613,https://query.1234567.com.cn/Query/Detail?id=3a48478a93994dd89e8720c7d19f7105&businType=22&traceNo=
+2,83,2019-03-28,162411,华宝标普油气上游股票,买入,0.519,0.519,769.56,399.4,0.6,400.0,李淑云_天天,商品,商品,原油,613,https://query.1234567.com.cn/Query/Detail?id=6293880ccf3e4754996d110e5e3b07c7&businType=22&traceNo=6293880ccf3e4754996d110e5e3b07c7
+3,483,2019-11-01,162411,华宝标普油气上游股票,买入,0.391,0.391,1021.48,399.4,0.6,400.0,李淑云_天天,商品,商品,原油,613,https://query.1234567.com.cn/Query/Detail?id=10d608ebdb984651822362972959c915&businType=22&traceNo=10d608ebdb984651822362972959c915
+4,658,2020-02-04,162411,华宝标普油气上游股票人民币A,买入,0.3355,0.3355,1190.46,399.4,0.6,400.0,李淑云_天天,商品,商品,原油,613,https://query.1234567.com.cn/Query/Detail?id=ac9057d5d53b4126bdae71ef0af64315&businType=22&traceNo=

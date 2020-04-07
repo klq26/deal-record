@@ -1,0 +1,10 @@
+,id,date,code,name,dealType,nav_unit,nav_acc,volume,dealMoney,fee,occurMoney,account,category1,category2,category3,categoryId,note
+0,58,2016-05-11,161725,招商中证白酒指数分级,买入,0.882,0.897,566.33,499.5,0.5,500.0,康力泉_天天,A 股,行业股,全指消费,148,https://query.1234567.com.cn/Query/Detail?id=fdb0dbf1fbd246dc88cfcab1547a1fcb&businType=22&traceNo=
+1,63,2016-05-27,161725,招商中证白酒指数分级,卖出,0.844,0.859,566.33,475.59,2.39,473.2,康力泉_天天,A 股,行业股,全指消费,148,https://query.1234567.com.cn/Query/Detail?id=2362d357ea9743e4b12531160ce0593f&businType=24&traceNo=
+2,872,2020-03-19,161725,招商中证白酒指数,买入,0.811,1.9371,41.05,33.32,0.03,33.35,李淑云_蛋卷_螺丝钉指数基金组合,A 股,行业股,全指消费,148,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=209763077437501440
+3,767,2020-03-19,161725,招商中证白酒指数,买入,0.811,1.9371,102.6,83.29,0.08,83.37,康力泉_蛋卷_螺丝钉指数基金组合,A 股,行业股,全指消费,148,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=209762798105243648
+4,778,2020-03-23,161725,招商中证白酒指数,买入,0.8126,1.9387,102.38,83.27,0.08,83.35,康力泉_蛋卷_螺丝钉指数基金组合,A 股,行业股,全指消费,148,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=211214463362637824
+5,875,2020-03-23,161725,招商中证白酒指数,买入,0.8126,1.9387,61.42,49.96,0.05,50.01,李淑云_蛋卷_螺丝钉指数基金组合,A 股,行业股,全指消费,148,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=211214896852344833
+6,788,2020-03-30,161725,招商中证白酒指数,买入,0.8703,1.9964,95.63,83.31,0.08,83.39,康力泉_蛋卷_螺丝钉指数基金组合,A 股,行业股,全指消费,148,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=213744003305676800
+7,891,2020-03-30,161725,招商中证白酒指数,买入,0.8703,1.9964,38.25,33.32,0.03,33.35,康世海_蛋卷_螺丝钉指数基金组合,A 股,行业股,全指消费,148,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=213747069139525632
+8,884,2020-03-30,161725,招商中证白酒指数,买入,0.8703,1.9964,38.25,33.32,0.03,33.35,李淑云_蛋卷_螺丝钉指数基金组合,A 股,行业股,全指消费,148,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=213747243622572032

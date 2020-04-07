@@ -1,0 +1,12 @@
+,id,date,code,name,dealType,nav_unit,nav_acc,volume,dealMoney,fee,occurMoney,account,category1,category2,category3,categoryId,note
+0,114,2017-01-25,100032,富国中证红利指数增强,买入,1.107,2.492,3571.88,3954.07,5.93,3960.0,康力泉_天天,A 股,红利价值,中证红利,131,https://query.1234567.com.cn/Query/Detail?id=248f32037f32480cb4efc873015272cb&businType=22&traceNo=
+1,139,2017-05-23,100032,富国中证红利指数增强,买入,1.149,2.539,3441.31,3954.07,5.93,3960.0,康力泉_天天,A 股,红利价值,中证红利,131,https://query.1234567.com.cn/Query/Detail?id=3d024490f68d4b449180e10694e52fb9&businType=22&traceNo=
+2,153,2018-01-19,100032,富国中证红利指数增强,分红,1.215,2.825,1085.17,0.0,0.0,0.0,康力泉_天天,A 股,红利价值,中证红利,131,https://query.1234567.com.cn/Query/Detail?id=20180119103030023947177&businType=143&traceNo=
+3,163,2018-04-18,100032,富国中证红利指数增强,买入,1.092,2.687,18287.58,19970.04,29.96,20000.0,康力泉_天天,A 股,红利价值,中证红利,131,https://query.1234567.com.cn/Query/Detail?id=02808cd6503442f591e351986766eca4&businType=22&traceNo=
+4,194,2018-07-02,100032,富国中证红利指数增强,买入,1.026,2.612,6228.47,6390.41,9.59,6400.0,康力泉_天天,A 股,红利价值,中证红利,131,https://query.1234567.com.cn/Query/Detail?id=295aea73601e45319daeb2d94776d373&businType=22&traceNo=
+5,196,2018-07-05,100032,富国中证红利指数增强,买入,1.01,2.594,6327.14,6390.41,9.59,6400.0,康力泉_天天,A 股,红利价值,中证红利,131,https://query.1234567.com.cn/Query/Detail?id=66ec10c312174be18af018b9957b8b2b&businType=22&traceNo=
+6,209,2018-08-15,100032,富国中证红利指数增强,买入,1.008,2.592,6339.69,6390.41,9.59,6400.0,康力泉_天天,A 股,红利价值,中证红利,131,https://query.1234567.com.cn/Query/Detail?id=9da11f42572b42b380b8ebf3583029c3&businType=22&traceNo=
+7,231,2018-10-30,100032,富国中证红利指数增强,买入,0.958,2.536,6670.57,6390.41,9.59,6400.0,康力泉_天天,A 股,红利价值,中证红利,131,https://query.1234567.com.cn/Query/Detail?id=434053ca8ac84bed9a7e2a2354f974b2&businType=22&traceNo=434053ca8ac84bed9a7e2a2354f974b2
+8,238,2018-11-15,100032,富国中证红利指数增强,买入,0.992,2.574,6441.95,6390.41,9.59,6400.0,康力泉_天天,A 股,红利价值,中证红利,131,https://query.1234567.com.cn/Query/Detail?id=62938e001b4741b1b88283fcaedaac3e&businType=22&traceNo=62938e001b4741b1b88283fcaedaac3e
+9,249,2018-12-27,100032,富国中证红利指数增强,买入,0.958,2.536,6670.57,6390.41,9.59,6400.0,康力泉_天天,A 股,红利价值,中证红利,131,https://query.1234567.com.cn/Query/Detail?id=3f08e402c6424e25bb3b98bf86b4c88a&businType=22&traceNo=3f08e402c6424e25bb3b98bf86b4c88a
+10,699,2020-03-02,100032,富国中证红利指数增强,分红,0.984,2.689,7273.46,0.0,0.0,0.0,康力泉_天天,A 股,红利价值,中证红利,131,https://query.1234567.com.cn/Query/Detail?id=20200302103030091331442&businType=143&traceNo=

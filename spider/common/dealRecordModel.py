@@ -21,6 +21,10 @@ def dealRecordModelFromValues(values):
 def dealRecordModelKeys():
     return ['id', 'date', 'code', 'name', 'dealType', 'nav_unit', 'nav_acc', 'volume', 'dealMoney', 'fee', 'occurMoney', 'account', 'category1', 'category2', 'category3', 'categoryId', 'note']
 
+# 家庭持仓表字段键数组
+def familyHoldingDBKeys():
+    return ['id', 'date', 'code', 'name', 'status', 'holding_nav', 'holding_volume', 'holding_money', 'holding_gain', 'history_gain', 'total_cash_dividend', 'total_fee', 'account', 'category1', 'category2', 'category3', 'categoryId']
+
 class dealRecordModel:
     """
     成交记录

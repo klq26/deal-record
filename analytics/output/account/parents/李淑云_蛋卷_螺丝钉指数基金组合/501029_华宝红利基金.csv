@@ -1,0 +1,8 @@
+,id,date,code,name,dealType,nav_unit,nav_acc,volume,dealMoney,fee,occurMoney,account,category1,category2,category3,categoryId,note
+0,128,2019-04-30,501029,华宝红利基金,买入,1.0294,1.0594,33.83,34.85,0.03,34.88,李淑云_蛋卷_螺丝钉指数基金组合,A 股,红利价值,标普红利,132,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=2768783003061027357
+1,141,2019-05-07,501029,华宝红利基金,买入,0.9834,1.0134,39.79,39.17,0.04,39.21,李淑云_蛋卷_螺丝钉指数基金组合,A 股,红利价值,标普红利,132,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=2930900619371210461
+2,153,2019-05-14,501029,华宝红利基金,买入,0.9681,0.9981,39.7,38.47,0.04,38.51,李淑云_蛋卷_螺丝钉指数基金组合,A 股,红利价值,标普红利,132,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=3093359937457742031
+3,173,2019-05-21,501029,华宝红利基金,买入,0.9718,1.0018,33.78,32.86,0.03,32.89,李淑云_蛋卷_螺丝钉指数基金组合,A 股,红利价值,标普红利,132,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=3255473340555957854
+4,179,2019-05-21,501029,华宝红利基金,买入,0.9718,1.0018,40.59,39.49,0.04,39.53,李淑云_蛋卷_螺丝钉指数基金组合,A 股,红利价值,标普红利,132,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=3255448699321964700
+5,199,2019-05-28,501029,华宝红利基金,买入,0.9698,0.9998,39.83,38.67,0.04,38.71,李淑云_蛋卷_螺丝钉指数基金组合,A 股,红利价值,标普红利,132,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=3417973374177478342
+6,661,2020-02-04,501029,华宝红利基金,卖出,0.9182,0.9482,227.52,208.39,0.52,207.87,李淑云_蛋卷_螺丝钉指数基金组合,A 股,红利价值,标普红利,132,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=193772454896377856

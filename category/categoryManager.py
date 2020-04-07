@@ -17,18 +17,8 @@ class categoryManager:
     def getCategoryDataFrame(self):
         return self.category_df
 
-    def allUniqueCodes(self, df):
-        folder = os.path.abspath(os.path.dirname(__file__))
-        csv_path = os.path.join(folder, u'allUniqueCodes.csv')
-        df = df.drop_duplicates(['code'])
-        df = df.sort_values(by='code' , ascending=True)
-        df = df.reset_index(drop=True)
-        df.to_csv(csv_path, sep='\t')
-        return df
-    
-
     # 获取对应基金的类别代码
-    def getCategory(self, code):
+    def getCategoryByCode(self, code):
         result = list(self.category_df[self.category_df['基金代码'] == code].values)
         if len(result) > 0:
             result = result[0]

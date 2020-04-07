@@ -1,0 +1,4 @@
+,id,date,code,name,dealType,nav_unit,nav_acc,volume,dealMoney,fee,occurMoney,account,category1,category2,category3,categoryId,note
+0,237,2019-06-18,002903,广发中证500ETF联接C,买入,0.8404,0.8404,475.96,400.0,0.0,400.0,李淑云_天天,A 股,中小盘股,中证500,121,https://query.1234567.com.cn/Query/Detail?id=1e50219be978493984177b3e4ef01eee&businType=22&traceNo=1e50219be978493984177b3e4ef01eee
+1,281,2019-07-09,002903,广发中证500ETF联接C,卖出,0.8562,0.8562,200.0,171.24,0.0,171.24,李淑云_天天,A 股,中小盘股,中证500,121,https://query.1234567.com.cn/Query/Detail?id=11fe45b374d14621809a0962b1fa109e&businType=24&traceNo=
+2,615,2020-01-02,002903,广发中证500ETF联接C,卖出,0.934,0.934,275.96,257.75,0.0,257.75,李淑云_天天,A 股,中小盘股,中证500,121,https://query.1234567.com.cn/Query/Detail?id=44a4482e81f047648fb3ede43e39bf4c&businType=24&traceNo=

@@ -1,8 +1,0 @@
-,id,date,code,name,dealType,nav_unit,nav_acc,volume,dealMoney,fee,occurMoney,account,category1,category2,category3,categoryId,note
-21,171,2018-05-14,001061,华夏海外收益债券A,买入,1.173,1.337,10903.47,12789.77,10.23,12800.0,康力泉_天天,债券,海外债券,美元债,521,https://query.1234567.com.cn/Query/Detail?id=3f287a4484aa4ff8b344dae30b4be807&businType=22&traceNo=
-22,172,2018-05-15,001061,华夏海外收益债券A,买入,1.173,1.337,10903.47,12789.77,10.23,12800.0,康力泉_天天,债券,海外债券,美元债,521,https://query.1234567.com.cn/Query/Detail?id=29c8df025f884b7e90896b40068c7526&businType=22&traceNo=
-33,208,2018-08-15,001061,华夏海外收益债券A,卖出,1.251,1.415,5451.73,6820.11,0.0,6820.11,康力泉_天天,债券,海外债券,美元债,521,https://query.1234567.com.cn/Query/Detail?id=474a8f8782564026b7c9f38771677e4a&businType=24&traceNo=
-45,230,2018-10-30,001061,华夏海外收益债券A,卖出,1.257,1.421,5451.73,6852.82,0.0,6852.82,康力泉_天天,债券,海外债券,美元债,521,https://query.1234567.com.cn/Query/Detail?id=4a6f97b5f16f43468e9c39d19e8bd703&businType=24&traceNo=
-67,255,2019-01-15,001061,华夏收益债券(QDII)A,卖出,1.244,1.408,5451.73,6781.95,0.0,6781.95,康力泉_天天,债券,海外债券,美元债,521,https://query.1234567.com.cn/Query/Detail?id=b29d0974ab034e3caeec9f49a666eae8&businType=24&traceNo=
-80,377,2019-07-11,001061,华夏收益债券(QDII)A,分红,1.304,1.506,158.04,0.0,0.0,0.0,康力泉_天天,债券,海外债券,美元债,521,https://query.1234567.com.cn/Query/Detail?id=201907110330320190710564476850&businType=143&traceNo=
-97,722,2020-03-11,001061,华夏收益债券(QDII)A,卖出,1.319,1.521,5609.79,7399.31,0.0,7399.31,康力泉_天天,债券,海外债券,美元债,521,https://query.1234567.com.cn/Query/Detail?id=884775f6c8bf40ab887b9dd7a97617ca&businType=24&traceNo=
