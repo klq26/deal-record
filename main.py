@@ -111,6 +111,13 @@ def allFamilyHoldingSelloutStatus():
     sellout_df = sellout_df[familyHoldingDBKeys()]
     dealRecordDBHelper().insertFamilySelloutByDataFrame(sellout_df)
 
+def allFundHoldingStatus():
+    holding_df = analyticsManager().getFundHoldingStatus()
+    holding_df['id'] = [x for x in range(1, len(holding_df) + 1)]
+    # print(holding_df)
+    holding_df['account'] = u'不适用'
+    dealRecordDBHelper().insertFundHoldingByDataFrame(holding_df)
+
 # 显示库中不认识的基金代码及名称
 def showCategoryUnknownFunds(strategy = 'klq'):
     category_df = categoryManager().getCategoryDataFrame()
@@ -157,3 +164,4 @@ if __name__ == "__main__":
     # analyticsManager().getFamilyHoldingUniqueCodes()
     # analyticsManager().allFamilyHoldingSelloutStatus()
     # analyticsManager().getFundHoldingStatus()
+    allFundHoldingStatus()

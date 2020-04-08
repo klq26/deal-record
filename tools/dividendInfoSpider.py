@@ -80,12 +80,12 @@ class dividendInfoSpider:
                             items.append(itemDict)
                     jsonDict['拆分'] = items
                 results.append(jsonDict)
-        with open(os.path.join(self.folder, 'dividendInfo.json'), 'w+', encoding='utf-8') as f:
+        with open(os.path.join(self.folder, u'dividend_data', 'dividendInfo.json'), 'w+', encoding='utf-8') as f:
             f.write(json.dumps(results, ensure_ascii=False, indent=4))
         pass
 
     def insertToDB(self):
-        with open(os.path.join(self.folder, 'dividendInfo.json'), 'r', encoding='utf-8') as f:
+        with open(os.path.join(self.folder, u'dividend_data', 'dividendInfo.json'), 'r', encoding='utf-8') as f:
             db = fundDBHelper()
             datalist = json.loads(f.read())
             for data in datalist:

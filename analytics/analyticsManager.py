@@ -126,6 +126,7 @@ class analyticsManager:
         # output
         folder = os.path.join(self.folder, 'output', 'fundCode')
         holding_df.to_csv(os.path.join(folder, 'all_code_holding_status.csv'))
+        return holding_df
 
 
 if __name__ == "__main__":

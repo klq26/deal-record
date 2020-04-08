@@ -229,6 +229,13 @@ class dealRecordDBHelper:
             self.insertDataToTable('family_sellout',familyHoldingDBKeys(), values)
         pass
 
+    def insertFundHoldingByDataFrame(self, df):
+        for item in df.values:
+            values = np.array(item).tolist()
+            # print(values, type(values))
+            self.insertDataToTable('fund_holding',familyHoldingDBKeys(), values)
+        pass
+
 if __name__ == "__main__":
     db = dealRecordDBHelper()
     pass

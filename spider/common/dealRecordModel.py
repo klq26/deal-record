@@ -21,6 +21,19 @@ def dealRecordModelFromValues(values):
 def dealRecordModelKeys():
     return ['id', 'date', 'code', 'name', 'dealType', 'nav_unit', 'nav_acc', 'volume', 'dealMoney', 'fee', 'occurMoney', 'account', 'category1', 'category2', 'category3', 'categoryId', 'note']
 
+def familyHoldingModelFromValues(values):
+    keys = familyHoldingDBKeys()
+    modelDict = dict(zip(keys, values))
+    
+    # 这里对接一下数据库下的 Decmial 数据类型
+    for key in modelDict:
+        if isinstance(modelDict[key], Decimal):
+            if key == 'holding_nav':
+                modelDict[key] = round(float(modelDict[key]), 4)
+            else:
+                modelDict[key] = round(float(modelDict[key]), 2)
+    return modelDict
+
 # 家庭持仓表字段键数组
 def familyHoldingDBKeys():
     return ['id', 'date', 'code', 'name', 'status', 'holding_nav', 'holding_volume', 'holding_money', 'holding_gain', 'history_gain', 'total_cash_dividend', 'total_fee', 'account', 'category1', 'category2', 'category3', 'categoryId']
