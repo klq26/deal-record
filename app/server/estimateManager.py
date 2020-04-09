@@ -16,11 +16,11 @@ class estimateManager:
         self.folder = os.path.abspath(os.path.dirname(__file__))
 
     def esitmate(self, params):
-        output_path = os.path.join(self.folder, u'cache', 'estimate.json')
+        # output_path = os.path.join(self.folder, u'cache', 'estimate.json')
         # 测试期间走缓存
-        if os.path.exists(output_path):
-            with open(output_path,'r', encoding='utf-8') as f:
-                return json.loads(f.read())
+        # if os.path.exists(output_path):
+        #     with open(output_path,'r', encoding='utf-8') as f:
+        #         return json.loads(f.read())
         
         urls = []
         codes = []
@@ -91,8 +91,8 @@ class estimateManager:
                         failureItems[code] = {"name":name}
         # 合并
         result = {'success': successItems, 'failure': failureItems, 'total': len(successItems) + len(failureItems)}
-        with open(output_path,'w+', encoding='utf-8') as f:
-            f.write(json.dumps(result, ensure_ascii=False,indent=4))
+        # with open(output_path,'w+', encoding='utf-8') as f:
+        #     f.write(json.dumps(result, ensure_ascii=False,indent=4))
         return result
 
 # text = response.text.replace('jsonpgz(', '').replace(';', '').replace(')', '')

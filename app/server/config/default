@@ -37,8 +37,8 @@ server {
 	}
 
 	# uwsgi python 接口服务器
-	# 匹配任何以 /api/ 开始的查询并且停止搜索，不检查正则表达式。
-	location /api/ {
+	# 匹配任何以 /marketinfo/api/ 开始的查询并且停止搜索，不检查正则表达式。
+	location /marketinfo/api/ {
 
 		# 服务器支持跨域
 		add_header Access-Control-Allow-Origin '*';
@@ -47,18 +47,27 @@ server {
 
         include      uwsgi_params;
         uwsgi_pass   127.0.0.1:8081;
-		# uwsgi_pass   172.17.247.45:8081;
-    }
+	}
+
+	# uwsgi python 接口服务器
+	# 匹配任何以 /familyholding/api/ 开始的查询并且停止搜索，不检查正则表达式。
+	location /familyholding/api/ {
+
+		# 服务器支持跨域
+		add_header Access-Control-Allow-Origin '*';
+    	add_header Access-Control-Allow-Methods 'GET, POST, OPTIONS';
+    	add_header Access-Control-Allow-Headers 'DNT,X-Mx-ReqToken,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization';
+
+        include      uwsgi_params;
+        uwsgi_pass   127.0.0.1:8082;
+	}
 
 	# pass PHP scripts to FastCGI server
-	#
-	#location ~ \.php$ {
-	#	include snippets/fastcgi-php.conf;
-	#
-	#	# With php-fpm (or other unix sockets):
-	#	fastcgi_pass unix:/var/run/php/php7.0-fpm.sock;
-	#	# With php-cgi (or other tcp sockets):
-	#	fastcgi_pass 127.0.0.1:9000;
+	# PHP 服务转发，目前主要是 PHPMyAdmin
+
+	#location ~* /sql/\.(jpg|jpeg|gif|png|ico|css|js|woff|woff2|ttf|pdf|txt)$ # 里面一串为静态文件后缀，需要可继续添加。
+	#{
+	# root /var/www/php/phpmyadmin;
 	#}
 
 	# deny access to .htaccess files, if Apache's document root
@@ -67,4 +76,29 @@ server {
 	#location ~ /\.ht {
 	#	deny all;
 	#}
+}
+
+server {
+	listen 8080 default_server;
+	listen [::]:8080 default_server;
+
+	location / {
+		# 服务器支持跨域
+		add_header Access-Control-Allow-Origin '*';
+    	add_header Access-Control-Allow-Methods 'GET, POST, OPTIONS';
+    	add_header Access-Control-Allow-Headers 'DNT,X-Mx-ReqToken,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization';
+
+		root /var/www/php/phpmyadmin;
+		index index.html index.htm index.nginx-debian.html;
+		try_files $uri $uri/ =404;
+	}
+
+	location ~ \.php$ {
+
+		root /var/www/php/phpmyadmin;
+		include      fastcgi_params;
+		fastcgi_pass 127.0.0.1:9000;
+		fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+		fastcgi_index  index.php;
+	}
 }

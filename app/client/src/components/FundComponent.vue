@@ -1,8 +1,17 @@
 <template>
   <div class="container">
-    <div>{{datetime}}</div>
-    <div :class="textColorWithValue(totalDailyGain)">{{totalDailyGain}}</div>
-    <div class="cell">
+    <div style="color:#FFF; margin:4px 2px;">{{datetime}}</div>
+    <div class="sumcontainer">
+      <div class="sumcell" v-for="item in categorys" :key="item.index">
+        <div class="categoryTitle">{{item}}</div>
+        <div class="categorySum" :class="textColorWithValue(sum(item))">{{sum(item)}}</div>
+      </div>
+    </div>
+    <div>
+      <div style="color:#FFF;margin:4px 2px;display:inline-block;">总收益：</div>
+      <div style="margin:4px 2px;display:inline-block;" :class="textColorWithValue(totalDailyGain)">{{totalDailyGain}}</div>
+    </div>
+    <div class="fundcell">
       <p class="fundcode title">代码</p>
       <p class="fundname title">名称</p>
       <p class="fundnav title">成本</p>
@@ -10,13 +19,15 @@
       <p class="dailyChangeRate title">涨跌</p>
       <p class="dailyChange title">盈亏</p>
     </div>
-    <div class="cell border" v-for="item in holdings" :key="item.index">
+    <div class="fundcell border" v-for="item in holdings" :key="item.index">
       <p class="fundcode" :class="categoryColorWithValue(item)">{{item.code}}</p>
       <p class="fundname" :class="categoryColorWithValue(item)">{{item.name}}</p>
-      <p class="fundnav">{{item.holding_nav}}</p>
+      <p class="fundnav" :class="navColorWithValue(item)" >{{item.holding_nav}}</p>
+      <div class="fundcell" :class="{flash : isUpdating}">
       <p class="fundnav">{{item.estimate_nav}}</p>
       <p class="dailyChangeRate" :class="textColorWithValue(item.estimate_rate)">{{item.estimate_rate}}</p>
       <p class="dailyChange" :class="textColorWithValue(item.dailyChange)">{{item.dailyChange}}</p>
+      </div>
     </div>
   </div>
 </template>
@@ -33,7 +44,8 @@ export default {
     },
     estimates: {},
     datetime: 'time',
-    totalDailyGain: 0
+    totalDailyGain: 0,
+    isUpdating: true
   },
   methods: {
     updateTime () {
@@ -63,24 +75,35 @@ export default {
         return 'fall-text-color'
       }
     },
+    navColorWithValue (item) {
+      var esti_nav = parseFloat(item.estimate_nav)
+      var holding_nav = parseFloat(item.holding_nav)
+      if (holding_nav < esti_nav) {
+        return 'rise-text-color'
+      } else if (holding_nav === esti_nav) {
+        return 'normal-text-color'
+      } else {
+        return 'fall-text-color'
+      }
+    },
     // 基金所属不同分类底色，及场内基金名称标红
-    categoryColorWithValue(item) {
+    categoryColorWithValue (item) {
       var bgClass = "categorybg"
       if (item.market === '场内') {
         bgClass = "innerFundText " + "categorybg"
       }
       switch(item.category1) {
-        case "A 股":
+        case this.categorys[0]:
           return bgClass + 1
-        case "海外新兴":
+        case this.categorys[1]:
           return bgClass + 2
-        case "海外成熟":
+        case this.categorys[2]:
           return bgClass + 3
-        case "混合":
+        case this.categorys[3]:
           return bgClass + 4
-        case "债券":
+        case this.categorys[4]:
           return bgClass + 5
-        case "商品":
+        case this.categorys[5]:
           return bgClass + 6
         case "冻结资金":
           return bgClass + 7
@@ -89,11 +112,31 @@ export default {
         default:
           return bgClass + 8
       }
+    },
+    sum (category1) {
+      var total = 0.0
+      console.log(this.holdings.length)
+      for (var i in this.holdings) {
+        var holding = this.holdings[i]
+        console.log(holding.category1, category1)
+        if (holding.category1 === category1) {
+          total = total + parseFloat(holding.dailyChange)
+          console.log(total)
+        }
+      }
+      return total.toFixed(2)
     }
   },
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      categorys: [
+        "A 股",
+        "海外新兴",
+        "海外成熟",
+        "混合型",
+        "债券",
+        "商品"
+      ],
     }
   },
   created: function () {
@@ -136,10 +179,10 @@ export default {
         // 格式化
         this.totalDailyGain = parseFloat(this.totalDailyGain).toFixed(2)
         
-        // this.isUpdating = true
-        // setTimeout(() => {
-        //   this.isUpdating = false
-        // }, 1500)
+        this.isUpdating = true
+        setTimeout(() => {
+          this.isUpdating = false
+        }, 1500)
         this.updateTime()
       },
       immediate: true,
@@ -151,16 +194,6 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
-.normal-text-color {
-  color: #F0F0F0;
-}
-.rise-text-color {
-  color: #DD2200;
-}
-.fall-text-color {
-  color: #009933;
-}
 
 /* A 股 */
 .categorybg1 {
@@ -195,7 +228,37 @@ export default {
   background-color: #F0DC5A;
 }
 
-.cell {
+.categoryTitle {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  width: 65px;
+  color: #FFFFFF;
+  background-color: #333333;
+}
+
+.categorySum {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  width: 65px;
+  background-color: #333333;
+}
+
+.sumcell {
+  display: inline-flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction: column;
+  width: 50%;
+}
+
+.sumcontainer {
+  display: flex;
+  width: 424px;
+}
+
+.fundcell {
   display: inline-flex;
   background-color: #000000;
 }
@@ -203,7 +266,7 @@ export default {
 .container {
   display: inline-flex;
   flex-direction: column;
-  background-color: #DDDDD0;
+  background-color: #000000;
 }
 
 .fundcode {
@@ -273,6 +336,16 @@ export default {
   background-color: #333333;
 }
 
+.normal-text-color {
+  color: #F0F0F0;
+}
+.rise-text-color {
+  color: #DD2200;
+}
+.fall-text-color {
+  color: #009933;
+}
+
 /* CSS 声明顺序很关键。后面声明的会覆盖前面声明的，不管你再 class 赋值处的先后顺序如何 */
 .title {
   justify-content:center;
@@ -285,6 +358,18 @@ export default {
 /* 场内基金提高辨识度 */
 .innerFundText {
   color: #CC0000;
+}
+
+.flash {
+  animation: flash 1.2s;
+}
+
+@keyframes flash {
+  0% { opacity: 1;}
+  25% { opacity: 0;}
+  50% { opacity: 1;}
+  75% { opacity: 0;}
+  100% {opacity: 1;}
 }
 
 </style>

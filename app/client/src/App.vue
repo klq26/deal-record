@@ -15,7 +15,7 @@ Vue.prototype.$axios = axios
 Vue.config.productionTip = false
 
 var serverIp = 'http://112.125.25.230/'
-serverIp = 'http://127.0.0.1:5000/'
+// serverIp = 'http://127.0.0.1:5000/'
 
 export default {
   name: 'App',
@@ -29,14 +29,14 @@ export default {
   methods: {
     familyHolding () {
       var that = this
-      axios.get(serverIp + 'api/family_holding?type=1').then(function (response) {
-        that.holdings = response.data
+      axios.get(serverIp + 'familyholding/api/holding?type=1').then(function (response) {
+        that.holdings = response.data.data
       })
     },
     familyEstimate () {
       var that = this
-      axios.get(serverIp + 'api/family_estimate').then(function (response) {
-        that.estimates = response.data
+      axios.get(serverIp + 'familyholding/api/estimate').then(function (response) {
+        that.estimates = response.data.data
       })
     }
   },
@@ -51,11 +51,7 @@ export default {
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
