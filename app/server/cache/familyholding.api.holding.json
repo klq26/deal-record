@@ -1,5 +1,5 @@
 {
-    "aliyun_date": "2020/04/09 09:38:59",
+    "aliyun_date": "2020/04/09 18:58:42",
     "code": 0,
     "data": [
         {
@@ -792,8 +792,8 @@
             "history_gain": 0.0,
             "holding_gain": 98.6,
             "holding_money": 9983.5,
-            "holding_nav": 0.832,
-            "holding_volume": 12000.0,
+            "holding_nav": 0.802,
+            "holding_volume": 9000.0,
             "id": 42,
             "name": "日经ETF",
             "status": "卖出",
@@ -1029,7 +1029,7 @@
             "total_fee": 10.15
         }
     ],
-    "duration": 0.0791,
+    "duration": 0.0901,
     "isCache": false,
     "msg": "success"
 }

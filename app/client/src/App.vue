@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <FundComponent :holdings="holdings" :estimates="estimates"/>
+    <FundComponent :holdings="holdings" :estimates="estimates" :countdown="countdown"/>
   </div>
 </template>
 
@@ -22,10 +22,13 @@ export default {
   components: {
     FundComponent
   },
-  props: [
-    'holdings',
-    'estimates'
-  ],
+  data () {
+    return {
+      holdings: [],
+      estimates: {},
+      countdown: 5 * 60
+    }
+  },
   methods: {
     familyHolding () {
       var that = this
@@ -42,9 +45,13 @@ export default {
   },
   created: function () {
     this.familyHolding()
-    this.familyEstimate()
+    var that = this
+    // 给首次估值一个 250 毫秒的延迟执行，防止后者先回来，没有更新页面
+    setTimeout(() => {
+      that.familyEstimate()
+    }, 250)
     // 每 5 分钟估值一次
-    setInterval(this.familyEstimate, 5 * 60 * 1000)
+    setInterval(this.familyEstimate, this.countdown * 1000)
   }
 }
 </script>

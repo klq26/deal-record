@@ -1,32 +1,46 @@
 <template>
-  <div class="container">
-    <div style="color:#FFF; margin:4px 2px;">{{datetime}}</div>
+  <div class="container" @click="showDaily = !showDaily">
+    <div style="display:flex;width:100%;">
+      <!-- 时间 -->
+      <div style="display:inline-block; color:#FFF; margin:4px 2px; width:50%;">{{datetime}}</div>
+      <!-- 倒计时 -->
+      <div style="display:flex; justify-content:flex-end; color:#FFF; margin:4px 2px; width:50%;">距下次更新约 {{myCountdown}} 秒</div>
+    </div>
+    <!-- 整体情况 -->
+    <div>
+      <div style="color:#FFF;margin:4px 2px;display:inline-block;" v-show="showDaily">日收益</div>
+      <div style="margin:4px 2px;display:inline-block;" :class="textColorWithValue(totalDailyGain)" v-show="showDaily">{{totalDailyGain}}</div>
+      <div style="color:#FFF;margin:4px 2px;display:inline-block;" v-show="!showDaily">总收益</div>
+      <div style="margin:4px 2px;display:inline-block;" :class="textColorWithValue(totalHoldingGain)" v-show="!showDaily">{{totalHoldingGain}}</div>
+    </div>
+    <!-- 分类汇总 -->
     <div class="sumcontainer">
       <div class="sumcell" v-for="item in categorys" :key="item.index">
         <div class="categoryTitle">{{item}}</div>
         <div class="categorySum" :class="textColorWithValue(sum(item))">{{sum(item)}}</div>
       </div>
     </div>
-    <div>
-      <div style="color:#FFF;margin:4px 2px;display:inline-block;">总收益：</div>
-      <div style="margin:4px 2px;display:inline-block;" :class="textColorWithValue(totalDailyGain)">{{totalDailyGain}}</div>
-    </div>
+    <!-- 基金详情 -->
     <div class="fundcell">
       <p class="fundcode title">代码</p>
       <p class="fundname title">名称</p>
       <p class="fundnav title">成本</p>
       <p class="fundnav title">估值</p>
-      <p class="dailyChangeRate title">涨跌</p>
-      <p class="dailyChange title">盈亏</p>
+      <p class="dailyChangeRate title" v-show="showDaily">日涨跌</p>
+      <p class="dailyChange title" v-show="showDaily">日盈亏</p>
+      <p class="dailyChangeRate title" v-show="!showDaily">总涨跌</p>
+      <p class="dailyChange title" v-show="!showDaily">总盈亏</p>
     </div>
-    <div class="fundcell border" v-for="item in holdings" :key="item.index">
+    <div class="fundcell border" v-for="item in myHoldings" :key="item.index">
       <p class="fundcode" :class="categoryColorWithValue(item)">{{item.code}}</p>
       <p class="fundname" :class="categoryColorWithValue(item)">{{item.name}}</p>
       <p class="fundnav" :class="navColorWithValue(item)" >{{item.holding_nav}}</p>
       <div class="fundcell" :class="{flash : isUpdating}">
       <p class="fundnav">{{item.estimate_nav}}</p>
-      <p class="dailyChangeRate" :class="textColorWithValue(item.estimate_rate)">{{item.estimate_rate}}</p>
-      <p class="dailyChange" :class="textColorWithValue(item.dailyChange)">{{item.dailyChange}}</p>
+      <p class="dailyChangeRate" :class="textColorWithValue(item.estimate_rate)" v-show="showDaily">{{item.estimate_rate}}</p>
+      <p class="dailyChange" :class="textColorWithValue(item.dailyChange)" v-show="showDaily">{{item.dailyChange}}</p>
+      <p class="dailyChangeRate" :class="textColorWithValue(item.total_estimate_rate)" v-show="!showDaily">{{item.total_estimate_rate}}</p>
+      <p class="dailyChange" :class="textColorWithValue(item.totalChange)" v-show="!showDaily">{{item.totalChange}}</p>
       </div>
     </div>
   </div>
@@ -35,18 +49,11 @@
 <script>
 export default {
   name: 'FundComponent',
-  props: {
-    holdings: {
-      type: Array,
-      default () {
-        return []
-      }
-    },
-    estimates: {},
-    datetime: 'time',
-    totalDailyGain: 0,
-    isUpdating: true
-  },
+  props: [
+    'holdings',
+    'estimates',
+    'countdown'
+  ],
   methods: {
     updateTime () {
       var date = new Date()
@@ -56,9 +63,10 @@ export default {
       var hh = this.prefixInteger(date.getHours(), 2)
       var mi = this.prefixInteger(date.getMinutes(), 2)
       var ss = this.prefixInteger(date.getSeconds(), 2)
-      var dayTag = '日一二三四五六'.charAt(date.getDay())
-      var wk = '周' + dayTag
       this.datetime = year + '-' + month + '-' + day + ' ' + hh + ':' + mi + ':' + ss + ' '
+      if (this.myCountdown > 0) {
+        this.myCountdown = this.myCountdown - 1
+      }
     },
     // 时间前置补 0
     prefixInteger (num, length) {
@@ -76,11 +84,11 @@ export default {
       }
     },
     navColorWithValue (item) {
-      var esti_nav = parseFloat(item.estimate_nav)
-      var holding_nav = parseFloat(item.holding_nav)
-      if (holding_nav < esti_nav) {
+      var estiNav = parseFloat(item.estimate_nav)
+      var holdingNav = parseFloat(item['holding_nav'])
+      if (holdingNav < estiNav) {
         return 'rise-text-color'
-      } else if (holding_nav === esti_nav) {
+      } else if (holdingNav === estiNav) {
         return 'normal-text-color'
       } else {
         return 'fall-text-color'
@@ -88,11 +96,11 @@ export default {
     },
     // 基金所属不同分类底色，及场内基金名称标红
     categoryColorWithValue (item) {
-      var bgClass = "categorybg"
+      var bgClass = 'categorybg'
       if (item.market === '场内') {
-        bgClass = "innerFundText " + "categorybg"
+        bgClass = 'innerFundText ' + 'categorybg'
       }
-      switch(item.category1) {
+      switch (item.category1) {
         case this.categorys[0]:
           return bgClass + 1
         case this.categorys[1]:
@@ -105,9 +113,9 @@ export default {
           return bgClass + 5
         case this.categorys[5]:
           return bgClass + 6
-        case "冻结资金":
+        case '冻结资金':
           return bgClass + 7
-        case "现金":
+        case '现金':
           return bgClass + 8
         default:
           return bgClass + 8
@@ -115,25 +123,37 @@ export default {
     },
     sum (category1) {
       var total = 0.0
-      for (var i in this.holdings) {
-        var holding = this.holdings[i]
+      for (var i in this.myHoldings) {
+        var holding = this.myHoldings[i]
         if (holding.category1 === category1) {
-          total = total + parseFloat(holding.dailyChange)
+          if (this.showDaily) {
+            total = total + parseFloat(holding.dailyChange)
+          } else {
+            total = total + parseFloat(holding.totalChange)
+          }
         }
       }
-      return total.toFixed(2)
+      return total.toFixed(1)
     }
   },
   data () {
     return {
       categorys: [
-        "A 股",
-        "海外新兴",
-        "海外成熟",
-        "混合型",
-        "债券",
-        "商品"
+        'A 股',
+        '海外新兴',
+        '海外成熟',
+        '混合型',
+        '债券',
+        '商品'
       ],
+      showDaily: true,
+      myCountdown: this.countdown,
+      datetime: 'time',
+      totalDailyGain: 0,
+      totalHoldingGain: 0,
+      isUpdating: true,
+      myEstimates: this.estimates,
+      myHoldings: this.holdings
     }
   },
   created: function () {
@@ -141,41 +161,65 @@ export default {
     setInterval(this.updateTime, 1 * 1000)
   },
   watch: {
+    countdown: {
+      handler (newValue, oldValue) {
+        this.myCountdown = newValue
+      },
+      immediate: true,
+      deep: false
+    },
+    holdings: {
+      handler (newValue, oldValue) {
+        this.myHoldings = this.holdings
+      },
+      immediate: true,
+      deep: true
+    },
     estimates: {
       handler (newValue, oldValue) {
         if (typeof (newValue) === 'undefined') {
           return
         }
+        this.myEstimates = newValue
+        // 5 分钟
+        this.countdown = 300
         this.totalDailyGain = 0.0
-        for (var index in this.holdings) {
-          var fundItem = this.holdings[index]
+        this.totalHoldingGain = 0.0
+        for (var index in this.myHoldings) {
+          var fundItem = this.myHoldings[index]
           var code = fundItem.code
           // 拿估值
-          for (var key in this.estimates.success) {
+          for (var key in this.myEstimates.success) {
             if (key === code) {
-              var estiItem = this.estimates.success[key]
+              var estiItem = this.myEstimates.success[key]
+              fundItem['market'] = estiItem.market
               fundItem['estimate_nav'] = estiItem.gsz
               fundItem['estimate_rate'] = parseFloat(estiItem.gszzl).toFixed(2) + '%'
+              // 今天数据
               fundItem['dailyChange'] = ((parseFloat(estiItem.gsz) - parseFloat(estiItem.dwjz)) * fundItem.holding_volume).toFixed(2)
-              fundItem['market'] = estiItem.market
               this.totalDailyGain = this.totalDailyGain + parseFloat(fundItem.dailyChange)
+              // 整体数据
+              fundItem['total_estimate_rate'] = ((parseFloat(estiItem.gsz) / parseFloat(fundItem.holding_nav) - 1) * 100).toFixed(2) + '%'
+              fundItem['totalChange'] = ((parseFloat(estiItem.gsz) - parseFloat(fundItem.holding_nav)) * fundItem.holding_volume).toFixed(2)
+              this.totalHoldingGain = this.totalHoldingGain + parseFloat(fundItem.totalChange)
               break
             }
           }
           // 失败？
-          for (var key in this.estimates.failure) {
-            if (key === code) {
-              var estiItem = this.estimates.success[key]
+          for (var key2 in this.myEstimates.failure) {
+            if (key2 === code) {
               fundItem['estimate_nav'] = '暂无'
               fundItem['estimate_rate'] = '0.00%'
               fundItem['dailyChange'] = parseFloat(0.00).toFixed(2)
+              fundItem['total_estimate_rate'] = '0.00%'
+              fundItem['totalChange'] = parseFloat(0.00).toFixed(2)
               break
             }
           }
         }
         // 格式化
         this.totalDailyGain = parseFloat(this.totalDailyGain).toFixed(2)
-        
+        this.myCountdown = this.countdown
         this.isUpdating = true
         setTimeout(() => {
           this.isUpdating = false
@@ -229,7 +273,7 @@ export default {
   display: flex;
   justify-content:center;
   align-items: center;
-  width: 65px;
+  width: 72px;
   color: #FFFFFF;
   background-color: #333333;
 }
@@ -238,7 +282,7 @@ export default {
   display: flex;
   justify-content:center;
   align-items: center;
-  width: 65px;
+  width: 72px;
   background-color: #333333;
 }
 
@@ -252,7 +296,7 @@ export default {
 
 .sumcontainer {
   display: flex;
-  width: 424px;
+  width: 100%;
 }
 
 .fundcell {
@@ -312,7 +356,7 @@ export default {
   align-items: center;
   margin: 1px;
   padding: 1px 2px;
-  width: 50px;
+  width: 65px;
   height: 25px;
   font-size: 16px;
   text-align: right;
@@ -326,7 +370,7 @@ export default {
   align-items: center;
   margin: 1px;
   padding: 1px;
-  width: 70px;
+  width: 80px;
   height: 25px;
   font-size: 16px;
   text-align: right;
