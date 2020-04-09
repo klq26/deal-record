@@ -115,13 +115,10 @@ export default {
     },
     sum (category1) {
       var total = 0.0
-      console.log(this.holdings.length)
       for (var i in this.holdings) {
         var holding = this.holdings[i]
-        console.log(holding.category1, category1)
         if (holding.category1 === category1) {
           total = total + parseFloat(holding.dailyChange)
-          console.log(total)
         }
       }
       return total.toFixed(2)
