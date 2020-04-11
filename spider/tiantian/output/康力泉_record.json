@@ -1634,7 +1634,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=20190918103030076760114&businType=143&traceNo="
     },
     {
-        "id": 91,
+        "id": 87,
         "date": "2019-09-20",
         "code": "161017",
         "name": "富国中证500指数(LOF)",
@@ -1653,7 +1653,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=201909209898190919303000607263&businType=143&traceNo="
     },
     {
-        "id": 92,
+        "id": 88,
         "date": "2019-09-25",
         "code": "000071",
         "name": "华夏恒生ETF联接A",
@@ -1672,7 +1672,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=136d7f73b1894bbd835a0b24b219aa38&businType=22&traceNo=136d7f73b1894bbd835a0b24b219aa38"
     },
     {
-        "id": 93,
+        "id": 89,
         "date": "2019-12-02",
         "code": "110026",
         "name": "易方达创业板ETF联接A",
@@ -1691,7 +1691,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=a89bfebf62684c02b5dbc1c39977051e&businType=812&traceNo=ffa38d566ec84c2ea9c5d8eaf292206e"
     },
     {
-        "id": 94,
+        "id": 90,
         "date": "2019-12-02",
         "code": "000478",
         "name": "建信中证500指数增强A",
@@ -1710,7 +1710,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=f1d0772205c8403380f9e4f00c0988c7&businType=22&traceNo=f1d0772205c8403380f9e4f00c0988c7"
     },
     {
-        "id": 95,
+        "id": 91,
         "date": "2020-01-06",
         "code": "003647",
         "name": "创金合信中证1000指数增强C",
@@ -1729,7 +1729,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=0a23d21d068b49839262440299079577&businType=24&traceNo="
     },
     {
-        "id": 96,
+        "id": 92,
         "date": "2020-01-06",
         "code": "002903",
         "name": "广发中证500ETF联接C",
@@ -1748,7 +1748,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=1eb7908155cb4e8c869ee1cef3af84c8&businType=24&traceNo="
     },
     {
-        "id": 97,
+        "id": 93,
         "date": "2020-02-18",
         "code": "002903",
         "name": "广发中证500ETF联接C",
@@ -1767,7 +1767,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=7ab73487a17d426fb43b5c70607ab1c5&businType=812&traceNo=b812de433b5e4551850fd61b86dec0bf"
     },
     {
-        "id": 98,
+        "id": 94,
         "date": "2020-02-26",
         "code": "001469",
         "name": "广发中证全指金融地产联接A",
@@ -1786,7 +1786,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=b36036a7da5944e79820a526a93d9feb&businType=22&traceNo="
     },
     {
-        "id": 99,
+        "id": 95,
         "date": "2020-03-02",
         "code": "100032",
         "name": "富国中证红利指数增强",
@@ -1805,7 +1805,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=20200302103030091331442&businType=143&traceNo="
     },
     {
-        "id": 100,
+        "id": 96,
         "date": "2020-03-09",
         "code": "501018",
         "name": "南方原油A",
@@ -1824,7 +1824,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=cb7d1471b713425da577fc5b604faab7&businType=22&traceNo=cb7d1471b713425da577fc5b604faab7"
     },
     {
-        "id": 101,
+        "id": 97,
         "date": "2020-03-09",
         "code": "004752",
         "name": "广发中证传媒ETF联接A",
@@ -1843,7 +1843,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=f7ce93e977e74da799951d5ba98a23ac&businType=8151&traceNo=0a410e0d2b5d4e53bc13cb3d6da41a8c"
     },
     {
-        "id": 102,
+        "id": 98,
         "date": "2020-03-11",
         "code": "001061",
         "name": "华夏收益债券(QDII)A",
@@ -1862,7 +1862,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=884775f6c8bf40ab887b9dd7a97617ca&businType=24&traceNo="
     },
     {
-        "id": 103,
+        "id": 99,
         "date": "2020-03-11",
         "code": "000614",
         "name": "华安德国30(DAX)联接",
@@ -1881,7 +1881,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=b1f96532215147b7b1e36881ad0721a5&businType=22&traceNo="
     },
     {
-        "id": 104,
+        "id": 100,
         "date": "2020-03-13",
         "code": "000071",
         "name": "华夏恒生ETF联接A",
@@ -1900,7 +1900,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=b839bf32088f441092a002dee7f84b89&businType=22&traceNo=b839bf32088f441092a002dee7f84b89"
     },
     {
-        "id": 105,
+        "id": 101,
         "date": "2020-03-13",
         "code": "000614",
         "name": "华安德国30(DAX)联接",
@@ -1919,7 +1919,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=b47409248dcc454aaf6869a6766dc46f&businType=22&traceNo=b47409248dcc454aaf6869a6766dc46f"
     },
     {
-        "id": 106,
+        "id": 102,
         "date": "2020-03-18",
         "code": "000614",
         "name": "华安德国30(DAX)联接",
@@ -1938,7 +1938,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=010358e12f144e9bad93b1169de04338&businType=22&traceNo=010358e12f144e9bad93b1169de04338"
     },
     {
-        "id": 107,
+        "id": 103,
         "date": "2020-03-19",
         "code": "519977",
         "name": "长信可转债债券A",
@@ -1957,7 +1957,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=a754d9b2698048e5881bc887aa587128&businType=8151&traceNo=e28d19d784cb48128e43070e9ebc0667"
     },
     {
-        "id": 108,
+        "id": 104,
         "date": "2020-03-19",
         "code": "000071",
         "name": "华夏恒生ETF联接A",
@@ -1976,7 +1976,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=fef63d7550ee4cddaecf33e76a7c105c&businType=22&traceNo="
     },
     {
-        "id": 109,
+        "id": 105,
         "date": "2020-03-19",
         "code": "050025",
         "name": "博时标普500ETF联接A",
