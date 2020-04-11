@@ -5,6 +5,10 @@ import json
 
 import pandas as pd
 
+from tools.fundInfoSpider import fundInfoSpider
+from tools.dividendInfoSpider import dividendInfoSpider
+from database.fundDBHelper import fundDBHelper
+
 class categoryManager:
 
     def __init__(self):
@@ -22,12 +26,23 @@ class categoryManager:
         result = list(self.category_df[self.category_df['基金代码'] == code].values)
         if len(result) > 0:
             result = result[0]
-            return {'category1': result[2], 'category2': result[3], 'category3': result[4], 'categoryId': result[5]}
+            return {'category1': result[3], 'category2': result[4], 'category3': result[5], 'categoryId': result[6]}
         else:
             print('[ERROR] {0} 不在资产配置列表中. 请添加'.format(code))
             if sys.platform.startswith('win'):
                 os.startfile('https://qieman.com/funds/{0}'.format(code))
+                os.startfile('http://fund.eastmoney.com/{0}.html?spm=search'.format(code))
                 os.startfile(self.xlsx_path)
+                # 下载基金详情，历史净值
+                fundInfos = fundInfoSpider().get([code])
+                # 下载分红/拆分信息
+                dividends = dividendInfoSpider().get([code])
+                # Database
+                db = fundDBHelper()
+                for info in fundInfos:
+                    db.insertFundByJonsData(info)
+                for info in dividends:
+                    db.insertFundDividendByJonsData(info)
             exit(1)
             return {}
     

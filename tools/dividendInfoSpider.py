@@ -82,7 +82,7 @@ class dividendInfoSpider:
                 results.append(jsonDict)
         with open(os.path.join(self.folder, u'dividend_data', 'dividendInfo.json'), 'w+', encoding='utf-8') as f:
             f.write(json.dumps(results, ensure_ascii=False, indent=4))
-        pass
+        return results
 
     def insertToDB(self):
         with open(os.path.join(self.folder, u'dividend_data', 'dividendInfo.json'), 'r', encoding='utf-8') as f:

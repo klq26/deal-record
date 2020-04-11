@@ -70,7 +70,6 @@ def allUniqueCodes(strategy = ''):
     df = df.sort_values(by='code' , ascending=True)
     df = df.reset_index(drop=True)
 
-
 # 输出所有成交记录（本地是 {0}_updateAllDealRecords.csv，云端是 mysql 数据库）
 def updateAllDealRecords(strategy = 'klq', onlyUpdatelocal = True):
     folder = os.path.abspath(os.path.dirname(__file__))
@@ -111,12 +110,15 @@ def allFamilyHoldingSelloutStatus():
     sellout_df = sellout_df[familyHoldingDBKeys()]
     dealRecordDBHelper().insertFamilySelloutByDataFrame(sellout_df)
 
-def allFundHoldingStatus():
+# 把每只基金当前的持仓记录数据写入数据库
+def allFundHoldingStatus(onlyUpdatelocal = True):
     holding_df = analyticsManager().getFundHoldingStatus()
     holding_df['id'] = [x for x in range(1, len(holding_df) + 1)]
     # print(holding_df)
     holding_df['account'] = u'不适用'
-    dealRecordDBHelper().insertFundHoldingByDataFrame(holding_df)
+    if not onlyUpdatelocal:
+        # TODO truncate first
+        dealRecordDBHelper().insertFundHoldingByDataFrame(holding_df)
 
 # 显示库中不认识的基金代码及名称
 def showCategoryUnknownFunds(strategy = 'klq'):
@@ -157,6 +159,8 @@ if __name__ == "__main__":
     # cls()
     # 更新数据库
     # updateDatabase()
+
+    # allFundHoldingStatus()
     # 插入全部记录
     # updateAllDealRecords('klq', onlyUpdatelocal = False)
     # updateAllDealRecords('parents', onlyUpdatelocal = False)
@@ -164,4 +168,4 @@ if __name__ == "__main__":
     # analyticsManager().getFamilyHoldingUniqueCodes()
     # analyticsManager().allFamilyHoldingSelloutStatus()
     # analyticsManager().getFundHoldingStatus()
-    allFundHoldingStatus()
+    danjuanSpider().get(forceUpdate = False)

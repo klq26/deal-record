@@ -23,12 +23,15 @@ class fundInfoSpider:
         self.folder = os.path.abspath(os.path.dirname(__file__))
     
     def get(self, fund_codes):
+        results = []
         for code in fund_codes:
             detailInfo = self.getFundDetail(code)
             navInfo = self.getFundNav(code, detailInfo['fundName'])
             with open(os.path.join(self.folder, 'fund_data', '{0}_{1}.json'.format(code, detailInfo['fundName'])),'w+',encoding='utf-8') as f:
+                data = {'detailInfo': detailInfo, 'navInfo': navInfo}
                 f.write(json.dumps({'detailInfo': detailInfo, 'navInfo': navInfo}, ensure_ascii=False, indent = 4))
-        pass
+                results.append(data)
+        return results
 
     # 根据开始和结束日期获取数据
     def getFundNavByTime(self, code, startDate, endDate):

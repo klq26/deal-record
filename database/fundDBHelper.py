@@ -219,7 +219,7 @@ class fundDBHelper:
             cursor.close()
             db.close()
         if len(results) > 0:
-            # 返回第一条数据的日期('data', 'nav_unit', 'nav_acc')
+            # 返回第一条数据的日期('date', 'nav_unit', 'nav_acc')
             return results[0]
         else:
             return None

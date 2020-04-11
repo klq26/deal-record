@@ -40,173 +40,28 @@ class danjuanSpider:
         # 交易详情 url 数组（后续逐个解析）
         self.detailUrlList = []
         self.results = []
-
-    # 获取数据
-    def get(self):
-        print('蛋卷：{0} 获取中..'.format(self.owner))
-        db = fundDBHelper()
-        deal_list_url = u'https://danjuanapp.com/djapi/order/p/list?page=1&size=2000&type=all'
-        # 获取所有的成交记录概述
-        response = requests.get(deal_list_url, headers = self.headers, verify=False)
         folder = os.path.join(self.folder, 'debug', self.owner, 'tradelist')
         if not os.path.exists(folder):
             os.makedirs(folder)
-        tradelist_file = os.path.join(folder, 'tradelist.json')
-        if not os.path.exists(tradelist_file):
-            if response.status_code == 200:
-                folder = os.path.join(self.folder, 'debug', self.owner, 'tradelist')
-                with open(tradelist_file, 'w+', encoding='utf-8') as f:
-                    f.write(json.dumps(json.loads(response.text), ensure_ascii=False, indent = 4))
-            else:
-                print(response.status_code)
-        # 请求每一条详情(仅包含“交易成功”，忽略“撤单”，“交易进行中” 等非确定情况)
-        all_model_keys = dealRecordModelKeys()
-        index = 0
-        with open(tradelist_file, 'r', encoding='utf-8') as f:
-            jsonData = json.loads(f.read())
-            datalist = jsonData['data']['items']
-            detail_url = u'https://danjuanapp.com/djapi/order/p/plan/{0}'
-            # 这个是专门为了去拿一下确认净值的，其他信息 detail_url 都有了
-            nav_detail_url = u'https://danjuanapp.com/djapi/plan/order/{0}'
-            folder = os.path.join(self.folder, 'debug', self.owner, 'detail')
-            if not os.path.exists(folder):
-                os.makedirs(folder)
-            for item in datalist:
-                # "order_id": "1819139915911312513",
-                # "code": "CSI1019",
-                # "name": "钉钉宝365天组合",
-                # "status_desc": "交易成功",
-                # "action_desc": "卖出",
-                # "created_at": 1584584824274,
-                # "title": "钉钉宝365天组合",
-                if item['status_desc'] != '交易成功':
-                    print('忽略非正常交易：{0}\n{1}\n'.format(item['status_desc'], item))
-                    continue
-                unix_ts = int(int(item['created_at'])/1000)
-                date = str(datetime.fromtimestamp(unix_ts))[0:10]
-                # order_id = item['order_id']
-                detail_file = os.path.join(folder, '{0}_{1}_{2}_{3}_{4}.json'.format(date, item['name'], item['action_desc'], item['status_desc'], item['order_id']))
-                # 获取每一笔已成功的成交数据
-                if not os.path.exists(detail_file):
-                    response = requests.get(detail_url.format(item['order_id']), headers = self.headers, verify=False)
-                    if response.status_code == 200:
-                        with open(detail_file, 'w+', encoding='utf-8') as f:
-                            f.write(json.dumps(json.loads(response.text), ensure_ascii=False, indent = 4))
-                            jsonData = json.loads(response.text)
-                else:
-                    with open(detail_file, 'r', encoding='utf-8') as f:
-                        try:
-                            jsonData = json.loads(f.read())['data']
-                            # 注意：这里会忽略如南方天天利B 这种货币基金的买入和分红
-                            if jsonData['status'] != 'success' or 'sub_order_list' not in jsonData.keys():
-                                print('忽略：{0}'.format(detail_file))
-                                continue
-                            orderlist = jsonData['sub_order_list'][0]['orders']
-                            for order in orderlist:
-                                opType = order['action_desc']
-                                if '货币' in order['fd_name']:
-                                    if opType != '转换':
-                                        # 暂时不收集货币基金的分红操作，但是转换相当于买入，还是要的
-                                        print('忽略：{0}'.format(detail_file))
-                                        continue
-                                    # else:
-                                        # print()
+        # tradelist.json 存放位置
+        self.tradelist_file = os.path.join(folder, 'tradelist.json')
+        folder = os.path.join(self.folder, 'debug', self.owner, 'detail')
+        if not os.path.exists(folder):
+            os.makedirs(folder)
+        # traderecords 文件存放位置
+        self.detailfolder = folder
 
-                                # "plan_name": "螺丝钉指数基金组合",
-                                # "fd_code": "003318",
-                                # "fd_name": "景顺长城中证500低波动",
-                                # "title": "景顺长城中证500低波动",
-                                # "action_desc": "买入",
-                                # "status_desc": "交易成功",
-                                # "type": "plan",
-                                # "action": "022",
-                                # "status": "success",
-                                # "ts": 1553616000000,
-                                # "confirm_ts": 1553702400000,
-                                # "amount": 85.13,
-                                # "volume": 0,
-                                # "confirm_amount": 85.13,
-                                # "confirm_volume": 84.57,
-                                # "fee": 0.1,
-                                # "value_desc": "85.13元",
-                                # "value_text": "下单金额",
-                                # "confirm_value_text": "确认份额",
-                                # "confirm_value_desc": "84.57份",
-                                # "bank_name": "招商银行(6292)",
-                                # "order_id": "1978041789057135658"
-                                # 买入
-                                # nav = (confirm_amount - fee) / confirm_volume
-                                # 卖出
-                                # nav = (confirm_amount + fee) / confirm_volume
-                                index = index + 1
-                                # id
-                                all_model_values = [index]
-                                # date
-                                unix_ts = int(int(order['ts'])/1000)
-                                all_model_values.append(str(datetime.fromtimestamp(unix_ts))[0:10])
-                                # 如果是南方天天利的转换，就比较麻烦，应该取 target_fd_xx，也属于买入。以后别搞这么复杂了。
-                                if opType == '转换':
-                                    all_model_values.append(order['target_fd_code'])
-                                    all_model_values.append(order['target_fd_name'])
-                                else:
-                                    all_model_values.append(order['fd_code'])
-                                    all_model_values.append(order['fd_name'])
-                                confirm_amount = order['confirm_amount']
-                                confirm_volume = order['confirm_volume']
-                                fee = order['fee']
-                                occurMoney = 0
-                                nav_unit = 0.0
-                                nav_acc = 0.0
-                                all_model_values.append(opType)
-                                if opType == '分红':
-                                    occurMoney = confirm_amount
-                                    db_record = db.selectNearestDividendDateFundNav(code = all_model_values[2], date = all_model_values[1])
-                                    nav_unit = db_record[1]
-                                    nav_acc = db_record[2]
-                                    all_model_values.append(nav_unit)
-                                else:
-                                    # 净值
-                                    db_record = db.selectFundNavByDate(code = all_model_values[2], date = all_model_values[1])
-                                    nav_unit = db_record[1]
-                                    nav_acc = db_record[2]
-                                    all_model_values.append(nav_unit)
-                                    if opType == '买入' or opType == '转换':
-                                        occurMoney = round(confirm_amount + fee, 2)
-                                    elif opType == '卖出':
-                                        occurMoney = round(confirm_amount - fee, 2)
-                                    else:
-                                        continue
-                                all_model_values.append(nav_acc)
-                                all_model_values.append(confirm_volume)
-                                all_model_values.append(confirm_amount)
-                                all_model_values.append(fee)
-                                all_model_values.append(occurMoney)
-                                # 该死的货币基金转换没有 plan_name，去死吧，蛋卷
-                                if 'plan_name' not in order.keys():
-                                    if 'target_name' in jsonData.keys():
-                                        # 目前看，蛋卷货币基金转换的 title 到还是对的，如果这个也没有，那就去死吧
-                                        all_model_values.append(self.owner + '_' + global_name + '_' + jsonData['target_name'])
-                                    else:
-                                        all_model_values.append(self.owner + '_' + global_name + '_' + '不知道了')
-                                else:
-                                    all_model_values.append(self.owner + '_' + global_name + '_' + order['plan_name'])
-                                categoryInfo = self.categoryManager.getCategoryByCode(all_model_values[2])
-                                if categoryInfo != {}:
-                                    all_model_values.append(categoryInfo['category1'])
-                                    all_model_values.append(categoryInfo['category2'])
-                                    all_model_values.append(categoryInfo['category3'])
-                                    all_model_values.append(categoryInfo['categoryId'])
-                                # 该死的货币基金转换没有 plan_name，去死吧，蛋卷
-                                # if 'plan_name' not in order.keys():
-                                #     all_model_values.append('{0}_转换'.format(order['fd_name']) + '_' + order['order_id'])
-                                # else:
-                                #     all_model_values.append('https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=' + order['order_id'])
-                                all_model_values.append('https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=' + order['order_id'])
-                                itemDict = dict(zip(all_model_keys, all_model_values))
-                                self.results.append(itemDict)
-                        except Exception as e:
-                            print('Exception: {0}'.format(jsonData))
-                            print(e)
+    # 获取数据
+    def get(self, forceUpdate = False):
+        print('蛋卷：{0} 获取中..'.format(self.owner))
+        # 准备成交记录列表
+        tradelistJson = self._prepareTradelist(path = self.tradelist_file, forceUpdate = forceUpdate)
+        datalist = tradelistJson['data']['items']
+        # 从 tradelist.json 列表种，请求每一次的交易详情(仅包含“交易成功”，忽略“撤单”，“交易进行中” 等非确定情况)
+        for tradeRecord in datalist:
+            dealRecordsJson = self._prepareTradeRecord(tradeRecord)
+            dealRecords = self._prepareDealRecords(dealRecordsJson)
+            [self.results.append(x) for x in dealRecords]
         # 日期升序，重置 id
         self.results.sort(key=lambda x: x['date'])
         for i in range(1, len(self.results) + 1):
@@ -216,6 +71,251 @@ class danjuanSpider:
         output_path = os.path.join(self.folder, 'output', '{0}_record.json'.format(self.owner))
         with open(output_path, 'w+', encoding='utf-8') as f:
             f.write(json.dumps(self.results, ensure_ascii = False, indent = 4))
+
+    ########################################################################
+    # private methods
+    ########################################################################
+
+    # 准备交易列表 json 数据
+    def _prepareTradelist(self, path, forceUpdate = False):
+        deal_list_url = u'https://danjuanapp.com/djapi/order/p/list?page=1&size=2000&type=all'
+        # 获取所有的成交记录概述
+        if forceUpdate:
+            response = requests.get(deal_list_url, headers=self.headers, verify=False)
+            if response.status_code == 200:
+                with open(path, 'w+', encoding='utf-8') as f:
+                    f.write(json.dumps(json.loads(response.text), ensure_ascii=False, indent = 4))
+                    return json.loads(response.text)
+            else:
+                print('[ERROR] danjuanSpider tradelist.json 获取失败 code:{0} text:{1}'.format(response.status_code, response.text))
+                if not os.path.exists(path):
+                    print('[ERROR] danjuanSpider tradelist.json 缺失，退出')
+                    exit(1)
+        else:
+            if not os.path.exists(path):
+                print('[ERROR] danjuanSpider tradelist.json 缺失，退出')
+                exit(1)
+            else:
+                with open(path, 'r', encoding='utf-8') as f:
+                    jsonData = json.loads(f.read())
+                    return jsonData
+
+    # 根据 tradelist.json 中的数组，准备每一条交易详情数据
+    def _prepareTradeRecord(self, item):
+        if item == None:
+            return json.loads('[]')
+        detail_url = u'https://danjuanapp.com/djapi/order/p/plan/{0}'
+        # model sample
+        # "order_id": "1819139915911312513",
+        # "code": "CSI1019",
+        # "name": "钉钉宝365天组合",
+        # "status_desc": "交易成功",
+        # "action_desc": "卖出",
+        # "created_at": 1584584824274,
+        # "title": "钉钉宝365天组合",
+        if item['status_desc'] != '交易成功':
+            print('[Warning] danjuanSpider 忽略非正常交易详情：{0}\n{1}\n'.format(item['status_desc'], item))
+            return json.loads('[]')
+        unix_ts = int(int(item['created_at'])/1000)
+        date = str(datetime.fromtimestamp(unix_ts))[0:10]
+        # order_id = item['order_id']
+        detail_file = os.path.join(self.detailfolder, '{0}_{1}_{2}_{3}_{4}.json'.format(date, item['name'], item['action_desc'], item['status_desc'], item['order_id']))
+        # 获取每一笔已成功的成交数据（已存在的数据没有变化的就不用重新下载了，提高效率）
+        if not os.path.exists(detail_file):
+            response = requests.get(detail_url.format(item['order_id']), headers = self.headers, verify=False)
+            if response.status_code == 200:
+                with open(detail_file, 'w+', encoding='utf-8') as f:
+                    f.write(json.dumps(json.loads(response.text), ensure_ascii=False, indent = 4))
+                    jsonData = json.loads(response.text)
+                    return jsonData['data']
+            else:
+                print('[ERROR] danjuanSpider {0} 获取失败 code:{1} text:{2}'.format(detail_file, response.status_code, response.text))
+                if not os.path.exists(detail_file):
+                    print('[ERROR] danjuanSpider {0} 缺失，退出'.format(detail_file))
+                    exit(1)
+        else:
+            with open(detail_file, 'r', encoding='utf-8') as f:
+                jsonData = json.loads(f.read())['data']
+                return jsonData
+    
+    # 根据 trade detail.json 中的数组，准备每一条成交记录
+    def _prepareDealRecords(self, jsonData):
+        if not isinstance(jsonData, dict):
+            return []
+        try:
+            tradeDetailOpType = jsonData['action_desc']
+            # 注意：这里会忽略如南方天天利B 这种货币基金的买入和分红
+            if jsonData['status'] != 'success' or 'sub_order_list' not in jsonData.keys():
+                print('[Warning] danjuanSpider 忽略非正常交易记录：{0}\n{1}\n'.format(tradeDetailOpType, jsonData))
+                return []
+            elif tradeDetailOpType == u'分红' and '货币' in jsonData['name']:
+                # 暂时不收集货币基金的分红操作，但是转换相当于买入，还是要的
+                print('[Warning] danjuanSpider 忽略货币基金非买入交易记录：{0}\n{1}\n'.format(tradeDetailOpType, jsonData))
+                return []
+            elif tradeDetailOpType == u'转换':
+                return self._handlePlanConvert(jsonData)
+            else:
+                return self._handlePlanBuySell(jsonData)
+        except Exception as e:
+            print('[Exception] danjuanSpider 解析 dealrecord 异常：{0}'.format(jsonData))
+            print(e)
+            exit(1)
+
+    # 处理组合转换（包括货币基金转组合，组合内部互转等）
+    def _handlePlanConvert(self, tradeDetailJson):
+        # "action_text": "成分基金转换信息",
+        # "action": "036",
+        # "action_text": "成分基金转入信息",
+        # "action": "037",
+        # "action_text": "成分基金转出信息",
+        # "action": "038",
+        db = fundDBHelper()
+        all_model_keys = dealRecordModelKeys()
+        index = 0
+        results = []
+        sub_order_list = tradeDetailJson['sub_order_list']
+        for sub_order in sub_order_list:
+            actionType = ''
+            actionText = sub_order['action_text']
+            if u'转换' in actionText:
+                # 目前知道的，叫转换的操作，只有货币基金买组合的情况
+                actionType = u'转换'
+            elif u'转入' in actionText:
+                actionType = u'买入'
+            elif u'转出' in actionText:
+                actionType = u'卖出'
+            else:
+                print('[Error] danjuanSpider 未知的转换系操作：{0}'.format(actionText))
+                exit(1)
+            orderlist = sub_order['orders']
+            for order in orderlist:
+                opType = actionType
+                index = index + 1
+                # id
+                all_model_values = [index]
+                # date
+                unix_ts = 0
+                unix_ts = int(int(order['confirm_ts'])/1000)
+                all_model_values.append(str(datetime.fromtimestamp(unix_ts))[0:10])
+                if opType == u'买入':
+                    all_model_values.append(order['fd_code'])
+                    all_model_values.append(order['fd_name'])
+                elif opType == u'转换':
+                    all_model_values.append(order['target_fd_code'])
+                    all_model_values.append(order['target_fd_name'])
+                elif opType == '卖出':
+                    all_model_values.append(order['fd_code'])
+                    all_model_values.append(order['fd_name'])
+                confirm_amount = order['confirm_amount']
+                confirm_volume = order['confirm_volume']
+                fee = order['fee']
+                occurMoney = 0
+                nav_unit = 0.0
+                nav_acc = 0.0
+                if opType == u'转换':
+                    opType = u'买入'
+                all_model_values.append(opType)
+                # 净值
+                db_record = None
+                if opType == u'买入':
+                    # 因为基金公司确认份额是 T+1 日，所以净值使用的 T 日的
+                    db_record = db.selectFundNavBeforeDate(code = all_model_values[2], date = all_model_values[1])
+                    # 日期改成净值确认日
+                    all_model_values[1] = db_record[0]
+                elif opType == '卖出':
+                    db_record = db.selectFundNavBeforeDate(code = all_model_values[2], date = all_model_values[1])
+                    # 日期改成净值确认日
+                    all_model_values[1] = db_record[0]
+                else:
+                    print('[Error] danjuanSpider 未知的操作：{0}'.format(opType))
+                    exit(1)
+                    continue
+                nav_unit = db_record[1]
+                nav_acc = db_record[2]
+                all_model_values.append(nav_unit)
+                if opType == '买入':
+                    occurMoney = round(confirm_amount + fee, 2)
+                elif opType == '卖出':
+                    occurMoney = round(confirm_amount - fee, 2)
+                else:
+                    continue
+                all_model_values.append(nav_acc)
+                all_model_values.append(confirm_volume)
+                all_model_values.append(confirm_amount)
+                all_model_values.append(fee)
+                all_model_values.append(occurMoney)
+                all_model_values.append(self.owner + '_' + global_name + '_' + tradeDetailJson['target_name'])
+                categoryInfo = self.categoryManager.getCategoryByCode(all_model_values[2])
+                if categoryInfo != {}:
+                    all_model_values.append(categoryInfo['category1'])
+                    all_model_values.append(categoryInfo['category2'])
+                    all_model_values.append(categoryInfo['category3'])
+                    all_model_values.append(categoryInfo['categoryId'])
+                all_model_values.append('https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=' + order['order_id'])
+                itemDict = dict(zip(all_model_keys, all_model_values))
+                results.append(itemDict)
+        return results
+
+    # 处理正常的买卖交易
+    def _handlePlanBuySell(self, tradeDetailJson):
+        db = fundDBHelper()
+        all_model_keys = dealRecordModelKeys()
+        index = 0
+        results = []
+        sub_order_list = tradeDetailJson['sub_order_list']
+        for sub_order in sub_order_list:
+            for order in sub_order['orders']:
+                opType = order['action_desc']
+                index = index + 1
+                # id
+                all_model_values = [index]
+                # date
+                unix_ts = int(int(order['ts'])/1000)
+                all_model_values.append(str(datetime.fromtimestamp(unix_ts))[0:10])
+                all_model_values.append(order['fd_code'])
+                all_model_values.append(order['fd_name'])
+                confirm_amount = order['confirm_amount']
+                confirm_volume = order['confirm_volume']
+                fee = order['fee']
+                occurMoney = 0
+                nav_unit = 0.0
+                nav_acc = 0.0
+                all_model_values.append(opType)
+                if opType == '分红':
+                    occurMoney = confirm_amount
+                    db_record = db.selectNearestDividendDateFundNav(code = all_model_values[2], date = all_model_values[1])
+                    nav_unit = db_record[1]
+                    nav_acc = db_record[2]
+                    all_model_values.append(nav_unit)
+                else:
+                    # 净值
+                    db_record = db.selectFundNavByDate(code = all_model_values[2], date = all_model_values[1])
+                    nav_unit = db_record[1]
+                    nav_acc = db_record[2]
+                    all_model_values.append(nav_unit)
+                    if opType == '买入' or opType == '转换':
+                        occurMoney = round(confirm_amount + fee, 2)
+                    elif opType == '卖出':
+                        occurMoney = round(confirm_amount - fee, 2)
+                    else:
+                        continue
+                all_model_values.append(nav_acc)
+                all_model_values.append(confirm_volume)
+                all_model_values.append(confirm_amount)
+                all_model_values.append(fee)
+                all_model_values.append(occurMoney)
+                all_model_values.append(self.owner + '_' + global_name + '_' + order['plan_name'])
+                categoryInfo = self.categoryManager.getCategoryByCode(all_model_values[2])
+                if categoryInfo != {}:
+                    all_model_values.append(categoryInfo['category1'])
+                    all_model_values.append(categoryInfo['category2'])
+                    all_model_values.append(categoryInfo['category3'])
+                    all_model_values.append(categoryInfo['categoryId'])
+                all_model_values.append('https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=' + order['order_id'])
+                itemDict = dict(zip(all_model_keys, all_model_values))
+                results.append(itemDict)
+        return results
+
 
     # 获取所有记录中的唯一代码
     def uniqueCodes(self):
@@ -252,5 +352,3 @@ if __name__ == "__main__":
     # 传入配置，开始流程
     spider = danjuanSpider(strategy = strategy)
     spider.get()
-
-
