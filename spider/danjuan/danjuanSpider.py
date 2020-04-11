@@ -37,8 +37,6 @@ class danjuanSpider:
         elif strategy == 'ksh':
             self.owner = '康世海'
             self.headers = requestHeaderManager().getDanjuanKSH()
-        # 交易详情 url 数组（后续逐个解析）
-        self.detailUrlList = []
         self.results = []
         folder = os.path.join(self.folder, 'debug', self.owner, 'tradelist')
         if not os.path.exists(folder):
@@ -72,6 +70,30 @@ class danjuanSpider:
         with open(output_path, 'w+', encoding='utf-8') as f:
             f.write(json.dumps(self.results, ensure_ascii = False, indent = 4))
 
+    # 获取所有记录中的唯一代码
+    def uniqueCodes(self):
+        output_path = os.path.join(self.folder, 'output', '{0}_record.json'.format(self.owner))
+        with open(output_path, 'r', encoding='utf-8') as f:
+            datalist = json.loads(f.read())
+            names = []
+            codes = []
+            for x in datalist:
+                names.append(x['name'])
+                codes.append(x['code'])
+            df = pd.DataFrame()
+            df['name'] = names
+            df['code'] = codes
+            df = df.drop_duplicates(['code'])
+            df = df.sort_values(by='code' , ascending=True)
+            df = df.reset_index(drop=True)
+            df.to_csv(os.path.join(self.folder, 'output', '{0}-danjuan-unique-codes.csv'.format(self.owner)), sep='\t')
+            return df
+
+    def load(self):
+        output_path = os.path.join(self.folder, 'output', '{0}_record.json'.format(self.owner))
+        with open(output_path, 'r', encoding='utf-8') as f:
+            return json.loads(f.read())
+
     ########################################################################
     # private methods
     ########################################################################
@@ -91,6 +113,10 @@ class danjuanSpider:
                 if not os.path.exists(path):
                     print('[ERROR] danjuanSpider tradelist.json 缺失，退出')
                     exit(1)
+                else:
+                    with open(path, 'r', encoding='utf-8') as f:
+                        jsonData = json.loads(f.read())
+                        return jsonData
         else:
             if not os.path.exists(path):
                 print('[ERROR] danjuanSpider tradelist.json 缺失，退出')
@@ -400,30 +426,6 @@ class danjuanSpider:
                 itemDict = dict(zip(all_model_keys, all_model_values))
                 results.append(itemDict)
         return results
-
-    # 获取所有记录中的唯一代码
-    def uniqueCodes(self):
-        output_path = os.path.join(self.folder, 'output', '{0}_record.json'.format(self.owner))
-        with open(output_path, 'r', encoding='utf-8') as f:
-            datalist = json.loads(f.read())
-            names = []
-            codes = []
-            for x in datalist:
-                names.append(x['name'])
-                codes.append(x['code'])
-            df = pd.DataFrame()
-            df['name'] = names
-            df['code'] = codes
-            df = df.drop_duplicates(['code'])
-            df = df.sort_values(by='code' , ascending=True)
-            df = df.reset_index(drop=True)
-            df.to_csv(os.path.join(self.folder, 'output', '{0}-danjuan-unique-codes.csv'.format(self.owner)), sep='\t')
-            return df
-
-    def load(self):
-        output_path = os.path.join(self.folder, 'output', '{0}_record.json'.format(self.owner))
-        with open(output_path, 'r', encoding='utf-8') as f:
-            return json.loads(f.read())
 
 if __name__ == "__main__":
     strategy = 'klq'

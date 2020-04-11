@@ -43,149 +43,33 @@ class qiemanSpider:
             # 稳稳的幸福
             wenwen = u'CA942R8128PFE7'
             self.plan_list = [{'name': '稳稳的幸福', 'value': wenwen}]
-        # 交易详情 url 数组（后续逐个解析）
-        self.detailUrlList = []
         self.results = []
+        folder = os.path.join(self.folder, 'debug', self.owner, 'tradelist')
+        if not os.path.exists(folder):
+            os.makedirs(folder)
+        # tradelist.json 存放位置
+        self.tradelistfolder = folder
+        folder = os.path.join(self.folder, 'debug', self.owner, 'detail')
+        if not os.path.exists(folder):
+            os.makedirs(folder)
+        # traderecords 文件存放位置
+        self.detailfolder = folder
+        self.current_plan = None
 
-    def get(self):
+    def get(self, forceUpdate = False):
         print('且慢：{0} 获取中..'.format(self.owner))
-        db = fundDBHelper()
-        index = 0
-        all_model_keys = dealRecordModelKeys()
         # 取 500 条
         for plan in self.plan_list:
-            folder = os.path.join(self.folder, 'debug', self.owner, 'tradelist')
-            if not os.path.exists(folder):
-                os.makedirs(folder)
-            tradelist_file = os.path.join(folder, '{0}_tradelist.json'.format(plan['name']))
-            if not os.path.exists(tradelist_file):
-                # 且慢他们家是从 page=0 开始的
-                deal_list_url = 'https://qieman.com/pmdj/v2/orders?capitalAccountId={0}&page=0&size=500'.format(plan['value'])
-                # 获取所有的成交记录概述
-                response = requests.get(deal_list_url, headers = self.headers, verify=False)
-                if response.status_code == 200:
-                    with open(tradelist_file, 'w+', encoding='utf-8') as f:
-                        f.write(json.dumps(json.loads(response.text), ensure_ascii=False, indent = 4))
-                else:
-                    print(response.status_code)
-            # 读取该计划的列表
-            with open(tradelist_file, 'r', encoding='utf-8') as f:
-                datalist = json.loads(f.read())['content']
-                detail_url = u'https://qieman.com/pmdj/v2/orders/{0}'
-                folder = os.path.join(self.folder, 'debug', self.owner, 'detail')
-                if not os.path.exists(folder):
-                    os.makedirs(folder)
-                for item in datalist:
-                    # "orderProdType": "PO",
-                    # "orderId": "PO202003199FANFSMAQIUR",
-                    # "capitalAccountId": "CA8UKLYHA67WPK",
-                    # "acceptTime": 1584597855000,
-                    # "txnDay": 1584547200000,
-                    # "confirmStatus": "P2",
-                    # "uiConfirmStatusName": "确认成功",
-                    # "payStatus": "2",
-                    # "uiPayStatusName": "扣款成功",
-                    # "orderCode": "P11",
-                    # "capitalDirection": "IN",
-                    # "uiOrderCodeName": "执行计划",
-                    # "orderStatus": "SUCCESS",
-                    # "uiOrderStatusName": "成功",
-                    # "uiAmount": 1334,
-                    # "po": {
-                    #     "poCode": "LONG_WIN",
-                    #     "poName": "长赢指数投资计划-150份"
-                    # },
-                    # "uiOrderDesc": "已于2020年3月23日完成",
-                    # "hasDetail": true,
-                    # "umaId": 10209,
-                    # "umaName": "10万补充ETF计划",
-                    # "orderUrl": "https://qieman.com/orders/PO202003199FANFSMAQIUR",
-                    # "capitalAccountName": "长赢指数投资计划-150份"
-                    unix_ts = int(int(item['acceptTime'])/1000)
-                    dateObj = datetime.fromtimestamp(unix_ts)
-                    date = str(dateObj)[0:10]
-                    order_id = item['orderId']
-                    plan_name = item['po']['poName']
-                    detail_file = os.path.join(folder, '{0}_{1}_{2}_{3}_{4}.json'.format(date, plan_name, item['uiOrderCodeName'], item['uiOrderStatusName'], item['orderId']))
-                    if not os.path.exists(detail_file):
-                        # 请求
-                        response = requests.get(detail_url.format(order_id), headers = self.headers, verify=False)
-                        if response.status_code == 200:
-                            with open(detail_file, 'w+', encoding='utf-8') as f:
-                                f.write(json.dumps(json.loads(response.text), ensure_ascii=False, indent = 4))
-                    # 读取数据
-                    with open(detail_file, 'r', encoding='utf-8') as f:
-                        jsonData = json.loads(f.read())
-                        orders = jsonData['compositionOrders']
-                        # 遍历每一条记录
-                        for order in orders:
-                            opType = order['uiOrderCodeName']
-                            index = index + 1
-                            # id
-                            all_model_values = [index]
-                            # date
-                            unix_ts = int(int(item['acceptTime'])/1000)
-                            dateObj = datetime.fromtimestamp(unix_ts)
-                            date = str(dateObj)[0:10]
-                            hour = dateObj.hour
-                            all_model_values.append(date)
-                            all_model_values.append(order['fund']['fundCode'])
-                            all_model_values.append(order['fund']['fundName'])
-                            confirm_amount = order['uiAmount']
-                            confirm_volume = order['uiShare']
-                            fee = order['fee']
-                            occurMoney = order['uiAmount']
-                            nav_unit = 0.0
-                            nav_acc = 0.0
-                            if u'分红' in opType:
-                                all_model_values.append('分红')
-                                occurMoney = confirm_amount
-                                db_record = db.selectNearestDividendDateFundNav(code = all_model_values[2], date = all_model_values[1])
-                                nav_unit = db_record[1]
-                                nav_acc = db_record[2]
-                                all_model_values.append(nav_unit)
-                                all_model_values.append(nav_acc)
-                            else:
-                                db_record = None
-                                if hour >= 15:
-                                    # 超过15点，净值应该按下一个交易日算
-                                    # 注意：目前发现只有且慢给回的信息是这样的。蛋卷给回的都是 00:00:00 的时间戳
-                                    db_record = db.selectFundNavAfterDate(code = all_model_values[2], date = all_model_values[1])
-                                else:
-                                    db_record = db.selectFundNavByDate(code = all_model_values[2], date = all_model_values[1])
-                                nav_acc = db_record[2]
-                                # 如果是 01-01 这样节日下单，日期应该换成有效交易日，即顺延的下一天
-                                all_model_values[1] = db_record[0]
-                                if u'买' in opType or u'申' in opType:
-                                    all_model_values.append('买入')
-                                    confirm_amount = round(occurMoney - fee, 2)
-                                elif u'赎' in opType:
-                                    all_model_values.append('卖出')
-                                    confirm_amount = round(occurMoney + fee, 2)
-                                elif u'转换至' in opType:
-                                    # 把且慢稳稳的幸福的转换至都分拆放到 addition.json 里面了，这块太难搞了，以后应该也不会买且慢组合了，就不写逻辑了。
-                                    print('\n[WARNING] 且慢的转换至应该是一笔交易转两笔，请自行确认是否再 addition.json 中做了人工补充。\n\n{0}\n'.format(order))
-                                    continue
-                                else:
-                                    print('未知操作：{0}'.format(opType))
-                                    all_model_values.append(opType)
-                                all_model_values.append(order['nav'])
-                                all_model_values.append(nav_acc)
-                            all_model_values.append(confirm_volume)
-                            all_model_values.append(confirm_amount)
-                            all_model_values.append(fee)
-                            all_model_values.append(occurMoney)
-                            all_model_values.append(self.owner + '_' + global_name + '_' + plan['name'])
-                            categoryInfo = self.categoryManager.getCategoryByCode(all_model_values[2])
-                            if categoryInfo != {}:
-                                all_model_values.append(categoryInfo['category1'])
-                                all_model_values.append(categoryInfo['category2'])
-                                all_model_values.append(categoryInfo['category3'])
-                                all_model_values.append(categoryInfo['categoryId'])
-                            # all_model_values.append(plan_name + '_' + order['orderId'])
-                            all_model_values.append('https://qieman.com/orders/' + item['orderId'] + '子编号：' + order['orderId'])
-                            itemDict = dict(zip(all_model_keys, all_model_values))
-                            self.results.append(itemDict)
+            self.current_plan = plan
+            tradelist_file = os.path.join(self.tradelistfolder, '{0}_tradelist.json'.format(plan['name']))
+            # 准备成交记录列表
+            tradelistJson = self._prepareTradelist(plan = plan, path = tradelist_file, forceUpdate = forceUpdate)
+            datalist = tradelistJson['content']
+            # 从 tradelist.json 列表种，请求每一次的交易详情(仅包含“交易成功”，忽略“撤单”，“交易进行中” 等非确定情况)
+            for tradeRecord in datalist:
+                dealRecordsJson = self._prepareTradeRecord(tradeRecord)
+                dealRecords = self._prepareDealRecords(dealRecordsJson)
+                [self.results.append(x) for x in dealRecords]
         if os.path.exists(os.path.join(self.folder, 'input', '{0}_addition.json'.format(self.owner))):
             # 注意：且慢网站目前不公布跟计划品种分红的交易，暂时只能自己补充，这点自己补齐，已和客服沟通过得到确认
             # 另外，父亲的组合转换，只有一笔转换。实际上应该是一笔买入 + 一笔卖出。程序里，转换只提现了买入。所以 addition 则补足基金的卖出部分
@@ -226,6 +110,144 @@ class qiemanSpider:
         output_path = os.path.join(self.folder, 'output', '{0}_record.json'.format(self.owner))
         with open(output_path, 'r', encoding='utf-8') as f:
             return json.loads(f.read())
+
+    ########################################################################
+    # private methods
+    ########################################################################
+
+    # 准备交易列表 json 数据
+    def _prepareTradelist(self, plan, path, forceUpdate = False):
+        # 且慢他们家是从 page=0 开始的
+        deal_list_url = 'https://qieman.com/pmdj/v2/orders?capitalAccountId={0}&page=0&size=500'.format(plan['value'])
+        # 获取所有的成交记录概述
+        if forceUpdate:
+            response = requests.get(deal_list_url, headers=self.headers, verify=False)
+            if response.status_code == 200 and response.text != u'':
+                with open(path, 'w+', encoding='utf-8') as f:
+                    f.write(json.dumps(json.loads(response.text), ensure_ascii=False, indent = 4))
+                    return json.loads(response.text)
+            else:
+                print('[ERROR] qiemanSpider {0}_tradelist.json 获取失败 code:{1} text:{2}'.format(plan['name'], response.status_code, response.text))
+                if not os.path.exists(path):
+                    print('[ERROR] qiemanSpider {0}_tradelist.json 缺失，退出'.format(plan['name']))
+                    exit(1)
+                else:
+                    with open(path, 'r', encoding='utf-8') as f:
+                        jsonData = json.loads(f.read())
+                        return jsonData
+        else:
+            if not os.path.exists(path):
+                print('[ERROR] qiemanSpider {0}_tradelist.json 缺失，退出'.format(plan['name']))
+                exit(1)
+            else:
+                with open(path, 'r', encoding='utf-8') as f:
+                    jsonData = json.loads(f.read())
+                    return jsonData
+
+    # 根据 tradelist.json 中的数组，准备每一条交易详情数据
+    def _prepareTradeRecord(self, item):
+        detail_url = u'https://qieman.com/pmdj/v2/orders/{0}'
+        unix_ts = int(int(item['acceptTime'])/1000)
+        dateObj = datetime.fromtimestamp(unix_ts)
+        date = str(dateObj)[0:10]
+        order_id = item['orderId']
+        plan_name = item['po']['poName']
+        detail_file = os.path.join(self.detailfolder, '{0}_{1}_{2}_{3}_{4}.json'.format(date, plan_name, item['uiOrderCodeName'], item['uiOrderStatusName'], item['orderId']))
+        if not os.path.exists(detail_file):
+            # 请求
+            response = requests.get(detail_url.format(order_id), headers = self.headers, verify=False)
+            if response.status_code == 200:
+                with open(detail_file, 'w+', encoding='utf-8') as f:
+                    f.write(json.dumps(json.loads(response.text), ensure_ascii=False, indent = 4))
+                    jsonData = json.loads(response.text)
+                    return jsonData
+            else:
+                print('[ERROR] qiemanSpider {0} 获取失败 code:{1} text:{2}'.format(detail_file, response.status_code, response.text))
+                if not os.path.exists(detail_file):
+                    print('[ERROR] qiemanSpider {0} 缺失，退出'.format(detail_file))
+                    exit(1)
+        else:
+            with open(detail_file, 'r', encoding='utf-8') as f:
+                jsonData = json.loads(f.read())
+                return jsonData
+        pass
+
+    # 根据 trade detail.json 中的数组，准备每一条成交记录
+    def _prepareDealRecords(self, jsonData):
+        db = fundDBHelper()
+        all_model_keys = dealRecordModelKeys()
+        index = 0
+        results = []
+        # 遍历每一条记录
+        orders = jsonData['compositionOrders']
+        for order in orders:
+            opType = order['uiOrderCodeName']
+            index = index + 1
+            # id
+            all_model_values = [index]
+            # date
+            unix_ts = int(int(order['acceptTime'])/1000)
+            dateObj = datetime.fromtimestamp(unix_ts)
+            date = str(dateObj)[0:10]
+            hour = dateObj.hour
+            all_model_values.append(date)
+            all_model_values.append(order['fund']['fundCode'])
+            all_model_values.append(order['fund']['fundName'])
+            confirm_amount = order['uiAmount']
+            confirm_volume = order['uiShare']
+            fee = order['fee']
+            occurMoney = order['uiAmount']
+            nav_unit = 0.0
+            nav_acc = 0.0
+            if u'分红' in opType:
+                all_model_values.append('分红')
+                occurMoney = confirm_amount
+                db_record = db.selectNearestDividendDateFundNav(code = all_model_values[2], date = all_model_values[1])
+                nav_unit = db_record[1]
+                nav_acc = db_record[2]
+                all_model_values.append(nav_unit)
+                all_model_values.append(nav_acc)
+            else:
+                db_record = None
+                if hour >= 15:
+                    # 超过15点，净值应该按下一个交易日算
+                    # 注意：目前发现只有且慢给回的信息是这样的。蛋卷给回的都是 00:00:00 的时间戳
+                    db_record = db.selectFundNavAfterDate(code = all_model_values[2], date = all_model_values[1])
+                else:
+                    db_record = db.selectFundNavByDate(code = all_model_values[2], date = all_model_values[1])
+                nav_acc = db_record[2]
+                # 如果是 01-01 这样节日下单，日期应该换成有效交易日，即顺延的下一天
+                all_model_values[1] = db_record[0]
+                if u'买' in opType or u'申' in opType:
+                    all_model_values.append('买入')
+                    confirm_amount = round(occurMoney - fee, 2)
+                elif u'赎' in opType:
+                    all_model_values.append('卖出')
+                    confirm_amount = round(occurMoney + fee, 2)
+                elif u'转换至' in opType:
+                    # 把且慢稳稳的幸福的转换至都分拆放到 addition.json 里面了，这块太难搞了，以后应该也不会买且慢组合了，就不写逻辑了。
+                    print('\n[WARNING] qiemanSpider 且慢的转换至应该是一笔交易转两笔，请自行确认是否再 addition.json 中做了人工补充。\n\n{0}\n'.format(order))
+                    continue
+                else:
+                    print('[WARNING] qiemanSpider 未知操作：{0}'.format(opType))
+                    all_model_values.append(opType)
+                all_model_values.append(order['nav'])
+                all_model_values.append(nav_acc)
+            all_model_values.append(confirm_volume)
+            all_model_values.append(confirm_amount)
+            all_model_values.append(fee)
+            all_model_values.append(occurMoney)
+            all_model_values.append(self.owner + '_' + global_name + '_' + self.current_plan['name'])
+            categoryInfo = self.categoryManager.getCategoryByCode(all_model_values[2])
+            if categoryInfo != {}:
+                all_model_values.append(categoryInfo['category1'])
+                all_model_values.append(categoryInfo['category2'])
+                all_model_values.append(categoryInfo['category3'])
+                all_model_values.append(categoryInfo['categoryId'])
+            all_model_values.append('https://qieman.com/orders/' + jsonData['orderId'] + '子编号：' + order['orderId'])
+            itemDict = dict(zip(all_model_keys, all_model_values))
+            results.append(itemDict)
+        return results
 
 if __name__ == "__main__":
     strategy = 'klq'

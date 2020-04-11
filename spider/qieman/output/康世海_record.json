@@ -128,8 +128,8 @@
         "account": "康世海_且慢_稳稳的幸福",
         "category1": "债券",
         "category2": "国内债券",
-        "category3": "纯债",
-        "categoryId": 511,
+        "category3": "可转债",
+        "categoryId": 512,
         "note": "https://qieman.com/orders/PO20191127942R81M88402子编号：2019112700500260"
     },
     {
@@ -261,8 +261,8 @@
         "account": "康世海_且慢_稳稳的幸福",
         "category1": "债券",
         "category2": "国内债券",
-        "category3": "纯债",
-        "categoryId": 511,
+        "category3": "可转债",
+        "categoryId": 512,
         "note": "https://qieman.com/orders/PO20191128946L5RY554QM子编号：2019112800720115"
     },
     {
@@ -280,31 +280,12 @@
         "account": "康世海_且慢_稳稳的幸福",
         "category1": "债券",
         "category2": "国内债券",
-        "category3": "纯债",
-        "categoryId": 511,
+        "category3": "可转债",
+        "categoryId": 512,
         "note": "https://qieman.com/orders/PO2020010197JKSVPN6L8M子编号：2020010201369696"
     },
     {
         "id": 16,
-        "date": "2020-01-02",
-        "code": "164902",
-        "name": "交银信用添利债券(LOF)",
-        "dealType": "买入",
-        "nav_unit": 1.146,
-        "nav_acc": 1.631,
-        "volume": 132767.68,
-        "dealMoney": 152151.76,
-        "fee": 121.72,
-        "occurMoney": 152273.48,
-        "account": "康世海_且慢_稳稳的幸福",
-        "category1": "债券",
-        "category2": "国内债券",
-        "category3": "可转债",
-        "categoryId": 512,
-        "note": "https://qieman.com/orders/PO2020010197JKSVPN6L8M子编号：2020010301689694"
-    },
-    {
-        "id": 17,
         "date": "2020-01-02",
         "code": "006793",
         "name": "交银稳鑫短债债券A",
@@ -323,7 +304,7 @@
         "note": "https://qieman.com/orders/PO2020010197JKSVPN6L8M子编号：2020010201369690"
     },
     {
-        "id": 18,
+        "id": 17,
         "date": "2020-01-02",
         "code": "519738",
         "name": "交银周期回报灵活配置混合A",
@@ -342,7 +323,7 @@
         "note": "https://qieman.com/orders/PO2020010197JKSVPN6L8M子编号：自补充"
     },
     {
-        "id": 19,
+        "id": 18,
         "date": "2020-01-02",
         "code": "006793",
         "name": "交银稳鑫短债债券A",
@@ -361,7 +342,7 @@
         "note": "https://qieman.com/orders/PO2020010197JKSVPN6L8M子编号：2020010201369694"
     },
     {
-        "id": 20,
+        "id": 19,
         "date": "2020-01-02",
         "code": "519718",
         "name": "交银纯债A/B",
@@ -378,6 +359,25 @@
         "category3": "可转债",
         "categoryId": 512,
         "note": "https://qieman.com/orders/PO2020010197JKSVPN6L8M子编号：自补充"
+    },
+    {
+        "id": 20,
+        "date": "2020-01-03",
+        "code": "164902",
+        "name": "交银信用添利债券(LOF)",
+        "dealType": "买入",
+        "nav_unit": 1.146,
+        "nav_acc": 1.632,
+        "volume": 132767.68,
+        "dealMoney": 152151.76,
+        "fee": 121.72,
+        "occurMoney": 152273.48,
+        "account": "康世海_且慢_稳稳的幸福",
+        "category1": "债券",
+        "category2": "国内债券",
+        "category3": "可转债",
+        "categoryId": 512,
+        "note": "https://qieman.com/orders/PO2020010197JKSVPN6L8M子编号：2020010301689694"
     },
     {
         "id": 21,
