@@ -168,4 +168,3 @@ if __name__ == "__main__":
     # analyticsManager().getFamilyHoldingUniqueCodes()
     # analyticsManager().allFamilyHoldingSelloutStatus()
     # analyticsManager().getFundHoldingStatus()
-    danjuanSpider().get(forceUpdate = False)
