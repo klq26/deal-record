@@ -1,5 +1,6 @@
 ,id,date,code,name,dealType,nav_unit,nav_acc,volume,dealMoney,fee,occurMoney,account,category1,category2,category3,categoryId,note
-0,807,2020-03-03,161128,易方达标普信息科技,买入,1.7809,1.7809,18.69,33.32,0.04,33.36,李淑云_蛋卷_螺丝钉指数基金组合,海外成熟,美国,信息科技,315,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=203883957032730624
-1,834,2020-03-10,161128,易方达标普信息科技,买入,1.7214,1.7214,22.73,39.18,0.05,39.23,李淑云_蛋卷_螺丝钉指数基金组合,海外成熟,美国,信息科技,315,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=206422618048798720
-2,882,2020-03-23,161128,易方达标普信息科技,买入,1.4313,1.4313,10.47,15.0,0.02,15.02,李淑云_蛋卷_螺丝钉指数基金组合,海外成熟,美国,信息科技,315,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=211214897632485376
-3,890,2020-03-30,161128,易方达标普信息科技,买入,1.6408,1.6408,6.08,9.99,0.01,10.0,李淑云_蛋卷_螺丝钉指数基金组合,海外成熟,美国,信息科技,315,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=213747243983282176
+0,808,2020-03-03,161128,易方达标普信息科技,买入,1.7809,1.7809,18.69,33.32,0.04,33.36,李淑云_蛋卷_螺丝钉指数基金组合,海外成熟,美国,信息科技,315,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=203883957032730624
+1,835,2020-03-10,161128,易方达标普信息科技,买入,1.7214,1.7214,22.73,39.18,0.05,39.23,李淑云_蛋卷_螺丝钉指数基金组合,海外成熟,美国,信息科技,315,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=206422618048798720
+2,883,2020-03-23,161128,易方达标普信息科技,买入,1.4313,1.4313,10.47,15.0,0.02,15.02,李淑云_蛋卷_螺丝钉指数基金组合,海外成熟,美国,信息科技,315,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=211214897632485376
+3,891,2020-03-30,161128,易方达标普信息科技,买入,1.6408,1.6408,6.08,9.99,0.01,10.0,李淑云_蛋卷_螺丝钉指数基金组合,海外成熟,美国,信息科技,315,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=213747243983282176
+4,907,2020-04-08,161128,易方达标普信息科技,买入,1.707,1.707,5.85,9.99,0.01,10.0,李淑云_蛋卷_螺丝钉指数基金组合,海外成熟,美国,信息科技,315,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=217004521168539648

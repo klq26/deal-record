@@ -1,5 +1,5 @@
 ,id,date,code,name,dealType,nav_unit,nav_acc,volume,dealMoney,fee,occurMoney,account,category1,category2,category3,categoryId,note
-0,580,2019-12-16,519153,新华纯债C,买入,1.168,1.448,1027.4,1200.0,0.0,1200.0,李淑云_蛋卷_钉钉宝90天组合,债券,国内债券,纯债,511,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=175049967127937024
-1,622,2020-01-06,519153,新华纯债C,卖出,1.171,1.451,411.14,477.83,3.61,474.22,李淑云_蛋卷_钉钉宝90天组合,债券,国内债券,纯债,511,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=182947184211542016
-2,644,2020-01-20,519153,新华纯债C,买入,1.173,1.453,1023.27,1200.3,0.0,1200.3,李淑云_蛋卷_钉钉宝90天组合,债券,国内债券,纯债,511,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=187552018021924864
-3,810,2020-03-03,519153,新华纯债C,卖出,1.178,1.458,1639.53,1931.37,0.0,1931.37,李淑云_蛋卷_钉钉宝90天组合,债券,国内债券,纯债,511,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=203677690969358336
+0,581,2019-12-16,519153,新华纯债C,买入,1.168,1.448,1027.4,1200.0,0.0,1200.0,李淑云_蛋卷_钉钉宝90天组合,债券,国内债券,纯债,511,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=175049967127937024
+1,623,2020-01-06,519153,新华纯债C,卖出,1.171,1.451,411.14,477.83,3.61,474.22,李淑云_蛋卷_钉钉宝90天组合,债券,国内债券,纯债,511,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=182947184211542016
+2,645,2020-01-20,519153,新华纯债C,买入,1.173,1.453,1023.27,1200.3,0.0,1200.3,李淑云_蛋卷_钉钉宝90天组合,债券,国内债券,纯债,511,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=187552018021924864
+3,811,2020-03-03,519153,新华纯债C,卖出,1.178,1.458,1639.53,1931.37,0.0,1931.37,李淑云_蛋卷_钉钉宝90天组合,债券,国内债券,纯债,511,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=203677690969358336

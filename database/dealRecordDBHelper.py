@@ -236,6 +236,26 @@ class dealRecordDBHelper:
             self.insertDataToTable('fund_holding',familyHoldingDBKeys(), values)
         pass
 
+    ################################################
+    # TRUNCATE
+    ################################################
+
+    def truncateTable(self, tablename):
+        sql = u"truncate {0}".format(tablename)
+        # print(sql)
+        db = self.connect()
+        cursor = db.cursor()
+        try:
+            cursor.execute(sql)
+            db.commit()
+        except Exception as e:
+            # 表存在就回滚操作
+            db.rollback()
+            print(e)
+        finally:
+            cursor.close()
+            db.close()
+
 if __name__ == "__main__":
     db = dealRecordDBHelper()
     pass

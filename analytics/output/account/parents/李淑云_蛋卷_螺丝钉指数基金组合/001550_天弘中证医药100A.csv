@@ -1,6 +1,6 @@
 ,id,date,code,name,dealType,nav_unit,nav_acc,volume,dealMoney,fee,occurMoney,account,category1,category2,category3,categoryId,note
-0,212,2019-06-04,001550,天弘中证医药100A,买入,0.6643,0.6643,52.33,34.79,0.03,34.82,李淑云_蛋卷_螺丝钉指数基金组合,A 股,行业股,全指医药,142,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=3580386426272320677
-1,224,2019-06-11,001550,天弘中证医药100A,买入,0.6657,0.6657,57.05,38.02,0.04,38.06,李淑云_蛋卷_螺丝钉指数基金组合,A 股,行业股,全指医药,142,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=3742752544994605189
-2,239,2019-06-18,001550,天弘中证医药100A,买入,0.6655,0.6655,53.12,35.39,0.04,35.43,李淑云_蛋卷_螺丝钉指数基金组合,A 股,行业股,全指医药,142,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=3906171359983033198
-3,331,2019-08-06,001550,天弘中证医药100A,买入,0.6861,0.6861,50.24,34.5,0.03,34.53,李淑云_蛋卷_螺丝钉指数基金组合,A 股,行业股,全指医药,142,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=127784929988071424
-4,694,2020-02-11,001550,天弘中证医药100A,卖出,0.8827,0.8827,212.74,187.7,0.09,187.61,李淑云_蛋卷_螺丝钉指数基金组合,A 股,行业股,全指医药,142,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=196320308877479936
+0,213,2019-06-04,001550,天弘中证医药100A,买入,0.6643,0.6643,52.33,34.79,0.03,34.82,李淑云_蛋卷_螺丝钉指数基金组合,A 股,行业股,全指医药,142,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=3580386426272320677
+1,225,2019-06-11,001550,天弘中证医药100A,买入,0.6657,0.6657,57.05,38.02,0.04,38.06,李淑云_蛋卷_螺丝钉指数基金组合,A 股,行业股,全指医药,142,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=3742752544994605189
+2,240,2019-06-18,001550,天弘中证医药100A,买入,0.6655,0.6655,53.12,35.39,0.04,35.43,李淑云_蛋卷_螺丝钉指数基金组合,A 股,行业股,全指医药,142,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=3906171359983033198
+3,332,2019-08-06,001550,天弘中证医药100A,买入,0.6861,0.6861,50.24,34.5,0.03,34.53,李淑云_蛋卷_螺丝钉指数基金组合,A 股,行业股,全指医药,142,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=127784929988071424
+4,695,2020-02-11,001550,天弘中证医药100A,卖出,0.8827,0.8827,212.74,187.7,0.09,187.61,李淑云_蛋卷_螺丝钉指数基金组合,A 股,行业股,全指医药,142,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=196320308877479936

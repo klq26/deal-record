@@ -96,19 +96,25 @@ def updateAllDealRecords(strategy = 'klq', onlyUpdatelocal = True):
     df.to_csv(output_path)
 
 # 把家庭当前的持仓记录，历史清仓数据写入数据库
-def allFamilyHoldingSelloutStatus():
+def allFamilyHoldingSelloutStatus(onlyUpdatelocal = True):
     # 获取整体情况
     holding_df, sellout_df = analyticsManager().getFamilyHoldingSelloutStatus()
     # holding
     holding_df['id'] = [x for x in range(1, len(holding_df) + 1)]
     # 给定 Column 排序
     holding_df = holding_df[familyHoldingDBKeys()]
-    dealRecordDBHelper().insertFamilyHoldingByDataFrame(holding_df)
+    if not onlyUpdatelocal:
+        db = dealRecordDBHelper()
+        db.truncateTable('family_holding')
+        db.insertFamilyHoldingByDataFrame(holding_df)
     # sell out
     sellout_df['id'] = [x for x in range(1, len(sellout_df) + 1)]
     # 给定 Column 排序
     sellout_df = sellout_df[familyHoldingDBKeys()]
-    dealRecordDBHelper().insertFamilySelloutByDataFrame(sellout_df)
+    if not onlyUpdatelocal:
+        db = dealRecordDBHelper()
+        db.truncateTable('family_sellout')
+        db.insertFamilySelloutByDataFrame(sellout_df)
 
 # 把每只基金当前的持仓记录数据写入数据库
 def allFundHoldingStatus(onlyUpdatelocal = True):
@@ -117,8 +123,9 @@ def allFundHoldingStatus(onlyUpdatelocal = True):
     # print(holding_df)
     holding_df['account'] = u'不适用'
     if not onlyUpdatelocal:
-        # TODO truncate first
-        dealRecordDBHelper().insertFundHoldingByDataFrame(holding_df)
+        db = dealRecordDBHelper()
+        db.truncateTable('fund_holding')
+        db.insertFundHoldingByDataFrame(holding_df)
 
 # 显示库中不认识的基金代码及名称
 def showCategoryUnknownFunds(strategy = 'klq'):
@@ -158,13 +165,18 @@ def updateDatabase():
 if __name__ == "__main__":
     # cls()
     # 更新数据库
-    # updateDatabase()
-
-    # allFundHoldingStatus()
+    updateDatabase()
+    
     # 插入全部记录
-    # updateAllDealRecords('klq', onlyUpdatelocal = False)
-    # updateAllDealRecords('parents', onlyUpdatelocal = False)
-    # 
+    updateAllDealRecords('klq', onlyUpdatelocal = False)
+    updateAllDealRecords('parents', onlyUpdatelocal = False)
+    
+    allUniqueCodes()
+    
+    allFamilyHoldingSelloutStatus(onlyUpdatelocal = False)
+    allFundHoldingStatus(onlyUpdatelocal = False)
+
     # analyticsManager().getFamilyHoldingUniqueCodes()
     # analyticsManager().allFamilyHoldingSelloutStatus()
     # analyticsManager().getFundHoldingStatus()
+    

@@ -1,14 +1,14 @@
 ,id,date,code,name,dealType,nav_unit,nav_acc,volume,dealMoney,fee,occurMoney,account,category1,category2,category3,categoryId,note
-0,387,2019-09-03,000968,广发中证养老,买入,0.958,0.958,35.31,33.87,0.04,33.91,康世海_蛋卷_螺丝钉指数基金组合,A 股,行业股,养老产业,141,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=137929909549285376
-1,427,2019-09-24,000968,广发中证养老,买入,0.9721,0.9721,34.76,33.83,0.04,33.87,康世海_蛋卷_螺丝钉指数基金组合,A 股,行业股,养老产业,141,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=145570742822154240
-2,433,2019-09-24,000968,广发中证养老,买入,0.9721,0.9721,34.76,33.83,0.04,33.87,康世海_蛋卷_螺丝钉指数基金组合,A 股,行业股,养老产业,141,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=145544531890839552
-3,446,2019-10-08,000968,广发中证养老,买入,0.939,0.939,38.24,35.95,0.04,35.99,康世海_蛋卷_螺丝钉指数基金组合,A 股,行业股,养老产业,141,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=150623128536137728
-4,458,2019-10-15,000968,广发中证养老,买入,0.9597,0.9597,34.81,33.45,0.04,33.49,康世海_蛋卷_螺丝钉指数基金组合,A 股,行业股,养老产业,141,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=153155532408668160
-5,470,2019-10-22,000968,广发中证养老,买入,0.9566,0.9566,36.15,34.62,0.04,34.66,康世海_蛋卷_螺丝钉指数基金组合,A 股,行业股,养老产业,141,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=155698591981518848
-6,482,2019-10-29,000968,广发中证养老,买入,0.9553,0.9553,35.25,33.71,0.04,33.75,康世海_蛋卷_螺丝钉指数基金组合,A 股,行业股,养老产业,141,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=158234562438803456
-7,496,2019-11-05,000968,广发中证养老,买入,0.9644,0.9644,34.77,33.57,0.04,33.61,康世海_蛋卷_螺丝钉指数基金组合,A 股,行业股,养老产业,141,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=160760583989641216
-8,506,2019-11-12,000968,广发中证养老,买入,0.9538,0.9538,35.85,34.23,0.04,34.27,康世海_蛋卷_螺丝钉指数基金组合,A 股,行业股,养老产业,141,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=163302124683677696
-9,518,2019-11-19,000968,广发中证养老,买入,0.9809,0.9809,17.0,16.7,0.02,16.72,康世海_蛋卷_螺丝钉指数基金组合,A 股,行业股,养老产业,141,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=165835799946510336
-10,532,2019-11-26,000968,广发中证养老,买入,0.9567,0.9567,17.98,17.22,0.02,17.24,康世海_蛋卷_螺丝钉指数基金组合,A 股,行业股,养老产业,141,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=168372943986540544
-11,561,2019-12-03,000968,广发中证养老,买入,0.9399,0.9399,18.54,17.45,0.02,17.47,康世海_蛋卷_螺丝钉指数基金组合,A 股,行业股,养老产业,141,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=170908572376776704
-12,575,2019-12-10,000968,广发中证养老,买入,0.96,0.96,17.4,16.72,0.02,16.74,康世海_蛋卷_螺丝钉指数基金组合,A 股,行业股,养老产业,141,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=173445624717033472
+0,388,2019-09-03,000968,广发中证养老,买入,0.958,0.958,35.31,33.87,0.04,33.91,康世海_蛋卷_螺丝钉指数基金组合,A 股,行业股,养老产业,141,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=137929909549285376
+1,428,2019-09-24,000968,广发中证养老,买入,0.9721,0.9721,34.76,33.83,0.04,33.87,康世海_蛋卷_螺丝钉指数基金组合,A 股,行业股,养老产业,141,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=145570742822154240
+2,434,2019-09-24,000968,广发中证养老,买入,0.9721,0.9721,34.76,33.83,0.04,33.87,康世海_蛋卷_螺丝钉指数基金组合,A 股,行业股,养老产业,141,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=145544531890839552
+3,447,2019-10-08,000968,广发中证养老,买入,0.939,0.939,38.24,35.95,0.04,35.99,康世海_蛋卷_螺丝钉指数基金组合,A 股,行业股,养老产业,141,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=150623128536137728
+4,459,2019-10-15,000968,广发中证养老,买入,0.9597,0.9597,34.81,33.45,0.04,33.49,康世海_蛋卷_螺丝钉指数基金组合,A 股,行业股,养老产业,141,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=153155532408668160
+5,471,2019-10-22,000968,广发中证养老,买入,0.9566,0.9566,36.15,34.62,0.04,34.66,康世海_蛋卷_螺丝钉指数基金组合,A 股,行业股,养老产业,141,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=155698591981518848
+6,483,2019-10-29,000968,广发中证养老,买入,0.9553,0.9553,35.25,33.71,0.04,33.75,康世海_蛋卷_螺丝钉指数基金组合,A 股,行业股,养老产业,141,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=158234562438803456
+7,497,2019-11-05,000968,广发中证养老,买入,0.9644,0.9644,34.77,33.57,0.04,33.61,康世海_蛋卷_螺丝钉指数基金组合,A 股,行业股,养老产业,141,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=160760583989641216
+8,507,2019-11-12,000968,广发中证养老,买入,0.9538,0.9538,35.85,34.23,0.04,34.27,康世海_蛋卷_螺丝钉指数基金组合,A 股,行业股,养老产业,141,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=163302124683677696
+9,519,2019-11-19,000968,广发中证养老,买入,0.9809,0.9809,17.0,16.7,0.02,16.72,康世海_蛋卷_螺丝钉指数基金组合,A 股,行业股,养老产业,141,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=165835799946510336
+10,533,2019-11-26,000968,广发中证养老,买入,0.9567,0.9567,17.98,17.22,0.02,17.24,康世海_蛋卷_螺丝钉指数基金组合,A 股,行业股,养老产业,141,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=168372943986540544
+11,562,2019-12-03,000968,广发中证养老,买入,0.9399,0.9399,18.54,17.45,0.02,17.47,康世海_蛋卷_螺丝钉指数基金组合,A 股,行业股,养老产业,141,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=170908572376776704
+12,576,2019-12-10,000968,广发中证养老,买入,0.96,0.96,17.4,16.72,0.02,16.74,康世海_蛋卷_螺丝钉指数基金组合,A 股,行业股,养老产业,141,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=173445624717033472
