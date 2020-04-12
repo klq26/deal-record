@@ -163,20 +163,20 @@ def updateDatabase():
     # divide.insertToDB()
 
 if __name__ == "__main__":
-    # cls()
-    # 更新数据库
-    updateDatabase()
-    
-    # 插入全部记录
-    updateAllDealRecords('klq', onlyUpdatelocal = False)
-    updateAllDealRecords('parents', onlyUpdatelocal = False)
-    
-    allUniqueCodes()
-    
-    allFamilyHoldingSelloutStatus(onlyUpdatelocal = False)
-    allFundHoldingStatus(onlyUpdatelocal = False)
+        # # 更新数据库
+        # updateDatabase()
+        
+        # # 插入全部记录
+        # updateAllDealRecords('klq', onlyUpdatelocal = False)
+        # updateAllDealRecords('parents', onlyUpdatelocal = False)
+        
+        # allUniqueCodes()
+        
+        # allFamilyHoldingSelloutStatus(onlyUpdatelocal = False)
+        # allFundHoldingStatus(onlyUpdatelocal = False)
+
+    tiantianSpider().get(forceUpdate=True)
 
     # analyticsManager().getFamilyHoldingUniqueCodes()
     # analyticsManager().allFamilyHoldingSelloutStatus()
     # analyticsManager().getFundHoldingStatus()
-    

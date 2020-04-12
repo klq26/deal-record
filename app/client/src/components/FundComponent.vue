@@ -219,6 +219,7 @@ export default {
         }
         // 格式化
         this.totalDailyGain = parseFloat(this.totalDailyGain).toFixed(2)
+        this.totalHoldingGain = parseFloat(this.totalHoldingGain).toFixed(2)
         this.myCountdown = this.countdown
         this.isUpdating = true
         setTimeout(() => {

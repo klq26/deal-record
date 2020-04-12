@@ -68,25 +68,31 @@ class estimateManager:
                     text = response.text.replace('cb(', '').replace(';', '').replace(')', '')
                     if text != u'':
                         eastmoneyData = json.loads(text)['data']
-                        jsonData = {}
-                        jsonData['name'] = name
-                        today = datetime.now().strftime('%Y-%m-%d')
-                        yesterday =(datetime.now() - timedelta(days=1)).strftime('%Y-%m-%d')
-                        jsonData['jzrq'] = yesterday
-                        jsonData['dwjz'] = eastmoneyData['prePrice']
-                        details = eastmoneyData['details']
-                        if len(details) > 0:
-                            latest = details[-1]
-                            values = latest.split(',')
-                            jsonData['gsz'] = values[1]
-                            jsonData['gszzl'] = round((float(jsonData['gsz']) / float(jsonData['dwjz']) - 1)*100, 2)
-                            jsonData['gztime'] = today + ' ' + values[0][0:5]
+                        if eastmoneyData != None:
+                            jsonData = {}
+                            jsonData['name'] = name
+                            today = datetime.now().strftime('%Y-%m-%d')
+                            yesterday =(datetime.now() - timedelta(days=1)).strftime('%Y-%m-%d')
+                            jsonData['jzrq'] = yesterday
+                            if u'prePrice' in eastmoneyData.keys():
+                                jsonData['dwjz'] = str(eastmoneyData['prePrice'])
+                            else:
+                                jsonData['dwjz'] = u'0.0'
+                            details = eastmoneyData['details']
+                            if len(details) > 0:
+                                latest = details[-1]
+                                values = latest.split(',')
+                                jsonData['gsz'] = values[1]
+                                jsonData['gszzl'] = str(round((float(jsonData['gsz']) / float(jsonData['dwjz']) - 1)*100, 2))
+                                jsonData['gztime'] = today + ' ' + values[0][0:5]
+                            else:
+                                jsonData['gsz'] = jsonData['dwjz']
+                                jsonData['gszzl'] = "0.0"
+                                jsonData['gztime'] = today + ' ' + '00:00'
+                            jsonData['market'] = '场内'
+                            successItems[code] = jsonData
                         else:
-                            jsonData['gsz'] = jsonData['dwjz']
-                            jsonData['gszzl'] = 0.0
-                            jsonData['gztime'] = today + ' ' + '00:00'
-                        jsonData['market'] = '场内'
-                        successItems[code] = jsonData
+                            failureItems[code] = {"name":name}
                     else:
                         failureItems[code] = {"name":name}
         # 合并
