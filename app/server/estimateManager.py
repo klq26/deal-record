@@ -4,6 +4,7 @@ import json
 from datetime import datetime
 from datetime import timedelta
 import grequests
+import requests
 
 class estimateManager:
 
@@ -46,8 +47,8 @@ class estimateManager:
             fullNames.append(fullName)
             markets.append(market)
 
-        successItems = {}
-        failureItems = {}
+        estimateItems = {}
+        navItems = {}
 
         # 并发
         request_list = [grequests.get(url, headers = self.headers) for url in urls]
@@ -68,9 +69,9 @@ class estimateManager:
                         jsonData['name'] = name
                         jsonData['fullname'] = fullName
                         jsonData['market'] = market
-                        successItems[code] = jsonData
+                        estimateItems[code] = jsonData
                     else:
-                        failureItems[code] = {"name":name}
+                        navItems[code] = {"name":name, "fullname": fullName, 'market': market}
                 # 解析场内
                 elif response.url.startswith(self.innerUrlPrefix):
                     text = response.text.replace('cb(', '').replace(';', '').replace(')', '')
@@ -99,25 +100,31 @@ class estimateManager:
                                 jsonData['gszzl'] = "0.0"
                                 jsonData['gztime'] = today + ' ' + '00:00'
                             jsonData['market'] = market
-                            successItems[code] = jsonData
+                            estimateItems[code] = jsonData
                         else:
-                            failureItems[code] = {"name":name}
+                            navItems[code] = {"name":name, "fullname": fullName, 'market': market}
                     else:
-                        failureItems[code] = {"name":name}
+                        navItems[code] = {"name":name, "fullname": fullName, 'market': market}
+        # failure
+        # https://danjuanapp.com/djapi/fund/000614
+        # data.fund_derived.unit_nav
+        # 无法估值的品种，再去尝试拿一波净值吧
+        #     
+        nav_url = u'https://danjuanapp.com/djapi/fund/{0}'
+        today = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+        for key in navItems.keys():
+            item = navItems[key]
+            response = requests.get(nav_url.format(key), headers=self.headers, verify=False)
+            if response.status_code == 200:
+                jsonData = json.loads(response.text)
+                nav = str(jsonData['data']['fund_derived']['unit_nav'])
+                item['dwjz'] = nav
+                item['gsz'] = nav
+                item['gszzl'] = '0.00'
+                item['gztime'] = str(jsonData['data']['fund_derived']['end_date']) + ' 00:00:00'
+                item['jzrq'] = str(jsonData['data']['fund_derived']['end_date'])
         # 合并
-        result = {'success': successItems, 'failure': failureItems, 'total': len(successItems) + len(failureItems)}
+        result = {'estimate': estimateItems, 'nav': navItems, 'total': len(estimateItems) + len(navItems)}
         # with open(output_path,'w+', encoding='utf-8') as f:
         #     f.write(json.dumps(result, ensure_ascii=False,indent=4))
         return result
-
-# text = response.text.replace('jsonpgz(', '').replace(';', '').replace(')', '')
-# # print(u'[URL]:{0}'.format(self.url.format(code)))
-# # print(u'[TEXT]:{0}'.format(text))
-# # [TEXT]:{"fundcode":"000478","name":"建信中证500指数增强A","jzrq":"2019-10-25","dwjz":"1.9812","gsz":"2.0151","gszzl":"1.71","gztime":"2019-10-28 15:00"}
-# if text == u'':
-#     # 华安德国 30 这样的 QDII 基金，可能没有估值，返回一个默认的
-#     return(0, 'NA', 0, 0.0000, 'NA')
-# data = json.loads(text)
-# # 当前净值，当前净值日期，估算净值，估算增长率，估算时间戳
-# return (round(float(data['dwjz']), 4), data['jzrq'], round(float(data['gsz']), 4), round(float(data['gszzl'])/100, 4), data['gztime'])
-

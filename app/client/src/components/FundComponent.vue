@@ -32,8 +32,8 @@
       <p class="dailyChange title" v-show="!showDaily">总盈亏</p>
     </div>
     <div class="fundcell border" v-for="item in myHoldings" :key="item.index">
-      <p class="fundcode" :class="categoryColorWithValue(item)">{{item.code}}</p>
-      <p class="fundname" :class="categoryColorWithValue(item)">{{item.name}}</p>
+      <p class="fundcode" :class="[categoryColorWithValue(item), marketColor(item)]">{{item.code}}</p>
+      <p class="fundname" :class="[categoryColorWithValue(item), marketColor(item)]">{{item.name}}</p>
       <p class="fundnav" :class="navColorWithValue(item)" >{{item.holding_nav}}</p>
       <div class="fundcell" :class="{flash : isUpdating}">
       <p class="fundnav">{{item.estimate_nav}}</p>
@@ -57,6 +57,13 @@ export default {
   methods: {
     datetimeClicked () {
       this.$emit('changeShowDetail')
+    },
+    marketColor (item) {
+      if (item.market === '场外') {
+        return ''
+      } else {
+        return 'inner-fund-text-color'
+      }
     },
     updateTime () {
       var date = new Date()
@@ -192,9 +199,9 @@ export default {
           var fundItem = this.myHoldings[index]
           var code = fundItem.code
           // 拿估值
-          for (var key in this.myEstimates.success) {
+          for (var key in this.myEstimates.estimate) {
             if (key === code) {
-              var estiItem = this.myEstimates.success[key]
+              var estiItem = this.myEstimates.estimate[key]
               fundItem['market'] = estiItem.market
               fundItem['estimate_nav'] = estiItem.gsz
               fundItem['estimate_rate'] = parseFloat(estiItem.gszzl).toFixed(2) + '%'
@@ -209,13 +216,21 @@ export default {
             }
           }
           // 失败？
-          for (var key2 in this.myEstimates.failure) {
+          for (var key2 in this.myEstimates.nav) {
             if (key2 === code) {
-              fundItem['estimate_nav'] = '暂无'
-              fundItem['estimate_rate'] = '0.00%'
-              fundItem['dailyChange'] = parseFloat(0.00).toFixed(2)
-              fundItem['total_estimate_rate'] = '0.00%'
-              fundItem['totalChange'] = parseFloat(0.00).toFixed(2)
+              console.log(key2)
+              estiItem = this.myEstimates.nav[key2]
+              console.log(estiItem)
+              fundItem['market'] = estiItem.market
+              fundItem['estimate_nav'] = estiItem.gsz
+              fundItem['estimate_rate'] = parseFloat(estiItem.gszzl).toFixed(2) + '%'
+              // 今天数据
+              fundItem['dailyChange'] = ((parseFloat(estiItem.gsz) - parseFloat(estiItem.dwjz)) * fundItem.holding_volume).toFixed(2)
+              this.totalDailyGain = this.totalDailyGain + parseFloat(fundItem.dailyChange)
+              // 整体数据
+              fundItem['total_estimate_rate'] = ((parseFloat(estiItem.gsz) / parseFloat(fundItem.holding_nav) - 1) * 100).toFixed(2) + '%'
+              fundItem['totalChange'] = ((parseFloat(estiItem.gsz) - parseFloat(fundItem.holding_nav)) * fundItem.holding_volume).toFixed(2)
+              this.totalHoldingGain = this.totalHoldingGain + parseFloat(fundItem.totalChange)
               break
             }
           }
@@ -401,7 +416,7 @@ export default {
 }
 
 /* 场内基金提高辨识度 */
-.innerFundText {
+.inner-fund-text-color {
   color: #CC0000;
 }
 

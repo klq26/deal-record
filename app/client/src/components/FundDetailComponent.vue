@@ -1,5 +1,5 @@
 <template>
-  <div class="mainContainer" @click="showDaily = !showDaily">
+  <div class="mainContainer" style="width:449px;" @click="showDaily = !showDaily">
     <!-- 时间相关 -->
     <div style="display:flex;width:100%;">
       <!-- 时间 -->
@@ -28,23 +28,23 @@
       <div class="valueContainerCell">
         <div class="valueItem" :class="categoryColorWithValue(item)">
           <p class="itemKey">估值&nbsp;&nbsp;</p>
-          <p class="itemValue">{{item.estimate_nav}}</p>
+          <p class="itemValue" :class="{flash : isUpdating}">{{item.estimate_nav}}</p>
         </div>
         <div class="valueItem" :class="categoryColorWithValue(item)" v-show="showDaily">
           <p class="itemKey">日涨&nbsp;&nbsp;</p>
-          <p class="itemValue" :class="textColorWithValue(item.estimate_rate)">{{item.estimate_rate}}</p>
+          <p class="itemValue" :class="[textColorWithValue(item.estimate_rate),{flash : isUpdating}]">{{item.estimate_rate}}</p>
         </div>
         <div class="valueItem" :class="categoryColorWithValue(item)" v-show="showDaily">
           <p class="itemKey">日盈&nbsp;&nbsp;</p>
-          <p class="itemValue" :class="textColorWithValue(item.dailyChange)">{{demical(item.dailyChange, 2)}}</p>
+          <p class="itemValue" :class="[textColorWithValue(item.dailyChange),{flash : isUpdating}]">{{demical(item.dailyChange, 2)}}</p>
         </div>
         <div class="valueItem" :class="categoryColorWithValue(item)" v-show="!showDaily">
-          <p class="itemKey">总涨&nbsp;&nbsp;</p>
-          <p class="itemValue" :class="textColorWithValue(item.total_estimate_rate)">{{item.total_estimate_rate}}</p>
+          <p class="itemKey">持涨&nbsp;&nbsp;</p>
+          <p class="itemValue" :class="[textColorWithValue(item.total_estimate_rate),{flash : isUpdating}]">{{item.total_estimate_rate}}</p>
         </div>
         <div class="valueItem" :class="categoryColorWithValue(item)" v-show="!showDaily">
-          <p class="itemKey">总盈&nbsp;&nbsp;</p>
-          <p class="itemValue" :class="textColorWithValue(item.totalChange)">{{demical(item.totalChange, 2)}}</p>
+          <p class="itemKey">持盈&nbsp;&nbsp;</p>
+          <p class="itemValue" :class="[textColorWithValue(item.totalChange),{flash : isUpdating}]">{{demical(item.totalChange, 2)}}</p>
         </div>
       </div>
       <!-- line 2 -->
@@ -63,20 +63,32 @@
         </div>
       </div>
       <!-- line 3 -->
-      <!-- <div class="valueContainerCell">
+      <div class="valueContainerCell">
         <div class="valueItem" :class="categoryColorWithValue(item)">
-          <p class="itemKey">持盈&nbsp;&nbsp;</p>
-          <p class="itemValue" :class="textColorWithValue(item.holding_gain)">{{item.holding_gain}}</p>
+          <p class="itemKey">波盈&nbsp;&nbsp;</p>
+          <p class="itemValue" :class="textColorWithValue(item.holding_gain)">{{demical(item.holding_gain,2)}}</p>
         </div>
         <div class="valueItem" :class="categoryColorWithValue(item)">
           <p class="itemKey">史盈&nbsp;&nbsp;</p>
-          <p class="itemValue" :class="textColorWithValue(item.history_gain)">{{item.history_gain}}</p>
+          <p class="itemValue" :class="textColorWithValue(item.history_gain)">{{demical(item.history_gain, 2)}}</p>
         </div>
         <div class="valueItem" :class="categoryColorWithValue(item)">
           <p class="itemKey">分现&nbsp;&nbsp;</p>
-          <p class="itemValue" :class="textColorWithValue(item.total_cash_dividend)">{{item.total_cash_dividend}}</p>
+          <p class="itemValue" :class="textColorWithValue(item.total_cash_dividend)">{{demical(item.total_cash_dividend, 2)}}</p>
         </div>
-      </div> -->
+      </div>
+      <!-- line 4 -->
+      <div class="valueContainerCell">
+        <div class="valueItem" :class="categoryColorWithValue(item)">
+          <p class="itemValue">{{item.category1}}</p>
+        </div>
+        <div class="valueItem" :class="categoryColorWithValue(item)">
+          <p class="itemValue">{{item.category2}}</p>
+        </div>
+        <div class="valueItem" :class="categoryColorWithValue(item)">
+          <p class="itemValue">{{item.category3}}</p>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -237,9 +249,9 @@ export default {
           var fundItem = this.myHoldings[index]
           var code = fundItem.code
           // 拿估值
-          for (var key in this.myEstimates.success) {
+          for (var key in this.myEstimates.estimate) {
             if (key === code) {
-              var estiItem = this.myEstimates.success[key]
+              var estiItem = this.myEstimates.estimate[key]
               fundItem['market'] = estiItem.market
               fundItem['estimate_nav'] = estiItem.gsz
               fundItem['estimate_rate'] = parseFloat(estiItem.gszzl).toFixed(2) + '%'
@@ -254,13 +266,19 @@ export default {
             }
           }
           // 失败？
-          for (var key2 in this.myEstimates.failure) {
+          for (var key2 in this.myEstimates.nav) {
             if (key2 === code) {
-              fundItem['estimate_nav'] = '暂无'
-              fundItem['estimate_rate'] = '0.00%'
-              fundItem['dailyChange'] = parseFloat(0.00).toFixed(2)
-              fundItem['total_estimate_rate'] = '0.00%'
-              fundItem['totalChange'] = parseFloat(0.00).toFixed(2)
+              estiItem = this.myEstimates.nav[key2]
+              fundItem['market'] = estiItem.market
+              fundItem['estimate_nav'] = estiItem.gsz
+              fundItem['estimate_rate'] = parseFloat(estiItem.gszzl).toFixed(2) + '%'
+              // 今天数据
+              fundItem['dailyChange'] = ((parseFloat(estiItem.gsz) - parseFloat(estiItem.dwjz)) * fundItem.holding_volume).toFixed(2)
+              this.totalDailyGain = this.totalDailyGain + parseFloat(fundItem.dailyChange)
+              // 整体数据
+              fundItem['total_estimate_rate'] = ((parseFloat(estiItem.gsz) / parseFloat(fundItem.holding_nav) - 1) * 100).toFixed(2) + '%'
+              fundItem['totalChange'] = ((parseFloat(estiItem.gsz) - parseFloat(fundItem.holding_nav)) * fundItem.holding_volume).toFixed(2)
+              this.totalHoldingGain = this.totalHoldingGain + parseFloat(fundItem.totalChange)
               break
             }
           }
@@ -375,11 +393,24 @@ export default {
   padding: 0px;
 }
 
+.itemKey {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.itemValue {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .valueItem {
   /* 解决纯数字时偏上的问题 */
   display: flex;
   align-items: center;
-  margin: 1px;
+  justify-content: left;
+  margin: 0px;
   padding: 1px;
   height: 25px;
   width: 33.333%;
@@ -409,6 +440,7 @@ export default {
 /* 场内基金提高辨识度 */
 .inner-fund-text-color {
   color: #CC0000;
+  font: bold;
 }
 
 .mainContainer {
