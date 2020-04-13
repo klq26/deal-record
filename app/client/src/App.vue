@@ -1,6 +1,7 @@
 <template>
   <div id="app">
-    <FundComponent :holdings="holdings" :estimates="estimates" :countdown="countdown"/>
+    <FundComponent :holdings="holdings" :estimates="estimates" :countdown="countdown" v-show="!showDetail" v-on:changeShowDetail="changeShowDetail"/>
+    <FundDetailComponent :holdings="holdings" :estimates="estimates" :countdown="countdown" v-show="showDetail" v-on:changeShowDetail="changeShowDetail"/>
   </div>
 </template>
 
@@ -10,6 +11,7 @@ import axios from 'axios'
 import Vue from 'vue'
 
 import FundComponent from './components/FundComponent'
+import FundDetailComponent from './components/FundDetailComponent'
 
 Vue.prototype.$axios = axios
 Vue.config.productionTip = false
@@ -20,16 +22,21 @@ var serverIp = 'http://112.125.25.230/'
 export default {
   name: 'App',
   components: {
-    FundComponent
+    FundComponent,
+    FundDetailComponent
   },
   data () {
     return {
       holdings: [],
       estimates: {},
-      countdown: 5 * 60
+      countdown: 5 * 60,
+      showDetail: false
     }
   },
   methods: {
+    changeShowDetail () {
+      this.showDetail = !this.showDetail
+    },
     familyHolding () {
       var that = this
       axios.get(serverIp + 'familyholding/api/holding?type=1').then(function (response) {

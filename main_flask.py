@@ -11,6 +11,7 @@ from flask import Response
 from flask_cors import *
 
 from category.categoryManager import categoryManager
+from database.fundDBHelper import fundDBHelper
 from app.server.holdingDBHelper import *
 from app.server.estimateManager import estimateManager
 
@@ -61,8 +62,10 @@ def getFamilyHolding():
         sub = df[df['基金代码'] == code]
         if len(sub) > 0:
             x['name'] = sub.基金简称.values[0]
+            x['full_name'] = sub.基金名称.values[0]
         else:
-            x['name'] = u'未知简称' + code
+            x['name'] = u'未知 ' + code
+            x['full_name'] = u'未知 ' + code
     # data = json.dumps(records, ensure_ascii=False, indent=4)
     end_ts = dm.getTimeStamp()
     duration = dm.getDuration(start_ts, end_ts)
@@ -95,22 +98,63 @@ def getFamilyEstimate():
             sub = df[df['基金代码'] == code]
             if len(sub) > 0:
                 name = sub.基金简称.values[0]
-                isInner = sub.市场.values[0] == u'场内'
+                fullName = sub.基金名称.values[0]
+                market = sub.市场.values[0]
             else:
-                name = u'未知简称' + code
-            values = [code, name, isInner]
+                name = u'未知 ' + code
+                fullName = sub.基金名称.values[0]
+                market = u'其他'
+            values = [code, name, fullName, market]
             params.append(values)
         # 后面采用新缓存机制
         # with open(output_path, 'w+', encoding=u'utf-8') as f:
         #     f.write(json.dumps(params, ensure_ascii=False, indent=4))
     em = estimateManager()
-    # data = json.dumps(em.esitmate(params), ensure_ascii=False, indent=4)
     end_ts = dm.getTimeStamp()
     duration = dm.getDuration(start_ts, end_ts)
     data = packDataWithCommonInfo(duration = duration, data = em.esitmate(params))
     cm.saveCache(request.path, data)
     return Response(data, status=200, mimetype='application/json')
 
+def getFundHoldingPieInfos(code):
+    db = holdingDBHelper()
+    records = db.selectFundHoldingsGroupByAccount(code)
+    results = {}
+    for x in records:
+        sumItem = None
+        if u'母' in x['account']:
+            if u'lsy' not in results.keys():
+                results['lsy'] = x
+            else:
+                sumItem = results['lsy']
+        elif u'父' in x['account']:
+            if u'ksh' not in results.keys():
+                results['ksh'] = x
+            else:
+                sumItem = results['ksh']
+        else:
+            if u'klq' not in results.keys():
+                results['klq'] = x
+            else:
+                sumItem = results['klq']
+        if sumItem != None:
+            sumItem['holding_volume'] += round(float(x['holding_volume']), 2)
+            sumItem['holding_money'] += round(float(x['holding_money']), 2)
+            sumItem['holding_gain'] += round(float(x['holding_gain']), 2)
+            sumItem['history_gain'] += round(float(x['history_gain']), 2)
+            sumItem['total_cash_dividend'] += round(float(x['total_cash_dividend']), 2)
+            sumItem['total_fee'] += round(float(x['total_fee']), 2)
+    [print(x) for x in results.items()]
 
 if __name__ == '__main__':
     app.run(port=5000, debug=True)
+    # getFundHoldingPieInfos('100032')
+    # x = fundDBHelper().selectFundInfo('510050')
+    # if x != None:
+    #     [print(y) for y in x.items()]
+    # print()
+    # x = fundDBHelper().selectDividendInfo('510050')
+    # [print(y) for y in x]
+    # print()
+    # x = fundDBHelper().selectSplitInfo('510050')
+    # [print(y) for y in x]

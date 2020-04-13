@@ -4,7 +4,36 @@ import sys
 import json
 import pymysql
 
+import numpy as np
+
 from login.account import account
+
+def fundInfoKeys():
+    info_keys = ['fundCode', 'fundName', 'foundDate', 'fundType', 'feeRate', 'feeRateDiscount', 'sell', 'holding', 'buyConfirmDay', 'buyQueryDay', 'canCheckGainDay', 'sellConfirmDay', 'sellQueryDay', 'moneyBackDay']
+    return info_keys
+
+def fundInfoModelFromValues(values):
+    keys = fundInfoKeys()
+    modelDict = dict(zip(keys, values))
+    return modelDict
+
+def dividendInfoKeys():
+    info_keys = ['名称', '代码', '年份', '权益登记日', '除息日', '每份分红', '分红发放日']
+    return info_keys
+
+def dividendInfoModelFromValues(values):
+    keys = dividendInfoKeys()
+    modelDict = dict(zip(keys, values))
+    return modelDict
+
+def splitInfoKeys():
+    info_keys = ['名称', '代码', '年份', '拆分折算日', '拆分类型', '拆分折算比例']
+    return info_keys
+
+def splitInfoModelFromValues(values):
+    keys = splitInfoKeys()
+    modelDict = dict(zip(keys, values))
+    return modelDict
 
 class fundDBHelper:
     
@@ -298,6 +327,88 @@ class fundDBHelper:
             return self.selectFundNavByDate(code, spliteDate)
         else:
             return None
+
+    def selectFundInfo(self, code):
+        if code == u'' or code == None:
+            return None
+        sql = u"SELECT * FROM fund_info WHERE fundCode = {0}".format(code)
+        # print(sql)
+        db = self.connect()
+        cursor = db.cursor()
+        results = []
+        try:
+            cursor.execute(sql)
+            db.commit()
+            results = cursor.fetchall()
+        except Exception as e:
+            # 表存在就回滚操作
+            db.rollback()
+            print(e)
+        finally:
+            cursor.close()
+            db.close()
+        if len(results) > 0:
+            x = results[0]
+            values = np.array(x).tolist()
+            return fundInfoModelFromValues(values)
+        else:
+            return None
+
+    def selectDividendInfo(self, code):
+        if code == u'' or code == None:
+            return []
+        sql = u"SELECT * FROM fund_dividend WHERE 代码 = {0}".format(code)
+        # print(sql)
+        db = self.connect()
+        cursor = db.cursor()
+        results = []
+        try:
+            cursor.execute(sql)
+            db.commit()
+            results = cursor.fetchall()
+        except Exception as e:
+            # 表存在就回滚操作
+            db.rollback()
+            print(e)
+        finally:
+            cursor.close()
+            db.close()
+        if len(results) > 0:
+            infos = []
+            for x in results:
+                values = np.array(x).tolist()
+                infos.append(dividendInfoModelFromValues(values))
+            return infos
+        else:
+            return []
+
+    def selectSplitInfo(self, code):
+        if code == u'' or code == None:
+            return []
+        sql = u"SELECT * FROM fund_split WHERE 代码 = {0}".format(code)
+        # print(sql)
+        db = self.connect()
+        cursor = db.cursor()
+        results = []
+        try:
+            cursor.execute(sql)
+            db.commit()
+            results = cursor.fetchall()
+        except Exception as e:
+            # 表存在就回滚操作
+            db.rollback()
+            print(e)
+        finally:
+            cursor.close()
+            db.close()
+        if len(results) > 0:
+            infos = []
+            for x in results:
+                values = np.array(x).tolist()
+                infos.append(splitInfoModelFromValues(values))
+            return infos
+        else:
+            return []
 
     ################################################
     # INSERT

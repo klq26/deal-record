@@ -1,47 +1,82 @@
 <template>
-  <div class="container" @click="showDaily = !showDaily">
+  <div class="mainContainer" @click="showDaily = !showDaily">
+    <!-- 时间相关 -->
     <div style="display:flex;width:100%;">
       <!-- 时间 -->
       <div style="display:inline-block; color:#FFF; margin:4px 2px; width:50%;" @click.stop="datetimeClicked()">{{datetime}}</div>
       <!-- 倒计时 -->
       <div style="display:flex; justify-content:flex-end; color:#FFF; margin:4px 2px; width:50%;">距下次更新约 {{myCountdown}} 秒</div>
     </div>
-    <!-- 整体情况 -->
+    <!-- 整体盈亏 -->
     <div>
       <div style="color:#FFF;margin:4px 2px;display:inline-block;" v-show="showDaily">日收益</div>
       <div style="margin:4px 2px;display:inline-block;" :class="textColorWithValue(totalDailyGain)" v-show="showDaily">{{totalDailyGain}}</div>
       <div style="color:#FFF;margin:4px 2px;display:inline-block;" v-show="!showDaily">总收益</div>
       <div style="margin:4px 2px;display:inline-block;" :class="textColorWithValue(totalHoldingGain)" v-show="!showDaily">{{totalHoldingGain}}</div>
     </div>
-    <!-- 分类汇总 -->
-    <div class="sumcontainer">
-      <div class="sumcell" v-for="item in categorys" :key="item.index">
+    <!-- 一级分类 -->
+    <div class="sumContainer">
+      <div class="sumCell" v-for="item in categorys" :key="item.index">
         <div class="categoryTitle">{{item}}</div>
         <div class="categorySum" :class="textColorWithValue(sum(item))">{{sum(item)}}</div>
       </div>
     </div>
     <!-- 基金详情 -->
-    <div class="fundcell">
-      <p class="fundcode title">代码</p>
-      <p class="fundname title">名称</p>
-      <p class="fundnav title">成本</p>
-      <p class="fundnav title">估值</p>
-      <p class="dailyChangeRate title" v-show="showDaily">日涨跌</p>
-      <p class="dailyChange title" v-show="showDaily">日盈亏</p>
-      <p class="dailyChangeRate title" v-show="!showDaily">总涨跌</p>
-      <p class="dailyChange title" v-show="!showDaily">总盈亏</p>
-    </div>
-    <div class="fundcell border" v-for="item in myHoldings" :key="item.index">
-      <p class="fundcode" :class="categoryColorWithValue(item)">{{item.code}}</p>
-      <p class="fundname" :class="categoryColorWithValue(item)">{{item.name}}</p>
-      <p class="fundnav" :class="navColorWithValue(item)" >{{item.holding_nav}}</p>
-      <div class="fundcell" :class="{flash : isUpdating}">
-      <p class="fundnav">{{item.estimate_nav}}</p>
-      <p class="dailyChangeRate" :class="textColorWithValue(item.estimate_rate)" v-show="showDaily">{{item.estimate_rate}}</p>
-      <p class="dailyChange" :class="textColorWithValue(item.dailyChange)" v-show="showDaily">{{item.dailyChange}}</p>
-      <p class="dailyChangeRate" :class="textColorWithValue(item.total_estimate_rate)" v-show="!showDaily">{{item.total_estimate_rate}}</p>
-      <p class="dailyChange" :class="textColorWithValue(item.totalChange)" v-show="!showDaily">{{item.totalChange}}</p>
+    <div class="fundCell" v-for="item in myHoldings" :key="item.index">
+      <p class="fundFullTitle" :class="[categoryColorWithValue(item), marketColor(item)]">{{'&nbsp;' + item.code + '&nbsp;&nbsp;&nbsp;' + item.full_name}}</p>
+      <!-- line 1 -->
+      <div class="valueContainerCell">
+        <div class="valueItem" :class="categoryColorWithValue(item)">
+          <p class="itemKey">估值&nbsp;&nbsp;</p>
+          <p class="itemValue">{{item.estimate_nav}}</p>
+        </div>
+        <div class="valueItem" :class="categoryColorWithValue(item)" v-show="showDaily">
+          <p class="itemKey">日涨&nbsp;&nbsp;</p>
+          <p class="itemValue" :class="textColorWithValue(item.estimate_rate)">{{item.estimate_rate}}</p>
+        </div>
+        <div class="valueItem" :class="categoryColorWithValue(item)" v-show="showDaily">
+          <p class="itemKey">日盈&nbsp;&nbsp;</p>
+          <p class="itemValue" :class="textColorWithValue(item.dailyChange)">{{demical(item.dailyChange, 2)}}</p>
+        </div>
+        <div class="valueItem" :class="categoryColorWithValue(item)" v-show="!showDaily">
+          <p class="itemKey">总涨&nbsp;&nbsp;</p>
+          <p class="itemValue" :class="textColorWithValue(item.total_estimate_rate)">{{item.total_estimate_rate}}</p>
+        </div>
+        <div class="valueItem" :class="categoryColorWithValue(item)" v-show="!showDaily">
+          <p class="itemKey">总盈&nbsp;&nbsp;</p>
+          <p class="itemValue" :class="textColorWithValue(item.totalChange)">{{demical(item.totalChange, 2)}}</p>
+        </div>
       </div>
+      <!-- line 2 -->
+      <div class="valueContainerCell">
+        <div class="valueItem" :class="categoryColorWithValue(item)">
+          <p class="itemKey">单价&nbsp;&nbsp;</p>
+          <p class="itemValue" :class="navColorWithValue(item)">{{item.holding_nav}}</p>
+        </div>
+        <div class="valueItem" :class="categoryColorWithValue(item)">
+          <p class="itemKey">份额&nbsp;&nbsp;</p>
+          <p class="itemValue">{{demical(item.holding_volume, 2)}}</p>
+        </div>
+        <div class="valueItem" :class="categoryColorWithValue(item)">
+          <p class="itemKey">成本&nbsp;&nbsp;</p>
+          <p class="itemValue">{{demical(item.holding_money,2)}}</p>
+        </div>
+      </div>
+      <!-- line 3 -->
+      <!-- <div class="valueContainerCell">
+        <div class="valueItem" :class="categoryColorWithValue(item)">
+          <p class="itemKey">持盈&nbsp;&nbsp;</p>
+          <p class="itemValue" :class="textColorWithValue(item.holding_gain)">{{item.holding_gain}}</p>
+        </div>
+        <div class="valueItem" :class="categoryColorWithValue(item)">
+          <p class="itemKey">史盈&nbsp;&nbsp;</p>
+          <p class="itemValue" :class="textColorWithValue(item.history_gain)">{{item.history_gain}}</p>
+        </div>
+        <div class="valueItem" :class="categoryColorWithValue(item)">
+          <p class="itemKey">分现&nbsp;&nbsp;</p>
+          <p class="itemValue" :class="textColorWithValue(item.total_cash_dividend)">{{item.total_cash_dividend}}</p>
+        </div>
+      </div> -->
     </div>
   </div>
 </template>
@@ -137,6 +172,16 @@ export default {
         }
       }
       return total.toFixed(1)
+    },
+    demical (value, d) {
+      return parseFloat(value).toFixed(d)
+    },
+    marketColor (item) {
+      if (item.market === '场外') {
+        return 'normal-text-color'
+      } else {
+        return 'inner-fund-text-color'
+      }
     }
   },
   data () {
@@ -239,7 +284,6 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
 /* A 股 */
 .categorybg1 {
   background-color: #50C2F9;
@@ -273,6 +317,7 @@ export default {
   background-color: #F0DC5A;
 }
 
+/* 一级分类 */
 .categoryTitle {
   display: flex;
   justify-content:center;
@@ -281,7 +326,6 @@ export default {
   color: #FFFFFF;
   background-color: #333333;
 }
-
 .categorySum {
   display: flex;
   justify-content:center;
@@ -289,100 +333,62 @@ export default {
   width: 72px;
   background-color: #333333;
 }
-
-.sumcell {
+.sumCell {
   display: inline-flex;
   justify-content:center;
   align-items:center;
   flex-direction: column;
   width: 50%;
 }
-
-.sumcontainer {
+.sumContainer {
   display: flex;
   width: 100%;
 }
 
-.fundcell {
-  display: inline-flex;
-  background-color: #000000;
-}
-
-.container {
-  display: inline-flex;
+/* 基金详情 */
+.fundCell {
+  display: flex;
+  margin: 1px 0px;
+  padding: 1px;
   flex-direction: column;
   background-color: #000000;
+  width: 100%;
 }
-
-.fundcode {
-    /* 解决纯数字时偏上的问题 */
+.fundFullTitle {
+  /* 解决纯数字时偏上的问题 */
   display: flex;
-  justify-content: center;
   align-items: center;
-  margin: 1px;
-  padding: 1px;
-  width: 58px;
+  margin: 0px;
+  padding: 0px;
   height: 25px;
+  width: 100%;
   font-size: 16px;
+  text-align: left;
 }
 
-.fundname {
+.valueContainerCell {
+  display: flex;
+  justify-content:space-between;
+  background-color: #000000;
+  max-width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.valueItem {
   /* 解决纯数字时偏上的问题 */
   display: flex;
   align-items: center;
   margin: 1px;
   padding: 1px;
-  width: 116px;
   height: 25px;
+  width: 33.333%;
   font-size: 16px;
   text-align: left;
 }
 
-.fundnav {
-    /* 解决纯数字时偏上的问题 */
-  display: flex;
-  justify-content:flex-end;
-  align-items: center;
-  margin: 1px;
-  padding: 1px 2px;
-  width: 50px;
-  height: 25px;
-  font-size: 16px;
-  text-align: right;
-  color:#FFFFFF;
-  background-color: #333333;
-}
-
-.dailyChangeRate {
-    /* 解决纯数字时偏上的问题 */
-  display: flex;
-  justify-content:flex-end;
-  align-items: center;
-  margin: 1px;
-  padding: 1px 2px;
-  width: 65px;
-  height: 25px;
-  font-size: 16px;
-  text-align: right;
-  background-color: #333333;
-}
-
-.dailyChange {
-    /* 解决纯数字时偏上的问题 */
-  display: flex;
-  justify-content:flex-end;
-  align-items: center;
-  margin: 1px;
-  padding: 1px;
-  width: 80px;
-  height: 25px;
-  font-size: 16px;
-  text-align: right;
-  background-color: #333333;
-}
-
 .normal-text-color {
-  color: #F0F0F0;
+  color: #000000;
 }
 .rise-text-color {
   color: #DD2200;
@@ -401,8 +407,14 @@ export default {
 }
 
 /* 场内基金提高辨识度 */
-.innerFundText {
+.inner-fund-text-color {
   color: #CC0000;
+}
+
+.mainContainer {
+  display: inline-flex;
+  flex-direction: column;
+  background-color: #000000;
 }
 
 .flash {

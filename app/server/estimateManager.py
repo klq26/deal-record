@@ -25,13 +25,16 @@ class estimateManager:
         urls = []
         codes = []
         names = []
+        fullNames = []
+        markets = []
         for values in params:
             code = values[0]
             name = values[1]
-            isInner = values[2]
-            if isInner:
+            fullName = values[2]
+            market = values[3]
+            if market in [u'沪市', u'深市']:
                 marketSymbol = ''
-                if code.startswith('5'):
+                if market in u'沪市':
                     marketSymbol = '1.'
                 else:
                     marketSymbol = '0.'
@@ -40,6 +43,8 @@ class estimateManager:
                 urls.append(self.outerUrlPrefix + u'{0}.js'.format(code))
             codes.append(code)
             names.append(name)
+            fullNames.append(fullName)
+            markets.append(market)
 
         successItems = {}
         failureItems = {}
@@ -51,6 +56,8 @@ class estimateManager:
             response = response_list[i]
             code = codes[i]
             name = names[i]
+            fullName = fullNames[i]
+            market = markets[i]
             if response.status_code == 200:
                 # 解析场外
                 if response.url.startswith(self.outerUrlPrefix):
@@ -59,7 +66,8 @@ class estimateManager:
                         jsonData = json.loads(text)
                         del jsonData['fundcode']
                         jsonData['name'] = name
-                        jsonData['market'] = '场外'
+                        jsonData['fullname'] = fullName
+                        jsonData['market'] = market
                         successItems[code] = jsonData
                     else:
                         failureItems[code] = {"name":name}
@@ -71,6 +79,7 @@ class estimateManager:
                         if eastmoneyData != None:
                             jsonData = {}
                             jsonData['name'] = name
+                            jsonData['fullname'] = fullName
                             today = datetime.now().strftime('%Y-%m-%d')
                             yesterday =(datetime.now() - timedelta(days=1)).strftime('%Y-%m-%d')
                             jsonData['jzrq'] = yesterday
@@ -89,7 +98,7 @@ class estimateManager:
                                 jsonData['gsz'] = jsonData['dwjz']
                                 jsonData['gszzl'] = "0.0"
                                 jsonData['gztime'] = today + ' ' + '00:00'
-                            jsonData['market'] = '场内'
+                            jsonData['market'] = market
                             successItems[code] = jsonData
                         else:
                             failureItems[code] = {"name":name}
