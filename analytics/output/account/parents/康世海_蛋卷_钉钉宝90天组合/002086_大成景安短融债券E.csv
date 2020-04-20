@@ -1,3 +1,4 @@
 ,id,date,code,name,dealType,nav_unit,nav_acc,volume,dealMoney,fee,occurMoney,account,category1,category2,category3,categoryId,note
 0,586,2019-12-16,002086,大成景安短融债券E,买入,1.2536,1.3586,1723.04,2160.0,0.0,2160.0,康世海_蛋卷_钉钉宝90天组合,债券,国内债券,纯债,511,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=175259945008807936
 1,656,2020-02-03,002086,大成景安短融债券E,卖出,1.2631,1.3681,1723.04,2176.37,0.0,2176.37,康世海_蛋卷_钉钉宝90天组合,债券,国内债券,纯债,511,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=193403215802974208
+2,940,2020-04-16,002086,大成景安短融债券E,买入,1.2781,1.3831,625.93,800.0,0.0,800.0,康世海_蛋卷_钉钉宝90天组合,债券,国内债券,纯债,511,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=219834964737761280

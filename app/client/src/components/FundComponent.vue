@@ -218,9 +218,7 @@ export default {
           // 失败？
           for (var key2 in this.myEstimates.nav) {
             if (key2 === code) {
-              console.log(key2)
               estiItem = this.myEstimates.nav[key2]
-              console.log(estiItem)
               fundItem['market'] = estiItem.market
               fundItem['estimate_nav'] = estiItem.gsz
               fundItem['estimate_rate'] = parseFloat(estiItem.gszzl).toFixed(2) + '%'

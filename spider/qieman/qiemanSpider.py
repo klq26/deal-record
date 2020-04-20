@@ -65,7 +65,7 @@ class qiemanSpider:
             # 准备成交记录列表
             tradelistJson = self._prepareTradelist(plan = plan, path = tradelist_file, forceUpdate = forceUpdate)
             datalist = tradelistJson['content']
-            # 从 tradelist.json 列表种，请求每一次的交易详情(仅包含“交易成功”，忽略“撤单”，“交易进行中” 等非确定情况)
+            # 从 tradelist.json 列表中，请求每一次的交易详情(仅包含“交易成功”，忽略“撤单”，“交易进行中” 等非确定情况)
             for tradeRecord in datalist:
                 dealRecordsJson = self._prepareTradeRecord(tradeRecord)
                 dealRecords = self._prepareDealRecords(dealRecordsJson)

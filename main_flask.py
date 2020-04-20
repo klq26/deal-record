@@ -120,31 +120,49 @@ def getFundHoldingPieInfos(code):
     db = holdingDBHelper()
     records = db.selectFundHoldingsGroupByAccount(code)
     results = {}
+    total_holding_money = 0.0
+    total_holding_volume = 0.0
     for x in records:
+        record = {k: v for k, v in x.items() if k not in ['id','date','name','status','holding_nav']}
+        total_holding_money += record['holding_money']
+        total_holding_volume += record['holding_volume']
         sumItem = None
         if u'母' in x['account']:
             if u'lsy' not in results.keys():
-                results['lsy'] = x
+                results['lsy'] = record
             else:
                 sumItem = results['lsy']
         elif u'父' in x['account']:
             if u'ksh' not in results.keys():
-                results['ksh'] = x
+                results['ksh'] = record
             else:
                 sumItem = results['ksh']
         else:
             if u'klq' not in results.keys():
-                results['klq'] = x
+                results['klq'] = record
             else:
                 sumItem = results['klq']
         if sumItem != None:
-            sumItem['holding_volume'] += round(float(x['holding_volume']), 2)
-            sumItem['holding_money'] += round(float(x['holding_money']), 2)
-            sumItem['holding_gain'] += round(float(x['holding_gain']), 2)
-            sumItem['history_gain'] += round(float(x['history_gain']), 2)
-            sumItem['total_cash_dividend'] += round(float(x['total_cash_dividend']), 2)
-            sumItem['total_fee'] += round(float(x['total_fee']), 2)
-    [print(x) for x in results.items()]
+            sumItem['holding_volume'] += record['holding_volume']
+            sumItem['holding_money'] += record['holding_money']
+            sumItem['holding_gain'] += record['holding_gain']
+            sumItem['history_gain'] += record['history_gain']
+            sumItem['total_cash_dividend'] += record['total_cash_dividend']
+            sumItem['total_fee'] += record['total_fee']
+            if record['account'] not in sumItem['account']:
+                sumItem['account'] = sumItem['account'] + ',' + record['account']
+    
+    # format
+    for k, v in results.items():
+        v['holding_volume'] = round(float(v['holding_volume']), 2)
+        v['holding_money'] = round(float(v['holding_money']), 2)
+        v['holding_gain'] = round(float(v['holding_gain']), 2)
+        v['history_gain'] = round(float(v['history_gain']), 2)
+        v['total_cash_dividend'] = round(float(v['total_cash_dividend']), 2)
+        v['total_fee'] = round(float(v['total_fee']), 2)
+        v['holding_volume_rate'] = round(v['holding_volume'] / total_holding_volume, 4)
+        v['holding_money_rate'] = round(v['holding_money'] / total_holding_money, 4)
+    [print(k, v) for k,v in results.items()] 
 
 if __name__ == '__main__':
     app.run(port=5000, debug=True)

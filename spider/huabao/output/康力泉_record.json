@@ -340,5 +340,24 @@
         "category3": "中证传媒",
         "categoryId": 144,
         "note": "无"
+    },
+    {
+        "id": 19,
+        "date": "2020-04-17",
+        "code": "512980",
+        "name": "传媒ETF",
+        "dealType": "卖出",
+        "nav_unit": 0.833,
+        "nav_acc": 0.833,
+        "volume": 2900,
+        "dealMoney": 2415.7,
+        "fee": 0.24,
+        "occurMoney": 2415.46,
+        "account": "华宝证券",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "中证传媒",
+        "categoryId": 144,
+        "note": "无"
     }
 ]

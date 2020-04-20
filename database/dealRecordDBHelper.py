@@ -6,9 +6,11 @@ import pymysql
 
 import pandas as pd
 import numpy as np
+from sqlalchemy import create_engine
 
 from login.account import account
 from spider.common.dealRecordModel import *
+
 
 class dealRecordDBHelper:
     
@@ -22,6 +24,8 @@ class dealRecordDBHelper:
             self.ip_address = '112.125.25.230'
         elif sys.platform.startswith('linux'):
             self.ip_address = '127.0.0.1'
+        # 给 pandas 用的引擎
+        self.engine = create_engine('mysql+pymysql://{0}:{1}@{2}/deal_record'.format(self.account.user, self.account.password, self.ip_address))
     
     ################################################
     # COMMON
@@ -156,7 +160,7 @@ class dealRecordDBHelper:
         if account == None or len(account) <= 0:
             print('[ERROR] 账户错误：{0}'.format(account))
             return None
-        sql = u"SELECT * FROM {0} WHERE ACCOUNT LIKE '%{1}%'".format(tablename, account)
+        sql = u"SELECT * FROM {0} WHERE ACCOUNT LIKE '{1}'".format(tablename, account)
         # print(sql)
         db = self.connect()
         cursor = db.cursor()
@@ -176,6 +180,16 @@ class dealRecordDBHelper:
             return [list(x) for x in results]
         else:
             return None
+
+    def selectAllRecordsToDataFrame(self, tablename = 'klq', account = ''):
+        sql = u"SELECT * FROM {0} WHERE ACCOUNT LIKE '%%{1}%%'".format(tablename, account)
+        # df = pd.read_sql(sql, engine, params={'name':'华'})
+        df = pd.read_sql(sql, self.engine)
+        return df
+
+    def selectByCommand(self, sql):
+        df = pd.read_sql(sql, self.engine)
+        return df
 
     ################################################
     # INSERT

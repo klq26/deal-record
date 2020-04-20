@@ -2,6 +2,22 @@
     "data": {
         "items": [
             {
+                "order_id": "2402787177682480102",
+                "uid": 203274561,
+                "code": "CSI666",
+                "name": "螺丝钉指数基金组合",
+                "ttype": "plan",
+                "status": "success",
+                "action": "022",
+                "amount": 535.25,
+                "status_desc": "交易成功",
+                "action_desc": "买入",
+                "created_at": 1586759079664,
+                "title": "螺丝钉指数基金组合",
+                "value_desc": "535.25元",
+                "convert": false
+            },
+            {
                 "order_id": "2286349868574231246",
                 "uid": 203274561,
                 "code": "CSI666",
@@ -318,22 +334,6 @@
                 "convert": false
             },
             {
-                "order_id": "959989249902427721",
-                "uid": 203274561,
-                "code": "CSI666",
-                "name": "螺丝钉指数基金组合",
-                "ttype": "plan",
-                "status": "success",
-                "action": "022",
-                "amount": 531.87,
-                "status_desc": "交易成功",
-                "action_desc": "买入",
-                "created_at": 1581384238583,
-                "title": "螺丝钉指数基金组合",
-                "value_desc": "531.87元",
-                "convert": false
-            },
-            {
                 "order_id": "959989266813868565",
                 "uid": 203274561,
                 "code": "CSI666",
@@ -347,6 +347,22 @@
                 "created_at": 1581384238583,
                 "title": "螺丝钉指数基金组合",
                 "value_desc": "531.87份",
+                "convert": false
+            },
+            {
+                "order_id": "959989249902427721",
+                "uid": 203274561,
+                "code": "CSI666",
+                "name": "螺丝钉指数基金组合",
+                "ttype": "plan",
+                "status": "success",
+                "action": "022",
+                "amount": 531.87,
+                "status_desc": "交易成功",
+                "action_desc": "买入",
+                "created_at": 1581384238583,
+                "title": "螺丝钉指数基金组合",
+                "value_desc": "531.87元",
                 "convert": false
             },
             {
@@ -1638,7 +1654,7 @@
         ],
         "current_page": 1,
         "size": 2000,
-        "total_items": 102,
+        "total_items": 103,
         "total_pages": 1
     },
     "result_code": 0

@@ -2,6 +2,22 @@
     "data": {
         "items": [
             {
+                "order_id": "2402910409420423919",
+                "uid": 194897199,
+                "code": "CSI666",
+                "name": "螺丝钉指数基金组合",
+                "ttype": "plan",
+                "status": "success",
+                "action": "022",
+                "amount": 214.1,
+                "status_desc": "交易成功",
+                "action_desc": "买入",
+                "created_at": 1586759538754,
+                "title": "螺丝钉指数基金组合",
+                "value_desc": "214.1元",
+                "convert": false
+            },
+            {
                 "order_id": "2286374182651951591",
                 "uid": 194897199,
                 "code": "CSI666",
@@ -1317,7 +1333,7 @@
         ],
         "current_page": 1,
         "size": 2000,
-        "total_items": 82,
+        "total_items": 83,
         "total_pages": 1
     },
     "result_code": 0

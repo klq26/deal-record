@@ -55,7 +55,7 @@ class accountAnalytics:
         # 通过 DataFrame 分析
         df = pd.DataFrame(records, columns=dealRecordModelKeys())
         folder = os.path.join(self.folder, 'output', 'account', tablename, account)
-        return self.analytics(df, folder, True)
+        return self.analytics(df, folder, False)
 
     def analytics(self, df, folder, showFolder = False):
         # print(df)

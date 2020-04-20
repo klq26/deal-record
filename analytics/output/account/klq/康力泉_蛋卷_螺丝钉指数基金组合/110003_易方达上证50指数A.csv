@@ -1,2 +1,3 @@
 ,id,date,code,name,dealType,nav_unit,nav_acc,volume,dealMoney,fee,occurMoney,account,category1,category2,category3,categoryId,note
 0,807,2020-04-08,110003,易方达上证50指数A,买入,1.698,3.598,64.27,109.3,0.16,109.46,康力泉_蛋卷_螺丝钉指数基金组合,A 股,大盘股,上证50,111,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=217004141394235392
+1,820,2020-04-13,110003,易方达上证50指数A,买入,1.6995,3.5995,64.65,110.04,0.16,110.2,康力泉_蛋卷_螺丝钉指数基金组合,A 股,大盘股,上证50,111,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=218823474421403648

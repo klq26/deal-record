@@ -1,7 +1,10 @@
+# -*- coding: utf-8 -*-
+
 # local bin
 import os
 import sys
 import json
+from datetime import datetime
 # third partys
 import pandas as pd
 from pandas.io.json import json_normalize
@@ -29,6 +32,14 @@ from spider.qieman.qiemanSpider import qiemanSpider
 from spider.zhifubao.zhifubaoSpider import zhifubaoSpider
 from spider.huatai.huataiSpider import huataiSpider
 from spider.huabao.huabaoSpider import huabaoSpider
+
+# https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.set_option.html
+pd.set_option('display.max_columns', None)
+pd.set_option('display.max_rows', None)
+# 不折行显示列
+pd.set_option('expand_frame_repr', False)
+# 默认 50
+pd.set_option('max_colwidth',40)
 
 def temp():
     # tiantian_moneyFundCode = ['000588', '000600', '000638', '000709', '000891', '001666', '002183', '003003', '003022', '003474', '005148', '340005']
@@ -90,8 +101,19 @@ def updateAllDealRecords(strategy = 'klq', onlyUpdatelocal = True):
     columns = dealRecordModelKeys()
     df = df.reindex(columns = columns)
     record_db = dealRecordDBHelper()
+    # 取数据库最新一条
+    sql = u"SELECT * FROM {0} ORDER BY id DESC LIMIT 1".format(strategy)
+    latest = record_db.selectByCommand(sql)
+    latestId = 0
+    if len(latest) > 0:
+        latestId = latest.id.values[0]
     for item in df.values:
         if not onlyUpdatelocal:
+            recordId = item[0]
+            # 忽略已经入库的记录
+            if recordId <= latestId:
+                # print('忽略 {0}'.format(recordId))
+                continue
             record_db.insertDataToTable(tablename=strategy, keys=columns, values = item)
     df.to_csv(output_path)
 
@@ -153,6 +175,13 @@ def insertNewFundInfosToDB():
 
 # 更新数据库
 def updateDatabase():
+    folder = os.path.abspath(os.path.dirname(__file__))
+    today = datetime.now().strftime('%Y-%m-%d')
+    with open(os.path.join(folder, 'navUpdateTime.json'), 'r',encoding='utf-8') as f:
+        config = json.loads(f.read())
+        if today == config['date']:
+            # print('净值库已更新，退出')
+            return
     # 更新数据库中的净值到今天
     updater = fundNavUpdater()
     updater.update()
@@ -161,22 +190,21 @@ def updateDatabase():
     # divide.get(db.selectAllFundNavCodes())
     # TODO 这里的 get 同样要先监测库里该基金的最新一条分红数据
     # divide.insertToDB()
+    with open(os.path.join(folder, 'navUpdateTime.json'), 'w+',encoding='utf-8') as f:
+        f.write(json.dumps({'date':today}, ensure_ascii=False, indent=4))
 
 if __name__ == "__main__":
-        # # 更新数据库
-        # updateDatabase()
-        
-        # # 插入全部记录
-        # updateAllDealRecords('klq', onlyUpdatelocal = False)
-        # updateAllDealRecords('parents', onlyUpdatelocal = False)
-        
-        # allUniqueCodes()
-        
-        # allFamilyHoldingSelloutStatus(onlyUpdatelocal = False)
-        # allFundHoldingStatus(onlyUpdatelocal = False)
+    # 更新数据库
+    updateDatabase()
 
-    tiantianSpider().get(forceUpdate=True)
+    # 所有spider increment
+    # huabaoSpider().increment()
+    # danjuanSpider('klq).increment()
 
-    # analyticsManager().getFamilyHoldingUniqueCodes()
-    # analyticsManager().allFamilyHoldingSelloutStatus()
-    # analyticsManager().getFundHoldingStatus()
+    # 插入增量数据或全量数据
+    updateAllDealRecords('klq', onlyUpdatelocal = False)
+    updateAllDealRecords('parents', onlyUpdatelocal = False)
+
+    # # 更新汇总持仓数据到数据库（供 familyHolding app 使用）
+    allFamilyHoldingSelloutStatus(onlyUpdatelocal = False)
+    allFundHoldingStatus(onlyUpdatelocal = False)
