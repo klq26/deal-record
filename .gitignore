@@ -9,3 +9,6 @@ login/qieman_ksh.txt
 login/tiantian_klq.txt
 login/tiantian_lsy.txt
 login/tiantian_lsy_single.txt
+app/server/cache/familyholding.api.accountholding.json
+app/server/cache/familyholding.api.estimate.json
+app/server/cache/familyholding.api.fundholding.json

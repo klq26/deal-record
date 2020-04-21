@@ -1,17 +1,11 @@
 <template>
   <div class="container" @click="showDaily = !showDaily">
-    <div style="display:flex;width:100%;">
-      <!-- 时间 -->
-      <div style="display:inline-block; color:#FFF; margin:4px 2px; width:50%;" @click.stop="datetimeClicked()">{{datetime}}</div>
-      <!-- 倒计时 -->
-      <div style="display:flex; justify-content:flex-end; color:#FFF; margin:4px 2px; width:50%;">距下次更新约 {{myCountdown}} 秒</div>
-    </div>
     <!-- 整体情况 -->
     <div>
-      <div style="color:#FFF;margin:4px 2px;display:inline-block;" v-show="showDaily">日收益</div>
-      <div style="margin:4px 2px;display:inline-block;" :class="textColorWithValue(totalDailyGain)" v-show="showDaily">{{totalDailyGain}}</div>
-      <div style="color:#FFF;margin:4px 2px;display:inline-block;" v-show="!showDaily">总收益</div>
-      <div style="margin:4px 2px;display:inline-block;" :class="textColorWithValue(totalHoldingGain)" v-show="!showDaily">{{totalHoldingGain}}</div>
+      <div style="color:#FFF;margin:4px 0.06rem;display:inline-block;font-size: 0.33rem;" v-show="showDaily">日收益</div>
+      <div style="margin:4px 0.06rem;display:inline-block;font-size: 0.33rem;" :class="textColorWithValue(totalDailyGain)" v-show="showDaily">{{totalDailyGain}}</div>
+      <div style="color:#FFF;margin:4px 0.06rem;display:inline-block;font-size: 0.33rem;" v-show="!showDaily">总收益</div>
+      <div style="margin:4px 0.06rem;display:inline-block;font-size: 0.33rem;" :class="textColorWithValue(totalHoldingGain)" v-show="!showDaily">{{totalHoldingGain}}</div>
     </div>
     <!-- 分类汇总 -->
     <div class="sumcontainer">
@@ -31,7 +25,7 @@
       <p class="dailyChangeRate title" v-show="!showDaily">总涨跌</p>
       <p class="dailyChange title" v-show="!showDaily">总盈亏</p>
     </div>
-    <div class="fundcell border" v-for="item in myHoldings" :key="item.index">
+    <div class="fundcell" v-for="item in myHoldings" :key="item.index">
       <p class="fundcode" :class="[categoryColorWithValue(item), marketColor(item)]">{{item.code}}</p>
       <p class="fundname" :class="[categoryColorWithValue(item), marketColor(item)]">{{item.name}}</p>
       <p class="fundnav" :class="navColorWithValue(item)" >{{item.holding_nav}}</p>
@@ -52,35 +46,14 @@ export default {
   props: [
     'holdings',
     'estimates',
-    'countdown'
   ],
   methods: {
-    datetimeClicked () {
-      this.$emit('changeShowDetail')
-    },
     marketColor (item) {
       if (item.market === '场外') {
         return ''
       } else {
         return 'inner-fund-text-color'
       }
-    },
-    updateTime () {
-      var date = new Date()
-      var year = date.getFullYear()
-      var month = this.prefixInteger(date.getMonth() + 1, 2)
-      var day = this.prefixInteger(date.getDate(), 2)
-      var hh = this.prefixInteger(date.getHours(), 2)
-      var mi = this.prefixInteger(date.getMinutes(), 2)
-      var ss = this.prefixInteger(date.getSeconds(), 2)
-      this.datetime = year + '-' + month + '-' + day + ' ' + hh + ':' + mi + ':' + ss + ' '
-      if (this.myCountdown > 0) {
-        this.myCountdown = this.myCountdown - 1
-      }
-    },
-    // 时间前置补 0
-    prefixInteger (num, length) {
-      return (Array(length).join('0') + num).slice(-length)
     },
     // 文字颜色
     textColorWithValue (value) {
@@ -157,7 +130,6 @@ export default {
         '商品'
       ],
       showDaily: true,
-      myCountdown: this.countdown,
       datetime: 'time',
       totalDailyGain: 0,
       totalHoldingGain: 0,
@@ -167,17 +139,8 @@ export default {
     }
   },
   created: function () {
-    this.updateTime()
-    setInterval(this.updateTime, 1 * 1000)
   },
   watch: {
-    countdown: {
-      handler (newValue, oldValue) {
-        this.myCountdown = newValue
-      },
-      immediate: true,
-      deep: false
-    },
     holdings: {
       handler (newValue, oldValue) {
         this.myHoldings = this.holdings
@@ -191,8 +154,6 @@ export default {
           return
         }
         this.myEstimates = newValue
-        // 5 分钟
-        this.countdown = 300
         this.totalDailyGain = 0.0
         this.totalHoldingGain = 0.0
         for (var index in this.myHoldings) {
@@ -236,12 +197,10 @@ export default {
         // 格式化
         this.totalDailyGain = parseFloat(this.totalDailyGain).toFixed(2)
         this.totalHoldingGain = parseFloat(this.totalHoldingGain).toFixed(2)
-        this.myCountdown = this.countdown
         this.isUpdating = true
         setTimeout(() => {
           this.isUpdating = false
         }, 1500)
-        this.updateTime()
       },
       immediate: true,
       deep: true
@@ -290,7 +249,8 @@ export default {
   display: flex;
   justify-content:center;
   align-items: center;
-  width: 72px;
+  width: 1.6rem;
+  font-size: 0.33rem;
   color: #FFFFFF;
   background-color: #333333;
 }
@@ -299,7 +259,8 @@ export default {
   display: flex;
   justify-content:center;
   align-items: center;
-  width: 72px;
+  width: 1.6rem;
+  font-size: 0.33rem;
   background-color: #333333;
 }
 
@@ -308,20 +269,25 @@ export default {
   justify-content:center;
   align-items:center;
   flex-direction: column;
-  width: 50%;
+  margin:0px 0px;
+  width: 100%;
 }
 
 .sumcontainer {
   display: flex;
+  align-items: center;
   width: 100%;
 }
 
 .fundcell {
-  display: inline-flex;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
   background-color: #000000;
 }
 
 .container {
+  width: 10rem;
   display: inline-flex;
   flex-direction: column;
   background-color: #000000;
@@ -334,9 +300,9 @@ export default {
   align-items: center;
   margin: 1px;
   padding: 1px;
-  width: 58px;
-  height: 25px;
-  font-size: 16px;
+  min-width: 1.3rem;
+  height: 0.5rem;
+  font-size: 0.33rem;
 }
 
 .fundname {
@@ -345,9 +311,9 @@ export default {
   align-items: center;
   margin: 1px;
   padding: 1px;
-  width: 116px;
-  height: 25px;
-  font-size: 16px;
+  width: 2.8rem;
+  height: 0.5rem;
+  font-size: 0.33rem;
   text-align: left;
 }
 
@@ -357,10 +323,10 @@ export default {
   justify-content:flex-end;
   align-items: center;
   margin: 1px;
-  padding: 1px 2px;
-  width: 50px;
-  height: 25px;
-  font-size: 16px;
+  padding: 1px;
+  width: 1.2rem;
+  height: 0.5rem;
+  font-size: 0.33rem;
   text-align: right;
   color:#FFFFFF;
   background-color: #333333;
@@ -372,10 +338,10 @@ export default {
   justify-content:flex-end;
   align-items: center;
   margin: 1px;
-  padding: 1px 2px;
-  width: 65px;
-  height: 25px;
-  font-size: 16px;
+  padding: 1px;
+  min-width: 1.4rem;
+  height: 0.5rem;
+  font-size: 0.33rem;
   text-align: right;
   background-color: #333333;
 }
@@ -387,9 +353,9 @@ export default {
   align-items: center;
   margin: 1px;
   padding: 1px;
-  width: 80px;
-  height: 25px;
-  font-size: 16px;
+  min-width: 1.7rem;
+  height: 0.5rem;
+  font-size: 0.33rem;
   text-align: right;
   background-color: #333333;
 }
@@ -408,7 +374,6 @@ export default {
 .title {
   justify-content:center;
   align-items: center;
-  text-align: center;
   color: #FFFFFF;
   background-color: #333333;
 }

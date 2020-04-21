@@ -35,8 +35,8 @@ def packDataWithCommonInfo(isCache = False, isSuccess = True, msg = "success", d
     result = {'code' : code, 'msg' : msg, 'isCache' : False, 'aliyun_date' : datetimeManager().getDateTimeString(), 'data' : data, 'duration' : duration}
     return json.dumps(result, ensure_ascii=False, indent=4, sort_keys=True)
 
-@app.route('/familyholding/api/holding', methods=['GET'])
-def getFamilyHolding():
+@app.route('/familyholding/api/fundholding', methods=['GET'])
+def getFundHolding():
     start_ts = datetimeManager().getTimeStamp()
     # 缓存
     if cm.cacheAvailable(start_ts, request.path):
@@ -44,17 +44,35 @@ def getFamilyHolding():
         return Response(data, status=200, mimetype='application/json')
     db = holdingDBHelper()
     records = []
-    type = request.args.get('type', '')
-    if not type:
-        type = 1
-    else:
-        type = int(type)
-    if type == 1:
-        # 为 1 时，默认给出合并基金代码合并版本的记录，比较简约
-        records = db.selectAllCombineFundHoldings()
-    else:
-        # 不为 1 时，默认给出非合并完整版本的记录，比较详细，同估值系统
-        records = db.selectAllIsolatedFundHoldings()
+    records = db.selectAllCombineFundHoldings()
+    # 基金简称
+    df = categoryManager.category_df
+    for x in records:
+        code = x['code']
+        sub = df[df['基金代码'] == code]
+        if len(sub) > 0:
+            x['name'] = sub.基金简称.values[0]
+            x['full_name'] = sub.基金名称.values[0]
+        else:
+            x['name'] = u'未知 ' + code
+            x['full_name'] = u'未知 ' + code
+    # data = json.dumps(records, ensure_ascii=False, indent=4)
+    end_ts = dm.getTimeStamp()
+    duration = dm.getDuration(start_ts, end_ts)
+    data = packDataWithCommonInfo(duration = duration, data = records)
+    cm.saveCache(request.path, data)
+    return Response(data, status=200, mimetype='application/json')
+
+@app.route('/familyholding/api/accountholding', methods=['GET'])
+def getAccountHolding():
+    start_ts = datetimeManager().getTimeStamp()
+    # 缓存
+    if cm.cacheAvailable(start_ts, request.path):
+        data = cm.getCache(start_ts, request.path)
+        return Response(data, status=200, mimetype='application/json')
+    db = holdingDBHelper()
+    records = []
+    records = db.selectAllIsolatedFundHoldings()
     # 基金简称
     df = categoryManager.category_df
     for x in records:

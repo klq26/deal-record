@@ -1,7 +1,19 @@
 <template>
   <div id="app">
-    <FundComponent :holdings="holdings" :estimates="estimates" :countdown="countdown" v-show="!showDetail" v-on:changeShowDetail="changeShowDetail"/>
-    <FundDetailComponent :holdings="holdings" :estimates="estimates" :countdown="countdown" v-show="showDetail" v-on:changeShowDetail="changeShowDetail"/>
+  <ul>
+    <li v-for="(tab, index) in tabs" @click="toggle(index, tab.view)" :class="{active: active == index}">
+      {{tab.type}}
+    </li>
+  </ul>
+  <div style="display:flex;width:100%;width:10rem;">
+    <!-- 时间 -->
+    <div style="display:flex; color:#FFF; margin:4px 0.06rem; width:50%;font-size: 0.33rem;" @click.stop="datetimeClicked()">{{datetime}}</div>
+    <!-- 倒计时 -->
+    <div style="display:flex; justify-content:flex-end; color:#FFF; margin:4px 0.06rem; width:50%;font-size: 0.33rem;">距下次更新约 {{myCountdown}} 秒</div>
+  </div>
+  <AccountSummaryComponent :holdings="accountholdings" :estimates="estimates" v-show="active == 0"/>
+  <FundComponent :holdings="fundholdings" :estimates="estimates" v-show="active == 1"/>
+  <FundDetailComponent :holdings="fundholdings" :estimates="estimates" v-show="active == 2"/>
   </div>
 </template>
 
@@ -12,60 +24,125 @@ import Vue from 'vue'
 
 import FundComponent from './components/FundComponent'
 import FundDetailComponent from './components/FundDetailComponent'
+import AccountSummaryComponent from './components/AccountSummaryComponent'
 
 Vue.prototype.$axios = axios
 Vue.config.productionTip = false
 
-var serverIp = 'http://112.125.25.230/'
-// serverIp = 'http://127.0.0.1:5000/'
+// 根据不同环境，动态切换 API 域名
+var serverIp = process.env.API_ROOT
 
 export default {
   name: 'App',
   components: {
     FundComponent,
-    FundDetailComponent
+    FundDetailComponent,
+    AccountSummaryComponent
   },
   data () {
     return {
-      holdings: [],
+      myCountdown: 5 * 60,
+      fundholdings: [],
+      accountholdings: [],
       estimates: {},
-      countdown: 5 * 60,
-      showDetail: false
+      showDetail: false,
+      active: 0,
+      tabs: [
+        {
+          type: '分账户明细'
+        },
+        {
+          type: '持仓估值'
+        },
+        {
+          type: '持仓详情'
+        }
+      ]
     }
   },
   methods: {
-    changeShowDetail () {
-      this.showDetail = !this.showDetail
+    updateTime () {
+      var date = new Date()
+      var year = date.getFullYear()
+      var month = this.prefixInteger(date.getMonth() + 1, 2)
+      var day = this.prefixInteger(date.getDate(), 2)
+      var hh = this.prefixInteger(date.getHours(), 2)
+      var mi = this.prefixInteger(date.getMinutes(), 2)
+      var ss = this.prefixInteger(date.getSeconds(), 2)
+      this.datetime = year + '-' + month + '-' + day + ' ' + hh + ':' + mi + ':' + ss + ' '
+      if (this.myCountdown > 0) {
+        this.myCountdown = this.myCountdown - 1
+      }
     },
-    familyHolding () {
+    // 时间前置补 0
+    prefixInteger (num, length) {
+      return (Array(length).join('0') + num).slice(-length)
+    },
+    toggle (i, v) {
+      this.active = i
+    },
+    fundHolding () {
       var that = this
-      axios.get(serverIp + 'familyholding/api/holding?type=1').then(function (response) {
-        that.holdings = response.data.data
+      axios.get(serverIp + 'familyholding/api/fundholding').then(function (response) {
+        that.fundholdings = response.data.data
+      })
+    },
+    accountHolding () {
+      var that = this
+      axios.get(serverIp + 'familyholding/api/accountholding').then(function (response) {
+        that.accountholdings = response.data.data
       })
     },
     familyEstimate () {
       var that = this
       axios.get(serverIp + 'familyholding/api/estimate').then(function (response) {
         that.estimates = response.data.data
+        that.myCountdown = 5 * 60
       })
     }
   },
   created: function () {
-    this.familyHolding()
+    this.updateTime()
+    setInterval(this.updateTime, 1 * 1000)
+    this.accountHolding()
+    this.fundHolding()
     var that = this
     // 给首次估值一个 250 毫秒的延迟执行，防止后者先回来，没有更新页面
     setTimeout(() => {
       that.familyEstimate()
     }, 250)
     // 每 5 分钟估值一次
-    setInterval(this.familyEstimate, this.countdown * 1000)
+    setInterval(this.familyEstimate, this.myCountdown * 1000)
   }
 }
 </script>
 
 <style>
 #app {
+  width: 10rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+ul{
+  width:10rem;
+  display:flex;
+}
+
+ul li{
+  width:3.3333rem;
+  height:1rem;
+  background: #F0F0F0;
+  display: inline-flex;
+  border-right:1px solid #333333;
+  justify-content: center;
+  align-items: center;
+  cursor:pointer;
+  font-size: 0.4rem;
+}
+
+ul li.active{
+  background-color: rgb(51,153,254);
+  font-weight: bold;
 }
 </style>

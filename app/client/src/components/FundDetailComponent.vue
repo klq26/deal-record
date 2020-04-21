@@ -1,18 +1,11 @@
 <template>
   <div class="mainContainer" style="width:449px;" @click="showDaily = !showDaily">
-    <!-- 时间相关 -->
-    <div style="display:flex;width:100%;">
-      <!-- 时间 -->
-      <div style="display:inline-block; color:#FFF; margin:4px 2px; width:50%;" @click.stop="datetimeClicked()">{{datetime}}</div>
-      <!-- 倒计时 -->
-      <div style="display:flex; justify-content:flex-end; color:#FFF; margin:4px 2px; width:50%;">距下次更新约 {{myCountdown}} 秒</div>
-    </div>
     <!-- 整体盈亏 -->
     <div>
-      <div style="color:#FFF;margin:4px 2px;display:inline-block;" v-show="showDaily">日收益</div>
-      <div style="margin:4px 2px;display:inline-block;" :class="textColorWithValue(totalDailyGain)" v-show="showDaily">{{totalDailyGain}}</div>
-      <div style="color:#FFF;margin:4px 2px;display:inline-block;" v-show="!showDaily">总收益</div>
-      <div style="margin:4px 2px;display:inline-block;" :class="textColorWithValue(totalHoldingGain)" v-show="!showDaily">{{totalHoldingGain}}</div>
+      <div style="color:#FFF;margin:4px 0.06rem;display:inline-block;font-size: 0.33rem;" v-show="showDaily">日收益</div>
+      <div style="margin:4px 0.06rem;display:inline-block;font-size: 0.33rem;" :class="textColorWithValue(totalDailyGain)" v-show="showDaily">{{totalDailyGain}}</div>
+      <div style="color:#FFF;margin:4px 0.06rem;display:inline-block;font-size: 0.33rem;" v-show="!showDaily">总收益</div>
+      <div style="margin:4px 0.06rem;display:inline-block;font-size: 0.33rem;" :class="textColorWithValue(totalHoldingGain)" v-show="!showDaily">{{totalHoldingGain}}</div>
     </div>
     <!-- 一级分类 -->
     <div class="sumContainer">
@@ -95,33 +88,12 @@
 
 <script>
 export default {
-  name: 'FundComponent',
+  name: 'FundDetailComponent',
   props: [
     'holdings',
     'estimates',
-    'countdown'
   ],
   methods: {
-    datetimeClicked () {
-      this.$emit('changeShowDetail')
-    },
-    updateTime () {
-      var date = new Date()
-      var year = date.getFullYear()
-      var month = this.prefixInteger(date.getMonth() + 1, 2)
-      var day = this.prefixInteger(date.getDate(), 2)
-      var hh = this.prefixInteger(date.getHours(), 2)
-      var mi = this.prefixInteger(date.getMinutes(), 2)
-      var ss = this.prefixInteger(date.getSeconds(), 2)
-      this.datetime = year + '-' + month + '-' + day + ' ' + hh + ':' + mi + ':' + ss + ' '
-      if (this.myCountdown > 0) {
-        this.myCountdown = this.myCountdown - 1
-      }
-    },
-    // 时间前置补 0
-    prefixInteger (num, length) {
-      return (Array(length).join('0') + num).slice(-length)
-    },
     // 文字颜色
     textColorWithValue (value) {
       var number = parseFloat(value)
@@ -207,7 +179,6 @@ export default {
         '商品'
       ],
       showDaily: true,
-      myCountdown: this.countdown,
       datetime: 'time',
       totalDailyGain: 0,
       totalHoldingGain: 0,
@@ -217,17 +188,8 @@ export default {
     }
   },
   created: function () {
-    this.updateTime()
-    setInterval(this.updateTime, 1 * 1000)
   },
   watch: {
-    countdown: {
-      handler (newValue, oldValue) {
-        this.myCountdown = newValue
-      },
-      immediate: true,
-      deep: false
-    },
     holdings: {
       handler (newValue, oldValue) {
         this.myHoldings = this.holdings
@@ -241,8 +203,6 @@ export default {
           return
         }
         this.myEstimates = newValue
-        // 5 分钟
-        this.countdown = 300
         this.totalDailyGain = 0.0
         this.totalHoldingGain = 0.0
         for (var index in this.myHoldings) {
@@ -286,12 +246,10 @@ export default {
         // 格式化
         this.totalDailyGain = parseFloat(this.totalDailyGain).toFixed(2)
         this.totalHoldingGain = parseFloat(this.totalHoldingGain).toFixed(2)
-        this.myCountdown = this.countdown
         this.isUpdating = true
         setTimeout(() => {
           this.isUpdating = false
         }, 1500)
-        this.updateTime()
       },
       immediate: true,
       deep: true
@@ -340,7 +298,8 @@ export default {
   display: flex;
   justify-content:center;
   align-items: center;
-  width: 72px;
+  width: 1.6rem;
+  font-size: 0.33rem;
   color: #FFFFFF;
   background-color: #333333;
 }
@@ -348,7 +307,8 @@ export default {
   display: flex;
   justify-content:center;
   align-items: center;
-  width: 72px;
+  width: 1.6rem;
+  font-size: 0.33rem;
   background-color: #333333;
 }
 .sumCell {
@@ -360,7 +320,8 @@ export default {
 }
 .sumContainer {
   display: flex;
-  width: 100%;
+  justify-content: space-between;
+  width: 10rem;
 }
 
 /* 基金详情 */
@@ -379,8 +340,8 @@ export default {
   margin: 0px;
   padding: 0px;
   height: 25px;
-  width: 100%;
-  font-size: 16px;
+  width: 10rem;
+  font-size: 0.33rem;
   text-align: left;
 }
 
@@ -388,7 +349,7 @@ export default {
   display: flex;
   justify-content:space-between;
   background-color: #000000;
-  max-width: 100%;
+  width: 10rem;
   margin: 0px;
   padding: 0px;
 }
@@ -414,7 +375,7 @@ export default {
   padding: 1px;
   height: 25px;
   width: 33.333%;
-  font-size: 16px;
+  font-size: 0.33rem;
   text-align: left;
 }
 
