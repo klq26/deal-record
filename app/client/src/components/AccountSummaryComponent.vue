@@ -1,14 +1,20 @@
 <template>
-  <div class="container">
+  <div class="container" @click="showDaily = !showDaily">
     <!-- 整体情况 -->
     <div class="summaryContainer">
-      <div style="color:#FFF;margin:4px 0.06rem;display:inline-block;font-size: 0.33rem;">日收益</div>
-      <div style="margin:4px 0.06rem;display:inline-block;font-size: 0.33rem;" :class="textColorWithValue(totalDailyGain)">{{totalDailyGain}}</div>
+      <div class="summaryTitle" v-show="showDaily">日收益</div>
+      <div class="summaryValue" :class="textColorWithValue(totalDailyGain)" v-show="showDaily">{{totalDailyGain}}</div>
+      <div class="summaryTitle" v-show="!showDaily">总收益</div>
+      <div class="summaryValue" :class="textColorWithValue(totalHoldingGain)" v-show="!showDaily">{{totalHoldingGain}}</div>
     </div>
-    <div class="summaryContainer">
-      <div style="color:#FFF;margin:4px 0.06rem;display:inline-block;font-size: 0.33rem;">总收益</div>
-      <div style="margin:4px 0.06rem;display:inline-block;font-size: 0.33rem;" :class="textColorWithValue(totalHoldingGain)">{{totalHoldingGain}}</div>
+    <!-- 分类汇总 -->
+    <div class="sumcontainer">
+      <div class="sumcell" v-for="item in categorys" :key="item.index">
+        <div class="categoryTitle">{{item}}</div>
+        <div class="categorySum" :class="textColorWithValue(sum(item))">{{sum(item)}}</div>
+      </div>
     </div>
+    <!-- 账户收益 -->
     <div class="accountCell" :class="accountBackground(item)" v-for="item in Object.keys(accounts)" :key="item.index">
       <div class="title">{{item}}</div>
       <div class="today" :class="[textColorWithValue(today(item)), {flash : isUpdating}]">{{today(item)}}</div>
@@ -25,6 +31,20 @@ export default {
     'estimates'
   ],
   methods: {
+    sum (category1) {
+      var total = 0.0
+      for (var i in this.myHoldings) {
+        var holding = this.myHoldings[i]
+        if (holding.category1 === category1) {
+          if (this.showDaily) {
+            total = total + parseFloat(holding.dailyChange)
+          } else {
+            total = total + parseFloat(holding.totalChange)
+          }
+        }
+      }
+      return total.toFixed(1)
+    },
     accountBackground (name) {
       if (name.indexOf('且慢') !== -1) {
         return 'qieman'
@@ -62,6 +82,15 @@ export default {
   },
   data () {
     return {
+      showDaily: true,
+      categorys: [
+        'A 股',
+        '海外新兴',
+        '海外成熟',
+        '混合型',
+        '债券',
+        '商品'
+      ],
       accounts: {},
       isUpdating: true,
       myEstimates: this.estimates,
@@ -86,7 +115,6 @@ export default {
         this.accounts = {}
         this.totalDailyGain = 0.0
         this.totalHoldingGain = 0.0
-        console.log(this.myHoldings.length)
         for (var index in this.myHoldings) {
           var fundItem = this.myHoldings[index]
           var code = fundItem.code
@@ -189,11 +217,62 @@ export default {
   height: 100%;
 }
 
+.categoryTitle {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  width: 1.6rem;
+  font-size: 0.33rem;
+  color: #FFFFFF;
+  background-color: #333333;
+}
+
+.categorySum {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  width: 1.6rem;
+  font-size: 0.33rem;
+  background-color: #333333;
+}
+
+.sumcell {
+  display: inline-flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction: column;
+  margin:0px 0px;
+  width: 100%;
+}
+
+.sumcontainer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
 .summaryContainer {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   width: 10rem;
+}
+
+.summaryTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:#FFF;
+  margin:0.12rem 0.06rem;
+  font-size: 0.4rem;
+}
+
+.summaryValue {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin:0.12rem 0.06rem;
+  font-size: 0.4rem;
 }
 
 .accountCell {
@@ -210,21 +289,21 @@ export default {
   justify-content: center;
   align-items: center;
   color: #333;
-  font-size: 0.33rem;
+  font-size: 0.4rem;
 }
 
 .today {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 0.33rem;
+  font-size: 0.4rem;
 }
 
 .total {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 0.33rem;
+  font-size: 0.4rem;
 }
 
 .flash {

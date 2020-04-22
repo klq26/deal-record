@@ -1,11 +1,11 @@
 <template>
-  <div class="mainContainer" style="width:449px;" @click="showDaily = !showDaily">
+  <div class="mainContainer" @click="showDaily = !showDaily">
     <!-- 整体盈亏 -->
-    <div>
-      <div style="color:#FFF;margin:4px 0.06rem;display:inline-block;font-size: 0.33rem;" v-show="showDaily">日收益</div>
-      <div style="margin:4px 0.06rem;display:inline-block;font-size: 0.33rem;" :class="textColorWithValue(totalDailyGain)" v-show="showDaily">{{totalDailyGain}}</div>
-      <div style="color:#FFF;margin:4px 0.06rem;display:inline-block;font-size: 0.33rem;" v-show="!showDaily">总收益</div>
-      <div style="margin:4px 0.06rem;display:inline-block;font-size: 0.33rem;" :class="textColorWithValue(totalHoldingGain)" v-show="!showDaily">{{totalHoldingGain}}</div>
+    <div class="summaryContainer">
+      <div class="summaryTitle" v-show="showDaily">日收益</div>
+      <div class="summaryValue" :class="textColorWithValue(totalDailyGain)" v-show="showDaily">{{totalDailyGain}}</div>
+      <div class="summaryTitle" v-show="!showDaily">总收益</div>
+      <div class="summaryValue" :class="textColorWithValue(totalHoldingGain)" v-show="!showDaily">{{totalHoldingGain}}</div>
     </div>
     <!-- 一级分类 -->
     <div class="sumContainer">
@@ -91,7 +91,7 @@ export default {
   name: 'FundDetailComponent',
   props: [
     'holdings',
-    'estimates',
+    'estimates'
   ],
   methods: {
     // 文字颜色
@@ -324,6 +324,30 @@ export default {
   width: 10rem;
 }
 
+.summaryContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 10rem;
+}
+
+.summaryTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:#FFF;
+  margin:0.12rem 0.06rem;
+  font-size: 0.4rem;
+}
+
+.summaryValue {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin:0.12rem 0.06rem;
+  font-size: 0.4rem;
+}
+
 /* 基金详情 */
 .fundCell {
   display: flex;
@@ -331,7 +355,7 @@ export default {
   padding: 1px;
   flex-direction: column;
   background-color: #000000;
-  width: 100%;
+  width: 10rem;
 }
 .fundFullTitle {
   /* 解决纯数字时偏上的问题 */
@@ -339,7 +363,7 @@ export default {
   align-items: center;
   margin: 0px;
   padding: 0px;
-  height: 25px;
+  height: 0.5rem;
   width: 10rem;
   font-size: 0.33rem;
   text-align: left;
@@ -358,12 +382,14 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 0.33rem;
 }
 
 .itemValue {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 0.33rem;
 }
 
 .valueItem {
@@ -373,8 +399,8 @@ export default {
   justify-content: left;
   margin: 0px;
   padding: 1px;
-  height: 25px;
-  width: 33.333%;
+  height: 0.5rem;
+  width: 3.33rem;
   font-size: 0.33rem;
   text-align: left;
 }

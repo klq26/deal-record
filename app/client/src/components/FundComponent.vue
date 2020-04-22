@@ -1,13 +1,13 @@
 <template>
   <div class="container" @click="showDaily = !showDaily">
     <!-- 整体情况 -->
-    <div>
-      <div style="color:#FFF;margin:4px 0.06rem;display:inline-block;font-size: 0.33rem;" v-show="showDaily">日收益</div>
-      <div style="margin:4px 0.06rem;display:inline-block;font-size: 0.33rem;" :class="textColorWithValue(totalDailyGain)" v-show="showDaily">{{totalDailyGain}}</div>
-      <div style="color:#FFF;margin:4px 0.06rem;display:inline-block;font-size: 0.33rem;" v-show="!showDaily">总收益</div>
-      <div style="margin:4px 0.06rem;display:inline-block;font-size: 0.33rem;" :class="textColorWithValue(totalHoldingGain)" v-show="!showDaily">{{totalHoldingGain}}</div>
+    <div class="summaryContainer">
+      <div class="summaryTitle" v-show="showDaily">日收益</div>
+      <div class="summaryValue" :class="textColorWithValue(totalDailyGain)" v-show="showDaily">{{totalDailyGain}}</div>
+      <div class="summaryTitle" v-show="!showDaily">总收益</div>
+      <div class="summaryValue" :class="textColorWithValue(totalHoldingGain)" v-show="!showDaily">{{totalHoldingGain}}</div>
     </div>
-    <!-- 分类汇总 -->
+        <!-- 分类汇总 -->
     <div class="sumcontainer">
       <div class="sumcell" v-for="item in categorys" :key="item.index">
         <div class="categoryTitle">{{item}}</div>
@@ -45,7 +45,7 @@ export default {
   name: 'FundComponent',
   props: [
     'holdings',
-    'estimates',
+    'estimates'
   ],
   methods: {
     marketColor (item) {
@@ -277,6 +277,30 @@ export default {
   display: flex;
   align-items: center;
   width: 100%;
+}
+
+.summaryContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 10rem;
+}
+
+.summaryTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:#FFF;
+  margin:0.12rem 0.06rem;
+  font-size: 0.4rem;
+}
+
+.summaryValue {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin:0.12rem 0.06rem;
+  font-size: 0.4rem;
 }
 
 .fundcell {
