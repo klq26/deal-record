@@ -14,6 +14,7 @@ import pandas as pd
 from login.requestHeaderManager import requestHeaderManager
 from category.categoryManager import categoryManager
 from database.fundDBHelper import fundDBHelper
+from database.dealRecordDBHelper import dealRecordDBHelper
 from spider.common.dealRecordModel import *
 
 global_name = '且慢'
@@ -88,7 +89,78 @@ class qiemanSpider:
             f.write(json.dumps(self.results, ensure_ascii = False, indent = 4))
         return self.results
 
-    def uniqueCodes(self):
+    # 增量更新
+    def increment(self):
+        # 校验数据库和本地 json 文件是否完全匹配
+        self.verifyHistoryData()
+        json_datalist = self.load()
+        json_datalist_count = len(json_datalist)
+        # 新数据起始 id
+        startId = json_datalist_count + 1
+        startDate = datetime.strptime(json_datalist[-1]['date'], '%Y-%m-%d')
+        print('且慢：{0} 增量更新中..'.format(self.owner))
+        # 准备成交记录列表
+        increments = []
+        # 取 500 条
+        for plan in self.plan_list:
+            self.current_plan = plan
+            tradelist_file = os.path.join(self.tradelistfolder, '{0}_tradelist.json'.format(plan['name']))
+            # 准备成交记录列表
+            tradelistJson = self._prepareTradelist(plan = plan, path = tradelist_file, forceUpdate = True)
+            datalist = tradelistJson['content']
+            # 从 tradelist.json 列表中，请求每一次的交易详情(仅包含“交易成功”，忽略“撤单”，“交易进行中” 等非确定情况)
+            for tradeRecord in datalist:
+                dealRecordsJson = self._prepareTradeRecord(tradeRecord, startDate = startDate)
+                dealRecords = self._prepareDealRecords(dealRecordsJson)
+                [increments.append(x) for x in dealRecords]
+        # 日期升序，重置 id
+        increments.sort(key=lambda x: x['date'])
+        for i in range(0, len(increments)):
+            increments[i]['id'] = i + startId
+        # [print(x) for x in increments]
+        [json_datalist.append(x) for x in increments]
+        # 写入文件
+        output_path = os.path.join(self.folder, 'output', '{0}_record.json'.format(self.owner))
+        with open(output_path, 'w+', encoding='utf-8') as f:
+            f.write(json.dumps(json_datalist, ensure_ascii = False, indent = 4))
+
+    # 检测项目中 record.json 文件的数据和数据库数据是否一致
+    def verifyHistoryData(self):
+        db = dealRecordDBHelper()
+        tablename = ''
+        account = ''
+        if self.owner == u'康力泉':
+            tablename = u'klq'
+            account = u'且慢'
+        elif self.owner == u'康世海':
+            tablename = u'parents'
+            account = u'康世海_且慢'
+        # 数据库数据
+        df = db.selectAllRecordsToDataFrame(tablename = tablename, account = account)
+        keys = list(df.columns)
+        db_datalist = []
+        for x in list(df.values):
+            db_datalist.append(dict(zip(keys, x)))
+        db_datalist_count = len(db_datalist)
+        # 本地数据
+        json_datalist = self.load()
+        json_datalist_count = len(json_datalist)
+        # 校验数据数量
+        if db_datalist_count != json_datalist_count:
+            print('[ERROR] qiemanSpider 数据库校验失败：个数不统一。数据库：{0} 本地：{1}'.format(db_datalist_count, json_datalist_count))
+            exit(1)
+        # 校验每条数据关键字段
+        checkEqual = lambda x, y : x['date'] == y['date'] and x['code'] == y['code'] and x['dealType'] == y['dealType'] and x['nav_unit'] == y['nav_unit'] and x['volume'] == y['volume'] and x['occurMoney'] == y['occurMoney'] and x['note'] == y['note']
+        checkResults = list(map(checkEqual, db_datalist, json_datalist))
+        if False in checkResults:
+            index = checkResults.index(False)
+            print('[ERROR] qiemanSpider 数据库校验失败：数据不匹配。\n\n数据库：\n{0} \n\n本地：\n{1}'.format(db_datalist[index], json_datalist[index]))
+            exit(1)
+        else:
+            # print(checkResults, len(checkResults))
+            print('[SUCCESS] qiemanSpider {0} 历史数据校验通过'.format(self.owner))
+
+        def uniqueCodes(self):
         output_path = os.path.join(self.folder, 'output', '{0}_record.json'.format(self.owner))
         with open(output_path, 'r', encoding='utf-8') as f:
             datalist = json.loads(f.read())
@@ -145,11 +217,16 @@ class qiemanSpider:
                     return jsonData
 
     # 根据 tradelist.json 中的数组，准备每一条交易详情数据
-    def _prepareTradeRecord(self, item):
+    def _prepareTradeRecord(self, item, startDate = None):
         detail_url = u'https://qieman.com/pmdj/v2/orders/{0}'
         unix_ts = int(int(item['acceptTime'])/1000)
-        dateObj = datetime.fromtimestamp(unix_ts)
-        date = str(dateObj)[0:10]
+        # startDate
+        tradeDate = datetime.fromtimestamp(unix_ts)
+        if startDate != None and isinstance(startDate, datetime):
+            if startDate >= tradeDate:
+                print('[Skip] qiemanSpider 忽略已入库交易。数据库最后记录时间：{0} 当前交易记录时间：{1}\n'.format(startDate, tradeDate))
+                return json.loads('[]')
+        date = str(tradeDate)[0:10]
         order_id = item['orderId']
         plan_name = item['po']['poName']
         detail_file = os.path.join(self.detailfolder, '{0}_{1}_{2}_{3}_{4}.json'.format(date, plan_name, item['uiOrderCodeName'], item['uiOrderStatusName'], item['orderId']))

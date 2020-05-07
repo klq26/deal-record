@@ -166,6 +166,9 @@ class huataiSpider:
             f.write(json.dumps(others, ensure_ascii=False, indent=4))
         return records
     
+    def increment(self):
+        return self.get()
+    
     # 获取所有记录中的唯一代码
     def uniqueCodes(self):
         output_path = os.path.join(self.folder, 'output', '{0}_record.json'.format(self.owner))

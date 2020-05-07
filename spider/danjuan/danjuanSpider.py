@@ -144,7 +144,7 @@ class danjuanSpider:
     def uniqueCodes(self):
         output_path = os.path.join(self.folder, 'output', '{0}_record.json'.format(self.owner))
         with open(output_path, 'r', encoding='utf-8') as f:
-            datalist = json.loads(f.read(5))
+            datalist = json.loads(f.read())
             names = []
             codes = []
             for x in datalist:
