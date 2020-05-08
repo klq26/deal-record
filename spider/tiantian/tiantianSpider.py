@@ -64,7 +64,7 @@ class tiantianSpider:
             [self.detailUrlList.append(x) for x in self.getDetailUrlsFromTradeList(tradeRecord['html'])]
         # print(len(self.detailUrlList))
         # 获取每一条详情数据
-        dealRecordJsonList = self._prepareDetailList(self.detailUrlList)
+        dealRecordJsonList = self._prepareDetailList(self.detailUrlList,forceUpdate = forceUpdate)
         index = 0
         for i in range(0, len(dealRecordJsonList)):
             x = dealRecordJsonList[i]
@@ -72,6 +72,17 @@ class tiantianSpider:
             if item != None:
                 index += 1
                 self.results.append(item)
+        # 转托管补充
+        if os.path.exists(os.path.join(self.folder, 'input', '{0}_addition.json'.format(self.owner))):
+            # 注意：天天基金的转托管操作，是直接 continue 的。所以要通过 addition.json 自行编排补充
+            input_path = os.path.join(self.folder, 'input', '{0}_addition.json'.format(self.owner))
+            with open(input_path, 'r', encoding='utf-8') as f:
+                additions = json.loads(f.read())
+                [self.results.append(x) for x in additions]
+        # 日期升序，重置 id
+        self.results.sort(key=lambda x: x['date'])
+        for i in range(1, len(self.results) + 1):
+            self.results[i-1]['id'] = i
         # 写入文件
         output_path = os.path.join(self.folder, 'output', '{0}_record.json'.format(self.owner))
         with open(output_path, 'w+', encoding='utf-8') as f:
@@ -349,7 +360,7 @@ class tiantianSpider:
         # 红利发放，只需要指数基金的
         # 强行调增，即拆分信息
         # 申购确认，赎回确认，都要
-        allOpType = ['申购确认', '赎回确认', '红利发放(红利再投资)', '红利发放(现金分红)', '快速过户', '转出投资账户确认', '转入投资账户确认','强行调增', '强行调减']
+        allOpType = ['申购确认', '赎回确认', '红利发放(红利再投资)', '红利发放(现金分红)', '快速过户', '转出投资账户确认', '转入投资账户确认','强行调增', '强行调减','转托管确认']
         allNeededType = ['申购确认', '赎回确认', '红利发放(红利再投资)', '红利发放(现金分红)', '强行调增', '强行调减']
         # 取关键信息
         applyInfo = x['申请信息']
@@ -370,6 +381,9 @@ class tiantianSpider:
         # 不要货币基金
         if u'货币' in confirmInfo['fundName']:
             print('[Warning] tiantianSpider 忽略货币基金交易详情：{0}\n{1}\n'.format(opType, x))
+            return None
+        if u'转托管确认' in opType:
+            print('[Warning] tiantianSpider 转托管交易请自行建立 xx_addition.json 文件。交易详情：{0}\n{1}\n'.format(opType, x))
             return None
         # 开始录入成交数据
         all_model_values = []

@@ -1,0 +1,21 @@
+[
+    {
+        "id": 1,
+        "date": "2020-04-29",
+        "code": "501018",
+        "name": "南方原油A",
+        "dealType": "卖出",
+        "nav_unit": 0.7162,
+        "nav_acc": 0.7162,
+        "volume": 8925.34,
+        "dealMoney": 6392.33,
+        "fee": 0,
+        "occurMoney": 0,
+        "account": "康力泉_天天",
+        "category1": "商品",
+        "category2": "商品",
+        "category3": "原油",
+        "categoryId": 613,
+        "note": "https://query.1234567.com.cn/Query/Detail?id=340c5c12b6734d8180fcbe9ecdb3e13d&businType=26&traceNo="
+    }
+]
