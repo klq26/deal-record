@@ -198,8 +198,8 @@ if __name__ == "__main__":
     updateDatabase()
 
     # 所有spider increment
-    # huabaoSpider().increment()
-    huataiSpider().increment()
+    qiemanSpider('klq').increment()
+    
     # danjuanSpider('klq).increment()
 
     # # 插入增量数据或全量数据

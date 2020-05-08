@@ -36,5 +36,43 @@
         "category3": "中证红利",
         "categoryId": 131,
         "note": "长赢指数投资计划-S定投_自补分红"
+    },
+    {
+        "id": 3,
+        "date": "2020-04-24",
+        "code": "501018",
+        "name": "南方原油A",
+        "dealType": "卖出",
+        "nav_unit": 0.7162,
+        "nav_acc": 0.7162,
+        "volume": 930.19,
+        "dealMoney": 666.2,
+        "fee": 0,
+        "occurMoney": 0,
+        "account": "康力泉_且慢_150份",
+        "category1": "商品",
+        "category2": "商品",
+        "category3": "原油",
+        "categoryId": 613,
+        "note": "长赢指数投资计划-150份_转托管"
+    },
+    {
+        "id": 4,
+        "date": "2020-04-24",
+        "code": "501018",
+        "name": "南方原油A",
+        "dealType": "卖出",
+        "nav_unit": 0.7162,
+        "nav_acc": 0.7162,
+        "volume": 1394.58,
+        "dealMoney": 998.8,
+        "fee": 0,
+        "occurMoney": 0,
+        "account": "康力泉_且慢_S定投",
+        "category1": "商品",
+        "category2": "商品",
+        "category3": "原油",
+        "categoryId": 613,
+        "note": "长赢指数投资计划-S定投_转托管"
     }
 ]

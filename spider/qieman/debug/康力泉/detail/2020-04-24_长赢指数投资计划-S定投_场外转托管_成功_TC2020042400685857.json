@@ -1,0 +1,56 @@
+{
+    "orderProdType": "PO",
+    "orderId": "TC2020042400685857",
+    "payStatus": "0",
+    "uiPayStatusName": "处理中",
+    "confirmStatus": "2",
+    "uiShare": "1394.58",
+    "hasDetail": true,
+    "uiOrderDesc": "已于2020年4月27日确认",
+    "fund": {
+        "fundCode": "501018",
+        "fundName": "南方原油A"
+    },
+    "orderCode": "TRANSFER-CUSTODY",
+    "uiOrderCodeName": "场外转托管",
+    "orderStatus": "SUCCESS",
+    "uiOrderStatusName": "成功",
+    "umaId": 16569,
+    "umaName": "我的S定投计计划",
+    "capitalAccountId": "CA8FCJKFPANTP2",
+    "capitalAccountName": "长赢指数投资计划-S定投",
+    "po": {
+        "poCode": "LONG_WIN_S",
+        "poName": "长赢指数投资计划-S定投"
+    },
+    "cancelable": false,
+    "targetSaleCode": "691",
+    "targetTxnAccount": "69199130000014656",
+    "orderConfirmDate": "2020-04-27",
+    "acceptTime": 1587698084000,
+    "compositionOrders": [
+        {
+            "orderId": "2020042400685857",
+            "payStatus": "2",
+            "cancelable": false,
+            "acceptTime": 1587698084000,
+            "nav": null,
+            "fee": 0,
+            "uiAmount": "0.00",
+            "uiShare": "1394.58",
+            "confirmStatus": "2",
+            "orderStatus": "SUCCESS",
+            "uiOrderStatusName": "成功",
+            "uiConfirmStatusName": "成功",
+            "tradeByShare": true,
+            "orderCode": "026",
+            "uiOrderCodeName": "场外转托管",
+            "orderConfirmDate": 1587916800000,
+            "fund": {
+                "fundCode": "501018",
+                "fundName": "南方原油A"
+            },
+            "uiOrderDesc": "已于2020年4月27日确认完成"
+        }
+    ]
+}

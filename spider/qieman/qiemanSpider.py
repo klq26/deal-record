@@ -37,7 +37,7 @@ class qiemanSpider:
             # 150 补充
             # totalElements: 19 # totalPages: 2
             planS_id = u'CA8FCJKFPANTP2'
-            self.plan_list = [{'name': '150份', 'value': plan150_id}, {'name': 'S定投', 'value': planS_id}]
+            self.plan_list = [{'name': '150份', 'value': plan150_id, 'poName': '长赢指数投资计划-150份'}, {'name': 'S定投', 'value': planS_id, 'poName': '长赢指数投资计划-S定投'}]
         elif strategy == 'ksh':
             self.owner = '康世海'
             self.headers = requestHeaderManager().getQiemanKSH()
@@ -111,8 +111,16 @@ class qiemanSpider:
             # 从 tradelist.json 列表中，请求每一次的交易详情(仅包含“交易成功”，忽略“撤单”，“交易进行中” 等非确定情况)
             for tradeRecord in datalist:
                 dealRecordsJson = self._prepareTradeRecord(tradeRecord, startDate = startDate)
-                dealRecords = self._prepareDealRecords(dealRecordsJson)
-                [increments.append(x) for x in dealRecords]
+                if len(dealRecordsJson) > 0:
+                    dealRecords = self._prepareDealRecords(dealRecordsJson)
+                    [increments.append(x) for x in dealRecords]
+        if os.path.exists(os.path.join(self.folder, 'input', '{0}_addition.json'.format(self.owner))):
+            # 注意：且慢网站目前不公布跟计划品种分红的交易，暂时只能自己补充，这点自己补齐，已和客服沟通过得到确认
+            # 另外，父亲的组合转换，只有一笔转换。实际上应该是一笔买入 + 一笔卖出。程序里，转换只提现了买入。所以 addition 则补足基金的卖出部分
+            input_path = os.path.join(self.folder, 'input', '{0}_addition.json'.format(self.owner))
+            with open(input_path, 'r', encoding='utf-8') as f:
+                dividends = json.loads(f.read())
+                [increments.append(x) for x in dividends if startDate <= datetime.strptime(x['date'], '%Y-%m-%d')]
         # 日期升序，重置 id
         increments.sort(key=lambda x: x['date'])
         for i in range(0, len(increments)):
@@ -228,7 +236,10 @@ class qiemanSpider:
                 return json.loads('[]')
         date = str(tradeDate)[0:10]
         order_id = item['orderId']
-        plan_name = item['po']['poName']
+        if 'po' in item.keys():
+            plan_name = item['po']['poName']
+        else:
+            plan_name = self.current_plan['poName']
         detail_file = os.path.join(self.detailfolder, '{0}_{1}_{2}_{3}_{4}.json'.format(date, plan_name, item['uiOrderCodeName'], item['uiOrderStatusName'], item['orderId']))
         if not os.path.exists(detail_file):
             # 请求
@@ -259,6 +270,9 @@ class qiemanSpider:
         orders = jsonData['compositionOrders']
         for order in orders:
             opType = order['uiOrderCodeName']
+            if  '转托管' in opType:
+                # 转托管逻辑过于复杂，之后但凡有此类操作，直接读取 input 文件夹下的修正成交记录
+                continue
             index = index + 1
             # id
             all_model_values = [index]
@@ -273,7 +287,7 @@ class qiemanSpider:
             confirm_amount = order['uiAmount']
             confirm_volume = order['uiShare']
             fee = order['fee']
-            occurMoney = order['uiAmount']
+            occurMoney = round(order['uiAmount'], 2)
             nav_unit = 0.0
             nav_acc = 0.0
             if u'分红' in opType:
