@@ -1,7 +1,13 @@
 ,id,date,code,name,dealType,nav_unit,nav_acc,volume,dealMoney,fee,occurMoney,account,category1,category2,category3,categoryId,note
 0,807,2020-04-08,110003,易方达上证50指数A,买入,1.698,3.598,64.27,109.3,0.16,109.46,康力泉_蛋卷_螺丝钉指数基金组合,A 股,大盘股,上证50,111,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=217004141394235392
-1,925,2020-04-08,110003,易方达上证50指数A,买入,1.698,3.598,25.7,43.72,0.07,43.79,康世海_蛋卷_螺丝钉指数基金组合,A 股,大盘股,上证50,111,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=217011897996120064
-2,918,2020-04-08,110003,易方达上证50指数A,买入,1.698,3.598,25.7,43.72,0.07,43.79,李淑云_蛋卷_螺丝钉指数基金组合,A 股,大盘股,上证50,111,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=217004521357283328
-3,911,2020-04-08,110003,易方达上证50指数A,买入,1.698,3.598,25.7,43.72,0.07,43.79,李淑云_蛋卷_螺丝钉指数基金组合,A 股,大盘股,上证50,111,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=217004521357283328
+1,918,2020-04-08,110003,易方达上证50指数A,买入,1.698,3.598,25.7,43.72,0.07,43.79,李淑云_蛋卷_螺丝钉指数基金组合,A 股,大盘股,上证50,111,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=217004521357283328
+2,911,2020-04-08,110003,易方达上证50指数A,买入,1.698,3.598,25.7,43.72,0.07,43.79,李淑云_蛋卷_螺丝钉指数基金组合,A 股,大盘股,上证50,111,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=217004521357283328
+3,925,2020-04-08,110003,易方达上证50指数A,买入,1.698,3.598,25.7,43.72,0.07,43.79,康世海_蛋卷_螺丝钉指数基金组合,A 股,大盘股,上证50,111,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=217011897996120064
 4,935,2020-04-13,110003,易方达上证50指数A,买入,1.6995,3.5995,25.86,44.02,0.07,44.09,李淑云_蛋卷_螺丝钉指数基金组合,A 股,大盘股,上证50,111,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=218825399900549120
 5,820,2020-04-13,110003,易方达上证50指数A,买入,1.6995,3.5995,64.65,110.04,0.16,110.2,康力泉_蛋卷_螺丝钉指数基金组合,A 股,大盘股,上证50,111,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=218823474421403648
+6,962,2020-04-21,110003,易方达上证50指数A,买入,1.7243,3.6243,24.35,42.06,0.06,42.12,康世海_蛋卷_螺丝钉指数基金组合,A 股,大盘股,上证50,111,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=221718511336525824
+7,955,2020-04-21,110003,易方达上证50指数A,买入,1.7243,3.6243,12.18,21.04,0.03,21.07,李淑云_蛋卷_螺丝钉指数基金组合,A 股,大盘股,上证50,111,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=221719338474246144
+8,833,2020-04-21,110003,易方达上证50指数A,买入,1.7243,3.6243,60.89,105.16,0.16,105.32,康力泉_蛋卷_螺丝钉指数基金组合,A 股,大盘股,上证50,111,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=221714814447620096
+9,980,2020-05-06,110003,易方达上证50指数A,买入,1.7799,3.6799,22.72,40.51,0.06,40.57,李淑云_蛋卷_螺丝钉指数基金组合,A 股,大盘股,上证50,111,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=227137252560973824
+10,858,2020-05-06,110003,易方达上证50指数A,买入,1.7799,3.6799,56.8,101.26,0.15,101.41,康力泉_蛋卷_螺丝钉指数基金组合,A 股,大盘股,上证50,111,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=227126149642694656
+11,987,2020-05-06,110003,易方达上证50指数A,买入,1.7799,3.6799,11.36,20.25,0.03,20.28,康世海_蛋卷_螺丝钉指数基金组合,A 股,大盘股,上证50,111,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=227137301328138240

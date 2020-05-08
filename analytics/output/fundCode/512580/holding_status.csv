@@ -1,2 +1,2 @@
 ,id,date,code,name,status,holding_nav,holding_volume,holding_money,holding_gain,history_gain,total_cash_dividend,total_fee,account,category1,category2,category3,categoryId
-0,,2020-04-10,512580,环保ETF,买入,0.866,37100.0,32144.24,0.0,0.0,0.0,6.18,,A 股,行业股,中证环保,143
+0,,2020-04-30,512580,环保ETF,卖出,0.876,33800.0,29615.93,-330.0,0.0,0.0,6.69,,A 股,行业股,中证环保,143

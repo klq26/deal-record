@@ -1,0 +1,3 @@
+,id,date,code,name,dealType,nav_unit,nav_acc,volume,dealMoney,fee,occurMoney,account,category1,category2,category3,categoryId,note
+0,840,2020-04-28,510500,500ETF,买入,5.697,5.697,8800.0,50133.6,5.01,50138.61,华宝证券,A 股,中小盘股,中证500,121,无
+1,842,2020-04-28,510500,500ETF,买入,5.556,5.556,4100.0,22779.6,2.28,22781.88,华宝证券,A 股,中小盘股,中证500,121,无

@@ -253,7 +253,7 @@ class danjuanSpider:
             elif 'sub_order_list' not in jsonData.keys() and '货币' not in jsonData['name']:
                 # 属于单笔基金的买卖而非 plan 组合交易
                 return self._handleFundBuySell(jsonData)
-            elif (tradeDetailOpType == u'分红' or tradeDetailOpType == u'买入') and '货币' in jsonData['name']:
+            elif (tradeDetailOpType == u'分红' or tradeDetailOpType == u'买入' or tradeDetailOpType == u'卖出' or tradeDetailOpType == u'快速过户') and '货币' in jsonData['name']:
                 # 暂时不收集货币基金的分红及买入操作，但是转换相当于买入，还是要的
                 print('[Warning] danjuanSpider 忽略货币基金非转换交易记录：{0}\n{1}\n'.format(tradeDetailOpType, jsonData))
                 return []

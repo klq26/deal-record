@@ -1,2 +1,5 @@
 ,id,date,code,name,dealType,nav_unit,nav_acc,volume,dealMoney,fee,occurMoney,account,category1,category2,category3,categoryId,note
 0,943,2020-04-16,003002,国金及第中短债,买入,1.0378,1.0378,385.43,400.0,0.0,400.0,康世海_蛋卷_钉钉宝90天组合,债券,国内债券,纯债,511,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=219834964909727744
+1,948,2020-04-16,003002,国金及第中短债,买入,1.0378,1.0378,385.43,400.0,0.0,400.0,康世海_蛋卷_钉钉宝90天组合,债券,国内债券,纯债,511,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=219834964909727744
+2,972,2020-04-23,003002,国金及第中短债,买入,1.0405,1.0405,95.72,99.6,0.0,99.6,康世海_蛋卷_钉钉宝90天组合,债券,国内债券,纯债,511,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=222389780722720768
+3,963,2020-04-23,003002,国金及第中短债,买入,1.0405,1.0405,288.32,300.0,0.0,300.0,康世海_蛋卷_钉钉宝90天组合,债券,国内债券,纯债,511,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=222449293282742272
