@@ -199,12 +199,13 @@ if __name__ == "__main__":
 
     # 所有spider increment
     # huabaoSpider().increment()
+    huataiSpider().increment()
     # danjuanSpider('klq).increment()
 
-    # 插入增量数据或全量数据
-    updateAllDealRecords('klq', onlyUpdatelocal = False)
-    updateAllDealRecords('parents', onlyUpdatelocal = False)
+    # # 插入增量数据或全量数据
+    # updateAllDealRecords('klq', onlyUpdatelocal = False)
+    # updateAllDealRecords('parents', onlyUpdatelocal = False)
 
-    # # 更新汇总持仓数据到数据库（供 familyHolding app 使用）
-    allFamilyHoldingSelloutStatus(onlyUpdatelocal = False)
-    allFundHoldingStatus(onlyUpdatelocal = False)
+    # # # 更新汇总持仓数据到数据库（供 familyHolding app 使用）
+    # allFamilyHoldingSelloutStatus(onlyUpdatelocal = False)
+    # allFundHoldingStatus(onlyUpdatelocal = False)

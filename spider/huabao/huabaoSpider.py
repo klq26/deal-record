@@ -19,11 +19,11 @@ suppose_all_file_columns = ['成交日期', '成交时间', '股东代码', '证
 # 我们实际需要的列名
 suppose_needed_columns=['成交编号', '成交日期', '证券代码', '证券名称', '委托类别', '成交价格', '成交数量', '发生金额', '佣金', '印花税', '过户费', '成交费']
 # 证券代码取值范围
-suppose_codes = {'name': '证券代码', 'value': ['799999', '162411', '515180', '159920', '513520', '160416', '512580', '512980']}
+suppose_codes = {'name': '证券代码', 'value': ['799999', '162411', '515180', '159920', '513520', '160416', '512580', '512980','510500','501018']}
 # 证券名称取值范围
-suppose_names = {'name': '证券名称', 'value': ['登记指定', '华宝油气', '100红利', '恒生ETF', '日经ETF', '石油基金', '环保ETF', '传媒ETF']}
+suppose_names = {'name': '证券名称', 'value': ['登记指定', '华宝油气', '100红利', '恒生ETF', '日经ETF', '石油基金', '环保ETF', '传媒ETF','500ETF','南方原油']}
 # 委托类别取值范围
-suppose_operates = {'name': '委托类别', 'value': ['指定', '买入', '卖出', '基金申购']}
+suppose_operates = {'name': '委托类别', 'value': ['指定', '买入', '卖出', '基金申购','托管转入']}
 # 需要校验的列集合
 suppose_justify_columns = [suppose_codes, suppose_names, suppose_operates]
 
@@ -103,7 +103,8 @@ class huabaoSpider:
             # 最后一次修改
             item['date'] = '{0}-{1}-{2}'.format(str(item['date'])[0:4],str(item['date'])[4:6],str(item['date'])[6:8])
             item['code'] = str(item['code'])
-            if item['dealType'] == '基金申购':
+            # 托管转入是 0 手续费的转换操作，当成买入
+            if item['dealType'] == '基金申购' or item['dealType'] == '托管转入':
                 item['dealType'] = '买入'
             if item['dealType'] == '买入':
                 item['occurMoney'] = item['dealMoney'] + item['fee']

@@ -161,22 +161,22 @@ class qiemanSpider:
             print('[SUCCESS] qiemanSpider {0} 历史数据校验通过'.format(self.owner))
 
         def uniqueCodes(self):
-        output_path = os.path.join(self.folder, 'output', '{0}_record.json'.format(self.owner))
-        with open(output_path, 'r', encoding='utf-8') as f:
-            datalist = json.loads(f.read())
-            names = []
-            codes = []
-            for x in datalist:
-                names.append(x['name'])
-                codes.append(x['code'])
-            df = pd.DataFrame()
-            df['name'] = names
-            df['code'] = codes
-            df = df.drop_duplicates(['code'])
-            df = df.sort_values(by='code' , ascending=True)
-            df = df.reset_index(drop=True)
-            df.to_csv(os.path.join(self.folder, 'output', '{0}-qieman-unique-codes.csv'.format(self.owner)), sep='\t')
-            return df
+            output_path = os.path.join(self.folder, 'output', '{0}_record.json'.format(self.owner))
+            with open(output_path, 'r', encoding='utf-8') as f:
+                datalist = json.loads(f.read())
+                names = []
+                codes = []
+                for x in datalist:
+                    names.append(x['name'])
+                    codes.append(x['code'])
+                df = pd.DataFrame()
+                df['name'] = names
+                df['code'] = codes
+                df = df.drop_duplicates(['code'])
+                df = df.sort_values(by='code' , ascending=True)
+                df = df.reset_index(drop=True)
+                df.to_csv(os.path.join(self.folder, 'output', '{0}-qieman-unique-codes.csv'.format(self.owner)), sep='\t')
+                return df
 
     def load(self):
         output_path = os.path.join(self.folder, 'output', '{0}_record.json'.format(self.owner))

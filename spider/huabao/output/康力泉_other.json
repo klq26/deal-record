@@ -7,7 +7,7 @@
         "dealType": "指定",
         "nav_unit": 0.0,
         "nav_acc": 0.0,
-        "volume": 0,
+        "volume": 0.0,
         "dealMoney": 0.0,
         "fee": 0.0,
         "occurMoney": 0.0,
