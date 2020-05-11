@@ -4,6 +4,8 @@ import os
 import sys
 import json
 
+import numpy as np
+
 from flask import Flask
 from flask import request
 from flask import Response
@@ -181,6 +183,25 @@ def getFundHoldingPieInfos(code):
         v['holding_volume_rate'] = round(v['holding_volume'] / total_holding_volume, 4)
         v['holding_money_rate'] = round(v['holding_money'] / total_holding_money, 4)
     [print(k, v) for k,v in results.items()] 
+
+@app.route('/familyholding/api/money', methods=['GET'])
+def getMoneyInfos():
+    start_ts = datetimeManager().getTimeStamp()
+    # 资金文件路径
+    output_path = os.path.join(folder, u'app',u'server', 'money.json')
+    moneyinfo = {}
+    data = {}
+    if os.path.exists(output_path) and os.path.getsize(output_path) > 0:
+        # 读缓存
+        with open(output_path, 'r', encoding=u'utf-8') as f:
+            moneyinfo = json.loads(f.read())
+            if len(moneyinfo.keys()) > 0:
+                data['cash'] = {'name': '现金', 'value': np.sum([v for k, v in moneyinfo['现金'].items()])}
+                data['freeze'] = {'name': '冻结资金', 'value': np.sum([v for k, v in moneyinfo['冻结资金'].items()])}
+    end_ts = dm.getTimeStamp()
+    duration = dm.getDuration(start_ts, end_ts)
+    data = packDataWithCommonInfo(duration = duration, data = data)
+    return Response(data, status=200, mimetype='application/json')
 
 if __name__ == '__main__':
     app.run(port=5000, debug=True)

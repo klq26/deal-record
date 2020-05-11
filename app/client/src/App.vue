@@ -12,7 +12,7 @@
     <!-- 倒计时 -->
     <div style="display:flex; justify-content:flex-end; color:#FFF; margin:4px 0.06rem; width:50%;font-size: 0.4rem;">距下次更新约 {{myCountdown}} 秒</div>
   </div>
-  <AccountSummaryComponent :holdings="accountholdings" :estimates="estimates" v-show="active == 0"/>
+  <AccountSummaryComponent :moneyinfos="moneyinfos" :holdings="accountholdings" :estimates="estimates" v-show="active == 0"/>
   <FundComponent :holdings="fundholdings" :estimates="estimates" v-show="active == 1"/>
   <FundDetailComponent :holdings="fundholdings" :estimates="estimates" v-show="active == 2"/>
   </div>
@@ -23,10 +23,10 @@
 import axios from 'axios'
 import Vue from 'vue'
 
+import LoadingComponent from './components/LoadingComponent'
+import AccountSummaryComponent from './components/AccountSummaryComponent'
 import FundComponent from './components/FundComponent'
 import FundDetailComponent from './components/FundDetailComponent'
-import AccountSummaryComponent from './components/AccountSummaryComponent'
-import LoadingComponent from './components/LoadingComponent'
 
 Vue.prototype.$axios = axios
 Vue.config.productionTip = false
@@ -37,10 +37,10 @@ var serverIp = process.env.API_ROOT
 export default {
   name: 'App',
   components: {
-    FundComponent,
-    FundDetailComponent,
+    LoadingComponent,
     AccountSummaryComponent,
-    LoadingComponent
+    FundComponent,
+    FundDetailComponent
   },
   data () {
     return {
@@ -49,11 +49,12 @@ export default {
       fundholdings: [],
       accountholdings: [],
       estimates: {},
+      moneyinfos: {},
       showDetail: false,
       active: 0,
       tabs: [
         {
-          type: '分账户明细'
+          type: '资产明细'
         },
         {
           type: '持仓估值'
@@ -84,6 +85,13 @@ export default {
     },
     toggle (i) {
       this.active = i
+    },
+    moneyInfos () {
+      var that = this
+      this.showLoading = true
+      axios.get(serverIp + 'familyholding/api/money').then(function (response) {
+        that.moneyinfos = response.data.data
+      })
     },
     fundHolding () {
       var that = this
@@ -143,6 +151,7 @@ export default {
     }
     this.updateTime()
     setInterval(this.updateTime, 1 * 1000)
+    this.moneyInfos()
     this.accountHolding()
     this.fundHolding()
     // 给首次估值一个 500 毫秒的延迟执行，防止后者先回来，没有更新页面

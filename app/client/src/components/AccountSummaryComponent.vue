@@ -1,11 +1,18 @@
 <template>
   <div class="container" @click="showDaily = !showDaily">
-    <!-- 整体情况 -->
+    <!-- 估值情况 -->
     <div class="summaryContainer">
       <div class="summaryTitle" v-show="showDaily">日收益</div>
       <div class="summaryValue" :class="textColorWithValue(totalDailyGain)" v-show="showDaily">{{totalDailyGain}}</div>
       <div class="summaryTitle" v-show="!showDaily">总收益</div>
       <div class="summaryValue" :class="textColorWithValue(totalHoldingGain)" v-show="!showDaily">{{totalHoldingGain}}</div>
+    </div>
+    <!-- 资金情况 -->
+    <div class="sumcontainer" style="margin-bottom:2px;">
+      <div class="sumcell" v-for="(item, index) in moneyCategorys" :key="index">
+        <div class="moneyCategoryTitle">{{item}}</div>
+        <div class="moneyCategorySum" :class="[moneyCategoryTextColor(index), {flash : isUpdating}]">{{showSummary(index)}}</div>
+      </div>
     </div>
     <!-- 分类汇总 -->
     <div class="sumcontainer">
@@ -27,10 +34,28 @@
 export default {
   name: 'AccountSummaryComponent',
   props: [
+    'moneyinfos',
     'holdings',
     'estimates'
   ],
   methods: {
+    showSummary (type) {
+      switch (type) {
+        case 0:
+          // 现金类
+          return (this.myMoneyInfos.cash.value / 10000).toFixed(2) + ' 万元'
+        case 1:
+          // 冻结类
+          return (this.myMoneyInfos.freeze.value / 10000).toFixed(2) + ' 万元'
+        case 2:
+          return (this.totalMarketCap / 10000).toFixed(2) + ' 万元'
+        case 3:
+          var cash = this.myMoneyInfos.cash.value
+          var freeze = this.myMoneyInfos.freeze.value
+          var fund = parseFloat(this.totalMarketCap)
+          return ((cash + freeze + fund) / 10000).toFixed(2) + ' 万元'
+      }
+    },
     sum (category1) {
       var total = 0.0
       for (var i in this.myHoldings) {
@@ -78,11 +103,30 @@ export default {
       } else {
         return 'fall-text-color'
       }
+    },
+    // 文字颜色
+    moneyCategoryTextColor (index) {
+      if (index === 0 || index === 1) {
+        return 'normal-text-color'
+      }
+      if (this.marketCapCompareStatus === 1) {
+        return 'rise-text-color'
+      } else if (this.marketCapCompareStatus === 0) {
+        return 'normal-text-color'
+      } else {
+        return 'fall-text-color'
+      }
     }
   },
   data () {
     return {
       showDaily: true,
+      moneyCategorys: [
+        '可用现金',
+        '冻结资金',
+        '基金市值',
+        '家庭总计'
+      ],
       categorys: [
         'A 股',
         '海外新兴',
@@ -93,10 +137,13 @@ export default {
       ],
       accounts: {},
       isUpdating: true,
+      marketCapCompareStatus: 0,
+      myMoneyInfos: this.moneyinfos,
       myEstimates: this.estimates,
       myHoldings: this.holdings,
       totalDailyGain: 0,
-      totalHoldingGain: 0
+      totalHoldingGain: 0,
+      totalMarketCap: 0
     }
   },
   created: function () {
@@ -109,12 +156,22 @@ export default {
       immediate: true,
       deep: true
     },
+    moneyinfos: {
+      handler (newValue, oldValue) {
+        this.myMoneyInfos = this.moneyinfos
+      },
+      immediate: true,
+      deep: true
+    },
     estimates: {
       handler (newValue, oldValue) {
         this.myEstimates = this.estimates
         this.accounts = {}
         this.totalDailyGain = 0.0
         this.totalHoldingGain = 0.0
+        // 暂存一下上次的市值
+        var lastMarketCap = this.totalMarketCap
+        this.totalMarketCap = 0.0
         for (var index in this.myHoldings) {
           var fundItem = this.myHoldings[index]
           var code = fundItem.code
@@ -138,6 +195,8 @@ export default {
               fundItem['totalChange'] = ((parseFloat(estiItem.gsz) - parseFloat(fundItem.holding_nav)) * fundItem.holding_volume)
               this.accounts[fundItem.account]['total'] += parseFloat(fundItem.totalChange)
               this.totalHoldingGain = this.totalHoldingGain + parseFloat(fundItem.totalChange)
+              // 基金总市值
+              this.totalMarketCap = this.totalMarketCap + parseFloat(estiItem.gsz) * parseFloat(fundItem.holding_volume)
               break
             }
           }
@@ -157,12 +216,23 @@ export default {
               fundItem['totalChange'] = ((parseFloat(estiItem.gsz) - parseFloat(fundItem.holding_nav)) * fundItem.holding_volume)
               this.accounts[fundItem.account]['total'] += parseFloat(fundItem.totalChange)
               this.totalHoldingGain = this.totalHoldingGain + parseFloat(fundItem.totalChange)
+              // 基金总市值
+              this.totalMarketCap = this.totalMarketCap + parseFloat(estiItem.gsz) * parseFloat(fundItem.holding_volume)
               break
             }
           }
         }
         this.totalDailyGain = parseFloat(this.totalDailyGain).toFixed(2)
         this.totalHoldingGain = parseFloat(this.totalHoldingGain).toFixed(2)
+        if (lastMarketCap < 1 || lastMarketCap === this.totalMarketCap) {
+          // 初始化时，last 值应该是 0，所以显示白色资金数
+          this.marketCapCompareStatus = 0
+        } else if (lastMarketCap > this.totalMarketCap) {
+          this.marketCapCompareStatus = -1
+        } else if (lastMarketCap < this.totalMarketCap) {
+          this.marketCapCompareStatus = 1
+        }
+        this.totalMarketCap = parseFloat(this.totalMarketCap).toFixed(2)
         this.isUpdating = true
         setTimeout(() => {
           this.isUpdating = false
@@ -200,7 +270,7 @@ export default {
   background-color: #FF0000;
 }
 .normal-text-color {
-  color: #333333;
+  color: #FFFFFF;
 }
 .rise-text-color {
   color: #DD2200;
@@ -215,6 +285,25 @@ export default {
   justify-content: center;
   width: 100%;
   height: 100%;
+}
+
+.moneyCategoryTitle {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  width: 2.45rem;
+  font-size: 0.33rem;
+  color: #FFFFFF;
+  background-color: #333333;
+}
+
+.moneyCategorySum {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  width: 2.45rem;
+  font-size: 0.33rem;
+  background-color: #333333;
 }
 
 .categoryTitle {
