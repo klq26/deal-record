@@ -1,3 +1,6 @@
 ,id,date,code,name,dealType,nav_unit,nav_acc,volume,dealMoney,fee,occurMoney,account,category1,category2,category3,categoryId,note
 0,958,2020-04-21,008975,富国中证消费50ETF联接A,买入,1.0417,1.0417,32.34,33.73,0.04,33.77,康世海_蛋卷_螺丝钉指数基金组合,A 股,行业股,全指消费,148,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=221718511177142272
 1,989,2020-05-06,008975,富国中证消费50ETF联接A,买入,1.0929,1.0929,15.22,16.65,0.02,16.67,康世海_蛋卷_螺丝钉指数基金组合,A 股,行业股,全指消费,148,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=227137301416218624
+2,996,2020-05-06,008975,富国中证消费50ETF联接A,买入,1.0929,1.0929,15.22,16.65,0.02,16.67,康世海_蛋卷_螺丝钉指数基金组合,A 股,行业股,全指消费,148,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=227137301416218624
+3,1003,2020-05-06,008975,富国中证消费50ETF联接A,买入,1.0929,1.0929,15.22,16.65,0.02,16.67,康世海_蛋卷_螺丝钉指数基金组合,A 股,行业股,全指消费,148,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=227137301416218624
+4,1006,2020-05-12,008975,富国中证消费50ETF联接A,买入,1.1303,1.1303,14.72,16.66,0.02,16.68,康世海_蛋卷_螺丝钉指数基金组合,A 股,行业股,全指消费,148,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=229302912069111808

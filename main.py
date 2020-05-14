@@ -200,6 +200,9 @@ if __name__ == "__main__":
     # 所有spider increment
     # qiemanSpider('klq').increment()
     # tiantianSpider('lsy').get(True)
+    # danjuanSpider('klq').get(True)
+    # danjuanSpider('ksh').increment()
+    # danjuanSpider('lsy').increment()
 
     # 插入增量数据或全量数据
     updateAllDealRecords('klq', onlyUpdatelocal = False)
