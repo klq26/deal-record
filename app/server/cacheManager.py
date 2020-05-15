@@ -13,11 +13,9 @@ class cacheManager:
         super().__init__()
         self.dm = datetimeManager()
         self.cachConfig = [
-            # 资金数据，缓存 3600 秒（1小时）
             {'path' : '/familyholding/api/fundholding', 'cache_duration' : 60 *60},
             {'path' : '/familyholding/api/accountholding', 'cache_duration' : 60 *60},
-            # 涨跌平数据，缓存 300 秒（5分钟）
-            {'path' : '/familyholding/api/estimate', 'cache_duration' : 5 * 60},
+            {'path' : '/familyholding/api/estimate', 'cache_duration' : 2.5 * 60},
         ]
         self.folder = os.path.abspath(os.path.dirname(__file__))
         self.cache_folder = os.path.join(self.folder,'cache')
