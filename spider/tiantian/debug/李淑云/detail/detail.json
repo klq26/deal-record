@@ -7053,22 +7053,6 @@
     {
         "申请信息": {},
         "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-04-01",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "158.47",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201904010130301227480650&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
             "fundName": "工银货币",
             "fundCode": "482002",
             "confirmDate": "2019-04-01",
@@ -7081,6 +7065,22 @@
             "fee": "0.00"
         },
         "详情页": "https://query.1234567.com.cn/Query/Detail?id=201904014830300503563290&businType=143&traceNo="
+    },
+    {
+        "申请信息": {},
+        "确认信息": {
+            "fundName": "南方天天利货币Ｂ",
+            "fundCode": "003474",
+            "confirmDate": "2019-04-01",
+            "confirmOperate": "红利发放(红利再投资)",
+            "confirmStatus": "成功",
+            "confirmNavUnit": "1.0000",
+            "confirmNavAcc": "待实现",
+            "confirmMoney": "0.00",
+            "confirmVolume": "158.47",
+            "fee": "0.00"
+        },
+        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201904010130301227480650&businType=143&traceNo="
     },
     {
         "申请信息": {},
@@ -7213,22 +7213,6 @@
     {
         "申请信息": {},
         "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-04-15",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "145.69",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201904150130301253023630&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
             "fundName": "易方达安心回报债券A",
             "fundCode": "110027",
             "confirmDate": "2019-04-15",
@@ -7241,6 +7225,22 @@
             "fee": "0.00"
         },
         "详情页": "https://query.1234567.com.cn/Query/Detail?id=20190415113030065254163&businType=143&traceNo="
+    },
+    {
+        "申请信息": {},
+        "确认信息": {
+            "fundName": "南方天天利货币Ｂ",
+            "fundCode": "003474",
+            "confirmDate": "2019-04-15",
+            "confirmOperate": "红利发放(红利再投资)",
+            "confirmStatus": "成功",
+            "confirmNavUnit": "1.0000",
+            "confirmNavAcc": "待实现",
+            "confirmMoney": "0.00",
+            "confirmVolume": "145.69",
+            "fee": "0.00"
+        },
+        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201904150130301253023630&businType=143&traceNo="
     },
     {
         "申请信息": {},
@@ -8262,22 +8262,6 @@
     {
         "申请信息": {},
         "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-06-17",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "147.45",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201906170130301366348430&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
             "fundName": "光大货币",
             "fundCode": "360003",
             "confirmDate": "2019-06-17",
@@ -8290,6 +8274,22 @@
             "fee": "0.00"
         },
         "详情页": "https://query.1234567.com.cn/Query/Detail?id=201906173630300073038320&businType=143&traceNo="
+    },
+    {
+        "申请信息": {},
+        "确认信息": {
+            "fundName": "南方天天利货币Ｂ",
+            "fundCode": "003474",
+            "confirmDate": "2019-06-17",
+            "confirmOperate": "红利发放(红利再投资)",
+            "confirmStatus": "成功",
+            "confirmNavUnit": "1.0000",
+            "confirmNavAcc": "待实现",
+            "confirmMoney": "0.00",
+            "confirmVolume": "147.45",
+            "fee": "0.00"
+        },
+        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201906170130301366348430&businType=143&traceNo="
     },
     {
         "申请信息": {
@@ -8418,22 +8418,6 @@
     {
         "申请信息": {},
         "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-06-24",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "148.60",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201906240130301380034630&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
             "fundName": "兴全可转债混合",
             "fundCode": "340001",
             "confirmDate": "2019-06-24",
@@ -8446,6 +8430,22 @@
             "fee": "0.00"
         },
         "详情页": "https://query.1234567.com.cn/Query/Detail?id=20190624343030006948091&businType=143&traceNo="
+    },
+    {
+        "申请信息": {},
+        "确认信息": {
+            "fundName": "南方天天利货币Ｂ",
+            "fundCode": "003474",
+            "confirmDate": "2019-06-24",
+            "confirmOperate": "红利发放(红利再投资)",
+            "confirmStatus": "成功",
+            "confirmNavUnit": "1.0000",
+            "confirmNavAcc": "待实现",
+            "confirmMoney": "0.00",
+            "confirmVolume": "148.60",
+            "fee": "0.00"
+        },
+        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201906240130301380034630&businType=143&traceNo="
     },
     {
         "申请信息": {
@@ -8486,22 +8486,6 @@
     {
         "申请信息": {},
         "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-06-26",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.03",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201906264730300409671640&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
             "fundName": "南方天天利货币Ｂ",
             "fundCode": "003474",
             "confirmDate": "2019-06-26",
@@ -8514,6 +8498,22 @@
             "fee": "0.00"
         },
         "详情页": "https://query.1234567.com.cn/Query/Detail?id=201906260130301385607820&businType=143&traceNo="
+    },
+    {
+        "申请信息": {},
+        "确认信息": {
+            "fundName": "汇添富和聚宝货币",
+            "fundCode": "000600",
+            "confirmDate": "2019-06-26",
+            "confirmOperate": "红利发放(红利再投资)",
+            "confirmStatus": "成功",
+            "confirmNavUnit": "1.0000",
+            "confirmNavAcc": "待实现",
+            "confirmMoney": "0.00",
+            "confirmVolume": "0.03",
+            "fee": "0.00"
+        },
+        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201906264730300409671640&businType=143&traceNo="
     },
     {
         "申请信息": {},
@@ -8550,22 +8550,6 @@
     {
         "申请信息": {},
         "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-06-28",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.03",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201906284730300411216030&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
             "fundName": "南方天天利货币Ｂ",
             "fundCode": "003474",
             "confirmDate": "2019-06-28",
@@ -8582,50 +8566,18 @@
     {
         "申请信息": {},
         "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-07-01",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "148.09",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201907010130301393561140&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
             "fundName": "汇添富和聚宝货币",
             "fundCode": "000600",
-            "confirmDate": "2019-07-01",
+            "confirmDate": "2019-06-28",
             "confirmOperate": "红利发放(红利再投资)",
             "confirmStatus": "成功",
             "confirmNavUnit": "1.0000",
             "confirmNavAcc": "待实现",
             "confirmMoney": "0.00",
-            "confirmVolume": "0.08",
+            "confirmVolume": "0.03",
             "fee": "0.00"
         },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201907014730300411952230&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "工银货币",
-            "fundCode": "482002",
-            "confirmDate": "2019-07-01",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "3.48",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201907014830300531667470&businType=143&traceNo="
+        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201906284730300411216030&businType=143&traceNo="
     },
     {
         "申请信息": {
@@ -8648,102 +8600,6 @@
         "详情页": "https://query.1234567.com.cn/Query/Detail?id=926e769bd9104b3fbff2f3cdb6100c20&businType=22&traceNo=926e769bd9104b3fbff2f3cdb6100c20"
     },
     {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-07-02",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "49.66",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201907020130301396501310&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-07-02",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.03",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201907024730300412654510&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-07-03",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "49.88",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201907030130301399171210&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-07-03",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.03",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201907034730300413271680&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-07-04",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "48.16",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201907040130301401926460&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-07-04",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.03",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201907044730300413896680&businType=143&traceNo="
-    },
-    {
         "申请信息": {
             "applyDate": "2019-07-05",
             "applyOperate": "赎回申请",
@@ -8762,70 +8618,6 @@
             "fee": "0.00"
         },
         "详情页": "https://query.1234567.com.cn/Query/Detail?id=6461eea9cfdb49d4af4dc4268e0854c0&businType=802&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-07-05",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "48.77",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201907050130301404712940&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-07-05",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.03",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201907054730300414513710&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-07-08",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "145.30",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201907080130301407254790&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-07-08",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.08",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201907084730300415146300&businType=143&traceNo="
     },
     {
         "申请信息": {},
@@ -8900,182 +8692,6 @@
         "详情页": "https://query.1234567.com.cn/Query/Detail?id=9b74b3d940f94875819f3a90c77e8b1e&businType=803&traceNo="
     },
     {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-07-09",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.03",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201907094730300415785390&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-07-09",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "49.82",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201907090130301410237630&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-07-10",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "48.24",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201907100130301412920100&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-07-10",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.03",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201907104730300416328830&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-07-11",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "48.27",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201907110130301415586410&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-07-11",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.03",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201907114730300416867500&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-07-12",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "47.39",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201907120130301418318960&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-07-12",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.03",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201907124730300417409620&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-07-15",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "143.08",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201907150130301420876720&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-07-15",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.08",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201907154730300417993170&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "光大货币",
-            "fundCode": "360003",
-            "confirmDate": "2019-07-15",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "3.47",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201907153630300073661640&businType=143&traceNo="
-    },
-    {
         "申请信息": {
             "applyDate": "2019-07-16",
             "applyOperate": "买入申请",
@@ -9094,102 +8710,6 @@
             "fee": "44.33"
         },
         "详情页": "https://query.1234567.com.cn/Query/Detail?id=66ac4cbe4fac448a8008c4e66d563fd7&businType=22&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-07-16",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "47.15",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201907160130301423756460&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-07-16",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.03",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201907164730300418541430&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-07-17",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "46.72",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201907170130301426830050&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-07-17",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.03",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201907174730300419056650&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-07-18",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.03",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201907184730300419552800&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-07-18",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "46.38",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201907180130301429514270&businType=143&traceNo="
     },
     {
         "申请信息": {
@@ -9212,38 +8732,6 @@
         "详情页": "https://query.1234567.com.cn/Query/Detail?id=ddc82c34dbaf4a668cc035c88721061a&businType=812&traceNo=2aaf853d38914447904dfa391ca56b92"
     },
     {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-07-19",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.03",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201907194730300420086020&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-07-19",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "46.88",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201907190130301432350860&businType=143&traceNo="
-    },
-    {
         "申请信息": {
             "applyDate": "2019-07-22",
             "applyOperate": "赎回申请",
@@ -9262,198 +8750,6 @@
             "fee": "0.00"
         },
         "详情页": "https://query.1234567.com.cn/Query/Detail?id=616bddd05bf3499182f9f51361f7da83&businType=802&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-07-22",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.08",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201907224730300420640330&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-07-22",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "137.34",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201907220130301434940700&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-07-23",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "48.56",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201907230130301437819400&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-07-23",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.03",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201907234730300421161210&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-07-24",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "46.86",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201907240130301440492470&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-07-24",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.03",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201907244730300421646390&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-07-25",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "47.20",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201907250130301443125030&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-07-25",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.03",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201907254730300422120630&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-07-26",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "47.59",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201907260130301445883580&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-07-26",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.03",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201907264730300422618690&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-07-29",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "136.97",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201907290130301448550220&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-07-29",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.08",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201907294730300423180910&businType=143&traceNo="
     },
     {
         "申请信息": {
@@ -9476,70 +8772,6 @@
         "详情页": "https://query.1234567.com.cn/Query/Detail?id=05d812f30b4747d1a6c8fb354615bd8b&businType=802&traceNo="
     },
     {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-07-30",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "45.85",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201907300130301451402450&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-07-30",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.03",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201907304730300423681660&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-07-31",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "45.68",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201907310130301454095530&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-07-31",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.03",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201907314730300424152570&businType=143&traceNo="
-    },
-    {
         "申请信息": {
             "applyDate": "2019-07-31",
             "applyOperate": "买入申请",
@@ -9558,86 +8790,6 @@
             "fee": "0.64"
         },
         "详情页": "https://query.1234567.com.cn/Query/Detail?id=beff1d1ef83f4a5083f622a4f5be06b7&businType=22&traceNo=beff1d1ef83f4a5083f622a4f5be06b7"
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-08-01",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "45.83",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201908010130301456825160&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-08-01",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.03",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201908014730300424622170&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "工银货币",
-            "fundCode": "482002",
-            "confirmDate": "2019-08-01",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "6.52",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201908014830300539815950&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-08-02",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.03",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201908024730300425148620&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-08-02",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "45.77",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201908020130301459775950&businType=143&traceNo="
     },
     {
         "申请信息": {
@@ -9660,38 +8812,6 @@
         "详情页": "https://query.1234567.com.cn/Query/Detail?id=1cf512edb690468a83cddb0ee93dd03f&businType=802&traceNo="
     },
     {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-08-05",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.08",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201908054730300425719440&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-08-05",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "136.97",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201908050130301462652250&businType=143&traceNo="
-    },
-    {
         "申请信息": {
             "applyDate": "2019-08-06",
             "applyOperate": "赎回申请",
@@ -9710,38 +8830,6 @@
             "fee": "0.00"
         },
         "详情页": "https://query.1234567.com.cn/Query/Detail?id=c04532062b26464f9ed9a6b51c8a5edb&businType=802&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-08-06",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "45.80",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201908060130301465644550&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-08-06",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.03",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201908064730300426225540&businType=143&traceNo="
     },
     {
         "申请信息": {
@@ -9784,902 +8872,6 @@
         "详情页": "https://query.1234567.com.cn/Query/Detail?id=ac1285a6706340d683ef8995bcc9c644&businType=803&traceNo="
     },
     {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-08-07",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "45.62",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201908070130301469366650&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-08-07",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.03",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201908074730300426741290&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-08-08",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "46.34",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201908080130301472077530&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-08-08",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.03",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201908084730300427198800&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-08-09",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "45.28",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201908090130301474791350&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-08-09",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.03",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201908094730300427657870&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-08-12",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "136.60",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201908120130301477464280&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-08-12",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.08",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201908124730300428177990&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-08-13",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.03",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201908134730300428642720&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-08-13",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "45.13",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201908130130301480322870&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-08-14",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "44.56",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201908140130301482991380&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-08-14",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.03",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201908144730300429075640&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "光大货币",
-            "fundCode": "360003",
-            "confirmDate": "2019-08-15",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "4.09",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201908153630300074227910&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-08-15",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "45.05",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201908150130301485673300&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-08-15",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.03",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201908154730300429507370&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-08-16",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "44.85",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201908160130301488481900&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-08-16",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.03",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201908164730300429974310&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-08-19",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "134.10",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201908190130301491495460&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-08-19",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.08",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201908194730300430740700&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-08-20",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.03",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201908204730300431738920&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-08-20",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "45.36",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201908200130301494468170&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-08-21",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.03",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201908214730300432791470&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-08-21",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "45.66",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201908210130301497256510&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-08-22",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "45.29",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201908220130301499987650&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-08-22",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.03",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201908224730300433879800&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-08-23",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "45.17",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201908230130301502784770&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-08-23",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.03",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201908234730300434717200&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-08-26",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "134.65",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201908260130301505421220&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-08-26",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.08",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201908264730300435572550&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-08-27",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.03",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201908274730300436449650&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-08-27",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "44.80",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201908270130301508399530&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-08-28",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "45.22",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201908280130301511061930&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-08-28",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.03",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201908284730300437160090&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-08-29",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.03",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201908294730300437883300&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-08-29",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "44.64",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201908290130301513714050&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-08-30",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "45.02",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201908300130301516489910&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-08-30",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.03",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201908304730300438607040&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-09-02",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "135.26",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201909020130301519131990&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-09-02",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.08",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201909024730300439368140&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "工银货币",
-            "fundCode": "482002",
-            "confirmDate": "2019-09-02",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "9.75",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201909024830300545658000&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-09-03",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "45.22",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201909030130301522012200&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-09-03",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.03",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201909034730300440106310&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-09-04",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "44.62",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201909040130301524707790&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-09-04",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.03",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201909044730300440784220&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-09-05",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "44.99",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201909050130301527480210&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-09-05",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.03",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201909054730300441460550&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-09-06",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "44.99",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201909060130301530357200&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-09-06",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.03",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201909064730300442143500&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-09-09",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "135.42",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201909090130301533092230&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-09-09",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.08",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201909094730300442848290&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-09-10",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "45.49",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201909100130301536164170&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-09-10",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.03",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201909104730300443522840&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-09-11",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "45.07",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201909110130301539031730&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-09-11",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.03",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201909114730300444159290&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-09-12",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "45.32",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201909120130301541698030&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-09-12",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.03",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201909124730300444797490&businType=143&traceNo="
-    },
-    {
         "申请信息": {
             "applyDate": "2019-09-16",
             "applyOperate": "充值申请",
@@ -10700,214 +8892,6 @@
         "详情页": "https://query.1234567.com.cn/Query/Detail?id=130c8a9091b64f37b26fb3b6c89b79d5&businType=801&traceNo="
     },
     {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "光大货币",
-            "fundCode": "360003",
-            "confirmDate": "2019-09-16",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "4.13",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201909163630300074759170&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-09-16",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "180.80",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201909160130301544313380&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-09-16",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.11",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201909164730300445461500&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-09-17",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "45.95",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201909170130301547536310&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-09-17",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.03",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201909174730300446124700&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "富国沪深300指数增强",
-            "fundCode": "100038",
-            "confirmDate": "2019-09-18",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.6250",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "297.08",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=20190918103030076764339&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-09-18",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "45.62",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201909180130301550366780&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-09-18",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.03",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201909184730300446898910&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-09-19",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "45.39",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201909190130301552998200&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-09-19",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.03",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201909194730300447784300&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-09-20",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "45.31",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201909200130301556218580&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-09-20",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.03",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201909204730300448846140&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "富国中证500指数(LOF)",
-            "fundCode": "161017",
-            "confirmDate": "2019-09-20",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.6640",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "208.79",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201909209898190919303000607211&businType=143&traceNo="
-    },
-    {
         "申请信息": {
             "applyDate": "2019-09-23",
             "applyOperate": "充值申请",
@@ -10926,198 +8910,6 @@
             "fee": "0.00"
         },
         "详情页": "https://query.1234567.com.cn/Query/Detail?id=b19e247dc0ee46839035bd51cf37580e&businType=801&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-09-23",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "135.58",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201909230130301558798100&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-09-23",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.08",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201909234730300449926440&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-09-24",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.03",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201909244730300451037320&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-09-24",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "45.41",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201909240130301561745080&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-09-25",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "46.44",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201909250130301564371610&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-09-25",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.03",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201909254730300451993430&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-09-26",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "45.66",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201909260130301567126670&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-09-26",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.03",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201909264730300452852200&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-09-27",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "46.49",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201909270130301570145940&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-09-27",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.03",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201909274730300453753010&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-09-30",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "137.77",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201909300130301572592060&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-09-30",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.08",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201909304730300454571870&businType=143&traceNo="
     },
     {
         "申请信息": {
@@ -11180,662 +8972,6 @@
         "详情页": "https://query.1234567.com.cn/Query/Detail?id=f128c67666d0456190e7daeb506e3206&businType=802&traceNo="
     },
     {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-10-08",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "365.62",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201910080130301575230630&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-10-08",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.22",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201910084730300455431060&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "工银货币",
-            "fundCode": "482002",
-            "confirmDate": "2019-10-08",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "10.83",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201910084830300552158720&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-10-09",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.03",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201910094730300456362870&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-10-09",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "45.66",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201910090130301578580270&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-10-10",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "45.64",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201910100130301581186640&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-10-10",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.02",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201910104730300457061030&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-10-11",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "45.97",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201910110130301583930610&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-10-11",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.03",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201910114730300457766210&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-10-14",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.09",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201910144730300458504740&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-10-14",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "136.59",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201910140130301586512950&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-10-15",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "45.52",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201910150130301589362840&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "光大货币",
-            "fundCode": "360003",
-            "confirmDate": "2019-10-15",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "3.91",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201910153630300075226650&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-10-15",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.03",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201910154730300459213590&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-10-16",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "45.33",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201910160130301592084560&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-10-16",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.03",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201910164730300459875260&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-10-17",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.02",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201910174730300460501760&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-10-17",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "45.06",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201910170130301595102480&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-10-18",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.03",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201910184730300461156400&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-10-18",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "45.51",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201910180130301597823510&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-10-21",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.09",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201910214730300461888610&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-10-21",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "137.38",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201910210130301600558770&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-10-22",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.03",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201910224730300462603610&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-10-22",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "45.17",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201910220130301603422450&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-10-23",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.03",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201910234730300463204200&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-10-23",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "45.53",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201910230130301605976270&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-10-24",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "45.54",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201910240130301608578830&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-10-24",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.03",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201910244730300463816810&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-10-25",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.03",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201910254730300464510490&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-10-25",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "45.71",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201910250130301611289670&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-10-28",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.09",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201910284730300465384860&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-10-28",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "137.36",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201910280130301613791290&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-10-29",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.03",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201910294730300466511020&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-10-29",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "45.89",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201910290130301616545450&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-10-30",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.03",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201910304730300467544150&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-10-30",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "45.93",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201910300130301619158040&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-10-31",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "46.08",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201910310130301621864170&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-10-31",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.03",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201910314730300468720960&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-11-01",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.03",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201911014730300469667090&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-11-01",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "45.86",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201911010130301624623450&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "工银货币",
-            "fundCode": "482002",
-            "confirmDate": "2019-11-01",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "7.55",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201911014830300558124790&businType=143&traceNo="
-    },
-    {
         "申请信息": {
             "applyDate": "2019-11-01",
             "applyOperate": "买入申请",
@@ -11896,342 +9032,6 @@
         "详情页": "https://query.1234567.com.cn/Query/Detail?id=dcf11ff87fb841fbb6be3625d75f251c&businType=22&traceNo=dcf11ff87fb841fbb6be3625d75f251c"
     },
     {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-11-04",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.08",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201911044730300470617710&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-11-04",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "138.11",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201911040130301627242770&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-11-05",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.03",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201911054730300471477540&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-11-05",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "45.89",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201911050130301630062630&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-11-06",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.03",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201911064730300472287720&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-11-06",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "46.27",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201911060130301632781770&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-11-07",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.03",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201911074730300473125110&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-11-07",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "46.05",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201911070130301635568220&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-11-08",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.03",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201911084730300473907090&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-11-08",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "46.14",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201911080130301638332450&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-11-11",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.09",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201911114730300474731730&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-11-11",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "139.03",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201911110130301640975820&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-11-12",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.03",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201911124730300475640440&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-11-12",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "46.17",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201911120130301644150360&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-11-13",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.03",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201911134730300476410500&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-11-13",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "46.71",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201911130130301646913630&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-11-14",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.03",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201911144730300477105580&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-11-14",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "45.96",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201911140130301649542840&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "光大货币",
-            "fundCode": "360003",
-            "confirmDate": "2019-11-15",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "4.06",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201911153630300075663350&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-11-15",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.03",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201911154730300477817710&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-11-15",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "45.60",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201911150130301652227300&businType=143&traceNo="
-    },
-    {
         "申请信息": {
             "applyDate": "2019-11-18",
             "applyOperate": "充值申请",
@@ -12272,102 +9072,6 @@
         "详情页": "https://query.1234567.com.cn/Query/Detail?id=727171b7083d4d7e840cabb96021f827&businType=801&traceNo="
     },
     {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-11-18",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.09",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201911184730300478604490&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-11-18",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "138.88",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201911180130301654888270&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-11-19",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.03",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201911194730300479385660&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-11-19",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "46.79",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201911190130301657980440&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-11-20",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.03",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201911204730300480073080&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-11-20",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "46.71",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201911200130301660610750&businType=143&traceNo="
-    },
-    {
         "申请信息": {
             "applyDate": "2019-11-20",
             "applyOperate": "快速过户",
@@ -12388,102 +9092,6 @@
         "详情页": "https://query.1234567.com.cn/Query/Detail?id=404d5bc498224c00a2a1ee8b590390bc&businType=803&traceNo="
     },
     {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-11-21",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.03",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201911214730300480816150&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-11-21",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "47.48",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201911210130301663335020&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-11-22",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.03",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201911224730300481617660&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-11-22",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "47.23",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201911220130301666269200&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-11-25",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.09",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201911254730300482498690&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-11-25",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "142.91",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201911250130301669139600&businType=143&traceNo="
-    },
-    {
         "申请信息": {
             "applyDate": "2019-11-26",
             "applyOperate": "赎回申请",
@@ -12502,38 +9110,6 @@
             "fee": "0.00"
         },
         "详情页": "https://query.1234567.com.cn/Query/Detail?id=ac6b68d201894063a720a71a9d4767c6&businType=802&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-11-26",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.03",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201911264730300483280470&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-11-26",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "47.19",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201911260130301672048530&businType=143&traceNo="
     },
     {
         "申请信息": {
@@ -12574,38 +9150,6 @@
             "fee": "0.00"
         },
         "详情页": "https://query.1234567.com.cn/Query/Detail?id=e33fcd9771284a4f89df7e0a07f9a27f&businType=802&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-11-27",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.03",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201911274730300483931420&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-11-27",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "47.33",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201911270130301674585130&businType=143&traceNo="
     },
     {
         "申请信息": {
@@ -12668,54 +9212,6 @@
         "详情页": "https://query.1234567.com.cn/Query/Detail?id=4c26daa9e3d541808041ce08990f3ae1&businType=802&traceNo="
     },
     {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "汇添富和聚宝货币",
-            "fundCode": "000600",
-            "confirmDate": "2019-11-28",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.03",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201911284730300484580150&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-11-28",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "21.36",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201911280130301677135290&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-11-29",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.01",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201911290130301679836560&businType=143&traceNo="
-    },
-    {
         "申请信息": {
             "applyDate": "2019-12-02",
             "applyOperate": "赎回申请",
@@ -12776,134 +9272,6 @@
         "详情页": "https://query.1234567.com.cn/Query/Detail?id=c26636c74d42488d85d6d646274612c9&businType=22&traceNo="
     },
     {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-12-04",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.04",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201912040130301688007070&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-12-05",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.04",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201912050130301690610940&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-12-06",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.04",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201912060130301693363990&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-12-09",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.12",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201912090130301695950830&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-12-10",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.04",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201912100130301698845440&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-12-11",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.04",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201912110130301701537900&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-12-12",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.04",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201912120130301704228400&businType=143&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-12-13",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.04",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201912130130301706994760&businType=143&traceNo="
-    },
-    {
         "申请信息": {
             "applyDate": "2019-12-16",
             "applyOperate": "快速过户",
@@ -12922,22 +9290,6 @@
             "fee": "0.00"
         },
         "详情页": "https://query.1234567.com.cn/Query/Detail?id=a50c2580902b4293910036ffa1e62c98&businType=803&traceNo="
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2019-12-16",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.12",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=201912160130301709641010&businType=143&traceNo="
     },
     {
         "申请信息": {},
@@ -13146,22 +9498,6 @@
             "fee": "1.24"
         },
         "详情页": "https://query.1234567.com.cn/Query/Detail?id=fce44250df4848b7bfa52a933c381c09&businType=8151&traceNo=8a50dd6bd18742c1bfe44faaa7573ce9"
-    },
-    {
-        "申请信息": {},
-        "确认信息": {
-            "fundName": "南方天天利货币Ｂ",
-            "fundCode": "003474",
-            "confirmDate": "2020-02-28",
-            "confirmOperate": "红利发放(红利再投资)",
-            "confirmStatus": "成功",
-            "confirmNavUnit": "1.0000",
-            "confirmNavAcc": "待实现",
-            "confirmMoney": "0.00",
-            "confirmVolume": "0.08",
-            "fee": "0.00"
-        },
-        "详情页": "https://query.1234567.com.cn/Query/Detail?id=202002280130301853238380&businType=143&traceNo="
     },
     {
         "申请信息": {},
@@ -14714,5 +11050,121 @@
             "fee": "0.00"
         },
         "详情页": "https://query.1234567.com.cn/Query/Detail?id=202005081930300212563820&businType=143&traceNo="
+    },
+    {
+        "申请信息": {
+            "applyDate": "2020-05-11",
+            "applyOperate": "快速过户",
+            "applyStatus": "751.35份"
+        },
+        "确认信息": {
+            "fundName": "南方天天利货币Ｂ",
+            "fundCode": "003474",
+            "confirmDate": "2020-05-12",
+            "confirmOperate": "快速过户",
+            "confirmStatus": "成功",
+            "confirmNavUnit": "1.0000",
+            "confirmNavAcc": "待实现",
+            "confirmMoney": "0.21",
+            "confirmVolume": "0.21",
+            "fee": "0.00"
+        },
+        "详情页": "https://query.1234567.com.cn/Query/Detail?id=6a4f412f40c248a0afe37d7a3b69b0c7&businType=803&traceNo="
+    },
+    {
+        "申请信息": {},
+        "确认信息": {
+            "fundName": "万家天添宝货币A",
+            "fundCode": "004717",
+            "confirmDate": "2020-05-11",
+            "confirmOperate": "红利发放(红利再投资)",
+            "confirmStatus": "成功",
+            "confirmNavUnit": "1.0000",
+            "confirmNavAcc": "待实现",
+            "confirmMoney": "0.00",
+            "confirmVolume": "0.08",
+            "fee": "0.00"
+        },
+        "详情页": "https://query.1234567.com.cn/Query/Detail?id=202005111930300213189530&businType=143&traceNo="
+    },
+    {
+        "申请信息": {
+            "applyDate": "2020-05-18",
+            "applyOperate": "赎回申请",
+            "applyStatus": "已受理(无需支付)"
+        },
+        "确认信息": {
+            "fundName": "博时标普500ETF联接A",
+            "fundCode": "050025",
+            "confirmDate": "2020-05-20",
+            "confirmOperate": "赎回确认",
+            "confirmStatus": "成功",
+            "confirmNavUnit": "2.3877",
+            "confirmNavAcc": "待实现",
+            "confirmMoney": "488.41",
+            "confirmVolume": "205.58",
+            "fee": "2.45"
+        },
+        "详情页": "https://query.1234567.com.cn/Query/Detail?id=6bfb5638ef2f4161bfadd490005f3c9c&businType=24&traceNo="
+    },
+    {
+        "申请信息": {
+            "applyDate": "2020-06-09",
+            "applyOperate": "赎回申请",
+            "applyStatus": "已受理(无需支付)"
+        },
+        "确认信息": {
+            "fundName": "交银中证海外中国互联网指数",
+            "fundCode": "164906",
+            "confirmDate": "2020-06-11",
+            "confirmOperate": "赎回确认",
+            "confirmStatus": "成功",
+            "confirmNavUnit": "1.5770",
+            "confirmNavAcc": "待实现",
+            "confirmMoney": "542.99",
+            "confirmVolume": "345.01",
+            "fee": "1.09"
+        },
+        "详情页": "https://query.1234567.com.cn/Query/Detail?id=193b7be69c914d53b237a4431201b8d4&businType=24&traceNo="
+    },
+    {
+        "申请信息": {
+            "applyDate": "2020-06-24",
+            "applyOperate": "赎回申请",
+            "applyStatus": "已受理(无需支付)"
+        },
+        "确认信息": {
+            "fundName": "广发养老指数A",
+            "fundCode": "000968",
+            "confirmDate": "2020-06-29",
+            "confirmOperate": "赎回确认",
+            "confirmStatus": "成功",
+            "confirmNavUnit": "1.1545",
+            "confirmNavAcc": "待实现",
+            "confirmMoney": "565.92",
+            "confirmVolume": "491.66",
+            "fee": "1.70"
+        },
+        "详情页": "https://query.1234567.com.cn/Query/Detail?id=93ae1e714ed64c3ca5522c909dc03bd7&businType=24&traceNo="
+    },
+    {
+        "申请信息": {
+            "applyDate": "2020-06-24",
+            "applyOperate": "买入申请",
+            "applyStatus": "已受理(支付完成)"
+        },
+        "确认信息": {
+            "fundName": "广发纯债债券A",
+            "fundCode": "270048",
+            "confirmDate": "2020-06-29",
+            "confirmOperate": "申购确认",
+            "confirmStatus": "成功",
+            "confirmNavUnit": "1.2160",
+            "confirmNavAcc": "待实现",
+            "confirmMoney": "400.00",
+            "confirmVolume": "328.68",
+            "fee": "0.32"
+        },
+        "详情页": "https://query.1234567.com.cn/Query/Detail?id=564c88c2c66345c78935547d6430ca6e&businType=22&traceNo="
     }
 ]

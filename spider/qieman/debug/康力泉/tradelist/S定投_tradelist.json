@@ -3,7 +3,7 @@
     "size": 500,
     "first": true,
     "last": true,
-    "totalElements": 17,
+    "totalElements": 18,
     "totalPages": 1,
     "content": [
         {
@@ -22,6 +22,7 @@
             "orderStatus": "SUCCESS",
             "uiOrderStatusName": "成功",
             "uiAmount": 1000,
+            "uiShare": null,
             "po": {
                 "poCode": "LONG_WIN_S",
                 "poName": "长赢指数投资计划-S定投"
@@ -35,28 +36,30 @@
         },
         {
             "orderProdType": "PO",
-            "orderId": "TC2020042400685857",
+            "orderId": "PO202004279J3RR5QES1EM",
+            "capitalAccountId": "CA8FCJKFPANTP2",
             "acceptTime": 1587698084000,
-            "confirmStatus": "2",
-            "capitalDirection": "OUT",
-            "orderCode": "TRANSFER-CUSTODY",
+            "txnDay": 1587657600000,
+            "confirmStatus": "P2",
+            "uiConfirmStatusName": "确认成功",
+            "payStatus": "2",
+            "uiPayStatusName": "扣款成功",
+            "orderCode": "P26",
+            "capitalDirection": null,
             "uiOrderCodeName": "场外转托管",
-            "payStatus": "0",
-            "uiPayStatusName": "处理中",
             "orderStatus": "SUCCESS",
             "uiOrderStatusName": "成功",
-            "uiShare": "1394.58",
-            "fund": {
-                "fundCode": "501018",
-                "fundName": "南方原油A"
+            "uiShare": 1394.58,
+            "po": {
+                "poCode": "LONG_WIN_S",
+                "poName": "长赢指数投资计划-S定投"
             },
-            "uiOrderDesc": "已于2020年4月27日确认",
+            "uiOrderDesc": "已于2020年4月27日完成",
             "hasDetail": true,
-            "orderUrl": "https://qieman.com/orders/TC2020042400685857",
-            "capitalAccountId": "CA8FCJKFPANTP2",
-            "capitalAccountName": "长赢指数投资计划-S定投",
             "umaId": 16569,
-            "umaName": "我的S定投计计划"
+            "umaName": "我的S定投计计划",
+            "orderUrl": "https://qieman.com/orders/PO202004279J3RR5QES1EM",
+            "capitalAccountName": "长赢指数投资计划-S定投"
         },
         {
             "orderProdType": "PO",
@@ -73,6 +76,7 @@
             "uiOrderCodeName": "执行计划",
             "orderStatus": "SUCCESS",
             "uiOrderStatusName": "成功",
+            "uiShare": null,
             "po": {
                 "poCode": "LONG_WIN_S",
                 "poName": "长赢指数投资计划-S定投"
@@ -100,6 +104,7 @@
             "orderStatus": "SUCCESS",
             "uiOrderStatusName": "成功",
             "uiAmount": 1000,
+            "uiShare": null,
             "po": {
                 "poCode": "LONG_WIN_S",
                 "poName": "长赢指数投资计划-S定投"
@@ -126,6 +131,7 @@
             "uiOrderCodeName": "执行计划",
             "orderStatus": "SUCCESS",
             "uiOrderStatusName": "成功",
+            "uiShare": null,
             "po": {
                 "poCode": "LONG_WIN_S",
                 "poName": "长赢指数投资计划-S定投"
@@ -153,6 +159,7 @@
             "orderStatus": "SUCCESS",
             "uiOrderStatusName": "成功",
             "uiAmount": 1000,
+            "uiShare": null,
             "po": {
                 "poCode": "LONG_WIN_S",
                 "poName": "长赢指数投资计划-S定投"
@@ -180,6 +187,7 @@
             "orderStatus": "SUCCESS",
             "uiOrderStatusName": "成功",
             "uiAmount": 3000,
+            "uiShare": null,
             "po": {
                 "poCode": "LONG_WIN_S",
                 "poName": "长赢指数投资计划-S定投"
@@ -207,6 +215,7 @@
             "orderStatus": "SUCCESS",
             "uiOrderStatusName": "成功",
             "uiAmount": 1000,
+            "uiShare": null,
             "po": {
                 "poCode": "LONG_WIN_S",
                 "poName": "长赢指数投资计划-S定投"
@@ -234,6 +243,7 @@
             "orderStatus": "SUCCESS",
             "uiOrderStatusName": "成功",
             "uiAmount": 3000,
+            "uiShare": null,
             "po": {
                 "poCode": "LONG_WIN_S",
                 "poName": "长赢指数投资计划-S定投"
@@ -261,6 +271,7 @@
             "orderStatus": "SUCCESS",
             "uiOrderStatusName": "成功",
             "uiAmount": 1000,
+            "uiShare": null,
             "po": {
                 "poCode": "LONG_WIN_S",
                 "poName": "长赢指数投资计划-S定投"
@@ -288,6 +299,7 @@
             "orderStatus": "SUCCESS",
             "uiOrderStatusName": "成功",
             "uiAmount": 2000,
+            "uiShare": null,
             "po": {
                 "poCode": "LONG_WIN_S",
                 "poName": "长赢指数投资计划-S定投"
@@ -315,6 +327,7 @@
             "orderStatus": "SUCCESS",
             "uiOrderStatusName": "成功",
             "uiAmount": 1000,
+            "uiShare": null,
             "po": {
                 "poCode": "LONG_WIN_S",
                 "poName": "长赢指数投资计划-S定投"
@@ -342,6 +355,7 @@
             "orderStatus": "SUCCESS",
             "uiOrderStatusName": "成功",
             "uiAmount": 1000,
+            "uiShare": null,
             "po": {
                 "poCode": "LONG_WIN_S",
                 "poName": "长赢指数投资计划-S定投"
@@ -369,6 +383,7 @@
             "orderStatus": "SUCCESS",
             "uiOrderStatusName": "成功",
             "uiAmount": 2000,
+            "uiShare": null,
             "po": {
                 "poCode": "LONG_WIN_S",
                 "poName": "长赢指数投资计划-S定投"
@@ -396,6 +411,7 @@
             "orderStatus": "SUCCESS",
             "uiOrderStatusName": "成功",
             "uiAmount": 1000,
+            "uiShare": null,
             "po": {
                 "poCode": "LONG_WIN",
                 "poName": "长赢指数投资计划-150份"
@@ -423,6 +439,7 @@
             "orderStatus": "SUCCESS",
             "uiOrderStatusName": "成功",
             "uiAmount": 1000,
+            "uiShare": null,
             "po": {
                 "poCode": "LONG_WIN",
                 "poName": "长赢指数投资计划-150份"
@@ -450,6 +467,7 @@
             "orderStatus": "SUCCESS",
             "uiOrderStatusName": "成功",
             "uiAmount": 1000,
+            "uiShare": null,
             "po": {
                 "poCode": "LONG_WIN",
                 "poName": "长赢指数投资计划-150份"
@@ -477,6 +495,7 @@
             "orderStatus": "SUCCESS",
             "uiOrderStatusName": "成功",
             "uiAmount": 1000,
+            "uiShare": null,
             "po": {
                 "poCode": "LONG_WIN",
                 "poName": "长赢指数投资计划-150份"

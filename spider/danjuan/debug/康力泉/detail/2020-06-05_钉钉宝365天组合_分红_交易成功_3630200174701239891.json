@@ -1,0 +1,57 @@
+{
+    "data": {
+        "order_id": "3630200174701239891",
+        "uid": 203274561,
+        "code": "CSI1019",
+        "name": "钉钉宝365天组合",
+        "ttype": "plan",
+        "status": "success",
+        "action": "143",
+        "amount": 0,
+        "percent": 241.02,
+        "volume": 241.02,
+        "status_desc": "交易成功",
+        "action_desc": "分红",
+        "created_at": 1591331549493,
+        "final_confirm_date": 1591286400000,
+        "total_confirm_amount": 0,
+        "total_confirm_volume": 241.02,
+        "total_fee": 0,
+        "title": "钉钉宝365天组合",
+        "bank_name": "工商银行(4358)",
+        "value_desc": "241.02份",
+        "sub_order_list": [
+            {
+                "action_text": "成分基金交易信息",
+                "action": "143",
+                "orders": [
+                    {
+                        "plan_code": "CSI1019",
+                        "plan_name": "钉钉宝365天组合",
+                        "fd_code": "006060",
+                        "fd_name": "鹏扬泓利债券C",
+                        "title": "鹏扬泓利债券C",
+                        "action_desc": "分红",
+                        "status_desc": "交易成功",
+                        "type": "plan",
+                        "action": "143",
+                        "status": "success",
+                        "ts": 1591200000000,
+                        "confirm_ts": 1591286400000,
+                        "amount": 0,
+                        "volume": 241.02,
+                        "confirm_amount": 0,
+                        "confirm_volume": 241.02,
+                        "fee": 0,
+                        "confirm_value_text": "确认份额",
+                        "confirm_value_desc": "241.02份",
+                        "bank_name": "工商银行(4358)",
+                        "order_id": "238001802155081728"
+                    }
+                ]
+            }
+        ],
+        "convert": false
+    },
+    "result_code": 0
+}

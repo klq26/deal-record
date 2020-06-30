@@ -144,7 +144,10 @@ class holdingModel:
         self.total_fee = round(record.fee, self.money_decimal)
         self.buy_fee = round(record.fee, self.money_decimal)
         self.isEmpty = False
-        categoryInfo = categoryManager().getCategoryByCode(record.code)
+        if u'货币' in record.name:
+            categoryInfo = categoryManager().getCashFundCategory()
+        else:
+            categoryInfo = categoryManager().getCategoryByCode(record.code)
         if categoryInfo != {}:
             self.category1 = categoryInfo['category1']
             self.category2 = categoryInfo['category2']

@@ -1,0 +1,57 @@
+{
+    "data": {
+        "order_id": "3395367171119952857",
+        "uid": 203274561,
+        "code": "CSI1019",
+        "name": "钉钉宝365天组合",
+        "ttype": "plan",
+        "status": "success",
+        "action": "143",
+        "amount": 0,
+        "percent": 494.11,
+        "volume": 494.11,
+        "status_desc": "交易成功",
+        "action_desc": "分红",
+        "created_at": 1590456728383,
+        "final_confirm_date": 1590422400000,
+        "total_confirm_amount": 0,
+        "total_confirm_volume": 494.11,
+        "total_fee": 0,
+        "title": "钉钉宝365天组合",
+        "bank_name": "工商银行(4358)",
+        "value_desc": "494.11份",
+        "sub_order_list": [
+            {
+                "action_text": "成分基金交易信息",
+                "action": "143",
+                "orders": [
+                    {
+                        "plan_code": "CSI1019",
+                        "plan_name": "钉钉宝365天组合",
+                        "fd_code": "008127",
+                        "fd_name": "广发趋势优选混合C",
+                        "title": "广发趋势优选混合C",
+                        "action_desc": "分红",
+                        "status_desc": "交易成功",
+                        "type": "plan",
+                        "action": "143",
+                        "status": "success",
+                        "ts": 1590336000000,
+                        "confirm_ts": 1590422400000,
+                        "amount": 0,
+                        "volume": 494.11,
+                        "confirm_amount": 0,
+                        "confirm_volume": 494.11,
+                        "fee": 0,
+                        "confirm_value_text": "确认份额",
+                        "confirm_value_desc": "494.11份",
+                        "bank_name": "工商银行(4358)",
+                        "order_id": "234332536474124288"
+                    }
+                ]
+            }
+        ],
+        "convert": false
+    },
+    "result_code": 0
+}

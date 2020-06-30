@@ -1,2 +1,3 @@
 ,id,date,code,name,dealType,nav_unit,nav_acc,volume,dealMoney,fee,occurMoney,account,category1,category2,category3,categoryId,note
-0,822,2020-03-05,002147,长安鑫益增强混合C,买入,1.2174,1.2174,1588.12,1933.38,0.0,1933.38,李淑云_蛋卷_钉钉宝365天组合,混合型,股债混合,偏债,412,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=204585608870866944
+0,820,2020-03-05,002147,长安鑫益增强混合C,买入,1.2174,1.2174,1588.12,1933.38,0.0,1933.38,李淑云_蛋卷_钉钉宝365天组合,混合型,股债混合,偏债,412,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=204585608870866944
+1,1039,2020-06-08,002147,长安鑫益增强混合C,卖出,1.2211,1.2211,403.55,492.77,0.0,492.77,李淑云_蛋卷_钉钉宝365天组合,混合型,股债混合,偏债,412,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=239102667330654208

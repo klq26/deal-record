@@ -1,0 +1,57 @@
+{
+    "data": {
+        "order_id": "4046699643107697778",
+        "uid": 576923716,
+        "code": "CSI666",
+        "name": "螺丝钉指数基金组合",
+        "ttype": "plan",
+        "status": "success",
+        "action": "143",
+        "amount": 0,
+        "percent": 1.11,
+        "volume": 1.11,
+        "status_desc": "交易成功",
+        "action_desc": "分红",
+        "created_at": 1592883130922,
+        "final_confirm_date": 1592841600000,
+        "total_confirm_amount": 0,
+        "total_confirm_volume": 1.11,
+        "total_fee": 0,
+        "title": "螺丝钉指数基金组合",
+        "bank_name": "建设银行(2247)",
+        "value_desc": "1.11份",
+        "sub_order_list": [
+            {
+                "action_text": "成分基金交易信息",
+                "action": "143",
+                "orders": [
+                    {
+                        "plan_code": "CSI666",
+                        "plan_name": "螺丝钉指数基金组合",
+                        "fd_code": "310398",
+                        "fd_name": "申万菱信沪深300价值指数",
+                        "title": "申万菱信沪深300价值指数",
+                        "action_desc": "分红",
+                        "status_desc": "交易成功",
+                        "type": "plan",
+                        "action": "143",
+                        "status": "success",
+                        "ts": 1592755200000,
+                        "confirm_ts": 1592841600000,
+                        "amount": 0,
+                        "volume": 1.11,
+                        "confirm_amount": 0,
+                        "confirm_volume": 1.11,
+                        "fee": 0,
+                        "confirm_value_text": "确认份额",
+                        "confirm_value_desc": "1.11份",
+                        "bank_name": "建设银行(2247)",
+                        "order_id": "244509606349062144"
+                    }
+                ]
+            }
+        ],
+        "convert": false
+    },
+    "result_code": 0
+}

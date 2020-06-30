@@ -51,13 +51,14 @@ def getFundHolding():
     df = categoryManager.category_df
     for x in records:
         code = x['code']
+        name = x['name']
         sub = df[df['基金代码'] == code]
         if len(sub) > 0:
             x['name'] = sub.基金简称.values[0]
             x['full_name'] = sub.基金名称.values[0]
         else:
-            x['name'] = u'未知 ' + code
-            x['full_name'] = u'未知 ' + code
+            x['name'] = name
+            x['full_name'] = name
     # data = json.dumps(records, ensure_ascii=False, indent=4)
     end_ts = dm.getTimeStamp()
     duration = dm.getDuration(start_ts, end_ts)
@@ -79,13 +80,14 @@ def getAccountHolding():
     df = categoryManager.category_df
     for x in records:
         code = x['code']
+        name = x['name']
         sub = df[df['基金代码'] == code]
         if len(sub) > 0:
             x['name'] = sub.基金简称.values[0]
             x['full_name'] = sub.基金名称.values[0]
         else:
-            x['name'] = u'未知 ' + code
-            x['full_name'] = u'未知 ' + code
+            x['name'] = name
+            x['full_name'] = name
     # data = json.dumps(records, ensure_ascii=False, indent=4)
     end_ts = dm.getTimeStamp()
     duration = dm.getDuration(start_ts, end_ts)
@@ -115,14 +117,19 @@ def getFamilyEstimate():
         for x in records:
             values = []
             code = x['code']
+            name = x['name']
             sub = df[df['基金代码'] == code]
             if len(sub) > 0:
                 name = sub.基金简称.values[0]
                 fullName = sub.基金名称.values[0]
                 market = sub.市场.values[0]
+            elif u'货币' in name:
+                name = name
+                fullName = name
+                market = u'货币'
             else:
-                name = u'未知 ' + code
-                fullName = sub.基金名称.values[0]
+                name = name
+                fullName = name
                 market = u'其他'
             values = [code, name, fullName, market]
             params.append(values)

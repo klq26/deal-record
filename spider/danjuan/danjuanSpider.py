@@ -396,6 +396,10 @@ class danjuanSpider:
                     all_model_values.append(order['fd_name'])
                 confirm_amount = order['confirm_amount']
                 confirm_volume = order['confirm_volume']
+                # 钉钉宝 90 组合有时候会纳入一些货币基金，货币基金是没有净值的，默认按 1.0000 处理
+                isCashFund = False
+                if u'货币' in all_model_values[3]:
+                    isCashFund = True
                 fee = order['fee']
                 occurMoney = 0
                 nav_unit = 0.0
@@ -406,20 +410,26 @@ class danjuanSpider:
                 # 净值
                 db_record = None
                 if opType == u'买入':
-                    # 因为基金公司确认份额是 T+1 日，所以净值使用的 T 日的
-                    db_record = db.selectFundNavBeforeDate(code = all_model_values[2], date = all_model_values[1])
-                    # 日期改成净值确认日
-                    all_model_values[1] = db_record[0]
+                    if not isCashFund:
+                        # 因为基金公司确认份额是 T+1 日，所以净值使用的 T 日的
+                        db_record = db.selectFundNavBeforeDate(code = all_model_values[2], date = all_model_values[1])
+                        # 日期改成净值确认日
+                        all_model_values[1] = db_record[0]
                 elif opType == '卖出':
-                    db_record = db.selectFundNavBeforeDate(code = all_model_values[2], date = all_model_values[1])
-                    # 日期改成净值确认日
-                    all_model_values[1] = db_record[0]
+                    if not isCashFund:
+                        db_record = db.selectFundNavBeforeDate(code = all_model_values[2], date = all_model_values[1])
+                        # 日期改成净值确认日
+                        all_model_values[1] = db_record[0]
                 else:
                     print('[Error] danjuanSpider 未知的操作：{0}'.format(opType))
                     exit(1)
                     continue
-                nav_unit = db_record[1]
-                nav_acc = db_record[2]
+                if not isCashFund:
+                    nav_unit = db_record[1]
+                    nav_acc = db_record[2]
+                else:
+                    nav_unit = 1.0000
+                    nav_acc = 1.0000
                 all_model_values.append(nav_unit)
                 if opType == '买入':
                     occurMoney = round(confirm_amount + fee, 2)
@@ -433,7 +443,10 @@ class danjuanSpider:
                 all_model_values.append(fee)
                 all_model_values.append(occurMoney)
                 all_model_values.append(self.owner + '_' + global_name + '_' + tradeDetailJson['target_name'])
-                categoryInfo = self.categoryManager.getCategoryByCode(all_model_values[2])
+                if isCashFund:
+                    categoryInfo = self.categoryManager.getCashFundCategory()
+                else:
+                    categoryInfo = self.categoryManager.getCategoryByCode(all_model_values[2])
                 if categoryInfo != {}:
                     all_model_values.append(categoryInfo['category1'])
                     all_model_values.append(categoryInfo['category2'])
@@ -464,6 +477,11 @@ class danjuanSpider:
                 all_model_values.append(order['fd_name'])
                 confirm_amount = order['confirm_amount']
                 confirm_volume = order['confirm_volume']
+
+                # 钉钉宝 90 组合有时候会纳入一些货币基金，货币基金是没有净值的，默认按 1.0000 处理
+                isCashFund = False
+                if u'货币' in order['fd_name']:
+                    isCashFund = True
                 fee = order['fee']
                 occurMoney = 0
                 nav_unit = 0.0
@@ -471,15 +489,23 @@ class danjuanSpider:
                 all_model_values.append(opType)
                 if opType == '分红':
                     occurMoney = confirm_amount
-                    db_record = db.selectNearestDividendDateFundNav(code = all_model_values[2], date = all_model_values[1])
-                    nav_unit = db_record[1]
-                    nav_acc = db_record[2]
+                    if not isCashFund:
+                        db_record = db.selectNearestDividendDateFundNav(code = all_model_values[2], date = all_model_values[1])
+                        nav_unit = db_record[1]
+                        nav_acc = db_record[2]
+                    else:
+                        nav_unit = 1.0000
+                        nav_acc = 1.0000
                     all_model_values.append(nav_unit)
                 else:
                     # 净值
-                    db_record = db.selectFundNavByDate(code = all_model_values[2], date = all_model_values[1])
-                    nav_unit = db_record[1]
-                    nav_acc = db_record[2]
+                    if not isCashFund:
+                        db_record = db.selectFundNavByDate(code = all_model_values[2], date = all_model_values[1])
+                        nav_unit = db_record[1]
+                        nav_acc = db_record[2]
+                    else:
+                        nav_unit = 1.0000
+                        nav_acc = 1.0000
                     all_model_values.append(nav_unit)
                     if opType == '买入' or opType == '转换':
                         occurMoney = round(confirm_amount + fee, 2)
@@ -493,7 +519,11 @@ class danjuanSpider:
                 all_model_values.append(fee)
                 all_model_values.append(occurMoney)
                 all_model_values.append(self.owner + '_' + global_name + '_' + order['plan_name'])
-                categoryInfo = self.categoryManager.getCategoryByCode(all_model_values[2])
+                if isCashFund:
+                    # 是货币基金综合的虚拟代码
+                    categoryInfo = self.categoryManager.getCashFundCategory()
+                else:
+                    categoryInfo = self.categoryManager.getCategoryByCode(all_model_values[2])
                 if categoryInfo != {}:
                     all_model_values.append(categoryInfo['category1'])
                     all_model_values.append(categoryInfo['category2'])

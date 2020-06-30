@@ -1,3 +1,5 @@
 ,id,date,code,name,dealType,nav_unit,nav_acc,volume,dealMoney,fee,occurMoney,account,category1,category2,category3,categoryId,note
-0,930,2020-04-09,006585,南方宝元债券C,买入,2.2231,3.6631,624.11,1387.48,0.0,1387.48,康世海_蛋卷_钉钉宝365天组合,混合型,股债混合,偏股,411,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=217020553487925248
-1,931,2020-04-09,006585,南方宝元债券C,买入,2.2231,3.6631,37078.05,82428.23,0.0,82428.23,康世海_蛋卷_钉钉宝365天组合,混合型,股债混合,偏股,411,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=217020553710223360
+0,921,2020-04-09,006585,南方宝元债券C,买入,2.2231,3.6631,624.11,1387.48,0.0,1387.48,康世海_蛋卷_钉钉宝365天组合,混合型,股债混合,偏股,411,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=217020553487925248
+1,922,2020-04-09,006585,南方宝元债券C,买入,2.2231,3.6631,37078.05,82428.23,0.0,82428.23,康世海_蛋卷_钉钉宝365天组合,混合型,股债混合,偏股,411,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=217020553710223360
+2,1049,2020-06-08,006585,南方宝元债券C,卖出,2.2515,3.6915,279.85,630.08,0.0,630.08,康世海_蛋卷_钉钉宝365天组合,混合型,股债混合,偏股,411,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=239103037427654656
+3,1050,2020-06-08,006585,南方宝元债券C,卖出,2.2515,3.6915,59.7,134.41,0.0,134.41,康世海_蛋卷_钉钉宝365天组合,混合型,股债混合,偏股,411,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=239103037524123648

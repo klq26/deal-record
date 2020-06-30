@@ -1,0 +1,56 @@
+{
+    "orderProdType": "PO",
+    "orderId": "PO202005189L8Q3F0R8U9E",
+    "payStatus": null,
+    "confirmStatus": "P2",
+    "uiConfirmStatusName": "确认成功",
+    "capitalAccountId": "CA8UKLYHA67WPK",
+    "uiAmount": 790.77,
+    "uiShare": null,
+    "hasDetail": true,
+    "po": {
+        "poCode": "LONG_WIN",
+        "poName": "长赢指数投资计划-150份"
+    },
+    "umaId": 10209,
+    "umaName": "10万补充ETF计划",
+    "orderCode": "P11",
+    "uiOrderCodeName": "执行计划",
+    "orderStatus": "SUCCESS",
+    "uiOrderStatusName": "成功",
+    "capitalAccountName": "长赢指数投资计划-150份",
+    "totalFee": 4.09,
+    "totalReceiveAmount": 814.41,
+    "capitalTips": "由于基金卖出成交后才披露成交净值（未知价法），因此到账金额与下单金额可能有所差别，您可以在交易进度明细中通过实际卖出份额、成交净值和手续费进行核算",
+    "transferIntoDate": 1590422400000,
+    "orderConfirmDate": 1589904000000,
+    "receiveAcctName": "盈米宝",
+    "acceptTime": 1589781391000,
+    "compositionOrders": [
+        {
+            "orderId": "2020051801452720",
+            "payStatus": "0",
+            "cancelable": false,
+            "acceptTime": 1589781391000,
+            "transferIntoDate": 1590422400000,
+            "nav": 2.3877,
+            "fee": 4.09,
+            "uiAmount": 814.41,
+            "uiShare": 342.8,
+            "confirmStatus": "2",
+            "orderStatus": "SUCCESS",
+            "uiOrderStatusName": "成功",
+            "uiConfirmStatusName": "成功",
+            "tradeByShare": true,
+            "orderCode": "W05",
+            "uiOrderCodeName": "赎回到盈米宝",
+            "orderConfirmDate": 1589904000000,
+            "fund": {
+                "fundCode": "050025",
+                "fundName": "博时标普500ETF联接A"
+            },
+            "uiOrderDesc": "已于2020年5月20日确认完成，已于2020年5月26日充入盈米宝"
+        }
+    ],
+    "cancelable": false
+}

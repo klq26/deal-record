@@ -1,7 +1,7 @@
 ,id,date,code,name,dealType,nav_unit,nav_acc,volume,dealMoney,fee,occurMoney,account,category1,category2,category3,categoryId,note
-0,706,2020-03-03,161128,易方达标普信息科技,买入,1.7809,1.7809,46.72,83.3,0.1,83.4,康力泉_蛋卷_螺丝钉指数基金组合,海外成熟,美国,信息科技,315,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=203889131973394432
-1,718,2020-03-10,161128,易方达标普信息科技,买入,1.7214,1.7214,56.83,97.94,0.12,98.06,康力泉_蛋卷_螺丝钉指数基金组合,海外成熟,美国,信息科技,315,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=206422145505931264
-2,787,2020-03-23,161128,易方达标普信息科技,买入,1.4313,1.4313,17.43,24.98,0.03,25.01,康力泉_蛋卷_螺丝钉指数基金组合,海外成熟,美国,信息科技,315,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=211214464029532160
-3,796,2020-03-30,161128,易方达标普信息科技,买入,1.6408,1.6408,15.19,24.95,0.03,24.98,康力泉_蛋卷_螺丝钉指数基金组合,海外成熟,美国,信息科技,315,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=213744003708329984
-4,805,2020-04-08,161128,易方达标普信息科技,买入,1.707,1.707,14.61,24.97,0.03,25.0,康力泉_蛋卷_螺丝钉指数基金组合,海外成熟,美国,信息科技,315,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=217004141243240448
-5,825,2020-04-14,161128,易方达标普信息科技,买入,1.7773,1.7773,14.05,25.0,0.03,25.03,康力泉_蛋卷_螺丝钉指数基金组合,海外成熟,美国,信息科技,315,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=218823474215882752
+0,703,2020-03-03,161128,易方达标普信息科技,买入,1.7809,1.7809,46.72,83.3,0.1,83.4,康力泉_蛋卷_螺丝钉指数基金组合,海外成熟,美国,信息科技,315,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=203889131973394432
+1,715,2020-03-10,161128,易方达标普信息科技,买入,1.7214,1.7214,56.83,97.94,0.12,98.06,康力泉_蛋卷_螺丝钉指数基金组合,海外成熟,美国,信息科技,315,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=206422145505931264
+2,784,2020-03-23,161128,易方达标普信息科技,买入,1.4313,1.4313,17.43,24.98,0.03,25.01,康力泉_蛋卷_螺丝钉指数基金组合,海外成熟,美国,信息科技,315,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=211214464029532160
+3,793,2020-03-30,161128,易方达标普信息科技,买入,1.6408,1.6408,15.19,24.95,0.03,24.98,康力泉_蛋卷_螺丝钉指数基金组合,海外成熟,美国,信息科技,315,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=213744003708329984
+4,802,2020-04-08,161128,易方达标普信息科技,买入,1.707,1.707,14.61,24.97,0.03,25.0,康力泉_蛋卷_螺丝钉指数基金组合,海外成熟,美国,信息科技,315,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=217004141243240448
+5,822,2020-04-14,161128,易方达标普信息科技,买入,1.7773,1.7773,14.05,25.0,0.03,25.03,康力泉_蛋卷_螺丝钉指数基金组合,海外成熟,美国,信息科技,315,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=218823474215882752

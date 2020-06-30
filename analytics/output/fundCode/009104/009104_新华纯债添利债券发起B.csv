@@ -1,6 +1,9 @@
 ,id,date,code,name,dealType,nav_unit,nav_acc,volume,dealMoney,fee,occurMoney,account,category1,category2,category3,categoryId,note
-0,939,2020-04-16,009104,新华纯债添利债券发起B,买入,1.0037,1.0037,1594.1,1600.0,0.0,1600.0,康世海_蛋卷_钉钉宝90天组合,债券,国内债券,纯债,511,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=219834964687429632
-1,944,2020-04-16,009104,新华纯债添利债券发起B,买入,1.0037,1.0037,1594.1,1600.0,0.0,1600.0,康世海_蛋卷_钉钉宝90天组合,债券,国内债券,纯债,511,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=219834964687429632
-2,968,2020-04-23,009104,新华纯债添利债券发起B,买入,1.0041,1.0041,398.67,400.3,0.0,400.3,康世海_蛋卷_钉钉宝90天组合,债券,国内债券,纯债,511,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=222389780500422656
-3,965,2020-04-23,009104,新华纯债添利债券发起B,买入,1.0041,1.0041,1195.1,1200.0,0.0,1200.0,康世海_蛋卷_钉钉宝90天组合,债券,国内债券,纯债,511,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=222449293400182784
-4,1015,2020-05-12,009104,新华纯债添利债券发起B,买入,1.0051,1.0051,795.34,799.4,0.0,799.4,康世海_蛋卷_钉钉宝90天组合,债券,国内债券,纯债,511,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=229047914950275072
+0,930,2020-04-16,009104,新华纯债添利债券发起B,买入,1.0037,1.0037,1594.1,1600.0,0.0,1600.0,康世海_蛋卷_钉钉宝90天组合,债券,国内债券,纯债,511,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=219834964687429632
+1,954,2020-04-23,009104,新华纯债添利债券发起B,买入,1.0041,1.0041,398.67,400.3,0.0,400.3,康世海_蛋卷_钉钉宝90天组合,债券,国内债券,纯债,511,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=222389780500422656
+2,951,2020-04-23,009104,新华纯债添利债券发起B,买入,1.0041,1.0041,1195.1,1200.0,0.0,1200.0,康世海_蛋卷_钉钉宝90天组合,债券,国内债券,纯债,511,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=222449293400182784
+3,994,2020-05-12,009104,新华纯债添利债券发起B,买入,1.0051,1.0051,795.34,799.4,0.0,799.4,康世海_蛋卷_钉钉宝90天组合,债券,国内债券,纯债,511,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=229047914950275072
+4,1000,2020-05-15,009104,新华纯债添利债券发起B,买入,1.0058,1.0058,1591.41,1600.0,0.0,1600.0,康世海_蛋卷_钉钉宝90天组合,债券,国内债券,纯债,511,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=230424810275446784
+5,995,2020-05-15,009104,新华纯债添利债券发起B,买入,1.0058,1.0058,397.85,400.0,0.0,400.0,康世海_蛋卷_钉钉宝90天组合,债券,国内债券,纯债,511,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=230425175116976128
+6,1045,2020-06-08,009104,新华纯债添利债券发起B,卖出,1.0056,1.0056,17.82,17.92,0.0,17.92,康世海_蛋卷_钉钉宝90天组合,债券,国内债券,纯债,511,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=239103262474080256
+7,1071,2020-06-15,009104,新华纯债添利债券发起B,买入,1.0062,1.0062,3975.35,4000.0,0.0,4000.0,康世海_蛋卷_钉钉宝90天组合,债券,国内债券,纯债,511,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=241599359049244672

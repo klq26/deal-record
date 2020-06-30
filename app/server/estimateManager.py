@@ -40,6 +40,8 @@ class estimateManager:
                 else:
                     marketSymbol = '0.'
                 urls.append(self.innerUrlPrefix  + marketSymbol + u'{0}&fields1=f1,f2,f3,f4&fields2=f51,f52,f53,f54,f55&pos=-11&cb=cb'.format(code))
+            elif market in u'货币':
+                urls.append(u'https://www.baidu.com')
             else:
                 urls.append(self.outerUrlPrefix + u'{0}.js'.format(code))
             codes.append(code)
@@ -105,6 +107,10 @@ class estimateManager:
                             navItems[code] = {"name":name, "fullname": fullName, 'market': market}
                     else:
                         navItems[code] = {"name":name, "fullname": fullName, 'market': market}
+                elif response.url.startswith(u'https://www.baidu.com'):
+                    today = datetime.now().strftime('%Y-%m-%d')
+                    yesterday =(datetime.now() - timedelta(days=1)).strftime('%Y-%m-%d')
+                    estimateItems[code] = {"dwjz": "1.0000", "fullname": fullName, "gsz": "1.0000", "gszzl": "0.00", "gztime": today + ' ' + '00:00', "jzrq": yesterday, "market": market, "name": name}
         # failure
         # https://danjuanapp.com/djapi/fund/000614
         # data.fund_derived.unit_nav
@@ -113,6 +119,7 @@ class estimateManager:
         nav_url = u'https://danjuanapp.com/djapi/fund/{0}'
         today = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
         for key in navItems.keys():
+            print('kkk ' + key)
             item = navItems[key]
             response = requests.get(nav_url.format(key), headers=self.headers, verify=False)
             if response.status_code == 200:

@@ -1,0 +1,58 @@
+{
+    "data": {
+        "order_id": "3886753259542012313",
+        "uid": 194897199,
+        "code": "CSI666",
+        "name": "螺丝钉指数基金组合",
+        "ttype": "plan",
+        "status": "success",
+        "action": "024",
+        "percent": 0,
+        "volume": 14.07,
+        "status_desc": "交易成功",
+        "action_desc": "卖出",
+        "created_at": 1592287284204,
+        "final_confirm_date": 1592323200000,
+        "total_confirm_amount": 15.64,
+        "total_fee": 0.03,
+        "title": "螺丝钉指数基金组合",
+        "bank_name": "现金宝",
+        "value_desc": "14.07份",
+        "sub_order_list": [
+            {
+                "action_text": "成分基金交易信息",
+                "action": "024",
+                "orders": [
+                    {
+                        "plan_code": "CSI666",
+                        "plan_name": "螺丝钉指数基金组合",
+                        "fd_code": "161725",
+                        "fd_name": "招商中证白酒指数",
+                        "title": "招商中证白酒指数",
+                        "action_desc": "卖出",
+                        "status_desc": "交易成功",
+                        "type": "plan",
+                        "action": "024",
+                        "status": "success",
+                        "ts": 1592236800000,
+                        "confirm_ts": 1592323200000,
+                        "amount": 0,
+                        "volume": 14.07,
+                        "confirm_amount": 15.64,
+                        "confirm_volume": 14.07,
+                        "fee": 0.03,
+                        "value_desc": "14.07份",
+                        "value_text": "下单份额",
+                        "confirm_value_text": "确认金额",
+                        "confirm_value_desc": "15.64元",
+                        "bank_name": "现金宝",
+                        "order_id": "242010444232372224",
+                        "sale_query_date_desc": "预计2020-06-18 18:00前到账"
+                    }
+                ]
+            }
+        ],
+        "convert": false
+    },
+    "result_code": 0
+}

@@ -1,0 +1,53 @@
+{
+    "orderProdType": "PO",
+    "orderId": "PO202006249OWP3F6G22FJ",
+    "payStatus": "2",
+    "uiPayStatusName": "扣款成功",
+    "confirmStatus": "P2",
+    "uiConfirmStatusName": "确认成功",
+    "capitalAccountId": "CA8UKLYHA67WPK",
+    "uiAmount": 667,
+    "uiShare": null,
+    "hasDetail": true,
+    "po": {
+        "poCode": "LONG_WIN",
+        "poName": "长赢指数投资计划-150份"
+    },
+    "umaId": 10209,
+    "umaName": "10万补充ETF计划",
+    "orderCode": "P11",
+    "uiOrderCodeName": "执行计划",
+    "orderStatus": "SUCCESS",
+    "uiOrderStatusName": "成功",
+    "capitalAccountName": "长赢指数投资计划-150份",
+    "totalFee": 0.53,
+    "orderConfirmDate": 1593360000000,
+    "payAcctName": "盈米宝",
+    "acceptTime": 1592976938000,
+    "compositionOrders": [
+        {
+            "orderId": "2020062401140661",
+            "payStatus": "2",
+            "cancelable": false,
+            "acceptTime": 1592976938000,
+            "nav": 1.216,
+            "fee": 0.53,
+            "uiAmount": 667,
+            "uiShare": 548.08,
+            "confirmStatus": "2",
+            "orderStatus": "SUCCESS",
+            "uiOrderStatusName": "成功",
+            "uiConfirmStatusName": "成功",
+            "tradeByShare": false,
+            "orderCode": "W04",
+            "uiOrderCodeName": "盈米宝购买",
+            "orderConfirmDate": 1593360000000,
+            "fund": {
+                "fundCode": "270048",
+                "fundName": "广发纯债债券A"
+            },
+            "uiOrderDesc": "已于2020年6月29日确认完成"
+        }
+    ],
+    "cancelable": false
+}

@@ -10,6 +10,14 @@ from tools.dividendInfoSpider import dividendInfoSpider
 from database.fundDBHelper import fundDBHelper
 
 class categoryManager:
+    """
+    自建交易品种分类列表，包含从投资以来，所有交易过的品种。
+    支持返回对应代码的分类信息，如果库中不包含一个基金代码，则会运行辅助添加机制：
+
+    1）打开天天基金、且慢网站上该只基金的详情页。
+    2）尝试获取基金的历史净值数据和分红、拆分数据，传入阿里云服务器
+    3）打开 xlsx 文件。
+    """
 
     def __init__(self):
         folder = os.path.abspath(os.path.dirname(__file__))
@@ -20,6 +28,10 @@ class categoryManager:
 
     def getCategoryDataFrame(self):
         return self.category_df
+
+    # 获取货币基金的虚拟类别
+    def getCashFundCategory(self):
+        return self.getCategoryByCode('999999')
 
     # 获取对应基金的类别代码
     def getCategoryByCode(self, code):
