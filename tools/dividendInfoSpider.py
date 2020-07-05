@@ -5,7 +5,7 @@ import sys
 import json
 from datetime import datetime
 from datetime import timedelta
-import ssl
+# import ssl
 
 from urllib import parse
 import requests
@@ -18,7 +18,7 @@ class dividendInfoSpider:
 
     def __init__(self):
         # 禁 warning
-        ssl._create_default_https_context = ssl._create_unverified_context
+        # ssl._create_default_https_context = ssl._create_unverified_context
         requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
         # 当前目录
         self.folder = os.path.abspath(os.path.dirname(__file__))

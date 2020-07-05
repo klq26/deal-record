@@ -20,14 +20,17 @@ class categoryManager:
     """
 
     def __init__(self):
-        folder = os.path.abspath(os.path.dirname(__file__))
-        self.xlsx_path = os.path.join(folder, u'资产配置分类表.xlsx')
-        self.category_df = pd.read_excel(self.xlsx_path)
-        self.category_df['基金代码'] = [str(x).zfill(6) for x in self.category_df['基金代码'].values]
+        self.folder = os.path.abspath(os.path.dirname(__file__))
+        self.loadNewestCategoryFile()
         pass
 
     def getCategoryDataFrame(self):
         return self.category_df
+
+    def loadNewestCategoryFile(self):
+        self.xlsx_path = os.path.join(self.folder, u'资产配置分类表.xlsx')
+        self.category_df = pd.read_excel(self.xlsx_path)
+        self.category_df['基金代码'] = [str(x).zfill(6) for x in self.category_df['基金代码'].values]
 
     # 获取货币基金的虚拟类别
     def getCashFundCategory(self):

@@ -4,10 +4,14 @@ import os
 import sys
 import json
 
+import gevent.monkey
+gevent.monkey.patch_all()
+
 import numpy as np
 
 from flask import Flask
 from flask import request
+
 from flask import Response
 # 跨域
 from flask_cors import *
@@ -25,6 +29,8 @@ folder = os.path.abspath(os.path.dirname(__file__))
 categoryManager = categoryManager()
 cm = cacheManager()
 dm = datetimeManager()
+
+os.environ['GEVENT_SUPPORT'] = 'True'
 
 app = Flask(__name__)
 CORS(app, supports_credentials=True)
@@ -112,12 +118,16 @@ def getFamilyEstimate():
     else:
         db = holdingDBHelper()
         records = db.selectAllCombineFundHoldings()
+        reload = request.args.get('reloadCategory', '')
+        if reload and int(reload) == 1:
+            categoryManager.loadNewestCategoryFile()
         # 基金简称
         df = categoryManager.category_df
         for x in records:
             values = []
             code = x['code']
             name = x['name']
+            nav = x['holding_nav']
             sub = df[df['基金代码'] == code]
             if len(sub) > 0:
                 name = sub.基金简称.values[0]
@@ -131,8 +141,8 @@ def getFamilyEstimate():
                 name = name
                 fullName = name
                 market = u'其他'
-            values = [code, name, fullName, market]
-            params.append(values)
+            item = {'code' : code, 'name' : name, 'fullName' : fullName, 'nav' : nav, 'market' : market}
+            params.append(item)
         # 后面采用新缓存机制
         # with open(output_path, 'w+', encoding=u'utf-8') as f:
         #     f.write(json.dumps(params, ensure_ascii=False, indent=4))

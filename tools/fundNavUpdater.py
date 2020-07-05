@@ -2,7 +2,6 @@
 import os
 import sys
 import json
-import ssl
 from datetime import datetime
 from datetime import timedelta
 from database.fundDBHelper import fundDBHelper

@@ -4,7 +4,7 @@ import os
 import sys
 import json
 from datetime import datetime
-import ssl
+# import ssl
 
 import requests
 from requests.packages.urllib3.exceptions import InsecureRequestWarning
@@ -23,7 +23,7 @@ class qiemanSpider:
 
     def __init__(self, strategy = 'klq'):
         # 禁 warning
-        ssl._create_default_https_context = ssl._create_unverified_context
+        # ssl._create_default_https_context = ssl._create_unverified_context
         requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
         # 当前目录
         self.folder = os.path.abspath(os.path.dirname(__file__))
