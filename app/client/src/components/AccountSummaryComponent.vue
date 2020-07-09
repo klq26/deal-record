@@ -2,10 +2,22 @@
   <div class="container" @click="showDaily = !showDaily">
     <!-- 估值情况 -->
     <div class="summaryContainer">
-      <div class="summaryTitle" v-show="showDaily">日收益</div>
-      <div class="summaryValue" :class="textColorWithValue(totalDailyGain)" v-show="showDaily">{{totalDailyGain}}</div>
-      <div class="summaryTitle" v-show="!showDaily">总收益</div>
-      <div class="summaryValue" :class="textColorWithValue(totalHoldingGain)" v-show="!showDaily">{{totalHoldingGain}}</div>
+      <div class="summaryValueContainer" v-show="showDaily">
+        <div class="summaryTitle">日收益</div>
+        <div class="summaryValue" :class="textColorWithValue(totalDailyGain)">{{totalDailyGain}}</div>
+      </div>
+      <div class="summaryRateContainer"  v-show="showDaily">
+        <div class="summaryTitle">收益率</div>
+        <div class="summaryValue" :class="textColorWithValue(totalDailyGain)">{{(totalDailyGain / totalFamilyCap * 100).toFixed(2)}}%</div>
+      </div>
+      <div class="summaryValueContainer" v-show="!showDaily">
+        <div class="summaryTitle">总收益</div>
+        <div class="summaryValue" :class="textColorWithValue(totalHoldingGain)">{{totalHoldingGain}}</div>
+      </div>
+      <div class="summaryRateContainer" v-show="!showDaily">
+        <div class="summaryTitle">收益率</div>
+        <div class="summaryValue" :class="textColorWithValue(totalHoldingGain)">{{(totalHoldingGain / totalFamilyCap * 100).toFixed(2)}}%</div>
+      </div>
     </div>
     <!-- 资金情况 -->
     <div class="sumcontainer" style="margin-bottom:2px;">
@@ -53,6 +65,7 @@ export default {
           var cash = this.myMoneyInfos.cash.value
           var freeze = this.myMoneyInfos.freeze.value
           var fund = parseFloat(this.totalMarketCap)
+          this.totalFamilyCap = cash + freeze + fund
           return ((cash + freeze + fund) / 10000).toFixed(2) + ' 万元'
       }
     },
@@ -143,7 +156,8 @@ export default {
       myHoldings: this.holdings,
       totalDailyGain: 0,
       totalHoldingGain: 0,
-      totalMarketCap: 0
+      totalMarketCap: 0,
+      totalFamilyCap: 0
     }
   },
   created: function () {
@@ -345,6 +359,20 @@ export default {
   align-items: center;
   justify-content: flex-start;
   width: 10rem;
+}
+
+.summaryValueContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 5rem;
+}
+
+.summaryRateContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 5rem;
 }
 
 .summaryTitle {
