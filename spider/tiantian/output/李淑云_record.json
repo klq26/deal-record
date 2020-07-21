@@ -1907,25 +1907,6 @@
         "dealType": "分红",
         "nav_unit": 1.047,
         "nav_acc": 0.7043,
-        "volume": 0.28,
-        "dealMoney": 0.0,
-        "fee": 0.0,
-        "occurMoney": 0.0,
-        "account": "李淑云_天天",
-        "category1": "A 股",
-        "category2": "行业股",
-        "category3": "证券公司",
-        "categoryId": 145,
-        "note": "https://query.1234567.com.cn/Query/Detail?id=201907089999190708303000101941&businType=144&traceNo="
-    },
-    {
-        "id": 102,
-        "date": "2019-07-08",
-        "code": "502010",
-        "name": "易方达证券公司分级",
-        "dealType": "分红",
-        "nav_unit": 1.047,
-        "nav_acc": 0.7043,
         "volume": 10.13,
         "dealMoney": 0.0,
         "fee": 0.0,
@@ -1936,6 +1917,25 @@
         "category3": "证券公司",
         "categoryId": 145,
         "note": "https://query.1234567.com.cn/Query/Detail?id=201907089999190708303000101940&businType=144&traceNo="
+    },
+    {
+        "id": 102,
+        "date": "2019-07-08",
+        "code": "502010",
+        "name": "易方达证券公司分级",
+        "dealType": "分红",
+        "nav_unit": 1.047,
+        "nav_acc": 0.7043,
+        "volume": 0.28,
+        "dealMoney": 0.0,
+        "fee": 0.0,
+        "occurMoney": 0.0,
+        "account": "李淑云_天天",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "证券公司",
+        "categoryId": 145,
+        "note": "https://query.1234567.com.cn/Query/Detail?id=201907089999190708303000101941&businType=144&traceNo="
     },
     {
         "id": 103,
@@ -2319,25 +2319,6 @@
     },
     {
         "id": 123,
-        "date": "2020-03-02",
-        "code": "100032",
-        "name": "富国中证红利指数增强",
-        "dealType": "分红",
-        "nav_unit": 0.984,
-        "nav_acc": 2.689,
-        "volume": 1012.42,
-        "dealMoney": 0.0,
-        "fee": 0.0,
-        "occurMoney": 0.0,
-        "account": "李淑云_天天",
-        "category1": "A 股",
-        "category2": "红利价值",
-        "category3": "中证红利",
-        "categoryId": 131,
-        "note": "https://query.1234567.com.cn/Query/Detail?id=20200302103030091341750&businType=143&traceNo="
-    },
-    {
-        "id": 124,
         "date": "2020-03-09",
         "code": "501018",
         "name": "南方原油A",
@@ -2356,7 +2337,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=6e990497bfeb49f4881afa4ae0baeb9e&businType=22&traceNo=6e990497bfeb49f4881afa4ae0baeb9e"
     },
     {
-        "id": 125,
+        "id": 124,
         "date": "2020-03-09",
         "code": "004752",
         "name": "广发中证传媒ETF联接A",
@@ -2375,7 +2356,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=b2238d75605747a1a550079bd3b16b1d&businType=8151&traceNo=e6ca414fd55046a6aa40e77456b0917d"
     },
     {
-        "id": 126,
+        "id": 125,
         "date": "2020-03-09",
         "code": "110026",
         "name": "易方达创业板ETF联接A",
@@ -2394,7 +2375,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=1336b8b3ae1c49a482c5b9c547975254&businType=8151&traceNo=9c7829ab85674b39aad7b8a9267b89e3"
     },
     {
-        "id": 127,
+        "id": 126,
         "date": "2020-03-10",
         "code": "050025",
         "name": "博时标普500ETF联接A",
@@ -2413,7 +2394,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=17c11c764c274a4093801a6b7b4c9015&businType=22&traceNo=17c11c764c274a4093801a6b7b4c9015"
     },
     {
-        "id": 128,
+        "id": 127,
         "date": "2020-03-11",
         "code": "000614",
         "name": "华安德国30(DAX)联接",
@@ -2432,7 +2413,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=2a817ad06ccd4bbca512d806e1758ef3&businType=22&traceNo=2a817ad06ccd4bbca512d806e1758ef3"
     },
     {
-        "id": 129,
+        "id": 128,
         "date": "2020-03-12",
         "code": "110026",
         "name": "易方达创业板ETF联接A",
@@ -2451,7 +2432,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=ad5098842be1434199aabc283732ebe0&businType=8151&traceNo=af1fa369eb06461cb193c663095bbd7a"
     },
     {
-        "id": 130,
+        "id": 129,
         "date": "2020-03-13",
         "code": "000614",
         "name": "华安德国30(DAX)联接",
@@ -2470,7 +2451,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=c7edc42bcad6443ab2b64e2704bf8c5d&businType=22&traceNo=c7edc42bcad6443ab2b64e2704bf8c5d"
     },
     {
-        "id": 131,
+        "id": 130,
         "date": "2020-03-13",
         "code": "000071",
         "name": "华夏恒生ETF联接A",
@@ -2489,7 +2470,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=d9441494553a436f9132c7cb6f58469d&businType=22&traceNo=d9441494553a436f9132c7cb6f58469d"
     },
     {
-        "id": 132,
+        "id": 131,
         "date": "2020-03-13",
         "code": "000216",
         "name": "华安黄金易ETF联接A",
@@ -2508,7 +2489,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=6d16f05705c84254bfa67eabdd674601&businType=805&traceNo="
     },
     {
-        "id": 133,
+        "id": 132,
         "date": "2020-03-19",
         "code": "519977",
         "name": "长信可转债债券A",
@@ -2527,7 +2508,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=e82a75f822014d03a1fdca82f41acaa6&businType=24&traceNo="
     },
     {
-        "id": 134,
+        "id": 133,
         "date": "2020-03-19",
         "code": "050025",
         "name": "博时标普500ETF联接A",
@@ -2546,7 +2527,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=57c141e8a3df4d979fa3fa6bcd57492d&businType=22&traceNo=57c141e8a3df4d979fa3fa6bcd57492d"
     },
     {
-        "id": 135,
+        "id": 134,
         "date": "2020-03-19",
         "code": "000071",
         "name": "华夏恒生ETF联接A",
@@ -2565,7 +2546,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=31d1e3ce5c3d4495bb5954f731b7827b&businType=22&traceNo=31d1e3ce5c3d4495bb5954f731b7827b"
     },
     {
-        "id": 136,
+        "id": 135,
         "date": "2020-03-25",
         "code": "001180",
         "name": "广发医药卫生联接A",
@@ -2584,7 +2565,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=1ac4e5dbbf284cc4951d037999fd0e80&businType=8151&traceNo=a4d31fe0a6554b7f99c4ad8836c44a75"
     },
     {
-        "id": 137,
+        "id": 136,
         "date": "2020-04-30",
         "code": "100032",
         "name": "富国中证红利指数增强A",
@@ -2603,7 +2584,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=a69eef04137d4638877e98d0faacc881&businType=22&traceNo=a69eef04137d4638877e98d0faacc881"
     },
     {
-        "id": 138,
+        "id": 137,
         "date": "2020-04-30",
         "code": "001469",
         "name": "广发中证全指金融地产联接A",
@@ -2622,7 +2603,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=f59563364c5b4d979c703f071d4bda45&businType=22&traceNo=f59563364c5b4d979c703f071d4bda45"
     },
     {
-        "id": 139,
+        "id": 138,
         "date": "2020-04-30",
         "code": "001180",
         "name": "广发医药卫生联接A",
@@ -2641,7 +2622,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=077d0d2efa5a4c3ca0a01abcd65b33be&businType=24&traceNo="
     },
     {
-        "id": 140,
+        "id": 139,
         "date": "2020-05-18",
         "code": "050025",
         "name": "博时标普500ETF联接A",
@@ -2660,7 +2641,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=6bfb5638ef2f4161bfadd490005f3c9c&businType=24&traceNo="
     },
     {
-        "id": 141,
+        "id": 140,
         "date": "2020-06-09",
         "code": "164906",
         "name": "交银中证海外中国互联网指数",
@@ -2679,7 +2660,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=193b7be69c914d53b237a4431201b8d4&businType=24&traceNo="
     },
     {
-        "id": 142,
+        "id": 141,
         "date": "2020-06-24",
         "code": "000968",
         "name": "广发养老指数A",
@@ -2698,7 +2679,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=93ae1e714ed64c3ca5522c909dc03bd7&businType=24&traceNo="
     },
     {
-        "id": 143,
+        "id": 142,
         "date": "2020-06-24",
         "code": "270048",
         "name": "广发纯债债券A",
@@ -2715,5 +2696,138 @@
         "category3": "纯债",
         "categoryId": 511,
         "note": "https://query.1234567.com.cn/Query/Detail?id=564c88c2c66345c78935547d6430ca6e&businType=22&traceNo="
+    },
+    {
+        "id": 143,
+        "date": "2020-07-08",
+        "code": "502010",
+        "name": "易方达证券公司分级",
+        "dealType": "分红",
+        "nav_unit": 1.3598,
+        "nav_acc": 0.93,
+        "volume": 7.88,
+        "dealMoney": 0.0,
+        "fee": 0.0,
+        "occurMoney": 0.0,
+        "account": "李淑云_天天",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "证券公司",
+        "categoryId": 145,
+        "note": "https://query.1234567.com.cn/Query/Detail?id=202007089999200708303000361913&businType=144&traceNo="
+    },
+    {
+        "id": 144,
+        "date": "2020-07-08",
+        "code": "502010",
+        "name": "易方达证券公司分级",
+        "dealType": "分红",
+        "nav_unit": 1.3598,
+        "nav_acc": 0.93,
+        "volume": 0.17,
+        "dealMoney": 0.0,
+        "fee": 0.0,
+        "occurMoney": 0.0,
+        "account": "李淑云_天天",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "证券公司",
+        "categoryId": 145,
+        "note": "https://query.1234567.com.cn/Query/Detail?id=202007089999200708303000361915&businType=144&traceNo="
+    },
+    {
+        "id": 145,
+        "date": "2020-07-08",
+        "code": "502010",
+        "name": "易方达证券公司分级",
+        "dealType": "分红",
+        "nav_unit": 1.3598,
+        "nav_acc": 0.93,
+        "volume": 0.22,
+        "dealMoney": 0.0,
+        "fee": 0.0,
+        "occurMoney": 0.0,
+        "account": "李淑云_天天",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "证券公司",
+        "categoryId": 145,
+        "note": "https://query.1234567.com.cn/Query/Detail?id=202007089999200708303000361914&businType=144&traceNo="
+    },
+    {
+        "id": 146,
+        "date": "2020-07-10",
+        "code": "001180",
+        "name": "广发医药卫生联接A",
+        "dealType": "卖出",
+        "nav_unit": 1.2708,
+        "nav_acc": 1.2708,
+        "volume": 516.71,
+        "dealMoney": 654.67,
+        "fee": 1.97,
+        "occurMoney": 652.7,
+        "account": "李淑云_天天",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "全指医药",
+        "categoryId": 142,
+        "note": "https://query.1234567.com.cn/Query/Detail?id=f7aeed922ff74712a0ea5d8d32a29811&businType=24&traceNo="
+    },
+    {
+        "id": 147,
+        "date": "2020-07-14",
+        "code": "270048",
+        "name": "广发纯债债券A",
+        "dealType": "分红",
+        "nav_unit": 1.19,
+        "nav_acc": 1.451,
+        "volume": 0.0,
+        "dealMoney": 0.0,
+        "fee": 0.0,
+        "occurMoney": 5.92,
+        "account": "李淑云_天天",
+        "category1": "债券",
+        "category2": "国内债券",
+        "category3": "纯债",
+        "categoryId": 511,
+        "note": "https://query.1234567.com.cn/Query/Detail?id=20200714273030072542993&businType=143&traceNo="
+    },
+    {
+        "id": 148,
+        "date": "2020-07-17",
+        "code": "000968",
+        "name": "广发养老指数A",
+        "dealType": "卖出",
+        "nav_unit": 1.2856,
+        "nav_acc": 1.2856,
+        "volume": 472.3,
+        "dealMoney": 605.37,
+        "fee": 1.82,
+        "occurMoney": 603.55,
+        "account": "李淑云_天天",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "养老产业",
+        "categoryId": 141,
+        "note": "https://query.1234567.com.cn/Query/Detail?id=4a2d89f11ee7402da41273daa4d19c0f&businType=8151&traceNo=54ae7f84b80f48f3a37811628507be35"
+    },
+    {
+        "id": 149,
+        "date": "2020-07-17",
+        "code": "001180",
+        "name": "广发医药卫生联接A",
+        "dealType": "卖出",
+        "nav_unit": 1.254,
+        "nav_acc": 1.254,
+        "volume": 562.52,
+        "dealMoney": 703.28,
+        "fee": 2.12,
+        "occurMoney": 701.16,
+        "account": "李淑云_天天",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "全指医药",
+        "categoryId": 142,
+        "note": "https://query.1234567.com.cn/Query/Detail?id=0b1028da281d4b959c8298c7c3aa6819&businType=8151&traceNo=de80e80969724c7187c8485319bcfc40"
     }
 ]

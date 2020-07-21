@@ -8,7 +8,7 @@
       </div>
       <div class="summaryRateContainer"  v-show="showDaily">
         <div class="summaryTitle">收益率</div>
-        <div class="summaryValue" :class="textColorWithValue(totalDailyGain)">{{(totalDailyGain / totalFamilyCap * 100).toFixed(2)}}%</div>
+        <div class="summaryValue" :class="textColorWithValue(totalDailyGain)">{{(totalDailyGain / (totalFamilyCap - totalDailyGain) * 100).toFixed(2)}}%</div>
       </div>
       <div class="summaryValueContainer" v-show="!showDaily">
         <div class="summaryTitle">总收益</div>

@@ -1521,6 +1521,25 @@
     },
     {
         "id": 81,
+        "date": "2019-07-11",
+        "code": "001061",
+        "name": "华夏收益债券(QDII)A",
+        "dealType": "分红",
+        "nav_unit": 1.304,
+        "nav_acc": 1.506,
+        "volume": 158.04,
+        "dealMoney": 0.0,
+        "fee": 0.0,
+        "occurMoney": 0.0,
+        "account": "康力泉_天天",
+        "category1": "债券",
+        "category2": "海外债券",
+        "category3": "美元债",
+        "categoryId": 521,
+        "note": "https://query.1234567.com.cn/Query/Detail?id=201907110330320190710564476850&businType=143&traceNo="
+    },
+    {
+        "id": 82,
         "date": "2019-07-31",
         "code": "110027",
         "name": "易方达安心回报债券A",
@@ -1539,7 +1558,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=d018c657c9604442b5508fd4f3d08174&businType=22&traceNo=d018c657c9604442b5508fd4f3d08174"
     },
     {
-        "id": 82,
+        "id": 83,
         "date": "2019-09-17",
         "code": "002903",
         "name": "广发中证500ETF联接C",
@@ -1558,7 +1577,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=4ff0308f6de14a3392133fd125ccc6c2&businType=22&traceNo=4ff0308f6de14a3392133fd125ccc6c2"
     },
     {
-        "id": 83,
+        "id": 84,
         "date": "2019-09-17",
         "code": "003647",
         "name": "创金合信中证1000指数增强C",
@@ -1577,7 +1596,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=27bc28ebfb884bffbdc0dbea06154f09&businType=22&traceNo=27bc28ebfb884bffbdc0dbea06154f09"
     },
     {
-        "id": 84,
+        "id": 85,
         "date": "2019-09-17",
         "code": "002903",
         "name": "广发中证500ETF联接C",
@@ -1596,7 +1615,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=0dd7dc83e91946d9921bc429f47988f5&businType=22&traceNo=0dd7dc83e91946d9921bc429f47988f5"
     },
     {
-        "id": 85,
+        "id": 86,
         "date": "2019-09-25",
         "code": "000071",
         "name": "华夏恒生ETF联接A",
@@ -1615,7 +1634,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=136d7f73b1894bbd835a0b24b219aa38&businType=22&traceNo=136d7f73b1894bbd835a0b24b219aa38"
     },
     {
-        "id": 86,
+        "id": 87,
         "date": "2019-12-02",
         "code": "110026",
         "name": "易方达创业板ETF联接A",
@@ -1634,7 +1653,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=a89bfebf62684c02b5dbc1c39977051e&businType=812&traceNo=ffa38d566ec84c2ea9c5d8eaf292206e"
     },
     {
-        "id": 87,
+        "id": 88,
         "date": "2019-12-02",
         "code": "000478",
         "name": "建信中证500指数增强A",
@@ -1653,7 +1672,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=f1d0772205c8403380f9e4f00c0988c7&businType=22&traceNo=f1d0772205c8403380f9e4f00c0988c7"
     },
     {
-        "id": 88,
+        "id": 89,
         "date": "2020-01-06",
         "code": "003647",
         "name": "创金合信中证1000指数增强C",
@@ -1672,7 +1691,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=0a23d21d068b49839262440299079577&businType=24&traceNo="
     },
     {
-        "id": 89,
+        "id": 90,
         "date": "2020-01-06",
         "code": "002903",
         "name": "广发中证500ETF联接C",
@@ -1691,7 +1710,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=1eb7908155cb4e8c869ee1cef3af84c8&businType=24&traceNo="
     },
     {
-        "id": 90,
+        "id": 91,
         "date": "2020-02-18",
         "code": "002903",
         "name": "广发中证500ETF联接C",
@@ -1710,7 +1729,7 @@
         "note": "https://query.1234567.com.cn/Query/Detail?id=7ab73487a17d426fb43b5c70607ab1c5&businType=812&traceNo=b812de433b5e4551850fd61b86dec0bf"
     },
     {
-        "id": 91,
+        "id": 92,
         "date": "2020-02-26",
         "code": "001469",
         "name": "广发中证全指金融地产联接A",
@@ -1727,25 +1746,6 @@
         "category3": "金融地产",
         "categoryId": 147,
         "note": "https://query.1234567.com.cn/Query/Detail?id=b36036a7da5944e79820a526a93d9feb&businType=22&traceNo="
-    },
-    {
-        "id": 92,
-        "date": "2020-03-02",
-        "code": "100032",
-        "name": "富国中证红利指数增强",
-        "dealType": "分红",
-        "nav_unit": 0.984,
-        "nav_acc": 2.689,
-        "volume": 7273.46,
-        "dealMoney": 0.0,
-        "fee": 0.0,
-        "occurMoney": 0.0,
-        "account": "康力泉_天天",
-        "category1": "A 股",
-        "category2": "红利价值",
-        "category3": "中证红利",
-        "categoryId": 131,
-        "note": "https://query.1234567.com.cn/Query/Detail?id=20200302103030091331442&businType=143&traceNo="
     },
     {
         "id": 93,
@@ -2069,5 +2069,62 @@
         "category3": "纯债",
         "categoryId": 511,
         "note": "https://query.1234567.com.cn/Query/Detail?id=e97d9a0c40014d53821bff7d9784423c&businType=22&traceNo="
+    },
+    {
+        "id": 110,
+        "date": "2020-07-14",
+        "code": "270048",
+        "name": "广发纯债债券A",
+        "dealType": "分红",
+        "nav_unit": 1.19,
+        "nav_acc": 1.451,
+        "volume": 0.0,
+        "dealMoney": 0.0,
+        "fee": 0.0,
+        "occurMoney": 94.66,
+        "account": "康力泉_天天",
+        "category1": "债券",
+        "category2": "国内债券",
+        "category3": "纯债",
+        "categoryId": 511,
+        "note": "https://query.1234567.com.cn/Query/Detail?id=20200714273030072541737&businType=143&traceNo="
+    },
+    {
+        "id": 111,
+        "date": "2020-07-16",
+        "code": "164906",
+        "name": "交银中证海外中国互联网指数",
+        "dealType": "卖出",
+        "nav_unit": 1.765,
+        "nav_acc": 1.765,
+        "volume": 5629.17,
+        "dealMoney": 9915.62,
+        "fee": 19.87,
+        "occurMoney": 9895.75,
+        "account": "康力泉_天天",
+        "category1": "海外新兴",
+        "category2": "海外互联",
+        "category3": "海外互联网",
+        "categoryId": 221,
+        "note": "https://query.1234567.com.cn/Query/Detail?id=dcc4edb2569f42db8e4dfc8f21942890&businType=24&traceNo="
+    },
+    {
+        "id": 112,
+        "date": "2020-07-17",
+        "code": "000968",
+        "name": "广发养老指数A",
+        "dealType": "卖出",
+        "nav_unit": 1.2856,
+        "nav_acc": 1.2856,
+        "volume": 7953.63,
+        "dealMoney": 10225.19,
+        "fee": 0.0,
+        "occurMoney": 10225.19,
+        "account": "康力泉_天天",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "养老产业",
+        "categoryId": 141,
+        "note": "https://query.1234567.com.cn/Query/Detail?id=4c9fbc26ee654c3dbdd3bbad1a7605e7&businType=8151&traceNo=2d63b0a75e5c4b4191247f1aa38054a8"
     }
 ]

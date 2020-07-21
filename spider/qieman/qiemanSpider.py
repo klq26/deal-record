@@ -68,9 +68,11 @@ class qiemanSpider:
             datalist = tradelistJson['content']
             # 从 tradelist.json 列表中，请求每一次的交易详情(仅包含“交易成功”，忽略“撤单”，“交易进行中” 等非确定情况)
             for tradeRecord in datalist:
-                dealRecordsJson = self._prepareTradeRecord(tradeRecord)
-                dealRecords = self._prepareDealRecords(dealRecordsJson)
-                [self.results.append(x) for x in dealRecords]
+                # 分红记录没有详情，直接跳过
+                if tradeRecord['hasDetail'] == True:
+                    dealRecordsJson = self._prepareTradeRecord(tradeRecord)
+                    dealRecords = self._prepareDealRecords(dealRecordsJson)
+                    [self.results.append(x) for x in dealRecords]
         if os.path.exists(os.path.join(self.folder, 'input', '{0}_addition.json'.format(self.owner))):
             # 注意：且慢网站目前不公布跟计划品种分红的交易，暂时只能自己补充，这点自己补齐，已和客服沟通过得到确认
             # 另外，父亲的组合转换，只有一笔转换。实际上应该是一笔买入 + 一笔卖出。程序里，转换只提现了买入。所以 addition 则补足基金的卖出部分

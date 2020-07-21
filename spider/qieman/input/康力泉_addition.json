@@ -74,5 +74,24 @@
         "category3": "原油",
         "categoryId": 613,
         "note": "长赢指数投资计划-S定投_转托管"
+    },
+	{
+        "id": 5,
+        "date": "2020-07-14",
+        "code": "270048",
+        "name": "广发纯债债券A",
+        "dealType": "分红",
+        "nav_unit": 1.190,
+        "nav_acc": 1.451,
+        "volume": 0.0,
+        "dealMoney": 0.0,
+        "fee": 0.0,
+        "occurMoney": 9.87,
+        "account": "康力泉_且慢_150份",
+        "category1": "债券",
+        "category2": "国内债券",
+        "category3": "纯债",
+        "categoryId": 511,
+        "note": "长赢指数投资计划-150份_自补分红"
     }
 ]

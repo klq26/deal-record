@@ -56,6 +56,8 @@ class danjuanSpider:
         # 准备成交记录列表
         tradelistJson = self._prepareTradelist(path = self.tradelist_file, forceUpdate = forceUpdate)
         datalist = tradelistJson['data']['items']
+        # 2020年7月21日 蛋卷基金的是倒序入库的，解析时，希望为时间正序。这块是解决同一天同一品种的操作，有早有晚的问题（000905 货币基金先卖了全部，又分红了 0.17 的错误，实际上 0.17 更早）
+        datalist.reverse()
         # 从 tradelist.json 列表中，请求每一次的交易详情(仅包含“交易成功”，忽略“撤单”，“交易进行中” 等非确定情况)
         for tradeRecord in datalist:
             dealRecordsJson = self._prepareTradeRecord(tradeRecord)

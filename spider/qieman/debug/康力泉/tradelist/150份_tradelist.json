@@ -7,6 +7,26 @@
     "totalPages": 1,
     "content": [
         {
+            "orderId": "div3780077086939",
+            "orderProdType": "PO",
+            "capitalAccountId": "CA8UKLYHA67WPK",
+            "uiOrderCodeName": "现金分红",
+            "uiOrderDesc": "已于2020年7月14日充入盈米宝",
+            "uiAmount": 9.87,
+            "transferIntoDate": 1594656000000,
+            "acceptTime": 1594656000000,
+            "fund": {
+                "fundCode": "270048",
+                "fundName": "广发纯债债券A"
+            },
+            "hasDetail": false,
+            "confirmStatus": "P2",
+            "isOrderConfirmed": true,
+            "capitalAccountName": "长赢指数投资计划-150份",
+            "umaId": 10209,
+            "umaName": "10万补充ETF计划"
+        },
+        {
             "orderProdType": "PO",
             "orderId": "PO202006249OWP3F6G22FJ",
             "capitalAccountId": "CA8UKLYHA67WPK",

@@ -1,5 +1,7 @@
 ,id,date,code,name,dealType,nav_unit,nav_acc,volume,dealMoney,fee,occurMoney,account,category1,category2,category3,categoryId,note
-0,921,2020-04-09,006585,南方宝元债券C,买入,2.2231,3.6631,624.11,1387.48,0.0,1387.48,康世海_蛋卷_钉钉宝365天组合,混合型,股债混合,偏股,411,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=217020553487925248
-1,922,2020-04-09,006585,南方宝元债券C,买入,2.2231,3.6631,37078.05,82428.23,0.0,82428.23,康世海_蛋卷_钉钉宝365天组合,混合型,股债混合,偏股,411,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=217020553710223360
-2,1049,2020-06-08,006585,南方宝元债券C,卖出,2.2515,3.6915,279.85,630.08,0.0,630.08,康世海_蛋卷_钉钉宝365天组合,混合型,股债混合,偏股,411,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=239103037427654656
-3,1050,2020-06-08,006585,南方宝元债券C,卖出,2.2515,3.6915,59.7,134.41,0.0,134.41,康世海_蛋卷_钉钉宝365天组合,混合型,股债混合,偏股,411,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=239103037524123648
+0,920,2020-04-09,006585,南方宝元债券C,买入,2.2231,3.6631,624.11,1387.48,0.0,1387.48,康世海_蛋卷_钉钉宝365天组合,混合型,股债混合,偏股,411,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=217020553487925248
+1,921,2020-04-09,006585,南方宝元债券C,买入,2.2231,3.6631,37078.05,82428.23,0.0,82428.23,康世海_蛋卷_钉钉宝365天组合,混合型,股债混合,偏股,411,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=217020553710223360
+2,1042,2020-06-08,006585,南方宝元债券C,卖出,2.2515,3.6915,279.85,630.08,0.0,630.08,康世海_蛋卷_钉钉宝365天组合,混合型,股债混合,偏股,411,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=239103037427654656
+3,1043,2020-06-08,006585,南方宝元债券C,卖出,2.2515,3.6915,59.7,134.41,0.0,134.41,康世海_蛋卷_钉钉宝365天组合,混合型,股债混合,偏股,411,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=239103037524123648
+4,1139,2020-07-14,006585,南方宝元债券C,买入,2.356,3.796,944.6,2225.49,0.0,2225.49,康世海_蛋卷_钉钉宝365天组合,混合型,股债混合,偏股,411,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=252140394758082560
+5,1146,2020-07-15,006585,南方宝元债券C,买入,2.3551,3.7951,594.12,1399.22,0.0,1399.22,康世海_蛋卷_钉钉宝365天组合,混合型,股债混合,偏股,411,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=252477997628866560

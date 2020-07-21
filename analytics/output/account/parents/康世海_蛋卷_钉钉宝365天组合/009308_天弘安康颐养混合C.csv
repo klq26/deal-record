@@ -1,3 +1,5 @@
 ,id,date,code,name,dealType,nav_unit,nav_acc,volume,dealMoney,fee,occurMoney,account,category1,category2,category3,categoryId,note
-0,1065,2020-06-10,009308,天弘安康颐养混合C,买入,1.004,1.004,83078.73,83411.04,0.0,83411.04,康世海_蛋卷_钉钉宝365天组合,混合型,股债混合,偏债,412,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=239489288454750208
-1,1066,2020-06-10,009308,天弘安康颐养混合C,买入,1.004,1.004,645.89,648.47,0.0,648.47,康世海_蛋卷_钉钉宝365天组合,混合型,股债混合,偏债,412,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=239489288555413504
+0,1060,2020-06-10,009308,天弘安康颐养混合C,买入,1.004,1.004,83078.73,83411.04,0.0,83411.04,康世海_蛋卷_钉钉宝365天组合,混合型,股债混合,偏债,412,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=239489288454750208
+1,1061,2020-06-10,009308,天弘安康颐养混合C,买入,1.004,1.004,645.89,648.47,0.0,648.47,康世海_蛋卷_钉钉宝365天组合,混合型,股债混合,偏债,412,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=239489288555413504
+2,1141,2020-07-14,009308,天弘安康颐养混合C,买入,1.039,1.039,2141.96,2225.5,0.0,2225.5,康世海_蛋卷_钉钉宝365天组合,混合型,股债混合,偏债,412,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=252140394837774336
+3,1148,2020-07-15,009308,天弘安康颐养混合C,买入,1.038,1.038,1348.01,1399.23,0.0,1399.23,康世海_蛋卷_钉钉宝365天组合,混合型,股债混合,偏债,412,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=252477997746307072

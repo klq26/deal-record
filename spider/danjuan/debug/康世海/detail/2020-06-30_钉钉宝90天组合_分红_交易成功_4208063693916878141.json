@@ -1,0 +1,57 @@
+{
+    "data": {
+        "order_id": "4208063693916878141",
+        "uid": 576923716,
+        "code": "CSI1021",
+        "name": "钉钉宝90天组合",
+        "ttype": "plan",
+        "status": "success",
+        "action": "143",
+        "amount": 0,
+        "percent": 0.21,
+        "volume": 0.21,
+        "status_desc": "交易成功",
+        "action_desc": "分红",
+        "created_at": 1593484258855,
+        "final_confirm_date": 1593446400000,
+        "total_confirm_amount": 0,
+        "total_confirm_volume": 0.21,
+        "total_fee": 0,
+        "title": "钉钉宝90天组合",
+        "bank_name": "建设银行(2247)",
+        "value_desc": "0.21份",
+        "sub_order_list": [
+            {
+                "action_text": "成分基金交易信息",
+                "action": "143",
+                "orders": [
+                    {
+                        "plan_code": "CSI1021",
+                        "plan_name": "钉钉宝90天组合",
+                        "fd_code": "000905",
+                        "fd_name": "鹏华安盈宝货币",
+                        "title": "鹏华安盈宝货币",
+                        "action_desc": "分红",
+                        "status_desc": "交易成功",
+                        "type": "plan",
+                        "action": "143",
+                        "status": "success",
+                        "ts": 1593446400000,
+                        "confirm_ts": 1593446400000,
+                        "amount": 0,
+                        "volume": 0.21,
+                        "confirm_amount": 0,
+                        "confirm_volume": 0.21,
+                        "fee": 0,
+                        "confirm_value_text": "确认份额",
+                        "confirm_value_desc": "0.21份",
+                        "bank_name": "建设银行(2247)",
+                        "order_id": "247030919642955776"
+                    }
+                ]
+            }
+        ],
+        "convert": false
+    },
+    "result_code": 0
+}

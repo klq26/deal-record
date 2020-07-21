@@ -80,16 +80,19 @@ class dividendInfoSpider:
                             items.append(itemDict)
                     jsonDict['拆分'] = items
                 results.append(jsonDict)
-        with open(os.path.join(self.folder, u'dividend_data', 'dividendInfo.json'), 'w+', encoding='utf-8') as f:
-            f.write(json.dumps(results, ensure_ascii=False, indent=4))
+                with open(os.path.join(self.folder, u'dividend_data', f'{code}_dividendInfo.json'), 'w+', encoding='utf-8') as f:
+                    f.write(json.dumps(jsonDict, ensure_ascii=False, indent=4))
         return results
 
-    def insertToDB(self):
-        with open(os.path.join(self.folder, u'dividend_data', 'dividendInfo.json'), 'r', encoding='utf-8') as f:
-            db = fundDBHelper()
-            datalist = json.loads(f.read())
-            for data in datalist:
-                # TODO 检测数据库，拿回最新数据，如果对应日期大于等于 data 日期，就不插入了
+    def truncateDB(self):
+        db = fundDBHelper()
+        db.truncateDividendSplitDB()
+
+    def insertToDB(self, codes):
+        for code in codes:
+            with open(os.path.join(self.folder, u'dividend_data', f'{code}_dividendInfo.json'), 'r', encoding='utf-8') as f:
+                db = fundDBHelper()
+                data = json.loads(f.read())
                 db.insertFundDividendByJonsData(data)
 
 if __name__ == "__main__":

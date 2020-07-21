@@ -1,0 +1,81 @@
+{
+    "data": {
+        "order_id": "4371241078584553958",
+        "uid": 203274561,
+        "code": "CSI666",
+        "name": "螺丝钉指数基金组合",
+        "ttype": "plan",
+        "status": "success",
+        "action": "022",
+        "amount": 500,
+        "status_desc": "交易成功",
+        "action_desc": "买入",
+        "created_at": 1594092141897,
+        "final_confirm_date": 1594137600000,
+        "total_confirm_amount": 500,
+        "total_fee": 0,
+        "title": "螺丝钉指数基金组合",
+        "bank_name": "工商银行(4358)",
+        "value_desc": "500.0元",
+        "sub_order_list": [
+            {
+                "action_text": "成分基金交易信息",
+                "action": "022",
+                "orders": [
+                    {
+                        "plan_code": "CSI666",
+                        "plan_name": "螺丝钉指数基金组合",
+                        "fd_code": "006585",
+                        "fd_name": "南方宝元债券C",
+                        "title": "南方宝元债券C",
+                        "action_desc": "买入",
+                        "status_desc": "交易成功",
+                        "type": "plan",
+                        "action": "022",
+                        "status": "success",
+                        "ts": 1594051200000,
+                        "confirm_ts": 1594137600000,
+                        "amount": 250,
+                        "volume": 0,
+                        "confirm_amount": 250,
+                        "confirm_volume": 106.5,
+                        "fee": 0,
+                        "value_desc": "250.00元",
+                        "value_text": "下单金额",
+                        "confirm_value_text": "确认份额",
+                        "confirm_value_desc": "106.50份",
+                        "bank_name": "工商银行(4358)",
+                        "order_id": "249580566333595648"
+                    },
+                    {
+                        "plan_code": "CSI666",
+                        "plan_name": "螺丝钉指数基金组合",
+                        "fd_code": "006060",
+                        "fd_name": "鹏扬泓利债券C",
+                        "title": "鹏扬泓利债券C",
+                        "action_desc": "买入",
+                        "status_desc": "交易成功",
+                        "type": "plan",
+                        "action": "022",
+                        "status": "success",
+                        "ts": 1594051200000,
+                        "confirm_ts": 1594137600000,
+                        "amount": 250,
+                        "volume": 0,
+                        "confirm_amount": 250,
+                        "confirm_volume": 226.8,
+                        "fee": 0,
+                        "value_desc": "250.00元",
+                        "value_text": "下单金额",
+                        "confirm_value_text": "确认份额",
+                        "confirm_value_desc": "226.80份",
+                        "bank_name": "工商银行(4358)",
+                        "order_id": "249580566383927296"
+                    }
+                ]
+            }
+        ],
+        "convert": false
+    },
+    "result_code": 0
+}

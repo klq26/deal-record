@@ -1,6 +1,8 @@
 ,id,date,code,name,dealType,nav_unit,nav_acc,volume,dealMoney,fee,occurMoney,account,category1,category2,category3,categoryId,note
-0,871,2020-03-19,161725,招商中证白酒指数,买入,0.811,1.9371,41.05,33.32,0.03,33.35,李淑云_蛋卷_螺丝钉指数基金组合,A 股,行业股,全指消费,148,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=209763077437501440
-1,874,2020-03-23,161725,招商中证白酒指数,买入,0.8126,1.9387,61.42,49.96,0.05,50.01,李淑云_蛋卷_螺丝钉指数基金组合,A 股,行业股,全指消费,148,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=211214896852344833
-2,883,2020-03-30,161725,招商中证白酒指数,买入,0.8703,1.9964,38.25,33.32,0.03,33.35,李淑云_蛋卷_螺丝钉指数基金组合,A 股,行业股,全指消费,148,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=213747243622572032
-3,1080,2020-06-16,161725,招商中证白酒指数,卖出,1.1139,2.24,14.07,15.64,0.03,15.61,李淑云_蛋卷_螺丝钉指数基金组合,A 股,行业股,全指消费,148,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=242010444232372224
-4,1090,2020-06-23,161725,招商中证白酒指数,卖出,1.1609,2.287,12.67,14.68,0.03,14.65,李淑云_蛋卷_螺丝钉指数基金组合,A 股,行业股,全指消费,148,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=244527786615083008
+0,870,2020-03-19,161725,招商中证白酒指数,买入,0.811,1.9371,41.05,33.32,0.03,33.35,李淑云_蛋卷_螺丝钉指数基金组合,A 股,行业股,全指消费,148,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=209763077437501440
+1,873,2020-03-23,161725,招商中证白酒指数,买入,0.8126,1.9387,61.42,49.96,0.05,50.01,李淑云_蛋卷_螺丝钉指数基金组合,A 股,行业股,全指消费,148,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=211214896852344833
+2,882,2020-03-30,161725,招商中证白酒指数,买入,0.8703,1.9964,38.25,33.32,0.03,33.35,李淑云_蛋卷_螺丝钉指数基金组合,A 股,行业股,全指消费,148,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=213747243622572032
+3,1079,2020-06-16,161725,招商中证白酒指数,卖出,1.1139,2.24,14.07,15.64,0.03,15.61,李淑云_蛋卷_螺丝钉指数基金组合,A 股,行业股,全指消费,148,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=242010444232372224
+4,1089,2020-06-23,161725,招商中证白酒指数,卖出,1.1609,2.287,12.67,14.68,0.03,14.65,李淑云_蛋卷_螺丝钉指数基金组合,A 股,行业股,全指消费,148,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=244527786615083008
+5,1097,2020-06-30,161725,招商中证白酒指数,卖出,1.1814,2.3075,13.68,16.13,0.03,16.1,李淑云_蛋卷_螺丝钉指数基金组合,A 股,行业股,全指消费,148,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=247070153699201024
+6,1127,2020-07-14,161725,招商中证白酒指数,卖出,1.4522,2.5783,16.05,23.27,0.04,23.23,李淑云_蛋卷_螺丝钉指数基金组合,A 股,行业股,全指消费,148,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=252140198693253120

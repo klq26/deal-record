@@ -1,3 +1,5 @@
 ,id,date,code,name,dealType,nav_unit,nav_acc,volume,dealMoney,fee,occurMoney,account,category1,category2,category3,categoryId,note
-0,919,2020-04-09,008127,广发趋势优选混合C,买入,1.5932,1.5932,52379.09,83450.37,0.0,83450.37,康世海_蛋卷_钉钉宝365天组合,混合型,股债混合,偏股,411,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=217020553190129664
-1,1020,2020-05-25,008127,广发趋势优选混合C,分红,-1.0,-1.0,2635.04,0.0,0.0,0.0,康世海_蛋卷_钉钉宝365天组合,混合型,股债混合,偏股,411,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=234332211289735168
+0,918,2020-04-09,008127,广发趋势优选混合C,买入,1.5932,1.5932,52379.09,83450.37,0.0,83450.37,康世海_蛋卷_钉钉宝365天组合,混合型,股债混合,偏股,411,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=217020553190129664
+1,1019,2020-05-25,008127,广发趋势优选混合C,分红,1.5306,1.6076,2635.04,0.0,0.0,0.0,康世海_蛋卷_钉钉宝365天组合,混合型,股债混合,偏股,411,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=234332211289735168
+2,1140,2020-07-14,008127,广发趋势优选混合C,买入,1.5611,1.6381,1425.59,2225.49,0.0,2225.49,康世海_蛋卷_钉钉宝365天组合,混合型,股债混合,偏股,411,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=252140394800025600
+3,1147,2020-07-15,008127,广发趋势优选混合C,买入,1.5608,1.6378,896.48,1399.22,0.0,1399.22,康世海_蛋卷_钉钉宝365天组合,混合型,股债混合,偏股,411,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=252477997683392512

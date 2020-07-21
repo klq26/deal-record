@@ -513,6 +513,30 @@ class fundDBHelper:
                 db_values = list(sqlDict.values())
                 self.insertDataToTable('fund_split', db_keys, db_values)
 
+    ################################################
+    # TRUNCATE
+    ################################################
+
+    def truncateDividendSplitDB(self):
+        self.truncateTable('fund_dividend')
+        self.truncateTable('fund_split')
+
+    def truncateTable(self, tablename):
+        sql = u"truncate {0}".format(tablename)
+        # print(sql)
+        db = self.connect()
+        cursor = db.cursor()
+        try:
+            cursor.execute(sql)
+            db.commit()
+        except Exception as e:
+            # 表存在就回滚操作
+            db.rollback()
+            print(e)
+        finally:
+            cursor.close()
+            db.close()
+
 if __name__ == "__main__":
     db = fundDBHelper()
     db.createFundNavTableIfNeeded('100032')

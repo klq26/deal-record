@@ -4007,5 +4007,24 @@
         "category3": "中证500",
         "categoryId": 121,
         "note": "证券卖出"
+    },
+    {
+        "id": 212,
+        "date": "2020-07-10",
+        "code": "159938",
+        "name": "医药",
+        "dealType": "卖出",
+        "nav_unit": 2.103,
+        "nav_acc": 2.103,
+        "volume": 4800,
+        "dealMoney": 10094.4,
+        "fee": 2.02,
+        "occurMoney": 10092.38,
+        "account": "华泰证券",
+        "category1": "A 股",
+        "category2": "行业股",
+        "category3": "全指医药",
+        "categoryId": 142,
+        "note": "证券卖出"
     }
 ]

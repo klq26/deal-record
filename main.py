@@ -186,19 +186,25 @@ def updateDatabase():
     updater = fundNavUpdater()
     updater.update()
     # 拉取库存基金的历史分红信息
-    # divide = dividendInfoSpider()
-    # divide.get(db.selectAllFundNavCodes())
+    divide = dividendInfoSpider()
+    # 清理数据库基金分红拆分数据
+    divide.truncateDB()
+    # 获取最新
+    db = fundDBHelper()
+    codes = db.selectAllFundNavCodes()
+    divide.get(codes)
     # TODO 这里的 get 同样要先监测库里该基金的最新一条分红数据
-    # divide.insertToDB()
+    # 插入数据库
+    divide.insertToDB(codes)
     with open(os.path.join(folder, 'navUpdateTime.json'), 'w+',encoding='utf-8') as f:
         f.write(json.dumps({'date':today}, ensure_ascii=False, indent=4))
 
 if __name__ == "__main__":
     # 更新数据库
-    updateDatabase()
+    # updateDatabase()
 
     # 所有spider increment
-    # qiemanSpider('klq').increment()
+    # qiemanSpider('klq').get(True)
     # tiantianSpider('klq').get(True)
     # tiantianSpider('lsy').get(True)
     # huabaoSpider().get()
@@ -209,8 +215,8 @@ if __name__ == "__main__":
     # danjuanSpider('lsy').get(True)
 
     # 插入增量数据或全量数据
-    # updateAllDealRecords('klq', onlyUpdatelocal = False)
-    # updateAllDealRecords('parents', onlyUpdatelocal = False)
+    updateAllDealRecords('klq', onlyUpdatelocal = False)
+    updateAllDealRecords('parents', onlyUpdatelocal = False)
 
     # 更新汇总持仓数据到数据库（供 familyHolding app 使用）
     allFamilyHoldingSelloutStatus(onlyUpdatelocal = False)

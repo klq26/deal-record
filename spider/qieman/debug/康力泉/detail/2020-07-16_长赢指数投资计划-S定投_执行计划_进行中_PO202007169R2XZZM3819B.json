@@ -1,0 +1,53 @@
+{
+    "orderProdType": "PO",
+    "orderId": "PO202007169R2XZZM3819B",
+    "payStatus": null,
+    "confirmStatus": "P2",
+    "uiConfirmStatusName": "确认成功",
+    "capitalAccountId": "CA8FCJKFPANTP2",
+    "uiAmount": 541.93,
+    "uiShare": null,
+    "hasDetail": true,
+    "po": {
+        "poCode": "LONG_WIN_S",
+        "poName": "长赢指数投资计划-S定投"
+    },
+    "umaId": 16569,
+    "umaName": "我的S定投计计划",
+    "orderCode": "P11",
+    "uiOrderCodeName": "执行计划",
+    "orderStatus": "PROCESSING",
+    "uiOrderStatusName": "进行中",
+    "capitalAccountName": "长赢指数投资计划-S定投",
+    "expectTransferIntoDate": 1595401200000,
+    "orderConfirmDate": 1595174400000,
+    "receiveAcctName": "盈米宝",
+    "acceptTime": 1594871602000,
+    "compositionOrders": [
+        {
+            "orderId": "2020071601819724",
+            "payStatus": "0",
+            "cancelable": false,
+            "acceptTime": 1594871602000,
+            "transferIntoDate": 1595401200000,
+            "nav": 1.765,
+            "fee": 2.62,
+            "uiAmount": 521.5,
+            "uiShare": 296.95,
+            "confirmStatus": "2",
+            "orderStatus": "PROCESSING",
+            "uiOrderStatusName": "进行中",
+            "uiConfirmStatusName": "成功",
+            "tradeByShare": true,
+            "orderCode": "W05",
+            "uiOrderCodeName": "赎回到盈米宝",
+            "orderConfirmDate": 1595174400000,
+            "fund": {
+                "fundCode": "164906",
+                "fundName": "交银中证海外中国互联网指数"
+            },
+            "uiOrderDesc": "已于2020年7月20日确认完成，预计2020年7月22日 15:00:00充入盈米宝"
+        }
+    ],
+    "cancelable": false
+}

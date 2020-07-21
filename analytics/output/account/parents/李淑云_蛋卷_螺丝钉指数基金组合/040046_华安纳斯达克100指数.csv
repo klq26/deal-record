@@ -1,6 +1,7 @@
 ,id,date,code,name,dealType,nav_unit,nav_acc,volume,dealMoney,fee,occurMoney,account,category1,category2,category3,categoryId,note
-0,843,2020-03-12,040046,华安纳斯达克100指数,买入,2.299,2.299,19.27,44.36,0.05,44.41,李淑云_蛋卷_螺丝钉指数基金组合,海外成熟,美国,纳斯达克,312,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=207222584807755776
-1,855,2020-03-16,040046,华安纳斯达克100指数,买入,2.245,2.245,18.76,42.17,0.05,42.22,李淑云_蛋卷_螺丝钉指数基金组合,海外成熟,美国,纳斯达克,312,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=208674838345650176
-2,867,2020-03-18,040046,华安纳斯达克100指数,买入,2.3,2.3,21.7,49.96,0.06,50.02,李淑云_蛋卷_螺丝钉指数基金组合,海外成熟,美国,纳斯达克,312,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=209399011165573120
-3,873,2020-03-19,040046,华安纳斯达克100指数,买入,2.337,2.337,21.35,49.96,0.06,50.02,李淑云_蛋卷_螺丝钉指数基金组合,海外成熟,美国,纳斯达克,312,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=209763077567524864
-4,880,2020-03-23,040046,华安纳斯达克100指数,买入,2.269,2.269,30.7,69.74,0.08,69.82,李淑云_蛋卷_螺丝钉指数基金组合,海外成熟,美国,纳斯达克,312,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=211214897502461952
+0,842,2020-03-12,040046,华安纳斯达克100指数,买入,2.299,2.299,19.27,44.36,0.05,44.41,李淑云_蛋卷_螺丝钉指数基金组合,海外成熟,美国,纳斯达克,312,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=207222584807755776
+1,854,2020-03-16,040046,华安纳斯达克100指数,买入,2.245,2.245,18.76,42.17,0.05,42.22,李淑云_蛋卷_螺丝钉指数基金组合,海外成熟,美国,纳斯达克,312,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=208674838345650176
+2,866,2020-03-18,040046,华安纳斯达克100指数,买入,2.3,2.3,21.7,49.96,0.06,50.02,李淑云_蛋卷_螺丝钉指数基金组合,海外成熟,美国,纳斯达克,312,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=209399011165573120
+3,872,2020-03-19,040046,华安纳斯达克100指数,买入,2.337,2.337,21.35,49.96,0.06,50.02,李淑云_蛋卷_螺丝钉指数基金组合,海外成熟,美国,纳斯达克,312,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=209763077567524864
+4,879,2020-03-23,040046,华安纳斯达克100指数,买入,2.269,2.269,30.7,69.74,0.08,69.82,李淑云_蛋卷_螺丝钉指数基金组合,海外成熟,美国,纳斯达克,312,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=211214897502461952
+5,1130,2020-07-14,040046,华安纳斯达克100指数,卖出,3.359,3.359,11.18,37.36,0.19,37.17,李淑云_蛋卷_螺丝钉指数基金组合,海外成熟,美国,纳斯达克,312,https://danjuanapp.com/djmodule/trade-details?ordertype=plan&orderid=252140199091712000
