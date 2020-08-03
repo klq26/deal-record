@@ -20,6 +20,7 @@ from category.categoryManager import categoryManager
 from database.fundDBHelper import fundDBHelper
 from app.server.holdingDBHelper import *
 from app.server.estimateManager import estimateManager
+from app.server.evalManager import evalManager
 
 from app.server.cacheManager import cacheManager
 from app.server.datetimeManager import datetimeManager
@@ -28,6 +29,7 @@ folder = os.path.abspath(os.path.dirname(__file__))
 
 categoryManager = categoryManager()
 cm = cacheManager()
+ev = evalManager()
 dm = datetimeManager()
 
 os.environ['GEVENT_SUPPORT'] = 'True'
@@ -41,7 +43,7 @@ def packDataWithCommonInfo(isCache = False, isSuccess = True, msg = "success", d
     if not isSuccess:
         code = -1
     result = {'code' : code, 'msg' : msg, 'isCache' : False, 'aliyun_date' : datetimeManager().getDateTimeString(), 'data' : data, 'duration' : duration}
-    return json.dumps(result, ensure_ascii=False, indent=4, sort_keys=True)
+    return json.dumps(result, ensure_ascii=False, indent=4)
 
 @app.route('/familyholding/api/fundholding', methods=['GET'])
 def getFundHolding():
@@ -121,6 +123,7 @@ def getFamilyEstimate():
         reload = request.args.get('reloadCategory', '')
         if reload and int(reload) == 1:
             categoryManager.loadNewestCategoryFile()
+            categoryManager.loadNewsetCategory3ExtensionFile()
         # 基金简称
         df = categoryManager.category_df
         for x in records:
@@ -220,8 +223,28 @@ def getMoneyInfos():
     data = packDataWithCommonInfo(duration = duration, data = data)
     return Response(data, status=200, mimetype='application/json')
 
+@app.route('/familyholding/api/eval', methods=['GET'])
+def getFundEvals():
+    """
+    获取三级分类品种的估值情况（pe、pb、roe、指数点位等）
+    """
+    start_ts = dm.getTimeStamp()
+    if cm.cacheAvailable(start_ts, request.path):
+        data = cm.getCache(start_ts, request.path)
+        return Response(data, status=200, mimetype='application/json')
+    xueqiu_indexs_path = os.path.join(folder, u'app',u'server', u'cache', u'xueqiu_indexs.json')
+    ev.getIndexValues(xueqiu_indexs_path = xueqiu_indexs_path)
+    ev.getEvals()
+    data = ev.results
+    end_ts = dm.getTimeStamp()
+    duration = dm.getDuration(start_ts, end_ts)
+    data = packDataWithCommonInfo(duration = duration, data = data)
+    cm.saveCache(request.path, data)
+    return Response(data, status=200, mimetype='application/json')
+
 if __name__ == '__main__':
     app.run(port=5000, debug=True)
+
     # getFundHoldingPieInfos('100032')
     # x = fundDBHelper().selectFundInfo('510050')
     # if x != None:

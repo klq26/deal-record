@@ -12,3 +12,4 @@ login/tiantian_lsy_single.txt
 app/server/cache/familyholding.api.accountholding.json
 app/server/cache/familyholding.api.estimate.json
 app/server/cache/familyholding.api.fundholding.json
+app/server/cache/

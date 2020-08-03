@@ -22,15 +22,28 @@ class categoryManager:
     def __init__(self):
         self.folder = os.path.abspath(os.path.dirname(__file__))
         self.loadNewestCategoryFile()
+        self.loadNewsetCategory3ExtensionFile()
         pass
 
     def getCategoryDataFrame(self):
         return self.category_df
 
+    def getCategory3ExtensionDataFrame(self):
+        return self.category3_ext_df
+
     def loadNewestCategoryFile(self):
         self.xlsx_path = os.path.join(self.folder, u'资产配置分类表.xlsx')
         self.category_df = pd.read_excel(self.xlsx_path)
         self.category_df['基金代码'] = [str(x).zfill(6) for x in self.category_df['基金代码'].values]
+
+    def loadNewsetCategory3ExtensionFile(self):
+        """
+        读取最新的三级分类扩展文件（支持蛋卷估值对应、雪球+东方财富指数符号对应）
+        """
+        self.xlsx_path = os.path.join(self.folder, u'三级分类扩展表.xlsx')
+        self.category3_ext_df = pd.read_excel(self.xlsx_path)
+        # self.category3_ext_df['指数代码'] = [str(x).zfill(6) for x in self.category3_ext_df['指数代码'].values]
+
 
     # 获取货币基金的虚拟类别
     def getCashFundCategory(self):

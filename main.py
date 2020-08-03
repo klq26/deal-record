@@ -33,6 +33,8 @@ from spider.zhifubao.zhifubaoSpider import zhifubaoSpider
 from spider.huatai.huataiSpider import huataiSpider
 from spider.huabao.huabaoSpider import huabaoSpider
 
+from app.server.evalManager import evalManager
+
 # https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.set_option.html
 pd.set_option('display.max_columns', None)
 pd.set_option('display.max_rows', None)
@@ -214,10 +216,13 @@ if __name__ == "__main__":
     # danjuanSpider('klq').get(True)
     # danjuanSpider('lsy').get(True)
 
-    # 插入增量数据或全量数据
-    updateAllDealRecords('klq', onlyUpdatelocal = False)
-    updateAllDealRecords('parents', onlyUpdatelocal = False)
+    # # 插入增量数据或全量数据
+    # updateAllDealRecords('klq', onlyUpdatelocal = False)
+    # updateAllDealRecords('parents', onlyUpdatelocal = False)
 
-    # 更新汇总持仓数据到数据库（供 familyHolding app 使用）
-    allFamilyHoldingSelloutStatus(onlyUpdatelocal = False)
-    allFundHoldingStatus(onlyUpdatelocal = False)
+    # # 更新汇总持仓数据到数据库（供 familyHolding app 使用）
+    # allFamilyHoldingSelloutStatus(onlyUpdatelocal = False)
+    # allFundHoldingStatus(onlyUpdatelocal = False)
+
+    evalManager = evalManager()
+    evalManager.getEvals()

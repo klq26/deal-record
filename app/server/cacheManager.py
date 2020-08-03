@@ -16,6 +16,7 @@ class cacheManager:
             {'path' : '/familyholding/api/fundholding', 'cache_duration' : 60 *60},
             {'path' : '/familyholding/api/accountholding', 'cache_duration' : 60 *60},
             {'path' : '/familyholding/api/estimate', 'cache_duration' : 2.5 * 60},
+            {'path' : '/familyholding/api/eval', 'cache_duration' : 4 * 60}
         ]
         self.folder = os.path.abspath(os.path.dirname(__file__))
         self.cache_folder = os.path.join(self.folder,'cache')

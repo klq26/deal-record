@@ -12,7 +12,7 @@
     <!-- 倒计时 -->
     <div style="display:flex; justify-content:flex-end; color:#FFF; margin:4px 0.06rem; width:50%;font-size: 0.4rem;">距下次更新约 {{myCountdown}} 秒</div>
   </div>
-  <AccountSummaryComponent :moneyinfos="moneyinfos" :holdings="accountholdings" :estimates="estimates" v-show="active == 0"/>
+  <AccountSummaryComponent :moneyinfos="moneyinfos" :holdings="accountholdings" :estimates="estimates" :evals="evals" v-show="active == 0"/>
   <FundComponent :holdings="fundholdings" :estimates="estimates" v-show="active == 1"/>
   <FundDetailComponent :holdings="fundholdings" :estimates="estimates" v-show="active == 2"/>
   </div>
@@ -50,7 +50,7 @@ export default {
       accountholdings: [],
       estimates: {},
       moneyinfos: {},
-      showDetail: false,
+      evals: [],
       active: 0,
       tabs: [
         {
@@ -113,6 +113,15 @@ export default {
       axios.get(serverIp + 'familyholding/api/estimate').then(function (response) {
         that.estimates = response.data.data
         that.myCountdown = 5 * 60
+        that.showLoading = false
+        that.familyEval()
+      })
+    },
+    familyEval () {
+      var that = this
+      this.showLoading = true
+      axios.get(serverIp + 'familyholding/api/eval').then(function (response) {
+        that.evals = response.data.data
         that.showLoading = false
       })
     }
