@@ -212,17 +212,16 @@ if __name__ == "__main__":
     # huabaoSpider().get()
     # huataiSpider().get()
     # danjuanSpider('klq').increment()
+    # danjuanSpider('lsy').increment()
+    # danjuanSpider('ksh').increment()
     # danjuanSpider('ksh').get(True)
     # danjuanSpider('klq').get(True)
     # danjuanSpider('lsy').get(True)
 
     # # 插入增量数据或全量数据
-    # updateAllDealRecords('klq', onlyUpdatelocal = False)
-    # updateAllDealRecords('parents', onlyUpdatelocal = False)
+    updateAllDealRecords('klq', onlyUpdatelocal = False)
+    updateAllDealRecords('parents', onlyUpdatelocal = False)
 
     # # 更新汇总持仓数据到数据库（供 familyHolding app 使用）
-    # allFamilyHoldingSelloutStatus(onlyUpdatelocal = False)
-    # allFundHoldingStatus(onlyUpdatelocal = False)
-
-    evalManager = evalManager()
-    evalManager.getEvals()
+    allFamilyHoldingSelloutStatus(onlyUpdatelocal = False)
+    allFundHoldingStatus(onlyUpdatelocal = False)

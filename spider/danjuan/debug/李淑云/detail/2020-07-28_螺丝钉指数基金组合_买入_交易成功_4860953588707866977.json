@@ -1,0 +1,81 @@
+{
+    "data": {
+        "order_id": "4860953588707866977",
+        "uid": 194897199,
+        "code": "CSI666",
+        "name": "螺丝钉指数基金组合",
+        "ttype": "plan",
+        "status": "success",
+        "action": "022",
+        "amount": 200,
+        "status_desc": "交易成功",
+        "action_desc": "买入",
+        "created_at": 1595916463130,
+        "final_confirm_date": 1595952000000,
+        "total_confirm_amount": 200,
+        "total_fee": 0,
+        "title": "螺丝钉指数基金组合",
+        "bank_name": "现金宝",
+        "value_desc": "200.0元",
+        "sub_order_list": [
+            {
+                "action_text": "成分基金交易信息",
+                "action": "022",
+                "orders": [
+                    {
+                        "plan_code": "CSI666",
+                        "plan_name": "螺丝钉指数基金组合",
+                        "fd_code": "006585",
+                        "fd_name": "南方宝元债券C",
+                        "title": "南方宝元债券C",
+                        "action_desc": "买入",
+                        "status_desc": "交易成功",
+                        "type": "plan",
+                        "action": "022",
+                        "status": "success",
+                        "ts": 1595865600000,
+                        "confirm_ts": 1595952000000,
+                        "amount": 100,
+                        "volume": 0,
+                        "confirm_amount": 100,
+                        "confirm_volume": 42.49,
+                        "fee": 0,
+                        "value_desc": "100.00元",
+                        "value_text": "下单金额",
+                        "confirm_value_text": "确认份额",
+                        "confirm_value_desc": "42.49份",
+                        "bank_name": "现金宝",
+                        "order_id": "257232324309237760"
+                    },
+                    {
+                        "plan_code": "CSI666",
+                        "plan_name": "螺丝钉指数基金组合",
+                        "fd_code": "006060",
+                        "fd_name": "鹏扬泓利债券C",
+                        "title": "鹏扬泓利债券C",
+                        "action_desc": "买入",
+                        "status_desc": "交易成功",
+                        "type": "plan",
+                        "action": "022",
+                        "status": "success",
+                        "ts": 1595865600000,
+                        "confirm_ts": 1595952000000,
+                        "amount": 100,
+                        "volume": 0,
+                        "confirm_amount": 100,
+                        "confirm_volume": 92.32,
+                        "fee": 0,
+                        "value_desc": "100.00元",
+                        "value_text": "下单金额",
+                        "confirm_value_text": "确认份额",
+                        "confirm_value_desc": "92.32份",
+                        "bank_name": "现金宝",
+                        "order_id": "257232324372152320"
+                    }
+                ]
+            }
+        ],
+        "convert": false
+    },
+    "result_code": 0
+}

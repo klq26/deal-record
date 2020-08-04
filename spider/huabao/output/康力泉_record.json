@@ -663,5 +663,24 @@
         "category3": "恒生",
         "categoryId": 211,
         "note": "无"
+    },
+    {
+        "id": 36,
+        "date": "2020-07-24",
+        "code": "159920",
+        "name": "恒生ETF",
+        "dealType": "买入",
+        "nav_unit": 1.384,
+        "nav_acc": 1.384,
+        "volume": 1800.0,
+        "dealMoney": 2491.2,
+        "fee": 0.25,
+        "occurMoney": 2491.45,
+        "account": "华宝证券",
+        "category1": "海外新兴",
+        "category2": "香港",
+        "category3": "恒生",
+        "categoryId": 211,
+        "note": "无"
     }
 ]

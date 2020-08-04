@@ -61,151 +61,169 @@
     </div>
     <!-- 三级分类估值 -->
     <div class="category3cell">
-      <p class="category3name category3valuetitle">名称</p>
-      <p class="category3value category3valuetitle">成本</p>
-      <p class="category3value category3valuetitle">指数</p>
-      <p class="category3value category3valuetitle">盈亏</p>
-      <p class="category3value category3valuetitle">PE</p>
-      <p class="category3value category3valuetitle">PB</p>
-      <p class="category3value category3valuetitle">ROE</p>
-      <p class="category3value category3valuetitle">PEG</p>
-      <p class="category3value category3valuetitle">股息</p>
+      <p class="category3name category3-title">名称</p>
+      <!-- 估值 title -->
+      <p class="category3-narrow-value category3-title" v-show="showEval">成本</p>
+      <p class="category3-narrow-value category3-title" v-show="showEval">指数</p>
+      <p class="category3-narrow-value category3-title" v-show="showEval">盈率</p>
+      <p class="category3-narrow-value category3-title" v-show="showEval">PE</p>
+      <p class="category3-narrow-value category3-title" v-show="showEval">PB</p>
+      <p class="category3-narrow-value category3-title" v-show="showEval">ROE</p>
+      <p class="category3-narrow-value category3-title" v-show="showEval">PEG</p>
+      <p class="category3-narrow-value category3-title" v-show="showEval">股息</p>
+      <!-- 市值 title -->
+      <p class="category3-middle-value category3-title" v-show="!showEval">日盈亏</p>
+      <p class="category3-narrow-value category3-title" v-show="!showEval">日盈比</p>
+      <p class="category3-middle-value category3-title" v-show="!showEval">总盈亏</p>
+      <p class="category3-narrow-value category3-title" v-show="!showEval">总盈比</p>
+      <p class="category3-middle-value category3-title" v-show="!showEval">总市值</p>
+      <p class="category3-narrow-value category3-title" v-show="!showEval">总值比</p>
     </div>
-    <div class="category3cell" v-for="item in evals" :key="item.index">
+    <div class="category3cell" v-for="item in evals" :key="item.index" @click.stop="showEval = !showEval">
       <p class="category3name" :class="categoryColorWithValue(item)">{{item.category3_name}}</p>
-      <p class="category3value">{{category3holdingIndexValue(item)}}</p>
-      <p class="category3value">{{item.current.toFixed(0)}}</p>
-      <p class="category3value" :class="category3GainRateTextColor(item)">{{category3GainRate(item)}}</p>
-      <p class="category3value" :style="evalRankBackground(item.pe_percentile)">{{item.pe.toFixed(1)}}</p>
-      <p class="category3value" :style="evalRankBackground(item.pb_percentile)">{{item.pb.toFixed(1)}}</p>
-      <p class="category3value">{{(item.roe * 100).toFixed(1) + '%'}}</p>
-      <p class="category3value">{{item.peg.toFixed(2)}}</p>
-      <p class="category3value">{{(item.yeild * 100).toFixed(2) + '%'}}</p>
+      <!-- 估值 -->
+      <p class="category3-narrow-value" v-show="showEval">{{category3holdingIndexValue(item)}}</p>
+      <p class="category3-narrow-value" v-show="showEval">{{item.current.toFixed(0)}}</p>
+      <p class="category3-narrow-value" v-show="showEval" :class="category3GainRateTextColor(item)">{{category3GainRate(item)}}</p>
+      <p class="category3-narrow-value" v-show="showEval" :style="evalRankBackground(item.pe_percentile)">{{item.pe.toFixed(1)}}</p>
+      <p class="category3-narrow-value" v-show="showEval" :style="evalRankBackground(item.pb_percentile)">{{item.pb.toFixed(1)}}</p>
+      <p class="category3-narrow-value" v-show="showEval">{{(item.roe * 100).toFixed(1) + '%'}}</p>
+      <p class="category3-narrow-value" v-show="showEval">{{item.peg.toFixed(2)}}</p>
+      <p class="category3-narrow-value" v-show="showEval">{{(item.yeild * 100).toFixed(2) + '%'}}</p>
+      <!-- 市值 -->
+      <p class="category3-middle-value" :class="textColorWithValue(item.daily)" v-show="!showEval">{{item.daily}}</p>
+      <p class="category3-narrow-value" :class="textColorWithValue(item.daily ? item.daily : 0)" v-show="!showEval">{{((item.daily ? item.daily : 0) / totalDailyGain * 100).toFixed(1) + '%'}}</p>
+      <p class="category3-middle-value" :class="textColorWithValue(item.total)" v-show="!showEval">{{item.total}}</p>
+      <p class="category3-narrow-value" :class="textColorWithValue(item.total ? item.total : 0)" v-show="!showEval">{{((item.total ? item.total : 0) / totalHoldingGain * 100).toFixed(1) + '%'}}</p>
+      <p class="category3-middle-value" v-show="!showEval">{{item.marketcap ? parseFloat(item.marketcap).toFixed(0) : 0}}</p>
+      <p class="category3-narrow-value" v-show="!showEval">{{((item.marketcap ? item.marketcap : 0) / totalMarketCap * 100).toFixed(1) + '%'}}</p>
+      <!-- <p class="category3name" v-show="!showEval">{{item.total}}</p>
+      <p class="category3name" v-show="!showEval">{{item.marketcap}}</p> -->
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: "AccountSummaryComponent",
-  props: ["moneyinfos", "holdings", "estimates", "evals"],
+  name: 'AccountSummaryComponent',
+  props: ['moneyinfos', 'holdings', 'estimates', 'evals'],
   methods: {
-    showSummary(type) {
+    showSummary (type) {
       switch (type) {
         case 0:
           // 现金类
-          return (this.myMoneyInfos.cash.value / 10000).toFixed(2) + " 万元";
+          return (this.myMoneyInfos.cash.value / 10000).toFixed(2) + ' 万元'
         case 1:
           // 冻结类
-          return (this.myMoneyInfos.freeze.value / 10000).toFixed(2) + " 万元";
+          return (this.myMoneyInfos.freeze.value / 10000).toFixed(2) + ' 万元'
         case 2:
-          return (this.totalMarketCap / 10000).toFixed(2) + " 万元";
+          return (this.totalMarketCap / 10000).toFixed(2) + ' 万元'
         case 3:
-          var cash = this.myMoneyInfos.cash.value;
-          var freeze = this.myMoneyInfos.freeze.value;
-          var fund = parseFloat(this.totalMarketCap);
-          this.totalFamilyCap = cash + freeze + fund;
-          return ((cash + freeze + fund) / 10000).toFixed(2) + " 万元";
+          var cash = this.myMoneyInfos.cash.value
+          var freeze = this.myMoneyInfos.freeze.value
+          var fund = parseFloat(this.totalMarketCap)
+          this.totalFamilyCap = cash + freeze + fund
+          return ((cash + freeze + fund) / 10000).toFixed(2) + ' 万元'
       }
     },
-    sum(category1) {
-      var total = 0.0;
+    sum (category1) {
+      var total = 0.0
       for (var i in this.myHoldings) {
-        var holding = this.myHoldings[i];
+        var holding = this.myHoldings[i]
         if (holding.category1 === category1) {
           if (this.showDaily) {
-            total = total + parseFloat(holding.dailyChange);
+            total = total + parseFloat(holding.dailyChange)
           } else {
-            total = total + parseFloat(holding.totalChange);
+            total = total + parseFloat(holding.totalChange)
           }
         }
       }
-      return total.toFixed(1);
+      return total.toFixed(1)
     },
-    accountBackground(name) {
-      if (name.indexOf("且慢") !== -1) {
-        return "qieman";
-      } else if (name.indexOf("天天") !== -1) {
-        return "tiantian";
-      } else if (name.indexOf("华宝") !== -1) {
-        return "huabao";
-      } else if (name.indexOf("华泰") !== -1) {
-        return "huatai";
-      } else if (name.indexOf("支付宝") !== -1) {
-        return "zhifubao";
+    accountBackground (name) {
+      if (name.indexOf('且慢') !== -1) {
+        return 'qieman'
+      } else if (name.indexOf('天天') !== -1) {
+        return 'tiantian'
+      } else if (name.indexOf('华宝') !== -1) {
+        return 'huabao'
+      } else if (name.indexOf('华泰') !== -1) {
+        return 'huatai'
+      } else if (name.indexOf('支付宝') !== -1) {
+        return 'zhifubao'
       } else if (
-        name.indexOf("螺丝钉") !== -1 ||
-        name.indexOf("钉钉宝") !== -1
+        name.indexOf('螺丝钉') !== -1 ||
+        name.indexOf('钉钉宝') !== -1
       ) {
-        return "danjuan";
+        return 'danjuan'
       } else {
-        return "unknow";
+        return 'unknow'
       }
     },
-    today(name) {
-      return this.accounts[name]["today"].toFixed(2);
+    today (name) {
+      return this.accounts[name]['today'].toFixed(2)
     },
-    total(name) {
-      return this.accounts[name]["total"].toFixed(2);
+    total (name) {
+      return this.accounts[name]['total'].toFixed(2)
     },
     // 文字颜色
-    textColorWithValue(value) {
-      var number = parseFloat(value);
+    textColorWithValue (value) {
+      var number = parseFloat(value)
       if (number > 0) {
-        return "rise-text-color";
+        return 'rise-text-color'
       } else if (number === 0) {
-        return "normal-text-color";
+        return 'normal-text-color'
       } else {
-        return "fall-text-color";
+        return 'fall-text-color'
       }
     },
     // 文字颜色
-    moneyCategoryTextColor(index) {
+    moneyCategoryTextColor (index) {
       if (index === 0 || index === 1) {
-        return "normal-text-color";
+        return 'normal-text-color'
       }
       if (this.marketCapCompareStatus === 1) {
-        return "rise-text-color";
+        return 'rise-text-color'
       } else if (this.marketCapCompareStatus === 0) {
-        return "normal-text-color";
+        return 'normal-text-color'
       } else {
-        return "fall-text-color";
+        return 'fall-text-color'
       }
     },
-    category3holdingIndexValue(item) {
-      if (item.holding !== undefined) {
-        var rate = item.holding.total / item.holding.holding;
-        var holdingIndexValue = item.current / (1 + rate);
+    category3holdingIndexValue (item) {
+      if (item.holding > 0) {
+        var rate = item.total / item.holding
+        var holdingIndexValue = item.current / (1 + rate)
         if (holdingIndexValue > 0) {
-          return holdingIndexValue.toFixed(0);
+          return holdingIndexValue.toFixed(0)
         } else {
-          return 0;
+          return 0
         }
       }
-      return 0;
+      return 0
     },
-    category3GainRate(item) {
-      if (item.holding !== undefined && item.holding.holding > 0) {
-        var rate = item.holding.total / item.holding.holding;
-        return (rate * 100).toFixed(0) + "%";
+    category3GainRate (item) {
+      if (item.holding > 0) {
+        var rate = item.total / item.holding
+        return (rate * 100).toFixed(0) + '%'
       }
-      return "0%";
+      return '0%'
     },
-    category3GainRateTextColor(item) {
-      if (item.holding !== undefined) {
-        var rate = item.holding.total / item.holding.holding
+    category3GainRateTextColor (item) {
+      if (item.holding > 0) {
+        var rate = item.total / item.holding
         if (rate > 0) {
-          return "rise-text-color";
+          return 'rise-text-color'
         } else if (rate === 0) {
-          return "normal-text-color";
+          return 'normal-text-color'
         } else {
-          return "fall-text-color";
+          return 'fall-text-color'
         }
       }
-      return "normal-text-color";
+      return 'normal-text-color'
     },
-    evalRankBackground(percentile) {
-      if (percentile == 0.0) {
+    evalRankBackground (percentile) {
+      if (percentile === 0.0) {
         return 'background-color:#333'
       }
       var style = ''
@@ -223,8 +241,7 @@ export default {
           style = 'background: linear-gradient(90deg, #fe5a4b ' + percentile * 100 + '%,#333333 ' + (percentile + 0.1) * 100 + '%);'
         }
         return style
-      }
-      else {
+      } else {
         return 'background-color: #333'
       }
     },
@@ -251,21 +268,14 @@ export default {
         default:
           return bgClass + 8
       }
-    },
+    }
   },
-  data() {
+  data () {
     return {
-      categorys: [
-        'A 股',
-        '海外新兴',
-        '海外成熟',
-        '混合型',
-        '债券',
-        '商品'
-      ],
       showDaily: true,
-      moneyCategorys: ["可用现金", "冻结资金", "基金市值", "家庭总计"],
-      categorys: ["A 股", "海外新兴", "海外成熟", "混合型", "债券", "商品"],
+      showEval: false,
+      moneyCategorys: ['可用现金', '冻结资金', '基金市值', '家庭总计'],
+      categorys: ['A 股', '海外新兴', '海外成熟', '混合型', '债券', '商品'],
       accounts: {},
       category3Items: {},
       isUpdating: true,
@@ -276,203 +286,207 @@ export default {
       totalDailyGain: 0,
       totalHoldingGain: 0,
       totalMarketCap: 0,
-      totalFamilyCap: 0,
-    };
+      totalFamilyCap: 0
+    }
   },
   created: function () {},
   watch: {
     holdings: {
-      handler(newValue, oldValue) {
-        this.myHoldings = this.holdings;
+      handler (newValue, oldValue) {
+        this.myHoldings = this.holdings
       },
       immediate: true,
-      deep: true,
+      deep: true
     },
     moneyinfos: {
-      handler(newValue, oldValue) {
-        this.myMoneyInfos = this.moneyinfos;
+      handler (newValue, oldValue) {
+        this.myMoneyInfos = this.moneyinfos
       },
       immediate: true,
-      deep: true,
+      deep: true
     },
     estimates: {
-      handler(newValue, oldValue) {
-        this.myEstimates = this.estimates;
-        this.accounts = {};
-        this.totalDailyGain = 0.0;
-        this.totalHoldingGain = 0.0;
+      handler (newValue, oldValue) {
+        this.myEstimates = this.estimates
+        this.accounts = {}
+        this.totalDailyGain = 0.0
+        this.totalHoldingGain = 0.0
         // 暂存一下上次的市值
-        var lastMarketCap = this.totalMarketCap;
-        this.totalMarketCap = 0.0;
+        var lastMarketCap = this.totalMarketCap
+        this.totalMarketCap = 0.0
         // 按 category3 把 myHoldings 分组聚合，来自网络代码（map 是品种个数，dest 是每个三级分类的 group by）
-        var map = {},
-          dest = [];
+        var map = {}
+        var dest = []
 
         for (var index in this.myHoldings) {
-          var fundItem = this.myHoldings[index];
-          var code = fundItem.code;
+          var fundItem = this.myHoldings[index]
+          var code = fundItem.code
           if (Object.keys(this.accounts).indexOf(fundItem.account) === -1) {
             // 唯一账户
-            this.accounts[fundItem.account] = { today: 0, total: 0 };
+            this.accounts[fundItem.account] = { today: 0, total: 0 }
           }
           // 拿估值
           for (var key in this.myEstimates.estimate) {
             if (key === code) {
-              var estiItem = this.myEstimates.estimate[key];
-              fundItem["market"] = estiItem.market;
-              fundItem["estimate_nav"] = estiItem.gsz;
-              fundItem["estimate_rate"] =
-                parseFloat(estiItem.gszzl).toFixed(2) + "%";
+              var estiItem = this.myEstimates.estimate[key]
+              fundItem['market'] = estiItem.market
+              fundItem['estimate_nav'] = estiItem.gsz
+              fundItem['estimate_rate'] =
+                parseFloat(estiItem.gszzl).toFixed(2) + '%'
               // 今天数据
-              fundItem["dailyChange"] =
+              fundItem['dailyChange'] =
                 (parseFloat(estiItem.gsz) - parseFloat(estiItem.dwjz)) *
-                fundItem.holding_volume;
-              this.accounts[fundItem.account]["today"] += parseFloat(
+                fundItem.holding_volume
+              this.accounts[fundItem.account]['today'] += parseFloat(
                 fundItem.dailyChange
-              );
+              )
               this.totalDailyGain =
-                this.totalDailyGain + parseFloat(fundItem.dailyChange);
+                this.totalDailyGain + parseFloat(fundItem.dailyChange)
               // 整体数据
-              fundItem["total_estimate_rate"] =
+              fundItem['total_estimate_rate'] =
                 (
                   (parseFloat(estiItem.gsz) / parseFloat(fundItem.holding_nav) -
                     1) *
                   100
-                ).toFixed(2) + "%";
-              fundItem["totalChange"] =
+                ).toFixed(2) + '%'
+              fundItem['totalChange'] =
                 (parseFloat(estiItem.gsz) - parseFloat(fundItem.holding_nav)) *
-                fundItem.holding_volume;
-              this.accounts[fundItem.account]["total"] += parseFloat(
+                fundItem.holding_volume
+              this.accounts[fundItem.account]['total'] += parseFloat(
                 fundItem.totalChange
-              );
+              )
               this.totalHoldingGain =
-                this.totalHoldingGain + parseFloat(fundItem.totalChange);
+                this.totalHoldingGain + parseFloat(fundItem.totalChange)
               // 基金总市值
-              this.totalMarketCap =
-                this.totalMarketCap +
-                parseFloat(estiItem.gsz) * parseFloat(fundItem.holding_volume);
-              break;
+              fundItem['marketCap'] = parseFloat(estiItem.gsz) * parseFloat(fundItem.holding_volume)
+              this.totalMarketCap = this.totalMarketCap + fundItem['marketCap']
+              break
             }
           }
           // 失败？
           for (var key2 in this.myEstimates.nav) {
             if (key2 === code) {
-              estiItem = this.myEstimates.nav[key2];
-              fundItem["market"] = estiItem.market;
-              fundItem["estimate_nav"] = estiItem.gsz;
-              fundItem["estimate_rate"] =
-                parseFloat(estiItem.gszzl).toFixed(2) + "%";
+              estiItem = this.myEstimates.nav[key2]
+              fundItem['market'] = estiItem.market
+              fundItem['estimate_nav'] = estiItem.gsz
+              fundItem['estimate_rate'] =
+                parseFloat(estiItem.gszzl).toFixed(2) + '%'
               // 今天数据
-              fundItem["dailyChange"] =
+              fundItem['dailyChange'] =
                 (parseFloat(estiItem.gsz) - parseFloat(estiItem.dwjz)) *
-                fundItem.holding_volume;
-              this.accounts[fundItem.account]["today"] += parseFloat(
+                fundItem.holding_volume
+              this.accounts[fundItem.account]['today'] += parseFloat(
                 fundItem.dailyChange
-              );
+              )
               this.totalDailyGain =
-                this.totalDailyGain + parseFloat(fundItem.dailyChange);
+                this.totalDailyGain + parseFloat(fundItem.dailyChange)
               // 整体数据
-              fundItem["total_estimate_rate"] =
+              fundItem['total_estimate_rate'] =
                 (
                   (parseFloat(estiItem.gsz) / parseFloat(fundItem.holding_nav) -
                     1) *
                   100
-                ).toFixed(2) + "%";
-              fundItem["totalChange"] =
+                ).toFixed(2) + '%'
+              fundItem['totalChange'] =
                 (parseFloat(estiItem.gsz) - parseFloat(fundItem.holding_nav)) *
-                fundItem.holding_volume;
-              this.accounts[fundItem.account]["total"] += parseFloat(
+                fundItem.holding_volume
+              this.accounts[fundItem.account]['total'] += parseFloat(
                 fundItem.totalChange
-              );
+              )
               this.totalHoldingGain =
-                this.totalHoldingGain + parseFloat(fundItem.totalChange);
+                this.totalHoldingGain + parseFloat(fundItem.totalChange)
               // 基金总市值
-              this.totalMarketCap =
-                this.totalMarketCap +
-                parseFloat(estiItem.gsz) * parseFloat(fundItem.holding_volume);
-              break;
+              fundItem['marketCap'] = parseFloat(estiItem.gsz) * parseFloat(fundItem.holding_volume)
+              this.totalMarketCap = this.totalMarketCap + fundItem['marketCap']
+              break
             }
           }
           // 按三级分类统计
           if (!map[fundItem.category3]) {
             dest.push({
               name: fundItem.category3,
-              data: [fundItem],
-            });
-            map[fundItem.category3] = 1;
+              data: [fundItem]
+            })
+            map[fundItem.category3] = 1
           } else {
             for (var j = 0; j < dest.length; j++) {
-              var dj = dest[j];
-              if (dj.name == fundItem.category3) {
-                dj.data.push(fundItem);
-                map[fundItem.category3] += 1;
-                break;
+              var dj = dest[j]
+              if (dj.name === fundItem.category3) {
+                dj.data.push(fundItem)
+                map[fundItem.category3] += 1
+                break
               }
             }
           }
         }
         // 三级分类的汇总
-        var sum = {};
+        var sum = {}
         for (var i = 0; i < dest.length; i++) {
-          var category3 = dest[i];
-          var arr = category3.data;
-          var category3DailyChange = 0.0;
-          var category3TotalChange = 0.0;
-          var category3HoldingMoney = 0.0;
-          for (var j = 0; j < arr.length; j++) {
-            var fundItem = arr[j];
+          var category3 = dest[i]
+          var arr = category3.data
+          var category3DailyChange = 0.0
+          var category3TotalChange = 0.0
+          var category3HoldingMoney = 0.0
+          var category3MarketCap = 0.0
+          for (j = 0; j < arr.length; j++) {
+            fundItem = arr[j]
             // console.log(fundItem.code, fundItem.name, fundItem.account, fundItem.totalChange)
-            category3DailyChange += fundItem.dailyChange;
-            category3TotalChange += fundItem.totalChange;
-            category3HoldingMoney += fundItem.holding_money;
+            category3DailyChange += fundItem.dailyChange
+            category3TotalChange += fundItem.totalChange
+            category3HoldingMoney += fundItem.holding_money
+            category3MarketCap += fundItem.marketCap
           }
           sum[category3.name] = {
             daily: category3DailyChange,
             total: category3TotalChange,
             holding: category3HoldingMoney,
-          };
+            marketcap: category3MarketCap
+          }
         }
-        this.category3Items = sum;
-        this.totalDailyGain = parseFloat(this.totalDailyGain).toFixed(2);
-        this.totalHoldingGain = parseFloat(this.totalHoldingGain).toFixed(2);
+        this.category3Items = sum
+        this.totalDailyGain = parseFloat(this.totalDailyGain).toFixed(2)
+        this.totalHoldingGain = parseFloat(this.totalHoldingGain).toFixed(2)
         if (lastMarketCap < 1 || lastMarketCap === this.totalMarketCap) {
           // 初始化时，last 值应该是 0，所以显示白色资金数
-          this.marketCapCompareStatus = 0;
+          this.marketCapCompareStatus = 0
         } else if (lastMarketCap > this.totalMarketCap) {
-          this.marketCapCompareStatus = -1;
+          this.marketCapCompareStatus = -1
         } else if (lastMarketCap < this.totalMarketCap) {
-          this.marketCapCompareStatus = 1;
+          this.marketCapCompareStatus = 1
         }
-        this.totalMarketCap = parseFloat(this.totalMarketCap).toFixed(2);
-        this.isUpdating = true;
-        console.log(this.category3Items);
+        this.totalMarketCap = parseFloat(this.totalMarketCap).toFixed(2)
+        this.isUpdating = true
+        // console.log(this.category3Items);
         setTimeout(() => {
-          this.isUpdating = false;
-        }, 1500);
+          this.isUpdating = false
+        }, 1500)
       },
       immediate: true,
-      deep: true,
+      deep: true
     },
     evals: {
-      handler(newValue, oldValue) {
-        this.evals = newValue;
+      handler (newValue, oldValue) {
+        this.evals = newValue
         for (var key1 in this.category3Items) {
-          var category3 = this.category3Items[key1];
+          var category3 = this.category3Items[key1]
           // console.log(key1, category3)
           for (var key2 in this.evals) {
-            var evalItem = this.evals[key2];
+            var evalItem = this.evals[key2]
             // console.log(key2, evalItem)
             if (evalItem.category3_name === key1) {
               // console.log(evalItem.category3_name, key1)
-              evalItem["holding"] = category3;
-              break;
+              evalItem['daily'] = category3.daily.toFixed(1)
+              evalItem['total'] = category3.total.toFixed(1)
+              evalItem['holding'] = category3.holding.toFixed(1)
+              evalItem['marketcap'] = category3.marketcap.toFixed(1)
+              break
             }
           }
         }
-        console.log(this.evals);
+        // console.log(this.evals);
       },
       immediate: true,
-      deep: true,
+      deep: true
     }
   }
 }
@@ -652,7 +666,7 @@ export default {
   align-items: center;
   margin: 1px;
   padding: 1px;
-  width: 1.8rem;
+  width: 2rem;
   height: 0.5rem;
   font-size: 0.33rem;
   text-align: right;
@@ -660,14 +674,14 @@ export default {
   background-color: #333333;
 }
 
-.category3value {
+.category3-narrow-value {
     /* 解决纯数字时偏上的问题 */
   display: flex;
   justify-content:flex-end;
   align-items: center;
   margin: 1px;
   padding: 1px;
-  width: 1.0rem;
+  width: 1.1rem;
   height: 0.5rem;
   font-size: 0.33rem;
   /* text-align: center; */
@@ -677,7 +691,21 @@ export default {
   /* background: linear-gradient(90deg,#0fae9d 50%,#333333 65%); */
 }
 
-.category3valuetitle {
+.category3-middle-value {
+  display: flex;
+  justify-content:flex-end;
+  align-items: center;
+  margin: 1px;
+  padding: 1px;
+  width: 1.5rem;
+  height: 0.5rem;
+  font-size: 0.33rem;
+  /* text-align: center; */
+  color:#FFFFFF;
+  background-color: #333333;
+}
+
+.category3-title {
   justify-content:center;
 }
 

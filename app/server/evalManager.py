@@ -19,7 +19,7 @@ class evalManager:
         self.cm = categoryManager()
         requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
         # 需要忽略的三级分类
-        category3_skips = ['中小板', '股票', '房地产', '偏股', '偏债', '信息科技', '美元债', '无息外借款', '住房公积金', '民间借贷', '企业借贷', '货币基金']
+        category3_skips = ['股票', '房地产', '信息科技', '美元债', '无息外借款', '住房公积金', '民间借贷', '企业借贷', '货币基金']
         # 库中三级分类
         category3_uniques = list(self.cm.category_df['三级分类'].unique())
         for item in category3_skips:
@@ -53,7 +53,7 @@ class evalManager:
             # index["pb_over_history"] = 0.0
             # index["pe_over_history"] = 0.0
             index['sequence'] = i+1
-            print(index)
+            # print(index)
             self.results.append(index)
         # [print(x) for x in self.results]
 

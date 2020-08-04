@@ -129,7 +129,7 @@ export default {
   created: function () {
     var that = this
     document.onkeyup = function (e) {
-      console.log(e.keyCode)
+      // console.log(e.keyCode)
       var val = that.active
       // 事件对象兼容
       let e1 = e || event || window.event
@@ -155,7 +155,7 @@ export default {
       } else if (e1 && e1.keyCode === 40) {
         // console.log('下')
       } else if (e1 && e1.keyCode === 32) {
-        console.log('空格')
+        // console.log('空格')
       }
     }
     this.updateTime()
